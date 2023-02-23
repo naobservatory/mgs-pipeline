@@ -35,7 +35,8 @@ For example, "PRJNA729801" for the Rothman 2021 data.
 The `metadata.tsv` file is tab-separated, where the first column is the sample
 id and the remaining columns are study-specific.  For data we downloaded from
 the SRA the sample ID is the SRA accession.  For example, "SRR14530767" for the
-2020-08-11 HTP sample in the Rothman 2021 data.
+2020-08-11 HTP sample in the Rothman 2021 data.  The scripts used to create the
+metadata file should be checked into this repo under `studies/[accession]/`.
 
 Files under `raw/` have the contents as we received them, but have been renamed
 to `[sampleID].fasta.gz`.  For paired-end data there will be two files,
