@@ -22,8 +22,8 @@ Questions we'll want it to answer include:
 
 At each stage data will be stored in an S3 bucket.  The structure is:
 
-    [bucket]/
-      [study id]/
+    s3://nao-mgs/
+      [studyId]/
          raw/
          cleaned/
          processed/
