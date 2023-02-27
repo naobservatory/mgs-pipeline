@@ -33,7 +33,7 @@ def determine_barcode(fname, handle, regex):
     if len(top_two) > 1:
         barcode_ntop, count_ntop = top_two[1]
 
-        if count_top/count_ntop < 15:
+        if count_top/count_ntop < 10:
             raise Exception(
                 "%s: most common barcode (%s, %s) appears only %.2fx as often as "
                 "next most common (%s, %s)." % (
