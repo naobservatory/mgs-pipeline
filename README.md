@@ -16,6 +16,14 @@ Questions we'll want it to answer include:
   * What are the relative abundances of species of interest?
   * What sort of cross-sample variation is there?
 
+## Status
+
+As of 2023-02-27 handles the Rothman 2021 data up through cleaning.  Todo:
+
+* Quality control
+* Species classification
+* Other data sources
+
 ## Design
 
 ### Data storage
