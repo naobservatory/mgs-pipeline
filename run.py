@@ -178,8 +178,7 @@ def interpret(args):
             continue
 
          compressed_output = output + ".gz"
-         if compressed_output in existing_outputs:
-            continue
+         if compressed_output in existing_outputs: continue
 
          with tempfile.TemporaryDirectory() as workdir:
             print("Handling %s in %s" % (", ".join(inputs), workdir))
@@ -205,10 +204,44 @@ def interpret(args):
                "aws", "s3", "cp", compressed_output, "%s/%s/processed/" % (
                   S3_BUCKET, args.study)])
 
+def viruscount(args):
+   available_inputs = set(
+      ls_s3_dir("%s/%s/processed/" % (S3_BUCKET, args.study)))
+   existing_outputs = set(
+      ls_s3_dir("%s/%s/viruscounts/" % (S3_BUCKET, args.study)))
+
+   for accession in get_accessions(args):
+      output = "%s.viruscounts.tsv" % accession
+      compressed_output = output + ".gz"
+      if compressed_output in existing_outputs: continue
+
+      with tempfile.TemporaryDirectory() as workdir:
+         print("Handling %s in %s" % (accession, workdir))
+         os.chdir(workdir)
+
+         for input_fname in available_inputs:
+            if not input_fname.startswith(accession): continue
+
+            subprocess.check_call([
+               "aws", "s3", "cp", "%s/%s/processed/%s" % (
+                  S3_BUCKET, args.study, input_fname), input_fname])
+
+         subprocess.check_call(
+            "cat %s.*.kraken2.tsv.gz | "
+            "gunzip | "
+            "grep -i virus | "
+            "awk -F'\t' '{print $3}' | "
+            "sort | uniq -c | sort -n | "
+            "while read n rest ; do echo -e \"$n\\t$rest\" ; done | "
+            "aws s3 cp - %s/%s/viruscounts/%s.viruscounts.tsv" % (
+               accession, S3_BUCKET, args.study, accession),
+            shell=True)
+
 STAGES_ORDERED = []
 STAGE_FNS = {}
 for stage_name, stage_fn in [("clean", clean),
-                             ("interpret", interpret)]:
+                             ("interpret", interpret),
+                             ("viruscount", viruscount)]:
    STAGES_ORDERED.append(stage_name)
    STAGE_FNS[stage_name] = stage_fn
 
