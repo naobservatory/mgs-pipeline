@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import os
+import glob
 import json
 import time
 import atexit
@@ -41,10 +42,8 @@ def get_adapters(args, adapter_dir):
       pass
 
    for accession in get_accessions(args):
-      in1="%s_1.fastq.gz" % accession
-      in2="%s_2.fastq.gz" % accession
-
-      for in_fname, direction in [(in1, "fwd"), (in2, "rev")]:
+      for in_fname, direction in [("in1.fastq.gz", "fwd"),
+                                  ("in2.fastq.gz", "rev")]:
          out_fname = os.path.join(
             adapter_dir, "%s.%s" % (accession, direction))
          if (os.path.exists(out_fname) and
@@ -106,15 +105,15 @@ def clean(args):
          print("Handling %s in %s" % (accession, workdir))
          os.chdir(workdir)
 
-         in1="%s_1.fastq.gz" % accession
-         in2="%s_2.fastq.gz" % accession
+         in1="in1.fastq.gz"
+         in2="in2.fastq.gz"
 
          subprocess.check_call([
-            "aws", "s3", "cp", "%s/%s/raw/%s" % (
-               S3_BUCKET, args.study, in1), "."])
+            "aws", "s3", "cp", "%s/%s/raw/%s_1.fastq.gz" % (
+               S3_BUCKET, args.study, accession), in1])
          subprocess.check_call([
-            "aws", "s3", "cp", "%s/%s/raw/%s" % (
-               S3_BUCKET, args.study, in2), "."])
+            "aws", "s3", "cp", "%s/%s/raw/%s_2.fastq.gz" % (
+               S3_BUCKET, args.study, accession), in2])
 
          with open(os.path.join(adapter_dir, "%s.fwd" % accession)) as inf:
             adapter1 = inf.read().strip()
@@ -129,15 +128,11 @@ def clean(args):
             "--trimns",
             "--trimqualities",
             "--collapse",
-            "--interleaved-output",
             "--adapter1", adapter1,
             "--adapter2", adapter2,
          ])
 
-         for output_suffix  in [
-               "collapsed", "collapsed.truncated", "discarded",
-               "paired.truncated", "singleton.truncated"]:
-            output = "%s.%s" % (accession, output_suffix)
+         for output in glob.glob("%s.*" % accession):
             subprocess.check_call(["gzip", output])
             output = output + ".gz"
 
