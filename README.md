@@ -18,11 +18,12 @@ Questions we'll want it to answer include:
 
 ## Status
 
-As of 2023-02-27 handles the Rothman 2021 data up through cleaning.  Todo:
+As of 2023-03-01 handles the Rothman 2021 data up through species
+identification.  Todo:
 
 * Quality control
-* Species classification
 * Other data sources
+* Processing species identification
 
 ## Design
 
