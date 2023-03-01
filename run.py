@@ -89,6 +89,21 @@ def exists_s3_prefix(s3_path):
 
       raise # any other exit code means something else is wrong
 
+def ls_s3_dir(s3_dir, min_size=0):
+   try:
+      cmd_out = subprocess.check_output(["aws", "s3", "ls", s3_dir])
+   except subprocess.CalledProcessError as e:
+      if e.returncode == 1:
+         return [] # exit code 1 if absent or empty
+      raise # any other exit code means something is wrong
+
+   for line in cmd_out.split(b"\n"):
+      if not line.strip():
+         continue
+      date, time, size, fname = line.split()
+      if int(size) < min_size: continue
+      yield fname.decode('utf-8')
+
 def clean(args):
    if not study_config(args)["is_paired_end"]:
       raise Exception("Only paired end sequencing currently supported")
@@ -140,15 +155,83 @@ def clean(args):
                "aws", "s3", "cp", output, "%s/%s/cleaned/" % (
                   S3_BUCKET, args.study)])
 
+def interpret(args):
+   available_inputs = set(
+      ls_s3_dir("%s/%s/cleaned/" % (S3_BUCKET, args.study),
+                # tiny files are empty; ignore them
+                min_size=100))
+   existing_outputs = set(
+      ls_s3_dir("%s/%s/processed/" % (S3_BUCKET, args.study)))
+
+   for accession in get_accessions(args):
+      for potential_input in available_inputs:
+         if not potential_input.startswith(accession): continue
+         if ".settings." in potential_input: continue
+
+         output = potential_input.replace(".gz", ".kraken2.tsv")
+         inputs = [potential_input]
+         if ".pair1." in output:
+            output = output.replace(".pair1.", ".")
+            inputs.append(potential_input.replace(".pair1.", ".pair2."))
+         elif ".pair2" in output:
+            # We handle pair1 and pair2 together.
+            continue
+
+         compressed_output = output + ".gz"
+         if compressed_output in existing_outputs:
+            continue
+
+         with tempfile.TemporaryDirectory() as workdir:
+            print("Handling %s in %s" % (", ".join(inputs), workdir))
+            os.chdir(workdir)
+
+            for input_fname in inputs:
+               subprocess.check_call([
+                  "aws", "s3", "cp", "%s/%s/cleaned/%s" % (
+                     S3_BUCKET, args.study, input_fname), input_fname])
+
+            kraken_cmd = [
+               "/home/ec2-user/kraken2-install/kraken2",
+               "--db", "/home/ec2-user/kraken-db/",
+               "--use-names",
+               "--output", output]
+            if len(inputs) > 1:
+               kraken_cmd.append("--paired")
+            kraken_cmd.extend(inputs)
+
+            subprocess.check_call(kraken_cmd)
+            subprocess.check_call(["gzip", output])
+            subprocess.check_call([
+               "aws", "s3", "cp", compressed_output, "%s/%s/processed/" % (
+                  S3_BUCKET, args.study)])
+
+STAGES_ORDERED = []
+STAGE_FNS = {}
+for stage_name, stage_fn in [("clean", clean),
+                             ("interpret", interpret)]:
+   STAGES_ORDERED.append(stage_name)
+   STAGE_FNS[stage_name] = stage_fn
+
 def start():
    parser = argparse.ArgumentParser(
       description='Run the Metagenomic Sequencing Pipeline')
    parser.add_argument(
-      'study', help='The ID of the study to process')
+      '--study', help='The ID of the study to process')
+   parser.add_argument(
+      '--stages',
+      default=",".join(STAGES_ORDERED),
+      help='Comma-separated list of stages to run.  Allowed stages: %s' % (
+         ", ".join(repr(x) for x in STAGES_ORDERED)))
 
    args = parser.parse_args()
+   selected_stages = args.stages.split(",")
+   for selected_stage in selected_stages:
+      if selected_stage not in STAGE_FNS:
+         raise Exception("Unknown stage %r" % selected_stage)
 
-   clean(args)
+   for stage in STAGES_ORDERED:
+      if stage in selected_stages:
+         STAGE_FNS[stage](args)
 
 if __name__ == "__main__":
    start()
