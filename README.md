@@ -84,6 +84,20 @@ When we do want to build our own DB kraken2-build has good docs.
 
 ## Dependencies
 
+### AdapterRemoval2
+
+Visit https://github.com/MikkelSchubert/adapterremoval/ to get the latest
+version number, and then:
+
+```
+wget -O adapterremoval-2.3.1.tar.gz \
+     https://github.com/MikkelSchubert/adapterremoval/archive/v2.3.1.tar.gz
+tar xvzf adapterremoval-2.3.1.tar.gz
+cd adapterremoval-2.3.1
+make
+sudo make install
+```
+
 ### Kraken
 
 #### Install
