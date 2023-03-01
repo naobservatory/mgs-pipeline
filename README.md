@@ -79,3 +79,30 @@ Kraken to assign taxonomic identifiers to reads, and Bracken to estimate
 per-species relative abundance.  We'll may need to build our own database or
 extend an existing one to ensure we have the level of coverage we need for
 human viruses.
+
+When we do want to build our own DB kraken2-build has good docs.
+
+## Dependencies
+
+### Kraken
+
+#### Install
+
+```
+git clone git@github.com:DerrickWood/kraken2.git
+cd kraken2/
+./install_kraken2.sh ~/kraken2-install
+```
+
+#### Set up DB
+
+For now I'm using the Standard pre-built DB, with a 16GB cap.  Longer term what
+we want depends on how much memory we're ok using; full Standard doesn't quite
+fit on a machine with 64GB of RAM.
+
+```
+mkdir ~/kraken-db
+cd ~/kraken-db
+# avoids needing 2x the storage
+aws s3 cp s3://genome-idx/kraken/k2_standard_16gb_20221209.tar.gz - | tar -xvz
+```
