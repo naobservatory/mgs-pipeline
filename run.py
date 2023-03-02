@@ -208,12 +208,14 @@ def viruscount(args):
    available_inputs = set(
       ls_s3_dir("%s/%s/processed/" % (S3_BUCKET, args.study)))
    existing_outputs = set(
-      ls_s3_dir("%s/%s/viruscounts/" % (S3_BUCKET, args.study)))
+      ls_s3_dir("%s/%s/viruscounts/" % (S3_BUCKET, args.study),
+                # empty file outputs mean something went wrong in an earlier
+                # iteration, so let's try again.
+                min_size=1))
 
    for accession in get_accessions(args):
       output = "%s.viruscounts.tsv" % accession
-      compressed_output = output + ".gz"
-      if compressed_output in existing_outputs: continue
+      if output in existing_outputs: continue
 
       with tempfile.TemporaryDirectory() as workdir:
          print("Handling %s in %s" % (accession, workdir))
