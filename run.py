@@ -135,6 +135,7 @@ def clean(args):
          ])
 
          for output in glob.glob("%s.*" % accession):
+            # TODO: this could be streaming
             subprocess.check_call(["gzip", output])
             output = output + ".gz"
 
