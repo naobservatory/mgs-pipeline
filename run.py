@@ -9,16 +9,8 @@ import argparse
 import tempfile
 import subprocess
 
-MAX_PARALLEL=32
-
 S3_BUCKET="s3://nao-mgs"
 THISDIR=os.path.abspath(os.path.dirname(__file__))
-
-running_subprocesses = set()
-def kill_subprocesses():
-   for process in running_subprocesses:
-      process.kill()
-atexit.register(kill_subprocesses)
 
 def relative_fname(fname):
    return os.path.join(THISDIR, fname)
@@ -27,6 +19,9 @@ def get_metadata_dir(args):
    return relative_fname("studies/%s/metadata" % args.study)
 
 def get_accessions(args):
+   if args.accession:
+      return [args.accession]
+
    with open(os.path.join(get_metadata_dir(args), "metadata.tsv")) as inf:
       return [line.split("\t")[0]
               for line in inf]
@@ -34,49 +29,6 @@ def get_accessions(args):
 def study_config(args):
    with open(os.path.join(get_metadata_dir(args), "study.json")) as inf:
       return json.load(inf)
-
-def get_adapters(args, adapter_dir):
-   try:
-      os.mkdir(adapter_dir)
-   except FileExistsError:
-      pass
-
-   for accession in get_accessions(args):
-      for in_fname, direction in [("in1.fastq.gz", "fwd"),
-                                  ("in2.fastq.gz", "rev")]:
-         out_fname = os.path.join(
-            adapter_dir, "%s.%s" % (accession, direction))
-         if (os.path.exists(out_fname) and
-             os.path.getsize(out_fname) > 0): continue
-
-         # Run at most MAX_PARALLEL simultaneous processes.
-         while len(running_subprocesses) >= MAX_PARALLEL:
-            for process in running_subprocesses:
-               if process.poll() is not None:
-                  running_subprocesses.remove(process)
-                  break
-            else:
-               time.sleep(0.1)
-
-         running_subprocesses.add(subprocess.Popen(
-            "aws s3 cp '%s/%s/raw/%s' - | "
-            "%s/determine_adapter.py /dev/stdin %s > "
-            "%s" % (
-               S3_BUCKET, args.study, in_fname,
-               THISDIR, direction,
-               out_fname),
-            # All of these arguments are trusted and doing this
-            # manually with Popen is really painful.
-            shell=True))
-
-   # Wait for them all to finish.
-   while running_subprocesses:
-      for process in running_subprocesses:
-         if process.poll() is not None:
-            running_subprocesses.remove(process)
-            break
-      else:
-         time.sleep(0.1)
 
 def exists_s3_prefix(s3_path):
    try:
@@ -104,12 +56,39 @@ def ls_s3_dir(s3_dir, min_size=0):
       if int(size) < min_size: continue
       yield fname.decode('utf-8')
 
+def get_adapters(in1, in2, adapter1_fname, adapter2_fname):
+   output = subprocess.check_output([
+      "AdapterRemoval",
+      "--file1", in1,
+      "--file2", in2,
+      "--identify-adapters",
+      "--threads", "4"])
+   output = output.decode("utf-8")
+
+   for line in output.split("\n"):
+      if "--adapter1:" in line:
+         adapter1 = line.replace("--adapter1:", "").strip()
+      elif "--adapter2:" in line:
+         adapter2 = line.replace("--adapter2:", "").strip()
+
+   for adapter, fname in [[adapter1, adapter1_fname],
+                          [adapter2, adapter2_fname]]:
+      if not all(x in 'ACTGN' for x in adapter) or len(adapter) < 20:
+         print(output)
+         raise Exception("Invalid adapter %r for %r and %r" % (
+            adapter, in1, in2))
+      with open(fname, 'w') as outf:
+         outf.write(adapter)
+
 def clean(args):
    if not study_config(args)["is_paired_end"]:
       raise Exception("Only paired end sequencing currently supported")
 
    adapter_dir = os.path.join(THISDIR, "studies", args.study, "adapters")
-   get_adapters(args, adapter_dir)
+   try:
+      os.mkdir(adapter_dir)
+   except FileExistsError:
+      pass
 
    for accession in get_accessions(args):
       if exists_s3_prefix("%s/%s/cleaned/%s" % (
@@ -130,9 +109,16 @@ def clean(args):
             "aws", "s3", "cp", "%s/%s/raw/%s_2.fastq.gz" % (
                S3_BUCKET, args.study, accession), in2])
 
-         with open(os.path.join(adapter_dir, "%s.fwd" % accession)) as inf:
+         adapter1_fname = os.path.join(adapter_dir, "%s.fwd" % accession)
+         adapter2_fname = os.path.join(adapter_dir, "%s.rev" % accession)
+
+         if (not os.path.exists(adapter1_fname) or
+             not os.path.exists(adapter2_fname)):
+            get_adapters(in1, in2, adapter1_fname, adapter2_fname)
+
+         with open(adapter1_fname) as inf:
             adapter1 = inf.read().strip()
-         with open(os.path.join(adapter_dir, "%s.rev" % accession)) as inf:
+         with open(adapter2_fname) as inf:
             adapter2 = inf.read().strip()
 
          subprocess.check_call([
@@ -143,6 +129,7 @@ def clean(args):
             "--trimns",
             "--trimqualities",
             "--collapse",
+            "--threads", "4",
             "--adapter1", adapter1,
             "--adapter2", adapter2,
          ])
@@ -252,6 +239,10 @@ def start():
       description='Run the Metagenomic Sequencing Pipeline')
    parser.add_argument(
       '--study', help='The ID of the study to process')
+   parser.add_argument(
+      '--accession', default='',
+      help='The ID of the sample to process.  Leave blank for all samples.')
+
    parser.add_argument(
       '--stages',
       default=",".join(STAGES_ORDERED),
