@@ -23,7 +23,7 @@ def get_accessions(args):
       return [args.accession]
 
    with open(os.path.join(get_metadata_dir(args), "metadata.tsv")) as inf:
-      return [line.split("\t")[0]
+      return [line.strip().split("\t")[0]
               for line in inf]
 
 def study_config(args):
