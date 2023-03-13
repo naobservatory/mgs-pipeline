@@ -8,6 +8,8 @@ import atexit
 import argparse
 import tempfile
 import subprocess
+from collections import Counter
+from collections import defaultdict
 
 S3_BUCKET="s3://nao-mgs"
 THISDIR=os.path.abspath(os.path.dirname(__file__))
@@ -52,7 +54,13 @@ def ls_s3_dir(s3_dir, min_size=0):
    for line in cmd_out.split(b"\n"):
       if not line.strip():
          continue
-      date, time, size, fname = line.split()
+      try:
+         date, time, size, fname = line.split()
+      except ValueError:
+         print(line)
+         print(s3_dir)
+         raise
+
       if int(size) < min_size: continue
       yield fname.decode('utf-8')
 
@@ -227,6 +235,61 @@ def viruscount(args):
                accession, S3_BUCKET, args.study, accession),
             shell=True)
 
+def print_status(args):
+   if args.study:
+      studies = [args.study]
+   else:
+      studies = [
+         os.path.basename(x)
+         for x in glob.glob(os.path.join(THISDIR, "studies", "*"))]
+
+   # Name -> Study Accession -> Stage -> N/M
+   info = defaultdict(dict)
+
+   stages = ["raw", "cleaned", "processed", "viruscounts"]
+
+   for study in studies:
+      metadata_dir = os.path.join(THISDIR, "studies", study, "metadata")
+      if not os.path.exists(metadata_dir):
+         continue
+
+      with open(os.path.join(metadata_dir, "name.txt")) as inf:
+         name = inf.read().strip()
+
+      info[name][study] = {}
+
+      with open(os.path.join(metadata_dir, "metadata.tsv")) as inf:
+         accessions = [x.strip().split("\t")[0] for x in inf]
+
+      for accession in accessions:
+         info[name][study][accession] = Counter()
+
+      s3_study_dir = "%s/%s" % (S3_BUCKET, study)
+
+      for stage in stages:
+         for fname in ls_s3_dir("%s/%s/" % (s3_study_dir, stage)):
+            for accession in accessions:
+               if fname.startswith(accession):
+                  info[name][study][accession][stage] += 1
+
+
+   for name in sorted(info):
+      print(name)
+      for study in sorted(info[name]):
+         row = ["  " + study]
+         totals = Counter()
+
+         for accession in info[name][study]:
+            for stage in stages:
+               if info[name][study][accession][stage]:
+                  totals[stage] += 1
+
+         for stage in stages:
+            row.append(str(totals[stage]))
+
+         print("\t".join(row))
+
+
 STAGES_ORDERED = []
 STAGE_FNS = {}
 for stage_name, stage_fn in [("clean", clean),
@@ -238,11 +301,16 @@ for stage_name, stage_fn in [("clean", clean),
 def start():
    parser = argparse.ArgumentParser(
       description='Run the Metagenomic Sequencing Pipeline')
+
    parser.add_argument(
       '--study', help='The ID of the study to process')
    parser.add_argument(
       '--accession', default='',
       help='The ID of the sample to process.  Leave blank for all samples.')
+
+   parser.add_argument(
+      "--status", action='store_true',
+      help='Instead of running anything, just print the status of studies')
 
    parser.add_argument(
       '--stages',
@@ -251,6 +319,11 @@ def start():
          ", ".join(repr(x) for x in STAGES_ORDERED)))
 
    args = parser.parse_args()
+
+   if args.status:
+      print_status(args)
+      return
+
    selected_stages = args.stages.split(",")
    for selected_stage in selected_stages:
       if selected_stage not in STAGE_FNS:
