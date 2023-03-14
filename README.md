@@ -29,7 +29,7 @@ identification.  Todo:
 
 ### Data storage
 
-At each stage data will be stored in an S3 bucket.  The structure is:
+At each stage data will be stored in an S3 bucket on AWS.  The structure is:
 
     s3://nao-mgs/
       [studyId]/
@@ -37,7 +37,7 @@ At each stage data will be stored in an S3 bucket.  The structure is:
          cleaned/
          processed/
 
-In cases where the data comes from the SRA, the study ID is the SRA accession.
+In cases where the data comes from the [Sequencing Read Archive](https://www.ncbi.nlm.nih.gov/sra) (SRA), the study ID is the SRA accession.
 For example, "PRJNA729801" for the Rothman 2021 data.
 
 Files under `raw/` have the contents as we received them, but have been renamed
@@ -81,7 +81,7 @@ per-species relative abundance.  We'll may need to build our own database or
 extend an existing one to ensure we have the level of coverage we need for
 human viruses.
 
-When we do want to build our own DB kraken2-build has good docs.
+When we do want to build our own database kraken2-build has good [documentation here](https://github.com/DerrickWood/kraken2/blob/master/docs/MANUAL.markdown#custom-databases).
 
 ## Dependencies
 
@@ -109,9 +109,9 @@ cd kraken2/
 ./install_kraken2.sh ~/kraken2-install
 ```
 
-#### Set up DB
+#### Set up Kraken database
 
-For now I'm using the Standard pre-built DB, with a 16GB cap.  Longer term what
+For now I'm using the Standard pre-built database (see [documentation](https://github.com/DerrickWood/kraken2/blob/master/docs/MANUAL.markdown#kraken-2-databases)), with a 16GB cap.  Longer term what
 we want depends on how much memory we're ok using; full Standard doesn't quite
 fit on a machine with 64GB of RAM.
 
