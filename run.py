@@ -213,13 +213,18 @@ def viruscount(args):
       output = "%s.viruscounts.tsv" % accession
       if output in existing_outputs: continue
 
+      inputs = [
+         input_fname
+         for input_fname in available_inputs
+         if input_fname.startswith(accession)]
+      if not inputs:
+         continue
+
       with tempfile.TemporaryDirectory() as workdir:
          print("Handling %s in %s" % (accession, workdir))
          os.chdir(workdir)
 
-         for input_fname in available_inputs:
-            if not input_fname.startswith(accession): continue
-
+         for input_fname in inputs:
             subprocess.check_call([
                "aws", "s3", "cp", "%s/%s/processed/%s" % (
                   S3_BUCKET, args.study, input_fname), input_fname])
