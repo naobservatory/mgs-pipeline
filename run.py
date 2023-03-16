@@ -151,20 +151,15 @@ def clean(args):
                "aws", "s3", "cp", output, "%s/%s/cleaned/" % (
                   S3_BUCKET, args.study)])
 
-def get_in_and_out(args, indir, outdir, min_in=1, min_out=1):
-   available_inputs = set(
-      ls_s3_dir("%s/%s/%s/" % (S3_BUCKET, args.study, indir),
-                min_size=min_in))
-   existing_outputs = set(
-      ls_s3_dir("%s/%s/%s/" % (S3_BUCKET, args.study, outdir),
-                min_size=min_out))
-   return available_inputs, existing_outputs
+def get_files(args, dirname, min_size=1):
+   return set(ls_s3_dir("%s/%s/%s/" % (S3_BUCKET, args.study, dirname),
+                        min_size=min_size))
 
 def interpret(args):
-   available_inputs, existing_outputs = get_in_and_out(
-      args, "cleaned", "processed",
-      # tiny files are empty; ignore them
-      min_in=100)
+   available_inputs = get_files(args, "cleaned",
+                                # tiny files are empty; ignore them
+                                min_size=100)
+   existing_outputs = get_files(args, "processed")
 
    for accession in get_accessions(args):
       for potential_input in available_inputs:
@@ -208,8 +203,8 @@ def interpret(args):
                   S3_BUCKET, args.study)])
 
 def viruscount(args):
-   available_inputs, existing_outputs = get_in_and_out(
-      args, "processed", "viruscounts")
+   available_inputs = get_files(args, "processed")
+   existing_outputs = get_files(args, "viruscounts")
 
    for accession in get_accessions(args):
       output = "%s.viruscounts.tsv" % accession
@@ -243,8 +238,8 @@ def viruscount(args):
             shell=True)
 
 def qc(args):
-   available_inputs, existing_outputs = get_in_and_out(
-      args, "viruscounts", "qc")
+   available_inputs = get_files(args, "viruscounts")
+   existing_outputs = get_files(args, "qc")
 
    for accession in get_accessions(args):
       output = "%s.qc.json" % accession
