@@ -14,6 +14,18 @@ from collections import defaultdict
 S3_BUCKET="s3://nao-mgs"
 THISDIR=os.path.abspath(os.path.dirname(__file__))
 
+def check_call_shell(cmd):
+   # Unlike subprocess.check_call, if any member of the pipeline fails then
+   # this fails too.
+   subprocess.check_call([
+      'bash', '-c', 'set -o  pipefail; %s' % cmd])
+
+def check_output_shell(cmd):
+   # Unlike subprocess.check_output, if any member of the pipeline fails then
+   # this fails too.
+   return subprocess.check_output([
+      'bash', '-c', 'set -o  pipefail; %s' % cmd])
+
 def relative_fname(fname):
    return os.path.join(THISDIR, fname)
 
@@ -45,7 +57,7 @@ def exists_s3_prefix(s3_path):
 
 def ls_s3_dir(s3_dir, min_size=0):
    try:
-      cmd_out = subprocess.check_output(["aws", "s3", "ls", s3_dir])
+      cmd_out = subprocess.wcheck_output(["aws", "s3", "ls", s3_dir])
    except subprocess.CalledProcessError as e:
       if e.returncode == 1:
          return [] # exit code 1 if absent or empty
@@ -226,7 +238,7 @@ def viruscount(args):
                "aws", "s3", "cp", "%s/%s/processed/%s" % (
                   S3_BUCKET, args.study, input_fname), input_fname])
 
-         subprocess.check_call(
+         check_call_shell(
             "cat %s.*.kraken2.tsv.gz | "
             "gunzip | "
             "grep -i virus | "
@@ -234,21 +246,50 @@ def viruscount(args):
             "sort | uniq -c | sort -n | "
             "while read n rest ; do echo -e \"$n\\t$rest\" ; done | "
             "aws s3 cp - %s/%s/viruscounts/%s.viruscounts.tsv" % (
-               accession, S3_BUCKET, args.study, accession),
-            shell=True)
+               accession, S3_BUCKET, args.study, accession))
+
+def qc_reads(args, accession, available_raw, available_cleaned,
+             available_processed, available_viruscounts):
+   in1_fname = accession + "_1.fastq.gz"
+   if in1_fname not in available_raw:
+      return None
+
+   return int(check_output_shell(
+      "aws s3 cp s3://%s/%s/raw/%s - | gunzip | grep ^@ | wc -l" % (
+         S3_BUCKET, args.study, in1_fname)))
 
 def qc(args):
-   available_inputs = get_files(args, "viruscounts")
-   existing_outputs = get_files(args, "qc")
+   available_raw = get_files(args, "raw")
+   available_cleaned = get_files(args, "cleaned")
+   available_processed = get_files(args, "processed")
+   available_viruscounts = get_files(args, "viruscounts")
+
+   qc_dir = os.path.join(THISDIR, "studies", args.study, "qc")
+   if not os.path.exists(qc_dir):
+      os.mkdir(qc_dir)
 
    for accession in get_accessions(args):
-      output = "%s.qc.json" % accession
-      if output in existing_outputs: continue
+      qc_fname = os.path.join(qc_dir, "%s.json" % accession)
+      qc_info = {}
+      if os.path.exists(qc_fname):
+         with open(qc_fname) as inf:
+            qc_info = json.load(inf)
 
-      input_fname = "%s.viruscounts.tsv" % accession
-      if input_fname not in available_inputs: continue
-
-      print("Would qc %s into %s" % (input_fname, output))
+      for qc_key, qc_fn in [
+            ("reads", qc_reads),
+      ]:
+         if qc_key not in qc_info:
+            result = qc_fn(
+               args,
+               accession,
+               available_raw,
+               available_cleaned,
+               available_processed,
+               available_viruscounts)
+            if result is not None:
+               qc_info[qc_key] = result
+               with open(qc_fname, "w") as outf:
+                  json.dump(qc_info, outf, indent=2)
 
 def print_status(args):
    if args.study:
