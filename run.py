@@ -245,7 +245,8 @@ def viruscount(args):
             "aws s3 cp - %s/%s/viruscounts/%s.viruscounts.tsv" % (
                accession, S3_BUCKET, args.study, accession))
 
-def qc_reads(args, accession, available_raw, available_cleaned,
+def qc_reads(args, accession, qc_info,
+             available_raw, available_cleaned,
              available_processed, available_viruscounts):
    in1_fname = accession + "_1.fastq.gz"
    if in1_fname not in available_raw:
@@ -254,6 +255,46 @@ def qc_reads(args, accession, available_raw, available_cleaned,
    return int(check_output_shell(
       "aws s3 cp %s/%s/raw/%s - | gunzip | grep ^@ | wc -l" % (
          S3_BUCKET, args.study, in1_fname)))
+
+def qc_cleaned_reads(args, accession, qc_info,
+                     available_raw, available_cleaned,
+                     available_processed, available_viruscounts):
+   counts = {}
+   for fname in available_cleaned:
+      if fname.startswith(accession):
+         slug = fname.replace("%s." % accession, "").replace(".gz", "")
+         if slug == "settings": continue
+         counts[slug] = int(check_output_shell(
+            "aws s3 cp %s/%s/cleaned/%s - | gunzip | grep ^@ | wc -l" % (
+               S3_BUCKET, args.study, fname)))
+   if not counts:
+      return None
+
+   return counts
+
+def qc_cleaning_summary(args, accession, qc_info,
+                        available_raw, available_cleaned,
+                        available_processed,
+                        available_viruscounts):
+   if "reads" not in qc_info or "cleaned_reads" not in qc_info:
+      return None
+
+   cleaned_count = sum(
+      count
+      for (slug, count) in qc_info["cleaned_reads"].items()
+      if not slug.startswith("pair2"))
+
+   collapsed_count = sum(
+      count
+      for (slug, count) in qc_info["cleaned_reads"].items()
+      if slug.startswith("collapsed"))
+
+   summary = {}
+   summary["dropped"] = qc_info["reads"] - cleaned_count
+   summary["collapsed_fraction"] = collapsed_count / qc_info["reads"]
+
+   return summary
+
 
 def qc(args):
    available_raw = get_files(args, "raw")
@@ -274,11 +315,14 @@ def qc(args):
 
       for qc_key, qc_fn in [
             ("reads", qc_reads),
+            ("cleaned_reads", qc_cleaned_reads),
+            ("cleaning_summary", qc_cleaning_summary),
       ]:
          if qc_key not in qc_info:
             result = qc_fn(
                args,
                accession,
+               qc_info,
                available_raw,
                available_cleaned,
                available_processed,
