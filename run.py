@@ -252,7 +252,7 @@ def qc_reads(args, accession, available_raw, available_cleaned,
       return None
 
    return int(check_output_shell(
-      "aws s3 cp s3://%s/%s/raw/%s - | gunzip | grep ^@ | wc -l" % (
+      "aws s3 cp %s/%s/raw/%s - | gunzip | grep ^@ | wc -l" % (
          S3_BUCKET, args.study, in1_fname)))
 
 def qc(args):
@@ -287,6 +287,7 @@ def qc(args):
                qc_info[qc_key] = result
                with open(qc_fname, "w") as outf:
                   json.dump(qc_info, outf, indent=2)
+                  outf.write("\n")
 
 def print_status(args):
    if args.study:
