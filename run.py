@@ -2,6 +2,7 @@
 
 import os
 import glob
+import gzip
 import json
 import time
 import atexit
@@ -11,6 +12,7 @@ import contextlib
 import subprocess
 from collections import Counter
 from collections import defaultdict
+from Bio.SeqIO.QualityIO import FastqGeneralIterator
 
 S3_BUCKET="s3://nao-mgs"
 THISDIR=os.path.abspath(os.path.dirname(__file__))
@@ -305,8 +307,28 @@ def qc_post_cleaning(args, accession, qc_info,
    if "cleaned_reads" not in qc_info:
       return None
 
+   summary = {
+      "lengths": Counter(),
+      "qualities": defaultdict(list),
+   }
+
    with tempdir(accession) as workdir:
-      pass
+      for fname in available_cleaned:
+         if fname.startswith(accession):
+            slug = fname.replace("%s." % accession, "").replace(".gz", "")
+            subprocess.check_call([
+               "aws", "s3", "cp", "%s/%s/cleaned/%s" % (
+                  S3_BUCKET, args.study, fname),fname])
+            with gzip.open(fname, "rt") as inf:
+               for (title, sequence, quality) in FastqGeneralIterator(inf):
+                  if "collapsed" in slug:
+                     summary["lengths"][len(sequence)] += 1
+                  for pos, qval in enumerate(quality):
+                     if pos > len(summary["qualities"][slug]) - 1:
+                        summary["qualities"][slug].append(Counter())
+                     summary["qualities"][slug][pos][qval] += 1
+
+   return summary
 
 def qc(args):
    available_raw = get_files(args, "raw")
