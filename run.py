@@ -152,13 +152,10 @@ def clean(args):
             "--threads", "4",
             "--adapter1", adapter1,
             "--adapter2", adapter2,
+            "--gzip"
          ])
 
          for output in glob.glob("%s.*" % accession):
-            # TODO: this could be streaming
-            subprocess.check_call(["gzip", output])
-            output = output + ".gz"
-
             subprocess.check_call([
                "aws", "s3", "cp", output, "%s/%s/cleaned/" % (
                   S3_BUCKET, args.study)])
