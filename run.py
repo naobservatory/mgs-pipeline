@@ -316,6 +316,7 @@ def qc_post_cleaning(args, accession, qc_info,
       for fname in available_cleaned:
          if fname.startswith(accession):
             slug = fname.replace("%s." % accession, "").replace(".gz", "")
+            if "settings" in slug: continue
             subprocess.check_call([
                "aws", "s3", "cp", "%s/%s/cleaned/%s" % (
                   S3_BUCKET, args.study, fname),fname])
