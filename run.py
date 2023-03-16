@@ -366,7 +366,7 @@ def qc(args):
             if result is not None:
                qc_info[qc_key] = result
                with open(qc_fname, "w") as outf:
-                  json.dump(qc_info, outf, indent=2)
+                  json.dump(qc_info, outf, indent=2, sort_keys=True)
                   outf.write("\n")
 
 def print_status(args):
