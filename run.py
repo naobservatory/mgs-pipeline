@@ -57,7 +57,7 @@ def exists_s3_prefix(s3_path):
 
 def ls_s3_dir(s3_dir, min_size=0):
    try:
-      cmd_out = subprocess.wcheck_output(["aws", "s3", "ls", s3_dir])
+      cmd_out = subprocess.check_output(["aws", "s3", "ls", s3_dir])
    except subprocess.CalledProcessError as e:
       if e.returncode == 1:
          return [] # exit code 1 if absent or empty
