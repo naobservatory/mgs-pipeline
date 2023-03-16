@@ -151,13 +151,20 @@ def clean(args):
                "aws", "s3", "cp", output, "%s/%s/cleaned/" % (
                   S3_BUCKET, args.study)])
 
-def interpret(args):
+def get_in_and_out(args, indir, outdir, min_in=1, min_out=1):
    available_inputs = set(
-      ls_s3_dir("%s/%s/cleaned/" % (S3_BUCKET, args.study),
-                # tiny files are empty; ignore them
-                min_size=100))
+      ls_s3_dir("%s/%s/%s/" % (S3_BUCKET, args.study, indir),
+                min_size=min_in))
    existing_outputs = set(
-      ls_s3_dir("%s/%s/processed/" % (S3_BUCKET, args.study)))
+      ls_s3_dir("%s/%s/%s/" % (S3_BUCKET, args.study, outdir),
+                min_size=min_out))
+   return available_inputs, existing_outputs
+
+def interpret(args):
+   available_inputs, existing_outputs = get_in_and_out(
+      args, "cleaned", "processed",
+      # tiny files are empty; ignore them
+      min_in=100)
 
    for accession in get_accessions(args):
       for potential_input in available_inputs:
@@ -201,13 +208,8 @@ def interpret(args):
                   S3_BUCKET, args.study)])
 
 def viruscount(args):
-   available_inputs = set(
-      ls_s3_dir("%s/%s/processed/" % (S3_BUCKET, args.study)))
-   existing_outputs = set(
-      ls_s3_dir("%s/%s/viruscounts/" % (S3_BUCKET, args.study),
-                # empty file outputs mean something went wrong in an earlier
-                # iteration, so let's try again.
-                min_size=1))
+   available_inputs, existing_outputs = get_in_and_out(
+      args, "processed", "viruscounts")
 
    for accession in get_accessions(args):
       output = "%s.viruscounts.tsv" % accession
@@ -239,6 +241,19 @@ def viruscount(args):
             "aws s3 cp - %s/%s/viruscounts/%s.viruscounts.tsv" % (
                accession, S3_BUCKET, args.study, accession),
             shell=True)
+
+def qc(args):
+   available_inputs, existing_outputs = get_in_and_out(
+      args, "viruscounts", "qc")
+
+   for accession in get_accessions(args):
+      output = "%s.qc.json" % accession
+      if output in existing_outputs: continue
+
+      input_fname = "%s.viruscounts.tsv" % accession
+      if input_fname not in available_inputs: continue
+
+      print("Would qc %s into %s" % (input_fname, output))
 
 def print_status(args):
    if args.study:
@@ -299,7 +314,8 @@ STAGES_ORDERED = []
 STAGE_FNS = {}
 for stage_name, stage_fn in [("clean", clean),
                              ("interpret", interpret),
-                             ("viruscount", viruscount)]:
+                             ("viruscount", viruscount),
+                             ("qc", qc)]:
    STAGES_ORDERED.append(stage_name)
    STAGE_FNS[stage_name] = stage_fn
 
