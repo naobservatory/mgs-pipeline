@@ -7,6 +7,7 @@ import time
 import atexit
 import argparse
 import tempfile
+import contextlib
 import subprocess
 from collections import Counter
 from collections import defaultdict
@@ -39,6 +40,17 @@ def get_accessions(args):
    with open(os.path.join(get_metadata_dir(args), "metadata.tsv")) as inf:
       return [line.strip().split("\t")[0]
               for line in inf]
+
+@contextlib.contextmanager
+def tempdir(msg):
+   olddir = os.getcwd()
+   with tempfile.TemporaryDirectory() as workdir:
+      os.chdir(workdir)
+      try:
+         print("Handling %s in %s" % (msg, workdir))
+         yield workdir
+      finally:
+         os.chdir(olddir)
 
 def study_config(args):
    with open(os.path.join(get_metadata_dir(args), "study.json")) as inf:
@@ -115,10 +127,7 @@ def clean(args):
             S3_BUCKET, args.study, accession)):
          continue
 
-      with tempfile.TemporaryDirectory() as workdir:
-         print("Handling %s in %s" % (accession, workdir))
-         os.chdir(workdir)
-
+      with tempdir(accession) as workdir:
          in1="in1.fastq.gz"
          in2="in2.fastq.gz"
 
@@ -187,10 +196,7 @@ def interpret(args):
          compressed_output = output + ".gz"
          if compressed_output in existing_outputs: continue
 
-         with tempfile.TemporaryDirectory() as workdir:
-            print("Handling %s in %s" % (", ".join(inputs), workdir))
-            os.chdir(workdir)
-
+         with tmpdir(", ".join(inputs)) as workdir:
             for input_fname in inputs:
                subprocess.check_call([
                   "aws", "s3", "cp", "%s/%s/cleaned/%s" % (
@@ -226,10 +232,7 @@ def viruscount(args):
       if not inputs:
          continue
 
-      with tempfile.TemporaryDirectory() as workdir:
-         print("Handling %s in %s" % (accession, workdir))
-         os.chdir(workdir)
-
+      with tempdir(accession) as workdir:
          for input_fname in inputs:
             subprocess.check_call([
                "aws", "s3", "cp", "%s/%s/processed/%s" % (
@@ -295,6 +298,15 @@ def qc_cleaning_summary(args, accession, qc_info,
 
    return summary
 
+def qc_post_cleaning(args, accession, qc_info,
+                     available_raw, available_cleaned,
+                     available_processed,
+                     available_viruscounts):
+   if "cleaned_reads" not in qc_info:
+      return None
+
+   with tempdir(accession) as workdir:
+      pass
 
 def qc(args):
    available_raw = get_files(args, "raw")
@@ -317,6 +329,7 @@ def qc(args):
             ("reads", qc_reads),
             ("cleaned_reads", qc_cleaned_reads),
             ("cleaning_summary", qc_cleaning_summary),
+            ("post_cleaning", qc_post_cleaning),
       ]:
          if qc_key not in qc_info:
             result = qc_fn(
