@@ -198,7 +198,7 @@ def interpret(args):
          compressed_output = output + ".gz"
          if compressed_output in existing_outputs: continue
 
-         with tmpdir(", ".join(inputs)) as workdir:
+         with tempdir(", ".join(inputs)) as workdir:
             for input_fname in inputs:
                subprocess.check_call([
                   "aws", "s3", "cp", "%s/%s/cleaned/%s" % (
