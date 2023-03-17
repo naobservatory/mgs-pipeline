@@ -10,6 +10,7 @@ import argparse
 import tempfile
 import contextlib
 import subprocess
+import numpy as np
 from collections import Counter
 from collections import defaultdict
 from Bio.SeqIO.QualityIO import FastqGeneralIterator
@@ -300,6 +301,19 @@ def qc_cleaning_summary(args, accession, qc_info,
 
    return summary
 
+def phred_to_q(phred_score):
+   return ord(phred_score) - ord('!')
+
+def average_quality(phred_counts):
+   xs = []
+   weights = []
+
+   for phred_score, count in phred_counts.items():
+      xs.append(phred_to_q(phred_score))
+      weights.append(count)
+
+   return round(np.average(xs, weights=weights))
+
 def qc_post_cleaning(args, accession, qc_info,
                      available_raw, available_cleaned,
                      available_processed,
@@ -307,15 +321,14 @@ def qc_post_cleaning(args, accession, qc_info,
    if "cleaned_reads" not in qc_info:
       return None
 
-   summary = {
-      "lengths": Counter(),
-      "qualities": defaultdict(list),
-   }
+   lengths = []
+   qualities = defaultdict(list)
 
    with tempdir(accession) as workdir:
       for fname in available_cleaned:
          if fname.startswith(accession):
             slug = fname.replace("%s." % accession, "").replace(".gz", "")
+            slug_raw_qualities = []
             if "settings" in slug: continue
             subprocess.check_call([
                "aws", "s3", "cp", "%s/%s/cleaned/%s" % (
@@ -323,17 +336,26 @@ def qc_post_cleaning(args, accession, qc_info,
             with gzip.open(fname, "rt") as inf:
                for (title, sequence, quality) in FastqGeneralIterator(inf):
                   if "collapsed" in slug:
-                     summary["lengths"][len(sequence)] += 1
-                  for pos, qval in enumerate(quality):
-                     if pos > len(summary["qualities"][slug]) - 1:
-                        summary["qualities"][slug].append(Counter())
-                     summary["qualities"][slug][pos][qval] += 1
+                     while len(sequence) > len(lengths) - 1:
+                        lengths.append(0)
+                     lengths[len(sequence)] += 1
 
-   return summary
+                  for pos, qval in enumerate(quality):
+                     if pos > len(slug_raw_qualities) - 1:
+                        slug_raw_qualities.append(Counter())
+                     slug_raw_qualities[pos][qval] += 1
+            qualities[slug] = [
+               average_quality(phred_counts)
+               for phred_counts in slug_raw_qualities]
+
+   return {
+      "lengths": lengths,
+      "qualities": qualities,
+   }
 
 def qc(args):
    available_raw = get_files(args, "raw")
-   available_cleaned = get_files(args, "cleaned")
+   available_cleaned = get_files(args, "cleaned", min_size=100)
    available_processed = get_files(args, "processed")
    available_viruscounts = get_files(args, "viruscounts")
 
