@@ -184,7 +184,7 @@ def interpret(args):
    for accession in get_accessions(args):
       for potential_input in available_inputs:
          if not potential_input.startswith(accession): continue
-         if ".settings." in potential_input: continue
+         if ".settings" in potential_input: continue
 
          output = potential_input.replace(".gz", ".kraken2.tsv")
          inputs = [potential_input]
