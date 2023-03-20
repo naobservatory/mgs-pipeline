@@ -25,6 +25,30 @@ identification.  Todo:
 * Other data sources
 * Processing species identification
 
+## Usage:
+
+1. Find the study's BioProject accession, so we can load the data.  For example
+   https://pubmed.ncbi.nlm.nih.gov/34550753/ is `PRJNA729801`.
+2. Run `./import-accession.sh [accession]`
+3. Make a directory `studies/[accession]/metadata`.
+4. Populate it:
+   a. Create `studies/[accession]/metadata/study.json` with contents
+      `{"is_paired_end": true}`.  If the study isn't actually paired end then
+      put `false`, but you're going to need to do a lot of updating `run.py` to
+      handle this case.
+   b. Create `studies/[accession]/metadata/name.txt` with the short name of
+      the associated paper.  For example, `Rothman 2021`.
+   c. Create `studies/[accession]/metadata/metadata.tsv` with a list of the
+      sample accessions in the first column and anything else in the later
+      columns.  If you don't have the rest of the metadata sorted out yet and
+      just want to unblock the pipeline you can put the accessions only:
+
+          aws s3 ls s3://nao-mgs/PRJEB13831/raw/ | \
+            awk '{print $NF}' | \
+            grep _1 | \
+            sed s/_1.fasta.gz// > metadata.tsv'
+5. `./run.py --study=[accession]`
+
 ## Design
 
 ### Data storage
