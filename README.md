@@ -34,8 +34,10 @@ At each stage data will be stored in an S3 bucket on AWS.  The structure is:
     s3://nao-mgs/
       [studyId]/
          raw/
+         noadapter/
          cleaned/
          processed/
+         viruscounts/
 
 In cases where the data comes from the [Sequencing Read Archive](https://www.ncbi.nlm.nih.gov/sra) (SRA), the study ID is the SRA accession.
 For example, "PRJNA729801" for the Rothman 2021 data.
@@ -44,7 +46,8 @@ Files under `raw/` have the contents as we received them, but have been renamed
 to `[sampleID].fasta.gz`.  For paired-end data there will be two files,
 `[sampleID]_1.fasta.gz` and `[sampleID]_2.fasta.gz`.
 
-Files under `cleaned/` are the output of AdapterRemoval2; see below.
+Files under `noadadapter/` and `cleaned/` are the output of AdapterRemoval2;
+see below.
 
 Files under `processed/` include our quality control results, species
 classification, and any other processing we run.
@@ -64,10 +67,25 @@ we downloaded from the SRA the sample ID is the SRA accession.  For example,
 FASTQ files, in pairs if we have paired-end sequencing.  If we get data in
 other formats, however, we'll include the conversion as a pre-processing step.
 
-### Cleaning
+### Adapter Removal
 
 AdapterRemoval2 to trim adapters, remove low-quality bases from the
-ends of reads, and collapse overlapping paired-end reads.
+ends of reads, and collapse overlapping paired-end reads.  This populates
+`cleaned/`.
+
+For QC purposes, we also want to know:
+
+* What are quality scores like along the lengths of the reads?
+* What is the length distribution of fragments?
+
+Unfortunately, getting these requires separate AdapterRemoval runs:
+
+* Removing adapters, but not trimming quality or collapsing.
+* Removing adapters and collapsing, but not trimming quality.
+
+It may be worth modifying AdapterRemoval2 to dump the statistics we care about
+while running the full process, so we don't have to run it three times for each
+sample.
 
 ### Quality Control
 
