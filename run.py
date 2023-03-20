@@ -411,7 +411,7 @@ def print_status(args):
    # Name -> Study Accession -> Stage -> N/M
    info = defaultdict(dict)
 
-   stages = ["raw", "noadapter", "cleaned", "processed", "viruscounts"]
+   stages = ["raw", "noadapters", "cleaned", "processed", "viruscounts"]
    short_stages = ["raw", "noadapt", "clean", "kraken", "vc"]
 
    for study in studies:
