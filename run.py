@@ -115,7 +115,7 @@ def get_adapters(in1, in2, adapter1_fname, adapter2_fname):
       with open(fname, 'w') as outf:
          outf.write(adapter)
 
-def clean(args):
+def adapter_removal(args, dirname, trim_quality, collapse):
    if not study_config(args)["is_paired_end"]:
       raise Exception("Only paired end sequencing currently supported")
 
@@ -126,8 +126,8 @@ def clean(args):
       pass
 
    for accession in get_accessions(args):
-      if exists_s3_prefix("%s/%s/cleaned/%s" % (
-            S3_BUCKET, args.study, accession)):
+      if exists_s3_prefix("%s/%s/%s/%s" % (
+            S3_BUCKET, args.study, dirname, accession)):
          continue
 
       with tempdir(accession) as workdir:
@@ -153,24 +153,33 @@ def clean(args):
          with open(adapter2_fname) as inf:
             adapter2 = inf.read().strip()
 
-         subprocess.check_call([
-            "AdapterRemoval",
-            "--file1", in1,
-            "--file2", in2,
-            "--basename", accession,
-            "--trimns",
-            "--trimqualities",
-            "--collapse",
-            "--threads", "4",
-            "--adapter1", adapter1,
-            "--adapter2", adapter2,
-            "--gzip"
-         ])
+         cmd = ["AdapterRemoval",
+                "--file1", in1,
+                "--file2", in2,
+                "--basename", accession,
+                "--threads", "4",
+                "--adapter1", adapter1,
+                "--adapter2", adapter2,
+                "--gzip"]
+
+         if trim_quality:
+            cmd.extend(["--trimns",
+                        "--trimqualities"])
+         if collapse:
+            cmd.append("--collapse")
+
+         subprocess.check_call(cmd)
 
          for output in glob.glob("%s.*" % accession):
             subprocess.check_call([
-               "aws", "s3", "cp", output, "%s/%s/cleaned/" % (
-                  S3_BUCKET, args.study)])
+               "aws", "s3", "cp", output, "%s/%s/%s/" % (
+                  S3_BUCKET, args.study, dirname)])
+
+def clean(args):
+   adapter_removal(args, "cleaned", trim_quality=True, collapse=True)
+
+def rmadapter(args):
+   adapter_removal(args, "noadapters", trim_quality=False, collapse=False)
 
 def get_files(args, dirname, min_size=1):
    return set(ls_s3_dir("%s/%s/%s/" % (S3_BUCKET, args.study, dirname),
@@ -402,8 +411,8 @@ def print_status(args):
    # Name -> Study Accession -> Stage -> N/M
    info = defaultdict(dict)
 
-   stages = ["raw", "cleaned", "processed", "viruscounts"]
-   short_stages = ["raw", "clean", "kraken", "vc"]
+   stages = ["raw", "noadapter", "cleaned", "processed", "viruscounts"]
+   short_stages = ["raw", "noadapt", "clean", "kraken", "vc"]
 
    for study in studies:
       metadata_dir = os.path.join(THISDIR, "studies", study, "metadata")
@@ -454,6 +463,7 @@ def print_status(args):
 STAGES_ORDERED = []
 STAGE_FNS = {}
 for stage_name, stage_fn in [("clean", clean),
+                             ("rmadapter", rmadapter),
                              ("interpret", interpret),
                              ("viruscount", viruscount),
                              ("qc", qc)]:
