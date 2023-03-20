@@ -403,6 +403,7 @@ def print_status(args):
    info = defaultdict(dict)
 
    stages = ["raw", "cleaned", "processed", "viruscounts"]
+   short_stages = ["raw", "clean", "kraken", "vc"]
 
    for study in studies:
       metadata_dir = os.path.join(THISDIR, "studies", study, "metadata")
@@ -429,10 +430,14 @@ def print_status(args):
                   info[name][study][accession][stage] += 1
 
 
+   name_width=13
+   print(" "*name_width, end='\t')
+   print(*short_stages, sep='\t')
+
    for name in sorted(info):
       print(name)
       for study in sorted(info[name]):
-         row = ["  " + study]
+         row = [("  " + study).ljust(name_width)]
          totals = Counter()
 
          for accession in info[name][study]:
