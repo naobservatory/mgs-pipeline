@@ -43,10 +43,11 @@ identification.  Todo:
       columns.  If you don't have the rest of the metadata sorted out yet and
       just want to unblock the pipeline you can put the accessions only:
 
-          aws s3 ls s3://nao-mgs/PRJEB13831/raw/ | \
+          aws s3 ls s3://nao-mgs/[accession]/raw/ | \
             awk '{print $NF}' | \
             grep _1 | \
-            sed s/_1.fasta.gz// > metadata.tsv'
+            sed s/_1.fastq.gz// > metadata.tsv
+
 5. `./run.py --study=[accession]`
 
 ## Design
