@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import re
 import os
 import glob
 import gzip
@@ -260,6 +261,51 @@ def viruscount(args):
             "aws s3 cp - %s/%s/viruscounts/%s.viruscounts.tsv" % (
                accession, S3_BUCKET, args.study, accession))
 
+def humanviruses(args):
+   human_viruses = {}
+   with open(os.path.join(THISDIR, "human-viruses.tsv")) as inf:
+      for line in inf:
+         taxid, name = line.strip().split("\t")
+         human_viruses[int(taxid)] = name
+
+
+   available_inputs = get_files(args, "processed")
+   existing_outputs = get_files(args, "viruscounts")
+
+   for accession in get_accessions(args):
+      output = "%s.humanviruses.tsv" % accession
+      if output in existing_outputs: continue
+
+      inputs = [
+         input_fname
+         for input_fname in available_inputs
+         if input_fname.startswith(accession)]
+      if not inputs:
+         continue
+
+      counts = Counter()
+
+      for input_fname in inputs:
+         with tempdir(accession) as workdir:
+            subprocess.check_call([
+               "aws", "s3", "cp", "%s/%s/processed/%s" % (
+                  S3_BUCKET, args.study, input_fname), input_fname])
+
+            with gzip.open(input_fname, "rt") as inf:
+               for line in inf:
+                  taxid, = re.findall("[(]taxid ([0-9]+)[)]", line)
+                  taxid = int(taxid)
+                  if taxid in human_viruses:
+                     counts[taxid] += 1
+
+      with open(output, "w") as outf:
+         for taxid, count in sorted(counts.items()):
+            outf.write("%s\t%s\t%s\n" % (taxid, count, human_viruses[taxid]))
+
+      subprocess.check_call([
+         "aws", "s3", "cp", output, "%s/%s/humanviruses/%s" % (
+            S3_BUCKET, args.study, output)])
+
 def qc_reads(args, accession, qc_info,
              available_raw, available_cleaned,
              available_processed, available_viruscounts):
@@ -411,8 +457,9 @@ def print_status(args):
    # Name -> Study Accession -> Stage -> N/M
    info = defaultdict(dict)
 
-   stages = ["raw", "noadapters", "cleaned", "processed", "viruscounts"]
-   short_stages = ["raw", "noadapt", "clean", "kraken", "vc"]
+   stages = ["raw", "noadapters", "cleaned", "processed",
+             "viruscounts", "humanviruses"]
+   short_stages = ["raw", "noadapt", "clean", "kraken", "vc", "hv"]
 
    for study in studies:
       metadata_dir = os.path.join(THISDIR, "studies", study, "metadata")
@@ -466,6 +513,7 @@ for stage_name, stage_fn in [("clean", clean),
                              ("rmadapter", rmadapter),
                              ("interpret", interpret),
                              ("viruscount", viruscount),
+                             ("humanviruses", humanviruses),
                              ("qc", qc)]:
    STAGES_ORDERED.append(stage_name)
    STAGE_FNS[stage_name] = stage_fn
