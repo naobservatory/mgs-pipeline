@@ -11,7 +11,13 @@ import tempfile
 import subprocess
 
 COLOR_CYAN = '\x1b[0;36m'
+COLOR_MAGENTA = '\x1b[0;35m'
 COLOR_END = '\x1b[0m'
+
+# Regular expression that matches the user's prompt.  If this matches the last
+# line then the command that was running probably completed, and we should flag
+# it.
+PROMPT_PATTERN = ".* [$]$"
 
 def list_screens():
     try:
@@ -30,7 +36,6 @@ def start():
     for screen in list_screens():
         with tempfile.TemporaryDirectory() as workdir:
             tmpfname = os.path.join(workdir, "tmp.txt")
-            print(COLOR_CYAN + screen + ":" + COLOR_END)
 
             subprocess.check_call([
                 "screen",
@@ -47,6 +52,13 @@ def start():
 
             # delete all trailing empty lines
             lines = re.sub("\n*$", "", s).split("\n")
+
+            screen_label_color = COLOR_CYAN
+            if lines and re.match(PROMPT_PATTERN, lines[-1]):
+                screen_label_color = COLOR_MAGENTA
+
+            print(screen_label_color + screen + ":" + COLOR_END)
+
             for line in lines[-10:]:
                 print(line)
 
