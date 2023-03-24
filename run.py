@@ -298,13 +298,14 @@ def humanviruses(args):
                   if taxid in human_viruses:
                      counts[taxid] += 1
 
-      with open(output, "w") as outf:
-         for taxid, count in sorted(counts.items()):
-            outf.write("%s\t%s\t%s\n" % (taxid, count, human_viruses[taxid]))
+      with tempdir(accession) as workdir:
+         with open(output, "w") as outf:
+            for taxid, count in sorted(counts.items()):
+               outf.write("%s\t%s\t%s\n" % (taxid, count, human_viruses[taxid]))
 
-      subprocess.check_call([
-         "aws", "s3", "cp", output, "%s/%s/humanviruses/%s" % (
-            S3_BUCKET, args.study, output)])
+         subprocess.check_call([
+            "aws", "s3", "cp", output, "%s/%s/humanviruses/%s" % (
+               S3_BUCKET, args.study, output)])
 
 def qc_reads(args, accession, qc_info,
              available_raw, available_cleaned,
