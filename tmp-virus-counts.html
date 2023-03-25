@@ -9,11 +9,13 @@ This process cleaning up and proper integration into the pipeline, but
 putting it here for now.
 
 Separartely, the JS below is pretty terrible.  If we like this display
-and intend to do more with it there's a lot I need to do to clean it
+and intend to do more with it there is a lot I need to do to clean it
 up.
 
 -->
 
+<input id=searchfield type=text></input><button id=searchbutton>search</button>
+<br>
 <table id=tbl border=1 cellpadding=5></table>
 <style>
   .projectname {
@@ -30,6 +32,55 @@ up.
 //   names: taxid -> name
 //   tree: taxid with children
 //   study_names: project -> study name
+
+
+
+  function search() {
+    collapseAll();
+
+    const val = searchfield.value.toLowerCase();
+    for (tr of tbl.children) {
+      if (tr.nameLower && tr.nameLower.includes(val)) {
+        let s = tr;
+        while (s.depth >= tr.depth) {
+          s = s.previousSibling;
+        }
+        const parent = s;
+        let ancestor = s;
+
+        while (s) {
+          if (s == parent || s.depth < ancestor.depth) {
+            ancestor = s;
+            if (s.childrenButton) {
+              s.collapsed = false;
+              s.childrenButton.innerHTML = downTriangle;
+            }
+          }
+          s = s.previousSibling;
+        }
+      }
+    }
+    adjustDisplay();
+  }
+
+  searchfield.addEventListener("keypress", function(e) {
+    if (e.keyCode == 13) {
+      e.preventDefault();
+      search();
+    }
+  });
+
+  searchbutton.onclick = search;
+
+  function collapseAll() {
+    for (tr of tbl.children) {
+      if (tr.childrenButton) {
+        tr.childrenButton.innerHTML = rightTriangle;
+        tr.collapsed = true;
+      }
+    }
+    adjustDisplay();
+  }
 
   function e(tag) {
     return document.createElement(tag);
@@ -81,7 +132,7 @@ up.
   }
 
   const rightTriangle = "&rarr;";
-  const downTriangle = "&darr;";
+    const downTriangle = "&darr;";
 
   function clickRow(tr, depth) {
     function handleClick(e) {
@@ -115,6 +166,7 @@ up.
     const tr = e("tr");
     tr.depth = depth;
     tr.collapsed = depth > 1;
+    tr.nameLower = names[taxid].toLowerCase();
 
     const tdChildrenButton = e("td");
     tr.appendChild(tdChildrenButton);
