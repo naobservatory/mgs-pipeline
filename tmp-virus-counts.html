@@ -1,0 +1,200 @@
+<!--
+
+To rebuild:
+1. Run mgs pipeline
+2. jefftk-analysis/2023-03-23--copy-down-hv.sh to collect *.humanviruses.tsv
+3. jefftk-analysis/2023-03-24--human-viruses.py to build data.js
+
+This process cleaning up and proper integration into the pipeline, but
+putting it here for now.
+
+Separartely, the JS below is pretty terrible.  If we like this display
+and intend to do more with it there's a lot I need to do to clean it
+up.
+
+-->
+
+<table id=tbl border=1 cellpadding=5></table>
+<style>
+  .projectname {
+    font-weight: normal;
+  }
+</style>
+
+<script src="data.js"></script>
+<script>
+
+// imports:
+//   virus_project_counts: taxid -> project -> count, relab
+//   projects: [project]
+//   names: taxid -> name
+//   tree: taxid with children
+//   study_names: project -> study name
+
+  function e(tag) {
+    return document.createElement(tag);
+  }
+
+  const tr1 = e("tr");
+  tr1.appendChild(e("th"));
+
+  const thChildren = e("th");
+  thChildren.innerText = "children";
+  tr1.appendChild(thChildren);
+
+  const thName = e("th");
+  thName.innerText = "name";
+  tr1.appendChild(thName);
+
+  const thReads = e("th");
+  thReads.innerText = "reads";
+  tr1.appendChild(thReads);
+
+  for (const project of projects) {
+    const th = e("th");
+    th.innerHTML = study_names[project] + "<br>" +
+      "<span class=projectname>" + project + "</span>";
+    tr1.appendChild(th);
+  }
+  tbl.appendChild(tr1);
+
+  function sciNum(x) {
+    if (x == 0) return x;
+    return x.toExponential(1);
+  }
+
+  function sciColor(x) {
+    if (x > 1e-5) {
+      return '#f9f';
+    } else if (x > 1e-6) {
+      return '#faf';
+    } else if (x > 1e-7) {
+      return '#fbf';
+    } else if (x > 1e-8) {
+      return '#fcf';
+    } else if (x > 1e-9) {
+      return '#fdf';
+    } else if (x > 1e-10) {
+      return '#fef';
+    }
+    return '#fff';
+  }
+
+  const rightTriangle = "&rarr;";
+  const downTriangle = "&darr;";
+
+  function clickRow(tr, depth) {
+    function handleClick(e) {
+      tr.collapsed = !tr.collapsed;
+      tr.childrenButton.innerHTML = tr.collapsed ? rightTriangle : downTriangle;
+      adjustDisplay();
+    }
+    return handleClick;
+  }
+
+  function adjustDisplay() {
+    let tr = tbl.children[0];
+    let collapse_depth = null;
+    while (tr.nextSibling) {
+      tr = tr.nextSibling;
+      if (collapse_depth != null && tr.depth <= collapse_depth) {
+        collapse_depth = null;
+      }
+      if (tr.collapsed && collapse_depth == null) {
+        collapse_depth = tr.depth;
+      }
+      tr.style.visibility = (
+        collapse_depth == null ||
+          tr.depth <= collapse_depth) ? "visible" : "collapse";
+    }
+  }
+
+  function populateTable(node, depth) {
+    const totals = [];
+    const taxid = node[0];
+    const tr = e("tr");
+    tr.depth = depth;
+    tr.collapsed = depth > 1;
+
+    const tdChildrenButton = e("td");
+    tr.appendChild(tdChildrenButton);
+    const tdChildrenCount = e("td");
+    tr.appendChild(tdChildrenCount);
+
+    const tdName = e("td");
+    tdName.style.paddingLeft = depth + "em";
+    const aName = e("a");
+    aName.innerText = names[taxid];
+    aName.href = "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi" +
+      "?lvl=0&id=" + taxid;
+    aName.setAttribute("target", "_blank");
+    tdName.appendChild(aName);
+    tr.appendChild(tdName);
+
+    const tdReads = e("td");
+    tr.appendChild(tdReads);
+
+    if (depth > 0) {
+      tbl.appendChild(tr);
+    }
+
+    if (node.length == 1) {
+      tr.nReads = 0;
+      for (const project of projects) {
+        const tdVal = e("td");
+        const project_counts = virus_project_counts[taxid][project];
+        const val = project_counts ? project_counts[1] : 0;
+        totals.push(val);
+        tdVal.innerText = sciNum(val);
+        tr.nReads += project_counts ? project_counts[0] : 0;
+        tdVal.style.backgroundColor = sciColor(val);
+        tr.appendChild(tdVal);
+      }
+      tdName.style.backgroundColor = '#fff';
+    } else {
+      for (const project of projects) {
+        totals.push(0);
+      }
+      for (let i = 1; i < node.length; i++) {
+        const r = populateTable(node[i], depth+1);
+        for (let j = 0; j < r.length; j++) {
+          totals[j] += r[j];
+        }
+      }
+      for (const total of totals) {
+        const tdVal = e("td");
+        tdVal.innerText = sciNum(total);
+        tdVal.style.backgroundColor = sciColor(total);
+        tr.appendChild(tdVal);
+      }
+      const buttonChildren = e("button");
+      buttonChildren.onclick = clickRow(tr, depth);
+      buttonChildren.innerHTML = tr.collapsed ? rightTriangle : downTriangle;
+      tdChildrenButton.appendChild(buttonChildren);
+      tr.childrenButton = buttonChildren;
+    }
+
+    let s = tr.nextSibling;
+    let children = 0;
+    let nReads = 0;
+    while (s) {
+      nReads += s.nReads;
+      s = s.nextSibling;
+      children++;
+    }
+    if (children > 0) {
+      tdChildrenCount.innerText = children;
+    }
+
+    if (!tr.nReads) {
+      tr.nReads = nReads;
+    }
+
+    tdReads.innerText = tr.nReads;
+
+    return totals;
+  }
+
+  populateTable(tree, 0);
+  adjustDisplay();
+</script>
