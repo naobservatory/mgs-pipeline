@@ -36,7 +36,9 @@ Search: <input id=searchfield type=text></input>
 //   names: taxid -> name
 //   tree: taxid with children
 //   bioproject_names: project -> bioproject name
-
+  if (typeof bioproject_names === 'undefined') {
+    bioproject_names = study_names;
+  }
 
 
   function search() {
