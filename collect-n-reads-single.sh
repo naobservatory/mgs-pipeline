@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
-study="$1"
+bioproject="$1"
 raw="$2"
 
 accession=$(echo "$raw" | awk -F/ '{print $NF}' | awk -F_ '{print $1}')
-n_reads="studies/${study}metadata/$accession.n_reads"
+n_reads="bioprojects/${bioproject}metadata/$accession.n_reads"
 
 if [ -e $n_reads ]; then
     exit 0

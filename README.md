@@ -27,18 +27,18 @@ identification.  Todo:
 
 ## Usage:
 
-1. Find the study's BioProject accession, so we can load the data.  For example
+1. Find the bioproject's accession, so we can load the data.  For example
    https://pubmed.ncbi.nlm.nih.gov/34550753/ is `PRJNA729801`.
 2. Run `./import-accession.sh [accession]`
-3. Make a directory `studies/[accession]/metadata`.
+3. Make a directory `bioprojects/[accession]/metadata`.
 4. Populate it:
-   a. Create `studies/[accession]/metadata/study.json` with contents
-      `{"is_paired_end": true}`.  If the study isn't actually paired end then
+   a. Create `bioprojects/[accession]/metadata/bioproject.json` with contents
+      `{"is_paired_end": true}`.  If the bioproject isn't actually paired end then
       put `false`, but you're going to need to do a lot of updating `run.py` to
       handle this case.
-   b. Create `studies/[accession]/metadata/name.txt` with the short name of
+   b. Create `bioprojects/[accession]/metadata/name.txt` with the short name of
       the associated paper.  For example, `Rothman 2021`.
-   c. Create `studies/[accession]/metadata/metadata.tsv` with a list of the
+   c. Create `bioprojects/[accession]/metadata/metadata.tsv` with a list of the
       sample accessions in the first column and anything else in the later
       columns.  If you don't have the rest of the metadata sorted out yet and
       just want to unblock the pipeline you can put the accessions only:
@@ -48,7 +48,7 @@ identification.  Todo:
             grep _1 | \
             sed s/_1.fastq.gz// > metadata.tsv
 
-5. `./run.py --study=[accession]`
+5. `./run.py --bioproject=[accession]`
 
 ## Design
 
@@ -57,14 +57,14 @@ identification.  Todo:
 At each stage data will be stored in an S3 bucket on AWS.  The structure is:
 
     s3://nao-mgs/
-      [studyId]/
+      [bioprojectId]/
          raw/
          noadapter/
          cleaned/
          processed/
          viruscounts/
 
-In cases where the data comes from the [Sequencing Read Archive](https://www.ncbi.nlm.nih.gov/sra) (SRA), the study ID is the SRA accession.
+In cases where the data comes from the [Sequencing Read Archive](https://www.ncbi.nlm.nih.gov/sra) (SRA), the bioproject ID is the SRA accession.
 For example, "PRJNA729801" for the Rothman 2021 data.
 
 Files under `raw/` have the contents as we received them, but have been renamed
@@ -79,11 +79,11 @@ classification, and any other processing we run.
 
 ### Metadata
 
-Metadata goes in this repo under `studies/[accession]/metadata/`.  This
+Metadata goes in this repo under `bioprojects/[accession]/metadata/`.  This
 includes both the metadata file and the scripts that prepare it.
 
-Each study has a `studies/[accession]/metadata/metadata.tsv` where the first
-column is the sample ID and the remaining columns are study-specific.  For data
+Each bioproject has a `bioprojects/[accession]/metadata/metadata.tsv` where the first
+column is the sample ID and the remaining columns are bioproject-specific.  For data
 we downloaded from the SRA the sample ID is the SRA accession.  For example,
 "SRR14530767" for the 2020-08-11 HTP sample in the Rothman 2021 data.
 

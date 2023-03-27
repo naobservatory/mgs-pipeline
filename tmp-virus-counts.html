@@ -35,7 +35,7 @@ Search: <input id=searchfield type=text></input>
 //   projects: [project]
 //   names: taxid -> name
 //   tree: taxid with children
-//   study_names: project -> study name
+//   bioproject_names: project -> bioproject name
 
 
 
@@ -101,7 +101,7 @@ Search: <input id=searchfield type=text></input>
 
   for (const project of projects) {
     const th = e("th");
-    th.innerHTML = study_names[project] + "<br>" +
+    th.innerHTML = bioproject_names[project] + "<br>" +
       "<span class=projectname>" + project + "</span>";
     tr1.appendChild(th);
   }
