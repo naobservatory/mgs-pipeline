@@ -48,6 +48,7 @@ Search: <input id=searchfield type=text></input>
 
     for (tr of tbl.children) {
       if (tr.nameLower && tr.nameLower.includes(val)) {
+        tr.style.backgroundColor = 'lightyellow';
         let s = tr;
         while (s.depth >= tr.depth) {
           s = s.previousSibling;
@@ -74,6 +75,7 @@ Search: <input id=searchfield type=text></input>
 
   function collapseAll() {
     for (tr of tbl.children) {
+      tr.style.backgroundColor = 'white';
       if (tr.childrenButton) {
         tr.childrenButton.innerHTML = rightTriangle;
         tr.collapsed = true;
@@ -202,7 +204,6 @@ Search: <input id=searchfield type=text></input>
         tdVal.style.backgroundColor = sciColor(val);
         tr.appendChild(tdVal);
       }
-      tdName.style.backgroundColor = '#fff';
     } else {
       for (const project of projects) {
         totals.push(0);
