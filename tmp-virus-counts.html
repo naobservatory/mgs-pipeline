@@ -14,12 +14,16 @@ up.
 
 -->
 
-<input id=searchfield type=text></input><button id=searchbutton>search</button>
+Search: <input id=searchfield type=text></input>
 <br>
 <table id=tbl border=1 cellpadding=5></table>
 <style>
   .projectname {
     font-weight: normal;
+  }
+  td {
+    word-wrap: break-word;
+    max-width: 15em;
   }
 </style>
 
@@ -39,6 +43,7 @@ up.
     collapseAll();
 
     const val = searchfield.value.toLowerCase();
+
     for (tr of tbl.children) {
       if (tr.nameLower && tr.nameLower.includes(val)) {
         let s = tr;
@@ -63,14 +68,7 @@ up.
     adjustDisplay();
   }
 
-  searchfield.addEventListener("keypress", function(e) {
-    if (e.keyCode == 13) {
-      e.preventDefault();
-      search();
-    }
-  });
-
-  searchbutton.onclick = search;
+  searchfield.addEventListener("input", search);
 
   function collapseAll() {
     for (tr of tbl.children) {
@@ -174,7 +172,7 @@ up.
     tr.appendChild(tdChildrenCount);
 
     const tdName = e("td");
-    tdName.style.paddingLeft = depth + "em";
+    tdName.style.paddingLeft = (depth*0.5) + "em";
     const aName = e("a");
     aName.innerText = names[taxid];
     aName.href = "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi" +
