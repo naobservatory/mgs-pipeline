@@ -140,7 +140,21 @@ Search: <input id=searchfield type=text></input>
   }
 
   const tr1 = e("tr");
-  tr1.appendChild(e("th"));
+  const thRefreshLayout = e("th")
+  buttonRefreshLayout = e("button");
+  thRefreshLayout.appendChild(buttonRefreshLayout);
+  buttonRefreshLayout.innerHTML = "&#10227;"
+  buttonRefreshLayout.onclick = function() {
+    searchfield.value = "";
+    collapseAll();
+    for (tr of tbl.children) {
+      if (tr.depth <= 1) {
+        tr.collapsed = false;
+      }
+    }
+    adjustDisplay();
+  };
+  tr1.appendChild(thRefreshLayout);
 
   const thChildren = e("th");
   thChildren.innerText = "children";
