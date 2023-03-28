@@ -35,20 +35,31 @@ Search: <input id=searchfield type=text></input>
 //   projects: [project]
 //   names: taxid -> name
 //   tree: taxid with children
-//   bioproject_names: project -> bioproject name
-  if (typeof bioproject_names === 'undefined') {
-    bioproject_names = study_names;
-  }
-
-
+//   bioproject_names: project -> paper name
+//   bioproject_papers: project -> paper link
+  
   function search() {
     collapseAll();
 
     const val = searchfield.value.toLowerCase();
 
     for (tr of tbl.children) {
-      if (tr.nameLower && tr.nameLower.includes(val)) {
+      if (tr.namesLower && tr.namesLower.includes(val)) {
         tr.style.backgroundColor = 'lightyellow';
+
+        let altName = "";
+        if (!tr.names[0].toLowerCase().includes(val)) {
+          for (name of tr.names) {
+            if (name.toLowerCase().includes(val)) {
+              altName = name;
+              break;
+            }
+          }
+        }
+        if (altName) {
+          tr.children[2].innerText = tr.names[0] + " (" + altName + ")";
+        }
+        
         let s = tr;
         while (s.depth >= tr.depth) {
           s = s.previousSibling;
@@ -75,6 +86,10 @@ Search: <input id=searchfield type=text></input>
 
   function collapseAll() {
     for (tr of tbl.children) {
+      if (tr.names && tr.names.length) {
+        tr.children[2].innerText = tr.names[0];
+      }
+
       tr.style.backgroundColor = 'white';
       if (tr.childrenButton) {
         tr.childrenButton.innerHTML = rightTriangle;
@@ -105,7 +120,8 @@ Search: <input id=searchfield type=text></input>
 
   for (const project of projects) {
     const th = e("th");
-    th.innerHTML = bioproject_names[project] + "<br>" +
+    th.innerHTML = "<a href='" + bioproject_links[project] + "'>" +
+      bioproject_names[project] + "</a><br>" +
       "<span class=projectname>" + project + "</span>";
     tr1.appendChild(th);
   }
@@ -168,7 +184,8 @@ Search: <input id=searchfield type=text></input>
     const tr = e("tr");
     tr.depth = depth;
     tr.collapsed = depth > 1;
-    tr.nameLower = names[taxid].toLowerCase();
+    tr.names = names[taxid];
+    tr.namesLower = names[taxid].join(", ").toLowerCase();
 
     const tdChildrenButton = e("td");
     tr.appendChild(tdChildrenButton);
@@ -178,7 +195,10 @@ Search: <input id=searchfield type=text></input>
     const tdName = e("td");
     tdName.style.paddingLeft = (depth*0.5) + "em";
     const aName = e("a");
-    aName.innerText = names[taxid];
+    if (tr.namesLower.includes('lav-1')) {
+      console.log(names[taxid]);
+    }
+    aName.innerText = names[taxid][0];
     aName.href = "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi" +
       "?lvl=0&id=" + taxid;
     aName.setAttribute("target", "_blank");
