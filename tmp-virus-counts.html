@@ -118,6 +118,27 @@ Search: <input id=searchfield type=text></input>
     return document.createElement(tag);
   }
 
+  function humanReadable(n) {
+    function s(v, suffix) {
+      v = v.toPrecision(3);
+      if (v.includes(".")) {
+        v = v.substring(0, v.length-1);
+      }
+      return v + suffix;
+    }
+    if (n < 1000) return n;
+    n /= 1000;
+    if (n < 1000) return s(n,'k');
+    n /= 1000;
+    if (n < 1000) return s(n,'M');
+    n /= 1000;
+    if (n < 1000) return s(n, 'B');
+    n /= 1000;
+    if (n < 1000) return s(n, 'T');
+    n /= 1000;
+    return s(n, 'Q');
+  }
+
   const tr1 = e("tr");
   tr1.appendChild(e("th"));
 
@@ -138,7 +159,7 @@ Search: <input id=searchfield type=text></input>
     th.innerHTML = "<a href='" + bioproject_links[project] + "'>" +
       bioproject_names[project] + "</a><br>" +
       "<span class=projectname>" + project + "</span><br>" +
-      "<span class=projecttotal>" + bioproject_totals[project] + " reads</span>";
+      "<span class=projecttotal>" + humanReadable(bioproject_totals[project]) + " reads</span>";
     tr1.appendChild(th);
   }
   tbl.appendChild(tr1);
