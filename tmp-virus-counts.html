@@ -14,9 +14,8 @@ up.
 
 -->
 
-Rows are taxonomic nodes, columns are bioprojects, cells are
-relative abundance of human viruses that match that taxonomic
-node.
+Rows are taxonomic nodes, columns are bioprojects, pink cells are
+relative abundance of human viruses that match that taxonomic node.
 
 <details><summary>more details</summary> For example, if you search for "HIV-1"
 you'll see 1.5e-9 in the Rothman 2021 column, which means that 1:670M
@@ -24,7 +23,7 @@ Rothman 2021 reads matched HIV (in this case, exactly one read, but
 you can't tell it from this page).  As you go up the tree from there
 (Lentivirus ... Pararnavirae) it still says 1.5e-9, because there
 weren't any other reads in those categories.  When you get to
-Orthornavirae it goes up to 2.7e-6, primarily because there are a lot
+Orthornavirae it goes up to 2.7e-6, primarily because there're a lot
 of Norovirus reads.  </details> <p>
 
 Search: <input id=searchfield type=text></input>
@@ -142,8 +141,15 @@ Search: <input id=searchfield type=text></input>
   }
   tbl.appendChild(tr1);
 
+  function cellValue(val, count) {
+    if (val == 0) return "0";
+    if (count !== undefined) {
+      return sciNum(val) + " (" + count + ")";
+    }
+    return sciNum(val);
+  }
+
   function sciNum(x) {
-    if (x == 0) return x;
     return x.toExponential(1);
   }
 
@@ -233,8 +239,9 @@ Search: <input id=searchfield type=text></input>
         const tdVal = e("td");
         const project_counts = virus_project_counts[taxid][project];
         const val = project_counts ? project_counts[1] : 0;
+        const count = project_counts ? project_counts[0] : 0;
         totals.push(val);
-        tdVal.innerText = sciNum(val);
+        tdVal.innerText = cellValue(val, count);
         tr.nReads += project_counts ? project_counts[0] : 0;
         tdVal.style.backgroundColor = sciColor(val);
         tr.appendChild(tdVal);
@@ -251,7 +258,7 @@ Search: <input id=searchfield type=text></input>
       }
       for (const total of totals) {
         const tdVal = e("td");
-        tdVal.innerText = sciNum(total);
+        tdVal.innerText = cellValue(total);
         tdVal.style.backgroundColor = sciColor(total);
         tr.appendChild(tdVal);
       }
