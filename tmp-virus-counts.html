@@ -32,7 +32,7 @@ Search: <input id=searchfield type=text></input>
 
 <table id=tbl border=1 cellpadding=5></table>
 <style>
-  .projectname {
+  .projectname, .projecttotal {
     font-weight: normal;
   }
   td {
@@ -50,7 +50,8 @@ Search: <input id=searchfield type=text></input>
 //   names: taxid -> name
 //   tree: taxid with children
 //   bioproject_names: project -> paper name
-//   bioproject_papers: project -> paper link
+//   bioproject_links: project -> paper link
+//   bioproject_totals: project -> nreads
   
   function search() {
     collapseAll();
@@ -136,7 +137,8 @@ Search: <input id=searchfield type=text></input>
     const th = e("th");
     th.innerHTML = "<a href='" + bioproject_links[project] + "'>" +
       bioproject_names[project] + "</a><br>" +
-      "<span class=projectname>" + project + "</span>";
+      "<span class=projectname>" + project + "</span><br>" +
+      "<span class=projecttotal>" + bioproject_totals[project] + " reads</span>";
     tr1.appendChild(th);
   }
   tbl.appendChild(tr1);
