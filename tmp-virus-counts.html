@@ -120,11 +120,11 @@ Search: <input id=searchfield type=text></input>
 
   function humanReadable(n) {
     function s(v, suffix) {
-      v = v.toPrecision(3);
-      if (v.includes(".")) {
-        v = v.substring(0, v.length-1);
+      let vStr = v.toPrecision(3);
+      if (vStr.includes(".")) {
+        vStr = v.toPrecision(2);
       }
-      return v + suffix;
+      return vStr + suffix;
     }
     if (n < 1000) return n;
     n /= 1000;
