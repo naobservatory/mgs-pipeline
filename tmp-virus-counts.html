@@ -164,9 +164,11 @@ Search: <input id=searchfield type=text></input>
   }
   tbl.appendChild(tr1);
 
-  function cellValue(val, count) {
-    if (val == 0) return "0";
-    if (count !== undefined) {
+  function cellValue(val, count, total) {
+    if (val == 0) {
+      return "< " + sciNum(1/total);
+    }
+    if (count != null) {
       return sciNum(val) + " (" + count + ")";
     }
     return sciNum(val);
@@ -264,7 +266,7 @@ Search: <input id=searchfield type=text></input>
         const val = project_counts ? project_counts[1] : 0;
         const count = project_counts ? project_counts[0] : 0;
         totals.push(val);
-        tdVal.innerText = cellValue(val, count);
+        tdVal.innerText = cellValue(val, count, bioproject_totals[project]);
         tr.nReads += project_counts ? project_counts[0] : 0;
         tdVal.style.backgroundColor = sciColor(val);
         tr.appendChild(tdVal);
@@ -279,9 +281,11 @@ Search: <input id=searchfield type=text></input>
           totals[j] += r[j];
         }
       }
-      for (const total of totals) {
+      for (let i = 0; i < projects.length; i++) {
+        const project = projects[i];
+        const total = totals[i];
         const tdVal = e("td");
-        tdVal.innerText = cellValue(total);
+        tdVal.innerText = cellValue(total, null, bioproject_totals[project]);
         tdVal.style.backgroundColor = sciColor(total);
         tr.appendChild(tdVal);
       }
