@@ -254,10 +254,9 @@ Search: <input id=searchfield type=text></input>
 
     const tdName = e("td");
     tdName.style.paddingLeft = (depth*0.5) + "em";
+    tdName.title = names[taxid].length > 1 ?
+                     names[taxid].slice(1).join(", ") : names[taxid][0]
     const aName = e("a");
-    if (tr.namesLower.includes('lav-1')) {
-      console.log(names[taxid]);
-    }
     aName.innerText = names[taxid][0];
     aName.href = "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi" +
       "?lvl=0&id=" + taxid;
