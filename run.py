@@ -458,9 +458,9 @@ def print_status(args):
    # Name -> Bioproject Accession -> Stage -> N/M
    info = defaultdict(dict)
 
-   stages = ["raw", "noadapters", "cleaned", "processed",
+   stages = ["raw", "cleaned", "processed",
              "viruscounts", "humanviruses"]
-   short_stages = ["raw", "noadapt", "clean", "kraken", "vc", "hv"]
+   short_stages = ["raw", "clean", "kraken", "vc", "hv"]
 
    for bioproject in bioprojects:
       metadata_dir = os.path.join(THISDIR, "bioprojects", bioproject, "metadata")
@@ -511,7 +511,6 @@ def print_status(args):
 STAGES_ORDERED = []
 STAGE_FNS = {}
 for stage_name, stage_fn in [("clean", clean),
-                             ("rmadapter", rmadapter),
                              ("interpret", interpret),
                              ("viruscount", viruscount),
                              ("humanviruses", humanviruses),
