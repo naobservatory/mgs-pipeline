@@ -32,7 +32,7 @@ identification.  Todo:
 2. Run `./import-accession.sh [accession]`
 3. Make a directory `bioprojects/[accession]/metadata`.
 4. Populate it:
-   a. Create `bioprojects/[accession]/metadata/bioproject.json` with contents
+   a. Create `bioprojects/[accession]/metadata/study.json` with contents
       `{"is_paired_end": true}`.  If the bioproject isn't actually paired end then
       put `false`, but you're going to need to do a lot of updating `run.py` to
       handle this case.

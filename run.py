@@ -57,7 +57,7 @@ def tempdir(msg):
          os.chdir(olddir)
 
 def bioproject_config(args):
-   with open(os.path.join(get_metadata_dir(args), "bioproject.json")) as inf:
+   with open(os.path.join(get_metadata_dir(args), "study.json")) as inf:
       return json.load(inf)
 
 def exists_s3_prefix(s3_path):
