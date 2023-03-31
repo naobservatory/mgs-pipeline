@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import os
+from collections import Counter
 
 # samples
 
@@ -15,7 +16,11 @@ for bioproject in os.listdir("bioprojects"):
     with open("bioprojects/%s/metadata/name.txt" % bioproject) as inf:
         paper = inf.read().strip()
 
+    # not processed yet
     if paper == "Hjelmso 2019": continue
+
+    # not actually all this country, since it's airplanes
+    if paper == "Petersen 2015": continue    
 
     na, country, location, date = {
         # TODO: supplementary data has sampling dates and plane origins
@@ -64,12 +69,15 @@ countries = set(record[3] for record in samples)
 #    print(*record, sep="\t")
 
 for target_country in sorted(countries):
+    paper_count = Counter()
     dna_total = 0
     for paper, bioproject, sample, country, location, date, na, count in samples:
         if country != target_country: continue
         if na != "DNA": continue
 
         dna_total += count
+        paper_count[paper] += count
 
-    print(dna_total, target_country, sep="\t")
+    print(dna_total, target_country, ";".join(sorted(paper_count.keys())),
+          sep="\t")
             
