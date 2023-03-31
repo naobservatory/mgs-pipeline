@@ -544,6 +544,13 @@ def start():
       print_status(args)
       return
 
+   if not args.bioproject:
+      raise Exception("Must specify --bioproject BIOPROJECT")
+
+   if not os.path.isdir("bioprojects/%s" % args.bioproject):
+      raise Exception(
+         "Bioproject %s not found in bioprojects/" % args.bioproject)
+
    selected_stages = args.stages.split(",")
    for selected_stage in selected_stages:
       if selected_stage not in STAGE_FNS:
