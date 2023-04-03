@@ -448,8 +448,6 @@ def qc(args):
                   outf.write("\n")
 
 def print_status(args):
-   print("gathering status information...", end='', flush=True)
-
    if args.bioproject:
       bioprojects = [args.bioproject]
    else:
@@ -464,7 +462,10 @@ def print_status(args):
              "viruscounts", "humanviruses"]
    short_stages = ["raw", "clean", "kraken", "vc", "hv"]
 
-   for bioproject in bioprojects:
+   for n, bioproject in enumerate(bioprojects):
+      print("\rgathering status information %s/%s..." % (
+         n+1, len(bioprojects)), end='', flush=True)
+
       metadata_dir = os.path.join(THISDIR, "bioprojects", bioproject, "metadata")
       if not os.path.exists(metadata_dir):
          continue
