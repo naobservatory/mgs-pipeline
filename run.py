@@ -448,6 +448,8 @@ def qc(args):
                   outf.write("\n")
 
 def print_status(args):
+   print("gathering status information...", end='', flush=True)
+
    if args.bioproject:
       bioprojects = [args.bioproject]
    else:
@@ -486,6 +488,8 @@ def print_status(args):
                if fname.startswith(accession):
                   info[name][bioproject][accession][stage] += 1
 
+
+   print("\n")
 
    name_width=13
    print(" "*name_width, end='\t')
