@@ -1,5 +1,5 @@
 __pycache__
-dashboard/*.humanviruses.tsv
+dashboard/humanviruses/
 dashboard/*.dmp
 dashboard/*.zip
 dashboard/readme.txt

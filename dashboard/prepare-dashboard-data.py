@@ -121,7 +121,7 @@ for paper_name in papers:
 project_accession_virus_counts = {}
 for project in projects:
     for accession in project_sample_reads[project]:
-        with open("%s.humanviruses.tsv" % accession) as inf:
+        with open("humanviruses/%s.humanviruses.tsv" % accession) as inf:
             for line in inf:
                 line = line.strip()
                 if not line: continue

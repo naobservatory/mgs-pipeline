@@ -8,10 +8,10 @@ fi
 for study in $(aws s3 ls s3://nao-mgs/ | awk '{print $NF}'); do
     for hv in $(aws s3 ls s3://nao-mgs/${study}humanviruses/ | \
                     awk '{print $NF}'); do
-        if [ ! -e $hv ]; then
+        if [ ! -e humanviruses/$hv ]; then
             echo s3://nao-mgs/${study}humanviruses/$hv
         fi
     done
-done | xargs -I {} -P 32 aws s3 cp {} .
+done | xargs -I {} -P 32 aws s3 cp {} humanviruses/
 
 ./prepare-dashboard-data.py
