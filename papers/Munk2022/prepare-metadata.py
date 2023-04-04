@@ -35,9 +35,12 @@ def clean_location(x):
         "Copenhagen, Hvidovre/Aved?re": "Copenhagen",
         "Ho Chi Minh city": "Ho Chi Minh",
         "Lom?": "Lome",
+        "Praha": "Prague",
     }.get(x, x)
 
 def clean_date(x):
+    if re.match("\d\d\d\d-\d\d-\d\d", x): return x
+    
     x = x.replace("-", "/")
     if x.count("/") == 2:
         m, d, y = x.split("/")
