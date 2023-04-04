@@ -8,6 +8,47 @@ from collections import defaultdict
 THISDIR = os.path.dirname(__file__)
 root = os.path.join(THISDIR, "..", "..")
 
+def clean_country(x):
+    return {
+        "Macedonia, Republic of": "North Macedonia",
+        "Macedonia": "North Macedonia",
+        "United States of America": "USA",
+        "Iran, Islamic Republic of": "Iran",
+        "C?te d'Ivoire": "Cote d'Ivoire",
+        "Czech Rep": "Czech Republic",
+        "Kosova": "Kosovo",
+    }.get(x, x)
+
+def clean_location(x):
+    x = x.strip()
+    return {
+        "Reykjav?k": "Reykjavik",
+        "Atlanta": "Atlanta, GA",
+        "Seattle": "Seattle, WA",
+        "El Paso": "El Paso, TX",
+        "Chicago": "Chicago, IL",
+        "Boulder": "Boulder, CO",
+        "Portland": "Portland, OR",
+        "Bel?m": "Belem",
+        "Bogota-Mosquera": "Bogota",
+        "Copenhagen, Valby": "Copenhagen",
+        "Copenhagen, Hvidovre/Aved?re": "Copenhagen",
+        "Ho Chi Minh city": "Ho Chi Minh",
+        "Lom?": "Lome",
+    }.get(x, x)
+
+def clean_date(x):
+    x = x.replace("-", "/")
+    if x.count("/") == 2:
+        m, d, y = x.split("/")
+        x = "%s-%s-%s" % (y, m.zfill(2), d.zfill(2))
+        
+    elif x.count("/") == 1:
+        y, m = x.split("/")
+        x = "%s-%s" % (y, m.zfill(2))
+        
+    return x
+
 records = {}
 with open("monk-2022-supplementary-data-1.tsv") as inf:
     for n, line in enumerate(inf):
@@ -16,9 +57,9 @@ with open("monk-2022-supplementary-data-1.tsv") as inf:
             colnames = cols
         else:
             records[cols[colnames.index("ena_run_acc")]] = (
-                cols[colnames.index("country")],
-                cols[colnames.index("city")],
-                cols[colnames.index("collection_date")])
+                clean_country(cols[colnames.index("country")]),
+                clean_location(cols[colnames.index("city")]),
+                clean_date(cols[colnames.index("collection_date")]))
 
 sample_alias_to_run_accessions = defaultdict(set)
 with open("Hendriksen2019-metadata2.tsv") as inf:
@@ -52,9 +93,9 @@ with open("Hendriksen2019-metadata1.tsv") as inf:
                 raise Exception("Missing data for %s" % sample_alias)
 
             for run_accession in run_accessions:
-                record = (cols[colnames.index("country")],
-                          cols[colnames.index("city")],
-                          cols[colnames.index("sample.date")])
+                record = (clean_country(cols[colnames.index("country")]),
+                          clean_location(cols[colnames.index("city")]),
+                          clean_date(cols[colnames.index("sample.date")]))
                 
                 if run_accession in records:
                     continue
@@ -71,7 +112,7 @@ for bioproject in os.listdir(bioproject_dir):
     out = []
     with open(metadata_fname) as inf:
         for line in inf:
-            ena_run_acc = line.strip()
+            ena_run_acc = line.strip().split("\t")[0]
             if ena_run_acc not in records:
                 print ("dropping", bioproject, ena_run_acc)
                 continue
