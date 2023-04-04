@@ -168,6 +168,8 @@ for project in projects:
                 pass
             elif project in papers["Maritz 2019"]["projects"]:
                 pass
+            else:
+                raise Exception("Metadata format for %s unknown" % project)
 
 for virus_taxid in human_viruses:
     virus_sample_counts[virus_taxid] = {}
