@@ -93,21 +93,30 @@ for n_reads_fname in glob.glob(
 
 projects = list(sorted(project_sample_reads))
 
-bioproject_names = {} # project -> bioproject name
+# paper -> {link, samples, projects, na_type}
+papers = {}
 for project in projects:
     with open("%s/bioprojects/%s/metadata/name.txt" % (
             MGS_PIPELINE_DIR, project)) as inf:
-        bioproject_names[project] = inf.read().strip()
+        paper_name = inf.read().strip()
+        if paper_name not in papers:
+            papers[paper_name] = {}
+        if "projects" not in papers[paper_name]:
+            papers[paper_name]["projects"] = []
+        papers[paper_name]["projects"].append(project)
 
-bioproject_links = {} # project -> paper link
-for project, name in bioproject_names.items():
-    paper_dir = os.path.join(MGS_PIPELINE_DIR, "papers", name.replace(" ", ""))
+for paper_name in papers:
+    paper_dir = os.path.join(MGS_PIPELINE_DIR, "papers",
+                             paper_name.replace(" ", ""))
     link_fname = os.path.join(paper_dir, "link.txt")
     if os.path.exists(link_fname):
         with open(link_fname) as inf:
-            bioproject_links[project] = inf.read().strip()
+            papers[paper_name]["link"] = inf.read().strip()
 
-bioproject_totals = {}
+    na_fname = os.path.join(paper_dir, "na_type.txt")
+    if os.path.exists(na_fname):
+        with open(na_fname) as inf:
+            papers[paper_name]["na_type"] = inf.read().strip()
 
 project_accession_virus_counts = {}
 for project in projects:
@@ -116,44 +125,66 @@ for project in projects:
             for line in inf:
                 line = line.strip()
                 if not line: continue
-            
+
                 taxid, count, name = line.split("\t")
                 taxid = int(taxid)
                 count = int(count)
 
                 project_accession_virus_counts[project, accession, taxid] = count
 
-# virus -> project -> [count, relab]
-virus_project_counts = {}
+# virus -> sample -> count
+virus_sample_counts = {}
+
+# sample -> {reads, date, country, location, fine_location}
+sample_metadata = {}
+for project in projects:
+    project_total = 0
+    for accession in project_sample_reads[project]:
+        if accession not in sample_metadata:
+            sample_metadata[accession] = {}
+            
+        project_total += project_sample_reads[project][accession]
+        sample_metadata[accession]["reads"] = \
+            project_sample_reads[project][accession]
+
+    with open("%s/bioprojects/%s/metadata/metadata.tsv" % (
+            MGS_PIPELINE_DIR, project)) as inf:
+        for line in inf:
+            if not line.strip(): continue
+            line = line[:-1]  # drop trailing newline
+
+            if project in papers["Rothman 2021"]["projects"]:
+                accession, date, wtp = line.split("\t")
+                sample_metadata[accession]["date"] = date
+                sample_metadata[accession]["country"] = "USA"
+                sample_metadata[accession]["location"] = "Los Angeles"
+                sample_metadata[accession]["fine_location"] = wtp
+            elif project in papers["Munk 2022"]["projects"]:
+                accession, country, location, date = line.split("\t")
+                sample_metadata[accession]["date"] = date
+                sample_metadata[accession]["country"] = country
+                sample_metadata[accession]["location"] = location
+            elif project in papers["Petersen 2015"]["projects"]:
+                pass
+            elif project in papers["Maritz 2019"]["projects"]:
+                pass
+
 for virus_taxid in human_viruses:
-    virus_project_counts[virus_taxid] = {}
+    virus_sample_counts[virus_taxid] = {}
     for project in projects:
-        project_count = 0
-        project_total = 0
         for accession in project_sample_reads[project]:
-            project_total += project_sample_reads[project][accession]
-            project_count += project_accession_virus_counts.get((
+            count = project_accession_virus_counts.get((
                 project, accession, virus_taxid), 0)
+            if count > 0:
+                virus_sample_counts[virus_taxid][accession] = count
 
-        if project_count > 0:
-            virus_project_counts[virus_taxid][project] = (
-                project_count, project_count / project_total)
-        bioproject_totals[project] = project_total
-
-sorted_projects = [project for key, project in
-                   sorted(((bioproject_names[project].split()[-1],
-                            bioproject_names[project]),
-                           project)
-                          for project in projects)]
 
 with open("data.js", "w") as outf:
     for name, val in [
-            ("virus_project_counts", virus_project_counts),
-            ("projects", sorted_projects),
+            ("virus_sample_counts", virus_sample_counts),
+            ("sample_metadata", sample_metadata),
+            ("papers", papers),
             ("names", names),
-            ("bioproject_names", bioproject_names),
-            ("bioproject_links", bioproject_links),
-            ("bioproject_totals", bioproject_totals),
             ("tree", tree),
     ]:
         outf.write("%s=%s;\n" % (name, json.dumps(
