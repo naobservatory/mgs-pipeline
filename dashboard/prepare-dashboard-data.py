@@ -165,7 +165,14 @@ for project in projects:
                 sample_metadata[accession]["country"] = country
                 sample_metadata[accession]["location"] = location
             elif project in papers["Petersen 2015"]["projects"]:
-                pass
+                accession, country, city = line.split("\t")
+                sample_metadata[accession]["country"] = country
+                sample_metadata[accession]["location"] = city
+                # Per Supplementary Table 7 they're all one of
+                # 23-08-2013, 27-06-2013, 29-08-2013, 24-08-2013.  But the
+                # mapping between samples and dates doesn't seem to be in the
+                # paper.
+                sample_metadata[accession]["date"] = "Summer 2013"
             elif project in papers["Maritz 2019"]["projects"]:
                 pass
             else:
