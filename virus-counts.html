@@ -228,6 +228,35 @@ function e(tag, innerText) {
   return el;
 }
 
+function clean_date(raw_date, is_begin) {
+  if (!raw_date) return null;
+
+  if (raw_date == "Summer 2013") {
+    // Special casing Petersen 2015.
+    if (is_begin) {
+      return "2013-06";
+    }
+    return "2013-08";
+  }
+
+  if (/^20\d\d$/.test(raw_date)) {
+    if (is_begin) {
+      return raw_date += "-01-01";
+    }
+    return raw_date += "-12-31";
+  }
+  if (/^20\d\d-\d\d$/.test(raw_date)) {
+    if (is_begin) {
+      return raw_date += "-01";
+    }
+      return raw_date + "-31";
+  }
+  if (/^20\d\d-\d\d-\d\d$/.test(raw_date)) {
+    return raw_date;
+  }
+  return null;
+}
+
 function human_readable(n) {
   function s(v, suffix) {
     let vStr = v.toPrecision(3);
@@ -425,6 +454,11 @@ function determine_expansion_categories(paper_name) {
       }
     }
   } else if (paper_expansion(paper_name) == "sample") {
+    let target_date_begin = clean_date(date_begin_search.value,
+                                       /*is_begin=*/true);
+    let target_date_end = clean_date(date_end_search.value,
+                                     /*is_begin=*/false);
+
     for (const bioproject of papers[paper_name].projects) {
       for (const sample of bioprojects[bioproject]) {
         if (country_search.value &&
@@ -439,6 +473,27 @@ function determine_expansion_categories(paper_name) {
                city_search.value.toLowerCase()))) {
           continue;
         }
+        if (target_date_begin || target_date_end) {
+          if (!sample_metadata[sample].date) continue;
+
+          let date_as_begin = clean_date(sample_metadata[sample].date,
+                                         /*is_begin=*/true);
+          let date_as_end = clean_date(sample_metadata[sample].date,
+                                       /*is_begin=*/false);
+
+          console.log(date_end_search.value,
+                      sample_metadata[sample].date,
+                      target_date_end,
+                      date_as_end);
+
+          if (target_date_begin && date_as_begin < target_date_begin) {
+            continue;
+          }
+          if (target_date_end && date_as_end > target_date_end) {
+            continue;
+          }
+        }
+
         out.push([
           sample_description(sample, paper_name),
           sample_metadata[sample].reads, [sample]]);
@@ -461,7 +516,6 @@ function redisplay() {
   // And how many reads is it, so we can compute relative abundances?
   const column_totals = [];
 
-  // TODO: make this respond to Country/City/Date searches
   const tr_header = e("tr");
   const tr_header_sub = e("tr");
   tr_header_sub.classList.add("tr_header_sub");
