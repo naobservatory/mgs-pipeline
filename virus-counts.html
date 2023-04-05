@@ -4,9 +4,6 @@ To rebuild:
 1. Run mgs pipeline
 2. dashboard/prepare-dashboard-data.sh makes data.js
 
-The JS below is pretty terrible.  If we like this display and intend
-to do more with it there is a lot I need to do to clean it up.
-
 -->
 
 Rows are taxonomic nodes, columns are bioprojects, pink cells are
@@ -21,16 +18,24 @@ weren't any other reads in those categories.  When you get to
 Orthornavirae it goes up to 2.7e-6, primarily because there're a lot
 of Norovirus reads.  </details> <p>
 
-Search: <input id=searchfield type=text></input>
+Search:
+<table border=0>
+  <tr><td>Taxonomic<td><input id=taxonomic_search type=text size=34></input>
+  <tr><td>Country<td><input id=country_search type=text size=34></input>
+  <tr><td>City<td><input id=city_search type=text size=34></input>
+  <tr><td>Date<td>
+  <input size=15 id=date_begin_search type=text></input> &ndash;
+     <input size=15 id=date_end_search type=text></input>
+</table>
 
 <p>
 
 <table id=tbl border=1 cellpadding=5></table>
 <style>
-  .projectname, .projecttotal {
+  .projecttotal {
     font-weight: normal;
   }
-  td {
+  #tbl td {
     word-wrap: break-word;
     max-width: 15em;
   }
@@ -40,291 +45,341 @@ Search: <input id=searchfield type=text></input>
 <script>
 
 // imports:
-//   virus_project_counts: taxid -> project -> count, relab
-//   projects: [project]
+//   virus_sample_counts: taxid -> sample -> count
+//   sample_metadata: sample -> {country, date, location, reads}
+//   bioprojects: project -> [samples]
+//   papers: paper -> {link, na_type, [projects]}
 //   names: taxid -> name
 //   tree: taxid with children
-//   bioproject_names: project -> paper name
-//   bioproject_links: project -> paper link
-//   bioproject_totals: project -> nreads
+
+const paper_names = [];
+for (paper in papers) {
+  paper_names.push(paper);
+}
+paper_names.sort();
+
+function e(tag, innerText) {
+  const el = document.createElement(tag);
+  if (innerText) {
+    el.innerText = innerText;
+  }
+  return el;
+}
+
+function humanReadable(n) {
+  function s(v, suffix) {
+    let vStr = v.toPrecision(3);
+    if (vStr.includes(".")) {
+      vStr = v.toPrecision(2);
+    }
+    return vStr + suffix;
+  }
+  if (n < 1000) return n;
+  n /= 1000;
+  if (n < 1000) return s(n,'k');
+  n /= 1000;
+  if (n < 1000) return s(n,'M');
+  n /= 1000;
+  if (n < 1000) return s(n, 'B');
+  n /= 1000;
+  if (n < 1000) return s(n, 'T');
+  n /= 1000;
+  return s(n, 'Q');
+}
+
+function cellValue(count, total, is_leaf) {
+  if (count == 0) {
+    return "< " + sciNum(1/total);
+  }
+  const val = count / total;
+  if (is_leaf) {
+    return sciNum(val) + " (" + count + ")";
+  }
+  return sciNum(val);
+}
+
+function sciNum(x) {
+  return x.toExponential(1);
+}
+
+function sciColor(x) {
+  if (x > 1e-5) {
+    return '#f9f';
+  } else if (x > 1e-6) {
+    return '#faf';
+  } else if (x > 1e-7) {
+    return '#fbf';
+  } else if (x > 1e-8) {
+    return '#fcf';
+  } else if (x > 1e-9) {
+    return '#fdf';
+  } else if (x > 1e-10) {
+    return '#fef';
+  }
+  return '#fff';
+}
+
+const rightTriangle = "&rarr;";
+const downTriangle = "&darr;";
+
+const manually_expanded_taxids = new Set();
+
+function manually_expand(taxid) {
+  manually_expanded_taxids.add(taxid);
+  redisplay();
+}
+
+function refresh_taxonomic_expansion() {
+  manually_expanded_taxids.clear();
+  redisplay();
+}
+
+// The general design here is that every time something changes we
+// throw away the whole table and make a new one based on the current state.
+function redisplay() {
+  // Remove any table contents from before.
+  while (tbl.firstChild) {
+    tbl.removeChild(tbl.firstChild);
+  }
+
+  // For each column, what samples does it represent?
+  const column_samples = [];
+  // And how many reads is it, so we can compute relative abundances?
+  const column_totals = [];
+
+  // TODO: make this respond to Country/City/Date searches
+  const tr_header = e("tr");
+
+  const td_refresh = e("td");
+  const button_refresh_taxonomic_expansion = e("button");
+  button_refresh_taxonomic_expansion.innerHTML = "&#10227;"
+  button_refresh_taxonomic_expansion.onclick = refresh_taxonomic_expansion;
+  td_refresh.appendChild(button_refresh_taxonomic_expansion);
+  tr_header.appendChild(td_refresh);
+
+  tr_header.appendChild(e("td")); // taxonomic node names
   
-  function search() {
-    collapseAll();
+  for (paper_name of paper_names) {
+    const th_paper = e("th");
+    const a_paper = e("a", paper_name);
+    a_paper.href = papers[paper].link;
+    br_paper = e("br");
 
-    const val = searchfield.value.toLowerCase();
+    const column = [];
+    let total_reads = 0;
+    for (bioproject of papers[paper_name].projects) {
+      for (sample of bioprojects[bioproject]) {
+        column.push(sample)
+        total_reads += sample_metadata[sample].reads;
+      }
+    }
+    column_samples.push(column);
+    column_totals.push(total_reads);
 
-    for (tr of tbl.children) {
-      if (tr.namesLower && tr.namesLower.includes(val)) {
-        tr.style.backgroundColor = 'lightyellow';
+    span_paper = e("span", humanReadable(total_reads) + " reads");
+    
+    span_paper.classList.add("projecttotal");
+    th_paper.appendChild(a_paper);
+    th_paper.appendChild(br_paper);
+    th_paper.appendChild(span_paper);
+    tr_header.appendChild(th_paper);
+  }
+  tbl.appendChild(tr_header);
 
-        let altName = "";
-        if (!tr.names[0].toLowerCase().includes(val)) {
-          for (name of tr.names) {
-            if (name.toLowerCase().includes(val)) {
-              altName = name;
-              break;
-            }
-          }
+  // First find out which taxonomic nodes should be shown, then
+  // identify all their ancestors, then populate them.
+  const visible_taxonomic_nodes = new Set();
+  if (taxonomic_search.value) {
+    for (taxid in names) {
+      for (name of names[taxid]) {
+        if (name.toLowerCase().includes(
+            taxonomic_search.value.toLowerCase())) {
+          visible_taxonomic_nodes.add(Number(taxid));
+          break;
         }
-        if (altName) {
-          tr.children[2].innerText = tr.names[0] + " (" + altName + ")";
-        }
-        
-        let s = tr;
-        while (s.depth >= tr.depth) {
-          s = s.previousSibling;
-        }
-        const parent = s;
-        let ancestor = s;
-
-        while (s) {
-          if (s == parent || s.depth < ancestor.depth) {
-            ancestor = s;
-            if (s.childrenButton) {
-              s.collapsed = false;
-              s.childrenButton.innerHTML = downTriangle;
-            }
-          }
-          s = s.previousSibling;
+      }
+    }
+  } else {
+    for (taxid in names) {
+      for (name of names[taxid]) {
+        if (name == "Viruses") {
+          visible_taxonomic_nodes.add(Number(taxid));
         }
       }
     }
-    adjustDisplay();
   }
 
-  searchfield.addEventListener("input", search);
-
-  function collapseAll() {
-    for (tr of tbl.children) {
-      if (tr.names && tr.names.length) {
-        tr.children[2].innerText = tr.names[0];
-      }
-
-      tr.style.backgroundColor = 'white';
-      if (tr.childrenButton) {
-        tr.childrenButton.innerHTML = rightTriangle;
-        tr.collapsed = true;
-      }
-    }
-    adjustDisplay();
-  }
-
-  function e(tag) {
-    return document.createElement(tag);
-  }
-
-  function humanReadable(n) {
-    function s(v, suffix) {
-      let vStr = v.toPrecision(3);
-      if (vStr.includes(".")) {
-        vStr = v.toPrecision(2);
-      }
-      return vStr + suffix;
-    }
-    if (n < 1000) return n;
-    n /= 1000;
-    if (n < 1000) return s(n,'k');
-    n /= 1000;
-    if (n < 1000) return s(n,'M');
-    n /= 1000;
-    if (n < 1000) return s(n, 'B');
-    n /= 1000;
-    if (n < 1000) return s(n, 'T');
-    n /= 1000;
-    return s(n, 'Q');
-  }
-
-  const tr1 = e("tr");
-  const thRefreshLayout = e("th")
-  buttonRefreshLayout = e("button");
-  thRefreshLayout.appendChild(buttonRefreshLayout);
-  buttonRefreshLayout.innerHTML = "&#10227;"
-  buttonRefreshLayout.onclick = function() {
-    searchfield.value = "";
-    collapseAll();
-    for (tr of tbl.children) {
-      if (tr.depth <= 1) {
-        tr.collapsed = false;
-      }
-    }
-    adjustDisplay();
-  };
-  tr1.appendChild(thRefreshLayout);
-
-  const thChildren = e("th");
-  thChildren.innerText = "children";
-  tr1.appendChild(thChildren);
-
-  const thName = e("th");
-  thName.innerText = "name";
-  tr1.appendChild(thName);
-
-  const thReads = e("th");
-  thReads.innerText = "reads";
-  tr1.appendChild(thReads);
-
-  for (const project of projects) {
-    const th = e("th");
-    th.innerHTML = "<a href='" + bioproject_links[project] + "'>" +
-      bioproject_names[project] + "</a><br>" +
-      "<span class=projectname>" + project + "</span><br>" +
-      "<span class=projecttotal>" + humanReadable(bioproject_totals[project]) + " reads</span>";
-    tr1.appendChild(th);
-  }
-  tbl.appendChild(tr1);
-
-  function cellValue(val, count, total) {
-    if (val == 0) {
-      return "< " + sciNum(1/total);
-    }
-    if (count != null) {
-      return sciNum(val) + " (" + count + ")";
-    }
-    return sciNum(val);
-  }
-
-  function sciNum(x) {
-    return x.toExponential(1);
-  }
-
-  function sciColor(x) {
-    if (x > 1e-5) {
-      return '#f9f';
-    } else if (x > 1e-6) {
-      return '#faf';
-    } else if (x > 1e-7) {
-      return '#fbf';
-    } else if (x > 1e-8) {
-      return '#fcf';
-    } else if (x > 1e-9) {
-      return '#fdf';
-    } else if (x > 1e-10) {
-      return '#fef';
-    }
-    return '#fff';
-  }
-
-  const rightTriangle = "&rarr;";
-    const downTriangle = "&darr;";
-
-  function clickRow(tr, depth) {
-    function handleClick(e) {
-      tr.collapsed = !tr.collapsed;
-      tr.childrenButton.innerHTML = tr.collapsed ? rightTriangle : downTriangle;
-      adjustDisplay();
-    }
-    return handleClick;
-  }
-
-  function adjustDisplay() {
-    let tr = tbl.children[0];
-    let collapse_depth = null;
-    while (tr.nextSibling) {
-      tr = tr.nextSibling;
-      if (collapse_depth != null && tr.depth <= collapse_depth) {
-        collapse_depth = null;
-      }
-      if (tr.collapsed && collapse_depth == null) {
-        collapse_depth = tr.depth;
-      }
-      tr.style.visibility = (
-        collapse_depth == null ||
-          tr.depth <= collapse_depth) ? "visible" : "collapse";
-    }
-  }
-
-  function populateTable(node, depth) {
-    const totals = [];
+  function handle_manual_expansion(node=tree) {
     const taxid = node[0];
+    if (manually_expanded_taxids.has(taxid)) {
+      for (let i = 1; i < node.length; i++) {
+        visible_taxonomic_nodes.add(node[i][0]);
+      }
+    }
+    for (let i = 1; i < node.length; i++) {
+      handle_manual_expansion(node[i]);
+    }    
+  }
+  handle_manual_expansion();
+  
+  function build_subtree(node) {
+    const taxid = node[0];
+    const filtered_node = [taxid];
+
+    if (node.length > 1) {
+      for (let i = 1; i < node.length; i++) {
+        const potential_child = build_subtree(node[i]);
+        if (potential_child) {
+          filtered_node.push(potential_child);
+          visible_taxonomic_nodes.add(taxid);
+        }
+      }
+    }
+
+    if (visible_taxonomic_nodes.has(taxid) || filtered_node.length > 1) {
+      return filtered_node;
+    }
+    return null;
+  }
+  const subtree = build_subtree(tree);
+
+  function expand_all_species(node, all_species) {
+    const taxid = node[0];
+    if (node.length == 1) {
+      all_species.push(taxid);
+    }
+    for (let i = 1; i < node.length; i++) {
+      expand_all_species(node[i], all_species);
+    }
+  }
+  
+  function expand_species(target_taxid, node=tree) {
+    const taxid = node[0];
+    if (taxid == target_taxid) {
+      const all_species = [];
+      expand_all_species(node, all_species);
+      return all_species;
+    } else {
+      for (let i = 1; i < node.length; i++) {
+        const maybe_species = expand_species(target_taxid, node[i]);
+        if (maybe_species) {
+          return maybe_species;
+        }
+      }
+    }
+    return null;
+  }
+  
+  function count_matches(samples, all_species) {
+    let total = 0;
+    for (species of all_species) {
+      for (sample of samples) {
+        const n = virus_sample_counts[species][sample];
+        if (n) {
+          total += n;
+        }
+      }
+    }
+    return total;
+  }
+
+  // -> name, is_match
+  function name_node(taxid) {
+    let name = names[taxid][0];
+    
+    const target_lower = taxonomic_search.value.toLowerCase();
+    if (!target_lower) return [name, false];
+    
+    if (name.toLowerCase().includes(target_lower)) {
+      return [name, true];
+    }
+    if (!name.toLowerCase().includes(target_lower)) {
+      for (alt_name of names[taxid]) {
+        if (alt_name.toLowerCase().includes(target_lower)) {
+          return [name +  " (" + alt_name + ")", true];
+        }
+      }
+    }
+    return [name, false];
+  }
+
+  function has_nonvisible_children(target_taxid, node=tree) {
+    const taxid = node[0];
+    if (target_taxid == taxid) {
+      for (let i = 1; i < node.length; i++) {
+        if (!visible_taxonomic_nodes.has(node[i][0])) {
+          return true;
+        }
+      }
+      return false;
+    }
+    for (let i = 1; i < node.length; i++) {
+      if (has_nonvisible_children(target_taxid, node[i])) {
+        return true;
+      }
+    }
+    return false;
+  }
+  
+  function render_subtree(node=subtree, depth=0) {
+    if (!node || !node.length) return;
+    
     const tr = e("tr");
-    tr.depth = depth;
-    tr.collapsed = depth > 1;
-    tr.names = names[taxid];
-    tr.namesLower = names[taxid].join(", ").toLowerCase();
+    const taxid = node[0];
 
-    const tdChildrenButton = e("td");
-    tr.appendChild(tdChildrenButton);
-    const tdChildrenCount = e("td");
-    tr.appendChild(tdChildrenCount);
-
-    const tdName = e("td");
-    tdName.style.paddingLeft = (depth*0.5) + "em";
-    tdName.title = names[taxid].length > 1 ?
-                     names[taxid].slice(1).join(", ") : names[taxid][0]
-    const aName = e("a");
-    aName.innerText = names[taxid][0];
-    aName.href = "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi" +
+    const td_expand_button = e("td");
+    // button should be present if any children of this node are not
+    // currently expanded.
+    if (has_nonvisible_children(taxid)) {
+      const button_expand = e("button", "+");
+      button_expand.onclick = function () { manually_expand(taxid) };
+      td_expand_button.appendChild(button_expand);
+    }
+    tr.appendChild(td_expand_button);
+    
+    const td_node_name = e("td");
+    td_node_name.style.paddingLeft = (depth*0.5) + "em";
+    const [node_name, is_match] = name_node(taxid);
+    const a_node_name = e("a", node_name);
+    if (is_match) {
+      td_node_name.style.backgroundColor = 'lightyellow';
+    }
+    a_node_name.href =
+      "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi" +
       "?lvl=0&id=" + taxid;
-    aName.setAttribute("target", "_blank");
-    tdName.appendChild(aName);
-    tr.appendChild(tdName);
+    a_node_name.target = "_blank";
+    td_node_name.appendChild(a_node_name);
+    // hovertext showing alternative names
+    td_node_name.title = names[taxid].length > 1 ?
+      names[taxid].slice(1).join(", ") : names[taxid][0];    
+    tr.appendChild(td_node_name);
 
-    const tdReads = e("td");
-    tr.appendChild(tdReads);
-
-    if (depth > 0) {
+    const species = expand_species(taxid);
+    for (let i = 0; i < column_samples.length; i++) {
+      const samples = column_samples[i];
+      const total_reads = column_totals[i];
+      const matches = count_matches(samples, species);
+      const td_val = e("td", cellValue(matches, total_reads, node.length==1))
+      td_val.style.backgroundColor = sciColor(matches/total_reads);
+      tr.appendChild(td_val);
+    }
+    if (taxid != 1) {
       tbl.appendChild(tr);
     }
-
-    if (node.length == 1) {
-      tr.nReads = 0;
-      for (const project of projects) {
-        const tdVal = e("td");
-        const project_counts = virus_project_counts[taxid][project];
-        const val = project_counts ? project_counts[1] : 0;
-        const count = project_counts ? project_counts[0] : 0;
-        totals.push(val);
-        tdVal.innerText = cellValue(val, count, bioproject_totals[project]);
-        tr.nReads += project_counts ? project_counts[0] : 0;
-        tdVal.style.backgroundColor = sciColor(val);
-        tr.appendChild(tdVal);
-      }
-    } else {
-      for (const project of projects) {
-        totals.push(0);
-      }
-      for (let i = 1; i < node.length; i++) {
-        const r = populateTable(node[i], depth+1);
-        for (let j = 0; j < r.length; j++) {
-          totals[j] += r[j];
-        }
-      }
-      for (let i = 0; i < projects.length; i++) {
-        const project = projects[i];
-        const total = totals[i];
-        const tdVal = e("td");
-        tdVal.innerText = cellValue(total, null, bioproject_totals[project]);
-        tdVal.style.backgroundColor = sciColor(total);
-        tr.appendChild(tdVal);
-      }
-      const buttonChildren = e("button");
-      buttonChildren.onclick = clickRow(tr, depth);
-      buttonChildren.innerHTML = tr.collapsed ? rightTriangle : downTriangle;
-      tdChildrenButton.appendChild(buttonChildren);
-      tr.childrenButton = buttonChildren;
+    for (let i = 1; i < node.length; i++) {
+      render_subtree(node[i], depth+1);
     }
-
-    let s = tr.nextSibling;
-    let children = 0;
-    let nReads = 0;
-    while (s) {
-      nReads += s.nReads;
-      s = s.nextSibling;
-      children++;
-    }
-    if (children > 0) {
-      tdChildrenCount.innerText = children;
-    }
-
-    if (!tr.nReads) {
-      tr.nReads = nReads;
-    }
-
-    tdReads.innerText = tr.nReads;
-
-    return totals;
   }
 
-  populateTable(tree, 0);
-  adjustDisplay();
+  render_subtree();
+}
+
+taxonomic_search.addEventListener("input", redisplay);
+country_search.addEventListener("input", redisplay);
+city_search.addEventListener("input", redisplay);
+date_begin_search.addEventListener("input", redisplay);
+date_end_search.addEventListener("input", redisplay);
+
+redisplay();
+
 </script>
