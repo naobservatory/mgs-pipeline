@@ -158,7 +158,7 @@ function redisplay() {
   tr_header.appendChild(td_refresh);
 
   tr_header.appendChild(e("td")); // taxonomic node names
-  
+
   for (paper_name of paper_names) {
     const th_paper = e("th");
     const a_paper = e("a", paper_name);
@@ -177,7 +177,7 @@ function redisplay() {
     column_totals.push(total_reads);
 
     span_paper = e("span", humanReadable(total_reads) + " reads");
-    
+
     span_paper.classList.add("projecttotal");
     th_paper.appendChild(a_paper);
     th_paper.appendChild(br_paper);
@@ -218,10 +218,10 @@ function redisplay() {
     }
     for (let i = 1; i < node.length; i++) {
       handle_manual_expansion(node[i]);
-    }    
+    }
   }
   handle_manual_expansion();
-  
+
   function build_subtree(node) {
     const taxid = node[0];
     const filtered_node = [taxid];
@@ -252,7 +252,7 @@ function redisplay() {
       expand_all_species(node[i], all_species);
     }
   }
-  
+
   function expand_species(target_taxid, node=tree) {
     const taxid = node[0];
     if (taxid == target_taxid) {
@@ -269,7 +269,7 @@ function redisplay() {
     }
     return null;
   }
-  
+
   function count_matches(samples, all_species) {
     let total = 0;
     for (species of all_species) {
@@ -286,10 +286,10 @@ function redisplay() {
   // -> name, is_match
   function name_node(taxid) {
     let name = names[taxid][0];
-    
+
     const target_lower = taxonomic_search.value.toLowerCase();
     if (!target_lower) return [name, false];
-    
+
     if (name.toLowerCase().includes(target_lower)) {
       return [name, true];
     }
@@ -320,10 +320,10 @@ function redisplay() {
     }
     return false;
   }
-  
+
   function render_subtree(node=subtree, depth=0) {
     if (!node || !node.length) return;
-    
+
     const tr = e("tr");
     const taxid = node[0];
 
@@ -336,7 +336,7 @@ function redisplay() {
       td_expand_button.appendChild(button_expand);
     }
     tr.appendChild(td_expand_button);
-    
+
     const td_node_name = e("td");
     td_node_name.style.paddingLeft = (depth*0.5) + "em";
     const [node_name, is_match] = name_node(taxid);
@@ -351,7 +351,7 @@ function redisplay() {
     td_node_name.appendChild(a_node_name);
     // hovertext showing alternative names
     td_node_name.title = names[taxid].length > 1 ?
-      names[taxid].slice(1).join(", ") : names[taxid][0];    
+      names[taxid].slice(1).join(", ") : names[taxid][0];
     tr.appendChild(td_node_name);
 
     const species = expand_species(taxid);
@@ -374,11 +374,30 @@ function redisplay() {
   render_subtree();
 }
 
-taxonomic_search.addEventListener("input", redisplay);
-country_search.addEventListener("input", redisplay);
-city_search.addEventListener("input", redisplay);
-date_begin_search.addEventListener("input", redisplay);
-date_end_search.addEventListener("input", redisplay);
+let active_followups = 0;
+
+// When someone is typing quickly we don't want to search repeatedly.
+function search_followup() {
+  active_followups--;
+  if (active_followups) return;
+
+  redisplay();
+}
+
+function search(e) {
+  active_followups++;
+  if (e.target.value.length > 3) {
+    setTimeout(search_followup, 100);
+  } else {
+    setTimeout(search_followup, 1000);
+  }
+}
+
+taxonomic_search.addEventListener("input", search);
+country_search.addEventListener("input", search);
+city_search.addEventListener("input", search);
+date_begin_search.addEventListener("input", search);
+date_end_search.addEventListener("input", search);
 
 redisplay();
 
