@@ -16,10 +16,19 @@ you can't tell it from this page).  As you go up the tree from there
 (Lentivirus ... Pararnavirae) it still says 1.5e-9, because there
 weren't any other reads in those categories.  When you get to
 Orthornavirae it goes up to 2.7e-6, primarily because there're a lot
-of Norovirus reads.  </details> <p>
+of Norovirus reads.  </details>
+
+<p>
+
+Papers:
+<table id=table_papers cellpadding=5 rules=rows>
+  <tr><th><th>Name<th>Reads<th>Acid<th>Samples<th>Location<th>Date<th>Bioprojects
+</table>
+
+<p>
 
 Search:
-<table border=0>
+<table>
   <tr><td>Taxonomic<td><input id=taxonomic_search type=text size=34></input>
   <tr><td>Country<td><input id=country_search type=text size=34></input>
   <tr><td>City<td><input id=city_search type=text size=34></input>
@@ -30,7 +39,7 @@ Search:
 
 <p>
 
-<table id=tbl border=1 cellpadding=5></table>
+<table id=tbl cellpadding=5 rules=rows></table>
 <style>
   .projecttotal {
     font-weight: normal;
@@ -57,6 +66,101 @@ for (paper in papers) {
   paper_names.push(paper);
 }
 paper_names.sort();
+
+function summarizeLocation(paper_name) {
+  const countries = new Set();
+  const locations = new Set();
+
+  for (bioproject of papers[paper_name].projects) {
+    for (sample of bioprojects[bioproject]) {
+      countries.add(sample_metadata[sample].country);
+      locations.add(sample_metadata[sample].location);
+    }
+  }
+
+  if (countries.size == 1 && locations.size == 1) {
+    const [location] = locations;
+    return location;
+  }
+  if (countries.size == 1) {
+    const [country] = countries;
+    return country;
+  }
+  return "Multiple";
+}
+
+function summarizeDate(paper_name) {
+  const dates = new Set();
+
+  for (bioproject of papers[paper_name].projects) {
+    for (sample of bioprojects[bioproject]) {
+      if (sample_metadata[sample].date) {
+        dates.add(sample_metadata[sample].date);
+      }
+    }
+  }
+
+  if (dates.size == 1) {
+    const [date] = dates;
+    return date;
+  }
+
+  const sorted_dates = [...dates].sort();
+  return sorted_dates[0] + " to " + sorted_dates[dates.size - 1];
+}
+
+// paper -> inclusion checkbox
+const include_papers = {};
+
+for (paper_name of paper_names) {
+  const tr = e("tr");
+
+  const td_include = e("td");
+  const input_include = e("input");
+  input_include.type = "checkbox";
+  input_include.checked = true;
+  if (paper_name == "Maritz 2019" ||
+      paper_name == "Petersen 2015") {
+    input_include.checked = false;
+  }
+  input_include.onchange = redisplay;
+  include_papers[paper_name] = input_include;
+  td_include.appendChild(input_include);
+  tr.appendChild(td_include);
+
+  const td_name = e("td");
+  const a_name = e("a", paper_name);
+  a_name.href = papers[paper_name].link;
+  a_name.target = "_blank";
+  td_name.appendChild(a_name);
+  tr.appendChild(td_name);
+
+  let total_reads = 0;
+  let total_samples = 0;
+  for (bioproject of papers[paper_name].projects) {
+    for (sample of bioprojects[bioproject]) {
+      total_reads += sample_metadata[sample].reads;
+      total_samples += 1;
+    }
+  }
+  tr.appendChild(e("td", humanReadable(total_reads) + " reads"));
+  tr.appendChild(e("td", papers[paper_name].na_type));
+  tr.appendChild(e("td", total_samples));
+  tr.appendChild(e("td", summarizeLocation(paper_name)));
+  tr.appendChild(e("td", summarizeDate(paper_name)));
+
+  const td_bioprojects = e("td");
+  for (bioproject of papers[paper_name].projects) {
+    const a_bioproject = e("a", bioproject);
+    a_bioproject.href = "https://www.ebi.ac.uk/ena/browser/view/" + bioproject;
+    a_bioproject.target = "_blank";
+    td_bioprojects.appendChild(a_bioproject);
+    td_bioprojects.appendChild(e("span", " "));
+  }
+  tr.appendChild(td_bioprojects);
+
+  table_papers.appendChild(tr);
+}
 
 function e(tag, innerText) {
   const el = document.createElement(tag);
@@ -160,9 +264,12 @@ function redisplay() {
   tr_header.appendChild(e("td")); // taxonomic node names
 
   for (paper_name of paper_names) {
+    if (!include_papers[paper_name].checked) continue;
+
     const th_paper = e("th");
     const a_paper = e("a", paper_name);
-    a_paper.href = papers[paper].link;
+    a_paper.href = papers[paper_name].link;
+    a_paper.target = "_blank";
     br_paper = e("br");
 
     const column = [];
