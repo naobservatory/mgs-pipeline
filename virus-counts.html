@@ -481,11 +481,6 @@ function determine_expansion_categories(paper_name) {
           let date_as_end = clean_date(sample_metadata[sample].date,
                                        /*is_begin=*/false);
 
-          console.log(date_end_search.value,
-                      sample_metadata[sample].date,
-                      target_date_end,
-                      date_as_end);
-
           if (target_date_begin && date_as_begin < target_date_begin) {
             continue;
           }
