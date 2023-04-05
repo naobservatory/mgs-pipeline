@@ -174,7 +174,12 @@ for project in projects:
                 # paper.
                 sample_metadata[accession]["date"] = "Summer 2013"
             elif project in papers["Maritz 2019"]["projects"]:
-                pass
+                sample_metadata[accession]["country"] = "USA"
+                sample_metadata[accession]["location"] = "New York City"
+                # Paper has "17 raw sewage samples collected from 14 DEP
+                # wastewater treatment plants from the five NYC boroughs in
+                # November 2014".
+                sample_metadata[accession]["date"] = "2014-11"
             else:
                 raise Exception("Metadata format for %s unknown" % project)
 
