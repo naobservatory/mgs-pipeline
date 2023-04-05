@@ -118,9 +118,14 @@ for paper_name in papers:
         with open(na_fname) as inf:
             papers[paper_name]["na_type"] = inf.read().strip()
 
+# bioproject -> [samples]
+bioprojects = {}
+
 project_accession_virus_counts = {}
 for project in projects:
+    bioprojects[project] = []
     for accession in project_sample_reads[project]:
+        bioprojects[project].append(accession)
         with open("humanviruses/%s.humanviruses.tsv" % accession) as inf:
             for line in inf:
                 line = line.strip()
@@ -142,7 +147,7 @@ for project in projects:
     for accession in project_sample_reads[project]:
         if accession not in sample_metadata:
             sample_metadata[accession] = {}
-            
+
         project_total += project_sample_reads[project][accession]
         sample_metadata[accession]["reads"] = \
             project_sample_reads[project][accession]
@@ -197,6 +202,7 @@ with open("data.js", "w") as outf:
     for name, val in [
             ("virus_sample_counts", virus_sample_counts),
             ("sample_metadata", sample_metadata),
+            ("bioprojects", bioprojects),
             ("papers", papers),
             ("names", names),
             ("tree", tree),
