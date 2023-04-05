@@ -22716,45 +22716,87 @@ sample_metadata={
     "reads": 39201
   },
   "ERR2729796": {
+    "country": "USA",
+    "date": "2014-11",
+    "location": "New York City",
     "reads": 10064892
   },
   "ERR2729797": {
+    "country": "USA",
+    "date": "2014-11",
+    "location": "New York City",
     "reads": 18312129
   },
   "ERR2729798": {
+    "country": "USA",
+    "date": "2014-11",
+    "location": "New York City",
     "reads": 10672665
   },
   "ERR2729799": {
+    "country": "USA",
+    "date": "2014-11",
+    "location": "New York City",
     "reads": 11083621
   },
   "ERR2729800": {
+    "country": "USA",
+    "date": "2014-11",
+    "location": "New York City",
     "reads": 9893187
   },
   "ERR2729801": {
+    "country": "USA",
+    "date": "2014-11",
+    "location": "New York City",
     "reads": 10078843
   },
   "ERR2729802": {
+    "country": "USA",
+    "date": "2014-11",
+    "location": "New York City",
     "reads": 10987694
   },
   "ERR2729803": {
+    "country": "USA",
+    "date": "2014-11",
+    "location": "New York City",
     "reads": 10071277
   },
   "ERR2729804": {
+    "country": "USA",
+    "date": "2014-11",
+    "location": "New York City",
     "reads": 9892664
   },
   "ERR2729805": {
+    "country": "USA",
+    "date": "2014-11",
+    "location": "New York City",
     "reads": 11094487
   },
   "ERR2729806": {
+    "country": "USA",
+    "date": "2014-11",
+    "location": "New York City",
     "reads": 9667579
   },
   "ERR2729807": {
+    "country": "USA",
+    "date": "2014-11",
+    "location": "New York City",
     "reads": 10959117
   },
   "ERR2729808": {
+    "country": "USA",
+    "date": "2014-11",
+    "location": "New York City",
     "reads": 10393448
   },
   "ERR2729809": {
+    "country": "USA",
+    "date": "2014-11",
+    "location": "New York City",
     "reads": 9914397
   },
   "ERR2729810": {
@@ -22764,6 +22806,9 @@ sample_metadata={
     "reads": 10294024
   },
   "ERR2729811": {
+    "country": "USA",
+    "date": "2014-11",
+    "location": "New York City",
     "reads": 8646908
   },
   "ERR4678558": {

@@ -179,6 +179,7 @@ for project in projects:
                 # paper.
                 sample_metadata[accession]["date"] = "Summer 2013"
             elif project in papers["Maritz 2019"]["projects"]:
+                accession = line.split("\t")[0]
                 sample_metadata[accession]["country"] = "USA"
                 sample_metadata[accession]["location"] = "New York City"
                 # Paper has "17 raw sewage samples collected from 14 DEP
@@ -196,7 +197,6 @@ for virus_taxid in human_viruses:
                 project, accession, virus_taxid), 0)
             if count > 0:
                 virus_sample_counts[virus_taxid][accession] = count
-
 
 with open("data.js", "w") as outf:
     for name, val in [
