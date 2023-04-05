@@ -98,7 +98,7 @@ for (const paper_name of paper_names) {
 }
 
 function paper_expansion_options(paper_name) {
-  options = [];
+  const options = [];
   if (paper_countries[paper_name].size > 1) {
     options.push("country");
   }
@@ -328,10 +328,24 @@ function collapse_paper(e) {
 // if present, one of country, location, fine, sample
 const paper_expansions = {}
 
+function is_forced_sample_level() {
+  return country_search.value ||
+    city_search.value ||
+    date_begin_search.value ||
+    date_end_search.value;
+}
+
+function paper_expansion(paper_name) {
+  if (is_forced_sample_level()) {
+    return "sample";
+  }
+  return paper_expansions[paper_name];
+}
+
 // -> [[name_bits, total_reads, samples], ...]
 function determine_expansion_categories(paper_name) {
   const out = [];
-  if (!paper_expansions[paper_name]) {
+  if (!paper_expansion(paper_name)) {
     const samples = [];
     let total_reads = 0;
     for (const bioproject of papers[paper_name].projects) {
@@ -341,7 +355,7 @@ function determine_expansion_categories(paper_name) {
       }
     }
     out.push([[], total_reads, samples]);
-  } else if (paper_expansions[paper_name] == "country") {
+  } else if (paper_expansion(paper_name) == "country") {
     for (const country of [...paper_countries[paper_name]].sort()) {
       const samples = [];
       let total_reads = 0;
@@ -355,7 +369,7 @@ function determine_expansion_categories(paper_name) {
       }
       out.push([[country || "Unknown"], total_reads, samples]);
     }
-  } else if (paper_expansions[paper_name] == "location") {
+  } else if (paper_expansion(paper_name) == "location") {
     for (const country of [...paper_countries[paper_name]].sort()) {
       for (const location of [...paper_locations[paper_name]].sort()) {
         const samples = [];
@@ -379,7 +393,7 @@ function determine_expansion_categories(paper_name) {
         }
       }
     }
-  } else if (paper_expansions[paper_name] == "fine") {
+  } else if (paper_expansion(paper_name) == "fine") {
     for (const country of [...paper_countries[paper_name]].sort()) {
       for (const location of [...paper_locations[paper_name]].sort()) {
         for (const fine_location of
@@ -410,9 +424,21 @@ function determine_expansion_categories(paper_name) {
         }
       }
     }
-  } else if (paper_expansions[paper_name] == "sample") {
+  } else if (paper_expansion(paper_name) == "sample") {
     for (const bioproject of papers[paper_name].projects) {
       for (const sample of bioprojects[bioproject]) {
+        if (country_search.value &&
+            (!sample_metadata[sample].country ||
+             !sample_metadata[sample].country.toLowerCase().includes(
+               country_search.value.toLowerCase()))) {
+          continue;
+        }
+        if (city_search.value &&
+            (!sample_metadata[sample].location ||
+             !sample_metadata[sample].location.toLowerCase().includes(
+               city_search.value.toLowerCase()))) {
+          continue;
+        }
         out.push([
           sample_description(sample, paper_name),
           sample_metadata[sample].reads, [sample]]);
@@ -463,21 +489,20 @@ function redisplay() {
 
     // Clicking it repeatedly expands until you're down to the sample
     // level.
-    if (paper_expansions[paper_name] != "sample") {
-      const button_paper_expand = e("button", "+");
-      button_paper_expand.paper_name = paper_name;
-      button_paper_expand.onclick = expand_paper;
-      th_paper.appendChild(button_paper_expand);
+    if (!is_forced_sample_level()) {
+      if (paper_expansion(paper_name) != "sample") {
+        const button_paper_expand = e("button", "+");
+        button_paper_expand.paper_name = paper_name;
+        button_paper_expand.onclick = expand_paper;
+        th_paper.appendChild(button_paper_expand);
+      }
+      if (paper_expansion(paper_name)) {  // absent means collapsed
+        const button_paper_collapse = e("button", "\u2212");
+        button_paper_collapse.paper_name = paper_name;
+        button_paper_collapse.onclick = collapse_paper;
+        th_paper.appendChild(button_paper_collapse);
+      }
     }
-    if (paper_expansions[paper_name]) {  // absent means collapsed
-      const button_paper_collapse = e("button", "\u2212");
-      button_paper_collapse.paper_name = paper_name;
-      button_paper_collapse.onclick = collapse_paper;
-      th_paper.appendChild(button_paper_collapse);
-    }
-    tr_header.appendChild(th_paper);
-
-    const paper_expansion = paper_expansions[paper_name];
 
     let colspan = 0;
     for (const [name_bits, total_reads, samples] of
@@ -503,7 +528,11 @@ function redisplay() {
       td_fine.appendChild(e("span", human_readable(total_reads) + " reads"));
       tr_header_sub.appendChild(td_fine);
     }
-    th_paper.setAttribute("colspan", colspan);
+
+    if (colspan > 0) {
+      tr_header.appendChild(th_paper);
+      th_paper.setAttribute("colspan", colspan);
+    }
   }
   tbl.appendChild(tr_header);
   tbl.appendChild(tr_header_sub);
