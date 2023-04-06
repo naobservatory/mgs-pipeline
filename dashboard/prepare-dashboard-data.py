@@ -84,12 +84,17 @@ with open("names.dmp") as inf:
 
 # project -> accession -> n_reads
 project_sample_reads = defaultdict(dict)
-for n_reads_fname in glob.glob(
-        "%s/bioprojects/*/metadata/*.n_reads" % MGS_PIPELINE_DIR):
-    project = n_reads_fname.split("/")[-3]
-    accession = n_reads_fname.split("/")[-1].replace(".n_reads", "")
-    with open(n_reads_fname) as inf:
-        project_sample_reads[project][accession] = int(inf.read())
+for metadata_fname in glob.glob(
+        "%s/bioprojects/*/metadata/metadata.tsv" % MGS_PIPELINE_DIR):
+    project = metadata_fname.split("/")[-3]
+    with open(metadata_fname) as inf:
+        for line in inf:
+            accession = line.strip().split("\t")[0]
+            reads_fname = "%s/bioprojects/%s/metadata/%s.n_reads" %(
+                MGS_PIPELINE_DIR, project, accession)
+            if not os.path.exists(reads_fname): continue
+            with open(reads_fname) as readsf:
+                 project_sample_reads[project][accession] = int(readsf.read())
 
 projects = list(sorted(project_sample_reads))
 
