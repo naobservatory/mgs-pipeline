@@ -18,20 +18,17 @@ Questions we'll want it to answer include:
 
 ## Status
 
-As of 2023-03-01 handles the Rothman 2021 data up through species
-identification.  Todo:
+As of 2023-04-06 handles the paired-end data up through species identification.
 
 * Quality control
-* Other data sources
-* Processing species identification
+* Single-end reads
 
 ## Usage:
 
 1. Find the bioproject's accession, so we can load the data.  For example
    https://pubmed.ncbi.nlm.nih.gov/34550753/ is `PRJNA729801`.
 2. Run `./import-accession.sh [accession]`
-3. Make a directory `bioprojects/[accession]/metadata`.
-4. Populate it:
+3. Make a directory `bioprojects/[accession]/metadata` and:
    a. Create `bioprojects/[accession]/metadata/study.json` with contents
       `{"is_paired_end": true}`.  If the bioproject isn't actually paired end then
       put `false`, but you're going to need to do a lot of updating `run.py` to
@@ -47,7 +44,10 @@ identification.  Todo:
             awk '{print $NF}' | \
             grep _1 | \
             sed s/_1.fastq.gz// > metadata.tsv
-
+4. Make a directory `papers/AuthorYear/` (matching `name.txt` but without the
+   space) and:
+   a. Put the paper link in `papers/AuthorYear/link.txt`
+   b. Put "RNA" or "DNA" in `papers/AuthorYear/na_type.txt`
 5. `./run.py --bioproject=[accession]`
 
 ## Design
@@ -64,8 +64,9 @@ At each stage data will be stored in an S3 bucket on AWS.  The structure is:
          processed/
          viruscounts/
 
-In cases where the data comes from the [Sequencing Read Archive](https://www.ncbi.nlm.nih.gov/sra) (SRA), the bioproject ID is the SRA accession.
-For example, "PRJNA729801" for the Rothman 2021 data.
+In cases where the data comes from the [Sequencing Read
+Archive](https://www.ncbi.nlm.nih.gov/sra) (SRA), the bioproject ID is the SRA
+accession.  For example, "PRJNA729801" for the Rothman 2021 data.
 
 Files under `raw/` have the contents as we received them, but have been renamed
 to `[sampleID].fasta.gz`.  For paired-end data there will be two files,
@@ -82,10 +83,11 @@ classification, and any other processing we run.
 Metadata goes in this repo under `bioprojects/[accession]/metadata/`.  This
 includes both the metadata file and the scripts that prepare it.
 
-Each bioproject has a `bioprojects/[accession]/metadata/metadata.tsv` where the first
-column is the sample ID and the remaining columns are bioproject-specific.  For data
-we downloaded from the SRA the sample ID is the SRA accession.  For example,
-"SRR14530767" for the 2020-08-11 HTP sample in the Rothman 2021 data.
+Each bioproject has a `bioprojects/[accession]/metadata/metadata.tsv` where the
+first column is the sample ID and the remaining columns are
+bioproject-specific.  For data we downloaded from the SRA the sample ID is the
+SRA accession.  For example, "SRR14530767" for the 2020-08-11 HTP sample in the
+Rothman 2021 data.
 
 ### Input
 
@@ -124,7 +126,8 @@ per-species relative abundance.  We'll may need to build our own database or
 extend an existing one to ensure we have the level of coverage we need for
 human viruses.
 
-When we do want to build our own database kraken2-build has good [documentation here](https://github.com/DerrickWood/kraken2/blob/master/docs/MANUAL.markdown#custom-databases).
+When we do want to build our own database kraken2-build has good [documentation
+here](https://github.com/DerrickWood/kraken2/blob/master/docs/MANUAL.markdown#custom-databases).
 
 ## Dependencies
 

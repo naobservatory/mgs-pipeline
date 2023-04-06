@@ -492,7 +492,7 @@ def print_status(args):
 
    print("\n")
 
-   name_width=13
+   name_width=21
    print(" "*name_width, end='\t')
    print(*short_stages, sep='\t')
 
