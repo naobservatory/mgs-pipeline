@@ -48,7 +48,8 @@ Search:
     padding-right: 0.5em;
   }
   th {
-    text-align:left;
+    text-align: left;
+    padding-right: 0.5em;
   }
   .details {
     background-color: #eee;
@@ -579,7 +580,7 @@ function redisplay() {
     if (!include_papers[paper_name].checked) continue;
 
     const th_paper = e("th");
-    const a_paper = e("a", paper_name);
+    const a_paper = e("a", paper_name.replaceAll(" ", "\u00a0"));
     a_paper.href = papers[paper_name].link;
     a_paper.target = "_blank";
 
@@ -626,7 +627,6 @@ function redisplay() {
     tr.classList.add("details");
     tr.appendChild(e("td")); // expansion button
     tr.appendChild(e("td")); // taxonomic name
-    let td = null;
     let prev_val = null;
     for (const samples of column_samples) {
       if (property == "samples") {
@@ -655,25 +655,19 @@ function redisplay() {
           }
         }
         if (vals.size == 1 && [...vals][0] == prev_val) {
-          td.colSpan++;
+          tr.appendChild(e("td", "\u3003"));
         } else {
-          if (td) {
-            tr.appendChild(td);
-          }
           prev_val = null;
           if (vals.size == 0) {
-            td = e("td");
+            tr.appendChild(e("td"));
           } else if (vals.size == 1) {
-            td = e("td", [...vals][0]);
+            tr.appendChild(e("td", [...vals][0]));
             prev_val = [...vals][0];
           } else {
-            td = e("td", vals.size + " " + plural);
+            tr.appendChild(e("td", vals.size + " " + plural));
           }
         }
       }
-    }
-    if (td) {
-      tr.appendChild(td);
     }
     tbl.appendChild(tr);
   }
