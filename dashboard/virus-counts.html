@@ -146,17 +146,15 @@ function summarize_date(paper_name) {
 
 function sample_description(target_sample, paper_name) {
   const name_bits = [];
-  if (paper_countries[paper_name].size > 1) {
-    name_bits.push(sample_metadata[target_sample].country)
+  name_bits.push(sample_metadata[target_sample].country || "Unknown");
+  if (sample_metadata[target_sample].location) {
+    name_bits.push(sample_metadata[target_sample].location);
   }
-  if (paper_locations[paper_name].size > 1) {
-    name_bits.push(sample_metadata[target_sample].location)
+  if (sample_metadata[target_sample].fine_location) {
+    name_bits.push(sample_metadata[target_sample].fine_location);
   }
-  if (paper_fine_locations[paper_name].size > 1) {
-    name_bits.push(sample_metadata[target_sample].fine_location)
-  }
-  if (paper_dates[paper_name].size > 1) {
-    name_bits.push(sample_metadata[target_sample].date)
+  if (sample_metadata[target_sample].date) {
+    name_bits.push(sample_metadata[target_sample].date);
   }
   return name_bits;
 }
@@ -373,7 +371,20 @@ function determine_expansion_categories(paper_name) {
         total_reads += sample_metadata[sample].reads;
       }
     }
-    out.push([[], total_reads, samples]);
+    const name_bits = [];
+    if (paper_countries[paper_name].size == 1) {
+      name_bits.push([...paper_countries[paper_name]][0]);
+    } else {
+      name_bits.push(paper_countries[paper_name].size + " countries");
+    }
+
+    if (paper_locations[paper_name].size == 1) {
+      name_bits.push([...paper_locations[paper_name]][0]);
+    } else {
+      name_bits.push(paper_locations[paper_name].size + " cities");
+    }
+
+    out.push([name_bits, total_reads, samples]);
   } else if (paper_expansion(paper_name) == "country") {
     for (const country of [...paper_countries[paper_name]].sort()) {
       const samples = [];
@@ -404,9 +415,7 @@ function determine_expansion_categories(paper_name) {
         }
         if (total_reads) {
           const name_bits = [];
-          if (paper_countries[paper_name].size > 1) {
-            name_bits.push(country || "Unknown");
-          }
+          name_bits.push(country || "Unknown");
           name_bits.push(location || "Unknown");
           out.push([name_bits, total_reads, samples]);
         }
@@ -431,12 +440,8 @@ function determine_expansion_categories(paper_name) {
           }
           if (total_reads) {
             const name_bits = [];
-            if (paper_countries[paper_name].size > 1) {
-              name_bits.push(country || "Unknown");
-            }
-            if (paper_locations[paper_name].size > 1) {
-              name_bits.push(location || "Unknown");
-            }
+            name_bits.push(country || "Unknown");
+            name_bits.push(location || "Unknown");
             name_bits.push(fine_location);
             out.push([name_bits, total_reads, samples]);
           }
@@ -561,8 +566,10 @@ function redisplay() {
           a_sample.href = "https://www.ebi.ac.uk/ena/browser/view/" + samples[0];
           a_sample.target = "_blank";
           td_fine.appendChild(a_sample);
-          td_fine.appendChild(e("br"))
+        } else {
+          td_fine.appendChild(e("span", samples.length + " samples"));
         }
+        td_fine.appendChild(e("br"));
       }
       td_fine.appendChild(e("span", human_readable(total_reads) + " reads"));
       tr_header_sub.appendChild(td_fine);
