@@ -361,23 +361,34 @@ function collapse_paper(e) {
   redisplay();
 }
 
+const expansion_levels = ["country", "location", "fine", "sample"];
+
 // paper_name -> expansion state
 // absent means collapsed
 // if present, one of country, location, fine, sample
 const paper_expansions = {}
 
-function is_forced_sample_level() {
-  return country_search.value ||
-    city_search.value ||
-    date_begin_search.value ||
-    date_end_search.value;
+function forced_minimum_level() {
+  if (date_begin_search.value || date_end_search.value) return "sample";
+  if (city_search.value) return "location";
+  if (country_search.value) return "country";
+  return null;
 }
 
 function paper_expansion(paper_name) {
-  if (is_forced_sample_level()) {
-    return "sample";
+  const min_level = forced_minimum_level();
+  if (!min_level) {
+    return paper_expansions[paper_name];
   }
-  return paper_expansions[paper_name];
+  if (!paper_expansions[paper_name]) {
+    return min_level;
+  }
+  if (expansion_levels.indexOf(min_level) >
+      expansion_levels.indexOf(paper_expansions[paper_name])) {
+    return min_level;
+  } else {
+    return paper_expansions[paper_name];
+  }
 }
 
 // -> [samples, ...]
@@ -394,6 +405,11 @@ function categorize_samples_at_current_expansion(paper_name) {
     samples_list.push(samples);
   } else if (paper_expansion(paper_name) == "country") {
     for (const country of [...paper_countries[paper_name]].sort()) {
+      if (country_search.value &&
+          (!country || !country.toLowerCase().includes(
+            country_search.value.toLowerCase()))) {
+        continue;
+      }
       const samples = [];
       for (const bioproject of papers[paper_name].projects) {
         for (const sample of bioprojects[bioproject]) {
@@ -407,7 +423,17 @@ function categorize_samples_at_current_expansion(paper_name) {
     }
   } else if (paper_expansion(paper_name) == "location") {
     for (const country of [...paper_countries[paper_name]].sort()) {
+      if (country_search.value &&
+          (!country || !country.toLowerCase().includes(
+            country_search.value.toLowerCase()))) {
+        continue;
+      }
       for (const location of [...paper_locations[paper_name]].sort()) {
+        if (city_search.value &&
+            (!location || !location.toLowerCase().includes(
+              city_search.value.toLowerCase()))) {
+          continue;
+        }
         const samples = [];
         for (const bioproject of papers[paper_name].projects) {
           for (const sample of bioprojects[bioproject]) {
@@ -425,7 +451,17 @@ function categorize_samples_at_current_expansion(paper_name) {
     }
   } else if (paper_expansion(paper_name) == "fine") {
     for (const country of [...paper_countries[paper_name]].sort()) {
+      if (country_search.value &&
+          (!country || !country.toLowerCase().includes(
+            country_search.value.toLowerCase()))) {
+        continue;
+      }
       for (const location of [...paper_locations[paper_name]].sort()) {
+        if (city_search.value &&
+            (!location || !location.toLowerCase().includes(
+              city_search.value.toLowerCase()))) {
+          continue;
+        }
         for (const fine_location of
              [...paper_fine_locations[paper_name]].sort()) {
           const samples = [];
@@ -552,19 +588,17 @@ function redisplay() {
 
     // Clicking it repeatedly expands until you're down to the sample
     // level.
-    if (!is_forced_sample_level()) {
-      if (paper_expansion(paper_name) != "sample") {
-        const button_paper_expand = e("button", "+");
-        button_paper_expand.paper_name = paper_name;
-        button_paper_expand.onclick = expand_paper;
-        th_paper.appendChild(button_paper_expand);
-      }
-      if (paper_expansion(paper_name)) {  // absent means collapsed
-        const button_paper_collapse = e("button", "\u2212");
-        button_paper_collapse.paper_name = paper_name;
-        button_paper_collapse.onclick = collapse_paper;
-        th_paper.appendChild(button_paper_collapse);
-      }
+    if (paper_expansion(paper_name) != "sample") {
+      const button_paper_expand = e("button", "+");
+      button_paper_expand.paper_name = paper_name;
+      button_paper_expand.onclick = expand_paper;
+      th_paper.appendChild(button_paper_expand);
+    }
+    if (paper_expansion(paper_name)) {  // absent means collapsed
+      const button_paper_collapse = e("button", "\u2212");
+      button_paper_collapse.paper_name = paper_name;
+      button_paper_collapse.onclick = collapse_paper;
+      th_paper.appendChild(button_paper_collapse);
     }
 
     let colspan = 0;
