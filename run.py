@@ -46,12 +46,12 @@ def get_accessions(args):
               for line in inf]
 
 @contextlib.contextmanager
-def tempdir(msg):
+def tempdir(stage, msg):
    olddir = os.getcwd()
    with tempfile.TemporaryDirectory() as workdir:
       os.chdir(workdir)
       try:
-         print("Handling %s in %s" % (msg, workdir))
+         print("%s: handling %s in %s" % (stage, msg, workdir))
          yield workdir
       finally:
          os.chdir(olddir)
@@ -131,7 +131,7 @@ def adapter_removal(args, dirname, trim_quality, collapse):
             S3_BUCKET, args.bioproject, dirname, accession)):
          continue
 
-      with tempdir(accession) as workdir:
+      with tempdir("adapter_removal", accession) as workdir:
          in1="in1.fastq.gz"
          in2="in2.fastq.gz"
 
@@ -209,7 +209,7 @@ def interpret(args):
          compressed_output = output + ".gz"
          if compressed_output in existing_outputs: continue
 
-         with tempdir(", ".join(inputs)) as workdir:
+         with tempdir("interpret", ", ".join(inputs)) as workdir:
             for input_fname in inputs:
                subprocess.check_call([
                   "aws", "s3", "cp", "%s/%s/cleaned/%s" % (
@@ -245,7 +245,7 @@ def viruscount(args):
       if not inputs:
          continue
 
-      with tempdir(accession) as workdir:
+      with tempdir("viruscount", accession) as workdir:
          for input_fname in inputs:
             subprocess.check_call([
                "aws", "s3", "cp", "%s/%s/processed/%s" % (
@@ -270,7 +270,7 @@ def humanviruses(args):
 
 
    available_inputs = get_files(args, "processed")
-   existing_outputs = get_files(args, "viruscounts")
+   existing_outputs = get_files(args, "humanviruses")
 
    for accession in get_accessions(args):
       output = "%s.humanviruses.tsv" % accession
@@ -286,7 +286,7 @@ def humanviruses(args):
       counts = Counter()
 
       for input_fname in inputs:
-         with tempdir(accession) as workdir:
+         with tempdir("humanviruses", accession) as workdir:
             subprocess.check_call([
                "aws", "s3", "cp", "%s/%s/processed/%s" % (
                   S3_BUCKET, args.bioproject, input_fname), input_fname])
@@ -298,7 +298,7 @@ def humanviruses(args):
                   if taxid in human_viruses:
                      counts[taxid] += 1
 
-      with tempdir(accession) as workdir:
+      with tempdir("humanviruses", accession) as workdir:
          with open(output, "w") as outf:
             for taxid, count in sorted(counts.items()):
                outf.write("%s\t%s\t%s\n" % (taxid, count, human_viruses[taxid]))
@@ -380,7 +380,7 @@ def qc_post_cleaning(args, accession, qc_info,
    lengths = []
    qualities = defaultdict(list)
 
-   with tempdir(accession) as workdir:
+   with tempdir("qc_post_cleaning", accession) as workdir:
       for fname in available_cleaned:
          if fname.startswith(accession):
             slug = fname.replace("%s." % accession, "").replace(".gz", "")
