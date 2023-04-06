@@ -519,7 +519,8 @@ for stage_name, stage_fn in [("clean", clean),
                              ("interpret", interpret),
                              ("viruscount", viruscount),
                              ("humanviruses", humanviruses),
-                             ("qc", qc)]:
+                             #("qc", qc),
+                             ]:
    STAGES_ORDERED.append(stage_name)
    STAGE_FNS[stage_name] = stage_fn
 
