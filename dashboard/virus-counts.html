@@ -137,7 +137,6 @@ function paper_expansion_options(paper_name) {
   if (expansion_levels.indexOf("sample") > forced_minimum_level_index) {
     options.push("sample");
   }
-  console.log(paper_name, forced_minimum_level_index, options);
   return options;
 }
 
@@ -777,15 +776,17 @@ function redisplay() {
 
   function count_matches(samples, all_species) {
     let total = 0;
+    const matching_samples = new Set();
     for (const species of all_species) {
       for (const sample of samples) {
         const n = virus_sample_counts[species][sample];
         if (n) {
           total += n;
+          matching_samples.add(sample);
         }
       }
     }
-    return total;
+    return [total, matching_samples];
   }
 
   // -> name, is_match
@@ -863,14 +864,14 @@ function redisplay() {
     for (let i = 0; i < column_samples.length; i++) {
       const samples = column_samples[i];
       const total_reads = column_totals[i];
-      const matches = count_matches(samples, species);
+      const [matches, matching_samples] = count_matches(samples, species);
       const td_val = e("td");
       const label = cell_value(matches, total_reads, node.length==1);
-      if (samples.length == 1 && matches > 0) {
+      if (matching_samples.size == 1) {
         const a_val = e("a", label);
         const params = new URLSearchParams();
         params.set("q", names[taxid][0]);
-        params.set("run", samples[0]);
+        params.set("run", [...matching_samples][0]);
         a_val.href = "reads#" + params.toString();
         a_val.target = "_blank";
         td_val.appendChild(a_val);
