@@ -1,5 +1,4 @@
 <html>
-
   <div id=error_not_done class=hidden>
   Sample <span id=error_not_done_span></span> is not ready yet, sorry!
   </div>
@@ -7,13 +6,19 @@
   <input id=run_accession placeholder="run accession"></input>
   <button id=load_sample>Load</button>
 
-<p>
+  <p>
+
+  <div id=sample_description></div>
+
+  <p>
 
   <input id=taxonomic_search placeholder="taxonomic name" size=40></input>
 
 <div id=reads></div>
 
 <style>
+
+
   .read {
     background-color: #eee;
     border-radius: 0.5em;
@@ -39,6 +44,9 @@
 // imports:
 //   names: taxid -> names
 //   tree: taxid with children
+//   sample_metadata: sample -> {country, date, location, reads}
+//   papers: paper -> {link, na_type, [projects]}
+//   bioprojects: project -> [samples]
 
 function e(tag, innerText) {
   const el = document.createElement(tag);
@@ -51,7 +59,7 @@ function e(tag, innerText) {
 const K=35; // kraken default
 
 function is_valid_run_accession(x) {
-  return /^[SE]RR[0-9]+$/.test(x);
+  return !!sample_metadata[x];
 }
 
 function include_all_children(target_taxids, node) {
@@ -90,8 +98,6 @@ function search() {
 
   add_taxonomic_children(target_taxids);
 
-  console.log(target_taxids);
-
   for (const read_div of reads.children) {
     // it's silly that js has Set but not Set.intersection
     let is_match = false;
@@ -126,7 +132,66 @@ function contextual_name(target_taxid, node=tree) {
   return null;
 }
 
+function human_readable(n) {
+  function s(v, suffix) {
+    let vStr = v.toPrecision(3);
+    if (vStr.includes(".")) {
+      vStr = v.toPrecision(2);
+    }
+    return vStr + suffix;
+  }
+  if (n < 1000) return n;
+  n /= 1000;
+  if (n < 1000) return s(n,'k');
+  n /= 1000;
+  if (n < 1000) return s(n,'M');
+  n /= 1000;
+  if (n < 1000) return s(n, 'B');
+  n /= 1000;
+  if (n < 1000) return s(n, 'T');
+  n /= 1000;
+  return s(n, 'Q');
+}
+
+function populate_sample_metadata() {
+  while(sample_description.firstChild) {
+    sample_description.removeChild(sample_description.firstChild);
+  }
+  const sample = run_accession.value;
+
+  for (const paper_name in papers) {
+    for (const bioproject of papers[paper_name].projects) {
+      for (const potential_sample of bioprojects[bioproject]) {
+        if (potential_sample == sample) {
+          const a_paper = e("a", paper_name);
+          a_paper.href = papers[paper_name].link;
+          a_paper.target = "_blank";
+          sample_description.appendChild(a_paper);
+          sample_description.appendChild(e("br"));
+        }
+      }
+    }
+  }
+
+  const m = sample_metadata[sample];
+  sample_description.appendChild(e(
+    "span", m.country || "Unknown country"));
+  sample_description.appendChild(e("span", ", "));
+  sample_description.appendChild(e(
+    "span", m.location || "Unknown location"));
+  if (m.fine_location) {
+    sample_description.appendChild(e("span", ", "));
+    sample_description.appendChild(e("span", m.fine_location));
+  }
+  sample_description.appendChild(e(
+    "div", human_readable(m.reads) + " reads"));
+  sample_description.appendChild(e(
+    "div", m.date || "Unknown date"));
+}
+
 function load() {
+  populate_sample_metadata();
+
   error_not_done.classList.add("hidden");
   fetch("hvreads/" + run_accession.value + ".hvreads.json").then(
     function(response) { return response.json(); }).then(
@@ -209,7 +274,7 @@ if (window.location.hash) {
   }
   if (params.has("run")) {
     run_accession.value = params.get("run");
-    load();
+    validate_and_load();
   }
 }
 
