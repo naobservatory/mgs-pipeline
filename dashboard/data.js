@@ -213,7 +213,8 @@ virus_sample_counts={
     "ERR8977418": 1,
     "ERR8977420": 3,
     "ERR8977421": 3,
-    "ERR9855098": 2
+    "ERR9855098": 2,
+    "SRR21374589": 1
   },
   "10280": {
     "ERR1224348": 1,
@@ -670,6 +671,30 @@ virus_sample_counts={
     "ERR9855092": 1,
     "ERR9855096": 22,
     "ERR9855099": 1,
+    "SRR21374460": 1,
+    "SRR21374469": 1,
+    "SRR21374476": 2,
+    "SRR21374477": 1,
+    "SRR21374485": 1,
+    "SRR21374491": 1,
+    "SRR21374494": 1,
+    "SRR21374495": 1,
+    "SRR21374496": 1,
+    "SRR21374504": 1,
+    "SRR21374510": 1,
+    "SRR21374514": 1,
+    "SRR21374533": 2,
+    "SRR21374535": 1,
+    "SRR21374539": 1,
+    "SRR21374542": 2,
+    "SRR21374548": 3,
+    "SRR21374551": 1,
+    "SRR21374579": 1,
+    "SRR21374585": 1,
+    "SRR21374598": 1,
+    "SRR21374623": 1,
+    "SRR21374627": 1,
+    "SRR21374632": 1,
     "SRR23998359": 2
   },
   "10298": {
@@ -895,6 +920,8 @@ virus_sample_counts={
     "SRR14530885": 4,
     "SRR14530886": 1,
     "SRR14530890": 1,
+    "SRR21374467": 1,
+    "SRR21374492": 1,
     "SRR21452136": 1
   },
   "10310": {},
@@ -1352,7 +1379,11 @@ virus_sample_counts={
     "ERR9855086": 1,
     "ERR9855092": 2,
     "ERR9855097": 1,
-    "SRR18218731": 1
+    "SRR18218731": 1,
+    "SRR21374469": 1,
+    "SRR21374539": 2,
+    "SRR21374579": 1,
+    "SRR21374632": 1
   },
   "10335": {
     "ERR1713359": 1,
@@ -1671,7 +1702,8 @@ virus_sample_counts={
     "ERR8977393": 1,
     "ERR8977400": 1,
     "ERR8977404": 1,
-    "ERR8977428": 1
+    "ERR8977428": 1,
+    "SRR21374600": 1
   },
   "10376": {
     "ERR1224344": 6,
@@ -1931,7 +1963,10 @@ virus_sample_counts={
     "ERR9834200": 1,
     "ERR9855085": 1,
     "ERR9855099": 1,
-    "SRR14530870": 5
+    "SRR14530870": 5,
+    "SRR21374575": 1,
+    "SRR21374629": 1,
+    "SRR21374630": 40
   },
   "10407": {},
   "10408": {},
@@ -2570,6 +2605,7 @@ virus_sample_counts={
     "SRR14530887": 1,
     "SRR14530889": 2,
     "SRR18218730": 5,
+    "SRR21374500": 1,
     "SRR23998353": 1,
     "SRR23998355": 1,
     "SRR23998356": 1,
@@ -2668,6 +2704,8 @@ virus_sample_counts={
     "ERR8977362": 1,
     "ERR9855089": 1,
     "ERR9855092": 1,
+    "SRR21374608": 1,
+    "SRR21374614": 1,
     "SRR23998356": 1
   },
   "10604": {},
@@ -2987,6 +3025,12 @@ virus_sample_counts={
     "ERR9855087": 1,
     "ERR9855097": 1,
     "ERR9855098": 4,
+    "SRR21374511": 2,
+    "SRR21374513": 1,
+    "SRR21374534": 1,
+    "SRR21374571": 1,
+    "SRR21374595": 1,
+    "SRR21374632": 1,
     "SRR23998358": 14,
     "SRR23998359": 2
   },
@@ -3957,6 +4001,15 @@ virus_sample_counts={
     "SRR14530895": 1,
     "SRR14530900": 1,
     "SRR14530902": 3,
+    "SRR21374449": 1,
+    "SRR21374487": 1,
+    "SRR21374497": 1,
+    "SRR21374514": 3,
+    "SRR21374518": 1,
+    "SRR21374535": 1,
+    "SRR21374572": 2,
+    "SRR21374575": 2,
+    "SRR21374629": 1,
     "SRR21452137": 4,
     "SRR23998356": 5,
     "SRR23998358": 30,
@@ -4329,6 +4382,7 @@ virus_sample_counts={
   "11053": {},
   "11060": {
     "ERR4682427": 1,
+    "SRR21374473": 1,
     "SRR23998356": 1
   },
   "11069": {
@@ -4591,7 +4645,9 @@ virus_sample_counts={
     "ERR8977389": 14,
     "ERR8977396": 2,
     "ERR8977424": 2,
-    "ERR9855098": 1
+    "ERR9855098": 1,
+    "SRR21374560": 1,
+    "SRR21374630": 13
   },
   "12538": {},
   "12542": {},
@@ -4614,7 +4670,8 @@ virus_sample_counts={
     "ERR4682842": 1,
     "ERR4682894": 1,
     "ERR8977382": 1,
-    "ERR9855087": 2
+    "ERR9855087": 2,
+    "SRR21374486": 1
   },
   "12814": {
     "ERR4678686": 1,
@@ -5242,7 +5299,8 @@ virus_sample_counts={
     "ERR9834200": 2,
     "ERR9855089": 1,
     "ERR9855096": 1,
-    "SRR14530902": 1
+    "SRR14530902": 1,
+    "SRR21374516": 1
   },
   "28312": {},
   "28332": {},
@@ -5338,7 +5396,8 @@ virus_sample_counts={
     "ERR8977387": 1,
     "ERR8977406": 2,
     "ERR8977407": 1,
-    "ERR8977426": 1
+    "ERR8977426": 1,
+    "SRR21374456": 1
   },
   "32608": {},
   "33727": {},
@@ -5535,7 +5594,15 @@ virus_sample_counts={
     "ERR9855085": 2,
     "ERR9855099": 2,
     "SRR14530748": 1,
-    "SRR14530753": 1
+    "SRR14530753": 1,
+    "SRR21374447": 1,
+    "SRR21374465": 2,
+    "SRR21374466": 1,
+    "SRR21374481": 1,
+    "SRR21374504": 1,
+    "SRR21374556": 1,
+    "SRR21374570": 1,
+    "SRR21374574": 1
   },
   "37954": {},
   "37955": {},
@@ -5622,7 +5689,9 @@ virus_sample_counts={
     "ERR8977407": 1,
     "ERR8977408": 1,
     "ERR8977411": 1,
-    "ERR8977428": 1
+    "ERR8977428": 1,
+    "SRR21374606": 1,
+    "SRR21374616": 1
   },
   "38837": {},
   "39054": {},
@@ -5780,7 +5849,10 @@ virus_sample_counts={
     "ERR2607412": 1,
     "ERR2607480": 1,
     "ERR2607487": 1,
-    "ERR4682370": 1
+    "ERR4682370": 1,
+    "SRR21374551": 1,
+    "SRR21374565": 1,
+    "SRR21374580": 1
   },
   "46922": {},
   "46924": {},
@@ -6581,6 +6653,7 @@ virus_sample_counts={
     "ERR9855093": 1,
     "ERR9855095": 3,
     "ERR9855096": 1,
+    "SRR21374526": 1,
     "SRR21452137": 1,
     "SRR23998359": 1
   },
@@ -10361,6 +10434,12 @@ virus_sample_counts={
     "ERR9855096": 84,
     "ERR9855097": 4,
     "ERR9855098": 5,
+    "SRR21374453": 3,
+    "SRR21374537": 2,
+    "SRR21374548": 1,
+    "SRR21374549": 22,
+    "SRR21374590": 5,
+    "SRR21374596": 2,
     "SRR23998358": 19,
     "SRR23998359": 4
   },
@@ -10764,6 +10843,7 @@ virus_sample_counts={
     "ERR9833719": 1,
     "ERR9855087": 1,
     "ERR9855096": 1,
+    "SRR21374589": 1,
     "SRR23998358": 6
   },
   "138948": {
@@ -11507,7 +11587,8 @@ virus_sample_counts={
     "ERR4682857": 2,
     "ERR4682886": 1,
     "ERR8977428": 2,
-    "ERR9855087": 1
+    "ERR9855087": 1,
+    "SRR21374563": 1
   },
   "333767": {
     "ERR1224345": 1,
@@ -12130,6 +12211,11 @@ virus_sample_counts={
     "ERR9855088": 1,
     "ERR9855090": 1,
     "ERR9855095": 1,
+    "SRR21374458": 1,
+    "SRR21374509": 2,
+    "SRR21374543": 1,
+    "SRR21374547": 1,
+    "SRR21374633": 2,
     "SRR23998359": 1
   },
   "334210": {},
@@ -12215,7 +12301,8 @@ virus_sample_counts={
     "ERR8977359": 1,
     "ERR8977367": 2,
     "ERR8977381": 1,
-    "ERR8977393": 1
+    "ERR8977393": 1,
+    "SRR21374455": 3
   },
   "337054": {
     "ERR1713370": 2,
@@ -12537,7 +12624,10 @@ virus_sample_counts={
     "ERR9855095": 1,
     "ERR9855097": 1,
     "ERR9855098": 1,
-    "ERR9855099": 4
+    "ERR9855099": 4,
+    "SRR21374470": 1,
+    "SRR21374493": 1,
+    "SRR21374542": 1
   },
   "341053": {
     "ERR4682857": 2,
@@ -12579,7 +12669,9 @@ virus_sample_counts={
   "423448": {},
   "427343": {},
   "430048": {},
-  "434309": {},
+  "434309": {
+    "SRR21374574": 1
+  },
   "438880": {},
   "438881": {},
   "440266": {
@@ -13272,6 +13364,7 @@ virus_sample_counts={
     "ERR9855097": 1,
     "ERR9855099": 1,
     "SRR14530760": 2,
+    "SRR21374632": 1,
     "SRR23998353": 49,
     "SRR23998354": 99,
     "SRR23998355": 178,
@@ -13376,6 +13469,8 @@ virus_sample_counts={
     "SRR14530891": 20,
     "SRR14530902": 1,
     "SRR14530903": 1,
+    "SRR21374551": 1,
+    "SRR21374622": 1,
     "SRR21452135": 1
   },
   "563190": {},
@@ -14188,6 +14283,7 @@ virus_sample_counts={
     "ERR9855096": 31,
     "ERR9855097": 6,
     "ERR9855098": 1,
+    "SRR21374549": 2,
     "SRR23998358": 3
   },
   "651733": {
@@ -16117,7 +16213,9 @@ virus_sample_counts={
     "ERR8977419": 1,
     "ERR9834200": 1,
     "ERR9855084": 1,
-    "ERR9855099": 1
+    "ERR9855099": 1,
+    "SRR21374551": 1,
+    "SRR21374594": 1
   },
   "1643649": {},
   "1647924": {
@@ -16272,7 +16370,8 @@ virus_sample_counts={
     "ERR4682412": 1,
     "ERR4682457": 2,
     "ERR4682787": 1,
-    "ERR8977408": 1
+    "ERR8977408": 1,
+    "SRR21374451": 1
   },
   "1788432": {
     "ERR2683243": 1,
@@ -16576,7 +16675,8 @@ virus_sample_counts={
     "ERR2607427": 1,
     "ERR2683149": 1,
     "ERR2683225": 1,
-    "ERR4682892": 1
+    "ERR4682892": 1,
+    "SRR21374486": 1
   },
   "1868658": {
     "SRR14530878": 1,
@@ -17352,6 +17452,8 @@ virus_sample_counts={
     "ERR9855098": 5,
     "SRR14530769": 1,
     "SRR14530902": 1,
+    "SRR21374594": 1,
+    "SRR21374606": 1,
     "SRR23998357": 2,
     "SRR23998358": 73,
     "SRR23998359": 28
@@ -18010,6 +18112,25 @@ virus_sample_counts={
     "SRR14530764": 1,
     "SRR14530897": 1,
     "SRR14530901": 1,
+    "SRR21374466": 1,
+    "SRR21374475": 1,
+    "SRR21374476": 1,
+    "SRR21374478": 1,
+    "SRR21374496": 1,
+    "SRR21374500": 1,
+    "SRR21374510": 1,
+    "SRR21374563": 1,
+    "SRR21374564": 2,
+    "SRR21374565": 1,
+    "SRR21374566": 1,
+    "SRR21374568": 1,
+    "SRR21374575": 1,
+    "SRR21374597": 2,
+    "SRR21374599": 1,
+    "SRR21374600": 1,
+    "SRR21374611": 1,
+    "SRR21374631": 1,
+    "SRR21374633": 1,
     "SRR23998354": 3
   },
   "1987021": {},
@@ -18488,7 +18609,8 @@ virus_sample_counts={
     "ERR8977424": 1,
     "ERR8977429": 1,
     "ERR9855094": 1,
-    "ERR9855098": 2
+    "ERR9855098": 2,
+    "SRR21374473": 1
   },
   "2038728": {
     "ERR4682772": 1,
@@ -18701,14 +18823,18 @@ virus_sample_counts={
     "ERR8977349": 1,
     "ERR8977353": 1,
     "ERR8977370": 1,
-    "ERR8977420": 1
+    "ERR8977420": 1,
+    "SRR21374514": 1,
+    "SRR21374515": 1,
+    "SRR21374523": 1
   },
   "2495433": {
     "ERR4682355": 1
   },
   "2560313": {
     "ERR4682860": 1,
-    "ERR8977391": 1
+    "ERR8977391": 1,
+    "SRR21374475": 1
   },
   "2560317": {
     "ERR8977361": 1
@@ -18764,6 +18890,7 @@ virus_sample_counts={
     "SRR14530897": 3,
     "SRR14530899": 1,
     "SRR14530902": 1,
+    "SRR21374478": 1,
     "SRR21452136": 12,
     "SRR23998353": 8,
     "SRR23998354": 30,
@@ -22389,7 +22516,7 @@ sample_metadata={
   "ERR2683234": {
     "country": "Czech Republic",
     "date": "2017-06-13",
-    "location": "Praha",
+    "location": "Prague",
     "reads": 45904881
   },
   "ERR2683235": {
@@ -22965,7 +23092,7 @@ sample_metadata={
   "ERR4678577": {
     "country": "Czech Republic",
     "date": "2018-12-04",
-    "location": "Praha",
+    "location": "Prague",
     "reads": 56320850
   },
   "ERR4678578": {
@@ -23877,7 +24004,7 @@ sample_metadata={
   "ERR4682350": {
     "country": "Czech Republic",
     "date": "2017-11-20",
-    "location": "Praha",
+    "location": "Prague",
     "reads": 62350662
   },
   "ERR4682351": {
@@ -24711,7 +24838,7 @@ sample_metadata={
   "ERR4682784": {
     "country": "Czech Republic",
     "date": "2018-06-20",
-    "location": "Praha",
+    "location": "Prague",
     "reads": 42516016
   },
   "ERR4682785": {
@@ -26848,6 +26975,1134 @@ sample_metadata={
     "location": "Local Manhole",
     "reads": 34344443
   },
+  "SRR21374446": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 5237383
+  },
+  "SRR21374447": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 5132252
+  },
+  "SRR21374448": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 2753702
+  },
+  "SRR21374449": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 4775711
+  },
+  "SRR21374450": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 5578758
+  },
+  "SRR21374451": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 6171405
+  },
+  "SRR21374452": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 6111742
+  },
+  "SRR21374453": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 5422779
+  },
+  "SRR21374454": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 6658763
+  },
+  "SRR21374455": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 10014138
+  },
+  "SRR21374456": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 4617469
+  },
+  "SRR21374457": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 9794140
+  },
+  "SRR21374458": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 6418840
+  },
+  "SRR21374459": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 5452417
+  },
+  "SRR21374460": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 6970225
+  },
+  "SRR21374461": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 10133763
+  },
+  "SRR21374462": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 5563161
+  },
+  "SRR21374463": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 6023704
+  },
+  "SRR21374464": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 7007573
+  },
+  "SRR21374465": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 6211155
+  },
+  "SRR21374466": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 7162566
+  },
+  "SRR21374467": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 2083383
+  },
+  "SRR21374468": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 3758480
+  },
+  "SRR21374469": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 5798112
+  },
+  "SRR21374470": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 4559194
+  },
+  "SRR21374471": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 6045872
+  },
+  "SRR21374472": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 4195758
+  },
+  "SRR21374473": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 3744278
+  },
+  "SRR21374474": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 4152132
+  },
+  "SRR21374475": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 8132396
+  },
+  "SRR21374476": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 6823487
+  },
+  "SRR21374477": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 4898155
+  },
+  "SRR21374478": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 5063085
+  },
+  "SRR21374479": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 1710515
+  },
+  "SRR21374480": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 2470071
+  },
+  "SRR21374481": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 3545584
+  },
+  "SRR21374482": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 8032369
+  },
+  "SRR21374483": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 4610426
+  },
+  "SRR21374484": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 1812177
+  },
+  "SRR21374485": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 3977803
+  },
+  "SRR21374486": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 3775959
+  },
+  "SRR21374487": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 2854362
+  },
+  "SRR21374488": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 3990643
+  },
+  "SRR21374489": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 3777950
+  },
+  "SRR21374490": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 3931455
+  },
+  "SRR21374491": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 6101481
+  },
+  "SRR21374492": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 7556878
+  },
+  "SRR21374493": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 5636863
+  },
+  "SRR21374494": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 6527434
+  },
+  "SRR21374495": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 6328706
+  },
+  "SRR21374496": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 6547245
+  },
+  "SRR21374497": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 6615352
+  },
+  "SRR21374498": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 3753838
+  },
+  "SRR21374499": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 6948507
+  },
+  "SRR21374500": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 3700711
+  },
+  "SRR21374501": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 4005750
+  },
+  "SRR21374502": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 2846662
+  },
+  "SRR21374503": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 5363499
+  },
+  "SRR21374504": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 3689657
+  },
+  "SRR21374505": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 7346454
+  },
+  "SRR21374506": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 6243176
+  },
+  "SRR21374507": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 4272534
+  },
+  "SRR21374508": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 5165052
+  },
+  "SRR21374509": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 6362062
+  },
+  "SRR21374510": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 6930982
+  },
+  "SRR21374511": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 4404836
+  },
+  "SRR21374512": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 5007438
+  },
+  "SRR21374513": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 5946239
+  },
+  "SRR21374514": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 5727229
+  },
+  "SRR21374515": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 5591340
+  },
+  "SRR21374516": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 2853113
+  },
+  "SRR21374517": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 2966652
+  },
+  "SRR21374518": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 3237022
+  },
+  "SRR21374519": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 3256759
+  },
+  "SRR21374520": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 3962010
+  },
+  "SRR21374521": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 1853631
+  },
+  "SRR21374522": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 2607643
+  },
+  "SRR21374523": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 4679078
+  },
+  "SRR21374524": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 5720907
+  },
+  "SRR21374525": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 5858975
+  },
+  "SRR21374526": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 6564923
+  },
+  "SRR21374527": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 6777934
+  },
+  "SRR21374528": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 5166363
+  },
+  "SRR21374529": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 3382274
+  },
+  "SRR21374530": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 2818476
+  },
+  "SRR21374531": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 3705802
+  },
+  "SRR21374532": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 5532540
+  },
+  "SRR21374533": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 4588439
+  },
+  "SRR21374534": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 7230116
+  },
+  "SRR21374535": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 5438592
+  },
+  "SRR21374536": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 5665458
+  },
+  "SRR21374537": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 6215541
+  },
+  "SRR21374538": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 5956655
+  },
+  "SRR21374539": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 7137180
+  },
+  "SRR21374540": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 4580199
+  },
+  "SRR21374541": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 5390114
+  },
+  "SRR21374542": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 9691794
+  },
+  "SRR21374543": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 5750510
+  },
+  "SRR21374544": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 1933858
+  },
+  "SRR21374545": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 4632338
+  },
+  "SRR21374546": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 1975571
+  },
+  "SRR21374547": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 5559585
+  },
+  "SRR21374548": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 9158137
+  },
+  "SRR21374549": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 4492476
+  },
+  "SRR21374550": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 5787733
+  },
+  "SRR21374551": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 12058020
+  },
+  "SRR21374552": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 8830740
+  },
+  "SRR21374553": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 5623146
+  },
+  "SRR21374554": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 6195382
+  },
+  "SRR21374555": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 8985126
+  },
+  "SRR21374556": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 5076438
+  },
+  "SRR21374557": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 2127428
+  },
+  "SRR21374558": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 7210112
+  },
+  "SRR21374559": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 2500468
+  },
+  "SRR21374560": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 5640925
+  },
+  "SRR21374561": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 6031121
+  },
+  "SRR21374562": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 5259403
+  },
+  "SRR21374563": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 7487762
+  },
+  "SRR21374564": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 7206636
+  },
+  "SRR21374565": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 7888242
+  },
+  "SRR21374566": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 4708695
+  },
+  "SRR21374567": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 7040158
+  },
+  "SRR21374568": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 5717824
+  },
+  "SRR21374569": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 3667747
+  },
+  "SRR21374570": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 5457100
+  },
+  "SRR21374571": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 4844702
+  },
+  "SRR21374572": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 2003833
+  },
+  "SRR21374573": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 4131438
+  },
+  "SRR21374574": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 9549757
+  },
+  "SRR21374575": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 8144897
+  },
+  "SRR21374576": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 7376494
+  },
+  "SRR21374577": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 7267354
+  },
+  "SRR21374578": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 7255427
+  },
+  "SRR21374579": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 7388122
+  },
+  "SRR21374580": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 5796224
+  },
+  "SRR21374581": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 5505112
+  },
+  "SRR21374582": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 2335683
+  },
+  "SRR21374583": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 4909890
+  },
+  "SRR21374584": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 7274228
+  },
+  "SRR21374585": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 5070304
+  },
+  "SRR21374586": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 5307620
+  },
+  "SRR21374587": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 6208441
+  },
+  "SRR21374588": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 4764518
+  },
+  "SRR21374589": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 4124948
+  },
+  "SRR21374590": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 6705083
+  },
+  "SRR21374591": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 3695849
+  },
+  "SRR21374592": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 2548874
+  },
+  "SRR21374593": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 4624655
+  },
+  "SRR21374594": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 6340957
+  },
+  "SRR21374595": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 5387017
+  },
+  "SRR21374596": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 5898399
+  },
+  "SRR21374597": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 5114135
+  },
+  "SRR21374598": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 6288537
+  },
+  "SRR21374599": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 6660425
+  },
+  "SRR21374600": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 3875340
+  },
+  "SRR21374601": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 2707674
+  },
+  "SRR21374602": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 6372485
+  },
+  "SRR21374603": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 3235377
+  },
+  "SRR21374604": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 2941369
+  },
+  "SRR21374605": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 5679690
+  },
+  "SRR21374606": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 5570607
+  },
+  "SRR21374607": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 8486150
+  },
+  "SRR21374608": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 7020279
+  },
+  "SRR21374609": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 5977284
+  },
+  "SRR21374610": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 8677561
+  },
+  "SRR21374611": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 6041489
+  },
+  "SRR21374612": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 2134327
+  },
+  "SRR21374613": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 2359528
+  },
+  "SRR21374614": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 3290844
+  },
+  "SRR21374615": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 4354468
+  },
+  "SRR21374616": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 2571571
+  },
+  "SRR21374617": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 5905571
+  },
+  "SRR21374618": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 8587722
+  },
+  "SRR21374619": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 6559276
+  },
+  "SRR21374620": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 7759599
+  },
+  "SRR21374621": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 4003644
+  },
+  "SRR21374622": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 4070620
+  },
+  "SRR21374623": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 4456922
+  },
+  "SRR21374624": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 1958105
+  },
+  "SRR21374625": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 5112349
+  },
+  "SRR21374626": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 3588190
+  },
+  "SRR21374627": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 3373146
+  },
+  "SRR21374628": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 5169733
+  },
+  "SRR21374629": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 5650834
+  },
+  "SRR21374630": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 5350854
+  },
+  "SRR21374631": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 6025876
+  },
+  "SRR21374632": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 8904530
+  },
+  "SRR21374633": {
+    "country": "USA",
+    "date": "2020-09",
+    "location": "Boulder, CO",
+    "reads": 4340749
+  },
   "SRR21452135": {
     "country": "USA",
     "date": "2020-10-21",
@@ -28276,6 +29531,196 @@ bioprojects={
     "SRR18218720",
     "SRR18218730",
     "SRR18218731"
+  ],
+  "PRJNA875025": [
+    "SRR21374446",
+    "SRR21374447",
+    "SRR21374448",
+    "SRR21374449",
+    "SRR21374450",
+    "SRR21374451",
+    "SRR21374452",
+    "SRR21374453",
+    "SRR21374454",
+    "SRR21374455",
+    "SRR21374456",
+    "SRR21374457",
+    "SRR21374458",
+    "SRR21374459",
+    "SRR21374460",
+    "SRR21374461",
+    "SRR21374462",
+    "SRR21374463",
+    "SRR21374464",
+    "SRR21374465",
+    "SRR21374466",
+    "SRR21374467",
+    "SRR21374468",
+    "SRR21374469",
+    "SRR21374470",
+    "SRR21374471",
+    "SRR21374472",
+    "SRR21374473",
+    "SRR21374474",
+    "SRR21374475",
+    "SRR21374476",
+    "SRR21374477",
+    "SRR21374478",
+    "SRR21374479",
+    "SRR21374480",
+    "SRR21374481",
+    "SRR21374482",
+    "SRR21374483",
+    "SRR21374484",
+    "SRR21374485",
+    "SRR21374486",
+    "SRR21374487",
+    "SRR21374488",
+    "SRR21374489",
+    "SRR21374490",
+    "SRR21374491",
+    "SRR21374492",
+    "SRR21374493",
+    "SRR21374494",
+    "SRR21374495",
+    "SRR21374496",
+    "SRR21374497",
+    "SRR21374498",
+    "SRR21374499",
+    "SRR21374500",
+    "SRR21374501",
+    "SRR21374502",
+    "SRR21374503",
+    "SRR21374504",
+    "SRR21374505",
+    "SRR21374506",
+    "SRR21374507",
+    "SRR21374508",
+    "SRR21374509",
+    "SRR21374510",
+    "SRR21374511",
+    "SRR21374512",
+    "SRR21374513",
+    "SRR21374514",
+    "SRR21374515",
+    "SRR21374516",
+    "SRR21374517",
+    "SRR21374518",
+    "SRR21374519",
+    "SRR21374520",
+    "SRR21374521",
+    "SRR21374522",
+    "SRR21374523",
+    "SRR21374524",
+    "SRR21374525",
+    "SRR21374526",
+    "SRR21374527",
+    "SRR21374528",
+    "SRR21374529",
+    "SRR21374530",
+    "SRR21374531",
+    "SRR21374532",
+    "SRR21374533",
+    "SRR21374534",
+    "SRR21374535",
+    "SRR21374536",
+    "SRR21374537",
+    "SRR21374538",
+    "SRR21374539",
+    "SRR21374540",
+    "SRR21374541",
+    "SRR21374542",
+    "SRR21374543",
+    "SRR21374544",
+    "SRR21374545",
+    "SRR21374546",
+    "SRR21374547",
+    "SRR21374548",
+    "SRR21374549",
+    "SRR21374550",
+    "SRR21374551",
+    "SRR21374552",
+    "SRR21374553",
+    "SRR21374554",
+    "SRR21374555",
+    "SRR21374556",
+    "SRR21374557",
+    "SRR21374558",
+    "SRR21374559",
+    "SRR21374560",
+    "SRR21374561",
+    "SRR21374562",
+    "SRR21374563",
+    "SRR21374564",
+    "SRR21374565",
+    "SRR21374566",
+    "SRR21374567",
+    "SRR21374568",
+    "SRR21374569",
+    "SRR21374570",
+    "SRR21374571",
+    "SRR21374572",
+    "SRR21374573",
+    "SRR21374574",
+    "SRR21374575",
+    "SRR21374576",
+    "SRR21374577",
+    "SRR21374578",
+    "SRR21374579",
+    "SRR21374580",
+    "SRR21374581",
+    "SRR21374582",
+    "SRR21374583",
+    "SRR21374584",
+    "SRR21374585",
+    "SRR21374586",
+    "SRR21374587",
+    "SRR21374588",
+    "SRR21374589",
+    "SRR21374590",
+    "SRR21374591",
+    "SRR21374592",
+    "SRR21374593",
+    "SRR21374594",
+    "SRR21374595",
+    "SRR21374596",
+    "SRR21374597",
+    "SRR21374598",
+    "SRR21374599",
+    "SRR21374600",
+    "SRR21374601",
+    "SRR21374602",
+    "SRR21374603",
+    "SRR21374604",
+    "SRR21374605",
+    "SRR21374606",
+    "SRR21374607",
+    "SRR21374608",
+    "SRR21374609",
+    "SRR21374610",
+    "SRR21374611",
+    "SRR21374612",
+    "SRR21374613",
+    "SRR21374614",
+    "SRR21374615",
+    "SRR21374616",
+    "SRR21374617",
+    "SRR21374618",
+    "SRR21374619",
+    "SRR21374620",
+    "SRR21374621",
+    "SRR21374622",
+    "SRR21374623",
+    "SRR21374624",
+    "SRR21374625",
+    "SRR21374626",
+    "SRR21374627",
+    "SRR21374628",
+    "SRR21374629",
+    "SRR21374630",
+    "SRR21374631",
+    "SRR21374632",
+    "SRR21374633"
   ]
 };
 papers={
@@ -28291,6 +29736,13 @@ papers={
     "na_type": "RNA",
     "projects": [
       "PRJNA661613"
+    ]
+  },
+  "Fierer 2022": {
+    "link": "https://journals.asm.org/doi/10.1128/msystems.00651-22",
+    "na_type": "DNA",
+    "projects": [
+      "PRJNA875025"
     ]
   },
   "Maritz 2019": {
