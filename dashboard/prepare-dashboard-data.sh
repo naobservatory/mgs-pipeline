@@ -18,3 +18,6 @@ for study in $(aws s3 ls s3://nao-mgs/ | awk '{print $NF}'); do
 done | xargs -I {} -P 32 aws s3 cp {} humanviruses/
 
 ./prepare-dashboard-data.py
+
+echo "Now check in data.js and check out on prod"
+echo "Then run copy-down-hvreads.sh and send the result to prod out of band"
