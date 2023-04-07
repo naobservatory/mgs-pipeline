@@ -1,5 +1,5 @@
 <html>
-  
+
   <input id=run_accession placeholder="run accession"></input>
   <button id=load_sample>Load</button>
 
@@ -63,6 +63,8 @@ function add_taxonomic_children(target_taxids, node=tree) {
 }
 
 function search() {
+  update_hash();
+
   const target_taxids = new Set();
   for (const taxid in names) {
     for (const name of names[taxid]) {
@@ -74,11 +76,11 @@ function search() {
   }
 
   //console.log(target_taxids);
-  
+
   add_taxonomic_children(target_taxids);
 
   console.log(target_taxids);
-  
+
   for (const read_div of reads.children) {
     // it's silly that js has Set but not Set.intersection
     let is_match = false;
@@ -89,7 +91,7 @@ function search() {
       }
     }
     if (is_match) {
-      read_div.classList.remove("hidden"); 
+      read_div.classList.remove("hidden");
     } else {
       read_div.classList.add("hidden");
     }
@@ -175,28 +177,44 @@ async function load() {
         pos += kmers;
       }
     }
-    
+
     reads.appendChild(read_div);
   }
+  search();
 }
 
 if (window.location.hash) {
-  const possible_run_accession = window.location.hash.slice(1);
-  if (is_valid_run_accession(possible_run_accession)) {
-    run_accession.value = possible_run_accession;
+  const params = new URLSearchParams(window.location.hash.slice(1));
+  if (params.has("q")) {
+    taxonomic_search.value = params.get("q");
+  }
+  if (params.has("run")) {
+    run_accession.value = params.get("run");
     load();
   }
 }
 
+function update_hash() {
+  const params = new URLSearchParams();
+  if (taxonomic_search.value) {
+    params.set("q", taxonomic_search.value);
+  }
+  if (run_accession.value) {
+    params.set("run", run_accession.value);
+  }
+  window.location.hash = params.toString();
+}
+
 function validate_and_load() {
+  update_hash();
   if (is_valid_run_accession(run_accession.value)) {
     run_accession.style.backgroundColor = "";
     load();
-  } else {    
+  } else {
     run_accession.style.backgroundColor = "pink";
   }
 }
-  
+
 load_sample.onclick = validate_and_load;
 
 </script>
