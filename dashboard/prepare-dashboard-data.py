@@ -180,6 +180,12 @@ for project in projects:
                 sample_metadata[accession]["date"] = date
                 sample_metadata[accession]["country"] = "Maryland"
                 sample_metadata[accession]["location"] = "Local Manhole"
+            elif project in papers["Brinch 2020"]["projects"]:
+                accession, loc, date = line.split("\t")
+                sample_metadata[accession]["date"] = date
+                sample_metadata[accession]["country"] = "Denmark"
+                sample_metadata[accession]["location"] = "Copenhagen"
+                sample_metadata[accession]["fine_location"] = loc
             elif project in papers["Munk 2022"]["projects"]:
                 accession, country, location, date = line.split("\t")
                 sample_metadata[accession]["date"] = date
