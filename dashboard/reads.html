@@ -1,0 +1,203 @@
+<html>
+  
+  <input id=run_accession placeholder="run accession"></input>
+  <button id=load_sample>Load</button>
+
+<p>
+
+  <input id=taxonomic_search placeholder="taxonomic name"></input>
+
+<div id=reads></div>
+
+<style>
+  .read {
+    background-color: #eee;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    margin: 1em;
+  }
+
+  .hidden {
+    display: none;
+  }
+</style>
+
+<script src="data.js"></script>
+<script>
+
+// imports:
+//   names: taxid -> names
+//   tree: taxid with children
+
+function e(tag, innerText) {
+  const el = document.createElement(tag);
+  if (innerText) {
+    el.innerText = innerText;
+  }
+  return el;
+}
+
+const K=35; // kraken default
+
+function is_valid_run_accession(x) {
+  return /^[SE]RR[0-9]+$/.test(x);
+}
+
+function include_all_children(target_taxids, node) {
+  const taxid = node[0];
+  target_taxids.add(taxid);
+  for (let i = 1; i < node.length; i++) {
+    include_all_children(target_taxids, node[i]);
+  }
+}
+
+function add_taxonomic_children(target_taxids, node=tree) {
+  const taxid = node[0];
+  if (target_taxids.has(taxid)) {
+    include_all_children(target_taxids, node);
+    return;
+  }
+  for (let i = 1; i < node.length; i++) {
+    add_taxonomic_children(target_taxids, node[i]);
+  }
+}
+
+function search() {
+  const target_taxids = new Set();
+  for (const taxid in names) {
+    for (const name of names[taxid]) {
+      if (name.toLowerCase().includes(taxonomic_search.value.toLowerCase())) {
+        //console.log("Matched " + name + " adding " + taxid);
+        target_taxids.add(Number(taxid));
+      }
+    }
+  }
+
+  //console.log(target_taxids);
+  
+  add_taxonomic_children(target_taxids);
+
+  console.log(target_taxids);
+  
+  for (const read_div of reads.children) {
+    // it's silly that js has Set but not Set.intersection
+    let is_match = false;
+    for (const read_taxid of read_div.taxids) {
+      if (target_taxids.has(read_taxid)) {
+        is_match = true;
+        break;
+      }
+    }
+    if (is_match) {
+      read_div.classList.remove("hidden"); 
+    } else {
+      read_div.classList.add("hidden");
+    }
+  }
+}
+
+taxonomic_search.addEventListener("input", search);
+
+function contextual_name(target_taxid, node=tree) {
+  const taxid = node[0];
+  if (taxid == target_taxid) {
+    return names[taxid].join(", ");
+  }
+  for (let i = 1; i < node.length; i++) {
+    const response = contextual_name(target_taxid, node[i]);
+    if (response) {
+      if (taxid == "1") return response;
+      return names[taxid][0] + " > " + response;
+    }
+  }
+  return null;
+}
+
+async function load() {
+  const response = await fetch(run_accession.value + ".hvreads.json");
+  const seqs = await response.json();
+
+  for (const seq_id in seqs) {
+    const read_div = e("div");
+    read_div.taxids = new Set();
+    read_div.classList.add("read");
+    read_div.appendChild(e("div", seq_id));
+
+    const kraken_line = seqs[seq_id][0];
+    read_div.appendChild(e("pre", kraken_line));
+
+    for (let i = 1; i < seqs[seq_id].length; i++) {
+      const seq = seqs[seq_id][i];
+      read_div.appendChild(e("pre", seq));
+
+      let seen_divider = false;
+      let pos = 0;
+      for (const kraken_match of kraken_line.split(" ")) {
+        if (kraken_match == '|:|') {
+          seen_divider = true;
+          continue;
+        }
+
+        if (seqs[seq_id].length > 2) {
+          // Non-collapsed case.
+          // Read 1 is only pre-divider, read 2 is only post divider.
+          if (i == 1 && seen_divider) break;
+          if (i == 2 && !seen_divider) continue;
+        }
+
+        const [taxid, kmers_raw] = kraken_match.split(":");
+        const kmers = Number(kmers_raw);
+        if (taxid == '0' || taxid == 'A') {
+          pos += kmers;
+          continue;
+        }
+
+        let label = taxid;
+        if (names[taxid]) {
+          label = names[taxid][0];
+          read_div.taxids.add(Number(taxid));
+        }
+        const max_label = K + kmers - 5;
+        label += " ".repeat(max_label);
+        label = label.slice(0, max_label);
+        label = "| " + label + " |";
+        const pre = e("pre", " ".repeat(pos));
+        const a_taxid = e("a", label);
+        a_taxid.href =
+          "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi" +
+          "?lvl=0&id=" + taxid;
+        if (names[taxid]) {
+          a_taxid.title = contextual_name(taxid);
+        }
+        a_taxid.target = "_blank";
+        pre.appendChild(a_taxid);
+        read_div.appendChild(pre);
+        pos += kmers;
+      }
+    }
+    
+    reads.appendChild(read_div);
+  }
+}
+
+if (window.location.hash) {
+  const possible_run_accession = window.location.hash.slice(1);
+  if (is_valid_run_accession(possible_run_accession)) {
+    run_accession.value = possible_run_accession;
+    load();
+  }
+}
+
+function validate_and_load() {
+  if (is_valid_run_accession(run_accession.value)) {
+    run_accession.style.backgroundColor = "";
+    load();
+  } else {    
+    run_accession.style.backgroundColor = "pink";
+  }
+}
+  
+load_sample.onclick = validate_and_load;
+
+</script>
+</html>
