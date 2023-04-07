@@ -903,6 +903,7 @@ function search_followup() {
 }
 
 function search(e) {
+  update_hash();
   active_followups++;
   if (e.target.value.length > 3) {
     setTimeout(search_followup, 100);
@@ -916,6 +917,45 @@ country_search.addEventListener("input", search);
 city_search.addEventListener("input", search);
 date_begin_search.addEventListener("input", search);
 date_end_search.addEventListener("input", search);
+
+if (window.location.hash) {
+  const params = new URLSearchParams(window.location.hash.slice(1));
+  if (params.has("q")) {
+    taxonomic_search.value = params.get("q");
+  }
+  if (params.has("country")) {
+    country_search.value = params.get("country");
+  }
+  if (params.has("city")) {
+    city_search.value = params.get("city");
+  }
+  if (params.has("date_begin")) {
+    date_begin_search.value = params.get("date_begin");
+  }
+  if (params.has("date_end")) {
+    date_end_search.value = params.get("date_end");
+  }
+}
+
+function update_hash() {
+  const params = new URLSearchParams();
+  if (taxonomic_search.value) {
+    params.set("q", taxonomic_search.value);
+  }
+  if (country_search.value) {
+    params.set("country", country_search.value);
+  }
+  if (city_search.value) {
+    params.set("city", city_search.value);
+  }
+  if (date_begin_search.value) {
+    params.set("date_begin", date_begin_search.value);
+  }
+  if (date_end_search.value) {
+    params.set("date_end", date_end_search.value);
+  }
+  window.location.hash = params.toString();
+}
 
 redisplay();
 
