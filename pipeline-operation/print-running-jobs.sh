@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-ps aux | grep 'run[.]py' | sed 's/.*run[.]py//'
+ps aux | grep -v 'SC[R]EEN' | grep 'run[.]py' | sed 's/.*run[.]py//' | grep .
