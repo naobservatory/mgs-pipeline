@@ -202,6 +202,13 @@ for project in projects:
                 # wastewater treatment plants from the five NYC boroughs in
                 # November 2014".
                 sample_metadata[accession]["date"] = "2014-11"
+            elif project in papers["Fierer 2022"]["projects"]:
+                accession = line.strip().split("\t")[0]
+                sample_metadata[accession]["country"] = "USA"
+                sample_metadata[accession]["location"] = "Boulder, CO"
+                sample_metadata[accession]["date"] = "2020-09"
+                # I can't find metadata on which samples are from which days or
+                # which spots on campus.
             else:
                 raise Exception("Metadata format for %s unknown" % project)
 
