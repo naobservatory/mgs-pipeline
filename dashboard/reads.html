@@ -1,11 +1,15 @@
 <html>
 
+  <div id=error_not_done class=hidden>
+  Sample <span id=error_not_done_span></span> is not ready yet, sorry!
+  </div>
+
   <input id=run_accession placeholder="run accession"></input>
   <button id=load_sample>Load</button>
 
 <p>
 
-  <input id=taxonomic_search placeholder="taxonomic name"></input>
+  <input id=taxonomic_search placeholder="taxonomic name" size=40></input>
 
 <div id=reads></div>
 
@@ -19,6 +23,13 @@
 
   .hidden {
     display: none;
+  }
+
+  #error_not_done {
+    border: 1px solid red;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    margin: 0.5em;
   }
 </style>
 
@@ -115,10 +126,18 @@ function contextual_name(target_taxid, node=tree) {
   return null;
 }
 
-async function load() {
-  const response = await fetch(run_accession.value + ".hvreads.json");
-  const seqs = await response.json();
+function load() {
+  error_not_done.classList.add("hidden");
+  fetch("hvreads/" + run_accession.value + ".hvreads.json").then(
+    function(response) { return response.json(); }).then(
+      loaded).catch(
+        function () {
+          error_not_done.classList.remove("hidden");
+          error_not_done_span.innerText = run_accession.value;
+        });
+}
 
+function loaded(seqs) {
   for (const seq_id in seqs) {
     const read_div = e("div");
     read_div.taxids = new Set();
