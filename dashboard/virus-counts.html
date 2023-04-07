@@ -864,7 +864,19 @@ function redisplay() {
       const samples = column_samples[i];
       const total_reads = column_totals[i];
       const matches = count_matches(samples, species);
-      const td_val = e("td", cell_value(matches, total_reads, node.length==1))
+      const td_val = e("td");
+      const label = cell_value(matches, total_reads, node.length==1);
+      if (samples.length == 1 && matches > 0) {
+        const a_val = e("a", label);
+        const params = new URLSearchParams();
+        params.set("q", names[taxid][0]);
+        params.set("run", samples[0]);
+        a_val.href = "reads#" + params.toString();
+        a_val.target = "_blank";
+        td_val.appendChild(a_val);
+      } else {
+        td_val.innerText = label;
+      }
       td_val.style.backgroundColor = sci_color(matches/total_reads);
       tr.appendChild(td_val);
     }
