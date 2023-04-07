@@ -27,7 +27,8 @@ As of 2023-04-06 handles the paired-end data up through species identification.
 
 1. Find the bioproject's accession, so we can load the data.  For example
    https://pubmed.ncbi.nlm.nih.gov/34550753/ is `PRJNA729801`.
-2. Run `./import-accession.sh [accession]`
+2. Run `./import-accession.sh [accession]`.  Continue in parallel; this doesn't
+   have to finish before you get to step #5, it just needs a small head start.
 3. Make a directory `bioprojects/[accession]/metadata` and:
    a. Create `bioprojects/[accession]/metadata/study.json` with contents
       `{"is_paired_end": true}`.  If the bioproject isn't actually paired end then
