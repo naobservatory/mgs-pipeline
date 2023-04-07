@@ -268,7 +268,6 @@ def humanviruses(args):
          taxid, name = line.strip().split("\t")
          human_viruses[int(taxid)] = name
 
-
    available_inputs = get_files(args, "processed")
    existing_outputs = get_files(args, "humanviruses")
 
@@ -305,6 +304,111 @@ def humanviruses(args):
 
          subprocess.check_call([
             "aws", "s3", "cp", output, "%s/%s/humanviruses/%s" % (
+               S3_BUCKET, args.bioproject, output)])
+
+def allmatches(args):
+   human_viruses = {}
+   with open(os.path.join(THISDIR, "human-viruses.tsv")) as inf:
+      for line in inf:
+         taxid, name = line.strip().split("\t")
+         human_viruses[int(taxid)] = name
+
+   available_inputs = get_files(args, "processed")
+   existing_outputs = get_files(args, "allmatches")
+
+   for accession in get_accessions(args):
+      output = "%s.allmatches.tsv" % accession
+      if output in existing_outputs: continue
+
+      inputs = [
+         input_fname
+         for input_fname in available_inputs
+         if input_fname.startswith(accession)]
+      if not inputs:
+         continue
+
+      with tempdir("allmatches", accession) as workdir:
+         kept = []
+         for input_fname in inputs:
+            subprocess.check_call([
+               "aws", "s3", "cp", "%s/%s/processed/%s" % (
+                  S3_BUCKET, args.bioproject, input_fname), input_fname])
+
+            with gzip.open(input_fname, "rt") as inf:
+               for line in inf:
+                  keep = False
+                  try:
+                     taxid_matches = line.strip().split("\t")[4]
+                     for taxid_match in taxid_matches.split(" "):
+                        taxid, n_kmers = taxid_match.split(":")
+                        if taxid == "A": continue # ambiguous nucleotide
+                        if taxid == "|": continue # paired end transition
+                        taxid = int(taxid)
+                        if taxid in human_viruses:
+                           keep = True
+                  except Exception:
+                     print(line)
+                     raise
+                  if keep:
+                     kept.append(line)
+
+         with open(output, "w") as outf:
+            for line in kept:
+               outf.write(line)
+
+         subprocess.check_call([
+            "aws", "s3", "cp", output, "%s/%s/allmatches/%s" % (
+               S3_BUCKET, args.bioproject, output)])
+
+def hvreads(args):
+   available_inputs = get_files(args, "allmatches")
+   available_cleaned_inputs = get_files(
+      args, "cleaned",
+      # tiny files are empty; ignore them
+      min_size=100)
+
+   existing_outputs = get_files(args, "hvreads")
+
+   for accession in get_accessions(args):
+      output = "%s.hvreads.json" % accession
+      if output in existing_outputs: continue
+
+      input_fname = "%s.allmatches.tsv" % accession
+      if input_fname not in available_inputs: continue
+
+      all_matches = [
+         x.strip().split("\t")
+         for x in subprocess.check_output([
+               "aws", "s3", "cp", "%s/%s/allmatches/%s" % (
+                  S3_BUCKET, args.bioproject, input_fname), "-"]).decode(
+                     'utf-8').split("\n")
+         if x.strip()]
+
+      seqs = {} # seqid -> kraken, fwd, rev
+      for _, seq_id, _, _, kraken_details in all_matches:
+         seqs[seq_id] = [kraken_details]
+
+      for cleaned_input in sorted(available_cleaned_inputs):
+         if not cleaned_input.startswith(accession): continue
+         if ".settings" in cleaned_input: continue
+
+         with tempdir("hvreads", cleaned_input) as workdir:
+            subprocess.check_call([
+               "aws", "s3", "cp", "%s/%s/cleaned/%s" % (
+                  S3_BUCKET, args.bioproject,
+                  cleaned_input), cleaned_input])
+
+            with gzip.open(cleaned_input, "rt") as inf:
+               for (title, sequence, quality) in FastqGeneralIterator(inf):
+                  seq_id = title.split()[0]
+                  if seq_id in seqs:
+                     seqs[seq_id].append(sequence)
+
+      with tempdir("hvreads", output) as workdir:
+         with open(output, "w") as outf:
+            json.dump(seqs, outf, sort_keys=True)
+         subprocess.check_call([
+            "aws", "s3", "cp", output, "%s/%s/hvreads/%s" % (
                S3_BUCKET, args.bioproject, output)])
 
 def qc_reads(args, accession, qc_info,
@@ -459,8 +563,9 @@ def print_status(args):
    info = defaultdict(dict)
 
    stages = ["raw", "cleaned", "processed",
-             "viruscounts", "humanviruses"]
-   short_stages = ["raw", "clean", "kraken", "vc", "hv"]
+             "viruscounts", "humanviruses",
+             "allmatches", "hvreads"]
+   short_stages = ["raw", "clean", "kraken", "vc", "hv", "am", "hvr"]
 
    for n, bioproject in enumerate(bioprojects):
       print("\rgathering status information %s/%s..." % (
@@ -519,6 +624,8 @@ for stage_name, stage_fn in [("clean", clean),
                              ("interpret", interpret),
                              ("viruscount", viruscount),
                              ("humanviruses", humanviruses),
+                             ("allmatches", allmatches),
+                             ("hvreads", hvreads),
                              #("qc", qc),
                              ]:
    STAGES_ORDERED.append(stage_name)
