@@ -50,6 +50,8 @@ As of 2023-04-06 handles the paired-end data up through species identification.
    a. Put the paper link in `papers/AuthorYear/link.txt`
    b. Put "RNA" or "DNA" in `papers/AuthorYear/na_type.txt`
 5. `./run.py --bioproject=[accession]`
+6. Collect full metadata, update metadata.tsv, and modify
+   `dashboard/prepare-dashboard-data.py` to handle it.
 
 ## Design
 
