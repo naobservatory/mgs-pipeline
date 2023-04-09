@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -e  # exit on error
+
 # always run in dashboard dir
 cd -- "$( dirname -- "${BASH_SOURCE[0]}")"
 
