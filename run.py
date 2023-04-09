@@ -19,6 +19,9 @@ from Bio.SeqIO.QualityIO import FastqGeneralIterator
 S3_BUCKET="s3://nao-mgs"
 THISDIR=os.path.abspath(os.path.dirname(__file__))
 
+COLOR_RED = '\x1b[0;31m'
+COLOR_END = '\x1b[0m'
+
 def check_call_shell(cmd):
    # Unlike subprocess.check_call, if any member of the pipeline fails then
    # this fails too.
@@ -612,8 +615,14 @@ def print_status(args):
                if info[name][bioproject][accession][stage]:
                   totals[stage] += 1
 
+         prev = None
          for stage in stages:
-            row.append(str(totals[stage]))
+            missing = prev is not None and totals[stage] < prev
+            row.append("%s%s%s" % (
+               COLOR_RED if missing else "",
+               totals[stage],
+               COLOR_END if missing else ""))
+            prev = totals[stage]
 
          print("\t".join(row))
 
