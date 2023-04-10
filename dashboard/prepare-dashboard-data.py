@@ -178,9 +178,15 @@ for project in projects:
             elif project in papers["Brumfield 2022"]["projects"]:
                 accession, date = line.split("\t")
                 sample_metadata[accession]["date"] = date
-                sample_metadata[accession]["country"] = "Maryland"
-                sample_metadata[accession]["location"] = ""
+                sample_metadata[accession]["country"] = "USA"
+                sample_metadata[accession]["location"] = "Maryland"
                 sample_metadata[accession]["fine_location"] = "Manhole"
+            elif project in papers["Bengtsson-Palme 2016"]["projects"]:
+                accession, location, site = line.split("\t")
+                sample_metadata[accession]["date"] = "2012-09"
+                sample_metadata[accession]["country"] = "Sweden"
+                sample_metadata[accession]["location"] = location
+                sample_metadata[accession]["fine_location"] = site
             elif project in papers["Brinch 2020"]["projects"]:
                 accession, loc, date = line.split("\t")
                 sample_metadata[accession]["date"] = date
