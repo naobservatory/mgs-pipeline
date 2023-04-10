@@ -254,15 +254,19 @@ def viruscount(args):
                "aws", "s3", "cp", "%s/%s/processed/%s" % (
                   S3_BUCKET, args.bioproject, input_fname), input_fname])
 
-         check_call_shell(
-            "cat %s.*.kraken2.tsv.gz | "
-            "gunzip | "
-            "grep -i virus | "
-            "awk -F'\t' '{print $3}' | "
-            "sort | uniq -c | sort -n | "
-            "while read n rest ; do echo -e \"$n\\t$rest\" ; done | "
-            "aws s3 cp - %s/%s/viruscounts/%s.viruscounts.tsv" % (
-               accession, S3_BUCKET, args.bioproject, accession))
+         try:
+            check_call_shell(
+               "cat %s.*.kraken2.tsv.gz | "
+               "gunzip | "
+               "grep -i virus | "
+               "awk -F'\t' '{print $3}' | "
+               "sort | uniq -c | sort -n | "
+               "while read n rest ; do echo -e \"$n\\t$rest\" ; done | "
+               "aws s3 cp - %s/%s/viruscounts/%s.viruscounts.tsv" % (
+                  accession, S3_BUCKET, args.bioproject, accession))
+         except subprocess.CalledProcessError:
+            # Probably no viruses in the file
+            pass
 
 def humanviruses(args):
    human_viruses = {}
