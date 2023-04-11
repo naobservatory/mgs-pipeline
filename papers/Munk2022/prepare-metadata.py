@@ -53,7 +53,7 @@ def clean_date(x):
     return x
 
 records = {}
-with open("monk-2022-supplementary-data-1.tsv") as inf:
+with open("munk-2022-supplementary-data-1.tsv") as inf:
     for n, line in enumerate(inf):
         cols = line.strip().split("\t")
         if n == 0:
