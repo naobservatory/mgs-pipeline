@@ -6,8 +6,8 @@ set -e  # exit on error
 cd -- "$( dirname -- "${BASH_SOURCE[0]}")"
 
 if [ ! -e names.dmp ] ; then
-    wget https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/taxdmp.zip
-    unzip taxdmp.zip
+    wget https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/taxdump_archive/taxdmp_2022-12-01.zip
+    unzip taxdmp_2022-12-01.zip
 fi
 
 for study in $(aws s3 ls s3://nao-mgs/ | awk '{print $NF}'); do

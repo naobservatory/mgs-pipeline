@@ -24,6 +24,8 @@
   ],
   "10244": [
     "Monkeypox virus",
+    "monkey pox",
+    "monkeypox",
     "monkey pox virus"
   ],
   "10245": [
@@ -240,14 +242,12 @@
   "10521": [
     "Human adenovirus 14",
     "Adenovirus 14",
-    "human adenovirus B14",
     "Human adenovirus type 14",
     "Mastadenovirus h14"
   ],
   "10522": [
     "Human adenovirus 35",
     "Adenovirus serotype 35",
-    "human adenovirus B35",
     "Human adenovirus type 35",
     "Mastadenovirus h35"
   ],
@@ -608,7 +608,6 @@
     "dengue 2 virus DEN-2",
     "dengue-2 virus",
     "Dengue virus 2",
-    "Dengue Virus serotype 2",
     "Dengue virus type II"
   ],
   "11069": [
@@ -774,14 +773,6 @@
     "Pneumoviridae",
     "Pneumovirinae"
   ],
-  "11246": [
-    "Bovine orthopneumovirus",
-    "bovine respiratory syncytial virus BRSV",
-    "Bovine respiratory syncytial virus",
-    "bovine RSV",
-    "BRS",
-    "BRSV"
-  ],
   "11250": [
     "Human orthopneumovirus",
     "HRSV",
@@ -833,7 +824,6 @@
     "Influenza A virus",
     "FLUAV",
     "Human Influenza A Virus",
-    "influenza A virus",
     "Influenza virus type A"
   ],
   "11520": [
@@ -1261,8 +1251,7 @@
     "Respiratory syncytial virus",
     "respiratory syncytial virus RS",
     "respiratory syncytial virus RSV",
-    "respiratory syncytial virus RS virus",
-    "RSV"
+    "respiratory syncytial virus RS virus"
   ],
   "28275": [
     "Human adenovirus D10",
@@ -2059,7 +2048,6 @@
   "47506": [
     "Echovirus E18",
     "Echovirus 18",
-    "Echovirus E-18",
     "Echovirus type 18",
     "Human echovirus 18",
     "Human echovirus E18"
@@ -6067,7 +6055,6 @@
   ],
   "1337398": [
     "Human adenovirus 66",
-    "human adenovirus B66",
     "Human Adenovirus type 66"
   ],
   "1337425": [
@@ -7254,6 +7241,9 @@
   "2093789": [
     "Human papillomavirus type 203"
   ],
+  "2133750": [
+    "unclassified Pneumoviridae"
+  ],
   "2169561": [
     "Ortervirales"
   ],
@@ -7702,8 +7692,7 @@
     "Geplafuvirales"
   ],
   "2732541": [
-    "Reovirales",
-    "Reoviridae"
+    "Reovirales"
   ],
   "2732543": [
     "Hepelivirales"
@@ -8006,12 +7995,10 @@
     "Sabi mammarenavirus"
   ],
   "2946186": [
-    "Sedoreoviridae",
-    "Sedoreovirinae"
+    "Sedoreoviridae"
   ],
   "2946187": [
-    "Spinareoviridae",
-    "Spinareovirinae"
+    "Spinareoviridae"
   ],
   "2946627": [
     "Caphthovirinae"

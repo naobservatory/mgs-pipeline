@@ -168,4 +168,5 @@ aws s3 cp s3://genome-idx/kraken/k2_standard_16gb_20221209.tar.gz - | tar -xvz
 
 Don't update the version of Kraken's DB without talking to everyone: we would
 need to reprocess all older data to handle taxonomy changes and to keep
-everything consistent.
+everything consistent.  Also keep this in sync with the version of the taxonomy
+in prepare-dashboard-data.sh.
