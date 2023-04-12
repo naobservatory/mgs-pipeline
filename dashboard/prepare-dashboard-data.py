@@ -244,4 +244,16 @@ with open("data.js", "w") as outf:
             ("tree", tree),
     ]:
         outf.write("%s=%s;\n" % (name, json.dumps(
-            val, sort_keys=True, indent=None if name == "tree" else 2)))
+            val, sort_keys=True, indent=None if val is tree else 2)))
+
+for name, val in [
+        ("human_virus_sample_counts", virus_sample_counts),
+        ("human_virus_names", names),
+        ("human_virus_tree", tree),
+        ("metadata_samples", sample_metadata),
+        ("metadata_bioprojects", bioprojects),
+        ("metadata_papers", papers),
+]:
+    with open(name + ".json", "w") as outf:
+        json.dump(val, outf, sort_keys=True,
+                  indent=None if val is tree else 2)
