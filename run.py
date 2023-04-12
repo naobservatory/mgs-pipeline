@@ -432,56 +432,6 @@ def hvreads(args):
             "aws", "s3", "cp", output, "%s/%s/hvreads/%s" % (
                S3_BUCKET, args.bioproject, output)])
 
-def qc_reads(args, accession, qc_info,
-             available_raw, available_cleaned,
-             available_processed, available_viruscounts):
-   in1_fname = accession + "_1.fastq.gz"
-   if in1_fname not in available_raw:
-      return None
-
-   return int(check_output_shell(
-      "aws s3 cp %s/%s/raw/%s - | gunzip | grep ^@ | wc -l" % (
-         S3_BUCKET, args.bioproject, in1_fname)))
-
-def qc_cleaned_reads(args, accession, qc_info,
-                     available_raw, available_cleaned,
-                     available_processed, available_viruscounts):
-   counts = {}
-   for fname in available_cleaned:
-      if fname.startswith(accession):
-         slug = fname.replace("%s." % accession, "").replace(".gz", "")
-         if slug == "settings": continue
-         counts[slug] = int(check_output_shell(
-            "aws s3 cp %s/%s/cleaned/%s - | gunzip | grep ^@ | wc -l" % (
-               S3_BUCKET, args.bioproject, fname)))
-   if not counts:
-      return None
-
-   return counts
-
-def qc_cleaning_summary(args, accession, qc_info,
-                        available_raw, available_cleaned,
-                        available_processed,
-                        available_viruscounts):
-   if "reads" not in qc_info or "cleaned_reads" not in qc_info:
-      return None
-
-   cleaned_count = sum(
-      count
-      for (slug, count) in qc_info["cleaned_reads"].items()
-      if not slug.startswith("pair2"))
-
-   collapsed_count = sum(
-      count
-      for (slug, count) in qc_info["cleaned_reads"].items()
-      if slug.startswith("collapsed"))
-
-   summary = {}
-   summary["dropped"] = qc_info["reads"] - cleaned_count
-   summary["collapsed_fraction"] = collapsed_count / qc_info["reads"]
-
-   return summary
-
 def phred_to_q(phred_score):
    return ord(phred_score) - ord('!')
 
@@ -494,83 +444,6 @@ def average_quality(phred_counts):
       weights.append(count)
 
    return round(np.average(xs, weights=weights))
-
-def qc_post_cleaning(args, accession, qc_info,
-                     available_raw, available_cleaned,
-                     available_processed,
-                     available_viruscounts):
-   if "cleaned_reads" not in qc_info:
-      return None
-
-   lengths = []
-   qualities = defaultdict(list)
-
-   with tempdir("qc_post_cleaning", accession) as workdir:
-      for fname in available_cleaned:
-         if fname.startswith(accession):
-            slug = fname.replace("%s." % accession, "").replace(".gz", "")
-            slug_raw_qualities = []
-            if "settings" in slug: continue
-            subprocess.check_call([
-               "aws", "s3", "cp", "%s/%s/cleaned/%s" % (
-                  S3_BUCKET, args.bioproject, fname),fname])
-            with gzip.open(fname, "rt") as inf:
-               for (title, sequence, quality) in FastqGeneralIterator(inf):
-                  if "collapsed" in slug:
-                     while len(sequence) > len(lengths) - 1:
-                        lengths.append(0)
-                     lengths[len(sequence)] += 1
-
-                  for pos, qval in enumerate(quality):
-                     if pos > len(slug_raw_qualities) - 1:
-                        slug_raw_qualities.append(Counter())
-                     slug_raw_qualities[pos][qval] += 1
-            qualities[slug] = [
-               average_quality(phred_counts)
-               for phred_counts in slug_raw_qualities]
-
-   return {
-      "lengths": lengths,
-      "qualities": qualities,
-   }
-
-def qc(args):
-   available_raw = get_files(args, "raw")
-   available_cleaned = get_files(args, "cleaned", min_size=100)
-   available_processed = get_files(args, "processed")
-   available_viruscounts = get_files(args, "viruscounts")
-
-   qc_dir = os.path.join(THISDIR, "bioprojects", args.bioproject, "qc")
-   if not os.path.exists(qc_dir):
-      os.mkdir(qc_dir)
-
-   for accession in get_accessions(args):
-      qc_fname = os.path.join(qc_dir, "%s.json" % accession)
-      qc_info = {}
-      if os.path.exists(qc_fname):
-         with open(qc_fname) as inf:
-            qc_info = json.load(inf)
-
-      for qc_key, qc_fn in [
-            ("reads", qc_reads),
-            ("cleaned_reads", qc_cleaned_reads),
-            ("cleaning_summary", qc_cleaning_summary),
-            ("post_cleaning", qc_post_cleaning),
-      ]:
-         if qc_key not in qc_info:
-            result = qc_fn(
-               args,
-               accession,
-               qc_info,
-               available_raw,
-               available_cleaned,
-               available_processed,
-               available_viruscounts)
-            if result is not None:
-               qc_info[qc_key] = result
-               with open(qc_fname, "w") as outf:
-                  json.dump(qc_info, outf, indent=2, sort_keys=True)
-                  outf.write("\n")
 
 def print_status(args):
    if args.bioproject:
@@ -654,7 +527,6 @@ for stage_name, stage_fn in [("clean", clean),
                              ("humanviruses", humanviruses),
                              ("allmatches", allmatches),
                              ("hvreads", hvreads),
-                             #("qc", qc),
                              ]:
    STAGES_ORDERED.append(stage_name)
    STAGE_FNS[stage_name] = stage_fn
