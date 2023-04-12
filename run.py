@@ -245,8 +245,20 @@ def allcounts(args):
          continue
 
       subprocess.check_call([
-         "./count_taxonomic_ids.sh", args.bioproject, accession])   
-         
+         "./count_taxonomic_ids.sh", args.bioproject, accession])
+
+def childcounts(args):
+   available_inputs = get_files(args, "allcounts", min_size=100)
+   existing_outputs = get_files(args, "childcounts", min_size=100)
+
+   for accession in get_accessions(args):
+      fname = "%s.tsv.gz" % accession
+      if fname in existing_outputs: continue
+      if fname not in available_inputs: continue
+
+      subprocess.check_call([
+         "./count_child_nodes.sh", args.bioproject, accession])
+
 def humanviruses(args):
    human_viruses = {}
    with open(os.path.join(THISDIR, "human-viruses.tsv")) as inf:
@@ -422,9 +434,8 @@ def print_status(args):
    info = defaultdict(dict)
 
    stages = ["raw", "cleaned", "processed", "allcounts",
-             "humanviruses",
-             "allmatches", "hvreads"]
-   short_stages = ["raw", "clean", "kraken", "ac", "hv", "am", "hvr"]
+             "childcounts", "humanviruses", "allmatches", "hvreads"]
+   short_stages = ["raw", "clean", "kraken", "ac", "cc", "hv", "am", "hvr"]
 
    for n, bioproject in enumerate(bioprojects):
       print("\rgathering status information %s/%s..." % (
@@ -488,6 +499,7 @@ STAGE_FNS = {}
 for stage_name, stage_fn in [("clean", clean),
                              ("interpret", interpret),
                              ("allcounts", allcounts),
+                             ("childcounts", childcounts),
                              ("humanviruses", humanviruses),
                              ("allmatches", allmatches),
                              ("hvreads", hvreads),
