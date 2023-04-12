@@ -56,7 +56,7 @@ Or, with names,
 
     $ for taxid in $(cat nodes.dmp | awk -F'\t' '$3==12234{print $1}'); do
         echo $taxid $(cat names.dmp | awk -F'\t' '$1=='$taxid'&&$7=="scientific name"{print $3}')
-    done
+      done
     12235 Cucumber green mottle mosaic virus
     12238 Odontoglossum ringspot virus
     12239 Pepper mild mottle virus
