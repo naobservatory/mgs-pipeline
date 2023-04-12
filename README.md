@@ -39,30 +39,30 @@ You can get the scientific name for a taxid with:
 
 The parent taxid for a taxid with:
 
-   $ cat nodes.dmp | awk -F'\t' '$1==12234{print $3}'
-   675071
+    $ cat nodes.dmp | awk -F'\t' '$1==12234{print $3}'
+    675071
 
 And the child taxids for a taxid with:
 
-   $ cat nodes.dmp | awk -F'\t' '$3==12234{print $1}'
-   12235
-   12238
-   12239
-   12240
-   12241
-   ...
+    $ cat nodes.dmp | awk -F'\t' '$3==12234{print $1}'
+    12235
+    12238
+    12239
+    12240
+    12241
+    ...
 
 Or, with names,
 
-   $ for taxid in $(cat nodes.dmp | awk -F'\t' '$3==12234{print $1}'); do
-       echo $taxid $(cat names.dmp | awk -F'\t' '$1=='$taxid'&&$7=="scientific name"{print $3}')
-   done
-   12235 Cucumber green mottle mosaic virus
-   12238 Odontoglossum ringspot virus
-   12239 Pepper mild mottle virus
-   12240 Sunn-hemp mosaic virus
-   12241 Tobacco mild green mosaic virus
-   ...
+    $ for taxid in $(cat nodes.dmp | awk -F'\t' '$3==12234{print $1}'); do
+        echo $taxid $(cat names.dmp | awk -F'\t' '$1=='$taxid'&&$7=="scientific name"{print $3}')
+    done
+    12235 Cucumber green mottle mosaic virus
+    12238 Odontoglossum ringspot virus
+    12239 Pepper mild mottle virus
+    12240 Sunn-hemp mosaic virus
+    12241 Tobacco mild green mosaic virus
+    ...
 
 ### Data
 
