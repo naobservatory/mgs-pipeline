@@ -69,35 +69,42 @@ At each stage data will be stored in an S3 bucket on AWS.  The structure is:
 
     s3://nao-mgs/
       [bioprojectId]/
-         raw/
-         noadapter/
-         cleaned/
-         processed/
+         raw/           # input, from SRA
+         cleaned/       # after AdapterRemoval2
+         processed/     # after Kraken2
+         allcounts/     # per taxid counts
+         allmatches/    # Kraken2 output matching human reads
+         humanviruses/  # per human virus counts
+         hvreads/       # sequencing reads matching human viruses
 
-In cases where the data comes from the [Sequencing Read
-Archive](https://www.ncbi.nlm.nih.gov/sra) (SRA), the bioproject ID is the SRA
-accession.  For example, "PRJNA729801" for the Rothman 2021 data.
+There are also some obsolete directories that I haven't cleaned up yet:
+
+         viruscounts/   # old hacky way of counting viruses
+         noadapters/    # different run of AdapterRemoval2 for QC
+
+The data comes from the [Sequencing Read
+Archive](https://www.ncbi.nlm.nih.gov/sra) (SRA), and bioproject IDs are SRA
+bioproject accessions.  For example, "PRJNA729801" for the Rothman 2021 data.
+Sample IDs are SRA run accessions, and should be globally unique.
 
 Files under `raw/` have the contents as we received them, but have been renamed
 to `[sampleID].fasta.gz`.  For paired-end data there will be two files,
 `[sampleID]_1.fasta.gz` and `[sampleID]_2.fasta.gz`.
 
-Files under `noadadapter/` and `cleaned/` are the output of AdapterRemoval2;
-see below.
-
-Files under `processed/` include our quality control results, species
-classification, and any other processing we run.
-
 ### Metadata
 
-Metadata goes in this repo under `bioprojects/[accession]/metadata/`.  This
-includes both the metadata file and the scripts that prepare it.
+When collecting metadata, put it in this repo under
+`bioprojects/[accession]/metadata/`.  Include both the metadata files and the
+scripts that prepare it.
 
 Each bioproject has a `bioprojects/[accession]/metadata/metadata.tsv` where the
 first column is the sample ID and the remaining columns are
 bioproject-specific.  For data we downloaded from the SRA the sample ID is the
 SRA accession.  For example, "SRR14530767" for the 2020-08-11 HTP sample in the
 Rothman 2021 data.
+
+See [Working With The Output](#working-with-the-output) above for the metadata
+to use when interpreting the pipeline output.
 
 ### Input
 
@@ -109,25 +116,6 @@ other formats, however, we'll include the conversion as a pre-processing step.
 AdapterRemoval2 to trim adapters, remove low-quality bases from the
 ends of reads, and collapse overlapping paired-end reads.  This populates
 `cleaned/`.
-
-For QC purposes, we also want to know:
-
-* What are quality scores like along the lengths of the reads?
-* What is the length distribution of fragments?
-
-Unfortunately, getting these requires separate AdapterRemoval runs:
-
-* Removing adapters, but not trimming quality or collapsing.
-* Removing adapters and collapsing, but not trimming quality.
-
-It may be worth modifying AdapterRemoval2 to dump the statistics we care about
-while running the full process, so we don't have to run it three times for each
-sample.
-
-### Quality Control
-
-FastQC, plus additional custom checks for the issues we're specifically
-concerned about.
 
 ### Species Classification
 
@@ -177,3 +165,7 @@ cd ~/kraken-db
 # avoids needing 2x the storage
 aws s3 cp s3://genome-idx/kraken/k2_standard_16gb_20221209.tar.gz - | tar -xvz
 ```
+
+Don't update the version of Kraken's DB without talking to everyone: we would
+need to reprocess all older data to handle taxonomy changes and to keep
+everything consistent.
