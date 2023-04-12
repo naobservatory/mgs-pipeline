@@ -1,0 +1,72 @@
+{
+  "Bengtsson-Palme 2016": {
+    "link": "https://pubmed.ncbi.nlm.nih.gov/27542633/",
+    "na_type": "DNA",
+    "projects": [
+      "PRJEB14051"
+    ]
+  },
+  "Brinch 2020": {
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7577296/",
+    "na_type": "DNA",
+    "projects": [
+      "PRJEB13832",
+      "PRJEB34633"
+    ]
+  },
+  "Brumfield 2022": {
+    "link": "https://journals.asm.org/doi/10.1128/mbio.00591-22",
+    "na_type": "RNA",
+    "projects": [
+      "PRJNA812772"
+    ]
+  },
+  "Crits-Christoph 2021": {
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7845645/",
+    "na_type": "RNA",
+    "projects": [
+      "PRJNA661613"
+    ]
+  },
+  "Fierer 2022": {
+    "link": "https://journals.asm.org/doi/10.1128/msystems.00651-22",
+    "na_type": "DNA",
+    "projects": [
+      "PRJNA875025"
+    ]
+  },
+  "Maritz 2019": {
+    "link": "https://www.nature.com/articles/s41396-019-0467-z",
+    "na_type": "DNA",
+    "projects": [
+      "PRJEB28033"
+    ]
+  },
+  "Munk 2022": {
+    "link": "https://www.nature.com/articles/s41467-022-34312-7",
+    "na_type": "DNA",
+    "projects": [
+      "PRJEB13831",
+      "PRJEB27054",
+      "PRJEB27621",
+      "PRJEB40798",
+      "PRJEB40815",
+      "PRJEB40816",
+      "PRJEB51229"
+    ]
+  },
+  "Petersen 2015": {
+    "link": "https://europepmc.org/article/med/26161690",
+    "na_type": "DNA",
+    "projects": [
+      "PRJEB12466"
+    ]
+  },
+  "Rothman 2021": {
+    "link": "https://pubmed.ncbi.nlm.nih.gov/34550753/",
+    "na_type": "RNA",
+    "projects": [
+      "PRJNA729801"
+    ]
+  }
+}
