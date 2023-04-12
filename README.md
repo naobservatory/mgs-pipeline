@@ -23,7 +23,26 @@ As of 2023-04-06 handles the paired-end data up through species identification.
 * Quality control
 * Single-end reads
 
-## Usage:
+## Working with the data
+
+The metadata is in `dashboard/metadata_*.json`:
+
+* [`metadata_papers.json`](https://github.com/naobservatory/mgs-pipeline/blob/main/dashboard/metadata_papers.json):
+  The papers that this data was collected from.  Includes the nucleic acid type
+  (though this should move to being a sample-level attribute), a link to the
+  paper, and a list of the paper's bioprojects.
+
+* [`metadata_bioprojects.json`](https://github.com/naobservatory/mgs-pipeline/blob/main/dashboard/metadata_bioprojects.json):
+  The bioprojects, with which samples they contain.  Some papers have multiple
+  bioprojects, though in the cases I've looked at this doesn't seem to
+  represent anything?
+
+* [`metadata_samples.json`](https://github.com/naobservatory/mgs-pipeline/blob/main/dashboard/metadata_samples.json):
+  Sample-level metadata.  Multi-level location information and sampling date.
+
+Files are in S3, under `s3://nao-mgs/[bioprojectid]`.
+
+## Adding new data
 
 1. Find the bioproject's accession, so we can load the data.  For example
    https://pubmed.ncbi.nlm.nih.gov/34550753/ is `PRJNA729801`.
