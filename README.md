@@ -73,7 +73,6 @@ At each stage data will be stored in an S3 bucket on AWS.  The structure is:
          noadapter/
          cleaned/
          processed/
-         viruscounts/
 
 In cases where the data comes from the [Sequencing Read
 Archive](https://www.ncbi.nlm.nih.gov/sra) (SRA), the bioproject ID is the SRA

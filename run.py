@@ -233,41 +233,6 @@ def interpret(args):
                "aws", "s3", "cp", compressed_output, "%s/%s/processed/" % (
                   S3_BUCKET, args.bioproject)])
 
-def viruscount(args):
-   available_inputs = get_files(args, "processed")
-   existing_outputs = get_files(args, "viruscounts")
-
-   for accession in get_accessions(args):
-      output = "%s.viruscounts.tsv" % accession
-      if output in existing_outputs: continue
-
-      inputs = [
-         input_fname
-         for input_fname in available_inputs
-         if input_fname.startswith(accession)]
-      if not inputs:
-         continue
-
-      with tempdir("viruscount", accession) as workdir:
-         for input_fname in inputs:
-            subprocess.check_call([
-               "aws", "s3", "cp", "%s/%s/processed/%s" % (
-                  S3_BUCKET, args.bioproject, input_fname), input_fname])
-
-         try:
-            check_call_shell(
-               "cat %s.*.kraken2.tsv.gz | "
-               "gunzip | "
-               "grep -i virus | "
-               "awk -F'\t' '{print $3}' | "
-               "sort | uniq -c | sort -n | "
-               "while read n rest ; do echo -e \"$n\\t$rest\" ; done | "
-               "aws s3 cp - %s/%s/viruscounts/%s.viruscounts.tsv" % (
-                  accession, S3_BUCKET, args.bioproject, accession))
-         except subprocess.CalledProcessError:
-            # Probably no viruses in the file
-            pass
-
 def allcounts(args):
    available_inputs = get_files(args, "processed")
    existing_outputs = get_files(args, "allcounts", min_size=100)
@@ -457,9 +422,9 @@ def print_status(args):
    info = defaultdict(dict)
 
    stages = ["raw", "cleaned", "processed", "allcounts",
-             "viruscounts", "humanviruses",
+             "humanviruses",
              "allmatches", "hvreads"]
-   short_stages = ["raw", "clean", "kraken", "ac", "vc", "hv", "am", "hvr"]
+   short_stages = ["raw", "clean", "kraken", "ac", "hv", "am", "hvr"]
 
    for n, bioproject in enumerate(bioprojects):
       print("\rgathering status information %s/%s..." % (
@@ -523,7 +488,6 @@ STAGE_FNS = {}
 for stage_name, stage_fn in [("clean", clean),
                              ("interpret", interpret),
                              ("allcounts", allcounts),
-                             ("viruscount", viruscount),
                              ("humanviruses", humanviruses),
                              ("allmatches", allmatches),
                              ("hvreads", hvreads),
