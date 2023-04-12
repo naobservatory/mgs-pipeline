@@ -104,7 +104,7 @@ Output and intermediate steps for each bioproject are in S3, under
      This is saying that only 270 reads were assigned to "Tobamovirus" but
      105,908 reads had some 35-mer that was common to Tobamoviruses.
 
-* `childcounts`: Output, taxonomic counts including children
+* `childcounts/`: Output, taxonomic counts including children
    * ex: `SRR14530724.tsv.gz`
    * Gzipped TSV
    * Collated Kraken output, plus columns for children
