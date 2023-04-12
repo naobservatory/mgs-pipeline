@@ -268,6 +268,20 @@ def viruscount(args):
             # Probably no viruses in the file
             pass
 
+def allcounts(args):
+   available_inputs = get_files(args, "processed")
+   existing_outputs = get_files(args, "allcounts", min_size=100)
+
+   for accession in get_accessions(args):
+      output = "%s.tsv.gz" % accession
+      if output in existing_outputs: continue
+
+      if not any(x.startswith(accession) for x in available_inputs):
+         continue
+
+      subprocess.check_call([
+         "./count_taxonomic_ids.sh", args.bioproject, accession])   
+         
 def humanviruses(args):
    human_viruses = {}
    with open(os.path.join(THISDIR, "human-viruses.tsv")) as inf:
@@ -569,10 +583,10 @@ def print_status(args):
    # Name -> Bioproject Accession -> Stage -> N/M
    info = defaultdict(dict)
 
-   stages = ["raw", "cleaned", "processed",
+   stages = ["raw", "cleaned", "processed", "allcounts",
              "viruscounts", "humanviruses",
              "allmatches", "hvreads"]
-   short_stages = ["raw", "clean", "kraken", "vc", "hv", "am", "hvr"]
+   short_stages = ["raw", "clean", "kraken", "ac", "vc", "hv", "am", "hvr"]
 
    for n, bioproject in enumerate(bioprojects):
       print("\rgathering status information %s/%s..." % (
@@ -635,6 +649,7 @@ STAGES_ORDERED = []
 STAGE_FNS = {}
 for stage_name, stage_fn in [("clean", clean),
                              ("interpret", interpret),
+                             ("allcounts", allcounts),
                              ("viruscount", viruscount),
                              ("humanviruses", humanviruses),
                              ("allmatches", allmatches),
