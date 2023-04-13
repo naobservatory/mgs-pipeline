@@ -125,7 +125,7 @@ Output and intermediate steps for each bioproject are in S3, under
      * Scientific name: the NCBI scientific name for this taxid
 
 * `cladecounts/`: Output, taxonomic counts
-   * ex: `SRR14530724.tsv.gz`
+   * ex: `SRR21452136.tsv.gz`
    * Gzipped TSV
    * Collated Kraken output
    * Columns:
@@ -138,15 +138,15 @@ Output and intermediate steps for each bioproject are in S3, under
        taxid or anywhere in its clade.
      * Clade hits: how many reads in this sample had any 35-mer matches to the
        Kraken DB for this taxid or anywhere in its clade.
-   * For example, Tomaboviruses (12234) is:
-         12234      270     105908  333363  ??
+   * For example, Tomaboviruses (12234) in `SRR21452136.tsv.gz` is:
+         12234    920   45914   954843   1027715
      This is saying that:
-     * 270 reads were assigned to "Tobamovirus".
-     * 105,908 reads had some 35-mer that was common to Tobamoviruses and
+     * 920 reads were assigned to "Tobamovirus".
+     * 45,914 reads had some 35-mer that was common to Tobamoviruses and
        nothing more specific.
-     * 333,363 reads were assigned to Tobamovirus or something within it's
+     * 954,843 reads were assigned to Tobamovirus or something within it's
        clade (ex: PMMoV).
-     * ?? reads had at least one 35-mer hit within this clade.
+     * 1,027,715 reads had at least one 35-mer hit within this clade.
 
 ## Adding new data
 
