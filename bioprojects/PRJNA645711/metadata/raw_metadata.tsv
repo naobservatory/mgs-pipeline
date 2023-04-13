@@ -1,0 +1,8 @@
+run_accession	sample_accession	run_alias	sample_alias	sample_title
+SRR12204734	SAMN15514205	ks-4_L3_1.fq.gz	ks4	sewage sample from Kashgar
+SRR12204735	SAMN15514204	MD2018026_L1_50_1.fq.gz	MD	sewage sample from Mi-Dong
+SRR12204847	SAMN15514210	HT-8-RNA_L2_1.fq.gz	ht8	sewage sample from Hotan
+SRR12204848	SAMN15514209	HT-3-RNA_L3_1.fq.gz	ht3	sewage sample from Hotan
+SRR12204849	SAMN15514208	ks-11_S2_R1_001.fastq.gz	ks11	sewage sample from Kashgar
+SRR12204850	SAMN15514207	ks-8_S1_R1_001.fastq.gz	ks8	sewage sample from Kashgar
+SRR12204851	SAMN15514206	KS-7-RNA_L3_1.fq.gz	ks7	sewage sample from Kashgar

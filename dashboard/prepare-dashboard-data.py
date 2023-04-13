@@ -222,6 +222,30 @@ for project in projects:
                 sample_metadata[accession]["date"] = "2020-09"
                 # I can't find metadata on which samples are from which days or
                 # which spots on campus.
+            elif project in papers["Ng 2019"]["projects"]:
+                accession, stage, date = line.strip().split("\t")[0]
+                sample_metadata[accession]["country"] = "Singapore"
+                sample_metadata[accession]["location"] = "Singapore"
+                sample_metadata[accession]["date"] = date
+                sample_metadata[accession]["fine_location"] = {
+                    "Effluent from Membrane Biorector (MBR)": "MBR",
+                    "Effluent from Primary Settling Tank (PST)": "PST",
+                    "Effluent from Secondary Settling Tank (SST)": "SST",
+                    "Effluent from Wet Well (WW)": "WW",
+                    "Influent": "Influent",
+                    "Sludge (SLUDGE)": "Sludge",
+                }[stage]
+            elif project in papers["Hendriksen 2019"]["projects"]:
+                accession, date, cluster = line.strip().split("\t")[0]
+                sample_metadata[accession]["country"] = "Kenya"
+                sample_metadata[accession]["location"] = "Kibera"
+                sample_metadata[accession]["fine_location"] = cluster
+                sample_metadata[accession]["date"] = date
+            elif project in papers["Yang 2020"]["projects"]:
+                accession, city = line.strip().split("\t")[0]
+                sample_metadata[accession]["country"] = "China"
+                sample_metadata[accession]["location"] = city
+                sample_metadata[accession]["date"] = "2018"
             else:
                 raise Exception("Metadata format for %s unknown" % project)
 
