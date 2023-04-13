@@ -35,23 +35,24 @@ for line in sys.stdin:
             break
         taxid = parents[taxid]
 
-    incremented = set()
+    direct_incremented = set()
+    clade_incremented = set()
     for hit in re.findall("([0-9]+):", encoded_hits):
         hit = int(hit)
-        if hit not in incremented:
+        if hit not in direct_incremented:
             direct_hits[hit] += 1
-            while hit not in incremented:
-                clade_hits[hit] += 1
-                incremented.add(hit)
+            direct_incremented.add(hit)
 
-                if hit in [0, 1]:
-                    break
-                hit = parents[hit]
+        while hit not in clade_incremented:
+            clade_hits[hit] += 1
+            clade_incremented.add(hit)
+
+            if hit in [0, 1]:
+                break
+            hit = parents[hit]
 
 for taxid in sorted(clade_hits):
     print("%s\t%s\t%s\t%s\t%s" % (
         taxid,
         direct_assignments[taxid], direct_hits[taxid],
         clade_assignments[taxid], clade_hits[taxid]))
-        
-        
