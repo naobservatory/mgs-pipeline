@@ -233,9 +233,9 @@ def interpret(args):
                "aws", "s3", "cp", compressed_output, "%s/%s/processed/" % (
                   S3_BUCKET, args.bioproject)])
 
-def allcounts(args):
+def cladecounts(args):
    available_inputs = get_files(args, "processed")
-   existing_outputs = get_files(args, "allcounts", min_size=100)
+   existing_outputs = get_files(args, "cladecounts", min_size=100)
 
    for accession in get_accessions(args):
       output = "%s.tsv.gz" % accession
@@ -245,19 +245,7 @@ def allcounts(args):
          continue
 
       subprocess.check_call([
-         "./count_taxonomic_ids.sh", args.bioproject, accession])
-
-def childcounts(args):
-   available_inputs = get_files(args, "allcounts", min_size=100)
-   existing_outputs = get_files(args, "childcounts", min_size=100)
-
-   for accession in get_accessions(args):
-      fname = "%s.tsv.gz" % accession
-      if fname in existing_outputs: continue
-      if fname not in available_inputs: continue
-
-      subprocess.check_call([
-         "./count_child_nodes.sh", args.bioproject, accession])
+         "./count_clades.sh", args.bioproject, accession])
 
 def humanviruses(args):
    human_viruses = {}
@@ -433,9 +421,9 @@ def print_status(args):
    # Name -> Bioproject Accession -> Stage -> N/M
    info = defaultdict(dict)
 
-   stages = ["raw", "cleaned", "processed", "allcounts",
-             "childcounts", "humanviruses", "allmatches", "hvreads"]
-   short_stages = ["raw", "clean", "kraken", "ac", "cc", "hv", "am", "hvr"]
+   stages = ["raw", "cleaned", "processed", "cladecounts", "humanviruses",
+             "allmatches", "hvreads"]
+   short_stages = ["raw", "clean", "kraken", "cc", "hv", "am", "hvr"]
 
    for n, bioproject in enumerate(bioprojects):
       print("\rgathering status information %s/%s..." % (
@@ -498,8 +486,7 @@ STAGES_ORDERED = []
 STAGE_FNS = {}
 for stage_name, stage_fn in [("clean", clean),
                              ("interpret", interpret),
-                             ("allcounts", allcounts),
-                             ("childcounts", childcounts),
+                             ("cladecounts", cladecounts),
                              ("humanviruses", humanviruses),
                              ("allmatches", allmatches),
                              ("hvreads", hvreads),

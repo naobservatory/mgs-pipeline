@@ -124,40 +124,29 @@ Output and intermediate steps for each bioproject are in S3, under
      * Count: how many reads Kraken assigned to this taxid
      * Scientific name: the NCBI scientific name for this taxid
 
-* `allcounts/`: Intermediate, taxonomic counts
+* `cladecounts/`: Output, taxonomic counts
    * ex: `SRR14530724.tsv.gz`
    * Gzipped TSV
    * Collated Kraken output
    * Columns:
      * Taxid: NCBI Taxonomic ID, from the 2022-12-01 taxdmp release
-     * Assignments: how many reads in this sample Kraken assigned to this taxid
-     * Hits: how many reads in this sample had any 35-mer matches to the Kraken
-       DB for this taxid
-   * For example, Tomaboviruses (12234) is:
-         12234      270     105908
-     This is saying that only 270 reads were assigned to "Tobamovirus" but
-     105,908 reads had some 35-mer that was common to Tobamoviruses.
-
-* `childcounts/`: Output, taxonomic counts including children
-   * ex: `SRR14530724.tsv.gz`
-   * Gzipped TSV
-   * Collated Kraken output, plus columns for children
-   * Columns:
-     * First three columns are the same as `allcounts/` above.
+     * Direct assignments: how many reads in this sample Kraken assigned to
+       this taxid.
+     * Direct hits: how many reads in this sample had any 35-mer matches to the
+       Kraken DB for this taxid
      * Clade assigments: how many reads in this sample Kraken assigned to this
        taxid or anywhere in its clade.
      * Clade hits: how many reads in this sample had any 35-mer matches to the
        Kraken DB for this taxid or anywhere in its clade.
    * For example, Tomaboviruses (12234) is:
-         12234      270     105908  333363  465886
-     The second two columns are saying that 333,363 reads were assigned to
-     the Tobamovirus clade (ex: assignment to PMMoV) and there were 465,886
-     35-mer matches where a read matched anything in the Tobamovirus clade.
-     * Hits within the clade isn't a great statistic because there can be
-       double counting: one read could have a hit for both Tobamovirus and
-       PMMoV.  It would probably be better to count each read toward each clade
-       only once.  If this is a statistic we want to work with, let me know and
-       I can calculate this from the Kraken output.
+         12234      270     105908  333363  ??
+     This is saying that:
+     * 270 reads were assigned to "Tobamovirus".
+     * 105,908 reads had some 35-mer that was common to Tobamoviruses and
+       nothing more specific.
+     * 333,363 reads were assigned to Tobamovirus or something within it's
+       clade (ex: PMMoV).
+     * ?? reads had at least one 35-mer hit within this clade.
 
 ## Adding new data
 
