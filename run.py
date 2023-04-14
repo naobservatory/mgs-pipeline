@@ -20,6 +20,7 @@ S3_BUCKET="s3://nao-mgs"
 THISDIR=os.path.abspath(os.path.dirname(__file__))
 
 COLOR_RED = '\x1b[0;31m'
+COLOR_GREEN = '\x1b[0;32m'
 COLOR_END = '\x1b[0m'
 
 def check_call_shell(cmd):
@@ -435,6 +436,9 @@ def print_status(args):
       for bioproject in bioprojects:
          print(("  " + bioproject).ljust(name_width), end="", flush=True)
 
+         fully_processed = os.path.exists(os.path.join(
+            THISDIR, "bioprojects", bioproject, "fully_processed"))
+
          s3_bioproject_dir = "%s/%s" % (S3_BUCKET, bioproject)
          metadata_dir = os.path.join(THISDIR, "bioprojects", bioproject,
                                      "metadata")
@@ -447,6 +451,11 @@ def print_status(args):
          prev = None
          for stage in stages:
             print("\t", end="", flush=True)
+
+            if fully_processed and stage != "raw":
+               print("-", end="", flush=True)
+               continue
+
             seen = set()
             for fname in ls_s3_dir("%s/%s/" % (s3_bioproject_dir, stage)):
                for accession in accessions:
@@ -454,12 +463,19 @@ def print_status(args):
                      seen.add(accession)
             missing = prev is not None and len(seen) < prev
 
+            color = ""
+            if missing:
+               color = COLOR_RED
+            elif fully_processed:
+               color = COLOR_GREEN
+
             print("%s%s%s" % (
-               COLOR_RED if missing else "",
+               color,
                len(seen),
-               COLOR_END if missing else ""),
+               COLOR_END if color else ""),
                   end="", flush=True)
             prev = len(seen)
+
          print()
 
 STAGES_ORDERED = []
