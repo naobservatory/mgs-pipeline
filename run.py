@@ -21,6 +21,7 @@ THISDIR=os.path.abspath(os.path.dirname(__file__))
 
 COLOR_RED = '\x1b[0;31m'
 COLOR_GREEN = '\x1b[0;32m'
+COLOR_CYAN = '\x1b[0;36m'
 COLOR_END = '\x1b[0m'
 
 def check_call_shell(cmd):
@@ -412,6 +413,8 @@ def print_status(args):
          os.path.basename(x)
          for x in glob.glob(os.path.join(THISDIR, "bioprojects", "*"))]
 
+   running_processes = subprocess.check_output(["ps", "aux"]).decode("utf-8")
+
    # Name -> Bioproject Accession -> Stage -> N/M
    info = defaultdict(dict)
 
@@ -434,7 +437,14 @@ def print_status(args):
       print(paper)
 
       for bioproject in bioprojects:
-         print(("  " + bioproject).ljust(name_width), end="", flush=True)
+         if bioproject in running_processes:
+            color = COLOR_CYAN
+         else:
+            color = ""
+
+         print(color +
+               ("  " + bioproject).ljust(name_width) +
+               (COLOR_END if color else ""), end="", flush=True)
 
          fully_processed = os.path.exists(os.path.join(
             THISDIR, "bioprojects", bioproject, "fully_processed"))
