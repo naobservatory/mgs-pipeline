@@ -208,7 +208,6 @@ for (const paper_name of paper_names) {
   input_include.type = "checkbox";
   input_include.checked = true;
   input_include.onchange = redisplay;
-  include_papers[paper_name] = input_include;
   td_include.appendChild(input_include);
   tr.appendChild(td_include);
 
@@ -227,6 +226,13 @@ for (const paper_name of paper_names) {
       total_samples += 1;
     }
   }
+
+  if (total_reads == 0) {
+    continue;
+  }
+
+  include_papers[paper_name] = input_include;
+
   tr.appendChild(e("td", human_readable(total_reads) + " reads"));
   tr.appendChild(e("td", papers[paper_name].na_type));
   tr.appendChild(e("td", total_samples));
@@ -592,7 +598,7 @@ function redisplay() {
   tr_header.appendChild(e("td"));  // taxonomic node names
 
   for (const paper_name of paper_names) {
-    if (!include_papers[paper_name].checked) continue;
+    if (!include_papers[paper_name]?.checked) continue;
 
     const th_paper = e("th");
     const a_paper = e("a", paper_name.replaceAll(" ", "\u00a0"));
