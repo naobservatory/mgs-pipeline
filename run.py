@@ -425,62 +425,49 @@ def print_status(args):
              "allmatches", "hvreads"]
    short_stages = ["raw", "clean", "kraken", "cc", "hv", "am", "hvr"]
 
-   for n, bioproject in enumerate(bioprojects):
-      print("\rgathering status information %s/%s..." % (
-         n+1, len(bioprojects)), end='', flush=True)
-
+   papers_to_projects = defaultdict(list) # paper -> [project]
+   for bioproject in bioprojects:
       metadata_dir = os.path.join(THISDIR, "bioprojects", bioproject, "metadata")
-      if not os.path.exists(metadata_dir):
-         continue
-
+      if not os.path.exists(metadata_dir): continue
       with open(os.path.join(metadata_dir, "name.txt")) as inf:
          name = inf.read().strip()
-
-      info[name][bioproject] = {}
-
-      with open(os.path.join(metadata_dir, "metadata.tsv")) as inf:
-         accessions = [x.strip().split("\t")[0] for x in inf]
-
-      for accession in accessions:
-         info[name][bioproject][accession] = Counter()
-
-      s3_bioproject_dir = "%s/%s" % (S3_BUCKET, bioproject)
-
-      for stage in stages:
-         for fname in ls_s3_dir("%s/%s/" % (s3_bioproject_dir, stage)):
-            for accession in accessions:
-               if fname.startswith(accession):
-                  info[name][bioproject][accession][stage] += 1
-
-
-   print("\n")
+      papers_to_projects[name].append(bioproject)
 
    name_width=21
    print(" "*name_width, end='\t')
    print(*short_stages, sep='\t')
+   for paper, bioprojects in sorted(papers_to_projects.items()):
+      print(paper)
 
-   for name in sorted(info):
-      print(name)
-      for bioproject in sorted(info[name]):
-         row = [("  " + bioproject).ljust(name_width)]
-         totals = Counter()
+      for bioproject in bioprojects:
+         print(("  " + bioproject).ljust(name_width), end="", flush=True)
 
-         for accession in info[name][bioproject]:
-            for stage in stages:
-               if info[name][bioproject][accession][stage]:
-                  totals[stage] += 1
+         s3_bioproject_dir = "%s/%s" % (S3_BUCKET, bioproject)
+         metadata_dir = os.path.join(THISDIR, "bioprojects", bioproject,
+                                     "metadata")
+
+         stage_counters = defaultdict(Counter) # accession -> stage -> count
+
+         with open(os.path.join(metadata_dir, "metadata.tsv")) as inf:
+            accessions = [x.strip().split("\t")[0] for x in inf]
 
          prev = None
          for stage in stages:
-            missing = prev is not None and totals[stage] < prev
-            row.append("%s%s%s" % (
+            print("\t", end="", flush=True)
+            seen = set()
+            for fname in ls_s3_dir("%s/%s/" % (s3_bioproject_dir, stage)):
+               for accession in accessions:
+                  if fname.startswith(accession):
+                     seen.add(accession)
+            missing = prev is not None and len(seen) < prev
+
+            print("%s%s%s" % (
                COLOR_RED if missing else "",
-               totals[stage],
-               COLOR_END if missing else ""))
-            prev = totals[stage]
-
-         print("\t".join(row))
-
+               len(seen),
+               COLOR_END if missing else ""),
+                  end="", flush=True)
+            prev = len(seen)
+         print()
 
 STAGES_ORDERED = []
 STAGE_FNS = {}
