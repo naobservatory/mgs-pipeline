@@ -59,10 +59,6 @@ def tempdir(stage, msg):
       finally:
          os.chdir(olddir)
 
-def bioproject_config(args):
-   with open(os.path.join(get_metadata_dir(args), "study.json")) as inf:
-      return json.load(inf)
-
 def exists_s3_prefix(s3_path):
    try:
       subprocess.check_call(["aws", "s3", "ls", s3_path],
@@ -120,9 +116,6 @@ def get_adapters(in1, in2, adapter1_fname, adapter2_fname):
          outf.write(adapter)
 
 def adapter_removal(args, dirname, trim_quality, collapse):
-   if not bioproject_config(args)["is_paired_end"]:
-      raise Exception("Only paired end sequencing currently supported")
-
    adapter_dir = os.path.join(THISDIR, "bioprojects", args.bioproject, "adapters")
    try:
       os.mkdir(adapter_dir)

@@ -151,25 +151,22 @@ Output and intermediate steps for each bioproject are in S3, under
 ## Adding new data
 
 1. Find the bioproject's accession, so we can load the data.  For example
-   https://pubmed.ncbi.nlm.nih.gov/34550753/ is `PRJNA729801`.
+   https://pubmed.ncbi.nlm.nih.gov/34550753/ is `PRJNA729801`.  Right now we
+   can only handle short-read paired-end data.
 2. Run `./import-accession.sh [accession]`.  Continue in parallel; this doesn't
    have to finish before you get to step #5, it just needs a small head start.
 3. Make a directory `bioprojects/[accession]/metadata` and:
-   a. Create `bioprojects/[accession]/metadata/study.json` with contents
-      `{"is_paired_end": true}`.  If the bioproject isn't actually paired end then
-      put `false`, but you're going to need to do a lot of updating `run.py` to
-      handle this case.
    b. Create `bioprojects/[accession]/metadata/name.txt` with the short name of
       the associated paper.  For example, `Rothman 2021`.
    c. Create `bioprojects/[accession]/metadata/metadata.tsv` with a list of the
       sample accessions in the first column and anything else in the later
       columns.  If you don't have the rest of the metadata sorted out yet and
-      just want to unblock the pipeline you can put the accessions only:
+      just want to unblock the pipeline you can put the accessions only with:
 
-          aws s3 ls s3://nao-mgs/[accession]/raw/ | \
-            awk '{print $NF}' | \
-            grep _1 | \
-            sed s/_1.fastq.gz// > metadata.tsv
+          curl -sS 'https://www.ebi.ac.uk/ena/portal/api/filereport?accession=PRJNA648796&result=read_run&limit=0' | \
+            grep -v ^run_accession | \
+            awk '{print $1}' > metadata.tsv
+
 4. Make a directory `papers/AuthorYear/` (matching `name.txt` but without the
    space) and:
    a. Put the paper link in `papers/AuthorYear/link.txt`
