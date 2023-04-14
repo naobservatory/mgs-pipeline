@@ -23,3 +23,5 @@ done | xargs -I {} -P 32 aws s3 cp {} humanviruses/
 
 echo "Now check in data.js and the json files and check out on prod"
 echo "Then run copy-down-hvreads.sh and send the result to prod out of band"
+echo
+echo "(Paper not showing up?  Did you remember to run ./collect-n-reads.sh ?)"

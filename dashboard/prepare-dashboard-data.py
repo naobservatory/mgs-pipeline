@@ -130,8 +130,11 @@ project_accession_virus_counts = {}
 for project in projects:
     bioprojects[project] = []
     for accession in project_sample_reads[project]:
+        fname = "humanviruses/%s.humanviruses.tsv" % accession
+        if not os.path.exists(fname): continue
+
         bioprojects[project].append(accession)
-        with open("humanviruses/%s.humanviruses.tsv" % accession) as inf:
+        with open(fname) as inf:
             for line in inf:
                 line = line.strip()
                 if not line: continue
@@ -146,13 +149,10 @@ for project in projects:
 virus_sample_counts = {}
 
 # sample -> {reads, date, country, location, fine_location}
-sample_metadata = {}
+sample_metadata = defaultdict(dict)
 for project in projects:
     project_total = 0
     for accession in project_sample_reads[project]:
-        if accession not in sample_metadata:
-            sample_metadata[accession] = {}
-
         project_total += project_sample_reads[project][accession]
         sample_metadata[accession]["reads"] = \
             project_sample_reads[project][accession]
@@ -223,7 +223,7 @@ for project in projects:
                 # I can't find metadata on which samples are from which days or
                 # which spots on campus.
             elif project in papers["Ng 2019"]["projects"]:
-                accession, stage, date = line.strip().split("\t")[0]
+                accession, stage, date = line.strip().split("\t")
                 sample_metadata[accession]["country"] = "Singapore"
                 sample_metadata[accession]["location"] = "Singapore"
                 sample_metadata[accession]["date"] = date
@@ -236,16 +236,29 @@ for project in projects:
                     "Sludge (SLUDGE)": "Sludge",
                 }[stage]
             elif project in papers["Hendriksen 2019"]["projects"]:
-                accession, date, cluster = line.strip().split("\t")[0]
+                accession, date, cluster = line.strip().split("\t")
                 sample_metadata[accession]["country"] = "Kenya"
                 sample_metadata[accession]["location"] = "Kibera"
                 sample_metadata[accession]["fine_location"] = cluster
                 sample_metadata[accession]["date"] = date
             elif project in papers["Yang 2020"]["projects"]:
-                accession, city = line.strip().split("\t")[0]
+                accession, city = line.strip().split("\t")
                 sample_metadata[accession]["country"] = "China"
                 sample_metadata[accession]["location"] = city
                 sample_metadata[accession]["date"] = "2018"
+            elif project in papers["Wang 2022"]["projects"]:
+                accession, date, hospital = line.strip().split("\t")
+                sample_metadata[accession]["country"] = "Saudi Arabia"
+                sample_metadata[accession]["location"] = "Jeddah"
+                sample_metadata[accession]["date"] = date
+                sample_metadata[accession]["fine_location"] = hospital
+            elif project in papers["Cui 2023"]["projects"]:
+                accession = line.strip()
+                sample_metadata[accession]["country"] = "China"
+                # Also possible this was Changchun
+                sample_metadata[accession]["location"] = "Harbin"
+                # Also possible this was 2020-10-15
+                sample_metadata[accession]["date"] = "2022-10-19"
             else:
                 raise Exception("Metadata format for %s unknown" % project)
 

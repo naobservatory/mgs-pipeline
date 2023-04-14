@@ -4850,6 +4850,321 @@
     "location": "New York City",
     "reads": 8646908
   },
+  "ERR3503275": {
+    "country": "Kenya",
+    "date": "2014-06-16",
+    "fine_location": "Cluster 9",
+    "location": "Kibera",
+    "reads": 11991676
+  },
+  "ERR3503276": {
+    "country": "Kenya",
+    "date": "2014-06-18",
+    "fine_location": "Cluster 9",
+    "location": "Kibera",
+    "reads": 35027192
+  },
+  "ERR3503277": {
+    "country": "Kenya",
+    "date": "2014-06-23",
+    "fine_location": "Cluster 9",
+    "location": "Kibera",
+    "reads": 18698838
+  },
+  "ERR3503278": {
+    "country": "Kenya",
+    "date": "2014-06-25",
+    "fine_location": "Cluster 9",
+    "location": "Kibera",
+    "reads": 50427926
+  },
+  "ERR3503279": {
+    "country": "Kenya",
+    "date": "2014-06-30",
+    "fine_location": "Cluster 9",
+    "location": "Kibera",
+    "reads": 31107732
+  },
+  "ERR3503280": {
+    "country": "Kenya",
+    "date": "2014-07-07",
+    "fine_location": "Cluster 9",
+    "location": "Kibera",
+    "reads": 56002246
+  },
+  "ERR3503281": {
+    "country": "Kenya",
+    "date": "2014-07-09",
+    "fine_location": "Cluster 9",
+    "location": "Kibera",
+    "reads": 35195364
+  },
+  "ERR3503282": {
+    "country": "Kenya",
+    "date": "2014-07-14",
+    "fine_location": "Cluster 9",
+    "location": "Kibera",
+    "reads": 24712091
+  },
+  "ERR3503283": {
+    "country": "Kenya",
+    "date": "2014-07-16",
+    "fine_location": "Cluster 9",
+    "location": "Kibera",
+    "reads": 53419370
+  },
+  "ERR3503284": {
+    "country": "Kenya",
+    "date": "2014-07-21",
+    "fine_location": "Cluster 9",
+    "location": "Kibera",
+    "reads": 7848475
+  },
+  "ERR3503285": {
+    "country": "Kenya",
+    "date": "2014-07-23",
+    "fine_location": "Cluster 9",
+    "location": "Kibera",
+    "reads": 41392103
+  },
+  "ERR3503286": {
+    "country": "Kenya",
+    "date": "2014-07-28",
+    "fine_location": "Cluster 9",
+    "location": "Kibera",
+    "reads": 19278306
+  },
+  "ERR3503287": {
+    "country": "Kenya",
+    "date": "2014-07-30",
+    "fine_location": "Cluster 9",
+    "location": "Kibera",
+    "reads": 42596009
+  },
+  "ERR3503288": {
+    "country": "Kenya",
+    "date": "2014-08-04",
+    "fine_location": "Cluster 9",
+    "location": "Kibera",
+    "reads": 12951673
+  },
+  "ERR3503289": {
+    "country": "Kenya",
+    "date": "2014-08-06",
+    "fine_location": "Cluster 9",
+    "location": "Kibera",
+    "reads": 60329130
+  },
+  "ERR3503290": {
+    "country": "Kenya",
+    "date": "2014-08-11",
+    "fine_location": "Cluster 9",
+    "location": "Kibera",
+    "reads": 76550285
+  },
+  "ERR3503291": {
+    "country": "Kenya",
+    "date": "2014-08-13",
+    "fine_location": "Cluster 9",
+    "location": "Kibera",
+    "reads": 56003199
+  },
+  "ERR3503292": {
+    "country": "Kenya",
+    "date": "2014-08-18",
+    "fine_location": "Cluster 9",
+    "location": "Kibera",
+    "reads": 28771589
+  },
+  "ERR3503293": {
+    "country": "Kenya",
+    "date": "2014-08-20",
+    "fine_location": "Cluster 9",
+    "location": "Kibera",
+    "reads": 92678236
+  },
+  "ERR3503294": {
+    "country": "Kenya",
+    "date": "2014-08-25",
+    "fine_location": "Cluster 9",
+    "location": "Kibera",
+    "reads": 11216689
+  },
+  "ERR3503296": {
+    "country": "Kenya",
+    "date": "2014-06-16",
+    "fine_location": "Cluster 10",
+    "location": "Kibera",
+    "reads": 56923491
+  },
+  "ERR3503297": {
+    "country": "Kenya",
+    "date": "2014-06-18",
+    "fine_location": "Cluster 10",
+    "location": "Kibera",
+    "reads": 22219361
+  },
+  "ERR3503298": {
+    "country": "Kenya",
+    "date": "2014-06-18",
+    "fine_location": "Cluster 10",
+    "location": "Kibera",
+    "reads": 22686552
+  },
+  "ERR3503299": {
+    "country": "Kenya",
+    "date": "2014-06-23",
+    "fine_location": "Cluster 10",
+    "location": "Kibera",
+    "reads": 12049858
+  },
+  "ERR3503300": {
+    "country": "Kenya",
+    "date": "2014-06-25",
+    "fine_location": "Cluster 10",
+    "location": "Kibera",
+    "reads": 52659757
+  },
+  "ERR3503301": {
+    "country": "Kenya",
+    "date": "2014-06-25",
+    "fine_location": "Cluster 10",
+    "location": "Kibera",
+    "reads": 58706327
+  },
+  "ERR3503302": {
+    "country": "Kenya",
+    "date": "2014-06-30",
+    "fine_location": "Cluster 10",
+    "location": "Kibera",
+    "reads": 12638154
+  },
+  "ERR3503303": {
+    "country": "Kenya",
+    "date": "2014-07-02",
+    "fine_location": "Cluster 10",
+    "location": "Kibera",
+    "reads": 49392616
+  },
+  "ERR3503304": {
+    "country": "Kenya",
+    "date": "2014-07-02",
+    "fine_location": "Cluster 10",
+    "location": "Kibera",
+    "reads": 20105431
+  },
+  "ERR3503305": {
+    "country": "Kenya",
+    "date": "2014-07-07",
+    "fine_location": "Cluster 10",
+    "location": "Kibera",
+    "reads": 20943947
+  },
+  "ERR3503306": {
+    "country": "Kenya",
+    "date": "2014-07-09",
+    "fine_location": "Cluster 10",
+    "location": "Kibera",
+    "reads": 56072874
+  },
+  "ERR3503307": {
+    "country": "Kenya",
+    "date": "2014-07-09",
+    "fine_location": "Cluster 10",
+    "location": "Kibera",
+    "reads": 27426201
+  },
+  "ERR3503308": {
+    "country": "Kenya",
+    "date": "2014-07-14",
+    "fine_location": "Cluster 10",
+    "location": "Kibera",
+    "reads": 65697006
+  },
+  "ERR3503309": {
+    "country": "Kenya",
+    "date": "2014-07-16",
+    "fine_location": "Cluster 10",
+    "location": "Kibera",
+    "reads": 38993420
+  },
+  "ERR3503310": {
+    "country": "Kenya",
+    "date": "2014-07-21",
+    "fine_location": "Cluster 10",
+    "location": "Kibera",
+    "reads": 26085590
+  },
+  "ERR3503311": {
+    "country": "Kenya",
+    "date": "2014-07-23",
+    "fine_location": "Cluster 10",
+    "location": "Kibera",
+    "reads": 66239805
+  },
+  "ERR3503312": {
+    "country": "Kenya",
+    "date": "2014-07-28",
+    "fine_location": "Cluster 10",
+    "location": "Kibera",
+    "reads": 21350110
+  },
+  "ERR3503313": {
+    "country": "Kenya",
+    "date": "2014-07-30",
+    "fine_location": "Cluster 10",
+    "location": "Kibera",
+    "reads": 54392200
+  },
+  "ERR3503314": {
+    "country": "Kenya",
+    "date": "2014-08-04",
+    "fine_location": "Cluster 10",
+    "location": "Kibera",
+    "reads": 39250671
+  },
+  "ERR3503315": {
+    "country": "Kenya",
+    "date": "2014-08-06",
+    "fine_location": "Cluster 10",
+    "location": "Kibera",
+    "reads": 44725728
+  },
+  "ERR3503316": {
+    "country": "Kenya",
+    "date": "2014-08-13",
+    "fine_location": "Cluster 10",
+    "location": "Kibera",
+    "reads": 51055802
+  },
+  "ERR3503317": {
+    "country": "Kenya",
+    "date": "2014-08-18",
+    "fine_location": "Cluster 10",
+    "location": "Kibera",
+    "reads": 18597996
+  },
+  "ERR3503318": {
+    "country": "Kenya",
+    "date": "2014-08-20",
+    "fine_location": "Cluster 10",
+    "location": "Kibera",
+    "reads": 65252846
+  },
+  "ERR3503319": {
+    "country": "Kenya",
+    "date": "2014-08-25",
+    "fine_location": "Cluster 10",
+    "location": "Kibera",
+    "reads": 22865140
+  },
+  "ERR3503320": {
+    "country": "Kenya",
+    "date": "2014-08-27",
+    "fine_location": "Cluster 10",
+    "location": "Kibera",
+    "reads": 40760521
+  },
   "ERR3562836": {
     "country": "Denmark",
     "date": "2015-11-23",
@@ -9415,6 +9730,497 @@
     "location": "Lyngby",
     "reads": 218223
   },
+  "ERR7757493": {
+    "country": "Saudi Arabia",
+    "date": "2020-04-22",
+    "fine_location": "A",
+    "location": "Jeddah",
+    "reads": 97688101
+  },
+  "ERR7757499": {
+    "country": "Saudi Arabia",
+    "date": "2020-04-24",
+    "fine_location": "A",
+    "location": "Jeddah",
+    "reads": 117375456
+  },
+  "ERR7757500": {
+    "country": "Saudi Arabia",
+    "date": "2020-04-27",
+    "fine_location": "A",
+    "location": "Jeddah",
+    "reads": 101475026
+  },
+  "ERR7757501": {
+    "country": "Saudi Arabia",
+    "date": "2020-04-28",
+    "fine_location": "A",
+    "location": "Jeddah",
+    "reads": 96023187
+  },
+  "ERR7757502": {
+    "country": "Saudi Arabia",
+    "date": "2020-05-03",
+    "fine_location": "A",
+    "location": "Jeddah",
+    "reads": 102627175
+  },
+  "ERR7757503": {
+    "country": "Saudi Arabia",
+    "date": "2020-05-04",
+    "fine_location": "A",
+    "location": "Jeddah",
+    "reads": 110060990
+  },
+  "ERR7757504": {
+    "country": "Saudi Arabia",
+    "date": "2020-05-05",
+    "fine_location": "A",
+    "location": "Jeddah",
+    "reads": 102315522
+  },
+  "ERR7757505": {
+    "country": "Saudi Arabia",
+    "date": "2020-05-10",
+    "fine_location": "A",
+    "location": "Jeddah",
+    "reads": 87708705
+  },
+  "ERR7757506": {
+    "country": "Saudi Arabia",
+    "date": "2020-05-11",
+    "fine_location": "A",
+    "location": "Jeddah",
+    "reads": 124524271
+  },
+  "ERR7757507": {
+    "country": "Saudi Arabia",
+    "date": "2020-05-12",
+    "fine_location": "A",
+    "location": "Jeddah",
+    "reads": 118404543
+  },
+  "ERR7757508": {
+    "country": "Saudi Arabia",
+    "date": "2020-05-18",
+    "fine_location": "A",
+    "location": "Jeddah",
+    "reads": 95141759
+  },
+  "ERR7757509": {
+    "country": "Saudi Arabia",
+    "date": "2020-05-19",
+    "fine_location": "A",
+    "location": "Jeddah",
+    "reads": 98431345
+  },
+  "ERR7757510": {
+    "country": "Saudi Arabia",
+    "date": "2020-05-27",
+    "fine_location": "A",
+    "location": "Jeddah",
+    "reads": 100427471
+  },
+  "ERR7757511": {
+    "country": "Saudi Arabia",
+    "date": "2020-05-28",
+    "fine_location": "A",
+    "location": "Jeddah",
+    "reads": 115202970
+  },
+  "ERR7757512": {
+    "country": "Saudi Arabia",
+    "date": "2020-05-30",
+    "fine_location": "A",
+    "location": "Jeddah",
+    "reads": 98791983
+  },
+  "ERR7757513": {
+    "country": "Saudi Arabia",
+    "date": "2020-05-31",
+    "fine_location": "A",
+    "location": "Jeddah",
+    "reads": 98225629
+  },
+  "ERR7757514": {
+    "country": "Saudi Arabia",
+    "date": "2020-06-01",
+    "fine_location": "A",
+    "location": "Jeddah",
+    "reads": 120149882
+  },
+  "ERR7757515": {
+    "country": "Saudi Arabia",
+    "date": "2020-06-02",
+    "fine_location": "A",
+    "location": "Jeddah",
+    "reads": 121023268
+  },
+  "ERR7757516": {
+    "country": "Saudi Arabia",
+    "date": "2020-06-03",
+    "fine_location": "A",
+    "location": "Jeddah",
+    "reads": 111248704
+  },
+  "ERR7757517": {
+    "country": "Saudi Arabia",
+    "date": "2020-06-04",
+    "fine_location": "A",
+    "location": "Jeddah",
+    "reads": 107667688
+  },
+  "ERR7764176": {
+    "country": "Saudi Arabia",
+    "date": "2020-06-05",
+    "fine_location": "A",
+    "location": "Jeddah",
+    "reads": 114015823
+  },
+  "ERR7764177": {
+    "country": "Saudi Arabia",
+    "date": "2020-06-06",
+    "fine_location": "A",
+    "location": "Jeddah",
+    "reads": 108437354
+  },
+  "ERR7764178": {
+    "country": "Saudi Arabia",
+    "date": "2020-06-07",
+    "fine_location": "A",
+    "location": "Jeddah",
+    "reads": 98162180
+  },
+  "ERR7764179": {
+    "country": "Saudi Arabia",
+    "date": "2020-06-08",
+    "fine_location": "A",
+    "location": "Jeddah",
+    "reads": 104762662
+  },
+  "ERR7764180": {
+    "country": "Saudi Arabia",
+    "date": "2020-06-09",
+    "fine_location": "A",
+    "location": "Jeddah",
+    "reads": 101858729
+  },
+  "ERR7764181": {
+    "country": "Saudi Arabia",
+    "date": "2020-06-10",
+    "fine_location": "A",
+    "location": "Jeddah",
+    "reads": 117754031
+  },
+  "ERR7764182": {
+    "country": "Saudi Arabia",
+    "date": "2020-06-11",
+    "fine_location": "A",
+    "location": "Jeddah",
+    "reads": 76549734
+  },
+  "ERR7764183": {
+    "country": "Saudi Arabia",
+    "date": "2020-06-13",
+    "fine_location": "A",
+    "location": "Jeddah",
+    "reads": 101961922
+  },
+  "ERR7764184": {
+    "country": "Saudi Arabia",
+    "date": "2020-06-14",
+    "fine_location": "A",
+    "location": "Jeddah",
+    "reads": 112786969
+  },
+  "ERR7764185": {
+    "country": "Saudi Arabia",
+    "date": "2020-06-15",
+    "fine_location": "A",
+    "location": "Jeddah",
+    "reads": 105323560
+  },
+  "ERR7764186": {
+    "country": "Saudi Arabia",
+    "date": "2020-06-17",
+    "fine_location": "A",
+    "location": "Jeddah",
+    "reads": 151588945
+  },
+  "ERR7764187": {
+    "country": "Saudi Arabia",
+    "date": "2020-06-18",
+    "fine_location": "A",
+    "location": "Jeddah",
+    "reads": 118093957
+  },
+  "ERR7764188": {
+    "country": "Saudi Arabia",
+    "date": "2020-06-19",
+    "fine_location": "A",
+    "location": "Jeddah",
+    "reads": 104054567
+  },
+  "ERR7764189": {
+    "country": "Saudi Arabia",
+    "date": "2020-06-20",
+    "fine_location": "A",
+    "location": "Jeddah",
+    "reads": 94781718
+  },
+  "ERR7764190": {
+    "country": "Saudi Arabia",
+    "date": "2020-06-21",
+    "fine_location": "A",
+    "location": "Jeddah",
+    "reads": 103575694
+  },
+  "ERR7764191": {
+    "country": "Saudi Arabia",
+    "date": "2020-06-22",
+    "fine_location": "A",
+    "location": "Jeddah",
+    "reads": 103491809
+  },
+  "ERR7764192": {
+    "country": "Saudi Arabia",
+    "date": "2020-06-23",
+    "fine_location": "A",
+    "location": "Jeddah",
+    "reads": 85956292
+  },
+  "ERR7764193": {
+    "country": "Saudi Arabia",
+    "date": "2020-06-24",
+    "fine_location": "A",
+    "location": "Jeddah",
+    "reads": 107884165
+  },
+  "ERR7764194": {
+    "country": "Saudi Arabia",
+    "date": "2020-06-25",
+    "fine_location": "A",
+    "location": "Jeddah",
+    "reads": 103621003
+  },
+  "ERR7764195": {
+    "country": "Saudi Arabia",
+    "date": "2020-06-27",
+    "fine_location": "A",
+    "location": "Jeddah",
+    "reads": 108790357
+  },
+  "ERR7764198": {
+    "country": "Saudi Arabia",
+    "date": "2020-06-30",
+    "fine_location": "A",
+    "location": "Jeddah",
+    "reads": 83571194
+  },
+  "ERR7764199": {
+    "country": "Saudi Arabia",
+    "date": "2020-07-01",
+    "fine_location": "A",
+    "location": "Jeddah",
+    "reads": 115742560
+  },
+  "ERR7764200": {
+    "country": "Saudi Arabia",
+    "date": "2020-07-03",
+    "fine_location": "A",
+    "location": "Jeddah",
+    "reads": 197053804
+  },
+  "ERR7764201": {
+    "country": "Saudi Arabia",
+    "date": "2020-07-04",
+    "fine_location": "A",
+    "location": "Jeddah",
+    "reads": 193660353
+  },
+  "ERR7764202": {
+    "country": "Saudi Arabia",
+    "date": "2020-07-05",
+    "fine_location": "A",
+    "location": "Jeddah",
+    "reads": 143838847
+  },
+  "ERR7764203": {
+    "country": "Saudi Arabia",
+    "date": "2020-07-07",
+    "fine_location": "A",
+    "location": "Jeddah",
+    "reads": 162196928
+  },
+  "ERR7764204": {
+    "country": "Saudi Arabia",
+    "date": "2020-07-08",
+    "fine_location": "A",
+    "location": "Jeddah",
+    "reads": 163244839
+  },
+  "ERR7764205": {
+    "country": "Saudi Arabia",
+    "date": "2020-07-09",
+    "fine_location": "A",
+    "location": "Jeddah",
+    "reads": 155387271
+  },
+  "ERR7764206": {
+    "country": "Saudi Arabia",
+    "date": "2020-06-28",
+    "fine_location": "A",
+    "location": "Jeddah",
+    "reads": 110176911
+  },
+  "ERR7845975": {
+    "country": "Saudi Arabia",
+    "date": "2020-04-12",
+    "fine_location": "B",
+    "location": "Jeddah"
+  },
+  "ERR7850079": {
+    "country": "Saudi Arabia",
+    "date": "2020-04-14",
+    "fine_location": "B",
+    "location": "Jeddah"
+  },
+  "ERR7850080": {
+    "country": "Saudi Arabia",
+    "date": "2020-04-22",
+    "fine_location": "B",
+    "location": "Jeddah"
+  },
+  "ERR7850081": {
+    "country": "Saudi Arabia",
+    "date": "2020-04-27",
+    "fine_location": "B",
+    "location": "Jeddah"
+  },
+  "ERR7850082": {
+    "country": "Saudi Arabia",
+    "date": "2020-04-29",
+    "fine_location": "B",
+    "location": "Jeddah"
+  },
+  "ERR7850083": {
+    "country": "Saudi Arabia",
+    "date": "2020-05-02",
+    "fine_location": "B",
+    "location": "Jeddah"
+  },
+  "ERR7850084": {
+    "country": "Saudi Arabia",
+    "date": "2020-05-09",
+    "fine_location": "B",
+    "location": "Jeddah"
+  },
+  "ERR7850085": {
+    "country": "Saudi Arabia",
+    "date": "2020-05-12",
+    "fine_location": "B",
+    "location": "Jeddah"
+  },
+  "ERR7850086": {
+    "country": "Saudi Arabia",
+    "date": "2020-05-19",
+    "fine_location": "B",
+    "location": "Jeddah"
+  },
+  "ERR7850087": {
+    "country": "Saudi Arabia",
+    "date": "2020-05-23",
+    "fine_location": "B",
+    "location": "Jeddah"
+  },
+  "ERR7850088": {
+    "country": "Saudi Arabia",
+    "date": "2020-05-27",
+    "fine_location": "B",
+    "location": "Jeddah"
+  },
+  "ERR7850089": {
+    "country": "Saudi Arabia",
+    "date": "2020-05-30",
+    "fine_location": "B",
+    "location": "Jeddah"
+  },
+  "ERR7850090": {
+    "country": "Saudi Arabia",
+    "date": "2020-06-01",
+    "fine_location": "B",
+    "location": "Jeddah"
+  },
+  "ERR7850091": {
+    "country": "Saudi Arabia",
+    "date": "2020-06-10",
+    "fine_location": "B",
+    "location": "Jeddah",
+    "reads": 124155783
+  },
+  "ERR7850092": {
+    "country": "Saudi Arabia",
+    "date": "2020-06-11",
+    "fine_location": "B",
+    "location": "Jeddah",
+    "reads": 120812480
+  },
+  "ERR7850093": {
+    "country": "Saudi Arabia",
+    "date": "2020-06-12",
+    "fine_location": "B",
+    "location": "Jeddah",
+    "reads": 117764253
+  },
+  "ERR7850094": {
+    "country": "Saudi Arabia",
+    "date": "2020-06-13",
+    "fine_location": "B",
+    "location": "Jeddah",
+    "reads": 113106329
+  },
+  "ERR7850095": {
+    "country": "Saudi Arabia",
+    "date": "2020-06-22",
+    "fine_location": "B",
+    "location": "Jeddah",
+    "reads": 141251358
+  },
+  "ERR7850096": {
+    "country": "Saudi Arabia",
+    "date": "2020-06-27",
+    "fine_location": "B",
+    "location": "Jeddah",
+    "reads": 128488965
+  },
+  "ERR7850097": {
+    "country": "Saudi Arabia",
+    "date": "2020-07-04",
+    "fine_location": "B",
+    "location": "Jeddah",
+    "reads": 157105290
+  },
+  "ERR7850098": {
+    "country": "Saudi Arabia",
+    "date": "2020-07-08",
+    "fine_location": "B",
+    "location": "Jeddah",
+    "reads": 110358172
+  },
+  "ERR7850099": {
+    "country": "Saudi Arabia",
+    "date": "2020-06-12",
+    "fine_location": "A",
+    "location": "Jeddah",
+    "reads": 100742793
+  },
+  "ERR7850100": {
+    "country": "Saudi Arabia",
+    "date": "2020-06-29",
+    "fine_location": "A",
+    "location": "Jeddah",
+    "reads": 114709145
+  },
   "ERR8977341": {
     "country": "Australia",
     "date": "2017-07-18",
@@ -10081,6 +10887,48 @@
     "location": "Guangzhou",
     "reads": 37572746
   },
+  "SRR12204734": {
+    "country": "China",
+    "date": "2018",
+    "location": "Kashgar",
+    "reads": 201880938
+  },
+  "SRR12204735": {
+    "country": "China",
+    "date": "2018",
+    "location": "Mi-Dong",
+    "reads": 283160455
+  },
+  "SRR12204847": {
+    "country": "China",
+    "date": "2018",
+    "location": "Hotan",
+    "reads": 231329232
+  },
+  "SRR12204848": {
+    "country": "China",
+    "date": "2018",
+    "location": "Hotan",
+    "reads": 202643208
+  },
+  "SRR12204849": {
+    "country": "China",
+    "date": "2018",
+    "location": "Kashgar",
+    "reads": 161802900
+  },
+  "SRR12204850": {
+    "country": "China",
+    "date": "2018",
+    "location": "Kashgar",
+    "reads": 167982692
+  },
+  "SRR12204851": {
+    "country": "China",
+    "date": "2018",
+    "location": "Kashgar",
+    "reads": 170134059
+  },
   "SRR14530724": {
     "country": "USA",
     "date": "2020-09-10",
@@ -10738,6 +11586,12 @@
     "fine_location": "SJ",
     "location": "Los Angeles",
     "reads": 4632349
+  },
+  "SRR17814995": {
+    "country": "China",
+    "date": "2022-10-19",
+    "location": "Harbin",
+    "reads": 37934474
   },
   "SRR18218717": {
     "country": "USA",
@@ -11978,5 +12832,257 @@
     "fine_location": "Berkeley",
     "location": "San Francisco",
     "reads": 36420649
+  },
+  "SRR6837549": {
+    "country": "Singapore",
+    "date": "2016-10",
+    "fine_location": "SST",
+    "location": "Singapore",
+    "reads": 56522094
+  },
+  "SRR6837550": {
+    "country": "Singapore",
+    "date": "2016-10",
+    "fine_location": "MBR",
+    "location": "Singapore",
+    "reads": 66973602
+  },
+  "SRR6837551": {
+    "country": "Singapore",
+    "date": "2016-10",
+    "fine_location": "PST",
+    "location": "Singapore",
+    "reads": 77291114
+  },
+  "SRR6837552": {
+    "country": "Singapore",
+    "date": "2016-10",
+    "fine_location": "Influent",
+    "location": "Singapore",
+    "reads": 60550816
+  },
+  "SRR6837553": {
+    "country": "Singapore",
+    "date": "2016-11",
+    "fine_location": "PST",
+    "location": "Singapore",
+    "reads": 57025634
+  },
+  "SRR6837554": {
+    "country": "Singapore",
+    "date": "2016-11",
+    "fine_location": "Influent",
+    "location": "Singapore",
+    "reads": 63719670
+  },
+  "SRR6837555": {
+    "country": "Singapore",
+    "date": "2016-10",
+    "fine_location": "Sludge",
+    "location": "Singapore",
+    "reads": 75920524
+  },
+  "SRR6837556": {
+    "country": "Singapore",
+    "date": "2016-10",
+    "fine_location": "WW",
+    "location": "Singapore",
+    "reads": 54654436
+  },
+  "SRR6837557": {
+    "country": "Singapore",
+    "date": "2016-11",
+    "fine_location": "SST",
+    "location": "Singapore",
+    "reads": 54249304
+  },
+  "SRR6837558": {
+    "country": "Singapore",
+    "date": "2016-11",
+    "fine_location": "MBR",
+    "location": "Singapore",
+    "reads": 54694552
+  },
+  "SRR6837559": {
+    "country": "Singapore",
+    "date": "2017-05",
+    "fine_location": "Influent",
+    "location": "Singapore",
+    "reads": 31168799
+  },
+  "SRR6837560": {
+    "country": "Singapore",
+    "date": "2017-05",
+    "fine_location": "PST",
+    "location": "Singapore",
+    "reads": 29032367
+  },
+  "SRR6837561": {
+    "country": "Singapore",
+    "date": "2017-05",
+    "fine_location": "MBR",
+    "location": "Singapore",
+    "reads": 29691404
+  },
+  "SRR6837562": {
+    "country": "Singapore",
+    "date": "2017-05",
+    "fine_location": "SST",
+    "location": "Singapore",
+    "reads": 32836927
+  },
+  "SRR6837563": {
+    "country": "Singapore",
+    "date": "2017-03",
+    "fine_location": "MBR",
+    "location": "Singapore",
+    "reads": 40730089
+  },
+  "SRR6837564": {
+    "country": "Singapore",
+    "date": "2017-03",
+    "fine_location": "SST",
+    "location": "Singapore",
+    "reads": 33736509
+  },
+  "SRR6837565": {
+    "country": "Singapore",
+    "date": "2017-03",
+    "fine_location": "WW",
+    "location": "Singapore",
+    "reads": 34916040
+  },
+  "SRR6837566": {
+    "country": "Singapore",
+    "date": "2017-03",
+    "fine_location": "Sludge",
+    "location": "Singapore",
+    "reads": 34936372
+  },
+  "SRR6837567": {
+    "country": "Singapore",
+    "date": "2017-08",
+    "fine_location": "MBR",
+    "location": "Singapore",
+    "reads": 75299688
+  },
+  "SRR6837568": {
+    "country": "Singapore",
+    "date": "2017-05",
+    "fine_location": "WW",
+    "location": "Singapore",
+    "reads": 27657428
+  },
+  "SRR6837569": {
+    "country": "Singapore",
+    "date": "2017-05",
+    "fine_location": "Sludge",
+    "location": "Singapore",
+    "reads": 30289816
+  },
+  "SRR6837570": {
+    "country": "Singapore",
+    "date": "2017-08",
+    "fine_location": "SST",
+    "location": "Singapore",
+    "reads": 63423686
+  },
+  "SRR6837571": {
+    "country": "Singapore",
+    "date": "2016-11",
+    "fine_location": "Sludge",
+    "location": "Singapore",
+    "reads": 65547294
+  },
+  "SRR6837572": {
+    "country": "Singapore",
+    "date": "2016-11",
+    "fine_location": "WW",
+    "location": "Singapore",
+    "reads": 54571578
+  },
+  "SRR6837573": {
+    "country": "Singapore",
+    "date": "2017-01",
+    "fine_location": "PST",
+    "location": "Singapore",
+    "reads": 35825086
+  },
+  "SRR6837574": {
+    "country": "Singapore",
+    "date": "2017-01",
+    "fine_location": "Influent",
+    "location": "Singapore",
+    "reads": 31450701
+  },
+  "SRR6837575": {
+    "country": "Singapore",
+    "date": "2017-01",
+    "fine_location": "SST",
+    "location": "Singapore",
+    "reads": 34452563
+  },
+  "SRR6837576": {
+    "country": "Singapore",
+    "date": "2017-01",
+    "fine_location": "MBR",
+    "location": "Singapore",
+    "reads": 36486598
+  },
+  "SRR6837577": {
+    "country": "Singapore",
+    "date": "2017-01",
+    "fine_location": "Sludge",
+    "location": "Singapore",
+    "reads": 34974627
+  },
+  "SRR6837578": {
+    "country": "Singapore",
+    "date": "2017-01",
+    "fine_location": "WW",
+    "location": "Singapore",
+    "reads": 35545332
+  },
+  "SRR6837579": {
+    "country": "Singapore",
+    "date": "2017-03",
+    "fine_location": "PST",
+    "location": "Singapore",
+    "reads": 38153147
+  },
+  "SRR6837580": {
+    "country": "Singapore",
+    "date": "2017-03",
+    "fine_location": "Influent",
+    "location": "Singapore",
+    "reads": 33340605
+  },
+  "SRR6837581": {
+    "country": "Singapore",
+    "date": "2017-08",
+    "fine_location": "PST",
+    "location": "Singapore",
+    "reads": 67113980
+  },
+  "SRR6837582": {
+    "country": "Singapore",
+    "date": "2017-08",
+    "fine_location": "Influent",
+    "location": "Singapore",
+    "reads": 78717794
+  },
+  "SRR6837583": {
+    "country": "Singapore",
+    "date": "2017-08",
+    "fine_location": "Sludge",
+    "location": "Singapore",
+    "reads": 74024628
+  },
+  "SRR6837584": {
+    "country": "Singapore",
+    "date": "2017-08",
+    "fine_location": "WW",
+    "location": "Singapore",
+    "reads": 60018436
   }
 }
