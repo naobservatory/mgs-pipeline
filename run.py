@@ -42,9 +42,9 @@ def relative_fname(fname):
 def get_metadata_dir(args):
    return relative_fname("bioprojects/%s/metadata" % args.bioproject)
 
-def get_accessions(args):
-   if args.accession:
-      return [args.accession]
+def get_samples(args):
+   if args.sample:
+      return [args.sample]
 
    with open(os.path.join(get_metadata_dir(args), "metadata.tsv")) as inf:
       return [line.strip().split("\t")[0]
@@ -124,24 +124,24 @@ def adapter_removal(args, dirname, trim_quality, collapse):
    except FileExistsError:
       pass
 
-   for accession in get_accessions(args):
+   for sample in get_samples(args):
       if exists_s3_prefix("%s/%s/%s/%s" % (
-            S3_BUCKET, args.bioproject, dirname, accession)):
+            S3_BUCKET, args.bioproject, dirname, sample)):
          continue
 
-      with tempdir("adapter_removal", accession) as workdir:
+      with tempdir("adapter_removal", sample) as workdir:
          in1="in1.fastq.gz"
          in2="in2.fastq.gz"
 
          subprocess.check_call([
             "aws", "s3", "cp", "%s/%s/raw/%s_1.fastq.gz" % (
-               S3_BUCKET, args.bioproject, accession), in1])
+               S3_BUCKET, args.bioproject, sample), in1])
          subprocess.check_call([
             "aws", "s3", "cp", "%s/%s/raw/%s_2.fastq.gz" % (
-               S3_BUCKET, args.bioproject, accession), in2])
+               S3_BUCKET, args.bioproject, sample), in2])
 
-         adapter1_fname = os.path.join(adapter_dir, "%s.fwd" % accession)
-         adapter2_fname = os.path.join(adapter_dir, "%s.rev" % accession)
+         adapter1_fname = os.path.join(adapter_dir, "%s.fwd" % sample)
+         adapter2_fname = os.path.join(adapter_dir, "%s.rev" % sample)
 
          if (not os.path.exists(adapter1_fname) or
              not os.path.exists(adapter2_fname)):
@@ -155,7 +155,7 @@ def adapter_removal(args, dirname, trim_quality, collapse):
          cmd = ["AdapterRemoval",
                 "--file1", in1,
                 "--file2", in2,
-                "--basename", accession,
+                "--basename", sample,
                 "--threads", "4",
                 "--adapter1", adapter1,
                 "--adapter2", adapter2,
@@ -169,7 +169,7 @@ def adapter_removal(args, dirname, trim_quality, collapse):
 
          subprocess.check_call(cmd)
 
-         for output in glob.glob("%s.*" % accession):
+         for output in glob.glob("%s.*" % sample):
             subprocess.check_call([
                "aws", "s3", "cp", output, "%s/%s/%s/" % (
                   S3_BUCKET, args.bioproject, dirname)])
@@ -190,9 +190,9 @@ def interpret(args):
                                 min_size=100)
    existing_outputs = get_files(args, "processed")
 
-   for accession in get_accessions(args):
+   for sample in get_samples(args):
       for potential_input in available_inputs:
-         if not potential_input.startswith(accession): continue
+         if not potential_input.startswith(sample): continue
          if ".settings" in potential_input: continue
 
          output = potential_input.replace(".gz", ".kraken2.tsv")
@@ -232,15 +232,15 @@ def cladecounts(args):
    available_inputs = get_files(args, "processed")
    existing_outputs = get_files(args, "cladecounts", min_size=100)
 
-   for accession in get_accessions(args):
-      output = "%s.tsv.gz" % accession
+   for sample in get_samples(args):
+      output = "%s.tsv.gz" % sample
       if output in existing_outputs: continue
 
-      if not any(x.startswith(accession) for x in available_inputs):
+      if not any(x.startswith(sample) for x in available_inputs):
          continue
 
       subprocess.check_call([
-         "./count_clades.sh", args.bioproject, accession])
+         "./count_clades.sh", args.bioproject, sample])
 
 def humanviruses(args):
    human_viruses = {}
@@ -252,21 +252,21 @@ def humanviruses(args):
    available_inputs = get_files(args, "processed")
    existing_outputs = get_files(args, "humanviruses")
 
-   for accession in get_accessions(args):
-      output = "%s.humanviruses.tsv" % accession
+   for sample in get_samples(args):
+      output = "%s.humanviruses.tsv" % sample
       if output in existing_outputs: continue
 
       inputs = [
          input_fname
          for input_fname in available_inputs
-         if input_fname.startswith(accession)]
+         if input_fname.startswith(sample)]
       if not inputs:
          continue
 
       counts = Counter()
 
       for input_fname in inputs:
-         with tempdir("humanviruses", accession) as workdir:
+         with tempdir("humanviruses", sample) as workdir:
             subprocess.check_call([
                "aws", "s3", "cp", "%s/%s/processed/%s" % (
                   S3_BUCKET, args.bioproject, input_fname), input_fname])
@@ -278,7 +278,7 @@ def humanviruses(args):
                   if taxid in human_viruses:
                      counts[taxid] += 1
 
-      with tempdir("humanviruses", accession) as workdir:
+      with tempdir("humanviruses", sample) as workdir:
          with open(output, "w") as outf:
             for taxid, count in sorted(counts.items()):
                outf.write("%s\t%s\t%s\n" % (taxid, count, human_viruses[taxid]))
@@ -297,18 +297,18 @@ def allmatches(args):
    available_inputs = get_files(args, "processed")
    existing_outputs = get_files(args, "allmatches")
 
-   for accession in get_accessions(args):
-      output = "%s.allmatches.tsv" % accession
+   for sample in get_samples(args):
+      output = "%s.allmatches.tsv" % sample
       if output in existing_outputs: continue
 
       inputs = [
          input_fname
          for input_fname in available_inputs
-         if input_fname.startswith(accession)]
+         if input_fname.startswith(sample)]
       if not inputs:
          continue
 
-      with tempdir("allmatches", accession) as workdir:
+      with tempdir("allmatches", sample) as workdir:
          kept = []
          for input_fname in inputs:
             subprocess.check_call([
@@ -350,11 +350,11 @@ def hvreads(args):
 
    existing_outputs = get_files(args, "hvreads")
 
-   for accession in get_accessions(args):
-      output = "%s.hvreads.json" % accession
+   for sample in get_samples(args):
+      output = "%s.hvreads.json" % sample
       if output in existing_outputs: continue
 
-      input_fname = "%s.allmatches.tsv" % accession
+      input_fname = "%s.allmatches.tsv" % sample
       if input_fname not in available_inputs: continue
 
       all_matches = [
@@ -370,7 +370,7 @@ def hvreads(args):
          seqs[seq_id] = [kraken_details]
 
       for cleaned_input in sorted(available_cleaned_inputs):
-         if not cleaned_input.startswith(accession): continue
+         if not cleaned_input.startswith(sample): continue
          if ".settings" in cleaned_input: continue
 
          with tempdir("hvreads", cleaned_input) as workdir:
@@ -415,9 +415,6 @@ def print_status(args):
 
    running_processes = subprocess.check_output(["ps", "aux"]).decode("utf-8")
 
-   # Name -> Bioproject Accession -> Stage -> N/M
-   info = defaultdict(dict)
-
    stages = ["raw", "cleaned", "processed", "cladecounts", "humanviruses",
              "allmatches", "hvreads"]
    short_stages = ["raw", "clean", "kraken", "cc", "hv", "am", "hvr"]
@@ -453,10 +450,10 @@ def print_status(args):
          metadata_dir = os.path.join(THISDIR, "bioprojects", bioproject,
                                      "metadata")
 
-         stage_counters = defaultdict(Counter) # accession -> stage -> count
+         stage_counters = defaultdict(Counter) # sample -> stage -> count
 
          with open(os.path.join(metadata_dir, "metadata.tsv")) as inf:
-            accessions = [x.strip().split("\t")[0] for x in inf]
+            samples = [x.strip().split("\t")[0] for x in inf]
 
          prev = None
          for stage in stages:
@@ -468,9 +465,9 @@ def print_status(args):
 
             seen = set()
             for fname in ls_s3_dir("%s/%s/" % (s3_bioproject_dir, stage)):
-               for accession in accessions:
-                  if fname.startswith(accession):
-                     seen.add(accession)
+               for sample in samples:
+                  if fname.startswith(sample):
+                     seen.add(sample)
             missing = prev is not None and len(seen) < prev
 
             color = ""
@@ -507,8 +504,9 @@ def start():
    parser.add_argument(
       '--bioproject', help='The ID of the bioproject to process')
    parser.add_argument(
-      '--accession', default='',
-      help='The ID of the sample to process.  Leave blank for all samples.')
+      '--sample', default='',
+      help='The SRA run accession of the sample to process.  Leave blank '
+      'for all samples.')
 
    parser.add_argument(
       "--status", action='store_true',
