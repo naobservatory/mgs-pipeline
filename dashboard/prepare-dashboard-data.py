@@ -37,12 +37,12 @@ with open("nodes.dmp") as inf:
 
 observed_taxids = set()
 for cladecount in glob.glob("cladecounts/*.tsv.gz"):
-    with gzip.open(cladecount) as inf:
+    with gzip.open(cladecount, "rt") as inf:
         for line in inf:
-            taxid = int(line.split(b"\t")[0])
+            taxid = int(line.split("\t")[0])
             if taxid != 0:
                 observed_taxids.add(taxid)
-        
+
 # taxid -> node
 human_virus_nodes = {}
 observed_organisms_nodes = {}
@@ -143,16 +143,15 @@ for paper_name in papers:
             papers[paper_name]["na_type"] = inf.read().strip()
 
 # bioproject -> [samples]
-bioprojects = {}
+bioprojects = defaultdict(set)
 
-project_sample_virus_counts = {}
+project_sample_virus_counts = Counter()
 for project in projects:
-    bioprojects[project] = []
     for sample in project_sample_reads[project]:
         fname = "humanviruses/%s.humanviruses.tsv" % sample
         if not os.path.exists(fname): continue
 
-        bioprojects[project].append(sample)
+        bioprojects[project].add(sample)
         with open(fname) as inf:
             for line in inf:
                 line = line.strip()
@@ -164,8 +163,32 @@ for project in projects:
 
                 project_sample_virus_counts[project, sample, taxid] = count
 
+project_sample_all_counts = Counter()
+for project in projects:
+    for sample in project_sample_reads[project]:
+        fname = "cladecounts/%s.tsv.gz" % sample
+        if not os.path.exists(fname): continue
+
+        bioprojects[project].add(sample)
+        with gzip.open(fname, "rt") as inf:
+            for line in inf:
+                line = line.strip()
+                if not line: continue
+
+                (taxid,
+                 direct_assignments, direct_hits,
+                 clade_assignments, clade_hits) = line.split("\t")
+                taxid = int(taxid)
+                direct_assignments = int(direct_assignments)
+
+                project_sample_all_counts[project, sample, taxid] = \
+                    direct_assignments
+
 # virus -> sample -> count
-virus_sample_counts = {}
+virus_sample_counts = defaultdict(Counter)
+
+# organism -> sample -> count
+organism_sample_counts = defaultdict(Counter)
 
 # sample -> {reads, date, country, location, fine_location}
 sample_metadata = defaultdict(dict)
@@ -281,15 +304,20 @@ for project in projects:
             else:
                 raise Exception("Metadata format for %s unknown" % project)
 
-for virus_taxid in human_viruses:
-    virus_sample_counts[virus_taxid] = {}
-    for project in projects:
-        for sample in project_sample_reads[project]:
-            count = project_sample_virus_counts.get((
-                project, sample, virus_taxid), 0)
-            if count > 0:
-                virus_sample_counts[virus_taxid][sample] = count
+for taxids, counts_in, counts_out in [
+        (human_viruses, project_sample_virus_counts, virus_sample_counts),
+        (observed_taxids, project_sample_all_counts, organism_sample_counts)]:
+    for taxid in taxids:            
+        for project in projects:
+            for sample in project_sample_reads[project]:
+                count = counts_in[project, sample, taxid]
+                if count > 0:
+                    counts_out[taxid][sample] = count
 
+# make it json-serializable
+for bioproject in bioprojects:
+    bioprojects[bioproject] = list(sorted(bioprojects[bioproject]))
+                
 with open("data.js", "w") as outf:
     for name, val in [
             ("virus_sample_counts", virus_sample_counts),
@@ -306,8 +334,9 @@ for name, val in [
         ("human_virus_sample_counts", virus_sample_counts),
         ("human_virus_names", human_virus_names),
         ("human_virus_tree", human_virus_tree),
-        ("observed_organisms_tree", observed_organisms_tree),
+        ("organism_sample_counts", organism_sample_counts),
         ("observed_organisms_names", observed_organisms_names),
+        ("observed_organisms_tree", observed_organisms_tree),
         ("metadata_samples", sample_metadata),
         ("metadata_bioprojects", bioprojects),
         ("metadata_papers", papers),
