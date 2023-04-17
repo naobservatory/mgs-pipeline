@@ -522,12 +522,13 @@ def start():
 
    args = parser.parse_args()
 
+   if not args.status and not args.bioproject:
+      parser.print_help()
+      exit(1)
+
    if args.status:
       print_status(args)
       return
-
-   if not args.bioproject:
-      raise Exception("Must specify --bioproject BIOPROJECT")
 
    if not os.path.isdir("bioprojects/%s" % args.bioproject):
       raise Exception(
