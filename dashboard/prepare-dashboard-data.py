@@ -2,6 +2,7 @@
 
 import os
 import glob
+import gzip
 import json
 from collections import Counter
 from collections import defaultdict
@@ -34,8 +35,17 @@ with open("nodes.dmp") as inf:
         parent_taxid = int(parent_taxid)
         parents[child_taxid] = parent_taxid
 
+observed_taxids = set()
+for cladecount in glob.glob("cladecounts/*.tsv.gz"):
+    with gzip.open(cladecount) as inf:
+        for line in inf:
+            taxid = int(line.split(b"\t")[0])
+            if taxid != 0:
+                observed_taxids.add(taxid)
+        
 # taxid -> node
-nodes = {}
+human_virus_nodes = {}
+observed_organisms_nodes = {}
 
 mentioned_taxids = set()
 for virus_taxid in human_viruses:
@@ -45,18 +55,20 @@ for virus_taxid in human_viruses:
         taxid = parents[taxid]
         mentioned_taxids.add(taxid)
 
-for taxid in mentioned_taxids:
-    nodes[taxid] = [taxid]
+for include_taxids, nodes in [
+        (mentioned_taxids, human_virus_nodes),
+        (observed_taxids, observed_organisms_nodes)]:
+    for taxid in include_taxids:
+        nodes[taxid] = [taxid]
 
-for virus_taxid in human_viruses:
-    taxid = virus_taxid
-    node = nodes[taxid]
-    while taxid != 1:
-        taxid = parents[taxid]
-        if node in nodes[taxid]:
-            break
-        nodes[taxid].append(node)
+    for taxid in sorted(include_taxids):
         node = nodes[taxid]
+        while taxid != 1:
+            taxid = parents[taxid]
+            if node in nodes[taxid]:
+                break
+            nodes[taxid].append(node)
+            node = nodes[taxid]
 
 # Format: [taxid, children]
 # Ex: [1, [10239, [10472,
@@ -64,23 +76,30 @@ for virus_taxid in human_viruses:
 #               [10474, [10475, ...],
 #                       [693626, ...],
 #                       [1299307, ...]]], ...], ...], ...]
-tree = nodes[1]
+human_virus_tree = human_virus_nodes[1]
+observed_organisms_tree = observed_organisms_nodes[1]
 
 # taxid -> [name]
 # first name is scientific name
-names = {}
+human_virus_names = {}
+# ditto, but not limited to human-infecting viruses
+observed_organisms_names = {}
 with open("names.dmp") as inf:
     for line in inf:
         taxid, name, unique_name, name_class = line.replace(
             "\t|\n", "").split("\t|\t")
         taxid = int(taxid)
-        if taxid in mentioned_taxids:
-            if taxid not in names:
-                names[taxid] = []
-            if name_class == "scientific name":
-                names[taxid].insert(0, name)
-            else:
-                names[taxid].append(name)
+
+        for include_taxids, name_map in [
+                (mentioned_taxids, human_virus_names),
+                (observed_taxids, observed_organisms_names)]:
+            if taxid in include_taxids:
+                if taxid not in name_map:
+                    name_map[taxid] = []
+                if name_class == "scientific name":
+                    name_map[taxid].insert(0, name)
+                else:
+                    name_map[taxid].append(name)
 
 # project -> sample -> n_reads
 project_sample_reads = defaultdict(dict)
@@ -277,20 +296,22 @@ with open("data.js", "w") as outf:
             ("sample_metadata", sample_metadata),
             ("bioprojects", bioprojects),
             ("papers", papers),
-            ("names", names),
-            ("tree", tree),
+            ("names", human_virus_names),
+            ("tree", human_virus_tree),
     ]:
         outf.write("%s=%s;\n" % (name, json.dumps(
-            val, sort_keys=True, indent=None if val is tree else 2)))
+            val, sort_keys=True, indent=None if val is human_virus_tree else 2)))
 
 for name, val in [
         ("human_virus_sample_counts", virus_sample_counts),
-        ("human_virus_names", names),
-        ("human_virus_tree", tree),
+        ("human_virus_names", human_virus_names),
+        ("human_virus_tree", human_virus_tree),
+        ("observed_organisms_tree", observed_organisms_tree),
+        ("observed_organisms_names", observed_organisms_names),
         ("metadata_samples", sample_metadata),
         ("metadata_bioprojects", bioprojects),
         ("metadata_papers", papers),
 ]:
     with open(name + ".json", "w") as outf:
         json.dump(val, outf, sort_keys=True,
-                  indent=None if val is tree else 2)
+                  indent=None if val is human_virus_tree else 2)
