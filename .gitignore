@@ -1,5 +1,6 @@
 __pycache__
 dashboard/humanviruses/
+dashboard/cladecounts/
 dashboard/*.dmp
 dashboard/*.zip
 dashboard/readme.txt

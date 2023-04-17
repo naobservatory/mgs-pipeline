@@ -10,6 +10,9 @@ if [ ! -e names.dmp ] ; then
     unzip taxdmp_2022-12-01.zip
 fi
 
+mkdir -p humanviruses/
+mkdir -p cladecounts/
+
 for study in $(aws s3 ls s3://nao-mgs/ | awk '{print $NF}'); do
     for hv in $(aws s3 ls s3://nao-mgs/${study}humanviruses/ | \
                     awk '{print $NF}'); do
@@ -18,6 +21,15 @@ for study in $(aws s3 ls s3://nao-mgs/ | awk '{print $NF}'); do
         fi
     done
 done | xargs -I {} -P 32 aws s3 cp {} humanviruses/
+
+for study in $(aws s3 ls s3://nao-mgs/ | awk '{print $NF}'); do
+    for cc in $(aws s3 ls s3://nao-mgs/${study}cladecounts/ | \
+                    awk '{print $NF}'); do
+        if [ ! -e cladecounts/$cc ]; then
+            echo s3://nao-mgs/${study}cladecounts/$cc
+        fi
+    done
+done | xargs -I {} -P 32 aws s3 cp {} cladecounts/
 
 ./prepare-dashboard-data.py
 
