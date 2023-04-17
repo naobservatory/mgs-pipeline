@@ -6,10 +6,6 @@ To rebuild:
 
 -->
 
-Rows are taxonomic nodes, columns are samples (or collections of samples), cells
-are relative abundance of human viruses that match that taxonomic node.
-<p>
-
 Papers:
 <table id=table_papers cellpadding=5 rules=rows>
   <tr><th><th>Name<th>Reads<th>Acid<th>Samples<th>Location<th>Date<th>Bioprojects
@@ -17,17 +13,29 @@ Papers:
 
 <p>
 
-Search:
+<div id=search_samples>
+
+Search organisms: <input id=taxonomic_search type=text size=34></input>
+
+  <p>
+  <br>
+
+Search Samples:
+<p>
 <table>
-  <tr><td>Taxonomic<td><input id=taxonomic_search type=text size=34></input>
   <tr><td>Country<td><input id=country_search type=text size=34></input>
   <tr><td>City<td><input id=city_search type=text size=34></input>
   <tr><td>Date<td>
   <input size=15 id=date_begin_search type=text></input> &ndash;
      <input size=15 id=date_end_search type=text></input>
-</table>
+  </table>
+</div>
 
 <p>
+Rows are taxonomic nodes, columns are samples (or collections of samples), cells
+are relative abundance of human viruses that match that taxonomic node.
+<p>
+
 
 <table id=tbl></table>
 <style>
@@ -56,6 +64,12 @@ Search:
   }
   #tbl {
     border-collapse: collapse;
+  }
+  #search_samples {
+    border: 1px solid black;
+    border-radius: 0.5em;
+    padding: 1em;
+    display: inline-block;
   }
 </style>
 
