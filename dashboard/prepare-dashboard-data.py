@@ -35,17 +35,8 @@ with open("nodes.dmp") as inf:
         parent_taxid = int(parent_taxid)
         parents[child_taxid] = parent_taxid
 
-observed_taxids = set()
-for cladecount in glob.glob("cladecounts/*.tsv.gz"):
-    with gzip.open(cladecount, "rt") as inf:
-        for line in inf:
-            taxid = int(line.split("\t")[0])
-            if taxid != 0:
-                observed_taxids.add(taxid)
-
 # taxid -> node
 human_virus_nodes = {}
-observed_organisms_nodes = {}
 
 mentioned_taxids = set()
 for virus_taxid in human_viruses:
@@ -55,20 +46,17 @@ for virus_taxid in human_viruses:
         taxid = parents[taxid]
         mentioned_taxids.add(taxid)
 
-for include_taxids, nodes in [
-        (mentioned_taxids, human_virus_nodes),
-        (observed_taxids, observed_organisms_nodes)]:
-    for taxid in include_taxids:
-        nodes[taxid] = [taxid]
+for taxid in mentioned_taxids:
+    human_virus_nodes[taxid] = [taxid]
 
-    for taxid in sorted(include_taxids):
-        node = nodes[taxid]
-        while taxid != 1:
-            taxid = parents[taxid]
-            if node in nodes[taxid]:
-                break
-            nodes[taxid].append(node)
-            node = nodes[taxid]
+for taxid in sorted(mentioned_taxids):
+    node = human_virus_nodes[taxid]
+    while taxid != 1:
+        taxid = parents[taxid]
+        if node in human_virus_nodes[taxid]:
+            break
+        human_virus_nodes[taxid].append(node)
+        node = human_virus_nodes[taxid]
 
 # Format: [taxid, children]
 # Ex: [1, [10239, [10472,
@@ -77,29 +65,21 @@ for include_taxids, nodes in [
 #                       [693626, ...],
 #                       [1299307, ...]]], ...], ...], ...]
 human_virus_tree = human_virus_nodes[1]
-observed_organisms_tree = observed_organisms_nodes[1]
 
 # taxid -> [name]
 # first name is scientific name
-human_virus_names = {}
-# ditto, but not limited to human-infecting viruses
-observed_organisms_names = {}
+human_virus_names = defaultdict(list)
 with open("names.dmp") as inf:
     for line in inf:
         taxid, name, unique_name, name_class = line.replace(
             "\t|\n", "").split("\t|\t")
         taxid = int(taxid)
 
-        for include_taxids, name_map in [
-                (mentioned_taxids, human_virus_names),
-                (observed_taxids, observed_organisms_names)]:
-            if taxid in include_taxids:
-                if taxid not in name_map:
-                    name_map[taxid] = []
-                if name_class == "scientific name":
-                    name_map[taxid].insert(0, name)
-                else:
-                    name_map[taxid].append(name)
+        if taxid in mentioned_taxids:
+            if name_class == "scientific name":
+                human_virus_names[taxid].insert(0, name)
+            else:
+                human_virus_names[taxid].append(name)
 
 # project -> sample -> n_reads
 project_sample_reads = defaultdict(dict)
@@ -163,32 +143,8 @@ for project in projects:
 
                 project_sample_virus_counts[project, sample, taxid] = count
 
-project_sample_all_counts = Counter()
-for project in projects:
-    for sample in project_sample_reads[project]:
-        fname = "cladecounts/%s.tsv.gz" % sample
-        if not os.path.exists(fname): continue
-
-        bioprojects[project].add(sample)
-        with gzip.open(fname, "rt") as inf:
-            for line in inf:
-                line = line.strip()
-                if not line: continue
-
-                (taxid,
-                 direct_assignments, direct_hits,
-                 clade_assignments, clade_hits) = line.split("\t")
-                taxid = int(taxid)
-                direct_assignments = int(direct_assignments)
-
-                project_sample_all_counts[project, sample, taxid] = \
-                    direct_assignments
-
 # virus -> sample -> count
 virus_sample_counts = defaultdict(Counter)
-
-# organism -> sample -> count
-organism_sample_counts = defaultdict(Counter)
 
 # sample -> {reads, date, country, location, fine_location}
 sample_metadata = defaultdict(dict)
@@ -304,20 +260,17 @@ for project in projects:
             else:
                 raise Exception("Metadata format for %s unknown" % project)
 
-for taxids, counts_in, counts_out in [
-        (human_viruses, project_sample_virus_counts, virus_sample_counts),
-        (observed_taxids, project_sample_all_counts, organism_sample_counts)]:
-    for taxid in taxids:            
-        for project in projects:
-            for sample in project_sample_reads[project]:
-                count = counts_in[project, sample, taxid]
-                if count > 0:
-                    counts_out[taxid][sample] = count
+for taxid in human_viruses:
+    for project in projects:
+        for sample in project_sample_reads[project]:
+            count = project_sample_virus_counts[project, sample, taxid]
+            if count > 0:
+                virus_sample_counts[taxid][sample] = count
 
 # make it json-serializable
 for bioproject in bioprojects:
     bioprojects[bioproject] = list(sorted(bioprojects[bioproject]))
-                
+
 with open("data.js", "w") as outf:
     for name, val in [
             ("virus_sample_counts", virus_sample_counts),
@@ -334,9 +287,6 @@ for name, val in [
         ("human_virus_sample_counts", virus_sample_counts),
         ("human_virus_names", human_virus_names),
         ("human_virus_tree", human_virus_tree),
-        ("organism_sample_counts", organism_sample_counts),
-        ("observed_organisms_names", observed_organisms_names),
-        ("observed_organisms_tree", observed_organisms_tree),
         ("metadata_samples", sample_metadata),
         ("metadata_bioprojects", bioprojects),
         ("metadata_papers", papers),
