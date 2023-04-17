@@ -6,14 +6,29 @@ To rebuild:
 
 -->
 
-Papers:
+<div class=search_box>
+Search Papers:
+
+<p>
+
+<table>
+  <tr><td>Nucleic Acid<td><input id=na_search type=text size=34></input>
+  <tr><td>Min reads<td>1e<input size=1 id=min_reads_search type=text></input>
+  <!-- todo: once we have more categorizations on the papers (enrichment?
+       filtration? sample type?) these can go here -->
+</table>
+</div>
+
+  <p>
+
+
 <table id=table_papers cellpadding=5 rules=rows>
   <tr><th><th>Name<th>Reads<th>Acid<th>Samples<th>Location<th>Date<th>Bioprojects
 </table>
 
 <p>
 
-<div id=search_samples>
+<div class=search_box>
 
 Search organisms: <input id=taxonomic_search type=text size=34></input>
 
@@ -28,7 +43,7 @@ Search Samples:
   <tr><td>Date<td>
   <input size=15 id=date_begin_search type=text></input> &ndash;
      <input size=15 id=date_end_search type=text></input>
-  </table>
+</table>
 </div>
 
 <p>
@@ -65,11 +80,15 @@ are relative abundance of human viruses that match that taxonomic node.
   #tbl {
     border-collapse: collapse;
   }
-  #search_samples {
+  .search_box {
     border: 1px solid black;
     border-radius: 0.5em;
     padding: 1em;
     display: inline-block;
+  }
+  .error {
+    border: 1px solid red;
+    color: red;
   }
 </style>
 
@@ -211,8 +230,32 @@ function sample_description(target_sample, paper_name) {
   return name_bits;
 }
 
-// paper -> inclusion checkbox
-const include_papers = {};
+
+const paper_trs = {}; // paper -> row in papers table
+
+function is_all_digits(s) {
+  return /^\d+$/.test(s);
+}
+
+function update_paper_visibility() {
+  if (min_reads_search.value && !is_all_digits(min_reads_search.value)) {
+    min_reads_search.classList.add("error");
+  } else {
+    min_reads_search.classList.remove("error");
+  }
+
+  for (const paper_tr of Object.values(paper_trs)) {
+    paper_tr.hidden = false;
+    if (!paper_tr.na_type.toLowerCase().includes(na_search.value.toLowerCase())) {
+      paper_tr.hidden = true;
+    }
+    if (min_reads_search.value &&
+        is_all_digits(min_reads_search.value) &&
+        paper_tr.total_reads < 10**parseInt(min_reads_search.value, 10)) {
+      paper_tr.hidden = true;
+    }
+  }
+}
 
 for (const paper_name of paper_names) {
   const tr = e("tr");
@@ -245,7 +288,10 @@ for (const paper_name of paper_names) {
     continue;
   }
 
-  include_papers[paper_name] = input_include;
+  tr.checkbox = input_include;
+  tr.total_reads = total_reads;
+  tr.na_type = papers[paper_name].na_type;
+  tr.hidden = false;
 
   tr.appendChild(e("td", human_readable(total_reads) + " reads"));
   tr.appendChild(e("td", papers[paper_name].na_type));
@@ -264,6 +310,7 @@ for (const paper_name of paper_names) {
   tr.appendChild(td_bioprojects);
 
   table_papers.appendChild(tr);
+  paper_trs[paper_name] = tr;
 }
 
 function e(tag, innerText) {
@@ -592,6 +639,8 @@ function sort_samples(samples) {
 // The general design here is that every time something changes we
 // throw away the whole table and make a new one based on the current state.
 function redisplay() {
+  update_paper_visibility();
+
   // Remove any table contents from before.
   while (tbl.firstChild) {
     tbl.removeChild(tbl.firstChild);
@@ -612,7 +661,8 @@ function redisplay() {
   tr_header.appendChild(e("td"));  // taxonomic node names
 
   for (const paper_name of paper_names) {
-    if (!include_papers[paper_name]?.checked) continue;
+    if (!paper_trs[paper_name]?.checkbox.checked ||
+        paper_trs[paper_name]?.hidden) continue;
 
     const th_paper = e("th");
     const a_paper = e("a", paper_name.replaceAll(" ", "\u00a0"));
@@ -925,14 +975,20 @@ function search_followup() {
 function search(e) {
   update_hash();
   active_followups++;
-  if (e.target.value.length > 3) {
+  if (e.target.value.length > 3 ||
+      e.target == na_search ||
+      e.target == min_reads_search) {
     setTimeout(search_followup, 100);
   } else {
     setTimeout(search_followup, 1000);
   }
 }
 
+na_search.addEventListener("input", search);
+min_reads_search.addEventListener("input", search);
+
 taxonomic_search.addEventListener("input", search);
+
 country_search.addEventListener("input", search);
 city_search.addEventListener("input", search);
 date_begin_search.addEventListener("input", search);
