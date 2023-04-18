@@ -20,7 +20,7 @@
     "projects": [
       "PRJNA812772"
     ],
-    "subset": "RNA"
+    "subset": "untargeted"
   },
   "Crits-Christoph 2021": {
     "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7845645/",

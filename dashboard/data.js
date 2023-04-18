@@ -31541,13 +31541,15 @@ sample_metadata={
     "country": "Saudi Arabia",
     "date": "2020-04-27",
     "fine_location": "B",
-    "location": "Jeddah"
+    "location": "Jeddah",
+    "reads": 69332382
   },
   "ERR7850082": {
     "country": "Saudi Arabia",
     "date": "2020-04-29",
     "fine_location": "B",
-    "location": "Jeddah"
+    "location": "Jeddah",
+    "reads": 70455700
   },
   "ERR7850083": {
     "country": "Saudi Arabia",
@@ -31559,43 +31561,50 @@ sample_metadata={
     "country": "Saudi Arabia",
     "date": "2020-05-09",
     "fine_location": "B",
-    "location": "Jeddah"
+    "location": "Jeddah",
+    "reads": 64755157
   },
   "ERR7850085": {
     "country": "Saudi Arabia",
     "date": "2020-05-12",
     "fine_location": "B",
-    "location": "Jeddah"
+    "location": "Jeddah",
+    "reads": 70221602
   },
   "ERR7850086": {
     "country": "Saudi Arabia",
     "date": "2020-05-19",
     "fine_location": "B",
-    "location": "Jeddah"
+    "location": "Jeddah",
+    "reads": 77872689
   },
   "ERR7850087": {
     "country": "Saudi Arabia",
     "date": "2020-05-23",
     "fine_location": "B",
-    "location": "Jeddah"
+    "location": "Jeddah",
+    "reads": 72243020
   },
   "ERR7850088": {
     "country": "Saudi Arabia",
     "date": "2020-05-27",
     "fine_location": "B",
-    "location": "Jeddah"
+    "location": "Jeddah",
+    "reads": 70265122
   },
   "ERR7850089": {
     "country": "Saudi Arabia",
     "date": "2020-05-30",
     "fine_location": "B",
-    "location": "Jeddah"
+    "location": "Jeddah",
+    "reads": 75245320
   },
   "ERR7850090": {
     "country": "Saudi Arabia",
     "date": "2020-06-01",
     "fine_location": "B",
-    "location": "Jeddah"
+    "location": "Jeddah",
+    "reads": 68411046
   },
   "ERR7850091": {
     "country": "Saudi Arabia",
@@ -33044,6 +33053,7 @@ sample_metadata={
     "date": "2021-03-10",
     "fine_location": "Manhole",
     "location": "Maryland",
+    "na_type": "RNA",
     "reads": 63950779
   },
   "SRR18218718": {
@@ -33051,6 +33061,7 @@ sample_metadata={
     "date": "2021-03-23",
     "fine_location": "Manhole",
     "location": "Maryland",
+    "na_type": "RNA",
     "reads": 55603482
   },
   "SRR18218719": {
@@ -33058,6 +33069,7 @@ sample_metadata={
     "date": "2021-02-17",
     "fine_location": "Manhole",
     "location": "Maryland",
+    "na_type": "RNA",
     "reads": 55184533
   },
   "SRR18218720": {
@@ -33065,13 +33077,47 @@ sample_metadata={
     "date": "2021-02-11",
     "fine_location": "Manhole",
     "location": "Maryland",
+    "na_type": "RNA",
     "reads": 38416197
+  },
+  "SRR18218721": {
+    "country": "USA",
+    "date": "2021-04-21",
+    "fine_location": "Manhole",
+    "location": "Maryland",
+    "na_type": "DNA",
+    "reads": 44649676
+  },
+  "SRR18218722": {
+    "country": "USA",
+    "date": "2021-04-15",
+    "fine_location": "Manhole",
+    "location": "Maryland",
+    "na_type": "DNA",
+    "reads": 29397305
+  },
+  "SRR18218723": {
+    "country": "USA",
+    "date": "2021-03-10",
+    "fine_location": "Manhole",
+    "location": "Maryland",
+    "na_type": "DNA",
+    "reads": 23992996
+  },
+  "SRR18218724": {
+    "country": "USA",
+    "date": "2021-03-23",
+    "fine_location": "Manhole",
+    "location": "Maryland",
+    "na_type": "DNA",
+    "reads": 27866082
   },
   "SRR18218730": {
     "country": "USA",
     "date": "2021-04-21",
     "fine_location": "Manhole",
     "location": "Maryland",
+    "na_type": "RNA",
     "reads": 28942881
   },
   "SRR18218731": {
@@ -33079,7 +33125,24 @@ sample_metadata={
     "date": "2021-04-15",
     "fine_location": "Manhole",
     "location": "Maryland",
+    "na_type": "RNA",
     "reads": 34344443
+  },
+  "SRR18218732": {
+    "country": "USA",
+    "date": "2021-02-17",
+    "fine_location": "Manhole",
+    "location": "Maryland",
+    "na_type": "DNA",
+    "reads": 28371759
+  },
+  "SRR18218733": {
+    "country": "USA",
+    "date": "2021-02-11",
+    "fine_location": "Manhole",
+    "location": "Maryland",
+    "na_type": "DNA",
+    "reads": 41788792
   },
   "SRR21374446": {
     "country": "USA",
@@ -36598,7 +36661,7 @@ papers={
     "projects": [
       "PRJNA812772"
     ],
-    "subset": "RNA"
+    "subset": "untargeted"
   },
   "Crits-Christoph 2021": {
     "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7845645/",

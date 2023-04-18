@@ -152,7 +152,7 @@ for project in projects:
 # virus -> sample -> count
 virus_sample_counts = defaultdict(Counter)
 
-# sample -> {reads, date, country, location, fine_location}
+# sample -> {reads, date, country, location, fine_location, na_type}
 sample_metadata = defaultdict(dict)
 for project in projects:
     project_total = 0
@@ -180,11 +180,12 @@ for project in projects:
                 sample_metadata[sample]["location"] = "San Francisco"
                 sample_metadata[sample]["fine_location"] = municipality
             elif project in papers["Brumfield 2022"]["projects"]:
-                sample, date = line.split("\t")
+                sample, na_type, date = line.split("\t")
                 sample_metadata[sample]["date"] = date
                 sample_metadata[sample]["country"] = "USA"
                 sample_metadata[sample]["location"] = "Maryland"
                 sample_metadata[sample]["fine_location"] = "Manhole"
+                sample_metadata[sample]["na_type"] = na_type
             elif project in papers["Bengtsson-Palme 2016"]["projects"]:
                 sample, location, site = line.split("\t")
                 sample_metadata[sample]["date"] = "2012-09"
