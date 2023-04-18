@@ -336,7 +336,11 @@ for (const paper_name of paper_names) {
   tr.hidden = false;
 
   tr.appendChild(e("td", human_readable(total_reads) + " reads"));
-  tr.appendChild(e("td", papers[paper_name].na_type));
+  const td_na_type = e("td");
+  for (const na_type of papers[paper_name].na_type.split("+")) {
+    td_na_type.appendChild(e("div", na_type));
+  }
+  tr.appendChild(td_na_type);
   tr.appendChild(e("td", total_samples));
   tr.appendChild(e("td", summarize_location(paper_name)));
   tr.appendChild(e("td", summarize_date(paper_name)));
