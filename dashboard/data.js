@@ -36628,7 +36628,8 @@ papers={
     "na_type": "DNA+RNA",
     "projects": [
       "PRJEB13833"
-    ]
+    ],
+    "subset": "pellet (supernatat not in SRA)"
   },
   "Maritz 2019": {
     "link": "https://www.nature.com/articles/s41396-019-0467-z",
