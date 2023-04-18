@@ -16,7 +16,7 @@ loading...
 <p>
 
 This tool displays a summary of the output of the <a
-href="https://www.naobservatory.org/">NAO</a>'s metagenomic sequencing
+href="https://www.naobservatory.org/">NAO</a> metagenomic sequencing
 pipeline (<a
 href="https://github.com/naobservatory/mgs-pipeline">code</a>).
 
@@ -236,6 +236,16 @@ function summarize_date(paper_name) {
     last = last.substring(0, 4);
   } else if (/^20\d\d$/.test(last) && /^20\d\d.*/.test(first)) {
     first = first.substring(0, 4);
+  }
+
+  if (first.substring(0, 4) != last.substring(0, 4)) {
+    // When dates span years, just use the years.
+    first = first.substring(0, 4);
+    last = last.substring(0, 4);
+  } else if (first.substring(0, 7) != last.substring(0, 7)) {
+    // When same-year dates span months, just use the months.
+    first = first.substring(0, 7);
+    last = last.substring(0, 7);
   }
 
   return first + " to " + last;
