@@ -104,6 +104,11 @@ are relative abundance of human viruses that match that taxonomic node.
 //   names: taxid -> name
 //   tree: taxid with children
 
+window.onerror = function () {
+  document.body.style.border = "5px solid red";
+  document.body.style.borderRadius = "1em";
+};
+
 const paper_names = [];
 for (const paper in papers) {
   paper_names.push(paper);
