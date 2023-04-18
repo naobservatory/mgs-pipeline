@@ -1,1 +1,1 @@
-pellet (supernatat not in SRA)
+pellet
