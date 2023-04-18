@@ -6,6 +6,10 @@ To rebuild:
 
 -->
 
+<div id=loading>
+loading...
+</div>
+
 <div class=search_box>
 Search Papers:
 
@@ -90,6 +94,9 @@ are relative abundance of human viruses that match that taxonomic node.
   .error {
     border: 1px solid red;
     color: red;
+  }
+  #loading {
+    padding: 2em;
   }
 </style>
 
@@ -975,6 +982,8 @@ function redisplay() {
   }
 
   render_subtree();
+
+  loading.style.display = "none";
 }
 
 let active_followups = 0;
