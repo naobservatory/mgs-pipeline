@@ -36597,21 +36597,24 @@ papers={
     "na_type": "RNA",
     "projects": [
       "PRJNA812772"
-    ]
+    ],
+    "subset": "RNA samples only"
   },
   "Crits-Christoph 2021": {
     "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7845645/",
     "na_type": "RNA",
     "projects": [
       "PRJNA661613"
-    ]
+    ],
+    "subset": "unenriched samples only"
   },
   "Cui 2023": {
     "link": "https://pubs.acs.org/doi/full/10.1021/acs.est.2c09587",
     "na_type": "DNA+RNA",
     "projects": [
       "PRJNA774620"
-    ]
+    ],
+    "subset": "untreated undigested sludge only"
   },
   "Fierer 2022": {
     "link": "https://journals.asm.org/doi/10.1128/msystems.00651-22",
@@ -36666,7 +36669,8 @@ papers={
     "na_type": "RNA",
     "projects": [
       "PRJNA729801"
-    ]
+    ],
+    "subset": "unenriched samples only"
   },
   "Wang 2022": {
     "link": "https://pubs.acs.org/doi/full/10.1021/acs.est.2c01834",

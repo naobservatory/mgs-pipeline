@@ -97,7 +97,7 @@ for metadata_fname in glob.glob(
 
 projects = list(sorted(project_sample_reads))
 
-# paper -> {link, samples, projects, na_type}
+# paper -> {link, samples, projects, na_type, subset}
 papers = {}
 for project in projects:
     with open("%s/bioprojects/%s/metadata/name.txt" % (
@@ -121,6 +121,12 @@ for paper_name in papers:
     if os.path.exists(na_fname):
         with open(na_fname) as inf:
             papers[paper_name]["na_type"] = inf.read().strip()
+
+    subset_fname = os.path.join(paper_dir, "subset.txt")
+    if os.path.exists(subset_fname):
+        with open(subset_fname) as inf:
+            papers[paper_name]["subset"] = inf.read().strip()
+
 
 # bioproject -> [samples]
 bioprojects = defaultdict(set)
