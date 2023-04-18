@@ -36598,7 +36598,7 @@ papers={
     "projects": [
       "PRJNA812772"
     ],
-    "subset": "RNA samples"
+    "subset": "RNA"
   },
   "Crits-Christoph 2021": {
     "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7845645/",
@@ -36606,7 +36606,7 @@ papers={
     "projects": [
       "PRJNA661613"
     ],
-    "subset": "unenriched samples"
+    "subset": "unenriched"
   },
   "Cui 2023": {
     "link": "https://pubs.acs.org/doi/full/10.1021/acs.est.2c09587",
@@ -36670,7 +36670,7 @@ papers={
     "projects": [
       "PRJNA729801"
     ],
-    "subset": "unenriched samples"
+    "subset": "unenriched"
   },
   "Wang 2022": {
     "link": "https://pubs.acs.org/doi/full/10.1021/acs.est.2c01834",
