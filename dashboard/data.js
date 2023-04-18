@@ -36598,7 +36598,7 @@ papers={
     "projects": [
       "PRJNA812772"
     ],
-    "subset": "RNA samples only"
+    "subset": "RNA samples"
   },
   "Crits-Christoph 2021": {
     "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7845645/",
@@ -36606,7 +36606,7 @@ papers={
     "projects": [
       "PRJNA661613"
     ],
-    "subset": "unenriched samples only"
+    "subset": "unenriched samples"
   },
   "Cui 2023": {
     "link": "https://pubs.acs.org/doi/full/10.1021/acs.est.2c09587",
@@ -36614,7 +36614,7 @@ papers={
     "projects": [
       "PRJNA774620"
     ],
-    "subset": "untreated undigested sludge only"
+    "subset": "untreated undigested sludge"
   },
   "Fierer 2022": {
     "link": "https://journals.asm.org/doi/10.1128/msystems.00651-22",
@@ -36670,7 +36670,7 @@ papers={
     "projects": [
       "PRJNA729801"
     ],
-    "subset": "unenriched samples only"
+    "subset": "unenriched samples"
   },
   "Wang 2022": {
     "link": "https://pubs.acs.org/doi/full/10.1021/acs.est.2c01834",
