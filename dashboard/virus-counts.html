@@ -40,7 +40,7 @@ Limit Papers:
 
 
 <table id=table_papers cellpadding=5 rules=rows>
-  <tr><th><th>Name<th>Reads<th>Acid<th>Samples<th>Location<th>Date<th>Bioprojects
+  <tr><th><th>Name<th>Reads<th>Acid<th>Samples<th>Subset<th>Location<th>Date<th>Bioprojects
 </table>
 
 <p>
@@ -342,6 +342,7 @@ for (const paper_name of paper_names) {
   }
   tr.appendChild(td_na_type);
   tr.appendChild(e("td", total_samples));
+  tr.appendChild(e("td", papers[paper_name].subset || ""));
   tr.appendChild(e("td", summarize_location(paper_name)));
   tr.appendChild(e("td", summarize_date(paper_name)));
 
