@@ -13,7 +13,8 @@ Search Papers:
 
 <table>
   <tr><td>Nucleic Acid<td><input id=na_search type=text size=34></input>
-  <tr><td>Min reads<td>1e<input size=1 id=min_reads_search type=text></input>
+  <tr><td>Min reads<td><input size=5 value=1e1 id=min_reads_search
+          type=text></input>
   <!-- todo: once we have more categorizations on the papers (enrichment?
        filtration? sample type?) these can go here -->
 </table>
@@ -233,25 +234,27 @@ function sample_description(target_sample, paper_name) {
 
 const paper_trs = {}; // paper -> row in papers table
 
-function is_all_digits(s) {
-  return /^\d+$/.test(s);
+function is_sci_num(s) {
+  return /^\d+e\d+$/.test(s);
 }
 
-function update_paper_visibility() {
-  if (min_reads_search.value && !is_all_digits(min_reads_search.value)) {
+function check_input_errors() {
+  if (min_reads_search.value && !is_sci_num(min_reads_search.value)) {
     min_reads_search.classList.add("error");
   } else {
     min_reads_search.classList.remove("error");
   }
+}
 
+function update_paper_visibility() {
   for (const paper_tr of Object.values(paper_trs)) {
     paper_tr.hidden = false;
     if (!paper_tr.na_type.toLowerCase().includes(na_search.value.toLowerCase())) {
       paper_tr.hidden = true;
     }
     if (min_reads_search.value &&
-        is_all_digits(min_reads_search.value) &&
-        paper_tr.total_reads < 10**parseInt(min_reads_search.value, 10)) {
+        is_sci_num(min_reads_search.value) &&
+        paper_tr.total_reads < parseFloat(min_reads_search.value)) {
       paper_tr.hidden = true;
     }
   }
@@ -973,6 +976,7 @@ function search_followup() {
 }
 
 function search(e) {
+  check_input_errors();
   update_hash();
   active_followups++;
   if (e.target.value.length > 3 ||
