@@ -129,6 +129,7 @@ for (const paper_name of paper_names) {
   paper_dates[paper_name] = new Set();
 
   for (const bioproject of papers[paper_name].projects) {
+    if (!bioprojects[bioproject]) continue;
     for (const sample of bioprojects[bioproject]) {
       paper_countries[paper_name].add(sample_metadata[sample].country);
       paper_locations[paper_name].add(sample_metadata[sample].location);
@@ -281,6 +282,7 @@ for (const paper_name of paper_names) {
   let total_reads = 0;
   let total_samples = 0;
   for (const bioproject of papers[paper_name].projects) {
+    if (!bioprojects[bioproject]) continue;
     for (const sample of bioprojects[bioproject]) {
       total_reads += sample_metadata[sample].reads;
       total_samples += 1;
@@ -483,6 +485,7 @@ function categorize_samples_at_current_expansion(paper_name) {
   if (paper_expansion(paper_name) == "collapsed") {
     const samples = [];
     for (const bioproject of papers[paper_name].projects) {
+      if (!bioprojects[bioproject]) continue;
       for (const sample of bioprojects[bioproject]) {
         samples.push(sample)
       }
@@ -498,6 +501,7 @@ function categorize_samples_at_current_expansion(paper_name) {
       }
       const samples = [];
       for (const bioproject of papers[paper_name].projects) {
+        if (!bioprojects[bioproject]) continue;
         for (const sample of bioprojects[bioproject]) {
           if (sample_metadata[sample].country == country) {
             samples.push(sample);
@@ -522,6 +526,7 @@ function categorize_samples_at_current_expansion(paper_name) {
         }
         const samples = [];
         for (const bioproject of papers[paper_name].projects) {
+          if (!bioprojects[bioproject]) continue;
           for (const sample of bioprojects[bioproject]) {
             if (sample_metadata[sample].country == country &&
                 sample_metadata[sample].location == location) {
@@ -552,6 +557,7 @@ function categorize_samples_at_current_expansion(paper_name) {
              [...paper_fine_locations[paper_name]].sort()) {
           const samples = [];
           for (const bioproject of papers[paper_name].projects) {
+            if (!bioprojects[bioproject]) continue;
             for (const sample of bioprojects[bioproject]) {
               if (sample_metadata[sample].country == country &&
                   sample_metadata[sample].location == location &&
@@ -574,6 +580,7 @@ function categorize_samples_at_current_expansion(paper_name) {
                                      /*is_begin=*/false);
 
     for (const bioproject of papers[paper_name].projects) {
+      if (!bioprojects[bioproject]) continue;
       const samples = [...bioprojects[bioproject]];
       sort_samples(samples);
       for (const sample of samples) {
@@ -852,7 +859,7 @@ function redisplay() {
     const matching_samples = new Set();
     for (const species of all_species) {
       for (const sample of samples) {
-        const n = virus_sample_counts[species][sample];
+        const n = virus_sample_counts?.[species]?.[sample];
         if (n) {
           total += n;
           matching_samples.add(sample);
