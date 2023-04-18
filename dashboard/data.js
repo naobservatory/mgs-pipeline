@@ -36657,7 +36657,7 @@ papers={
   },
   "Brumfield 2022": {
     "link": "https://journals.asm.org/doi/10.1128/mbio.00591-22",
-    "na_type": "RNA",
+    "na_type": "DNA+RNA",
     "projects": [
       "PRJNA812772"
     ],
