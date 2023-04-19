@@ -443,8 +443,18 @@ def print_status(args):
                ("  " + bioproject).ljust(name_width) +
                (COLOR_END if color else ""), end="", flush=True)
 
-         fully_processed = os.path.exists(os.path.join(
-            THISDIR, "bioprojects", bioproject, "fully_processed"))
+         fully_processed_fname = os.path.join(
+            THISDIR, "bioprojects", bioproject, "fully_processed")
+         fully_processed = os.path.exists(fully_processed_fname)
+         if fully_processed:
+            with open(fully_processed_fname) as inf:
+               n_raw = inf.read().strip()
+            print(COLOR_GREEN, end="")
+            for stage in stages:
+               print("\t", end="")
+               print(n_raw if stage == "raw" else "-", end="")
+            print(COLOR_END)
+            continue
 
          s3_bioproject_dir = "%s/%s" % (S3_BUCKET, bioproject)
          metadata_dir = os.path.join(THISDIR, "bioprojects", bioproject,
@@ -459,22 +469,14 @@ def print_status(args):
          for stage in stages:
             print("\t", end="", flush=True)
 
-            if fully_processed and stage != "raw":
-               print("-", end="", flush=True)
-               continue
-
             seen = set()
             for fname in ls_s3_dir("%s/%s/" % (s3_bioproject_dir, stage)):
                for sample in samples:
                   if fname.startswith(sample):
                      seen.add(sample)
-            missing = prev is not None and len(seen) < prev
 
-            color = ""
-            if missing:
-               color = COLOR_RED
-            elif fully_processed:
-               color = COLOR_GREEN
+            missing = prev is not None and len(seen) < prev
+            color = COLOR_RED if missing else ""
 
             print("%s%s%s" % (
                color,
