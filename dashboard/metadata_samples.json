@@ -10112,7 +10112,8 @@
     "country": "Saudi Arabia",
     "date": "2020-05-02",
     "fine_location": "B",
-    "location": "Jeddah"
+    "location": "Jeddah",
+    "reads": 69401150
   },
   "ERR7850084": {
     "country": "Saudi Arabia",
