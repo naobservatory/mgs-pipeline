@@ -28,7 +28,7 @@ Limit Papers:
 <p>
 
 <table>
-  <tr><td>Nucleic Acid<td><input id=na_search type=text size=34></input>
+  <tr><td>Nucleic Acid<td><input id=na_paper_search type=text size=34></input>
   <tr><td>Min reads<td><input size=5 value=1e1 id=min_reads_search
           type=text></input>
   <!-- todo: once we have more categorizations on the papers (enrichment?
@@ -57,6 +57,7 @@ Limit Samples:
 <table>
   <tr><td>Country<td><input id=country_search type=text size=34></input>
   <tr><td>City<td><input id=city_search type=text size=34></input>
+  <tr><td>Nucleic Acid<td><input id=na_sample_search type=text size=34></input>
   <tr><td>Date<td>
   <input size=15 id=date_begin_search type=text></input> &ndash;
      <input size=15 id=date_end_search type=text></input>
@@ -166,6 +167,9 @@ for (const paper_name of paper_names) {
       }
       if (sample_metadata[sample].date) {
         paper_dates[paper_name].add(sample_metadata[sample].date);
+      }
+      if (!sample_metadata[sample].na_type) {
+        sample_metadata[sample].na_type = papers[paper_name].na_type;
       }
     }
   }
@@ -287,7 +291,8 @@ function check_input_errors() {
 function update_paper_visibility() {
   for (const paper_tr of Object.values(paper_trs)) {
     paper_tr.hidden = false;
-    if (!paper_tr.na_type.toLowerCase().includes(na_search.value.toLowerCase())) {
+    if (!paper_tr.na_type.toLowerCase().includes(
+        na_paper_search.value.toLowerCase())) {
       paper_tr.hidden = true;
     }
     if (min_reads_search.value &&
@@ -496,7 +501,8 @@ for (paper_name of paper_names) {
 }
 
 function forced_minimum_level() {
-  if (date_begin_search.value || date_end_search.value) return "sample";
+  if (date_begin_search.value ||
+      date_end_search.value) return "sample";
   if (city_search.value) return "location";
   if (country_search.value) return "country";
   return "collapsed";
@@ -529,6 +535,13 @@ function categorize_samples_at_current_expansion(paper_name) {
     for (const bioproject of papers[paper_name].projects) {
       if (!bioprojects[bioproject]) continue;
       for (const sample of bioprojects[bioproject]) {
+
+        if (na_sample_search.value &&
+            !sample_metadata[sample].na_type.toLowerCase().includes(
+              na_sample_search.value.toLowerCase())) {
+          continue;
+        }
+
         samples.push(sample)
       }
     }
@@ -546,6 +559,13 @@ function categorize_samples_at_current_expansion(paper_name) {
         if (!bioprojects[bioproject]) continue;
         for (const sample of bioprojects[bioproject]) {
           if (sample_metadata[sample].country == country) {
+
+            if (na_sample_search.value &&
+                !sample_metadata[sample].na_type.toLowerCase().includes(
+                  na_sample_search.value.toLowerCase())) {
+              continue;
+            }
+
             samples.push(sample);
           }
         }
@@ -570,8 +590,15 @@ function categorize_samples_at_current_expansion(paper_name) {
         for (const bioproject of papers[paper_name].projects) {
           if (!bioprojects[bioproject]) continue;
           for (const sample of bioprojects[bioproject]) {
+
             if (sample_metadata[sample].country == country &&
                 sample_metadata[sample].location == location) {
+
+              if (na_sample_search.value &&
+                    !sample_metadata[sample].na_type.toLowerCase().includes(
+                      na_sample_search.value.toLowerCase())) {
+                continue;
+              }
               samples.push(sample);
             }
           }
@@ -604,6 +631,13 @@ function categorize_samples_at_current_expansion(paper_name) {
               if (sample_metadata[sample].country == country &&
                   sample_metadata[sample].location == location &&
                   sample_metadata[sample].fine_location == fine_location) {
+
+                if (na_sample_search.value &&
+                    !sample_metadata[sample].na_type.toLowerCase().includes(
+                      na_sample_search.value.toLowerCase())) {
+                  continue;
+                }
+
                 samples.push(sample);
               }
             }
@@ -636,6 +670,11 @@ function categorize_samples_at_current_expansion(paper_name) {
             (!sample_metadata[sample].location ||
              !sample_metadata[sample].location.toLowerCase().includes(
                city_search.value.toLowerCase()))) {
+          continue;
+        }
+        if (na_sample_search.value &&
+            !sample_metadata[sample].na_type.toLowerCase().includes(
+              na_sample_search.value.toLowerCase())) {
           continue;
         }
         if (target_date_begin || target_date_end) {
@@ -744,6 +783,7 @@ function redisplay() {
 
     let colspan = 0;
     for (const samples of categorize_samples_at_current_expansion(paper_name)) {
+      if (!samples.length) continue;
       colspan++;
       column_samples.push(samples);
     }
@@ -755,6 +795,7 @@ function redisplay() {
   tbl.appendChild(tr_header);
 
   for (const [property, plural] of [
+    ["na_type", "acid"],
     ["country", "countries"],
     ["location", "cities"],
     ["fine_location", "sites"],
@@ -779,6 +820,21 @@ function redisplay() {
           tr.appendChild(td_sample);
         } else {
           tr.appendChild(e("td", samples.length + " " + plural));
+        }
+      } else if (property == "na_type") {
+        const vals = new Set();
+        for (const sample of samples) {
+          if (sample_metadata[sample][property]) {
+            vals.add(sample_metadata[sample][property]);
+          }
+        }
+
+        const sorted_text_val = [...vals].sort().join(", ");
+        if (sorted_text_val == prev_val) {
+          tr.appendChild(e("td", "\u3003"));
+        } else {
+          tr.appendChild(e("td", sorted_text_val));
+          prev_val = sorted_text_val;
         }
       } else if (property == "reads") {
         let total_reads = 0;
@@ -1031,7 +1087,8 @@ function search(e) {
   update_hash();
   active_followups++;
   if (e.target.value.length > 3 ||
-      e.target == na_search ||
+      e.target == na_paper_search ||
+      e.target == na_sample_search ||
       e.target == min_reads_search) {
     setTimeout(search_followup, 100);
   } else {
@@ -1039,13 +1096,14 @@ function search(e) {
   }
 }
 
-na_search.addEventListener("input", search);
+na_paper_search.addEventListener("input", search);
 min_reads_search.addEventListener("input", search);
 
 taxonomic_search.addEventListener("input", search);
 
 country_search.addEventListener("input", search);
 city_search.addEventListener("input", search);
+na_sample_search.addEventListener("input", search);
 date_begin_search.addEventListener("input", search);
 date_end_search.addEventListener("input", search);
 
