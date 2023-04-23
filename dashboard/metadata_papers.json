@@ -53,6 +53,13 @@
     ],
     "subset": "pellet"
   },
+  "Johnson 2023": {
+    "link": "personal communication",
+    "na_type": "DNA+RNA",
+    "projects": [
+      "MJCOMO1"
+    ]
+  },
   "Maritz 2019": {
     "link": "https://www.nature.com/articles/s41396-019-0467-z",
     "na_type": "DNA",

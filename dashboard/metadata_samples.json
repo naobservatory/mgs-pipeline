@@ -1,4 +1,34 @@
 {
+  "COMO1": {
+    "country": "United States",
+    "date": "202?",
+    "location": "Columbia, MO",
+    "reads": 93753080
+  },
+  "COMO2": {
+    "country": "United States",
+    "date": "202?",
+    "location": "Columbia, MO",
+    "reads": 15103197
+  },
+  "COMO3": {
+    "country": "United States",
+    "date": "202?",
+    "location": "Columbia, MO",
+    "reads": 14700571
+  },
+  "COMO4": {
+    "country": "United States",
+    "date": "202?",
+    "location": "Columbia, MO",
+    "reads": 15578784
+  },
+  "COMO5": {
+    "country": "United States",
+    "date": "202?",
+    "location": "Columbia, MO",
+    "reads": 14600679
+  },
   "ERR1224340": {
     "country": "China",
     "date": "Summer 2013",

@@ -257,6 +257,11 @@ for project in projects:
                 sample_metadata[sample]["location"] = "Jeddah"
                 sample_metadata[sample]["date"] = date
                 sample_metadata[sample]["fine_location"] = hospital
+            elif project in papers["Johnson 2023"]["projects"]:
+                sample, _, _ = line.strip().split("\t")
+                sample_metadata[sample]["country"] = "United States"
+                sample_metadata[sample]["location"] = "Columbia, MO"
+                sample_metadata[sample]["date"] = "202?"
             elif project in papers["Cui 2023"]["projects"]:
                 sample = line.strip()
                 sample_metadata[sample]["country"] = "China"
