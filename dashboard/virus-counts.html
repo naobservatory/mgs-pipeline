@@ -702,7 +702,7 @@ function categorize_samples_at_current_expansion(paper_name) {
 
 function sort_samples(samples) {
   samples.sort(function(sample1, sample2) {
-    // sort by country, then location, then fine_location, then date
+    // sort by country, then location, then fine_location, then date, then id
     if (sample_metadata[sample1].country !=
         sample_metadata[sample2].country) {
       return sample_metadata[sample1].country <
@@ -723,7 +723,7 @@ function sort_samples(samples) {
       return sample_metadata[sample1].date <
         sample_metadata[sample2].date;
     }
-    return sample_metadata[sample1].reads - sample_metadata[sample2].reads;
+    return sample1 < sample2;
   });
 }
 
