@@ -56,3 +56,5 @@ for taxid in sorted(clade_hits):
         taxid,
         direct_assignments[taxid], direct_hits[taxid],
         clade_assignments[taxid], clade_hits[taxid]))
+
+    

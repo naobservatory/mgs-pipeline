@@ -260,8 +260,8 @@ for project in projects:
             elif project in papers["Johnson 2023"]["projects"]:
                 sample, _, _ = line.strip().split("\t")
                 sample_metadata[sample]["country"] = "United States"
-                sample_metadata[sample]["location"] = "Columbia, MO"
-                sample_metadata[sample]["date"] = "202?"
+                sample_metadata[sample]["location"] = "Municipal"
+                sample_metadata[sample]["date"] = "2022"
             elif project in papers["Cui 2023"]["projects"]:
                 sample = line.strip()
                 sample_metadata[sample]["country"] = "China"
