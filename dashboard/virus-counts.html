@@ -40,7 +40,7 @@ Limit Papers:
 
 
 <table id=table_papers cellpadding=5 rules=rows>
-  <tr><th><th>Name<th>Reads<th>Acid<th>Samples<th>Subset<th>Location<th>Date<th>Bioprojects
+  <tr><th><input type=checkbox checked id=checkbox_all_papers><th>Name<th>Reads<th>Acid<th>Samples<th>Subset<th>Location<th>Date<th>Bioprojects
 </table>
 
 <p>
@@ -490,6 +490,14 @@ function collapse_paper(e) {
     paper_expansions[paper_name] = options[current_option_index - 1];
   }
   redisplay();
+}
+
+checkbox_all_papers.onchange = function() {
+  for (paper_name of paper_names) {
+    if (paper_trs[paper_name]?.checkbox) {
+      paper_trs[paper_name].checkbox.checked = checkbox_all_papers.checked;
+    }
+  }
 }
 
 const expansion_levels = ["collapsed", "country", "location", "fine", "sample"];
