@@ -935,9 +935,7 @@ function redisplay() {
 
   function expand_all_species(node, all_species) {
     const taxid = node[0];
-    if (node.length == 1) {
-      all_species.push(taxid);
-    }
+    all_species.push(taxid);
     for (let i = 1; i < node.length; i++) {
       expand_all_species(node[i], all_species);
     }
