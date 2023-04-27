@@ -168,7 +168,7 @@ for project in projects:
             line = line[:-1]  # drop trailing newline
 
             if project in papers["Rothman 2021"]["projects"]:
-                sample, date, wtp = line.split("\t")
+                sample, date, wtp, is_enriched = line.split("\t")
                 sample_metadata[sample]["date"] = date
                 sample_metadata[sample]["country"] = "USA"
                 sample_metadata[sample]["location"] = "Los Angeles"
