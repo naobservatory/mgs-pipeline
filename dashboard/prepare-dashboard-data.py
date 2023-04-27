@@ -174,7 +174,7 @@ for project in projects:
                 sample_metadata[sample]["location"] = "Los Angeles"
                 sample_metadata[sample]["fine_location"] = wtp
             elif project in papers["Crits-Christoph 2021"]["projects"]:
-                sample, municipality, date, method = line.split("\t")
+                sample, municipality, date, method, sequencing = line.split("\t")
                 sample_metadata[sample]["date"] = date
                 sample_metadata[sample]["country"] = "USA"
                 sample_metadata[sample]["location"] = "San Francisco"
