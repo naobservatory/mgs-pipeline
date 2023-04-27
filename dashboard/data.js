@@ -2806,6 +2806,7 @@ virus_sample_counts={
     "ERR9855087": 1,
     "ERR9855089": 2,
     "ERR9855092": 2,
+    "SRR12596174": 4,
     "SRR6837553": 2,
     "SRR6837567": 2,
     "SRR6837573": 1,
@@ -3152,6 +3153,7 @@ virus_sample_counts={
     "ERR9855090": 1,
     "ERR9855093": 1,
     "ERR9855095": 1,
+    "SRR12596171": 2,
     "SRR23998356": 1,
     "SRR6837563": 2
   },
@@ -4849,6 +4851,7 @@ virus_sample_counts={
     "ERR9855096": 3,
     "ERR9855097": 4,
     "ERR9855098": 14,
+    "SRR12596171": 3,
     "SRR14530727": 2,
     "SRR14530895": 1,
     "SRR14530900": 1,
@@ -6241,6 +6244,10 @@ virus_sample_counts={
     "SRR12204734": 5,
     "SRR12204847": 4,
     "SRR12204851": 6,
+    "SRR12596166": 1,
+    "SRR12596171": 2,
+    "SRR12596174": 9,
+    "SRR12596175": 9,
     "SRR18218717": 1,
     "SRR23998356": 8,
     "SRR6837550": 2
@@ -6404,6 +6411,13 @@ virus_sample_counts={
     "ERR3503308": 1,
     "ERR3503319": 1,
     "SRR12204848": 18,
+    "SRR12596168": 34,
+    "SRR12596170": 8,
+    "SRR12596171": 14,
+    "SRR12596172": 2,
+    "SRR12596173": 2,
+    "SRR12596174": 2,
+    "SRR12596175": 28,
     "SRR14530853": 8,
     "SRR14530884": 2,
     "SRR14530885": 1,
@@ -7901,6 +7915,8 @@ virus_sample_counts={
     "ERR9855093": 1,
     "ERR9855095": 3,
     "ERR9855096": 1,
+    "SRR12596171": 8,
+    "SRR12596174": 7,
     "SRR21374526": 1,
     "SRR21452137": 1,
     "SRR23998359": 1,
@@ -7993,6 +8009,7 @@ virus_sample_counts={
     "SRR12204849": 959,
     "SRR12204850": 323,
     "SRR12204851": 936,
+    "SRR12596168": 2,
     "SRR14530724": 4,
     "SRR14530726": 2,
     "SRR14530728": 5,
@@ -9438,6 +9455,10 @@ virus_sample_counts={
     "ERR9855093": 2,
     "ERR9855095": 5,
     "ERR9855098": 2,
+    "SRR12596166": 9,
+    "SRR12596171": 5,
+    "SRR12596174": 23,
+    "SRR12596175": 32,
     "SRR18218717": 1,
     "SRR18218731": 110,
     "SRR23998355": 5,
@@ -11464,6 +11485,8 @@ virus_sample_counts={
     "ERR9855097": 5,
     "ERR9855098": 66,
     "ERR9855099": 28,
+    "SRR12596171": 4,
+    "SRR12596174": 1,
     "SRR23998358": 5,
     "SRR6837549": 2,
     "SRR6837550": 26,
@@ -12514,6 +12537,8 @@ virus_sample_counts={
     "ERR9855096": 84,
     "ERR9855097": 4,
     "ERR9855098": 5,
+    "SRR12596171": 22,
+    "SRR12596174": 59,
     "SRR21374453": 3,
     "SRR21374537": 2,
     "SRR21374548": 1,
@@ -13379,7 +13404,10 @@ virus_sample_counts={
   },
   "227984": {
     "ERR1713365": 1,
-    "ERR2607475": 1
+    "ERR2607475": 1,
+    "SRR12596171": 1,
+    "SRR12596172": 3,
+    "SRR12596175": 1
   },
   "234601": {
     "COMO2": 2,
@@ -13525,7 +13553,8 @@ virus_sample_counts={
   "277944": {
     "ERR4682348": 1,
     "ERR4682862": 1,
-    "ERR9855086": 1
+    "ERR9855086": 1,
+    "SRR12596175": 1
   },
   "290028": {
     "ERR1414249": 1,
@@ -13554,6 +13583,7 @@ virus_sample_counts={
     "ERR4682899": 1,
     "ERR4682904": 1,
     "ERR9855093": 1,
+    "SRR12596175": 1,
     "SRR6837573": 1
   },
   "290314": {
@@ -15108,7 +15138,8 @@ virus_sample_counts={
     "ERR8977426": 4,
     "ERR8977428": 1,
     "ERR8977432": 2,
-    "ERR9833719": 1
+    "ERR9833719": 1,
+    "SRR12596174": 12
   },
   "490039": {
     "COMO1": 34,
@@ -16055,6 +16086,14 @@ virus_sample_counts={
     "ERR8977432": 1,
     "ERR8977433": 1,
     "ERR9855090": 1,
+    "SRR12596165": 190,
+    "SRR12596166": 334,
+    "SRR12596168": 1146,
+    "SRR12596169": 958,
+    "SRR12596170": 1616,
+    "SRR12596171": 1258,
+    "SRR12596174": 189,
+    "SRR12596175": 31,
     "SRR23998354": 2,
     "SRR23998358": 3
   },
@@ -16780,6 +16819,8 @@ virus_sample_counts={
     "ERR9855096": 31,
     "ERR9855097": 6,
     "ERR9855098": 1,
+    "SRR12596171": 1,
+    "SRR12596174": 4,
     "SRR21374549": 2,
     "SRR23998358": 3,
     "SRR6837576": 1
@@ -16955,6 +16996,17 @@ virus_sample_counts={
     "ERR3562967": 1
   },
   "694009": {
+    "SRR12596165": 9,
+    "SRR12596166": 5,
+    "SRR12596167": 3,
+    "SRR12596168": 19,
+    "SRR12596169": 17,
+    "SRR12596170": 19,
+    "SRR12596171": 23,
+    "SRR12596172": 58,
+    "SRR12596173": 5,
+    "SRR12596174": 23,
+    "SRR12596175": 42,
     "SRR14530882": 1,
     "SRR14530885": 1,
     "SRR14530887": 1,
@@ -17608,6 +17660,7 @@ virus_sample_counts={
     "ERR8977429": 1,
     "ERR9855093": 1,
     "ERR9855098": 1,
+    "SRR12596171": 3,
     "SRR6837550": 2,
     "SRR6837558": 2,
     "SRR6837574": 1,
@@ -18415,7 +18468,12 @@ virus_sample_counts={
     "ERR4682375": 1,
     "ERR4682778": 1,
     "ERR4682870": 1,
-    "ERR8977385": 1
+    "ERR8977385": 1,
+    "SRR12596166": 6,
+    "SRR12596168": 6,
+    "SRR12596169": 8,
+    "SRR12596170": 20,
+    "SRR12596171": 31
   },
   "1511882": {
     "ERR1713353": 2,
@@ -18468,6 +18526,14 @@ virus_sample_counts={
     "ERR8977422": 1,
     "ERR8977433": 1,
     "ERR9855085": 1,
+    "SRR12596165": 24,
+    "SRR12596166": 535,
+    "SRR12596168": 2262,
+    "SRR12596169": 4997,
+    "SRR12596170": 2344,
+    "SRR12596171": 2785,
+    "SRR12596174": 741,
+    "SRR12596175": 20,
     "SRR23998357": 3,
     "SRR23998358": 11
   },
@@ -18489,6 +18555,14 @@ virus_sample_counts={
     "ERR8977362": 2,
     "ERR8977429": 1,
     "ERR9855095": 1,
+    "SRR12596165": 16,
+    "SRR12596166": 158,
+    "SRR12596168": 731,
+    "SRR12596169": 1699,
+    "SRR12596170": 648,
+    "SRR12596171": 759,
+    "SRR12596174": 240,
+    "SRR12596175": 12,
     "SRR23998358": 3,
     "SRR6837549": 2
   },
@@ -18505,6 +18579,7 @@ virus_sample_counts={
     "SRR12204849": 48,
     "SRR12204850": 60,
     "SRR12204851": 18,
+    "SRR12596168": 3,
     "SRR14530748": 1,
     "SRR17814995": 1,
     "SRR23998358": 3,
@@ -18665,6 +18740,9 @@ virus_sample_counts={
   },
   "1595998": {
     "COMO4": 1,
+    "SRR12596165": 2,
+    "SRR12596166": 1,
+    "SRR12596168": 1,
     "SRR14530739": 1,
     "SRR14530745": 2,
     "SRR14530863": 1,
@@ -19203,6 +19281,11 @@ virus_sample_counts={
     "SRR12204849": 203,
     "SRR12204850": 329,
     "SRR12204851": 330,
+    "SRR12596165": 14,
+    "SRR12596166": 12,
+    "SRR12596169": 2,
+    "SRR12596170": 1,
+    "SRR12596171": 1,
     "SRR14530724": 9,
     "SRR14530725": 4,
     "SRR14530727": 5,
@@ -20269,6 +20352,9 @@ virus_sample_counts={
     "SRR12204849": 10555,
     "SRR12204850": 8581,
     "SRR12204851": 23558,
+    "SRR12596165": 1,
+    "SRR12596168": 3,
+    "SRR12596169": 1,
     "SRR14530724": 7,
     "SRR14530726": 1,
     "SRR14530728": 4,
@@ -21373,6 +21459,8 @@ virus_sample_counts={
     "ERR8977425": 1,
     "ERR8977433": 2,
     "ERR9855088": 1,
+    "SRR12596165": 1,
+    "SRR12596166": 1,
     "SRR14530744": 4,
     "SRR14530745": 2,
     "SRR14530748": 8,
@@ -21470,6 +21558,8 @@ virus_sample_counts={
     "SRR12204849": 234,
     "SRR12204850": 190,
     "SRR12204851": 111,
+    "SRR12596165": 1,
+    "SRR12596170": 1,
     "SRR14530725": 2,
     "SRR14530737": 1,
     "SRR14530738": 1,
@@ -21949,6 +22039,17 @@ virus_sample_counts={
     "COMO5": 7,
     "ERR2592253": 1,
     "ERR2607429": 1,
+    "SRR12596165": 810,
+    "SRR12596166": 880,
+    "SRR12596167": 881,
+    "SRR12596168": 2940,
+    "SRR12596169": 3359,
+    "SRR12596170": 3654,
+    "SRR12596171": 7654,
+    "SRR12596172": 25095,
+    "SRR12596173": 655,
+    "SRR12596174": 7871,
+    "SRR12596175": 20852,
     "SRR14530762": 3,
     "SRR14530764": 1,
     "SRR14530765": 1,
@@ -32995,6 +33096,83 @@ sample_metadata={
     "location": "Kashgar",
     "reads": 170134059
   },
+  "SRR12596165": {
+    "country": "USA",
+    "date": "2020-06-09",
+    "fine_location": "Berkeley",
+    "location": "San Francisco",
+    "reads": 469609
+  },
+  "SRR12596166": {
+    "country": "USA",
+    "date": "2020-05-28",
+    "fine_location": "Berkeley",
+    "location": "San Francisco",
+    "reads": 504599
+  },
+  "SRR12596167": {
+    "country": "USA",
+    "date": "2020-05-13",
+    "fine_location": "Oakland",
+    "location": "San Francisco",
+    "reads": 12072
+  },
+  "SRR12596168": {
+    "country": "USA",
+    "date": "2020-06-09",
+    "fine_location": "Oakland",
+    "location": "San Francisco",
+    "reads": 476640
+  },
+  "SRR12596169": {
+    "country": "USA",
+    "date": "2020-05-28",
+    "fine_location": "Oakland",
+    "location": "San Francisco",
+    "reads": 624031
+  },
+  "SRR12596170": {
+    "country": "USA",
+    "date": "2020-05-19",
+    "fine_location": "Oakland",
+    "location": "San Francisco",
+    "reads": 171626
+  },
+  "SRR12596171": {
+    "country": "USA",
+    "date": "2020-06-30",
+    "fine_location": "Oakland",
+    "location": "San Francisco",
+    "reads": 2405482
+  },
+  "SRR12596172": {
+    "country": "USA",
+    "date": "2020-05-19",
+    "fine_location": "Oakland",
+    "location": "San Francisco",
+    "reads": 167374
+  },
+  "SRR12596173": {
+    "country": "USA",
+    "date": "2020-05-13",
+    "fine_location": "Oakland",
+    "location": "San Francisco",
+    "reads": 41087
+  },
+  "SRR12596174": {
+    "country": "USA",
+    "date": "2020-06-30",
+    "fine_location": "Oakland",
+    "location": "San Francisco",
+    "reads": 953038
+  },
+  "SRR12596175": {
+    "country": "USA",
+    "date": "2020-07-01",
+    "fine_location": "Marin",
+    "location": "San Francisco",
+    "reads": 2891359
+  },
   "SRR14530724": {
     "country": "USA",
     "date": "2020-09-10",
@@ -33072,6 +33250,12 @@ sample_metadata={
     "location": "Los Angeles",
     "reads": 3588085
   },
+  "SRR14530735": {
+    "country": "USA",
+    "date": "2020-09-15",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
   "SRR14530736": {
     "country": "USA",
     "date": "2020-09-23",
@@ -33141,6 +33325,12 @@ sample_metadata={
     "fine_location": "NC",
     "location": "Los Angeles",
     "reads": 3467617
+  },
+  "SRR14530746": {
+    "country": "USA",
+    "date": "2020-09-08",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
   },
   "SRR14530747": {
     "country": "USA",
@@ -33212,6 +33402,12 @@ sample_metadata={
     "location": "Los Angeles",
     "reads": 2102736
   },
+  "SRR14530757": {
+    "country": "USA",
+    "date": "2020-09-01",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
   "SRR14530758": {
     "country": "USA",
     "date": "2020-10-13",
@@ -33282,6 +33478,12 @@ sample_metadata={
     "location": "Los Angeles",
     "reads": 3318348
   },
+  "SRR14530768": {
+    "country": "USA",
+    "date": "2020-08-25",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
   "SRR14530769": {
     "country": "USA",
     "date": "2020-10-27",
@@ -33309,6 +33511,474 @@ sample_metadata={
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 4595209
+  },
+  "SRR14530773": {
+    "country": "USA",
+    "date": "2020-09-30",
+    "fine_location": "SJ",
+    "location": "Los Angeles"
+  },
+  "SRR14530774": {
+    "country": "USA",
+    "date": "2020-09-16",
+    "fine_location": "SJ",
+    "location": "Los Angeles"
+  },
+  "SRR14530775": {
+    "country": "USA",
+    "date": "2020-09-09",
+    "fine_location": "SJ",
+    "location": "Los Angeles"
+  },
+  "SRR14530776": {
+    "country": "USA",
+    "date": "2020-09-02",
+    "fine_location": "SJ",
+    "location": "Los Angeles"
+  },
+  "SRR14530777": {
+    "country": "USA",
+    "date": "2020-08-26",
+    "fine_location": "SJ",
+    "location": "Los Angeles"
+  },
+  "SRR14530778": {
+    "country": "USA",
+    "date": "2020-08-19",
+    "fine_location": "SJ",
+    "location": "Los Angeles"
+  },
+  "SRR14530779": {
+    "country": "USA",
+    "date": "2020-08-18",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR14530780": {
+    "country": "USA",
+    "date": "2020-08-12",
+    "fine_location": "SJ",
+    "location": "Los Angeles"
+  },
+  "SRR14530781": {
+    "country": "USA",
+    "date": "2020-10-28",
+    "fine_location": "SJ",
+    "location": "Los Angeles"
+  },
+  "SRR14530782": {
+    "country": "USA",
+    "date": "2020-10-21",
+    "fine_location": "SJ",
+    "location": "Los Angeles"
+  },
+  "SRR14530783": {
+    "country": "USA",
+    "date": "2020-10-14",
+    "fine_location": "SJ",
+    "location": "Los Angeles"
+  },
+  "SRR14530784": {
+    "country": "USA",
+    "date": "2020-10-07",
+    "fine_location": "SJ",
+    "location": "Los Angeles"
+  },
+  "SRR14530785": {
+    "country": "USA",
+    "date": "2020-09-24",
+    "fine_location": "SB",
+    "location": "Los Angeles"
+  },
+  "SRR14530786": {
+    "country": "USA",
+    "date": "2020-09-10",
+    "fine_location": "SB",
+    "location": "Los Angeles"
+  },
+  "SRR14530787": {
+    "country": "USA",
+    "date": "2020-08-27",
+    "fine_location": "SB",
+    "location": "Los Angeles"
+  },
+  "SRR14530788": {
+    "country": "USA",
+    "date": "2020-08-13",
+    "fine_location": "SB",
+    "location": "Los Angeles"
+  },
+  "SRR14530789": {
+    "country": "USA",
+    "date": "2020-10-22",
+    "fine_location": "SB",
+    "location": "Los Angeles"
+  },
+  "SRR14530790": {
+    "country": "USA",
+    "date": "2020-08-11",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR14530791": {
+    "country": "USA",
+    "date": "2020-09-24",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR14530792": {
+    "country": "USA",
+    "date": "2020-09-10",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR14530793": {
+    "country": "USA",
+    "date": "2020-08-27",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR14530794": {
+    "country": "USA",
+    "date": "2020-08-13",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR14530795": {
+    "country": "USA",
+    "date": "2020-10-22",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR14530796": {
+    "country": "USA",
+    "date": "2020-09-30",
+    "fine_location": "OC",
+    "location": "Los Angeles"
+  },
+  "SRR14530797": {
+    "country": "USA",
+    "date": "2020-09-23",
+    "fine_location": "OC",
+    "location": "Los Angeles"
+  },
+  "SRR14530798": {
+    "country": "USA",
+    "date": "2020-09-16",
+    "fine_location": "OC",
+    "location": "Los Angeles"
+  },
+  "SRR14530799": {
+    "country": "USA",
+    "date": "2020-09-03",
+    "fine_location": "OC",
+    "location": "Los Angeles"
+  },
+  "SRR14530800": {
+    "country": "USA",
+    "date": "2020-09-02",
+    "fine_location": "OC",
+    "location": "Los Angeles"
+  },
+  "SRR14530801": {
+    "country": "USA",
+    "date": "2020-10-27",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR14530802": {
+    "country": "USA",
+    "date": "2020-08-26",
+    "fine_location": "OC",
+    "location": "Los Angeles"
+  },
+  "SRR14530803": {
+    "country": "USA",
+    "date": "2020-08-19",
+    "fine_location": "OC",
+    "location": "Los Angeles"
+  },
+  "SRR14530804": {
+    "country": "USA",
+    "date": "2020-08-12",
+    "fine_location": "OC",
+    "location": "Los Angeles"
+  },
+  "SRR14530805": {
+    "country": "USA",
+    "date": "2020-10-07",
+    "fine_location": "OC",
+    "location": "Los Angeles"
+  },
+  "SRR14530806": {
+    "country": "USA",
+    "date": "2020-09-11",
+    "fine_location": "NC",
+    "location": "Los Angeles"
+  },
+  "SRR14530807": {
+    "country": "USA",
+    "date": "2020-08-28",
+    "fine_location": "NC",
+    "location": "Los Angeles"
+  },
+  "SRR14530808": {
+    "country": "USA",
+    "date": "2020-08-14",
+    "fine_location": "NC",
+    "location": "Los Angeles"
+  },
+  "SRR14530809": {
+    "country": "USA",
+    "date": "2020-10-23",
+    "fine_location": "NC",
+    "location": "Los Angeles"
+  },
+  "SRR14530810": {
+    "country": "USA",
+    "date": "2020-10-09",
+    "fine_location": "NC",
+    "location": "Los Angeles"
+  },
+  "SRR14530811": {
+    "country": "USA",
+    "date": "2020-09-22",
+    "fine_location": "JWPCP",
+    "location": "Los Angeles"
+  },
+  "SRR14530812": {
+    "country": "USA",
+    "date": "2020-10-20",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR14530813": {
+    "country": "USA",
+    "date": "2020-09-15",
+    "fine_location": "JWPCP",
+    "location": "Los Angeles"
+  },
+  "SRR14530814": {
+    "country": "USA",
+    "date": "2020-09-08",
+    "fine_location": "JWPCP",
+    "location": "Los Angeles"
+  },
+  "SRR14530815": {
+    "country": "USA",
+    "date": "2020-09-23",
+    "fine_location": "SJ",
+    "location": "Los Angeles"
+  },
+  "SRR14530816": {
+    "country": "USA",
+    "date": "2020-11-04",
+    "fine_location": "SJ",
+    "location": "Los Angeles"
+  },
+  "SRR14530817": {
+    "country": "USA",
+    "date": "2020-11-18",
+    "fine_location": "SJ",
+    "location": "Los Angeles"
+  },
+  "SRR14530818": {
+    "country": "USA",
+    "date": "2020-10-20",
+    "fine_location": "JW",
+    "location": "Los Angeles"
+  },
+  "SRR14530819": {
+    "country": "USA",
+    "date": "2020-10-13",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR14530820": {
+    "country": "USA",
+    "date": "2020-10-02",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR14530821": {
+    "country": "USA",
+    "date": "2020-11-11",
+    "fine_location": "SJ",
+    "location": "Los Angeles"
+  },
+  "SRR14530822": {
+    "country": "USA",
+    "date": "2020-11-05",
+    "fine_location": "SB",
+    "location": "Los Angeles"
+  },
+  "SRR14530823": {
+    "country": "USA",
+    "date": "2020-10-08",
+    "fine_location": "SB",
+    "location": "Los Angeles"
+  },
+  "SRR14530824": {
+    "country": "USA",
+    "date": "2020-12-28",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR14530825": {
+    "country": "USA",
+    "date": "2020-12-22",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR14530826": {
+    "country": "USA",
+    "date": "2020-12-14",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR14530827": {
+    "country": "USA",
+    "date": "2020-11-05",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR14530828": {
+    "country": "USA",
+    "date": "2020-09-01",
+    "fine_location": "JWPCP",
+    "location": "Los Angeles"
+  },
+  "SRR14530829": {
+    "country": "USA",
+    "date": "2020-11-30",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR14530830": {
+    "country": "USA",
+    "date": "2020-11-29",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR14530831": {
+    "country": "USA",
+    "date": "2021-01-04",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR14530832": {
+    "country": "USA",
+    "date": "2021-01-03",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR14530833": {
+    "country": "USA",
+    "date": "2020-12-21",
+    "fine_location": "OC",
+    "location": "Los Angeles"
+  },
+  "SRR14530834": {
+    "country": "USA",
+    "date": "2020-12-14",
+    "fine_location": "OC",
+    "location": "Los Angeles"
+  },
+  "SRR14530835": {
+    "country": "USA",
+    "date": "2020-11-04",
+    "fine_location": "OC",
+    "location": "Los Angeles"
+  },
+  "SRR14530836": {
+    "country": "USA",
+    "date": "2020-11-11",
+    "fine_location": "OC",
+    "location": "Los Angeles"
+  },
+  "SRR14530837": {
+    "country": "USA",
+    "date": "2020-09-29",
+    "fine_location": "JWPCP",
+    "location": "Los Angeles"
+  },
+  "SRR14530838": {
+    "country": "USA",
+    "date": "2020-11-03",
+    "fine_location": "JWPCP",
+    "location": "Los Angeles"
+  },
+  "SRR14530839": {
+    "country": "USA",
+    "date": "2020-08-25",
+    "fine_location": "JWPCP",
+    "location": "Los Angeles"
+  },
+  "SRR14530840": {
+    "country": "USA",
+    "date": "2020-11-17",
+    "fine_location": "JWPCP",
+    "location": "Los Angeles"
+  },
+  "SRR14530841": {
+    "country": "USA",
+    "date": "2020-11-10",
+    "fine_location": "JWPCP",
+    "location": "Los Angeles"
+  },
+  "SRR14530842": {
+    "country": "USA",
+    "date": "2020-09-29",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR14530843": {
+    "country": "USA",
+    "date": "2020-09-22",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR14530844": {
+    "country": "USA",
+    "date": "2020-12-29",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR14530845": {
+    "country": "USA",
+    "date": "2020-12-22",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR14530846": {
+    "country": "USA",
+    "date": "2020-12-04",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR14530847": {
+    "country": "USA",
+    "date": "2020-11-03",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR14530848": {
+    "country": "USA",
+    "date": "2020-11-24",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR14530849": {
+    "country": "USA",
+    "date": "2021-01-03",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR14530850": {
+    "country": "USA",
+    "date": "2020-08-18",
+    "fine_location": "JWPCP",
+    "location": "Los Angeles"
   },
   "SRR14530851": {
     "country": "USA",
@@ -33380,6 +34050,12 @@ sample_metadata={
     "location": "Los Angeles",
     "reads": 8153083
   },
+  "SRR14530861": {
+    "country": "USA",
+    "date": "2020-08-11",
+    "fine_location": "JWPCP",
+    "location": "Los Angeles"
+  },
   "SRR14530862": {
     "country": "USA",
     "date": "2020-11-30",
@@ -33449,6 +34125,12 @@ sample_metadata={
     "fine_location": "OC",
     "location": "Los Angeles",
     "reads": 10523877
+  },
+  "SRR14530872": {
+    "country": "USA",
+    "date": "2020-10-13",
+    "fine_location": "JWPCP",
+    "location": "Los Angeles"
   },
   "SRR14530873": {
     "country": "USA",
@@ -33520,6 +34202,12 @@ sample_metadata={
     "location": "Los Angeles",
     "reads": 11504066
   },
+  "SRR14530883": {
+    "country": "USA",
+    "date": "2020-10-06",
+    "fine_location": "JWPCP",
+    "location": "Los Angeles"
+  },
   "SRR14530884": {
     "country": "USA",
     "date": "2020-12-22",
@@ -33589,6 +34277,12 @@ sample_metadata={
     "fine_location": "SJ",
     "location": "Los Angeles",
     "reads": 3829748
+  },
+  "SRR14530894": {
+    "country": "USA",
+    "date": "2020-10-27",
+    "fine_location": "JW",
+    "location": "Los Angeles"
   },
   "SRR14530895": {
     "country": "USA",
@@ -33754,6 +34448,1086 @@ sample_metadata={
     "location": "Maryland",
     "na_type": "DNA",
     "reads": 41788792
+  },
+  "SRR18340958": {
+    "country": "USA",
+    "date": "2021-04-08",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18340959": {
+    "country": "USA",
+    "date": "2021-04-06",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18340960": {
+    "country": "USA",
+    "date": "2021-04-04",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18340961": {
+    "country": "USA",
+    "date": "2021-04-29",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18340962": {
+    "country": "USA",
+    "date": "2021-04-26",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18340963": {
+    "country": "USA",
+    "date": "2021-04-25",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18340964": {
+    "country": "USA",
+    "date": "2021-04-22",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18340965": {
+    "country": "USA",
+    "date": "2021-04-15",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18340966": {
+    "country": "USA",
+    "date": "2021-03-09",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18340967": {
+    "country": "USA",
+    "date": "2020-11-16",
+    "fine_location": "ESC",
+    "location": "Los Angeles"
+  },
+  "SRR18340968": {
+    "country": "USA",
+    "date": "2021-03-07",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18340969": {
+    "country": "USA",
+    "date": "2021-03-04",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18340970": {
+    "country": "USA",
+    "date": "2021-03-31",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18340971": {
+    "country": "USA",
+    "date": "2021-03-30",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18340972": {
+    "country": "USA",
+    "date": "2021-03-29",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18340973": {
+    "country": "USA",
+    "date": "2021-03-25",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18340974": {
+    "country": "USA",
+    "date": "2021-03-23",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18340975": {
+    "country": "USA",
+    "date": "2021-03-21",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18340976": {
+    "country": "USA",
+    "date": "2021-03-02",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18340977": {
+    "country": "USA",
+    "date": "2021-03-18",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18340978": {
+    "country": "USA",
+    "date": "2020-10-05",
+    "fine_location": "ESC",
+    "location": "Los Angeles"
+  },
+  "SRR18340979": {
+    "country": "USA",
+    "date": "2021-03-16",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18340980": {
+    "country": "USA",
+    "date": "2021-03-14",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18340981": {
+    "country": "USA",
+    "date": "2021-03-11",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18340982": {
+    "country": "USA",
+    "date": "2021-02-09",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18340983": {
+    "country": "USA",
+    "date": "2021-02-07",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18340984": {
+    "country": "USA",
+    "date": "2021-02-04",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18340985": {
+    "country": "USA",
+    "date": "2021-02-28",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18340986": {
+    "country": "USA",
+    "date": "2020-08-10",
+    "fine_location": "ESC",
+    "location": "Los Angeles"
+  },
+  "SRR18340987": {
+    "country": "USA",
+    "date": "2021-07-05",
+    "fine_location": "ESC",
+    "location": "Los Angeles"
+  },
+  "SRR18340988": {
+    "country": "USA",
+    "date": "2021-07-19",
+    "fine_location": "ESC",
+    "location": "Los Angeles"
+  },
+  "SRR18340989": {
+    "country": "USA",
+    "date": "2021-07-12",
+    "fine_location": "ESC",
+    "location": "Los Angeles"
+  },
+  "SRR18340990": {
+    "country": "USA",
+    "date": "2021-06-09",
+    "fine_location": "ESC",
+    "location": "Los Angeles"
+  },
+  "SRR18340991": {
+    "country": "USA",
+    "date": "2021-06-24",
+    "fine_location": "ESC",
+    "location": "Los Angeles"
+  },
+  "SRR18340992": {
+    "country": "USA",
+    "date": "2021-06-14",
+    "fine_location": "ESC",
+    "location": "Los Angeles"
+  },
+  "SRR18340993": {
+    "country": "USA",
+    "date": "2021-05-31",
+    "fine_location": "ESC",
+    "location": "Los Angeles"
+  },
+  "SRR18340994": {
+    "country": "USA",
+    "date": "2021-01-04",
+    "fine_location": "ESC",
+    "location": "Los Angeles"
+  },
+  "SRR18340995": {
+    "country": "USA",
+    "date": "2021-05-24",
+    "fine_location": "ESC",
+    "location": "Los Angeles"
+  },
+  "SRR18340996": {
+    "country": "USA",
+    "date": "2021-05-10",
+    "fine_location": "ESC",
+    "location": "Los Angeles"
+  },
+  "SRR18340997": {
+    "country": "USA",
+    "date": "2021-04-05",
+    "fine_location": "ESC",
+    "location": "Los Angeles"
+  },
+  "SRR18340998": {
+    "country": "USA",
+    "date": "2021-04-26",
+    "fine_location": "ESC",
+    "location": "Los Angeles"
+  },
+  "SRR18340999": {
+    "country": "USA",
+    "date": "2021-04-19",
+    "fine_location": "ESC",
+    "location": "Los Angeles"
+  },
+  "SRR18341000": {
+    "country": "USA",
+    "date": "2021-04-12",
+    "fine_location": "ESC",
+    "location": "Los Angeles"
+  },
+  "SRR18341001": {
+    "country": "USA",
+    "date": "2021-03-08",
+    "fine_location": "ESC",
+    "location": "Los Angeles"
+  },
+  "SRR18341002": {
+    "country": "USA",
+    "date": "2021-03-29",
+    "fine_location": "ESC",
+    "location": "Los Angeles"
+  },
+  "SRR18341003": {
+    "country": "USA",
+    "date": "2021-03-22",
+    "fine_location": "ESC",
+    "location": "Los Angeles"
+  },
+  "SRR18341004": {
+    "country": "USA",
+    "date": "2021-03-17",
+    "fine_location": "ESC",
+    "location": "Los Angeles"
+  },
+  "SRR18341005": {
+    "country": "USA",
+    "date": "2021-01-25",
+    "fine_location": "ESC",
+    "location": "Los Angeles"
+  },
+  "SRR18341006": {
+    "country": "USA",
+    "date": "2021-03-01",
+    "fine_location": "ESC",
+    "location": "Los Angeles"
+  },
+  "SRR18341007": {
+    "country": "USA",
+    "date": "2021-02-08",
+    "fine_location": "ESC",
+    "location": "Los Angeles"
+  },
+  "SRR18341008": {
+    "country": "USA",
+    "date": "2021-08-03",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR18341009": {
+    "country": "USA",
+    "date": "2021-07-05",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR18341010": {
+    "country": "USA",
+    "date": "2021-07-29",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR18341011": {
+    "country": "USA",
+    "date": "2021-07-25",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR18341012": {
+    "country": "USA",
+    "date": "2021-07-19",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR18341013": {
+    "country": "USA",
+    "date": "2021-07-12",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR18341014": {
+    "country": "USA",
+    "date": "2021-02-23",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18341015": {
+    "country": "USA",
+    "date": "2021-02-21",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18341016": {
+    "country": "USA",
+    "date": "2021-02-02",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18341017": {
+    "country": "USA",
+    "date": "2020-10-26",
+    "fine_location": "ESC",
+    "location": "Los Angeles"
+  },
+  "SRR18341018": {
+    "country": "USA",
+    "date": "2021-02-18",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18341019": {
+    "country": "USA",
+    "date": "2021-02-16",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18341020": {
+    "country": "USA",
+    "date": "2021-02-15",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18341021": {
+    "country": "USA",
+    "date": "2021-02-10",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18341022": {
+    "country": "USA",
+    "date": "2021-01-07",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18341023": {
+    "country": "USA",
+    "date": "2021-01-05",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18341024": {
+    "country": "USA",
+    "date": "2021-01-31",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18341025": {
+    "country": "USA",
+    "date": "2021-01-28",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18341026": {
+    "country": "USA",
+    "date": "2021-01-26",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18341027": {
+    "country": "USA",
+    "date": "2021-01-24",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18341028": {
+    "country": "USA",
+    "date": "2020-10-19",
+    "fine_location": "ESC",
+    "location": "Los Angeles"
+  },
+  "SRR18341029": {
+    "country": "USA",
+    "date": "2021-01-21",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18341030": {
+    "country": "USA",
+    "date": "2021-01-19",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18341031": {
+    "country": "USA",
+    "date": "2021-01-14",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18341032": {
+    "country": "USA",
+    "date": "2021-01-12",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18341033": {
+    "country": "USA",
+    "date": "2021-01-10",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18341034": {
+    "country": "USA",
+    "date": "2020-09-07",
+    "fine_location": "ESC",
+    "location": "Los Angeles"
+  },
+  "SRR18341035": {
+    "country": "USA",
+    "date": "2020-09-21",
+    "fine_location": "ESC",
+    "location": "Los Angeles"
+  },
+  "SRR18341036": {
+    "country": "USA",
+    "date": "2020-09-14",
+    "fine_location": "ESC",
+    "location": "Los Angeles"
+  },
+  "SRR18341037": {
+    "country": "USA",
+    "date": "2020-08-31",
+    "fine_location": "ESC",
+    "location": "Los Angeles"
+  },
+  "SRR18341038": {
+    "country": "USA",
+    "date": "2020-08-03",
+    "fine_location": "ESC",
+    "location": "Los Angeles"
+  },
+  "SRR18341039": {
+    "country": "USA",
+    "date": "2020-10-12",
+    "fine_location": "ESC",
+    "location": "Los Angeles"
+  },
+  "SRR18341040": {
+    "country": "USA",
+    "date": "2020-08-24",
+    "fine_location": "ESC",
+    "location": "Los Angeles"
+  },
+  "SRR18341041": {
+    "country": "USA",
+    "date": "2020-08-17",
+    "fine_location": "ESC",
+    "location": "Los Angeles"
+  },
+  "SRR18341042": {
+    "country": "USA",
+    "date": "2021-03-03",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR18341043": {
+    "country": "USA",
+    "date": "2021-03-29",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR18341044": {
+    "country": "USA",
+    "date": "2021-03-28",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR18341045": {
+    "country": "USA",
+    "date": "2021-03-24",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR18341046": {
+    "country": "USA",
+    "date": "2021-03-22",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR18341047": {
+    "country": "USA",
+    "date": "2021-03-21",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR18341048": {
+    "country": "USA",
+    "date": "2021-03-18",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR18341049": {
+    "country": "USA",
+    "date": "2021-03-15",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR18341050": {
+    "country": "USA",
+    "date": "2021-03-14",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR18341051": {
+    "country": "USA",
+    "date": "2020-12-28",
+    "fine_location": "ESC",
+    "location": "Los Angeles"
+  },
+  "SRR18341052": {
+    "country": "USA",
+    "date": "2021-03-10",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR18341053": {
+    "country": "USA",
+    "date": "2021-03-01",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR18341054": {
+    "country": "USA",
+    "date": "2021-02-08",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR18341055": {
+    "country": "USA",
+    "date": "2021-02-07",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR18341056": {
+    "country": "USA",
+    "date": "2021-02-03",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR18341057": {
+    "country": "USA",
+    "date": "2021-02-28",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR18341058": {
+    "country": "USA",
+    "date": "2021-02-22",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR18341059": {
+    "country": "USA",
+    "date": "2021-02-21",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR18341060": {
+    "country": "USA",
+    "date": "2021-02-17",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR18341061": {
+    "country": "USA",
+    "date": "2021-02-15",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR18341062": {
+    "country": "USA",
+    "date": "2020-12-21",
+    "fine_location": "ESC",
+    "location": "Los Angeles"
+  },
+  "SRR18341063": {
+    "country": "USA",
+    "date": "2021-02-14",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR18341064": {
+    "country": "USA",
+    "date": "2021-02-10",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR18341065": {
+    "country": "USA",
+    "date": "2021-02-01",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR18341066": {
+    "country": "USA",
+    "date": "2021-01-06",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR18341067": {
+    "country": "USA",
+    "date": "2021-01-31",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR18341068": {
+    "country": "USA",
+    "date": "2021-01-27",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR18341069": {
+    "country": "USA",
+    "date": "2021-01-25",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR18341070": {
+    "country": "USA",
+    "date": "2021-05-04",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18341071": {
+    "country": "USA",
+    "date": "2021-05-31",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18341072": {
+    "country": "USA",
+    "date": "2021-05-25",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18341073": {
+    "country": "USA",
+    "date": "2021-05-24",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18341074": {
+    "country": "USA",
+    "date": "2021-05-23",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18341075": {
+    "country": "USA",
+    "date": "2021-05-20",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18341076": {
+    "country": "USA",
+    "date": "2021-05-02",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18341077": {
+    "country": "USA",
+    "date": "2021-05-18",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18341078": {
+    "country": "USA",
+    "date": "2021-05-16",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18341079": {
+    "country": "USA",
+    "date": "2021-05-13",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18341080": {
+    "country": "USA",
+    "date": "2020-11-02",
+    "fine_location": "ESC",
+    "location": "Los Angeles"
+  },
+  "SRR18341081": {
+    "country": "USA",
+    "date": "2021-05-11",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18341082": {
+    "country": "USA",
+    "date": "2021-06-07",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR18341083": {
+    "country": "USA",
+    "date": "2021-06-28",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR18341084": {
+    "country": "USA",
+    "date": "2021-06-21",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR18341085": {
+    "country": "USA",
+    "date": "2021-06-02",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR18341086": {
+    "country": "USA",
+    "date": "2021-02-22",
+    "fine_location": "ESC",
+    "location": "Los Angeles"
+  },
+  "SRR18341087": {
+    "country": "USA",
+    "date": "2021-06-14",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR18341088": {
+    "country": "USA",
+    "date": "2021-05-09",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR18341089": {
+    "country": "USA",
+    "date": "2021-05-05",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR18341090": {
+    "country": "USA",
+    "date": "2021-05-04",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR18341091": {
+    "country": "USA",
+    "date": "2021-05-31",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR18341092": {
+    "country": "USA",
+    "date": "2021-05-03",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR18341093": {
+    "country": "USA",
+    "date": "2021-05-24",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR18341094": {
+    "country": "USA",
+    "date": "2021-05-17",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR18341095": {
+    "country": "USA",
+    "date": "2021-05-12",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR18341096": {
+    "country": "USA",
+    "date": "2021-05-10",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR18341097": {
+    "country": "USA",
+    "date": "2021-02-15",
+    "fine_location": "ESC",
+    "location": "Los Angeles"
+  },
+  "SRR18341098": {
+    "country": "USA",
+    "date": "2021-04-07",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR18341099": {
+    "country": "USA",
+    "date": "2021-04-05",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR18341100": {
+    "country": "USA",
+    "date": "2021-04-04",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR18341101": {
+    "country": "USA",
+    "date": "2021-04-28",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR18341102": {
+    "country": "USA",
+    "date": "2021-04-26",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR18341103": {
+    "country": "USA",
+    "date": "2021-04-25",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR18341104": {
+    "country": "USA",
+    "date": "2021-04-21",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR18341105": {
+    "country": "USA",
+    "date": "2021-04-14",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR18341106": {
+    "country": "USA",
+    "date": "2021-03-08",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR18341107": {
+    "country": "USA",
+    "date": "2021-03-07",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR18341108": {
+    "country": "USA",
+    "date": "2020-12-07",
+    "fine_location": "ESC",
+    "location": "Los Angeles"
+  },
+  "SRR18341109": {
+    "country": "USA",
+    "date": "2021-03-31",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR18341110": {
+    "country": "USA",
+    "date": "2021-01-24",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR18341111": {
+    "country": "USA",
+    "date": "2021-01-20",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR18341112": {
+    "country": "USA",
+    "date": "2021-01-18",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR18341113": {
+    "country": "USA",
+    "date": "2020-12-14",
+    "fine_location": "ESC",
+    "location": "Los Angeles"
+  },
+  "SRR18341114": {
+    "country": "USA",
+    "date": "2021-01-17",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR18341115": {
+    "country": "USA",
+    "date": "2021-01-14",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR18341116": {
+    "country": "USA",
+    "date": "2021-01-13",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR18341117": {
+    "country": "USA",
+    "date": "2021-01-12",
+    "fine_location": "PL",
+    "location": "Los Angeles"
+  },
+  "SRR18341118": {
+    "country": "USA",
+    "date": "2021-07-08",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18341119": {
+    "country": "USA",
+    "date": "2021-07-29",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18341120": {
+    "country": "USA",
+    "date": "2021-07-22",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18341121": {
+    "country": "USA",
+    "date": "2021-07-15",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18341122": {
+    "country": "USA",
+    "date": "2021-07-13",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18341123": {
+    "country": "USA",
+    "date": "2021-07-01",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18341124": {
+    "country": "USA",
+    "date": "2020-11-30",
+    "fine_location": "ESC",
+    "location": "Los Angeles"
+  },
+  "SRR18341125": {
+    "country": "USA",
+    "date": "2021-06-06",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18341126": {
+    "country": "USA",
+    "date": "2021-06-03",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18341127": {
+    "country": "USA",
+    "date": "2021-06-27",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18341128": {
+    "country": "USA",
+    "date": "2021-06-24",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18341129": {
+    "country": "USA",
+    "date": "2021-06-20",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18341130": {
+    "country": "USA",
+    "date": "2021-06-15",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18341131": {
+    "country": "USA",
+    "date": "2021-06-10",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18341132": {
+    "country": "USA",
+    "date": "2021-06-01",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18341133": {
+    "country": "USA",
+    "date": "2021-05-09",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18341134": {
+    "country": "USA",
+    "date": "2021-05-06",
+    "fine_location": "HTP",
+    "location": "Los Angeles"
+  },
+  "SRR18341135": {
+    "country": "USA",
+    "date": "2020-11-23",
+    "fine_location": "ESC",
+    "location": "Los Angeles"
+  },
+  "SRR18341136": {
+    "country": "USA",
+    "date": "2021-01-18",
+    "fine_location": "ESC",
+    "location": "Los Angeles"
+  },
+  "SRR18341137": {
+    "country": "USA",
+    "date": "2021-01-11",
+    "fine_location": "ESC",
+    "location": "Los Angeles"
   },
   "SRR21374446": {
     "country": "USA",
@@ -37022,6 +38796,17 @@ bioprojects={
     "SRR12204851"
   ],
   "PRJNA661613": [
+    "SRR12596165",
+    "SRR12596166",
+    "SRR12596167",
+    "SRR12596168",
+    "SRR12596169",
+    "SRR12596170",
+    "SRR12596171",
+    "SRR12596172",
+    "SRR12596173",
+    "SRR12596174",
+    "SRR12596175",
     "SRR23998353",
     "SRR23998354",
     "SRR23998355",
@@ -37394,7 +39179,7 @@ papers={
   },
   "Johnson 2023": {
     "link": "personal communication",
-    "na_type": "DNA+RNA",
+    "na_type": "RNA",
     "projects": [
       "MJCOMO1"
     ]
