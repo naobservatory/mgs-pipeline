@@ -465,6 +465,11 @@ function manually_expand(taxid) {
   redisplay();
 }
 
+function manually_collapse(taxid) {
+  manually_expanded_taxids.delete(taxid);
+  redisplay();
+}
+
 function refresh_taxonomic_expansion() {
   manually_expanded_taxids.clear();
   redisplay();
@@ -1012,6 +1017,24 @@ function redisplay() {
     return false;
   }
 
+  function has_visible_children(target_taxid, node=tree) {
+    const taxid = node[0];
+    if (target_taxid == taxid) {
+      for (let i = 1; i < node.length; i++) {
+        if (visible_taxonomic_nodes.has(node[i][0])) {
+          return true;
+        }
+      }
+      return false;
+    }
+    for (let i = 1; i < node.length; i++) {
+      if (has_visible_children(target_taxid, node[i])) {
+        return true;
+      }
+    }
+    return false;
+  }
+
   function render_subtree(node=subtree, depth=0) {
     if (!node || !node.length) return;
 
@@ -1025,6 +1048,10 @@ function redisplay() {
       const button_expand = e("button", "+");
       button_expand.onclick = function () { manually_expand(taxid) };
       td_expand_button.appendChild(button_expand);
+    } else if (has_visible_children(taxid)) {
+      const button_collapse = e("button", "\u2212");
+      button_collapse.onclick = function () { manually_collapse(taxid) };
+      td_expand_button.appendChild(button_collapse);
     }
     tr.appendChild(td_expand_button);
 
