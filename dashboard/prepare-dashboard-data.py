@@ -152,7 +152,7 @@ for project in projects:
 # virus -> sample -> count
 virus_sample_counts = defaultdict(Counter)
 
-# sample -> {reads, date, country, location, fine_location, na_type}
+# sample -> {metadata}
 sample_metadata = defaultdict(dict)
 for project in projects:
     project_total = 0
@@ -169,16 +169,52 @@ for project in projects:
 
             if project in papers["Rothman 2021"]["projects"]:
                 sample, date, wtp, is_enriched = line.split("\t")
+                if wtp == "JW":
+                    # Very likely a typo for JWPCP, since the only two dates with
+                    # this abbreviation are missing for JWPCP, and there's
+                    # nothing else this would be likely to refer to.  All the
+                    # other abbreviations appear either in the paper or (in the
+                    # case of ESC) in
+                    # https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9387120/
+                    wtp = "JWPCP"
+
                 sample_metadata[sample]["date"] = date
                 sample_metadata[sample]["country"] = "USA"
                 sample_metadata[sample]["location"] = "Los Angeles"
+                sample_metadata[sample]["county"] = {
+                    # Hyperion
+                    "HTP": "Los Angeles",
+                    # San Jose Creek
+                    "SJ": "Los Angeles",
+                    # Joint Water Pollution Control Plant
+                    "JWPCP": "Los Angeles",
+                    # Orange County
+                    "OC": "Orange",
+                    # Point Loma
+                    "PL": "San Diego",
+                    # South Bay
+                    "SB": "San Diego",
+                    # North City
+                    "NC": "San Diego",
+                    # Escondido Hale Avenue Resource Recovery Facility
+                    "ESC": "San Diego",
+                }[wtp]
                 sample_metadata[sample]["fine_location"] = wtp
+                sample_metadata[sample]["is_enriched"] = is_enriched == "1"
             elif project in papers["Crits-Christoph 2021"]["projects"]:
                 sample, municipality, date, method, sequencing = line.split("\t")
                 sample_metadata[sample]["date"] = date
                 sample_metadata[sample]["country"] = "USA"
                 sample_metadata[sample]["location"] = "San Francisco"
+                sample_metadata[sample]["county"] = {
+                    "Berkeley": "Alameda",
+                    "Marin": "Marin",
+                    "Oakland": "Alameda",
+                    "SF": "San Francisco",
+                }[municipality]
                 sample_metadata[sample]["fine_location"] = municipality
+                sample_metadata[sample]["method"] = method
+                sample_metadata[sample]["is_enriched"] = sequencing == "enriched"
             elif project in papers["Brumfield 2022"]["projects"]:
                 sample, na_type, date = line.split("\t")
                 sample_metadata[sample]["date"] = date

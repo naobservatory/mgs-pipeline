@@ -17,7 +17,8 @@ virus_sample_counts={
     "ERR4682852": 2,
     "ERR7850089": 1,
     "SRR18218722": 1,
-    "SRR18218724": 2
+    "SRR18218724": 2,
+    "SRR18340990": 1
   },
   "10244": {
     "ERR1713344": 1,
@@ -74,7 +75,9 @@ virus_sample_counts={
     "ERR4682911": 2,
     "ERR8977342": 1,
     "ERR8977372": 1,
-    "ERR8977425": 1
+    "ERR8977425": 1,
+    "SRR18341017": 1,
+    "SRR18341039": 1
   },
   "10258": {
     "ERR1414247": 2,
@@ -1139,6 +1142,13 @@ virus_sample_counts={
     "SRR14530885": 4,
     "SRR14530886": 1,
     "SRR14530890": 1,
+    "SRR18340994": 10,
+    "SRR18340998": 3,
+    "SRR18340999": 6,
+    "SRR18341002": 4,
+    "SRR18341041": 2,
+    "SRR18341086": 1,
+    "SRR18341124": 3,
     "SRR21374467": 1,
     "SRR21374492": 1,
     "SRR21452136": 1,
@@ -1348,6 +1358,11 @@ virus_sample_counts={
     "ERR9855091": 2,
     "ERR9855097": 3,
     "ERR9855099": 1,
+    "SRR18340996": 1,
+    "SRR18341028": 2,
+    "SRR18341040": 1,
+    "SRR18341041": 2,
+    "SRR18341062": 1,
     "SRR6837552": 8,
     "SRR6837553": 2,
     "SRR6837554": 4,
@@ -2076,6 +2091,9 @@ virus_sample_counts={
     "ERR9855096": 1,
     "ERR9855097": 1,
     "SRR18218732": 1,
+    "SRR18340990": 1,
+    "SRR18340993": 1,
+    "SRR18341001": 1,
     "SRR6837558": 2,
     "SRR6837566": 2,
     "SRR6837570": 4,
@@ -2146,6 +2164,7 @@ virus_sample_counts={
     "ERR8977400": 1,
     "ERR8977404": 1,
     "ERR8977428": 1,
+    "SRR18341136": 2,
     "SRR21374600": 1,
     "SRR6837549": 4,
     "SRR6837555": 12,
@@ -3184,6 +3203,17 @@ virus_sample_counts={
     "SRR14530887": 1,
     "SRR14530889": 2,
     "SRR18218730": 5,
+    "SRR18340994": 9,
+    "SRR18341005": 2,
+    "SRR18341006": 2,
+    "SRR18341007": 1,
+    "SRR18341017": 1,
+    "SRR18341028": 3,
+    "SRR18341034": 33,
+    "SRR18341039": 11,
+    "SRR18341041": 2,
+    "SRR18341097": 2,
+    "SRR18341124": 1,
     "SRR21374500": 1,
     "SRR23998353": 1,
     "SRR23998355": 1,
@@ -3407,6 +3437,7 @@ virus_sample_counts={
     "ERR8977404": 1,
     "SRR18218722": 1,
     "SRR18218723": 1,
+    "SRR18341000": 2,
     "SRR6837551": 2
   },
   "10617": {
@@ -4861,6 +4892,19 @@ virus_sample_counts={
     "SRR18218724": 12,
     "SRR18218732": 12,
     "SRR18218733": 32,
+    "SRR18340978": 3,
+    "SRR18340986": 2,
+    "SRR18340990": 3,
+    "SRR18340996": 1,
+    "SRR18341003": 1,
+    "SRR18341004": 3,
+    "SRR18341017": 2,
+    "SRR18341028": 3,
+    "SRR18341038": 2,
+    "SRR18341041": 2,
+    "SRR18341062": 9,
+    "SRR18341080": 5,
+    "SRR18341136": 1,
     "SRR21374449": 1,
     "SRR21374487": 1,
     "SRR21374497": 1,
@@ -5228,7 +5272,8 @@ virus_sample_counts={
     "ERR9855089": 8,
     "ERR9855092": 8,
     "ERR9855095": 1,
-    "SRR14530728": 1
+    "SRR14530728": 1,
+    "SRR18341003": 1
   },
   "11020": {
     "ERR1725997": 1,
@@ -5359,7 +5404,9 @@ virus_sample_counts={
     "ERR4682783": 1,
     "ERR4682811": 1,
     "ERR4682840": 2,
-    "ERR4682885": 2
+    "ERR4682885": 2,
+    "SRR18340990": 1,
+    "SRR18340993": 2
   },
   "11216": {
     "ERR1414255": 2,
@@ -5394,7 +5441,11 @@ virus_sample_counts={
     "ERR3503301": 1
   },
   "11277": {
-    "ERR2683280": 3
+    "ERR2683280": 3,
+    "SRR18340992": 9,
+    "SRR18340993": 5,
+    "SRR18340995": 2,
+    "SRR18341001": 14
   },
   "11292": {
     "ERR3562968": 1
@@ -5431,13 +5482,25 @@ virus_sample_counts={
     "ERR4682883": 4,
     "ERR8977400": 1,
     "SRR14530740": 1,
+    "SRR18340993": 1,
+    "SRR18340999": 2,
+    "SRR18341001": 1,
+    "SRR18341002": 5,
+    "SRR18341036": 1,
+    "SRR18341086": 1,
+    "SRR18341124": 1,
     "SRR23998356": 2
+  },
+  "11709": {
+    "SRR18340999": 1,
+    "SRR18341003": 12
   },
   "11983": {
     "COMO4": 1,
     "SRR12204848": 8,
     "SRR14530882": 1,
-    "SRR14530890": 1
+    "SRR14530890": 1,
+    "SRR18341108": 1
   },
   "12063": {
     "ERR3562921": 1,
@@ -5661,6 +5724,8 @@ virus_sample_counts={
     "ERR8977382": 1,
     "ERR9855087": 2,
     "SRR12204847": 1,
+    "SRR18340990": 1,
+    "SRR18341017": 4,
     "SRR21374486": 1
   },
   "12814": {
@@ -6378,6 +6443,10 @@ virus_sample_counts={
     "ERR9855096": 1,
     "SRR12204847": 1,
     "SRR14530902": 1,
+    "SRR18340992": 5,
+    "SRR18340993": 1,
+    "SRR18340996": 1,
+    "SRR18341001": 4,
     "SRR21374516": 1
   },
   "28875": {
@@ -6394,6 +6463,10 @@ virus_sample_counts={
     "SRR18218718": 58,
     "SRR18218720": 366,
     "SRR18218730": 6,
+    "SRR18340999": 2,
+    "SRR18341002": 12,
+    "SRR18341003": 8,
+    "SRR18341006": 1,
     "SRR23998356": 4,
     "SRR23998357": 2
   },
@@ -6457,7 +6530,8 @@ virus_sample_counts={
     "ERR4682893": 2,
     "ERR8977384": 1,
     "ERR8977417": 1,
-    "ERR9855085": 1
+    "ERR9855085": 1,
+    "SRR18341038": 2
   },
   "32604": {
     "ERR1224355": 1,
@@ -6748,6 +6822,8 @@ virus_sample_counts={
     "ERR9855099": 2,
     "SRR14530748": 1,
     "SRR14530753": 1,
+    "SRR18340999": 1,
+    "SRR18341135": 1,
     "SRR21374447": 1,
     "SRR21374465": 2,
     "SRR21374466": 1,
@@ -6863,6 +6939,8 @@ virus_sample_counts={
     "ERR8977408": 1,
     "ERR8977411": 1,
     "ERR8977428": 1,
+    "SRR18340990": 1,
+    "SRR18341006": 1,
     "SRR21374606": 1,
     "SRR21374616": 1,
     "SRR6837551": 2,
@@ -6938,6 +7016,7 @@ virus_sample_counts={
     "ERR8977382": 7,
     "ERR8977408": 1,
     "ERR8977428": 1,
+    "SRR18340996": 1,
     "SRR23998354": 20,
     "SRR23998359": 3
   },
@@ -7088,6 +7167,7 @@ virus_sample_counts={
     "ERR8977420": 1,
     "ERR8977428": 1,
     "SRR12204849": 1,
+    "SRR18340990": 1,
     "SRR6837552": 2,
     "SRR6837554": 2,
     "SRR6837565": 1,
@@ -7224,7 +7304,17 @@ virus_sample_counts={
     "SRR14530889": 4,
     "SRR14530890": 1,
     "SRR14530891": 6,
-    "SRR14530893": 1
+    "SRR14530893": 1,
+    "SRR18340986": 1,
+    "SRR18340990": 3,
+    "SRR18340996": 1,
+    "SRR18340997": 2,
+    "SRR18341004": 3,
+    "SRR18341005": 18,
+    "SRR18341007": 1,
+    "SRR18341035": 1,
+    "SRR18341108": 2,
+    "SRR18341137": 5
   },
   "108098": {
     "ERR1467148": 1,
@@ -7917,6 +8007,7 @@ virus_sample_counts={
     "ERR9855096": 1,
     "SRR12596171": 8,
     "SRR12596174": 7,
+    "SRR18341062": 1,
     "SRR21374526": 1,
     "SRR21452137": 1,
     "SRR23998359": 1,
@@ -7990,6 +8081,13 @@ virus_sample_counts={
     "SRR14530891": 4,
     "SRR14530895": 1,
     "SRR14530900": 1,
+    "SRR18340978": 1,
+    "SRR18340992": 1,
+    "SRR18340993": 2,
+    "SRR18340995": 1,
+    "SRR18341035": 3,
+    "SRR18341097": 2,
+    "SRR18341137": 2,
     "SRR21452136": 1,
     "SRR23998353": 1
   },
@@ -8051,6 +8149,25 @@ virus_sample_counts={
     "SRR14530891": 15,
     "SRR14530897": 2,
     "SRR18218718": 2,
+    "SRR18340986": 3,
+    "SRR18340990": 26,
+    "SRR18340992": 4,
+    "SRR18340993": 100,
+    "SRR18340995": 191,
+    "SRR18340996": 101,
+    "SRR18340997": 16,
+    "SRR18341001": 1,
+    "SRR18341005": 34,
+    "SRR18341035": 4,
+    "SRR18341036": 2,
+    "SRR18341037": 1,
+    "SRR18341040": 1,
+    "SRR18341051": 7,
+    "SRR18341108": 3,
+    "SRR18341113": 1,
+    "SRR18341124": 1,
+    "SRR18341135": 3,
+    "SRR18341137": 25,
     "SRR21452136": 3,
     "SRR23998356": 3,
     "SRR23998358": 1
@@ -8902,6 +9019,7 @@ virus_sample_counts={
     "ERR9855095": 6,
     "ERR9855096": 14,
     "ERR9855097": 1,
+    "SRR18340996": 1,
     "SRR23998358": 1,
     "SRR23998359": 1,
     "SRR6837554": 2,
@@ -9461,6 +9579,10 @@ virus_sample_counts={
     "SRR12596175": 32,
     "SRR18218717": 1,
     "SRR18218731": 110,
+    "SRR18340992": 2,
+    "SRR18340993": 1,
+    "SRR18341001": 2,
+    "SRR18341086": 2,
     "SRR23998355": 5,
     "SRR23998356": 5
   },
@@ -11487,6 +11609,8 @@ virus_sample_counts={
     "ERR9855099": 28,
     "SRR12596171": 4,
     "SRR12596174": 1,
+    "SRR18340990": 1,
+    "SRR18340992": 1,
     "SRR23998358": 5,
     "SRR6837549": 2,
     "SRR6837550": 26,
@@ -12539,6 +12663,9 @@ virus_sample_counts={
     "ERR9855098": 5,
     "SRR12596171": 22,
     "SRR12596174": 59,
+    "SRR18341017": 1,
+    "SRR18341028": 1,
+    "SRR18341038": 1,
     "SRR21374453": 3,
     "SRR21374537": 2,
     "SRR21374548": 1,
@@ -13176,6 +13303,30 @@ virus_sample_counts={
     "SRR18218720": 64,
     "SRR18218730": 1,
     "SRR18218731": 188,
+    "SRR18340986": 2,
+    "SRR18340990": 1,
+    "SRR18340992": 23,
+    "SRR18340993": 28,
+    "SRR18340994": 1,
+    "SRR18340995": 15,
+    "SRR18340996": 5,
+    "SRR18340999": 2,
+    "SRR18341000": 2,
+    "SRR18341002": 3,
+    "SRR18341003": 2,
+    "SRR18341004": 1,
+    "SRR18341005": 21,
+    "SRR18341006": 3,
+    "SRR18341007": 2,
+    "SRR18341017": 4,
+    "SRR18341035": 13,
+    "SRR18341040": 2,
+    "SRR18341051": 11,
+    "SRR18341086": 1,
+    "SRR18341097": 2,
+    "SRR18341108": 4,
+    "SRR18341135": 4,
+    "SRR18341137": 3,
     "SRR21452136": 9,
     "SRR23998354": 3,
     "SRR23998355": 2,
@@ -13231,6 +13382,7 @@ virus_sample_counts={
     "ERR9855088": 1,
     "ERR9855099": 2,
     "SRR12204849": 1,
+    "SRR18341086": 1,
     "SRR6837550": 2,
     "SRR6837555": 4,
     "SRR6837559": 1,
@@ -13407,7 +13559,8 @@ virus_sample_counts={
     "ERR2607475": 1,
     "SRR12596171": 1,
     "SRR12596172": 3,
-    "SRR12596175": 1
+    "SRR12596175": 1,
+    "SRR18341086": 1
   },
   "234601": {
     "COMO2": 2,
@@ -13427,6 +13580,7 @@ virus_sample_counts={
     "SRR14530882": 1,
     "SRR14530884": 5,
     "SRR14530889": 1,
+    "SRR18340996": 2,
     "SRR21452136": 2
   },
   "247269": {
@@ -13535,6 +13689,9 @@ virus_sample_counts={
     "SRR14530890": 8,
     "SRR14530891": 1,
     "SRR14530896": 1,
+    "SRR18340995": 3,
+    "SRR18341036": 2,
+    "SRR18341037": 2,
     "SRR21452136": 6,
     "SRR23998357": 1,
     "SRR6837580": 1
@@ -13554,7 +13711,8 @@ virus_sample_counts={
     "ERR4682348": 1,
     "ERR4682862": 1,
     "ERR9855086": 1,
-    "SRR12596175": 1
+    "SRR12596175": 1,
+    "SRR18341051": 1
   },
   "290028": {
     "ERR1414249": 1,
@@ -13599,7 +13757,9 @@ virus_sample_counts={
     "SRR12204851": 45,
     "SRR14530855": 1,
     "SRR14530873": 1,
-    "SRR14530885": 1
+    "SRR14530885": 1,
+    "SRR18340992": 3,
+    "SRR18340996": 1
   },
   "291175": {
     "COMO2": 18,
@@ -13610,7 +13770,10 @@ virus_sample_counts={
     "SRR12204734": 125,
     "SRR12204735": 437,
     "SRR12204848": 136,
-    "SRR12204849": 21
+    "SRR12204849": 21,
+    "SRR18340993": 2,
+    "SRR18340996": 1,
+    "SRR18341086": 1
   },
   "318843": {
     "SRR6837563": 1
@@ -13691,6 +13854,7 @@ virus_sample_counts={
     "ERR8977389": 1,
     "ERR8977390": 1,
     "ERR8977410": 1,
+    "SRR18341135": 1,
     "SRR23998355": 2,
     "SRR23998357": 3
   },
@@ -13723,7 +13887,8 @@ virus_sample_counts={
     "ERR4682897": 1,
     "ERR8977425": 1,
     "ERR8977427": 1,
-    "ERR8977428": 1
+    "ERR8977428": 1,
+    "SRR18341028": 1
   },
   "333761": {
     "ERR1713386": 1,
@@ -13761,7 +13926,8 @@ virus_sample_counts={
     "ERR2683238": 1,
     "ERR3503312": 1,
     "ERR4682421": 3,
-    "ERR4682805": 1
+    "ERR4682805": 1,
+    "SRR18341086": 1
   },
   "333763": {
     "ERR1713386": 1,
@@ -14528,6 +14694,9 @@ virus_sample_counts={
     "ERR9855088": 1,
     "ERR9855090": 1,
     "ERR9855095": 1,
+    "SRR18340990": 1,
+    "SRR18341004": 1,
+    "SRR18341062": 1,
     "SRR21374458": 1,
     "SRR21374509": 2,
     "SRR21374543": 1,
@@ -14681,6 +14850,7 @@ virus_sample_counts={
     "ERR8977409": 1,
     "ERR9855088": 1,
     "ERR9855098": 1,
+    "SRR18341017": 1,
     "SRR6837576": 1
   },
   "338079": {
@@ -15187,6 +15357,20 @@ virus_sample_counts={
     "SRR14530890": 3,
     "SRR14530891": 4,
     "SRR14530899": 2,
+    "SRR18340990": 8,
+    "SRR18340992": 1,
+    "SRR18340993": 20,
+    "SRR18340995": 57,
+    "SRR18340996": 27,
+    "SRR18340997": 6,
+    "SRR18341004": 1,
+    "SRR18341005": 8,
+    "SRR18341035": 1,
+    "SRR18341039": 2,
+    "SRR18341051": 1,
+    "SRR18341108": 2,
+    "SRR18341113": 1,
+    "SRR18341137": 24,
     "SRR6837549": 2
   },
   "493803": {
@@ -15854,6 +16038,14 @@ virus_sample_counts={
     "ERR9855099": 1,
     "SRR14530760": 2,
     "SRR18218724": 2,
+    "SRR18340990": 1,
+    "SRR18340996": 1,
+    "SRR18341005": 2,
+    "SRR18341006": 1,
+    "SRR18341036": 1,
+    "SRR18341039": 1,
+    "SRR18341080": 2,
+    "SRR18341086": 2,
     "SRR21374632": 1,
     "SRR23998353": 49,
     "SRR23998354": 99,
@@ -15920,6 +16112,12 @@ virus_sample_counts={
     "SRR14530891": 20,
     "SRR14530902": 1,
     "SRR14530903": 1,
+    "SRR18340995": 5,
+    "SRR18340996": 2,
+    "SRR18341037": 2,
+    "SRR18341038": 10,
+    "SRR18341051": 5,
+    "SRR18341108": 2,
     "SRR21374551": 1,
     "SRR21374622": 1,
     "SRR21452135": 1
@@ -15980,6 +16178,18 @@ virus_sample_counts={
     "SRR14530889": 30,
     "SRR14530890": 8,
     "SRR14530891": 13,
+    "SRR18340978": 2,
+    "SRR18340986": 2,
+    "SRR18340990": 102,
+    "SRR18340992": 1201,
+    "SRR18340993": 3018,
+    "SRR18340995": 1524,
+    "SRR18340996": 261,
+    "SRR18341051": 2,
+    "SRR18341108": 11,
+    "SRR18341113": 1,
+    "SRR18341124": 1,
+    "SRR18341137": 9,
     "SRR6837549": 2
   },
   "573824": {
@@ -16094,6 +16304,7 @@ virus_sample_counts={
     "SRR12596171": 1258,
     "SRR12596174": 189,
     "SRR12596175": 31,
+    "SRR18341028": 1,
     "SRR23998354": 2,
     "SRR23998358": 3
   },
@@ -16821,6 +17032,7 @@ virus_sample_counts={
     "ERR9855098": 1,
     "SRR12596171": 1,
     "SRR12596174": 4,
+    "SRR18341038": 1,
     "SRR21374549": 2,
     "SRR23998358": 3,
     "SRR6837576": 1
@@ -16844,12 +17056,16 @@ virus_sample_counts={
     "SRR12204850": 1770,
     "SRR12204851": 1939,
     "SRR14530876": 1,
+    "SRR18341037": 1,
+    "SRR18341040": 2,
+    "SRR18341051": 1,
     "SRR23998353": 8,
     "SRR23998355": 3,
     "SRR23998356": 2
   },
   "652810": {
-    "ERR4682342": 1
+    "ERR4682342": 1,
+    "SRR18340995": 2
   },
   "682382": {
     "COMO1": 11,
@@ -16863,6 +17079,8 @@ virus_sample_counts={
     "SRR12204850": 732,
     "SRR12204851": 11,
     "SRR14530887": 2,
+    "SRR18340996": 2,
+    "SRR18341036": 2,
     "SRR23998356": 4
   },
   "683172": {
@@ -16912,6 +17130,19 @@ virus_sample_counts={
     "SRR14530891": 3,
     "SRR14530897": 2,
     "SRR14530898": 8,
+    "SRR18340986": 1,
+    "SRR18340990": 13,
+    "SRR18340992": 93,
+    "SRR18340993": 661,
+    "SRR18340995": 101,
+    "SRR18340996": 13,
+    "SRR18340997": 9,
+    "SRR18341004": 9,
+    "SRR18341005": 20,
+    "SRR18341051": 66,
+    "SRR18341108": 5,
+    "SRR18341113": 2,
+    "SRR18341137": 39,
     "SRR21452136": 1
   },
   "683174": {
@@ -16948,7 +17179,8 @@ virus_sample_counts={
     "ERR4682797": 1
   },
   "687360": {
-    "SRR17814995": 1
+    "SRR17814995": 1,
+    "SRR18340998": 1
   },
   "687361": {
     "ERR9833719": 1
@@ -17010,6 +17242,11 @@ virus_sample_counts={
     "SRR14530882": 1,
     "SRR14530885": 1,
     "SRR14530887": 1,
+    "SRR18341005": 1,
+    "SRR18341006": 1,
+    "SRR18341007": 1,
+    "SRR18341036": 1,
+    "SRR18341086": 5,
     "SRR23998354": 3
   },
   "742915": {
@@ -17246,6 +17483,7 @@ virus_sample_counts={
     "ERR4678662": 2,
     "ERR4678689": 1,
     "ERR4682437": 1,
+    "SRR18341001": 1,
     "SRR23998358": 3
   },
   "915427": {
@@ -17720,7 +17958,9 @@ virus_sample_counts={
     "ERR4682426": 1,
     "ERR4682814": 1,
     "ERR4682837": 1,
-    "SRR14530755": 1
+    "SRR14530755": 1,
+    "SRR18340993": 1,
+    "SRR18341124": 2
   },
   "1070410": {
     "ERR1713381": 1,
@@ -17833,6 +18073,7 @@ virus_sample_counts={
     "SRR12204850": 15707,
     "SRR12204851": 24154,
     "SRR14530902": 1,
+    "SRR18340996": 1,
     "SRR23998353": 2,
     "SRR23998354": 6,
     "SRR23998356": 14,
@@ -17870,7 +18111,12 @@ virus_sample_counts={
     "SRR14530882": 1,
     "SRR14530885": 4,
     "SRR14530887": 3,
-    "SRR14530888": 2
+    "SRR14530888": 2,
+    "SRR18340992": 9,
+    "SRR18340993": 17,
+    "SRR18340995": 7,
+    "SRR18340996": 115,
+    "SRR18341108": 1
   },
   "1248396": {
     "ERR1713381": 2,
@@ -17897,7 +18143,8 @@ virus_sample_counts={
   "1277649": {
     "ERR4678686": 3,
     "ERR4682834": 2,
-    "ERR8977353": 1
+    "ERR8977353": 1,
+    "SRR18341135": 2
   },
   "1280920": {
     "SRR14530858": 1
@@ -17923,6 +18170,8 @@ virus_sample_counts={
     "SRR14530888": 2,
     "SRR14530891": 1,
     "SRR18218718": 3,
+    "SRR18340996": 1,
+    "SRR18341037": 1,
     "SRR23998353": 12,
     "SRR23998354": 2,
     "SRR23998355": 5,
@@ -17973,6 +18222,7 @@ virus_sample_counts={
     "SRR12204849": 190,
     "SRR12204850": 1356,
     "SRR12204851": 1581,
+    "SRR18341040": 1,
     "SRR23998353": 5
   },
   "1332244": {
@@ -18353,7 +18603,8 @@ virus_sample_counts={
     "ERR4682406": 1,
     "ERR4682846": 1,
     "ERR8977428": 1,
-    "ERR9855098": 1
+    "ERR9855098": 1,
+    "SRR18340978": 1
   },
   "1434782": {
     "ERR1713400": 3,
@@ -18434,13 +18685,15 @@ virus_sample_counts={
     "ERR7850083": 1,
     "ERR7850097": 1,
     "ERR7850098": 1,
-    "ERR8977405": 1
+    "ERR8977405": 1,
+    "SRR18340990": 1
   },
   "1472343": {
     "ERR2592264": 1,
     "ERR2607505": 1,
     "ERR2683137": 1,
     "ERR2683216": 1,
+    "SRR18340997": 1,
     "SRR6837550": 2
   },
   "1478160": {
@@ -18473,7 +18726,8 @@ virus_sample_counts={
     "SRR12596168": 6,
     "SRR12596169": 8,
     "SRR12596170": 20,
-    "SRR12596171": 31
+    "SRR12596171": 31,
+    "SRR18341086": 2
   },
   "1511882": {
     "ERR1713353": 2,
@@ -18563,6 +18817,7 @@ virus_sample_counts={
     "SRR12596171": 759,
     "SRR12596174": 240,
     "SRR12596175": 12,
+    "SRR18340997": 1,
     "SRR23998358": 3,
     "SRR6837549": 2
   },
@@ -18582,6 +18837,8 @@ virus_sample_counts={
     "SRR12596168": 3,
     "SRR14530748": 1,
     "SRR17814995": 1,
+    "SRR18340992": 2,
+    "SRR18341005": 2,
     "SRR23998358": 3,
     "SRR23998359": 1
   },
@@ -18642,7 +18899,10 @@ virus_sample_counts={
     "SRR14530887": 1,
     "SRR14530889": 2,
     "SRR14530890": 4,
-    "SRR14530900": 1
+    "SRR14530900": 1,
+    "SRR18340990": 2,
+    "SRR18340993": 1,
+    "SRR18341035": 3
   },
   "1529918": {
     "SRR12204734": 32,
@@ -18694,6 +18954,21 @@ virus_sample_counts={
     "SRR14530891": 14,
     "SRR14530902": 4,
     "SRR18218733": 3,
+    "SRR18340986": 3,
+    "SRR18340990": 2,
+    "SRR18340992": 4,
+    "SRR18340993": 30,
+    "SRR18340995": 12,
+    "SRR18340996": 5,
+    "SRR18341005": 31,
+    "SRR18341007": 2,
+    "SRR18341035": 4,
+    "SRR18341038": 2,
+    "SRR18341040": 1,
+    "SRR18341051": 14,
+    "SRR18341108": 10,
+    "SRR18341135": 7,
+    "SRR18341137": 5,
     "SRR21452136": 1
   },
   "1529924": {
@@ -18722,6 +18997,7 @@ virus_sample_counts={
     "SRR12204849": 3019,
     "SRR12204850": 44103,
     "SRR12204851": 46215,
+    "SRR18341037": 1,
     "SRR23998353": 1,
     "SRR23998354": 1,
     "SRR23998356": 1,
@@ -18746,12 +19022,19 @@ virus_sample_counts={
     "SRR14530739": 1,
     "SRR14530745": 2,
     "SRR14530863": 1,
+    "SRR18340992": 2,
+    "SRR18341028": 1,
+    "SRR18341062": 2,
+    "SRR18341135": 1,
     "SRR23998354": 1,
     "SRR23998357": 3,
     "SRR23998359": 1
   },
   "1608083": {
-    "ERR4682440": 1
+    "ERR4682440": 1,
+    "SRR18340978": 1,
+    "SRR18341004": 1,
+    "SRR18341062": 1
   },
   "1615758": {
     "ERR1725955": 1,
@@ -18878,7 +19161,8 @@ virus_sample_counts={
     "ERR2683217": 3,
     "ERR4682798": 2,
     "ERR4682829": 1,
-    "SRR17814995": 1
+    "SRR17814995": 1,
+    "SRR18341062": 1
   },
   "1678143": {
     "ERR2683245": 1,
@@ -19332,6 +19616,26 @@ virus_sample_counts={
     "SRR14530897": 1,
     "SRR14530900": 1,
     "SRR17814995": 4,
+    "SRR18340978": 3,
+    "SRR18340990": 2,
+    "SRR18340992": 5,
+    "SRR18340993": 1,
+    "SRR18340995": 2,
+    "SRR18340996": 11,
+    "SRR18340997": 2,
+    "SRR18341004": 17,
+    "SRR18341005": 1,
+    "SRR18341028": 3,
+    "SRR18341034": 2,
+    "SRR18341035": 1,
+    "SRR18341037": 1,
+    "SRR18341038": 2,
+    "SRR18341040": 1,
+    "SRR18341041": 2,
+    "SRR18341062": 11,
+    "SRR18341080": 3,
+    "SRR18341135": 15,
+    "SRR18341137": 1,
     "SRR23998353": 5,
     "SRR23998354": 20,
     "SRR23998355": 4,
@@ -19361,6 +19665,7 @@ virus_sample_counts={
     "SRR12204847": 75,
     "SRR12204849": 17,
     "SRR17814995": 5,
+    "SRR18341051": 1,
     "SRR23998356": 1
   },
   "1862825": {
@@ -19370,6 +19675,8 @@ virus_sample_counts={
     "ERR3503320": 1,
     "SRR14530748": 2,
     "SRR17814995": 3,
+    "SRR18340992": 1,
+    "SRR18341004": 1,
     "SRR23998354": 3
   },
   "1867125": {
@@ -20315,6 +20622,19 @@ virus_sample_counts={
     "SRR14530902": 1,
     "SRR18218724": 8,
     "SRR18218732": 4,
+    "SRR18340978": 4,
+    "SRR18340986": 1,
+    "SRR18340990": 2,
+    "SRR18340997": 1,
+    "SRR18341007": 1,
+    "SRR18341017": 2,
+    "SRR18341028": 4,
+    "SRR18341038": 1,
+    "SRR18341040": 1,
+    "SRR18341041": 1,
+    "SRR18341062": 4,
+    "SRR18341080": 5,
+    "SRR18341135": 1,
     "SRR21374594": 1,
     "SRR21374606": 1,
     "SRR23998357": 2,
@@ -20383,6 +20703,29 @@ virus_sample_counts={
     "SRR14530896": 1,
     "SRR14530903": 1,
     "SRR18218719": 2,
+    "SRR18340986": 4,
+    "SRR18340992": 3,
+    "SRR18340993": 15,
+    "SRR18340995": 5,
+    "SRR18340996": 2,
+    "SRR18340997": 2,
+    "SRR18341001": 1,
+    "SRR18341002": 2,
+    "SRR18341003": 1,
+    "SRR18341004": 2,
+    "SRR18341005": 7,
+    "SRR18341006": 1,
+    "SRR18341035": 5,
+    "SRR18341036": 8,
+    "SRR18341037": 8,
+    "SRR18341038": 6,
+    "SRR18341040": 6,
+    "SRR18341041": 1,
+    "SRR18341051": 3,
+    "SRR18341108": 8,
+    "SRR18341113": 2,
+    "SRR18341135": 11,
+    "SRR18341137": 2,
     "SRR21452136": 2,
     "SRR23998353": 20,
     "SRR23998354": 19,
@@ -20457,7 +20800,8 @@ virus_sample_counts={
     "ERR7764181": 1,
     "ERR7764186": 1,
     "ERR7850099": 1,
-    "ERR8977365": 2
+    "ERR8977365": 2,
+    "SRR18341086": 1
   },
   "1980491": {
     "ERR4682443": 1,
@@ -20476,7 +20820,8 @@ virus_sample_counts={
     "ERR4682883": 1
   },
   "1980521": {
-    "ERR8977380": 1
+    "ERR8977380": 1,
+    "SRR18341006": 1
   },
   "1987020": {
     "ERR1414209": 2,
@@ -21134,6 +21479,11 @@ virus_sample_counts={
     "SRR14530764": 1,
     "SRR14530897": 1,
     "SRR14530901": 1,
+    "SRR18340990": 3,
+    "SRR18340992": 1,
+    "SRR18340996": 1,
+    "SRR18341000": 1,
+    "SRR18341136": 2,
     "SRR21374466": 1,
     "SRR21374475": 1,
     "SRR21374476": 1,
@@ -21466,6 +21816,16 @@ virus_sample_counts={
     "SRR14530748": 8,
     "SRR14530761": 3,
     "SRR14530772": 1,
+    "SRR18340992": 8,
+    "SRR18340996": 1,
+    "SRR18341004": 3,
+    "SRR18341017": 1,
+    "SRR18341028": 2,
+    "SRR18341039": 2,
+    "SRR18341062": 2,
+    "SRR18341080": 4,
+    "SRR18341113": 1,
+    "SRR18341135": 2,
     "SRR23998357": 2,
     "SRR23998358": 10,
     "SRR23998359": 17
@@ -21579,6 +21939,22 @@ virus_sample_counts={
     "SRR14530890": 1,
     "SRR14530891": 1,
     "SRR14530893": 1,
+    "SRR18340978": 1,
+    "SRR18340992": 5,
+    "SRR18340995": 5,
+    "SRR18340996": 25,
+    "SRR18341003": 2,
+    "SRR18341004": 6,
+    "SRR18341028": 2,
+    "SRR18341035": 3,
+    "SRR18341040": 1,
+    "SRR18341051": 1,
+    "SRR18341062": 1,
+    "SRR18341080": 6,
+    "SRR18341113": 1,
+    "SRR18341124": 2,
+    "SRR18341135": 1,
+    "SRR18341137": 1,
     "SRR21452136": 1,
     "SRR23998354": 3,
     "SRR23998355": 1
@@ -21720,6 +22096,7 @@ virus_sample_counts={
     "SRR12204847": 1,
     "SRR12204851": 1,
     "SRR18218721": 1,
+    "SRR18341028": 1,
     "SRR21374473": 1,
     "SRR6837559": 1,
     "SRR6837572": 2,
@@ -21732,7 +22109,8 @@ virus_sample_counts={
     "SRR14530760": 1,
     "SRR14530770": 1,
     "SRR14530895": 2,
-    "SRR14530900": 1
+    "SRR14530900": 1,
+    "SRR18341113": 1
   },
   "2049444": {
     "COMO1": 1,
@@ -21850,6 +22228,12 @@ virus_sample_counts={
     "SRR14530887": 1,
     "SRR14530888": 1,
     "SRR14530903": 1,
+    "SRR18340992": 3,
+    "SRR18340993": 1,
+    "SRR18341035": 2,
+    "SRR18341051": 1,
+    "SRR18341097": 1,
+    "SRR18341137": 2,
     "SRR23998356": 1
   },
   "2065036": {
@@ -21901,10 +22285,18 @@ virus_sample_counts={
   "2169934": {
     "ERR4678628": 1,
     "SRR14530748": 1,
+    "SRR18340978": 1,
+    "SRR18340986": 1,
+    "SRR18340992": 1,
+    "SRR18340996": 2,
+    "SRR18340999": 1,
+    "SRR18341004": 1,
+    "SRR18341135": 1,
     "SRR23998358": 4
   },
   "2169935": {
-    "ERR4682446": 1
+    "ERR4682446": 1,
+    "SRR18341004": 1
   },
   "2169936": {
     "ERR2683190": 1,
@@ -22016,9 +22408,12 @@ virus_sample_counts={
   },
   "2560525": {
     "ERR1224355": 1,
-    "ERR4682452": 2
+    "ERR4682452": 2,
+    "SRR18340992": 1
   },
   "2560602": {
+    "SRR18340993": 1,
+    "SRR18341113": 1,
     "SRR6837573": 1
   },
   "2571082": {
@@ -22079,6 +22474,41 @@ virus_sample_counts={
     "SRR14530897": 3,
     "SRR14530899": 1,
     "SRR14530902": 1,
+    "SRR18340978": 15,
+    "SRR18340986": 7,
+    "SRR18340992": 3,
+    "SRR18340993": 3,
+    "SRR18340994": 149,
+    "SRR18340996": 1,
+    "SRR18340998": 1,
+    "SRR18341001": 6,
+    "SRR18341002": 3,
+    "SRR18341003": 4,
+    "SRR18341004": 2,
+    "SRR18341005": 51,
+    "SRR18341006": 61,
+    "SRR18341007": 207,
+    "SRR18341017": 42,
+    "SRR18341028": 22,
+    "SRR18341034": 100,
+    "SRR18341035": 2,
+    "SRR18341036": 355,
+    "SRR18341037": 21,
+    "SRR18341038": 10,
+    "SRR18341039": 64,
+    "SRR18341040": 17,
+    "SRR18341041": 17,
+    "SRR18341051": 19,
+    "SRR18341062": 46,
+    "SRR18341080": 4,
+    "SRR18341086": 1176,
+    "SRR18341097": 187,
+    "SRR18341108": 81,
+    "SRR18341113": 6,
+    "SRR18341124": 29,
+    "SRR18341135": 3,
+    "SRR18341136": 1,
+    "SRR18341137": 14,
     "SRR21374478": 1,
     "SRR21452136": 12,
     "SRR23998353": 8,
@@ -33098,1252 +33528,1731 @@ sample_metadata={
   },
   "SRR12596165": {
     "country": "USA",
+    "county": "Alameda",
     "date": "2020-06-09",
     "fine_location": "Berkeley",
+    "is_enriched": true,
     "location": "San Francisco",
+    "method": "amicon",
     "reads": 469609
   },
   "SRR12596166": {
     "country": "USA",
+    "county": "Alameda",
     "date": "2020-05-28",
     "fine_location": "Berkeley",
+    "is_enriched": true,
     "location": "San Francisco",
+    "method": "amicon",
     "reads": 504599
   },
   "SRR12596167": {
     "country": "USA",
+    "county": "Alameda",
     "date": "2020-05-13",
     "fine_location": "Oakland",
+    "is_enriched": true,
     "location": "San Francisco",
+    "method": "amicon",
     "reads": 12072
   },
   "SRR12596168": {
     "country": "USA",
+    "county": "Alameda",
     "date": "2020-06-09",
     "fine_location": "Oakland",
+    "is_enriched": true,
     "location": "San Francisco",
+    "method": "amicon",
     "reads": 476640
   },
   "SRR12596169": {
     "country": "USA",
+    "county": "Alameda",
     "date": "2020-05-28",
     "fine_location": "Oakland",
+    "is_enriched": true,
     "location": "San Francisco",
+    "method": "amicon",
     "reads": 624031
   },
   "SRR12596170": {
     "country": "USA",
+    "county": "Alameda",
     "date": "2020-05-19",
     "fine_location": "Oakland",
+    "is_enriched": true,
     "location": "San Francisco",
+    "method": "amicon",
     "reads": 171626
   },
   "SRR12596171": {
     "country": "USA",
+    "county": "Alameda",
     "date": "2020-06-30",
     "fine_location": "Oakland",
+    "is_enriched": true,
     "location": "San Francisco",
+    "method": "COL",
     "reads": 2405482
   },
   "SRR12596172": {
     "country": "USA",
+    "county": "Alameda",
     "date": "2020-05-19",
     "fine_location": "Oakland",
+    "is_enriched": true,
     "location": "San Francisco",
+    "method": "amicon",
     "reads": 167374
   },
   "SRR12596173": {
     "country": "USA",
+    "county": "Alameda",
     "date": "2020-05-13",
     "fine_location": "Oakland",
+    "is_enriched": true,
     "location": "San Francisco",
+    "method": "amicon",
     "reads": 41087
   },
   "SRR12596174": {
     "country": "USA",
+    "county": "Alameda",
     "date": "2020-06-30",
     "fine_location": "Oakland",
+    "is_enriched": true,
     "location": "San Francisco",
+    "method": "MOS",
     "reads": 953038
   },
   "SRR12596175": {
     "country": "USA",
+    "county": "Marin",
     "date": "2020-07-01",
     "fine_location": "Marin",
+    "is_enriched": true,
     "location": "San Francisco",
+    "method": "MOS",
     "reads": 2891359
   },
   "SRR14530724": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2020-09-10",
     "fine_location": "SB",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 2737872
   },
   "SRR14530725": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2020-09-24",
     "fine_location": "SB",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 6515759
   },
   "SRR14530726": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2020-08-27",
     "fine_location": "SB",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 3204232
   },
   "SRR14530727": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2020-08-13",
     "fine_location": "SB",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 2782200
   },
   "SRR14530728": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2020-10-22",
     "fine_location": "SB",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 3429177
   },
   "SRR14530729": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2020-09-24",
     "fine_location": "PL",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 3842559
   },
   "SRR14530730": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2020-09-10",
     "fine_location": "PL",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 4419124
   },
   "SRR14530731": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2020-08-27",
     "fine_location": "PL",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 3402804
   },
   "SRR14530732": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2020-08-13",
     "fine_location": "PL",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 3786318
   },
   "SRR14530733": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2020-10-22",
     "fine_location": "PL",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 3857662
   },
   "SRR14530734": {
     "country": "USA",
+    "county": "Orange",
     "date": "2020-09-30",
     "fine_location": "OC",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 3588085
   },
   "SRR14530735": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-09-15",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 2807360
   },
   "SRR14530736": {
     "country": "USA",
+    "county": "Orange",
     "date": "2020-09-23",
     "fine_location": "OC",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 4520022
   },
   "SRR14530737": {
     "country": "USA",
+    "county": "Orange",
     "date": "2020-09-16",
     "fine_location": "OC",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 1327075
   },
   "SRR14530738": {
     "country": "USA",
+    "county": "Orange",
     "date": "2020-09-03",
     "fine_location": "OC",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 4874211
   },
   "SRR14530739": {
     "country": "USA",
+    "county": "Orange",
     "date": "2020-09-02",
     "fine_location": "OC",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 3689634
   },
   "SRR14530740": {
     "country": "USA",
+    "county": "Orange",
     "date": "2020-08-26",
     "fine_location": "OC",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 3283166
   },
   "SRR14530741": {
     "country": "USA",
+    "county": "Orange",
     "date": "2020-08-19",
     "fine_location": "OC",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 3182825
   },
   "SRR14530742": {
     "country": "USA",
+    "county": "Orange",
     "date": "2020-08-12",
     "fine_location": "OC",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 1292650
   },
   "SRR14530743": {
     "country": "USA",
+    "county": "Orange",
     "date": "2020-10-07",
     "fine_location": "OC",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 3890259
   },
   "SRR14530744": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2020-09-11",
     "fine_location": "NC",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 2901986
   },
   "SRR14530745": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2020-08-28",
     "fine_location": "NC",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 3467617
   },
   "SRR14530746": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-09-08",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 3233824
   },
   "SRR14530747": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2020-08-14",
     "fine_location": "NC",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 4099096
   },
   "SRR14530748": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2020-10-23",
     "fine_location": "NC",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 4124544
   },
   "SRR14530749": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2020-10-09",
     "fine_location": "NC",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 4902017
   },
   "SRR14530750": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-09-22",
     "fine_location": "JWPCP",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 4514886
   },
   "SRR14530751": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-09-15",
     "fine_location": "JWPCP",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 4234727
   },
   "SRR14530752": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-09-08",
     "fine_location": "JWPCP",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 4018438
   },
   "SRR14530753": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-09-01",
     "fine_location": "JWPCP",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 3630148
   },
   "SRR14530754": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-08-25",
     "fine_location": "JWPCP",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 3183234
   },
   "SRR14530755": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-08-18",
     "fine_location": "JWPCP",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 4059288
   },
   "SRR14530756": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-08-11",
     "fine_location": "JWPCP",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 2102736
   },
   "SRR14530757": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-09-01",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 4286417
   },
   "SRR14530758": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-10-13",
     "fine_location": "JWPCP",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 4221630
   },
   "SRR14530759": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-10-06",
     "fine_location": "JWPCP",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 4832507
   },
   "SRR14530760": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-10-27",
-    "fine_location": "JW",
+    "fine_location": "JWPCP",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 2374918
   },
   "SRR14530761": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-10-20",
-    "fine_location": "JW",
+    "fine_location": "JWPCP",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 4362852
   },
   "SRR14530762": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-09-15",
     "fine_location": "HTP",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 3579700
   },
   "SRR14530763": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-09-08",
     "fine_location": "HTP",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 3551002
   },
   "SRR14530764": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-09-01",
     "fine_location": "HTP",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 3604679
   },
   "SRR14530765": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-08-25",
     "fine_location": "HTP",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 3486258
   },
   "SRR14530766": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-08-18",
     "fine_location": "HTP",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 2800039
   },
   "SRR14530767": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-08-11",
     "fine_location": "HTP",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 3318348
   },
   "SRR14530768": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-08-25",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 4066111
   },
   "SRR14530769": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-10-27",
     "fine_location": "HTP",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 4215471
   },
   "SRR14530770": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-10-20",
     "fine_location": "HTP",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 4350744
   },
   "SRR14530771": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-10-13",
     "fine_location": "HTP",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 2179170
   },
   "SRR14530772": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-10-02",
     "fine_location": "HTP",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 4595209
   },
   "SRR14530773": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-09-30",
     "fine_location": "SJ",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 1615689
   },
   "SRR14530774": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-09-16",
     "fine_location": "SJ",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 4478207
   },
   "SRR14530775": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-09-09",
     "fine_location": "SJ",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 3538301
   },
   "SRR14530776": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-09-02",
     "fine_location": "SJ",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 3233946
   },
   "SRR14530777": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-08-26",
     "fine_location": "SJ",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 4395025
   },
   "SRR14530778": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-08-19",
     "fine_location": "SJ",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 3312596
   },
   "SRR14530779": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-08-18",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 3810545
   },
   "SRR14530780": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-08-12",
     "fine_location": "SJ",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 5045252
   },
   "SRR14530781": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-10-28",
     "fine_location": "SJ",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 5592467
   },
   "SRR14530782": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-10-21",
     "fine_location": "SJ",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 2529771
   },
   "SRR14530783": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-10-14",
     "fine_location": "SJ",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 3743058
   },
   "SRR14530784": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-10-07",
     "fine_location": "SJ",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 6620418
   },
   "SRR14530785": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2020-09-24",
     "fine_location": "SB",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 8113925
   },
   "SRR14530786": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2020-09-10",
     "fine_location": "SB",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 2556497
   },
   "SRR14530787": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2020-08-27",
     "fine_location": "SB",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 4596913
   },
   "SRR14530788": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2020-08-13",
     "fine_location": "SB",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 2057061
   },
   "SRR14530789": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2020-10-22",
     "fine_location": "SB",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 3293890
   },
   "SRR14530790": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-08-11",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 1901768
   },
   "SRR14530791": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2020-09-24",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 6227653
   },
   "SRR14530792": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2020-09-10",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 3272174
   },
   "SRR14530793": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2020-08-27",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 1832839
   },
   "SRR14530794": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2020-08-13",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 3582304
   },
   "SRR14530795": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2020-10-22",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 2000753
   },
   "SRR14530796": {
     "country": "USA",
+    "county": "Orange",
     "date": "2020-09-30",
     "fine_location": "OC",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 2495164
   },
   "SRR14530797": {
     "country": "USA",
+    "county": "Orange",
     "date": "2020-09-23",
     "fine_location": "OC",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 3618278
   },
   "SRR14530798": {
     "country": "USA",
+    "county": "Orange",
     "date": "2020-09-16",
     "fine_location": "OC",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 2282933
   },
   "SRR14530799": {
     "country": "USA",
+    "county": "Orange",
     "date": "2020-09-03",
     "fine_location": "OC",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 5551606
   },
   "SRR14530800": {
     "country": "USA",
+    "county": "Orange",
     "date": "2020-09-02",
     "fine_location": "OC",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 3156280
   },
   "SRR14530801": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-10-27",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 3477646
   },
   "SRR14530802": {
     "country": "USA",
+    "county": "Orange",
     "date": "2020-08-26",
     "fine_location": "OC",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 1462677
   },
   "SRR14530803": {
     "country": "USA",
+    "county": "Orange",
     "date": "2020-08-19",
     "fine_location": "OC",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 2389728
   },
   "SRR14530804": {
     "country": "USA",
+    "county": "Orange",
     "date": "2020-08-12",
     "fine_location": "OC",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 6241597
   },
   "SRR14530805": {
     "country": "USA",
+    "county": "Orange",
     "date": "2020-10-07",
     "fine_location": "OC",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 3355936
   },
   "SRR14530806": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2020-09-11",
     "fine_location": "NC",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 2258105
   },
   "SRR14530807": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2020-08-28",
     "fine_location": "NC",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 4308728
   },
   "SRR14530808": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2020-08-14",
     "fine_location": "NC",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 5650167
   },
   "SRR14530809": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2020-10-23",
     "fine_location": "NC",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 3925138
   },
   "SRR14530810": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2020-10-09",
     "fine_location": "NC",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 1231997
   },
   "SRR14530811": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-09-22",
     "fine_location": "JWPCP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 3811362
   },
   "SRR14530812": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-10-20",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 3094229
   },
   "SRR14530813": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-09-15",
     "fine_location": "JWPCP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 3981090
   },
   "SRR14530814": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-09-08",
     "fine_location": "JWPCP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 3530954
   },
   "SRR14530815": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-09-23",
     "fine_location": "SJ",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 1043613
   },
   "SRR14530816": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-11-04",
     "fine_location": "SJ",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 1380941
   },
   "SRR14530817": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-11-18",
     "fine_location": "SJ",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 1230272
   },
   "SRR14530818": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-10-20",
-    "fine_location": "JW",
-    "location": "Los Angeles"
+    "fine_location": "JWPCP",
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 2950881
   },
   "SRR14530819": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-10-13",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 3357535
   },
   "SRR14530820": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-10-02",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 3441208
   },
   "SRR14530821": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-11-11",
     "fine_location": "SJ",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 1459625
   },
   "SRR14530822": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2020-11-05",
     "fine_location": "SB",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 1118519
   },
   "SRR14530823": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2020-10-08",
     "fine_location": "SB",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 1159722
   },
   "SRR14530824": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2020-12-28",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 1208997
   },
   "SRR14530825": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2020-12-22",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 1263185
   },
   "SRR14530826": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2020-12-14",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 1405184
   },
   "SRR14530827": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2020-11-05",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 773261
   },
   "SRR14530828": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-09-01",
     "fine_location": "JWPCP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 4457786
   },
   "SRR14530829": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2020-11-30",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 1067834
   },
   "SRR14530830": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2020-11-29",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 1346473
   },
   "SRR14530831": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-01-04",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 1753622
   },
   "SRR14530832": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-01-03",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 1346042
   },
   "SRR14530833": {
     "country": "USA",
+    "county": "Orange",
     "date": "2020-12-21",
     "fine_location": "OC",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 1164045
   },
   "SRR14530834": {
     "country": "USA",
+    "county": "Orange",
     "date": "2020-12-14",
     "fine_location": "OC",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 1231078
   },
   "SRR14530835": {
     "country": "USA",
+    "county": "Orange",
     "date": "2020-11-04",
     "fine_location": "OC",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 1246005
   },
   "SRR14530836": {
     "country": "USA",
+    "county": "Orange",
     "date": "2020-11-11",
     "fine_location": "OC",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 1605735
   },
   "SRR14530837": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-09-29",
     "fine_location": "JWPCP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 1653176
   },
   "SRR14530838": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-11-03",
     "fine_location": "JWPCP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 1561405
   },
   "SRR14530839": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-08-25",
     "fine_location": "JWPCP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 1925694
   },
   "SRR14530840": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-11-17",
     "fine_location": "JWPCP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 1112103
   },
   "SRR14530841": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-11-10",
     "fine_location": "JWPCP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 1232548
   },
   "SRR14530842": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-09-29",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 1603711
   },
   "SRR14530843": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-09-22",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 1294643
   },
   "SRR14530844": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-12-29",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 1142935
   },
   "SRR14530845": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-12-22",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 1298420
   },
   "SRR14530846": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-12-04",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 1264824
   },
   "SRR14530847": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-11-03",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 1073151
   },
   "SRR14530848": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-11-24",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 1479324
   },
   "SRR14530849": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-01-03",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 990379
   },
   "SRR14530850": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-08-18",
     "fine_location": "JWPCP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 3034820
   },
   "SRR14530851": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-09-23",
     "fine_location": "SJ",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 10246075
   },
   "SRR14530852": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-11-04",
     "fine_location": "SJ",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 10232266
   },
   "SRR14530853": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-11-18",
     "fine_location": "SJ",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 13154158
   },
   "SRR14530854": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-11-11",
     "fine_location": "SJ",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 11601202
   },
   "SRR14530855": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2020-11-05",
     "fine_location": "SB",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 11389423
   },
   "SRR14530856": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2020-10-08",
     "fine_location": "SB",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 11257694
   },
   "SRR14530857": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2020-12-28",
     "fine_location": "PL",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 8833468
   },
   "SRR14530858": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2020-12-22",
     "fine_location": "PL",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 9334593
   },
   "SRR14530859": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2020-12-14",
     "fine_location": "PL",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 10305132
   },
   "SRR14530860": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2020-11-05",
     "fine_location": "PL",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 8153083
   },
   "SRR14530861": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-08-11",
     "fine_location": "JWPCP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 2920601
   },
   "SRR14530862": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2020-11-30",
     "fine_location": "PL",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 10775374
   },
   "SRR14530863": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2020-11-29",
     "fine_location": "PL",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 10112554
   },
   "SRR14530864": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-01-04",
     "fine_location": "PL",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 10182955
   },
   "SRR14530865": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-01-03",
     "fine_location": "PL",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 10140886
   },
   "SRR14530866": {
     "country": "USA",
+    "county": "Orange",
     "date": "2020-12-21",
     "fine_location": "OC",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 9826830
   },
   "SRR14530867": {
     "country": "USA",
+    "county": "Orange",
     "date": "2020-12-14",
     "fine_location": "OC",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 9840771
   },
   "SRR14530868": {
     "country": "USA",
+    "county": "Orange",
     "date": "2020-11-09",
     "fine_location": "OC",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 10616714
   },
   "SRR14530869": {
     "country": "USA",
+    "county": "Orange",
     "date": "2020-11-04",
     "fine_location": "OC",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 8583928
   },
   "SRR14530870": {
     "country": "USA",
+    "county": "Orange",
     "date": "2020-11-25",
     "fine_location": "OC",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 9408142
   },
   "SRR14530871": {
     "country": "USA",
+    "county": "Orange",
     "date": "2020-11-18",
     "fine_location": "OC",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 10523877
   },
   "SRR14530872": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-10-13",
     "fine_location": "JWPCP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 4345005
   },
   "SRR14530873": {
     "country": "USA",
+    "county": "Orange",
     "date": "2020-11-11",
     "fine_location": "OC",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 11667235
   },
   "SRR14530874": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2020-09-25",
     "fine_location": "NC",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 9670784
   },
   "SRR14530875": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2020-11-06",
     "fine_location": "NC",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 12434072
   },
   "SRR14530876": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-09-29",
     "fine_location": "JWPCP",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 10164300
   },
   "SRR14530877": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-11-03",
     "fine_location": "JWPCP",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 11233097
   },
   "SRR14530878": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-11-17",
     "fine_location": "JWPCP",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 12720283
   },
   "SRR14530879": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-11-10",
     "fine_location": "JWPCP",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 9675052
   },
   "SRR14530880": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-09-29",
     "fine_location": "HTP",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 13626688
   },
   "SRR14530881": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-09-22",
     "fine_location": "HTP",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 12904150
   },
   "SRR14530882": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-12-29",
     "fine_location": "HTP",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 11504066
   },
   "SRR14530883": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-10-06",
     "fine_location": "JWPCP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 4786787
   },
   "SRR14530884": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-12-22",
     "fine_location": "HTP",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 8861526
   },
   "SRR14530885": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-12-15",
     "fine_location": "HTP",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 11960233
   },
   "SRR14530886": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-12-04",
     "fine_location": "HTP",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 10874604
   },
   "SRR14530887": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-12-01",
     "fine_location": "HTP",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 11912829
   },
   "SRR14530888": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-11-03",
     "fine_location": "HTP",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 11534523
   },
   "SRR14530889": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-11-24",
     "fine_location": "HTP",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 11045877
   },
   "SRR14530890": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-11-17",
     "fine_location": "HTP",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 16394657
   },
   "SRR14530891": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-01-03",
     "fine_location": "HTP",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 9626457
   },
   "SRR14530892": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-09-30",
     "fine_location": "SJ",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 2810576
   },
   "SRR14530893": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-09-16",
     "fine_location": "SJ",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 3829748
   },
   "SRR14530894": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-10-27",
-    "fine_location": "JW",
-    "location": "Los Angeles"
+    "fine_location": "JWPCP",
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 4599945
   },
   "SRR14530895": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-09-09",
     "fine_location": "SJ",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 3184286
   },
   "SRR14530896": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-09-02",
     "fine_location": "SJ",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 3041921
   },
   "SRR14530897": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-08-26",
     "fine_location": "SJ",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 3108434
   },
   "SRR14530898": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-08-19",
     "fine_location": "SJ",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 3011011
   },
   "SRR14530899": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-08-12",
     "fine_location": "SJ",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 3241686
   },
   "SRR14530900": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-10-28",
     "fine_location": "SJ",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 4604124
   },
   "SRR14530901": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-10-21",
     "fine_location": "SJ",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 4192507
   },
   "SRR14530902": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-10-14",
     "fine_location": "SJ",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 5260005
   },
   "SRR14530903": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2020-10-07",
     "fine_location": "SJ",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 4632349
   },
@@ -34451,1083 +35360,1623 @@ sample_metadata={
   },
   "SRR18340958": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-04-08",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 26253383
   },
   "SRR18340959": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-04-06",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 33283433
   },
   "SRR18340960": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-04-04",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 33474083
   },
   "SRR18340961": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-04-29",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 18130763
   },
   "SRR18340962": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-04-26",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 26741133
   },
   "SRR18340963": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-04-25",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 24205139
   },
   "SRR18340964": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-04-22",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 22475531
   },
   "SRR18340965": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-04-15",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 16175837
   },
   "SRR18340966": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-03-09",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 32992693
   },
   "SRR18340967": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2020-11-16",
     "fine_location": "ESC",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 31872110
   },
   "SRR18340968": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-03-07",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 45970871
   },
   "SRR18340969": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-03-04",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 81545969
   },
   "SRR18340970": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-03-31",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 20116820
   },
   "SRR18340971": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-03-30",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 25250160
   },
   "SRR18340972": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-03-29",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 19159183
   },
   "SRR18340973": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-03-25",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 17319354
   },
   "SRR18340974": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-03-23",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 24095711
   },
   "SRR18340975": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-03-21",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 20956204
   },
   "SRR18340976": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-03-02",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 15857561
   },
   "SRR18340977": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-03-18",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 28403414
   },
   "SRR18340978": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2020-10-05",
     "fine_location": "ESC",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 25117131
   },
   "SRR18340979": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-03-16",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 40274906
   },
   "SRR18340980": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-03-14",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 54137635
   },
   "SRR18340981": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-03-11",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 88897609
   },
   "SRR18340982": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-02-09",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 28860531
   },
   "SRR18340983": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-02-07",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 26508968
   },
   "SRR18340984": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-02-04",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 45571835
   },
   "SRR18340985": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-02-28",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 19406249
   },
   "SRR18340986": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2020-08-10",
     "fine_location": "ESC",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 20688286
   },
   "SRR18340987": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-07-05",
     "fine_location": "ESC",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 23328395
   },
   "SRR18340988": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-07-19",
     "fine_location": "ESC",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 24510073
   },
   "SRR18340989": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-07-12",
     "fine_location": "ESC",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 31905281
   },
   "SRR18340990": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-06-09",
     "fine_location": "ESC",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 62759357
   },
   "SRR18340991": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-06-24",
     "fine_location": "ESC",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 27876441
   },
   "SRR18340992": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-06-14",
     "fine_location": "ESC",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 32055129
   },
   "SRR18340993": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-05-31",
     "fine_location": "ESC",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 30030783
   },
   "SRR18340994": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-01-04",
     "fine_location": "ESC",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 18932969
   },
   "SRR18340995": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-05-24",
     "fine_location": "ESC",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 28184363
   },
   "SRR18340996": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-05-10",
     "fine_location": "ESC",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 34715147
   },
   "SRR18340997": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-04-05",
     "fine_location": "ESC",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 48623917
   },
   "SRR18340998": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-04-26",
     "fine_location": "ESC",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 21110292
   },
   "SRR18340999": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-04-19",
     "fine_location": "ESC",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 21499815
   },
   "SRR18341000": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-04-12",
     "fine_location": "ESC",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 21123849
   },
   "SRR18341001": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-03-08",
     "fine_location": "ESC",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 21341916
   },
   "SRR18341002": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-03-29",
     "fine_location": "ESC",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 19208504
   },
   "SRR18341003": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-03-22",
     "fine_location": "ESC",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 19154003
   },
   "SRR18341004": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-03-17",
     "fine_location": "ESC",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 33445992
   },
   "SRR18341005": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-01-25",
     "fine_location": "ESC",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 18203904
   },
   "SRR18341006": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-03-01",
     "fine_location": "ESC",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 15760352
   },
   "SRR18341007": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-02-08",
     "fine_location": "ESC",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 17840303
   },
   "SRR18341008": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-08-03",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 27436733
   },
   "SRR18341009": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-07-05",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 36996619
   },
   "SRR18341010": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-07-29",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 35019158
   },
   "SRR18341011": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-07-25",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 26690142
   },
   "SRR18341012": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-07-19",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 31517495
   },
   "SRR18341013": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-07-12",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 39909586
   },
   "SRR18341014": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-02-23",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 20105076
   },
   "SRR18341015": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-02-21",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 15309642
   },
   "SRR18341016": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-02-02",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 22119886
   },
   "SRR18341017": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2020-10-26",
     "fine_location": "ESC",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 20102428
   },
   "SRR18341018": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-02-18",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 42161537
   },
   "SRR18341019": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-02-16",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 21817522
   },
   "SRR18341020": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-02-15",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 20575397
   },
   "SRR18341021": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-02-10",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 24322097
   },
   "SRR18341022": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-01-07",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 30116471
   },
   "SRR18341023": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-01-05",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 30197133
   },
   "SRR18341024": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-01-31",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 31167284
   },
   "SRR18341025": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-01-28",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 51529762
   },
   "SRR18341026": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-01-26",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 14688921
   },
   "SRR18341027": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-01-24",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 14541009
   },
   "SRR18341028": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2020-10-19",
     "fine_location": "ESC",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 23707063
   },
   "SRR18341029": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-01-21",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 33096849
   },
   "SRR18341030": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-01-19",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 42128435
   },
   "SRR18341031": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-01-14",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 35541273
   },
   "SRR18341032": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-01-12",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 19397585
   },
   "SRR18341033": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-01-10",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 16123940
   },
   "SRR18341034": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2020-09-07",
     "fine_location": "ESC",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 13129712
   },
   "SRR18341035": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2020-09-21",
     "fine_location": "ESC",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 20408957
   },
   "SRR18341036": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2020-09-14",
     "fine_location": "ESC",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 17753618
   },
   "SRR18341037": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2020-08-31",
     "fine_location": "ESC",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 19394777
   },
   "SRR18341038": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2020-08-03",
     "fine_location": "ESC",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 20008511
   },
   "SRR18341039": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2020-10-12",
     "fine_location": "ESC",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 11005318
   },
   "SRR18341040": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2020-08-24",
     "fine_location": "ESC",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 18631191
   },
   "SRR18341041": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2020-08-17",
     "fine_location": "ESC",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 18151826
   },
   "SRR18341042": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-03-03",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 27092534
   },
   "SRR18341043": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-03-29",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 27974187
   },
   "SRR18341044": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-03-28",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 14135750
   },
   "SRR18341045": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-03-24",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 21196717
   },
   "SRR18341046": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-03-22",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 17087067
   },
   "SRR18341047": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-03-21",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 22006682
   },
   "SRR18341048": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-03-18",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 19207196
   },
   "SRR18341049": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-03-15",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 23195576
   },
   "SRR18341050": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-03-14",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 28590407
   },
   "SRR18341051": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2020-12-28",
     "fine_location": "ESC",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 24739827
   },
   "SRR18341052": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-03-10",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 30987893
   },
   "SRR18341053": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-03-01",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 60418007
   },
   "SRR18341054": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-02-08",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 18350700
   },
   "SRR18341055": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-02-07",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 18698080
   },
   "SRR18341056": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-02-03",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 18298641
   },
   "SRR18341057": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-02-28",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 33750340
   },
   "SRR18341058": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-02-22",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 18102742
   },
   "SRR18341059": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-02-21",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 20641022
   },
   "SRR18341060": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-02-17",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 27006804
   },
   "SRR18341061": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-02-15",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 16196324
   },
   "SRR18341062": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2020-12-21",
     "fine_location": "ESC",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 33957228
   },
   "SRR18341063": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-02-14",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 14935795
   },
   "SRR18341064": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-02-10",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 16983547
   },
   "SRR18341065": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-02-01",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 33644472
   },
   "SRR18341066": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-01-06",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 19405373
   },
   "SRR18341067": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-01-31",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 22552533
   },
   "SRR18341068": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-01-27",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 16212776
   },
   "SRR18341069": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-01-25",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 19346950
   },
   "SRR18341070": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-05-04",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 21033696
   },
   "SRR18341071": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-05-31",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 45560441
   },
   "SRR18341072": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-05-25",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 41552492
   },
   "SRR18341073": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-05-24",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 32477043
   },
   "SRR18341074": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-05-23",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 53349248
   },
   "SRR18341075": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-05-20",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 54066214
   },
   "SRR18341076": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-05-02",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 27981855
   },
   "SRR18341077": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-05-18",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 60462482
   },
   "SRR18341078": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-05-16",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 63138081
   },
   "SRR18341079": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-05-13",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 19135374
   },
   "SRR18341080": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2020-11-02",
     "fine_location": "ESC",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 44283851
   },
   "SRR18341081": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-05-11",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 18479773
   },
   "SRR18341082": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-06-07",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 26340586
   },
   "SRR18341083": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-06-28",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 40776879
   },
   "SRR18341084": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-06-21",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 33586361
   },
   "SRR18341085": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-06-02",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 51722853
   },
   "SRR18341086": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-02-22",
     "fine_location": "ESC",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 20786144
   },
   "SRR18341087": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-06-14",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 28924021
   },
   "SRR18341088": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-05-09",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 41251583
   },
   "SRR18341089": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-05-05",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 40281689
   },
   "SRR18341090": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-05-04",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 24639394
   },
   "SRR18341091": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-05-31",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 37289091
   },
   "SRR18341092": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-05-03",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 13887023
   },
   "SRR18341093": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-05-24",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 35544326
   },
   "SRR18341094": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-05-17",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 26989665
   },
   "SRR18341095": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-05-12",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 20428056
   },
   "SRR18341096": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-05-10",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 21993700
   },
   "SRR18341097": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-02-15",
     "fine_location": "ESC",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 19269393
   },
   "SRR18341098": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-04-07",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 22655623
   },
   "SRR18341099": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-04-05",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 18542548
   },
   "SRR18341100": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-04-04",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 29772207
   },
   "SRR18341101": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-04-28",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 25686428
   },
   "SRR18341102": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-04-26",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 38431621
   },
   "SRR18341103": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-04-25",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 24951796
   },
   "SRR18341104": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-04-21",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 26074221
   },
   "SRR18341105": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-04-14",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 26848265
   },
   "SRR18341106": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-03-08",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 45412176
   },
   "SRR18341107": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-03-07",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 21699355
   },
   "SRR18341108": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2020-12-07",
     "fine_location": "ESC",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 36184126
   },
   "SRR18341109": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-03-31",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 25705651
   },
   "SRR18341110": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-01-24",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 18819650
   },
   "SRR18341111": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-01-20",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 19464457
   },
   "SRR18341112": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-01-18",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 15080442
   },
   "SRR18341113": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2020-12-14",
     "fine_location": "ESC",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 18120152
   },
   "SRR18341114": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-01-17",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 13756065
   },
   "SRR18341115": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-01-14",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 20597441
   },
   "SRR18341116": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-01-13",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 15873953
   },
   "SRR18341117": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-01-12",
     "fine_location": "PL",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 17577902
   },
   "SRR18341118": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-07-08",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 26946502
   },
   "SRR18341119": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-07-29",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 43889785
   },
   "SRR18341120": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-07-22",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 33006348
   },
   "SRR18341121": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-07-15",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 36078362
   },
   "SRR18341122": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-07-13",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 29636432
   },
   "SRR18341123": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-07-01",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 43201688
   },
   "SRR18341124": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2020-11-30",
     "fine_location": "ESC",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 20755081
   },
   "SRR18341125": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-06-06",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 50748094
   },
   "SRR18341126": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-06-03",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 31242591
   },
   "SRR18341127": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-06-27",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 45725584
   },
   "SRR18341128": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-06-24",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 33680979
   },
   "SRR18341129": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-06-20",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 28332194
   },
   "SRR18341130": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-06-15",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 28581122
   },
   "SRR18341131": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-06-10",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 35441428
   },
   "SRR18341132": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-06-01",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 53966640
   },
   "SRR18341133": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-05-09",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 19219200
   },
   "SRR18341134": {
     "country": "USA",
+    "county": "Los Angeles",
     "date": "2021-05-06",
     "fine_location": "HTP",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 18028259
   },
   "SRR18341135": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2020-11-23",
     "fine_location": "ESC",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 47877103
   },
   "SRR18341136": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-01-18",
     "fine_location": "ESC",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 23030994
   },
   "SRR18341137": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2021-01-11",
     "fine_location": "ESC",
-    "location": "Los Angeles"
+    "is_enriched": true,
+    "location": "Los Angeles",
+    "reads": 14804126
   },
   "SRR21374446": {
     "country": "USA",
@@ -36659,72 +38108,99 @@ sample_metadata={
   },
   "SRR21452135": {
     "country": "USA",
+    "county": "Orange",
     "date": "2020-10-21",
     "fine_location": "OC",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 2413516
   },
   "SRR21452136": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2020-07-27",
     "fine_location": "ESC",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 16101528
   },
   "SRR21452137": {
     "country": "USA",
+    "county": "San Diego",
     "date": "2020-07-20",
     "fine_location": "ESC",
+    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 23482928
   },
   "SRR23998353": {
     "country": "USA",
+    "county": "Alameda",
     "date": "2020-06-30",
     "fine_location": "Oakland",
+    "is_enriched": false,
     "location": "San Francisco",
+    "method": "COL",
     "reads": 45434265
   },
   "SRR23998354": {
     "country": "USA",
+    "county": "Marin",
     "date": "2020-07-01",
     "fine_location": "Marin",
+    "is_enriched": false,
     "location": "San Francisco",
+    "method": "MOS",
     "reads": 41207484
   },
   "SRR23998355": {
     "country": "USA",
+    "county": "Marin",
     "date": "2020-07-01",
     "fine_location": "Marin",
+    "is_enriched": false,
     "location": "San Francisco",
+    "method": "MOS",
     "reads": 38572859
   },
   "SRR23998356": {
     "country": "USA",
+    "county": "San Francisco",
     "date": "2020-06-30",
     "fine_location": "SF",
+    "is_enriched": false,
     "location": "San Francisco",
+    "method": "MOS",
     "reads": 47832942
   },
   "SRR23998357": {
     "country": "USA",
+    "county": "Alameda",
     "date": "2020-06-30",
     "fine_location": "Oakland",
+    "is_enriched": false,
     "location": "San Francisco",
+    "method": "COL",
     "reads": 48462833
   },
   "SRR23998358": {
     "country": "USA",
+    "county": "Alameda",
     "date": "2020-06-30",
     "fine_location": "Oakland",
+    "is_enriched": false,
     "location": "San Francisco",
+    "method": "COL",
     "reads": 39759745
   },
   "SRR23998359": {
     "country": "USA",
+    "county": "Alameda",
     "date": "2020-06-30",
     "fine_location": "Berkeley",
+    "is_enriched": false,
     "location": "San Francisco",
+    "method": "COL",
     "reads": 36420649
   },
   "SRR6837549": {
@@ -38910,6 +40386,46 @@ bioprojects={
     "SRR14530901",
     "SRR14530902",
     "SRR14530903",
+    "SRR18340978",
+    "SRR18340986",
+    "SRR18340990",
+    "SRR18340992",
+    "SRR18340993",
+    "SRR18340994",
+    "SRR18340995",
+    "SRR18340996",
+    "SRR18340997",
+    "SRR18340998",
+    "SRR18340999",
+    "SRR18341000",
+    "SRR18341001",
+    "SRR18341002",
+    "SRR18341003",
+    "SRR18341004",
+    "SRR18341005",
+    "SRR18341006",
+    "SRR18341007",
+    "SRR18341017",
+    "SRR18341028",
+    "SRR18341034",
+    "SRR18341035",
+    "SRR18341036",
+    "SRR18341037",
+    "SRR18341038",
+    "SRR18341039",
+    "SRR18341040",
+    "SRR18341041",
+    "SRR18341051",
+    "SRR18341062",
+    "SRR18341080",
+    "SRR18341086",
+    "SRR18341097",
+    "SRR18341108",
+    "SRR18341113",
+    "SRR18341124",
+    "SRR18341135",
+    "SRR18341136",
+    "SRR18341137",
     "SRR21452135",
     "SRR21452136",
     "SRR21452137"
