@@ -12,5 +12,5 @@ for bioproject in $(ls ../bioprojects/); do
         fi
     done
 done | xargs -I {} -P 16 aws s3 cp {} hvreads/
-    
-                       
+
+echo "Now rsync -r dashboard/hvreads/ ps:jtk/mgs-counts/hvreads/"
