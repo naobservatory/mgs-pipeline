@@ -124,9 +124,21 @@ def adapter_removal(args, dirname, trim_quality, collapse):
    except FileExistsError:
       pass
 
+   available_inputs = get_files(args, "raw")
+   existing_outputs = get_files(args, "clean", min_size=100)
+
    for sample in get_samples(args):
-      if exists_s3_prefix("%s/%s/%s/%s" % (
-            S3_BUCKET, args.bioproject, dirname, sample)):
+      raw1 = "%s_1.fastq.gz" % sample
+      raw2 = "%s_2.fastq.gz" % sample
+
+      if raw1 not in available_inputs or raw2 not in available_inputs:
+         print("Skipping %s" % sample)
+         continue
+
+      if ("%s.collapsed.gz" % sample in existing_outputs and
+          "%s.pair1.truncated.gz" % sample in existing_outputs and
+          "%s.pair2.truncated.gz" % sample in existing_outputs):
+         # Already done
          continue
 
       with tempdir("adapter_removal", sample) as workdir:
@@ -134,11 +146,11 @@ def adapter_removal(args, dirname, trim_quality, collapse):
          in2="in2.fastq.gz"
 
          subprocess.check_call([
-            "aws", "s3", "cp", "%s/%s/raw/%s_1.fastq.gz" % (
-               S3_BUCKET, args.bioproject, sample), in1])
+            "aws", "s3", "cp", "%s/%s/raw/%s" % (
+               S3_BUCKET, args.bioproject, raw1), in1])
          subprocess.check_call([
-            "aws", "s3", "cp", "%s/%s/raw/%s_2.fastq.gz" % (
-               S3_BUCKET, args.bioproject, sample), in2])
+            "aws", "s3", "cp", "%s/%s/raw/%s" % (
+               S3_BUCKET, args.bioproject, raw2), in2])
 
          adapter1_fname = os.path.join(adapter_dir, "%s.fwd" % sample)
          adapter2_fname = os.path.join(adapter_dir, "%s.rev" % sample)
