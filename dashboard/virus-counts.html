@@ -75,7 +75,7 @@ are relative abundance of human viruses that match that taxonomic node.
   #tbl td {
     word-wrap: break-word;
     max-width: 15em;
-    min-width: 5em;
+    min-width: 1em;
     padding: 0.5em;
   }
   #tbl tr {
@@ -1054,6 +1054,7 @@ function redisplay() {
       td_expand_button.appendChild(button_collapse);
     }
     tr.appendChild(td_expand_button);
+    td_expand_button.style.paddingLeft = (depth*0.5) + "em";
 
     const td_node_name = e("td");
     td_node_name.style.paddingLeft = (depth*0.5) + "em";
