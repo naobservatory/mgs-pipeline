@@ -21,6 +21,6 @@ fi
 cat $PARSED_METADATA | \
     grep _1 | \
     sed s/_1.fastq.gz// | \
-    awk '$NF==0{print $1"\t"$2"\t"$3}' > $COMMON_METADATA
+    awk '{print $1"\t"$2"\t"$3"\t"$4}' > $COMMON_METADATA
 
 echo "Parsed output in $COMMON_METADATA"
