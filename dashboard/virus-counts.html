@@ -210,33 +210,18 @@ for (const paper_name of paper_names) {
 }
 
 function paper_expansion_options(paper_name) {
-  const forced_minimum_level_index = expansion_levels.indexOf(
-    forced_minimum_level());
   const options = [];
-  if (expansion_levels.indexOf("collapsed") >= forced_minimum_level_index) {
-    options.push("collapsed");
-  }
-  if ((paper_countries[paper_name].size > 1 &&
-       expansion_levels.indexOf("country") > forced_minimum_level_index) ||
-      (paper_countries[paper_name].size > 0 &&
-       expansion_levels.indexOf("country") == forced_minimum_level_index)) {
+  options.push("collapsed");
+  if (paper_countries[paper_name].size > 1) {
     options.push("country");
   }
-  if ((paper_locations[paper_name].size > paper_countries[paper_name].size &&
-       expansion_levels.indexOf("location") > forced_minimum_level_index) ||
-      (paper_locations[paper_name].size > 0 &&
-       expansion_levels.indexOf("location") == forced_minimum_level_index)) {
+  if (paper_locations[paper_name].size > paper_countries[paper_name].size) {
     options.push("location");
   }
-  if ((paper_fine_locations[paper_name].size > 1 &&
-       expansion_levels.indexOf("fine") > forced_minimum_level_index) ||
-      (paper_fine_locations[paper_name].size > 0 &&
-       expansion_levels.indexOf("fine") ==  forced_minimum_level_index)) {
+  if (paper_fine_locations[paper_name].size > 1) {
     options.push("fine");
   }
-  if (expansion_levels.indexOf("sample") > forced_minimum_level_index) {
-    options.push("sample");
-  }
+  options.push("sample");
   return options;
 }
 
@@ -548,31 +533,8 @@ for (paper_name of paper_names) {
   paper_expansions[paper_name] = "collapsed";
 }
 
-function forced_minimum_level() {
-  if (date_begin_search.value ||
-      date_end_search.value) return "sample";
-  if (city_search.value) return "location";
-  if (country_search.value) return "country";
-  return "collapsed";
-}
-
 function paper_expansion(paper_name) {
-  const options = paper_expansion_options(paper_name);
-  if (!options.length) {
-    return "sample";
-  }
-  let current_level = paper_expansions[paper_name];
-  if (options.indexOf(current_level) == -1) {
-    current_level = options[0];
-  }
-
-  const min_level = forced_minimum_level();
-  if (min_level &&
-      expansion_levels.indexOf(min_level) >
-      expansion_levels.indexOf(current_level)){
-    return min_level;
-  }
-  return current_level;
+  return paper_expansions[paper_name];;
 }
 
 function exclude_sample(sample, target_date_begin, target_date_end) {
