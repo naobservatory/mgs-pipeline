@@ -1034,6 +1034,8 @@ function redisplay() {
       button_expand.onclick = function () { manually_expand(taxid) };
       td_expand_button.appendChild(button_expand);
     } else if (has_visible_children(taxid)) {
+      // TODO: exclude things that are expanded via search, since they
+      // won't collapse if you click -.
       const button_collapse = e("button", "\u2212");
       button_collapse.onclick = function () { manually_collapse(taxid) };
       td_expand_button.appendChild(button_collapse);
