@@ -58,6 +58,23 @@ Limit Samples:
   <tr><td>Country<td><input id=country_search type=text size=34></input>
   <tr><td>City<td><input id=city_search type=text size=34></input>
   <tr><td>Nucleic Acid<td><input id=na_sample_search type=text size=34></input>
+  <tr><td>Enrichment<td>
+    <input type="checkbox" checked
+           id="enrichment_none"
+           name="enrichment"
+           value="none">
+    <label for="enrichment_none">None</label><br>
+    <input type="checkbox" checked
+           id="enrichment_viral"
+           name="enrichment"
+           value="viral">
+    <label for="enrichment_viral">Viral</label><br>
+    <input type="checkbox"
+           id="enrichment_panel"
+           name="enrichment"
+           value="panel">
+    <label for="enrichment_panel">Panel</label><br>
+
   <tr><td>Date<td>
   <input size=15 id=date_begin_search type=text></input> &ndash;
      <input size=15 id=date_end_search type=text></input>
@@ -541,6 +558,20 @@ function paper_expansion(paper_name) {
   return current_level;
 }
 
+function exclude_sample(sample) {
+  if (na_sample_search.value) {
+    if (!sample_metadata[sample].na_type.toLowerCase().includes(
+      na_sample_search.value.toLowerCase())) {
+      return true;
+    }
+  }
+  const enrichment = sample_metadata[sample].enrichment;
+  if (enrichment == "viral" && !enrichment_viral.checked) return true;
+  if (enrichment == "panel" && !enrichment_panel.checked) return true;
+  if (!enrichment && !enrichment_none.checked) return true;
+  return false;
+}  
+
 // -> [samples, ...]
 function categorize_samples_at_current_expansion(paper_name) {
   const samples_list = [];
@@ -549,13 +580,7 @@ function categorize_samples_at_current_expansion(paper_name) {
     for (const bioproject of papers[paper_name].projects) {
       if (!bioprojects[bioproject]) continue;
       for (const sample of bioprojects[bioproject]) {
-
-        if (na_sample_search.value &&
-            !sample_metadata[sample].na_type.toLowerCase().includes(
-              na_sample_search.value.toLowerCase())) {
-          continue;
-        }
-
+        if (exclude_sample(sample)) continue;
         samples.push(sample)
       }
     }
@@ -573,13 +598,7 @@ function categorize_samples_at_current_expansion(paper_name) {
         if (!bioprojects[bioproject]) continue;
         for (const sample of bioprojects[bioproject]) {
           if (sample_metadata[sample].country == country) {
-
-            if (na_sample_search.value &&
-                !sample_metadata[sample].na_type.toLowerCase().includes(
-                  na_sample_search.value.toLowerCase())) {
-              continue;
-            }
-
+            if (exclude_sample(sample)) continue;
             samples.push(sample);
           }
         }
@@ -608,11 +627,7 @@ function categorize_samples_at_current_expansion(paper_name) {
             if (sample_metadata[sample].country == country &&
                 sample_metadata[sample].location == location) {
 
-              if (na_sample_search.value &&
-                    !sample_metadata[sample].na_type.toLowerCase().includes(
-                      na_sample_search.value.toLowerCase())) {
-                continue;
-              }
+              if (exclude_sample(sample)) continue;
               samples.push(sample);
             }
           }
@@ -646,12 +661,7 @@ function categorize_samples_at_current_expansion(paper_name) {
                   sample_metadata[sample].location == location &&
                   sample_metadata[sample].fine_location == fine_location) {
 
-                if (na_sample_search.value &&
-                    !sample_metadata[sample].na_type.toLowerCase().includes(
-                      na_sample_search.value.toLowerCase())) {
-                  continue;
-                }
-
+                if (exclude_sample(sample)) continue;
                 samples.push(sample);
               }
             }
@@ -686,11 +696,7 @@ function categorize_samples_at_current_expansion(paper_name) {
                city_search.value.toLowerCase()))) {
           continue;
         }
-        if (na_sample_search.value &&
-            !sample_metadata[sample].na_type.toLowerCase().includes(
-              na_sample_search.value.toLowerCase())) {
-          continue;
-        }
+        if (exclude_sample(sample)) continue;
         if (target_date_begin || target_date_end) {
           if (!sample_metadata[sample].date) continue;
 
@@ -815,6 +821,7 @@ function redisplay() {
     ["fine_location", "sites"],
     ["date", "dates"],
     ["samples", "samples"],
+    ["enrichment", "enrichments"],
     ["reads", "reads"]]) {
 
     const tr = e("tr");
@@ -845,6 +852,19 @@ function redisplay() {
 
         const sorted_text_val = [...vals].sort().join(", ");
         if (sorted_text_val == prev_val) {
+          tr.appendChild(e("td", "\u3003"));
+        } else {
+          tr.appendChild(e("td", sorted_text_val));
+          prev_val = sorted_text_val;
+        }
+      } else if (property == "enrichment") {
+        const vals = new Set();
+        for (const sample of samples) {
+          vals.add(sample_metadata[sample][property] || "none");
+        }
+
+        const sorted_text_val = [...vals].sort().join(", ");
+        if (sorted_text_val == prev_val){
           tr.appendChild(e("td", "\u3003"));
         } else {
           tr.appendChild(e("td", sorted_text_val));
@@ -1139,6 +1159,9 @@ taxonomic_search.addEventListener("input", search);
 country_search.addEventListener("input", search);
 city_search.addEventListener("input", search);
 na_sample_search.addEventListener("input", search);
+enrichment_none.addEventListener("input", search);
+enrichment_viral.addEventListener("input", search);
+enrichment_panel.addEventListener("input", search);
 date_begin_search.addEventListener("input", search);
 date_end_search.addEventListener("input", search);
 
