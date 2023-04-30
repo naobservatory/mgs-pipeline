@@ -575,7 +575,7 @@ function paper_expansion(paper_name) {
   return current_level;
 }
 
-function exclude_sample(sample) {
+function exclude_sample(sample, target_date_begin, target_date_end) {
   if (!na_sample_dna.checked && sample_metadata[sample].na_type == "DNA") {
     return true;
   }
@@ -604,18 +604,38 @@ function exclude_sample(sample) {
       city_search.value.toLowerCase())) return true;
   }
 
+  if (target_date_begin || target_date_end) {
+    if (!sample_metadata[sample].date) return true;
+    const date_as_begin = clean_date(sample_metadata[sample].date,
+                                   /*is_begin=*/true);
+    const date_as_end = clean_date(sample_metadata[sample].date,
+                                 /*is_begin=*/false);
+
+    if (target_date_begin && date_as_begin < target_date_begin) {
+      return true;
+    }
+    if (target_date_end && date_as_end > target_date_end) {
+      return true;
+    }
+  }
+
   return false;
 }
 
 // -> [samples, ...]
 function categorize_samples_at_current_expansion(paper_name) {
+  let target_date_begin = clean_date(date_begin_search.value,
+                                     /*is_begin=*/true);
+  let target_date_end = clean_date(date_end_search.value,
+                                   /*is_begin=*/false);
+
   const samples_list = [];
   if (paper_expansion(paper_name) == "collapsed") {
     const samples = [];
     for (const bioproject of papers[paper_name].projects) {
       if (!bioprojects[bioproject]) continue;
       for (const sample of bioprojects[bioproject]) {
-        if (exclude_sample(sample)) continue;
+        if (exclude_sample(sample, target_date_begin, target_date_end)) continue;
         samples.push(sample)
       }
     }
@@ -628,7 +648,9 @@ function categorize_samples_at_current_expansion(paper_name) {
         if (!bioprojects[bioproject]) continue;
         for (const sample of bioprojects[bioproject]) {
           if (sample_metadata[sample].country == country) {
-            if (exclude_sample(sample)) continue;
+            if (exclude_sample(sample, target_date_begin, target_date_end)) {
+              continue;
+            }
             samples.push(sample);
           }
         }
@@ -647,7 +669,9 @@ function categorize_samples_at_current_expansion(paper_name) {
             if (sample_metadata[sample].country == country &&
                 sample_metadata[sample].location == location) {
 
-              if (exclude_sample(sample)) continue;
+              if (exclude_sample(sample, target_date_begin, target_date_end)) {
+                continue;
+              }
               samples.push(sample);
             }
           }
@@ -671,7 +695,9 @@ function categorize_samples_at_current_expansion(paper_name) {
                   sample_metadata[sample].location == location &&
                   sample_metadata[sample].fine_location == fine_location) {
 
-                if (exclude_sample(sample)) continue;
+                if (exclude_sample(sample, target_date_begin, target_date_end)) {
+                  continue;
+                }
                 samples.push(sample);
               }
             }
@@ -684,33 +710,12 @@ function categorize_samples_at_current_expansion(paper_name) {
       }
     }
   } else if (paper_expansion(paper_name) == "sample") {
-    let target_date_begin = clean_date(date_begin_search.value,
-                                       /*is_begin=*/true);
-    let target_date_end = clean_date(date_end_search.value,
-                                     /*is_begin=*/false);
-
     for (const bioproject of papers[paper_name].projects) {
       if (!bioprojects[bioproject]) continue;
       const samples = [...bioprojects[bioproject]];
       sort_samples(samples);
       for (const sample of samples) {
-        if (exclude_sample(sample)) continue;
-        if (target_date_begin || target_date_end) {
-          if (!sample_metadata[sample].date) continue;
-
-          let date_as_begin = clean_date(sample_metadata[sample].date,
-                                         /*is_begin=*/true);
-          let date_as_end = clean_date(sample_metadata[sample].date,
-                                       /*is_begin=*/false);
-
-          if (target_date_begin && date_as_begin < target_date_begin) {
-            continue;
-          }
-          if (target_date_end && date_as_end > target_date_end) {
-            continue;
-          }
-        }
-
+        if (exclude_sample(sample, target_date_begin, target_date_end)) continue;
         samples_list.push([sample]);
       }
     }
