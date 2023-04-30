@@ -164,12 +164,7 @@ for project in projects:
             if project in papers["Rothman 2021"]["projects"]:
                 sample, date, wtp, is_enriched = line.split("\t")
                 if wtp == "JW":
-                    # Very likely a typo for JWPCP, since the only two dates with
-                    # this abbreviation are missing for JWPCP, and there's
-                    # nothing else this would be likely to refer to.  All the
-                    # other abbreviations appear either in the paper or (in the
-                    # case of ESC) in
-                    # https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9387120/
+                    # Rothman confirmed over email that JW = JWPCP.
                     wtp = "JWPCP"
 
                 sample_metadata[sample] = dict(
