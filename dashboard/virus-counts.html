@@ -569,8 +569,21 @@ function exclude_sample(sample) {
   if (enrichment == "viral" && !enrichment_viral.checked) return true;
   if (enrichment == "panel" && !enrichment_panel.checked) return true;
   if (!enrichment && !enrichment_none.checked) return true;
+
+  if (country_search.value) {
+    const country = sample_metadata[sample].country;
+    if (!country || !country.toLowerCase().includes(
+      country_search.value.toLowerCase())) return true;
+  }
+
+  if (city_search.value) {
+    const city = sample_metadata[sample].location;
+    if (!city || !city.toLowerCase().includes(
+      city_search.value.toLowerCase())) return true;
+  }
+
   return false;
-}  
+}
 
 // -> [samples, ...]
 function categorize_samples_at_current_expansion(paper_name) {
@@ -588,11 +601,6 @@ function categorize_samples_at_current_expansion(paper_name) {
     samples_list.push(samples);
   } else if (paper_expansion(paper_name) == "country") {
     for (const country of [...paper_countries[paper_name]].sort()) {
-      if (country_search.value &&
-          (!country || !country.toLowerCase().includes(
-            country_search.value.toLowerCase()))) {
-        continue;
-      }
       const samples = [];
       for (const bioproject of papers[paper_name].projects) {
         if (!bioprojects[bioproject]) continue;
@@ -608,17 +616,7 @@ function categorize_samples_at_current_expansion(paper_name) {
     }
   } else if (paper_expansion(paper_name) == "location") {
     for (const country of [...paper_countries[paper_name]].sort()) {
-      if (country_search.value &&
-          (!country || !country.toLowerCase().includes(
-            country_search.value.toLowerCase()))) {
-        continue;
-      }
       for (const location of [...paper_locations[paper_name]].sort()) {
-        if (city_search.value &&
-            (!location || !location.toLowerCase().includes(
-              city_search.value.toLowerCase()))) {
-          continue;
-        }
         const samples = [];
         for (const bioproject of papers[paper_name].projects) {
           if (!bioprojects[bioproject]) continue;
@@ -640,17 +638,7 @@ function categorize_samples_at_current_expansion(paper_name) {
     }
   } else if (paper_expansion(paper_name) == "fine") {
     for (const country of [...paper_countries[paper_name]].sort()) {
-      if (country_search.value &&
-          (!country || !country.toLowerCase().includes(
-            country_search.value.toLowerCase()))) {
-        continue;
-      }
       for (const location of [...paper_locations[paper_name]].sort()) {
-        if (city_search.value &&
-            (!location || !location.toLowerCase().includes(
-              city_search.value.toLowerCase()))) {
-          continue;
-        }
         for (const fine_location of
              [...paper_fine_locations[paper_name]].sort()) {
           const samples = [];
@@ -684,18 +672,6 @@ function categorize_samples_at_current_expansion(paper_name) {
       const samples = [...bioprojects[bioproject]];
       sort_samples(samples);
       for (const sample of samples) {
-        if (country_search.value &&
-            (!sample_metadata[sample].country ||
-             !sample_metadata[sample].country.toLowerCase().includes(
-               country_search.value.toLowerCase()))) {
-          continue;
-        }
-        if (city_search.value &&
-            (!sample_metadata[sample].location ||
-             !sample_metadata[sample].location.toLowerCase().includes(
-               city_search.value.toLowerCase()))) {
-          continue;
-        }
         if (exclude_sample(sample)) continue;
         if (target_date_begin || target_date_end) {
           if (!sample_metadata[sample].date) continue;
