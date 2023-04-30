@@ -24971,30 +24971,35 @@ sample_metadata={
   "COMO1": {
     "country": "United States",
     "date": "2022",
+    "enrichment": "viral",
     "location": "Municipal",
     "reads": 93753080
   },
   "COMO2": {
     "country": "United States",
     "date": "2022",
+    "enrichment": "viral",
     "location": "Municipal",
     "reads": 15103197
   },
   "COMO3": {
     "country": "United States",
     "date": "2022",
+    "enrichment": "viral",
     "location": "Municipal",
     "reads": 14700571
   },
   "COMO4": {
     "country": "United States",
     "date": "2022",
+    "enrichment": "viral",
     "location": "Municipal",
     "reads": 15578784
   },
   "COMO5": {
     "country": "United States",
     "date": "2022",
+    "enrichment": "viral",
     "location": "Municipal",
     "reads": 14600679
   },
@@ -35945,8 +35950,8 @@ sample_metadata={
     "country": "USA",
     "county": "Alameda",
     "date": "2020-06-09",
+    "enrichment": "panel",
     "fine_location": "Berkeley",
-    "is_enriched": true,
     "location": "San Francisco",
     "method": "amicon",
     "reads": 469609
@@ -35955,8 +35960,8 @@ sample_metadata={
     "country": "USA",
     "county": "Alameda",
     "date": "2020-05-28",
+    "enrichment": "panel",
     "fine_location": "Berkeley",
-    "is_enriched": true,
     "location": "San Francisco",
     "method": "amicon",
     "reads": 504599
@@ -35965,8 +35970,8 @@ sample_metadata={
     "country": "USA",
     "county": "Alameda",
     "date": "2020-05-13",
+    "enrichment": "panel",
     "fine_location": "Oakland",
-    "is_enriched": true,
     "location": "San Francisco",
     "method": "amicon",
     "reads": 12072
@@ -35975,8 +35980,8 @@ sample_metadata={
     "country": "USA",
     "county": "Alameda",
     "date": "2020-06-09",
+    "enrichment": "panel",
     "fine_location": "Oakland",
-    "is_enriched": true,
     "location": "San Francisco",
     "method": "amicon",
     "reads": 476640
@@ -35985,8 +35990,8 @@ sample_metadata={
     "country": "USA",
     "county": "Alameda",
     "date": "2020-05-28",
+    "enrichment": "panel",
     "fine_location": "Oakland",
-    "is_enriched": true,
     "location": "San Francisco",
     "method": "amicon",
     "reads": 624031
@@ -35995,8 +36000,8 @@ sample_metadata={
     "country": "USA",
     "county": "Alameda",
     "date": "2020-05-19",
+    "enrichment": "panel",
     "fine_location": "Oakland",
-    "is_enriched": true,
     "location": "San Francisco",
     "method": "amicon",
     "reads": 171626
@@ -36005,8 +36010,8 @@ sample_metadata={
     "country": "USA",
     "county": "Alameda",
     "date": "2020-06-30",
+    "enrichment": "panel",
     "fine_location": "Oakland",
-    "is_enriched": true,
     "location": "San Francisco",
     "method": "COL",
     "reads": 2405482
@@ -36015,8 +36020,8 @@ sample_metadata={
     "country": "USA",
     "county": "Alameda",
     "date": "2020-05-19",
+    "enrichment": "panel",
     "fine_location": "Oakland",
-    "is_enriched": true,
     "location": "San Francisco",
     "method": "amicon",
     "reads": 167374
@@ -36025,8 +36030,8 @@ sample_metadata={
     "country": "USA",
     "county": "Alameda",
     "date": "2020-05-13",
+    "enrichment": "panel",
     "fine_location": "Oakland",
-    "is_enriched": true,
     "location": "San Francisco",
     "method": "amicon",
     "reads": 41087
@@ -36035,8 +36040,8 @@ sample_metadata={
     "country": "USA",
     "county": "Alameda",
     "date": "2020-06-30",
+    "enrichment": "panel",
     "fine_location": "Oakland",
-    "is_enriched": true,
     "location": "San Francisco",
     "method": "MOS",
     "reads": 953038
@@ -36045,8 +36050,8 @@ sample_metadata={
     "country": "USA",
     "county": "Marin",
     "date": "2020-07-01",
+    "enrichment": "panel",
     "fine_location": "Marin",
-    "is_enriched": true,
     "location": "San Francisco",
     "method": "MOS",
     "reads": 2891359
@@ -36055,8 +36060,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2020-09-10",
+    "enrichment": "viral",
     "fine_location": "SB",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 2737872
   },
@@ -36064,8 +36069,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2020-09-24",
+    "enrichment": "viral",
     "fine_location": "SB",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 6515759
   },
@@ -36073,8 +36078,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2020-08-27",
+    "enrichment": "viral",
     "fine_location": "SB",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 3204232
   },
@@ -36082,8 +36087,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2020-08-13",
+    "enrichment": "viral",
     "fine_location": "SB",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 2782200
   },
@@ -36091,8 +36096,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2020-10-22",
+    "enrichment": "viral",
     "fine_location": "SB",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 3429177
   },
@@ -36100,8 +36105,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2020-09-24",
+    "enrichment": "viral",
     "fine_location": "PL",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 3842559
   },
@@ -36109,8 +36114,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2020-09-10",
+    "enrichment": "viral",
     "fine_location": "PL",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 4419124
   },
@@ -36118,8 +36123,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2020-08-27",
+    "enrichment": "viral",
     "fine_location": "PL",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 3402804
   },
@@ -36127,8 +36132,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2020-08-13",
+    "enrichment": "viral",
     "fine_location": "PL",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 3786318
   },
@@ -36136,8 +36141,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2020-10-22",
+    "enrichment": "viral",
     "fine_location": "PL",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 3857662
   },
@@ -36145,8 +36150,8 @@ sample_metadata={
     "country": "USA",
     "county": "Orange",
     "date": "2020-09-30",
+    "enrichment": "viral",
     "fine_location": "OC",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 3588085
   },
@@ -36154,8 +36159,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-09-15",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 2807360
   },
@@ -36163,8 +36168,8 @@ sample_metadata={
     "country": "USA",
     "county": "Orange",
     "date": "2020-09-23",
+    "enrichment": "viral",
     "fine_location": "OC",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 4520022
   },
@@ -36172,8 +36177,8 @@ sample_metadata={
     "country": "USA",
     "county": "Orange",
     "date": "2020-09-16",
+    "enrichment": "viral",
     "fine_location": "OC",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 1327075
   },
@@ -36181,8 +36186,8 @@ sample_metadata={
     "country": "USA",
     "county": "Orange",
     "date": "2020-09-03",
+    "enrichment": "viral",
     "fine_location": "OC",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 4874211
   },
@@ -36190,8 +36195,8 @@ sample_metadata={
     "country": "USA",
     "county": "Orange",
     "date": "2020-09-02",
+    "enrichment": "viral",
     "fine_location": "OC",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 3689634
   },
@@ -36199,8 +36204,8 @@ sample_metadata={
     "country": "USA",
     "county": "Orange",
     "date": "2020-08-26",
+    "enrichment": "viral",
     "fine_location": "OC",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 3283166
   },
@@ -36208,8 +36213,8 @@ sample_metadata={
     "country": "USA",
     "county": "Orange",
     "date": "2020-08-19",
+    "enrichment": "viral",
     "fine_location": "OC",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 3182825
   },
@@ -36217,8 +36222,8 @@ sample_metadata={
     "country": "USA",
     "county": "Orange",
     "date": "2020-08-12",
+    "enrichment": "viral",
     "fine_location": "OC",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 1292650
   },
@@ -36226,8 +36231,8 @@ sample_metadata={
     "country": "USA",
     "county": "Orange",
     "date": "2020-10-07",
+    "enrichment": "viral",
     "fine_location": "OC",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 3890259
   },
@@ -36235,8 +36240,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2020-09-11",
+    "enrichment": "viral",
     "fine_location": "NC",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 2901986
   },
@@ -36244,8 +36249,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2020-08-28",
+    "enrichment": "viral",
     "fine_location": "NC",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 3467617
   },
@@ -36253,8 +36258,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-09-08",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 3233824
   },
@@ -36262,8 +36267,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2020-08-14",
+    "enrichment": "viral",
     "fine_location": "NC",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 4099096
   },
@@ -36271,8 +36276,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2020-10-23",
+    "enrichment": "viral",
     "fine_location": "NC",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 4124544
   },
@@ -36280,8 +36285,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2020-10-09",
+    "enrichment": "viral",
     "fine_location": "NC",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 4902017
   },
@@ -36289,8 +36294,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-09-22",
+    "enrichment": "viral",
     "fine_location": "JWPCP",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 4514886
   },
@@ -36298,8 +36303,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-09-15",
+    "enrichment": "viral",
     "fine_location": "JWPCP",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 4234727
   },
@@ -36307,8 +36312,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-09-08",
+    "enrichment": "viral",
     "fine_location": "JWPCP",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 4018438
   },
@@ -36316,8 +36321,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-09-01",
+    "enrichment": "viral",
     "fine_location": "JWPCP",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 3630148
   },
@@ -36325,8 +36330,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-08-25",
+    "enrichment": "viral",
     "fine_location": "JWPCP",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 3183234
   },
@@ -36334,8 +36339,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-08-18",
+    "enrichment": "viral",
     "fine_location": "JWPCP",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 4059288
   },
@@ -36343,8 +36348,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-08-11",
+    "enrichment": "viral",
     "fine_location": "JWPCP",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 2102736
   },
@@ -36352,8 +36357,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-09-01",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 4286417
   },
@@ -36361,8 +36366,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-10-13",
+    "enrichment": "viral",
     "fine_location": "JWPCP",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 4221630
   },
@@ -36370,8 +36375,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-10-06",
+    "enrichment": "viral",
     "fine_location": "JWPCP",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 4832507
   },
@@ -36379,8 +36384,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-10-27",
+    "enrichment": "viral",
     "fine_location": "JWPCP",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 2374918
   },
@@ -36388,8 +36393,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-10-20",
+    "enrichment": "viral",
     "fine_location": "JWPCP",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 4362852
   },
@@ -36397,8 +36402,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-09-15",
+    "enrichment": "viral",
     "fine_location": "HTP",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 3579700
   },
@@ -36406,8 +36411,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-09-08",
+    "enrichment": "viral",
     "fine_location": "HTP",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 3551002
   },
@@ -36415,8 +36420,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-09-01",
+    "enrichment": "viral",
     "fine_location": "HTP",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 3604679
   },
@@ -36424,8 +36429,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-08-25",
+    "enrichment": "viral",
     "fine_location": "HTP",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 3486258
   },
@@ -36433,8 +36438,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-08-18",
+    "enrichment": "viral",
     "fine_location": "HTP",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 2800039
   },
@@ -36442,8 +36447,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-08-11",
+    "enrichment": "viral",
     "fine_location": "HTP",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 3318348
   },
@@ -36451,8 +36456,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-08-25",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 4066111
   },
@@ -36460,8 +36465,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-10-27",
+    "enrichment": "viral",
     "fine_location": "HTP",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 4215471
   },
@@ -36469,8 +36474,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-10-20",
+    "enrichment": "viral",
     "fine_location": "HTP",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 4350744
   },
@@ -36478,8 +36483,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-10-13",
+    "enrichment": "viral",
     "fine_location": "HTP",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 2179170
   },
@@ -36487,8 +36492,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-10-02",
+    "enrichment": "viral",
     "fine_location": "HTP",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 4595209
   },
@@ -36496,8 +36501,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-09-30",
+    "enrichment": "panel",
     "fine_location": "SJ",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 1615689
   },
@@ -36505,8 +36510,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-09-16",
+    "enrichment": "panel",
     "fine_location": "SJ",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 4478207
   },
@@ -36514,8 +36519,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-09-09",
+    "enrichment": "panel",
     "fine_location": "SJ",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 3538301
   },
@@ -36523,8 +36528,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-09-02",
+    "enrichment": "panel",
     "fine_location": "SJ",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 3233946
   },
@@ -36532,8 +36537,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-08-26",
+    "enrichment": "panel",
     "fine_location": "SJ",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 4395025
   },
@@ -36541,8 +36546,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-08-19",
+    "enrichment": "panel",
     "fine_location": "SJ",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 3312596
   },
@@ -36550,8 +36555,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-08-18",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 3810545
   },
@@ -36559,8 +36564,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-08-12",
+    "enrichment": "panel",
     "fine_location": "SJ",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 5045252
   },
@@ -36568,8 +36573,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-10-28",
+    "enrichment": "panel",
     "fine_location": "SJ",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 5592467
   },
@@ -36577,8 +36582,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-10-21",
+    "enrichment": "panel",
     "fine_location": "SJ",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 2529771
   },
@@ -36586,8 +36591,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-10-14",
+    "enrichment": "panel",
     "fine_location": "SJ",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 3743058
   },
@@ -36595,8 +36600,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-10-07",
+    "enrichment": "panel",
     "fine_location": "SJ",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 6620418
   },
@@ -36604,8 +36609,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2020-09-24",
+    "enrichment": "panel",
     "fine_location": "SB",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 8113925
   },
@@ -36613,8 +36618,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2020-09-10",
+    "enrichment": "panel",
     "fine_location": "SB",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 2556497
   },
@@ -36622,8 +36627,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2020-08-27",
+    "enrichment": "panel",
     "fine_location": "SB",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 4596913
   },
@@ -36631,8 +36636,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2020-08-13",
+    "enrichment": "panel",
     "fine_location": "SB",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 2057061
   },
@@ -36640,8 +36645,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2020-10-22",
+    "enrichment": "panel",
     "fine_location": "SB",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 3293890
   },
@@ -36649,8 +36654,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-08-11",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 1901768
   },
@@ -36658,8 +36663,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2020-09-24",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 6227653
   },
@@ -36667,8 +36672,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2020-09-10",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 3272174
   },
@@ -36676,8 +36681,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2020-08-27",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 1832839
   },
@@ -36685,8 +36690,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2020-08-13",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 3582304
   },
@@ -36694,8 +36699,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2020-10-22",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 2000753
   },
@@ -36703,8 +36708,8 @@ sample_metadata={
     "country": "USA",
     "county": "Orange",
     "date": "2020-09-30",
+    "enrichment": "panel",
     "fine_location": "OC",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 2495164
   },
@@ -36712,8 +36717,8 @@ sample_metadata={
     "country": "USA",
     "county": "Orange",
     "date": "2020-09-23",
+    "enrichment": "panel",
     "fine_location": "OC",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 3618278
   },
@@ -36721,8 +36726,8 @@ sample_metadata={
     "country": "USA",
     "county": "Orange",
     "date": "2020-09-16",
+    "enrichment": "panel",
     "fine_location": "OC",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 2282933
   },
@@ -36730,8 +36735,8 @@ sample_metadata={
     "country": "USA",
     "county": "Orange",
     "date": "2020-09-03",
+    "enrichment": "panel",
     "fine_location": "OC",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 5551606
   },
@@ -36739,8 +36744,8 @@ sample_metadata={
     "country": "USA",
     "county": "Orange",
     "date": "2020-09-02",
+    "enrichment": "panel",
     "fine_location": "OC",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 3156280
   },
@@ -36748,8 +36753,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-10-27",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 3477646
   },
@@ -36757,8 +36762,8 @@ sample_metadata={
     "country": "USA",
     "county": "Orange",
     "date": "2020-08-26",
+    "enrichment": "panel",
     "fine_location": "OC",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 1462677
   },
@@ -36766,8 +36771,8 @@ sample_metadata={
     "country": "USA",
     "county": "Orange",
     "date": "2020-08-19",
+    "enrichment": "panel",
     "fine_location": "OC",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 2389728
   },
@@ -36775,8 +36780,8 @@ sample_metadata={
     "country": "USA",
     "county": "Orange",
     "date": "2020-08-12",
+    "enrichment": "panel",
     "fine_location": "OC",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 6241597
   },
@@ -36784,8 +36789,8 @@ sample_metadata={
     "country": "USA",
     "county": "Orange",
     "date": "2020-10-07",
+    "enrichment": "panel",
     "fine_location": "OC",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 3355936
   },
@@ -36793,8 +36798,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2020-09-11",
+    "enrichment": "panel",
     "fine_location": "NC",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 2258105
   },
@@ -36802,8 +36807,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2020-08-28",
+    "enrichment": "panel",
     "fine_location": "NC",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 4308728
   },
@@ -36811,8 +36816,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2020-08-14",
+    "enrichment": "panel",
     "fine_location": "NC",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 5650167
   },
@@ -36820,8 +36825,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2020-10-23",
+    "enrichment": "panel",
     "fine_location": "NC",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 3925138
   },
@@ -36829,8 +36834,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2020-10-09",
+    "enrichment": "panel",
     "fine_location": "NC",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 1231997
   },
@@ -36838,8 +36843,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-09-22",
+    "enrichment": "panel",
     "fine_location": "JWPCP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 3811362
   },
@@ -36847,8 +36852,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-10-20",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 3094229
   },
@@ -36856,8 +36861,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-09-15",
+    "enrichment": "panel",
     "fine_location": "JWPCP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 3981090
   },
@@ -36865,8 +36870,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-09-08",
+    "enrichment": "panel",
     "fine_location": "JWPCP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 3530954
   },
@@ -36874,8 +36879,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-09-23",
+    "enrichment": "panel",
     "fine_location": "SJ",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 1043613
   },
@@ -36883,8 +36888,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-11-04",
+    "enrichment": "panel",
     "fine_location": "SJ",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 1380941
   },
@@ -36892,8 +36897,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-11-18",
+    "enrichment": "panel",
     "fine_location": "SJ",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 1230272
   },
@@ -36901,8 +36906,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-10-20",
+    "enrichment": "panel",
     "fine_location": "JWPCP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 2950881
   },
@@ -36910,8 +36915,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-10-13",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 3357535
   },
@@ -36919,8 +36924,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-10-02",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 3441208
   },
@@ -36928,8 +36933,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-11-11",
+    "enrichment": "panel",
     "fine_location": "SJ",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 1459625
   },
@@ -36937,8 +36942,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2020-11-05",
+    "enrichment": "panel",
     "fine_location": "SB",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 1118519
   },
@@ -36946,8 +36951,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2020-10-08",
+    "enrichment": "panel",
     "fine_location": "SB",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 1159722
   },
@@ -36955,8 +36960,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2020-12-28",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 1208997
   },
@@ -36964,8 +36969,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2020-12-22",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 1263185
   },
@@ -36973,8 +36978,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2020-12-14",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 1405184
   },
@@ -36982,8 +36987,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2020-11-05",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 773261
   },
@@ -36991,8 +36996,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-09-01",
+    "enrichment": "panel",
     "fine_location": "JWPCP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 4457786
   },
@@ -37000,8 +37005,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2020-11-30",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 1067834
   },
@@ -37009,8 +37014,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2020-11-29",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 1346473
   },
@@ -37018,8 +37023,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-01-04",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 1753622
   },
@@ -37027,8 +37032,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-01-03",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 1346042
   },
@@ -37036,8 +37041,8 @@ sample_metadata={
     "country": "USA",
     "county": "Orange",
     "date": "2020-12-21",
+    "enrichment": "panel",
     "fine_location": "OC",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 1164045
   },
@@ -37045,8 +37050,8 @@ sample_metadata={
     "country": "USA",
     "county": "Orange",
     "date": "2020-12-14",
+    "enrichment": "panel",
     "fine_location": "OC",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 1231078
   },
@@ -37054,8 +37059,8 @@ sample_metadata={
     "country": "USA",
     "county": "Orange",
     "date": "2020-11-04",
+    "enrichment": "panel",
     "fine_location": "OC",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 1246005
   },
@@ -37063,8 +37068,8 @@ sample_metadata={
     "country": "USA",
     "county": "Orange",
     "date": "2020-11-11",
+    "enrichment": "panel",
     "fine_location": "OC",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 1605735
   },
@@ -37072,8 +37077,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-09-29",
+    "enrichment": "panel",
     "fine_location": "JWPCP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 1653176
   },
@@ -37081,8 +37086,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-11-03",
+    "enrichment": "panel",
     "fine_location": "JWPCP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 1561405
   },
@@ -37090,8 +37095,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-08-25",
+    "enrichment": "panel",
     "fine_location": "JWPCP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 1925694
   },
@@ -37099,8 +37104,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-11-17",
+    "enrichment": "panel",
     "fine_location": "JWPCP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 1112103
   },
@@ -37108,8 +37113,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-11-10",
+    "enrichment": "panel",
     "fine_location": "JWPCP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 1232548
   },
@@ -37117,8 +37122,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-09-29",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 1603711
   },
@@ -37126,8 +37131,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-09-22",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 1294643
   },
@@ -37135,8 +37140,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-12-29",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 1142935
   },
@@ -37144,8 +37149,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-12-22",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 1298420
   },
@@ -37153,8 +37158,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-12-04",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 1264824
   },
@@ -37162,8 +37167,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-11-03",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 1073151
   },
@@ -37171,8 +37176,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-11-24",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 1479324
   },
@@ -37180,8 +37185,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-01-03",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 990379
   },
@@ -37189,8 +37194,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-08-18",
+    "enrichment": "panel",
     "fine_location": "JWPCP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 3034820
   },
@@ -37198,8 +37203,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-09-23",
+    "enrichment": "viral",
     "fine_location": "SJ",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 10246075
   },
@@ -37207,8 +37212,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-11-04",
+    "enrichment": "viral",
     "fine_location": "SJ",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 10232266
   },
@@ -37216,8 +37221,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-11-18",
+    "enrichment": "viral",
     "fine_location": "SJ",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 13154158
   },
@@ -37225,8 +37230,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-11-11",
+    "enrichment": "viral",
     "fine_location": "SJ",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 11601202
   },
@@ -37234,8 +37239,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2020-11-05",
+    "enrichment": "viral",
     "fine_location": "SB",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 11389423
   },
@@ -37243,8 +37248,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2020-10-08",
+    "enrichment": "viral",
     "fine_location": "SB",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 11257694
   },
@@ -37252,8 +37257,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2020-12-28",
+    "enrichment": "viral",
     "fine_location": "PL",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 8833468
   },
@@ -37261,8 +37266,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2020-12-22",
+    "enrichment": "viral",
     "fine_location": "PL",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 9334593
   },
@@ -37270,8 +37275,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2020-12-14",
+    "enrichment": "viral",
     "fine_location": "PL",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 10305132
   },
@@ -37279,8 +37284,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2020-11-05",
+    "enrichment": "viral",
     "fine_location": "PL",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 8153083
   },
@@ -37288,8 +37293,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-08-11",
+    "enrichment": "panel",
     "fine_location": "JWPCP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 2920601
   },
@@ -37297,8 +37302,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2020-11-30",
+    "enrichment": "viral",
     "fine_location": "PL",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 10775374
   },
@@ -37306,8 +37311,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2020-11-29",
+    "enrichment": "viral",
     "fine_location": "PL",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 10112554
   },
@@ -37315,8 +37320,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-01-04",
+    "enrichment": "viral",
     "fine_location": "PL",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 10182955
   },
@@ -37324,8 +37329,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-01-03",
+    "enrichment": "viral",
     "fine_location": "PL",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 10140886
   },
@@ -37333,8 +37338,8 @@ sample_metadata={
     "country": "USA",
     "county": "Orange",
     "date": "2020-12-21",
+    "enrichment": "viral",
     "fine_location": "OC",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 9826830
   },
@@ -37342,8 +37347,8 @@ sample_metadata={
     "country": "USA",
     "county": "Orange",
     "date": "2020-12-14",
+    "enrichment": "viral",
     "fine_location": "OC",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 9840771
   },
@@ -37351,8 +37356,8 @@ sample_metadata={
     "country": "USA",
     "county": "Orange",
     "date": "2020-11-09",
+    "enrichment": "viral",
     "fine_location": "OC",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 10616714
   },
@@ -37360,8 +37365,8 @@ sample_metadata={
     "country": "USA",
     "county": "Orange",
     "date": "2020-11-04",
+    "enrichment": "viral",
     "fine_location": "OC",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 8583928
   },
@@ -37369,8 +37374,8 @@ sample_metadata={
     "country": "USA",
     "county": "Orange",
     "date": "2020-11-25",
+    "enrichment": "viral",
     "fine_location": "OC",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 9408142
   },
@@ -37378,8 +37383,8 @@ sample_metadata={
     "country": "USA",
     "county": "Orange",
     "date": "2020-11-18",
+    "enrichment": "viral",
     "fine_location": "OC",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 10523877
   },
@@ -37387,8 +37392,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-10-13",
+    "enrichment": "panel",
     "fine_location": "JWPCP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 4345005
   },
@@ -37396,8 +37401,8 @@ sample_metadata={
     "country": "USA",
     "county": "Orange",
     "date": "2020-11-11",
+    "enrichment": "viral",
     "fine_location": "OC",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 11667235
   },
@@ -37405,8 +37410,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2020-09-25",
+    "enrichment": "viral",
     "fine_location": "NC",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 9670784
   },
@@ -37414,8 +37419,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2020-11-06",
+    "enrichment": "viral",
     "fine_location": "NC",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 12434072
   },
@@ -37423,8 +37428,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-09-29",
+    "enrichment": "viral",
     "fine_location": "JWPCP",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 10164300
   },
@@ -37432,8 +37437,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-11-03",
+    "enrichment": "viral",
     "fine_location": "JWPCP",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 11233097
   },
@@ -37441,8 +37446,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-11-17",
+    "enrichment": "viral",
     "fine_location": "JWPCP",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 12720283
   },
@@ -37450,8 +37455,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-11-10",
+    "enrichment": "viral",
     "fine_location": "JWPCP",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 9675052
   },
@@ -37459,8 +37464,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-09-29",
+    "enrichment": "viral",
     "fine_location": "HTP",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 13626688
   },
@@ -37468,8 +37473,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-09-22",
+    "enrichment": "viral",
     "fine_location": "HTP",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 12904150
   },
@@ -37477,8 +37482,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-12-29",
+    "enrichment": "viral",
     "fine_location": "HTP",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 11504066
   },
@@ -37486,8 +37491,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-10-06",
+    "enrichment": "panel",
     "fine_location": "JWPCP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 4786787
   },
@@ -37495,8 +37500,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-12-22",
+    "enrichment": "viral",
     "fine_location": "HTP",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 8861526
   },
@@ -37504,8 +37509,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-12-15",
+    "enrichment": "viral",
     "fine_location": "HTP",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 11960233
   },
@@ -37513,8 +37518,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-12-04",
+    "enrichment": "viral",
     "fine_location": "HTP",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 10874604
   },
@@ -37522,8 +37527,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-12-01",
+    "enrichment": "viral",
     "fine_location": "HTP",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 11912829
   },
@@ -37531,8 +37536,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-11-03",
+    "enrichment": "viral",
     "fine_location": "HTP",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 11534523
   },
@@ -37540,8 +37545,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-11-24",
+    "enrichment": "viral",
     "fine_location": "HTP",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 11045877
   },
@@ -37549,8 +37554,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-11-17",
+    "enrichment": "viral",
     "fine_location": "HTP",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 16394657
   },
@@ -37558,8 +37563,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-01-03",
+    "enrichment": "viral",
     "fine_location": "HTP",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 9626457
   },
@@ -37567,8 +37572,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-09-30",
+    "enrichment": "viral",
     "fine_location": "SJ",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 2810576
   },
@@ -37576,8 +37581,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-09-16",
+    "enrichment": "viral",
     "fine_location": "SJ",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 3829748
   },
@@ -37585,8 +37590,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-10-27",
+    "enrichment": "panel",
     "fine_location": "JWPCP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 4599945
   },
@@ -37594,8 +37599,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-09-09",
+    "enrichment": "viral",
     "fine_location": "SJ",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 3184286
   },
@@ -37603,8 +37608,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-09-02",
+    "enrichment": "viral",
     "fine_location": "SJ",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 3041921
   },
@@ -37612,8 +37617,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-08-26",
+    "enrichment": "viral",
     "fine_location": "SJ",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 3108434
   },
@@ -37621,8 +37626,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-08-19",
+    "enrichment": "viral",
     "fine_location": "SJ",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 3011011
   },
@@ -37630,8 +37635,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-08-12",
+    "enrichment": "viral",
     "fine_location": "SJ",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 3241686
   },
@@ -37639,8 +37644,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-10-28",
+    "enrichment": "viral",
     "fine_location": "SJ",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 4604124
   },
@@ -37648,8 +37653,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-10-21",
+    "enrichment": "viral",
     "fine_location": "SJ",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 4192507
   },
@@ -37657,8 +37662,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-10-14",
+    "enrichment": "viral",
     "fine_location": "SJ",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 5260005
   },
@@ -37666,8 +37671,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2020-10-07",
+    "enrichment": "viral",
     "fine_location": "SJ",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 4632349
   },
@@ -37777,8 +37782,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-04-08",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 26253383
   },
@@ -37786,8 +37791,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-04-06",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 33283433
   },
@@ -37795,8 +37800,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-04-04",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 33474083
   },
@@ -37804,8 +37809,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-04-29",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 18130763
   },
@@ -37813,8 +37818,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-04-26",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 26741133
   },
@@ -37822,8 +37827,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-04-25",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 24205139
   },
@@ -37831,8 +37836,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-04-22",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 22475531
   },
@@ -37840,8 +37845,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-04-15",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 16175837
   },
@@ -37849,8 +37854,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-03-09",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 32992693
   },
@@ -37858,8 +37863,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2020-11-16",
+    "enrichment": "panel",
     "fine_location": "ESC",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 31872110
   },
@@ -37867,8 +37872,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-03-07",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 45970871
   },
@@ -37876,8 +37881,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-03-04",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 81545969
   },
@@ -37885,8 +37890,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-03-31",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 20116820
   },
@@ -37894,8 +37899,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-03-30",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 25250160
   },
@@ -37903,8 +37908,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-03-29",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 19159183
   },
@@ -37912,8 +37917,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-03-25",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 17319354
   },
@@ -37921,8 +37926,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-03-23",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 24095711
   },
@@ -37930,8 +37935,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-03-21",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 20956204
   },
@@ -37939,8 +37944,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-03-02",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 15857561
   },
@@ -37948,8 +37953,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-03-18",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 28403414
   },
@@ -37957,8 +37962,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2020-10-05",
+    "enrichment": "panel",
     "fine_location": "ESC",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 25117131
   },
@@ -37966,8 +37971,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-03-16",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 40274906
   },
@@ -37975,8 +37980,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-03-14",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 54137635
   },
@@ -37984,8 +37989,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-03-11",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 88897609
   },
@@ -37993,8 +37998,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-02-09",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 28860531
   },
@@ -38002,8 +38007,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-02-07",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 26508968
   },
@@ -38011,8 +38016,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-02-04",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 45571835
   },
@@ -38020,8 +38025,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-02-28",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 19406249
   },
@@ -38029,8 +38034,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2020-08-10",
+    "enrichment": "panel",
     "fine_location": "ESC",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 20688286
   },
@@ -38038,8 +38043,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-07-05",
+    "enrichment": "panel",
     "fine_location": "ESC",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 23328395
   },
@@ -38047,8 +38052,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-07-19",
+    "enrichment": "panel",
     "fine_location": "ESC",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 24510073
   },
@@ -38056,8 +38061,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-07-12",
+    "enrichment": "panel",
     "fine_location": "ESC",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 31905281
   },
@@ -38065,8 +38070,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-06-09",
+    "enrichment": "panel",
     "fine_location": "ESC",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 62759357
   },
@@ -38074,8 +38079,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-06-24",
+    "enrichment": "panel",
     "fine_location": "ESC",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 27876441
   },
@@ -38083,8 +38088,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-06-14",
+    "enrichment": "panel",
     "fine_location": "ESC",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 32055129
   },
@@ -38092,8 +38097,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-05-31",
+    "enrichment": "panel",
     "fine_location": "ESC",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 30030783
   },
@@ -38101,8 +38106,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-01-04",
+    "enrichment": "panel",
     "fine_location": "ESC",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 18932969
   },
@@ -38110,8 +38115,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-05-24",
+    "enrichment": "panel",
     "fine_location": "ESC",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 28184363
   },
@@ -38119,8 +38124,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-05-10",
+    "enrichment": "panel",
     "fine_location": "ESC",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 34715147
   },
@@ -38128,8 +38133,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-04-05",
+    "enrichment": "panel",
     "fine_location": "ESC",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 48623917
   },
@@ -38137,8 +38142,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-04-26",
+    "enrichment": "panel",
     "fine_location": "ESC",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 21110292
   },
@@ -38146,8 +38151,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-04-19",
+    "enrichment": "panel",
     "fine_location": "ESC",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 21499815
   },
@@ -38155,8 +38160,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-04-12",
+    "enrichment": "panel",
     "fine_location": "ESC",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 21123849
   },
@@ -38164,8 +38169,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-03-08",
+    "enrichment": "panel",
     "fine_location": "ESC",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 21341916
   },
@@ -38173,8 +38178,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-03-29",
+    "enrichment": "panel",
     "fine_location": "ESC",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 19208504
   },
@@ -38182,8 +38187,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-03-22",
+    "enrichment": "panel",
     "fine_location": "ESC",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 19154003
   },
@@ -38191,8 +38196,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-03-17",
+    "enrichment": "panel",
     "fine_location": "ESC",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 33445992
   },
@@ -38200,8 +38205,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-01-25",
+    "enrichment": "panel",
     "fine_location": "ESC",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 18203904
   },
@@ -38209,8 +38214,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-03-01",
+    "enrichment": "panel",
     "fine_location": "ESC",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 15760352
   },
@@ -38218,8 +38223,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-02-08",
+    "enrichment": "panel",
     "fine_location": "ESC",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 17840303
   },
@@ -38227,8 +38232,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-08-03",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 27436733
   },
@@ -38236,8 +38241,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-07-05",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 36996619
   },
@@ -38245,8 +38250,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-07-29",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 35019158
   },
@@ -38254,8 +38259,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-07-25",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 26690142
   },
@@ -38263,8 +38268,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-07-19",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 31517495
   },
@@ -38272,8 +38277,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-07-12",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 39909586
   },
@@ -38281,8 +38286,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-02-23",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 20105076
   },
@@ -38290,8 +38295,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-02-21",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 15309642
   },
@@ -38299,8 +38304,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-02-02",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 22119886
   },
@@ -38308,8 +38313,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2020-10-26",
+    "enrichment": "panel",
     "fine_location": "ESC",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 20102428
   },
@@ -38317,8 +38322,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-02-18",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 42161537
   },
@@ -38326,8 +38331,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-02-16",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 21817522
   },
@@ -38335,8 +38340,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-02-15",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 20575397
   },
@@ -38344,8 +38349,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-02-10",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 24322097
   },
@@ -38353,8 +38358,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-01-07",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 30116471
   },
@@ -38362,8 +38367,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-01-05",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 30197133
   },
@@ -38371,8 +38376,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-01-31",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 31167284
   },
@@ -38380,8 +38385,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-01-28",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 51529762
   },
@@ -38389,8 +38394,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-01-26",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 14688921
   },
@@ -38398,8 +38403,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-01-24",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 14541009
   },
@@ -38407,8 +38412,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2020-10-19",
+    "enrichment": "panel",
     "fine_location": "ESC",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 23707063
   },
@@ -38416,8 +38421,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-01-21",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 33096849
   },
@@ -38425,8 +38430,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-01-19",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 42128435
   },
@@ -38434,8 +38439,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-01-14",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 35541273
   },
@@ -38443,8 +38448,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-01-12",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 19397585
   },
@@ -38452,8 +38457,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-01-10",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 16123940
   },
@@ -38461,8 +38466,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2020-09-07",
+    "enrichment": "panel",
     "fine_location": "ESC",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 13129712
   },
@@ -38470,8 +38475,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2020-09-21",
+    "enrichment": "panel",
     "fine_location": "ESC",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 20408957
   },
@@ -38479,8 +38484,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2020-09-14",
+    "enrichment": "panel",
     "fine_location": "ESC",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 17753618
   },
@@ -38488,8 +38493,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2020-08-31",
+    "enrichment": "panel",
     "fine_location": "ESC",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 19394777
   },
@@ -38497,8 +38502,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2020-08-03",
+    "enrichment": "panel",
     "fine_location": "ESC",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 20008511
   },
@@ -38506,8 +38511,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2020-10-12",
+    "enrichment": "panel",
     "fine_location": "ESC",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 11005318
   },
@@ -38515,8 +38520,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2020-08-24",
+    "enrichment": "panel",
     "fine_location": "ESC",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 18631191
   },
@@ -38524,8 +38529,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2020-08-17",
+    "enrichment": "panel",
     "fine_location": "ESC",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 18151826
   },
@@ -38533,8 +38538,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-03-03",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 27092534
   },
@@ -38542,8 +38547,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-03-29",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 27974187
   },
@@ -38551,8 +38556,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-03-28",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 14135750
   },
@@ -38560,8 +38565,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-03-24",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 21196717
   },
@@ -38569,8 +38574,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-03-22",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 17087067
   },
@@ -38578,8 +38583,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-03-21",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 22006682
   },
@@ -38587,8 +38592,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-03-18",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 19207196
   },
@@ -38596,8 +38601,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-03-15",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 23195576
   },
@@ -38605,8 +38610,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-03-14",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 28590407
   },
@@ -38614,8 +38619,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2020-12-28",
+    "enrichment": "panel",
     "fine_location": "ESC",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 24739827
   },
@@ -38623,8 +38628,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-03-10",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 30987893
   },
@@ -38632,8 +38637,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-03-01",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 60418007
   },
@@ -38641,8 +38646,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-02-08",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 18350700
   },
@@ -38650,8 +38655,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-02-07",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 18698080
   },
@@ -38659,8 +38664,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-02-03",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 18298641
   },
@@ -38668,8 +38673,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-02-28",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 33750340
   },
@@ -38677,8 +38682,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-02-22",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 18102742
   },
@@ -38686,8 +38691,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-02-21",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 20641022
   },
@@ -38695,8 +38700,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-02-17",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 27006804
   },
@@ -38704,8 +38709,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-02-15",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 16196324
   },
@@ -38713,8 +38718,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2020-12-21",
+    "enrichment": "panel",
     "fine_location": "ESC",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 33957228
   },
@@ -38722,8 +38727,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-02-14",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 14935795
   },
@@ -38731,8 +38736,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-02-10",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 16983547
   },
@@ -38740,8 +38745,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-02-01",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 33644472
   },
@@ -38749,8 +38754,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-01-06",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 19405373
   },
@@ -38758,8 +38763,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-01-31",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 22552533
   },
@@ -38767,8 +38772,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-01-27",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 16212776
   },
@@ -38776,8 +38781,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-01-25",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 19346950
   },
@@ -38785,8 +38790,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-05-04",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 21033696
   },
@@ -38794,8 +38799,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-05-31",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 45560441
   },
@@ -38803,8 +38808,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-05-25",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 41552492
   },
@@ -38812,8 +38817,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-05-24",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 32477043
   },
@@ -38821,8 +38826,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-05-23",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 53349248
   },
@@ -38830,8 +38835,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-05-20",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 54066214
   },
@@ -38839,8 +38844,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-05-02",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 27981855
   },
@@ -38848,8 +38853,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-05-18",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 60462482
   },
@@ -38857,8 +38862,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-05-16",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 63138081
   },
@@ -38866,8 +38871,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-05-13",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 19135374
   },
@@ -38875,8 +38880,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2020-11-02",
+    "enrichment": "panel",
     "fine_location": "ESC",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 44283851
   },
@@ -38884,8 +38889,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-05-11",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 18479773
   },
@@ -38893,8 +38898,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-06-07",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 26340586
   },
@@ -38902,8 +38907,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-06-28",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 40776879
   },
@@ -38911,8 +38916,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-06-21",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 33586361
   },
@@ -38920,8 +38925,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-06-02",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 51722853
   },
@@ -38929,8 +38934,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-02-22",
+    "enrichment": "panel",
     "fine_location": "ESC",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 20786144
   },
@@ -38938,8 +38943,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-06-14",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 28924021
   },
@@ -38947,8 +38952,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-05-09",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 41251583
   },
@@ -38956,8 +38961,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-05-05",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 40281689
   },
@@ -38965,8 +38970,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-05-04",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 24639394
   },
@@ -38974,8 +38979,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-05-31",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 37289091
   },
@@ -38983,8 +38988,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-05-03",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 13887023
   },
@@ -38992,8 +38997,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-05-24",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 35544326
   },
@@ -39001,8 +39006,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-05-17",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 26989665
   },
@@ -39010,8 +39015,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-05-12",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 20428056
   },
@@ -39019,8 +39024,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-05-10",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 21993700
   },
@@ -39028,8 +39033,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-02-15",
+    "enrichment": "panel",
     "fine_location": "ESC",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 19269393
   },
@@ -39037,8 +39042,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-04-07",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 22655623
   },
@@ -39046,8 +39051,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-04-05",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 18542548
   },
@@ -39055,8 +39060,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-04-04",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 29772207
   },
@@ -39064,8 +39069,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-04-28",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 25686428
   },
@@ -39073,8 +39078,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-04-26",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 38431621
   },
@@ -39082,8 +39087,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-04-25",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 24951796
   },
@@ -39091,8 +39096,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-04-21",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 26074221
   },
@@ -39100,8 +39105,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-04-14",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 26848265
   },
@@ -39109,8 +39114,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-03-08",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 45412176
   },
@@ -39118,8 +39123,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-03-07",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 21699355
   },
@@ -39127,8 +39132,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2020-12-07",
+    "enrichment": "panel",
     "fine_location": "ESC",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 36184126
   },
@@ -39136,8 +39141,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-03-31",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 25705651
   },
@@ -39145,8 +39150,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-01-24",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 18819650
   },
@@ -39154,8 +39159,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-01-20",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 19464457
   },
@@ -39163,8 +39168,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-01-18",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 15080442
   },
@@ -39172,8 +39177,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2020-12-14",
+    "enrichment": "panel",
     "fine_location": "ESC",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 18120152
   },
@@ -39181,8 +39186,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-01-17",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 13756065
   },
@@ -39190,8 +39195,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-01-14",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 20597441
   },
@@ -39199,8 +39204,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-01-13",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 15873953
   },
@@ -39208,8 +39213,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-01-12",
+    "enrichment": "panel",
     "fine_location": "PL",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 17577902
   },
@@ -39217,8 +39222,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-07-08",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 26946502
   },
@@ -39226,8 +39231,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-07-29",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 43889785
   },
@@ -39235,8 +39240,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-07-22",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 33006348
   },
@@ -39244,8 +39249,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-07-15",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 36078362
   },
@@ -39253,8 +39258,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-07-13",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 29636432
   },
@@ -39262,8 +39267,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-07-01",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 43201688
   },
@@ -39271,8 +39276,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2020-11-30",
+    "enrichment": "panel",
     "fine_location": "ESC",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 20755081
   },
@@ -39280,8 +39285,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-06-06",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 50748094
   },
@@ -39289,8 +39294,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-06-03",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 31242591
   },
@@ -39298,8 +39303,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-06-27",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 45725584
   },
@@ -39307,8 +39312,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-06-24",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 33680979
   },
@@ -39316,8 +39321,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-06-20",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 28332194
   },
@@ -39325,8 +39330,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-06-15",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 28581122
   },
@@ -39334,8 +39339,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-06-10",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 35441428
   },
@@ -39343,8 +39348,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-06-01",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 53966640
   },
@@ -39352,8 +39357,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-05-09",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 19219200
   },
@@ -39361,8 +39366,8 @@ sample_metadata={
     "country": "USA",
     "county": "Los Angeles",
     "date": "2021-05-06",
+    "enrichment": "panel",
     "fine_location": "HTP",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 18028259
   },
@@ -39370,8 +39375,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2020-11-23",
+    "enrichment": "panel",
     "fine_location": "ESC",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 47877103
   },
@@ -39379,8 +39384,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-01-18",
+    "enrichment": "panel",
     "fine_location": "ESC",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 23030994
   },
@@ -39388,8 +39393,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2021-01-11",
+    "enrichment": "panel",
     "fine_location": "ESC",
-    "is_enriched": true,
     "location": "Los Angeles",
     "reads": 14804126
   },
@@ -40525,8 +40530,8 @@ sample_metadata={
     "country": "USA",
     "county": "Orange",
     "date": "2020-10-21",
+    "enrichment": "viral",
     "fine_location": "OC",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 2413516
   },
@@ -40534,8 +40539,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2020-07-27",
+    "enrichment": "viral",
     "fine_location": "ESC",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 16101528
   },
@@ -40543,8 +40548,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Diego",
     "date": "2020-07-20",
+    "enrichment": "viral",
     "fine_location": "ESC",
-    "is_enriched": false,
     "location": "Los Angeles",
     "reads": 23482928
   },
@@ -40552,8 +40557,8 @@ sample_metadata={
     "country": "USA",
     "county": "Alameda",
     "date": "2020-06-30",
+    "enrichment": "viral",
     "fine_location": "Oakland",
-    "is_enriched": false,
     "location": "San Francisco",
     "method": "COL",
     "reads": 45434265
@@ -40562,8 +40567,8 @@ sample_metadata={
     "country": "USA",
     "county": "Marin",
     "date": "2020-07-01",
+    "enrichment": "viral",
     "fine_location": "Marin",
-    "is_enriched": false,
     "location": "San Francisco",
     "method": "MOS",
     "reads": 41207484
@@ -40572,8 +40577,8 @@ sample_metadata={
     "country": "USA",
     "county": "Marin",
     "date": "2020-07-01",
+    "enrichment": "viral",
     "fine_location": "Marin",
-    "is_enriched": false,
     "location": "San Francisco",
     "method": "MOS",
     "reads": 38572859
@@ -40582,8 +40587,8 @@ sample_metadata={
     "country": "USA",
     "county": "San Francisco",
     "date": "2020-06-30",
+    "enrichment": "viral",
     "fine_location": "SF",
-    "is_enriched": false,
     "location": "San Francisco",
     "method": "MOS",
     "reads": 47832942
@@ -40592,8 +40597,8 @@ sample_metadata={
     "country": "USA",
     "county": "Alameda",
     "date": "2020-06-30",
+    "enrichment": "viral",
     "fine_location": "Oakland",
-    "is_enriched": false,
     "location": "San Francisco",
     "method": "COL",
     "reads": 48462833
@@ -40602,8 +40607,8 @@ sample_metadata={
     "country": "USA",
     "county": "Alameda",
     "date": "2020-06-30",
+    "enrichment": "viral",
     "fine_location": "Oakland",
-    "is_enriched": false,
     "location": "San Francisco",
     "method": "COL",
     "reads": 39759745
@@ -40612,8 +40617,8 @@ sample_metadata={
     "country": "USA",
     "county": "Alameda",
     "date": "2020-06-30",
+    "enrichment": "viral",
     "fine_location": "Berkeley",
-    "is_enriched": false,
     "location": "San Francisco",
     "method": "COL",
     "reads": 36420649

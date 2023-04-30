@@ -195,7 +195,7 @@ for project in projects:
                         "ESC": "San Diego",
                     }[wtp],
                     fine_location=wtp,
-                    is_enriched=(is_enriched == "1"))
+                    enrichment="panel" if is_enriched == "1" else "viral")
             elif project in papers["Crits-Christoph 2021"]["projects"]:
                 sample, municipality, date, method, sequencing = line.split("\t")
                 sample_metadata[sample] = dict(
@@ -210,7 +210,7 @@ for project in projects:
                     }[municipality],
                     fine_location=municipality,
                     method=method,
-                    is_enriched=(sequencing == "enriched"))
+                    enrichment="panel" if sequencing == "enriched" else "viral")
             elif project in papers["Brumfield 2022"]["projects"]:
                 sample, na_type, date = line.split("\t")
                 sample_metadata[sample] = dict(
@@ -305,7 +305,8 @@ for project in projects:
                 sample_metadata[sample] = dict(
                     country="United States",
                     location="Municipal",
-                    date="2022")
+                    date="2022",
+                    enrichment="viral")
             elif project in papers["Cui 2023"]["projects"]:
                 sample = line.strip()
                 sample_metadata[sample] = dict(
