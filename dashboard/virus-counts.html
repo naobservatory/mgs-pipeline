@@ -57,7 +57,24 @@ Limit Samples:
 <table>
   <tr><td>Country<td><input id=country_search type=text size=34></input>
   <tr><td>City<td><input id=city_search type=text size=34></input>
-  <tr><td>Nucleic Acid<td><input id=na_sample_search type=text size=34></input>
+  <tr><td>Nucleic Acid<td>
+    <input type="checkbox" checked
+           id="na_sample_dna"
+           name="na_type"
+           value="dna">
+    <label for="na_sample_dna">DNA</label><br>
+    <input type="checkbox" checked
+           id="na_sample_rna"
+           name="na_type"
+           value="rna">
+    <label for="na_sample_viral">RNA</label><br>
+    <input type="checkbox" checked
+           id="na_sample_dna_rna"
+           name="na_type"
+           value="dna_rna">
+    <label for="na_sample_panel">DNA+RNA</label><br>
+
+
   <tr><td>Enrichment<td>
     <input type="checkbox" checked
            id="enrichment_none"
@@ -559,12 +576,17 @@ function paper_expansion(paper_name) {
 }
 
 function exclude_sample(sample) {
-  if (na_sample_search.value) {
-    if (!sample_metadata[sample].na_type.toLowerCase().includes(
-      na_sample_search.value.toLowerCase())) {
-      return true;
-    }
+  if (!na_sample_dna.checked && sample_metadata[sample].na_type == "DNA") {
+    return true;
   }
+  if (!na_sample_rna.checked && sample_metadata[sample].na_type == "RNA") {
+    return true;
+  }
+  if (!na_sample_dna_rna.checked &&
+      sample_metadata[sample].na_type == "DNA+RNA") {
+    return true;
+  }
+
   const enrichment = sample_metadata[sample].enrichment;
   if (enrichment == "viral" && !enrichment_viral.checked) return true;
   if (enrichment == "panel" && !enrichment_panel.checked) return true;
@@ -1117,9 +1139,11 @@ function search(e) {
   check_input_errors();
   update_hash();
   active_followups++;
-  if (e.target.value.length > 3 ||
+  if (e.type == "checkbox") {
+    setTimeout(search_followup, 0);
+  } else if (
+      e.target.value.length > 3 ||
       e.target == na_paper_search ||
-      e.target == na_sample_search ||
       e.target == min_reads_search) {
     setTimeout(search_followup, 100);
   } else {
@@ -1134,7 +1158,9 @@ taxonomic_search.addEventListener("input", search);
 
 country_search.addEventListener("input", search);
 city_search.addEventListener("input", search);
-na_sample_search.addEventListener("input", search);
+na_sample_dna.addEventListener("input", search);
+na_sample_rna.addEventListener("input", search);
+na_sample_dna_rna.addEventListener("input", search);
 enrichment_none.addEventListener("input", search);
 enrichment_viral.addEventListener("input", search);
 enrichment_panel.addEventListener("input", search);
