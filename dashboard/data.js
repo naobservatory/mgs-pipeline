@@ -43313,8 +43313,7 @@ papers={
     "na_type": "RNA",
     "projects": [
       "PRJNA661613"
-    ],
-    "subset": "unenriched"
+    ]
   },
   "Cui 2023": {
     "link": "https://pubs.acs.org/doi/full/10.1021/acs.est.2c09587",
@@ -43385,8 +43384,7 @@ papers={
     "na_type": "RNA",
     "projects": [
       "PRJNA729801"
-    ],
-    "subset": "unenriched"
+    ]
   },
   "Wang 2022": {
     "link": "https://pubs.acs.org/doi/full/10.1021/acs.est.2c01834",
