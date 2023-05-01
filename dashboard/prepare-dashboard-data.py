@@ -228,6 +228,27 @@ for project in projects:
                     country="Denmark",
                     location="Copenhagen",
                     fine_location=loc)
+            elif project in papers["Spurbeck 2023"]["projects"]:
+                sample, loc, date = line.split("\t")
+                sample_metadata[sample] = dict(
+                    date=date,
+                    country="USA",
+                    location="Ohio",
+                    fine_location=loc,
+                    enrichment="viral",
+                    method={
+                        "A": "AB",
+                        "B": "AB",
+                        "C": "C",
+                        "D": "D",
+                        "E": "EFGH",
+                        "F": "EFGH",
+                        "G": "EFGH",
+                        "H": "EFGH",
+                        "I": "IJ",
+                        "J": "IJ",
+                    }[loc])
+                
             elif project in papers["Munk 2022"]["projects"]:
                 sample, country, location, date = line.split("\t")
                 sample_metadata[sample] = dict(
