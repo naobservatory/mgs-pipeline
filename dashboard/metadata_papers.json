@@ -100,6 +100,14 @@
       "PRJNA729801"
     ]
   },
+  "Spurbeck 2023": {
+    "link": "https://www.frontiersin.org/articles/10.3389/fpubh.2023.1145275/full",
+    "na_type": "RNA",
+    "projects": [
+      "PRJNA924011"
+    ],
+    "subset": "short read"
+  },
   "Wang 2022": {
     "link": "https://pubs.acs.org/doi/full/10.1021/acs.est.2c01834",
     "na_type": "DNA",

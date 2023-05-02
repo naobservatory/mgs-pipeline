@@ -15584,6 +15584,501 @@
     "location": "Los Angeles",
     "reads": 23482928
   },
+  "SRR23083716": {
+    "country": "USA",
+    "date": "2022-01-09",
+    "enrichment": "viral",
+    "fine_location": "I",
+    "location": "Ohio",
+    "method": "IJ",
+    "reads": 34152465
+  },
+  "SRR23083718": {
+    "country": "USA",
+    "date": "2022-01-02",
+    "enrichment": "viral",
+    "fine_location": "I",
+    "location": "Ohio",
+    "method": "IJ",
+    "reads": 15536236
+  },
+  "SRR23083720": {
+    "country": "USA",
+    "date": "2021-12-26",
+    "enrichment": "viral",
+    "fine_location": "H",
+    "location": "Ohio",
+    "method": "EFGH",
+    "reads": 24496461
+  },
+  "SRR23083722": {
+    "country": "USA",
+    "date": "2021-12-19",
+    "enrichment": "viral",
+    "fine_location": "H",
+    "location": "Ohio",
+    "method": "EFGH",
+    "reads": 19873663
+  },
+  "SRR23083725": {
+    "country": "USA",
+    "date": "2021-12-05",
+    "enrichment": "viral",
+    "fine_location": "H",
+    "location": "Ohio",
+    "method": "EFGH",
+    "reads": 65391438
+  },
+  "SRR23083727": {
+    "country": "USA",
+    "date": "2022-01-09",
+    "enrichment": "viral",
+    "fine_location": "H",
+    "location": "Ohio",
+    "method": "EFGH",
+    "reads": 7683321
+  },
+  "SRR23083729": {
+    "country": "USA",
+    "date": "2022-01-02",
+    "enrichment": "viral",
+    "fine_location": "H",
+    "location": "Ohio",
+    "method": "EFGH",
+    "reads": 106734757
+  },
+  "SRR23083731": {
+    "country": "USA",
+    "date": "2021-12-26",
+    "enrichment": "viral",
+    "fine_location": "G",
+    "location": "Ohio",
+    "method": "EFGH",
+    "reads": 27498895
+  },
+  "SRR23083733": {
+    "country": "USA",
+    "date": "2021-12-19",
+    "enrichment": "viral",
+    "fine_location": "G",
+    "location": "Ohio",
+    "method": "EFGH",
+    "reads": 21866784
+  },
+  "SRR23083734": {
+    "country": "USA",
+    "date": "2021-12-12",
+    "enrichment": "viral",
+    "fine_location": "A",
+    "location": "Ohio",
+    "method": "AB",
+    "reads": 25615577
+  },
+  "SRR23083736": {
+    "country": "USA",
+    "date": "2021-12-12",
+    "enrichment": "viral",
+    "fine_location": "G",
+    "location": "Ohio",
+    "method": "EFGH",
+    "reads": 49701182
+  },
+  "SRR23083738": {
+    "country": "USA",
+    "date": "2021-12-05",
+    "enrichment": "viral",
+    "fine_location": "G",
+    "location": "Ohio",
+    "method": "EFGH",
+    "reads": 50541071
+  },
+  "SRR23083740": {
+    "country": "USA",
+    "date": "2022-01-09",
+    "enrichment": "viral",
+    "fine_location": "G",
+    "location": "Ohio",
+    "method": "EFGH",
+    "reads": 26758722
+  },
+  "SRR23083742": {
+    "country": "USA",
+    "date": "2022-01-02",
+    "enrichment": "viral",
+    "fine_location": "G",
+    "location": "Ohio",
+    "method": "EFGH",
+    "reads": 30488030
+  },
+  "SRR23083744": {
+    "country": "USA",
+    "date": "2021-12-26",
+    "enrichment": "viral",
+    "fine_location": "F",
+    "location": "Ohio",
+    "method": "EFGH",
+    "reads": 21587487
+  },
+  "SRR23083747": {
+    "country": "USA",
+    "date": "2021-12-19",
+    "enrichment": "viral",
+    "fine_location": "F",
+    "location": "Ohio",
+    "method": "EFGH",
+    "reads": 21693115
+  },
+  "SRR23083749": {
+    "country": "USA",
+    "date": "2021-12-12",
+    "enrichment": "viral",
+    "fine_location": "F",
+    "location": "Ohio",
+    "method": "EFGH",
+    "reads": 24611947
+  },
+  "SRR23083751": {
+    "country": "USA",
+    "date": "2021-12-05",
+    "enrichment": "viral",
+    "fine_location": "F",
+    "location": "Ohio",
+    "method": "EFGH",
+    "reads": 10324347
+  },
+  "SRR23083753": {
+    "country": "USA",
+    "date": "2022-01-09",
+    "enrichment": "viral",
+    "fine_location": "F",
+    "location": "Ohio",
+    "method": "EFGH",
+    "reads": 4526832
+  },
+  "SRR23083755": {
+    "country": "USA",
+    "date": "2022-01-02",
+    "enrichment": "viral",
+    "fine_location": "F",
+    "location": "Ohio",
+    "method": "EFGH",
+    "reads": 26761777
+  },
+  "SRR23083756": {
+    "country": "USA",
+    "date": "2021-12-05",
+    "enrichment": "viral",
+    "fine_location": "A",
+    "location": "Ohio",
+    "method": "AB",
+    "reads": 93165126
+  },
+  "SRR23083758": {
+    "country": "USA",
+    "date": "2021-12-26",
+    "enrichment": "viral",
+    "fine_location": "E",
+    "location": "Ohio",
+    "method": "EFGH",
+    "reads": 8675446
+  },
+  "SRR23083760": {
+    "country": "USA",
+    "date": "2021-12-19",
+    "enrichment": "viral",
+    "fine_location": "E",
+    "location": "Ohio",
+    "method": "EFGH",
+    "reads": 22756198
+  },
+  "SRR23083762": {
+    "country": "USA",
+    "date": "2021-12-12",
+    "enrichment": "viral",
+    "fine_location": "E",
+    "location": "Ohio",
+    "method": "EFGH",
+    "reads": 53418977
+  },
+  "SRR23083764": {
+    "country": "USA",
+    "date": "2021-12-05",
+    "enrichment": "viral",
+    "fine_location": "E",
+    "location": "Ohio",
+    "method": "EFGH",
+    "reads": 27489114
+  },
+  "SRR23083766": {
+    "country": "USA",
+    "date": "2022-01-09",
+    "enrichment": "viral",
+    "fine_location": "E",
+    "location": "Ohio",
+    "method": "EFGH",
+    "reads": 62643623
+  },
+  "SRR23083769": {
+    "country": "USA",
+    "date": "2022-01-02",
+    "enrichment": "viral",
+    "fine_location": "E",
+    "location": "Ohio",
+    "method": "EFGH",
+    "reads": 9885903
+  },
+  "SRR23083771": {
+    "country": "USA",
+    "date": "2021-12-19",
+    "enrichment": "viral",
+    "fine_location": "D",
+    "location": "Ohio",
+    "method": "D",
+    "reads": 25194552
+  },
+  "SRR23083773": {
+    "country": "USA",
+    "date": "2021-12-12",
+    "enrichment": "viral",
+    "fine_location": "D",
+    "location": "Ohio",
+    "method": "D",
+    "reads": 27576698
+  },
+  "SRR23083775": {
+    "country": "USA",
+    "date": "2021-12-05",
+    "enrichment": "viral",
+    "fine_location": "D",
+    "location": "Ohio",
+    "method": "D",
+    "reads": 64262607
+  },
+  "SRR23083778": {
+    "country": "USA",
+    "date": "2022-01-09",
+    "enrichment": "viral",
+    "fine_location": "J",
+    "location": "Ohio",
+    "method": "IJ",
+    "reads": 28567806
+  },
+  "SRR23083780": {
+    "country": "USA",
+    "date": "2022-01-02",
+    "enrichment": "viral",
+    "fine_location": "J",
+    "location": "Ohio",
+    "method": "IJ",
+    "reads": 6390165
+  },
+  "SRR23083782": {
+    "country": "USA",
+    "date": "2021-12-26",
+    "enrichment": "viral",
+    "fine_location": "I",
+    "location": "Ohio",
+    "method": "IJ",
+    "reads": 26423592
+  },
+  "SRR23083784": {
+    "country": "USA",
+    "date": "2021-12-19",
+    "enrichment": "viral",
+    "fine_location": "I",
+    "location": "Ohio",
+    "method": "IJ",
+    "reads": 18922081
+  },
+  "SRR23083786": {
+    "country": "USA",
+    "date": "2021-12-12",
+    "enrichment": "viral",
+    "fine_location": "I",
+    "location": "Ohio",
+    "method": "IJ",
+    "reads": 21319668
+  },
+  "SRR23083787": {
+    "country": "USA",
+    "date": "2021-12-19",
+    "enrichment": "viral",
+    "fine_location": "A",
+    "location": "Ohio",
+    "method": "AB",
+    "reads": 72582176
+  },
+  "SRR23083789": {
+    "country": "USA",
+    "date": "2021-12-05",
+    "enrichment": "viral",
+    "fine_location": "I",
+    "location": "Ohio",
+    "method": "IJ",
+    "reads": 23726564
+  },
+  "SRR23083790": {
+    "country": "USA",
+    "date": "2022-01-09",
+    "enrichment": "viral",
+    "fine_location": "D",
+    "location": "Ohio",
+    "method": "D",
+    "reads": 28732700
+  },
+  "SRR23083792": {
+    "country": "USA",
+    "date": "2022-01-09",
+    "enrichment": "viral",
+    "fine_location": "A",
+    "location": "Ohio",
+    "method": "AB",
+    "reads": 40626978
+  },
+  "SRR23083794": {
+    "country": "USA",
+    "date": "2021-12-19",
+    "enrichment": "viral",
+    "fine_location": "C",
+    "location": "Ohio",
+    "method": "C",
+    "reads": 15260483
+  },
+  "SRR23083795": {
+    "country": "USA",
+    "date": "2021-12-05",
+    "enrichment": "viral",
+    "fine_location": "C",
+    "location": "Ohio",
+    "method": "C",
+    "reads": 93084891
+  },
+  "SRR23083797": {
+    "country": "USA",
+    "date": "2022-01-09",
+    "enrichment": "viral",
+    "fine_location": "C",
+    "location": "Ohio",
+    "method": "C",
+    "reads": 20057162
+  },
+  "SRR23083798": {
+    "country": "USA",
+    "date": "2022-01-02",
+    "enrichment": "viral",
+    "fine_location": "C",
+    "location": "Ohio",
+    "method": "C",
+    "reads": 35169394
+  },
+  "SRR23083799": {
+    "country": "USA",
+    "date": "2021-12-26",
+    "enrichment": "viral",
+    "fine_location": "B",
+    "location": "Ohio",
+    "method": "AB",
+    "reads": 22987581
+  },
+  "SRR23083801": {
+    "country": "USA",
+    "date": "2021-12-19",
+    "enrichment": "viral",
+    "fine_location": "B",
+    "location": "Ohio",
+    "method": "AB",
+    "reads": 50531562
+  },
+  "SRR23083804": {
+    "country": "USA",
+    "date": "2021-12-12",
+    "enrichment": "viral",
+    "fine_location": "B",
+    "location": "Ohio",
+    "method": "AB",
+    "reads": 19233869
+  },
+  "SRR23083806": {
+    "country": "USA",
+    "date": "2021-12-05",
+    "enrichment": "viral",
+    "fine_location": "B",
+    "location": "Ohio",
+    "method": "AB",
+    "reads": 55741383
+  },
+  "SRR23083808": {
+    "country": "USA",
+    "date": "2022-01-09",
+    "enrichment": "viral",
+    "fine_location": "B",
+    "location": "Ohio",
+    "method": "AB",
+    "reads": 12644434
+  },
+  "SRR23083810": {
+    "country": "USA",
+    "date": "2022-01-02",
+    "enrichment": "viral",
+    "fine_location": "B",
+    "location": "Ohio",
+    "method": "AB",
+    "reads": 40871463
+  },
+  "SRR23083813": {
+    "country": "USA",
+    "date": "2021-12-26",
+    "enrichment": "viral",
+    "fine_location": "A",
+    "location": "Ohio",
+    "method": "AB",
+    "reads": 25003302
+  },
+  "SRR23083818": {
+    "country": "USA",
+    "date": "2021-12-26",
+    "enrichment": "viral",
+    "fine_location": "J",
+    "location": "Ohio",
+    "method": "IJ",
+    "reads": 32262151
+  },
+  "SRR23083820": {
+    "country": "USA",
+    "date": "2021-12-19",
+    "enrichment": "viral",
+    "fine_location": "J",
+    "location": "Ohio",
+    "method": "IJ",
+    "reads": 60208872
+  },
+  "SRR23083822": {
+    "country": "USA",
+    "date": "2021-12-12",
+    "enrichment": "viral",
+    "fine_location": "J",
+    "location": "Ohio",
+    "method": "IJ",
+    "reads": 22583173
+  },
+  "SRR23083823": {
+    "country": "USA",
+    "date": "2021-12-05",
+    "enrichment": "viral",
+    "fine_location": "J",
+    "location": "Ohio",
+    "method": "IJ",
+    "reads": 27717586
+  },
+  "SRR23083825": {
+    "country": "USA",
+    "date": "2022-01-02",
+    "enrichment": "viral",
+    "fine_location": "A",
+    "location": "Ohio",
+    "method": "AB",
+    "reads": 26039331
+  },
   "SRR23998353": {
     "country": "USA",
     "county": "Alameda",
