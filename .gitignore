@@ -7,3 +7,5 @@ dashboard/*.zip
 dashboard/readme.txt
 dashboard/gc.prt
 dashboard/hvreads/
+dashboard/top_species_counts/
+dashboard/top_species_scratch/
