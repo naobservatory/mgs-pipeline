@@ -149,6 +149,25 @@ for project in projects:
 
                 project_sample_virus_counts[project, sample, taxid] = count
 
+# key clade taxid -> sample -> count
+key_clade_sample_counts = defaultdict(Counter)
+# comparison taxid -> sample -> count
+comparison_sample_counts = defaultdict(Counter)
+for project in projects:
+    for sample in project_sample_reads[project]:
+        fname = "top_species_counts/%s.json" % sample
+        if not os.path.exists(fname): continue
+        with open(fname) as inf:
+            key_clades, comparisons = json.load(inf)
+            for taxid, count in key_clades.items():
+                taxid = int(taxid)
+                if count:
+                    key_clade_sample_counts[taxid][sample] = count
+            for taxid, count in comparisons.items():
+                taxid = int(taxid)
+                if count:
+                    comparison_sample_counts[taxid][sample] = count
+
 # virus -> sample -> count
 virus_sample_counts = defaultdict(Counter)
 
@@ -248,7 +267,7 @@ for project in projects:
                         "I": "IJ",
                         "J": "IJ",
                     }[loc])
-                
+
             elif project in papers["Munk 2022"]["projects"]:
                 sample, country, location, date = line.split("\t")
                 sample_metadata[sample] = dict(
@@ -351,6 +370,8 @@ for bioproject in bioprojects:
 with open("data.js", "w") as outf:
     for name, val in [
             ("virus_sample_counts", virus_sample_counts),
+            ("key_clade_sample_counts", key_clade_sample_counts),
+            ("comparison_sample_counts", comparison_sample_counts),
             ("sample_metadata", sample_metadata),
             ("bioprojects", bioprojects),
             ("papers", papers),
@@ -364,6 +385,8 @@ for name, val in [
         ("human_virus_sample_counts", virus_sample_counts),
         ("human_virus_names", human_virus_names),
         ("human_virus_tree", human_virus_tree),
+        ("key_clade_sample_counts", key_clade_sample_counts),
+        ("comparison_sample_counts", comparison_sample_counts),
         ("metadata_samples", sample_metadata),
         ("metadata_bioprojects", bioprojects),
         ("metadata_papers", papers),
