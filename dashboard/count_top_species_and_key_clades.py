@@ -3,30 +3,27 @@
 import sys
 import json
 
-key_clades = {}
+taxids = set()
 with open("key_clade_taxids.txt") as inf:
     for line in inf:
         line = line.strip()
         if line:
-            key_clades[int(line)] = 0
+            taxids.add(int(line))
             
-comparisons = {}
 with open("comparison_taxids.txt") as inf:
     for line in inf:
         line = line.strip()
         if line:
-            comparisons[int(line)] = 0
+            taxids.add(int(line))
 
+comparisons = {}
 for line in sys.stdin:
     taxid, direct_assignments, direct_hits, \
         clade_assignments, clade_hits = line.strip().split("\t")
     taxid = int(taxid)
-    direct_assignments = int(direct_assignments)
     clade_assignments = int(clade_assignments)
 
-    if taxid in key_clades:
-        key_clades[taxid] = clade_assignments
-    if taxid in comparisons:
-        comparisons[taxid] = direct_assignments
+    if taxid in taxids:
+        comparisons[taxid] = clade_assignments
 
-print(json.dumps([key_clades, comparisons]))
+print(json.dumps(comparisons))
