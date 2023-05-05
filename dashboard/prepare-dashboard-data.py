@@ -66,21 +66,6 @@ for taxid in sorted(mentioned_taxids):
 #                       [1299307, ...]]], ...], ...], ...]
 human_virus_tree = human_virus_nodes[1]
 
-# taxid -> [name]
-# first name is scientific name
-human_virus_names = defaultdict(list)
-with open("names.dmp") as inf:
-    for line in inf:
-        taxid, name, unique_name, name_class = line.replace(
-            "\t|\n", "").split("\t|\t")
-        taxid = int(taxid)
-
-        if taxid in mentioned_taxids:
-            if name_class == "scientific name":
-                human_virus_names[taxid].insert(0, name)
-            else:
-                human_virus_names[taxid].append(name)
-
 # project -> sample -> n_reads
 project_sample_reads = defaultdict(dict)
 for metadata_fname in glob.glob(
@@ -159,6 +144,21 @@ for project in projects:
             comparisons = json.load(inf)
             for taxid, count in comparisons.items():
                 comparison_sample_counts[int(taxid)][sample] = count
+
+# taxid -> [name]
+# first name is scientific name
+taxonomic_names = defaultdict(list)
+with open("names.dmp") as inf:
+    for line in inf:
+        taxid, name, unique_name, name_class = line.replace(
+            "\t|\n", "").split("\t|\t")
+        taxid = int(taxid)
+
+        if taxid in mentioned_taxids or taxid in comparison_sample_counts:
+            if name_class == "scientific name":
+                taxonomic_names[taxid].insert(0, name)
+            else:
+                taxonomic_names[taxid].append(name)
 
 # virus -> sample -> count
 virus_sample_counts = defaultdict(Counter)
@@ -366,7 +366,7 @@ with open("data.js", "w") as outf:
             ("sample_metadata", sample_metadata),
             ("bioprojects", bioprojects),
             ("papers", papers),
-            ("names", human_virus_names),
+            ("names", taxonomic_names),
             ("tree", human_virus_tree),
     ]:
         outf.write("%s=%s;\n" % (name, json.dumps(
@@ -374,7 +374,7 @@ with open("data.js", "w") as outf:
 
 for name, val in [
         ("human_virus_sample_counts", virus_sample_counts),
-        ("human_virus_names", human_virus_names),
+        ("taxonomic_names", taxonomic_names),
         ("human_virus_tree", human_virus_tree),
         ("comparison_sample_counts", comparison_sample_counts),
         ("metadata_samples", sample_metadata),
