@@ -1143,6 +1143,24 @@ function redisplay() {
 
   render_subtree();
 
+  const taxid_relab = [];  // [relative abundance, taxid]
+  for (const taxid in comparison_sample_counts) {
+    let n_reads = 0;
+    let n_matches = 0;
+    for (let i = 0; i < column_samples.length; i++) {
+      const samples = column_samples[i];
+      n_reads += column_totals[i];
+      for (const sample of samples) {
+        n_matches += comparison_sample_counts?.[taxid]?.[sample];
+      }
+    }
+    taxid_relab.push([n_matches / n_reads, taxid]);
+  }
+  taxid_relab.sort(function(a, b){return b[0] - a[0]});
+  for (let i = 0; i < 15 && i < taxid_relab.length; i++) {
+    active_comparisons.add(taxid_relab[i][1]);
+  }
+  
   function render_comparison_nodes() {
     let added_divider = false;
     for (const taxid of active_comparisons) {
