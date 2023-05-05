@@ -1243,47 +1243,50 @@ enrichment_panel.addEventListener("input", search);
 date_begin_search.addEventListener("input", search);
 date_end_search.addEventListener("input", search);
 
+const searches_by_param_name = {
+  "q": taxonomic_search,
+  "cq": comparison_search,
+  "country": country_search,
+  "city": city_search,
+  "date_begin": date_begin_search,
+  "date_end": date_end_search,
+  "mr": min_reads_search,
+  "nap": na_paper_search,
+};
+
+const checkboxes_by_param_name = {
+  "dna": na_sample_dna,
+  "rna": na_sample_rna,
+  "dna_rna": na_sample_dna_rna,
+  "e_none": enrichment_none,
+  "e_viral": enrichment_viral,
+  "e_panel": enrichment_panel,
+}
+
 if (window.location.hash) {
   const params = new URLSearchParams(window.location.hash.slice(1));
-  if (params.has("q")) {
-    taxonomic_search.value = params.get("q");
+  for (param_name in searches_by_param_name) {
+    if (params.has(param_name)) {
+      searches_by_param_name[param_name].value = params.get(param_name);
+    }
   }
-  if (params.has("cq")) {
-    comparison_search.value = params.get("cq");
-  }
-  if (params.has("country")) {
-    country_search.value = params.get("country");
-  }
-  if (params.has("city")) {
-    city_search.value = params.get("city");
-  }
-  if (params.has("date_begin")) {
-    date_begin_search.value = params.get("date_begin");
-  }
-  if (params.has("date_end")) {
-    date_end_search.value = params.get("date_end");
+  for (param_name in checkboxes_by_param_name) {
+    checkboxes_by_param_name[param_name].checked =
+      params.get(param_name) == "1";
   }
 }
 
 function update_hash() {
   const params = new URLSearchParams();
-  if (taxonomic_search.value) {
-    params.set("q", taxonomic_search.value);
+  for (param_name in searches_by_param_name) {
+    if (searches_by_param_name[param_name].value) {
+      params.set(param_name, searches_by_param_name[param_name].value);
+    }
   }
-  if (comparison_search.value) {
-    params.set("cq", comparison_search.value);
-  }
-  if (country_search.value) {
-    params.set("country", country_search.value);
-  }
-  if (city_search.value) {
-    params.set("city", city_search.value);
-  }
-  if (date_begin_search.value) {
-    params.set("date_begin", date_begin_search.value);
-  }
-  if (date_end_search.value) {
-    params.set("date_end", date_end_search.value);
+  for (param_name in checkboxes_by_param_name) {
+    if (checkboxes_by_param_name[param_name].checked) {
+      params.set(param_name, "1");
+    }
   }
   window.location.hash = params.toString();
 }
