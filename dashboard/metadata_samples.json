@@ -10938,42 +10938,49 @@
   "SRR12204734": {
     "country": "China",
     "date": "2018",
+    "enrichment": "viral",
     "location": "Kashgar",
     "reads": 201880938
   },
   "SRR12204735": {
     "country": "China",
     "date": "2018",
+    "enrichment": "viral",
     "location": "Mi-Dong",
     "reads": 283160455
   },
   "SRR12204847": {
     "country": "China",
     "date": "2018",
+    "enrichment": "viral",
     "location": "Hotan",
     "reads": 231329232
   },
   "SRR12204848": {
     "country": "China",
     "date": "2018",
+    "enrichment": "viral",
     "location": "Hotan",
     "reads": 202643208
   },
   "SRR12204849": {
     "country": "China",
     "date": "2018",
+    "enrichment": "viral",
     "location": "Kashgar",
     "reads": 161802900
   },
   "SRR12204850": {
     "country": "China",
     "date": "2018",
+    "enrichment": "viral",
     "location": "Kashgar",
     "reads": 167982692
   },
   "SRR12204851": {
     "country": "China",
     "date": "2018",
+    "enrichment": "viral",
     "location": "Kashgar",
     "reads": 170134059
   },

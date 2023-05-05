@@ -319,7 +319,8 @@ for project in projects:
                 sample_metadata[sample] = dict(
                     country="China",
                     location=city,
-                    date="2018")
+                    date="2018",
+                    enrichment="viral")
             elif project in papers["Wang 2022"]["projects"]:
                 sample, date, hospital = line.strip().split("\t")
                 sample_metadata[sample] = dict(
@@ -384,3 +385,4 @@ for name, val in [
     with open(name + ".json", "w") as outf:
         json.dump(val, outf, sort_keys=True,
                   indent=None if val is human_virus_tree else 2)
+ 
