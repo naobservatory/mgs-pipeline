@@ -47,7 +47,9 @@ Limit Papers:
 
 <div class=search_box>
 
-Search organisms: <input id=taxonomic_search type=text size=34></input>
+Search human-infecting viruses: <input id=taxonomic_search type=text size=34></input>
+<br>
+Search comparison species: <input id=comparison_search type=text size=34></input>
 
   <p>
   <br>
@@ -99,8 +101,7 @@ Limit Samples:
 </div>
 
 <p>
-Rows are taxonomic nodes, columns are samples (or collections of samples), cells
-are relative abundance of human viruses that match that taxonomic node.
+Rows are clades, columns are samples, cells are relative abundances and counts.
 <p>
 
 
@@ -154,7 +155,8 @@ are relative abundance of human viruses that match that taxonomic node.
 <script>
 
 // imports:
-//   virus_sample_counts: taxid -> sample -> count
+//   virus_sample_counts: human virus taxid -> sample -> direct assignments
+//   comparison_sample_counts: other taxid -> sample -> clade assignments
 //   sample_metadata: sample -> {country, date, location, reads}
 //   bioprojects: project -> [samples]
 //   papers: paper -> {link, na_type, [projects]}
@@ -165,6 +167,8 @@ window.onerror = function () {
   document.body.style.border = "5px solid red";
   document.body.style.borderRadius = "1em";
 };
+
+names[0] = ["Unassigned"];
 
 const paper_names = [];
 for (const paper in papers) {
@@ -183,6 +187,13 @@ const paper_countries = {};
 const paper_locations = {};
 const paper_fine_locations = {};
 const paper_dates = {};
+
+// taxid
+const active_comparisons = new Set();
+active_comparisons.add(2);
+active_comparisons.add(10239);
+active_comparisons.add(0);
+active_comparisons.add(12234);
 
 for (const paper_name of paper_names) {
   paper_countries[paper_name] = new Set();
@@ -442,22 +453,19 @@ function human_readable(n) {
   return s(n, 'Q');
 }
 
-function cell_value(count, total, is_leaf) {
+function cell_value(count, total) {
   if (count == 0) {
-    return "< " + sci_num(1/total);
+    return "< " + sci_num(1/total) + " (0)";
   }
   const val = count / total;
-  if (is_leaf) {
-    return sci_num(val) + " (" + count + ")";
-  }
-  return sci_num(val);
+  return sci_num(val) + " (" + count + ")";
 }
 
 function sci_num(x) {
   return x.toExponential(1);
 }
 
-function sci_color(x) {
+function human_virus_color(x) {
   if (x > 1e-5) {
     return '#f9f';
   } else if (x > 1e-6) {
@@ -470,6 +478,31 @@ function sci_color(x) {
     return '#fdf';
   } else if (x > 1e-10) {
     return '#fef';
+  }
+  return '#fff';
+}
+
+function comparison_color(x) {
+  if (x > 1e-1) {
+    return '#00ffff';
+  } else if (x > 1e-2) {
+    return '#50ffff';
+  } else if (x > 1e-3) {
+    return '#a0ffff';
+  } else if (x > 1e-4) {
+    return '#b0ffff';
+  } else if (x > 1e-5) {
+    return '#c0ffff';
+  } else if (x > 1e-6) {
+    return '#c8ffff';
+  } else if (x > 1e-7) {
+    return '#d0fbff';
+  } else if (x > 1e-8) {
+    return '#d8ffff';
+  } else if (x > 1e-9) {
+    return '#e0ffff';
+  } else if (x > 1e-10) {
+    return '#e8ffff';
   }
   return '#fff';
 }
@@ -722,6 +755,19 @@ function redisplay() {
     tbl.removeChild(tbl.firstChild);
   }
 
+  active_comparisons.clear();
+  if (comparison_search.value) {
+    for (const taxid in comparison_sample_counts) {
+      for (const name of names[taxid]) {
+        if (name.toLowerCase().includes(
+          comparison_search.value.toLowerCase())) {
+          active_comparisons.add(taxid);
+        }
+      }
+    }
+  }
+
+
   // For each column, what samples does it represent?
   const column_samples = [];
   // And how many reads is it, so we can compute relative abundances?
@@ -965,10 +1011,10 @@ function redisplay() {
   }
 
   // -> name, is_match
-  function name_node(taxid) {
+  function name_node(taxid, search_val) {
     let name = names[taxid][0];
 
-    const target_lower = taxonomic_search.value.toLowerCase();
+    const target_lower = search_val.toLowerCase();
     if (!target_lower) return [name, false];
 
     if (name.toLowerCase().includes(target_lower)) {
@@ -1045,7 +1091,7 @@ function redisplay() {
 
     const td_node_name = e("td");
     td_node_name.style.paddingLeft = (depth*0.5) + "em";
-    const [node_name, is_match] = name_node(taxid);
+    const [node_name, is_match] = name_node(taxid, taxonomic_search.value);
     const a_node_name = e("a", node_name);
     if (is_match) {
       td_node_name.style.backgroundColor = 'lightyellow';
@@ -1066,7 +1112,7 @@ function redisplay() {
       const total_reads = column_totals[i];
       const [matches, matching_samples] = count_matches(samples, species);
       const td_val = e("td");
-      const label = cell_value(matches, total_reads, node.length==1);
+      const label = cell_value(matches, total_reads);
       if (matching_samples.size == 1) {
         const a_val = e("a", label);
         const params = new URLSearchParams();
@@ -1078,9 +1124,15 @@ function redisplay() {
       } else {
         td_val.innerText = label;
       }
-      td_val.style.backgroundColor = sci_color(matches/total_reads);
+      td_val.style.backgroundColor = human_virus_color(matches/total_reads);
       tr.appendChild(td_val);
     }
+
+    if (taxid == 10239) { // viruses, root of tree
+      add_divider("Human infecting viruses.  Counts on higher clades only " +
+                  "include reads assigned to human-infecting viruses.");
+    }
+
     if (taxid != 1) {
       tbl.appendChild(tr);
     }
@@ -1090,6 +1142,60 @@ function redisplay() {
   }
 
   render_subtree();
+
+  function render_comparison_nodes() {
+    let added_divider = false;
+    for (const taxid of active_comparisons) {
+      const tr = e("tr");
+      tr.appendChild(e("td"));
+      const td_node_name = e("td");
+      const [node_name, is_match] = name_node(taxid, comparison_search.value);
+      const a_node_name = e("a", node_name);
+      a_node_name.href =
+        "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi" +
+        "?lvl=0&id=" + taxid;
+      a_node_name.target = "_blank";
+      td_node_name.appendChild(a_node_name);
+      // hovertext showing alternative names
+      td_node_name.title = names[taxid].length > 1 ?
+        names[taxid].slice(1).join(", ") : names[taxid][0];
+      tr.appendChild(td_node_name);
+
+      for (let i = 0; i < column_samples.length; i++) {
+        const samples = column_samples[i];
+        const total_reads = column_totals[i];
+        matches = 0;
+        for (sample of samples) {
+          const n = comparison_sample_counts?.[taxid]?.[sample];
+          if (n) {
+            matches += n;
+          }
+        }
+
+        const td_val = e("td", cell_value(matches, total_reads, true));
+        td_val.style.backgroundColor = comparison_color(matches/total_reads);
+        tr.appendChild(td_val);
+      }
+      if (!added_divider) {
+        add_divider(
+          "Comparison clades.  Counts are of reads assigned anywhere in the "
+            + "clade, and not just to human-infecting viruses.");
+      }
+      added_divider = true;
+      tbl.appendChild(tr);
+    }
+  }
+
+  function add_divider(text) {
+    tr_divider = e("tr");
+    tr_divider.classList.add("divider");
+    td_divider = e("td", text);
+    td_divider.colSpan = column_samples.length + 2;
+    tr_divider.appendChild(td_divider);
+    tbl.appendChild(tr_divider);
+  }
+
+  render_comparison_nodes();
 
   loading.style.display = "none";
 }
@@ -1124,6 +1230,7 @@ na_paper_search.addEventListener("input", search);
 min_reads_search.addEventListener("input", search);
 
 taxonomic_search.addEventListener("input", search);
+comparison_search.addEventListener("input", search);
 
 country_search.addEventListener("input", search);
 city_search.addEventListener("input", search);
@@ -1140,6 +1247,9 @@ if (window.location.hash) {
   const params = new URLSearchParams(window.location.hash.slice(1));
   if (params.has("q")) {
     taxonomic_search.value = params.get("q");
+  }
+  if (params.has("cq")) {
+    comparison_search.value = params.get("cq");
   }
   if (params.has("country")) {
     country_search.value = params.get("country");
@@ -1159,6 +1269,9 @@ function update_hash() {
   const params = new URLSearchParams();
   if (taxonomic_search.value) {
     params.set("q", taxonomic_search.value);
+  }
+  if (comparison_search.value) {
+    params.set("cq", comparison_search.value);
   }
   if (country_search.value) {
     params.set("country", country_search.value);
