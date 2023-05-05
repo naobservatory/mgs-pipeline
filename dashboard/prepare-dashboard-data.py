@@ -145,6 +145,20 @@ for project in projects:
             for taxid, count in comparisons.items():
                 comparison_sample_counts[int(taxid)][sample] = count
 
+BACTERIA=2
+VIRUS=10239
+comparison_taxid_classifications = {
+    BACTERIA: [],
+    VIRUS: [],
+}
+for taxid in sorted(comparison_sample_counts):
+    p = taxid
+    while p not in [1, 0]:
+        if p in comparison_taxid_classifications:
+            comparison_taxid_classifications[p].append(taxid)
+            break
+        p = parents[p]
+                
 # taxid -> [name]
 # first name is scientific name
 taxonomic_names = defaultdict(list)
@@ -364,6 +378,8 @@ with open("data.js", "w") as outf:
     for name, val in [
             ("virus_sample_counts", virus_sample_counts),
             ("comparison_sample_counts", comparison_sample_counts),
+            ("comparison_taxid_classifications",
+             comparison_taxid_classifications),
             ("sample_metadata", sample_metadata),
             ("bioprojects", bioprojects),
             ("papers", papers),
@@ -378,6 +394,7 @@ for name, val in [
         ("taxonomic_names", taxonomic_names),
         ("human_virus_tree", human_virus_tree),
         ("comparison_sample_counts", comparison_sample_counts),
+        ("comparison_taxid_classifications", comparison_taxid_classifications),
         ("metadata_samples", sample_metadata),
         ("metadata_bioprojects", bioprojects),
         ("metadata_papers", papers),
