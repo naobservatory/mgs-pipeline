@@ -48,8 +48,24 @@ Limit Papers:
 <div class=search_box>
 
 Search human-infecting viruses: <input id=taxonomic_search type=text size=34></input>
-<br>
-Search comparison species: <input id=comparison_search type=text size=34></input>
+
+<p>
+
+Comparison clades:
+
+  <p>
+
+  <table>
+  <tr><td>Search<td><input
+          id=comparison_search type=text size=34></input>
+  <tr><td>Common<td>
+     <input type=checkbox checked id=comparison_viruses>
+     <label for=comparison_viruses>Viruses</label><br>
+     <input type=checkbox checked id=comparison_bacteria>
+     <label for=comparison_bacteria>Bacteria</label><br>
+     <input type=checkbox checked id=comparison_other>
+     <label for=comparison_other>Other</label>
+  </table>
 
   <p>
   <br>
@@ -157,6 +173,7 @@ Rows are clades, columns are samples, cells are relative abundances and counts.
 // imports:
 //   virus_sample_counts: human virus taxid -> sample -> direct assignments
 //   comparison_sample_counts: other taxid -> sample -> clade assignments
+//   comparison_taxid_classifications: bacteria/virus -> taxids
 //   sample_metadata: sample -> {country, date, location, reads}
 //   bioprojects: project -> [samples]
 //   papers: paper -> {link, na_type, [projects]}
@@ -188,12 +205,11 @@ const paper_locations = {};
 const paper_fine_locations = {};
 const paper_dates = {};
 
+const VIRUS = 10239;
+const BACTERIA = 2;
+
 // taxid
 const active_comparisons = new Set();
-active_comparisons.add(2);
-active_comparisons.add(10239);
-active_comparisons.add(0);
-active_comparisons.add(12234);
 
 for (const paper_name of paper_names) {
   paper_countries[paper_name] = new Set();
@@ -1128,7 +1144,7 @@ function redisplay() {
       tr.appendChild(td_val);
     }
 
-    if (taxid == 10239) { // viruses, root of tree
+    if (taxid == VIRUS) { // viruses, root of tree
       add_divider("Human infecting viruses.  Counts on higher clades only " +
                   "include reads assigned to human-infecting viruses.");
     }
@@ -1145,22 +1161,32 @@ function redisplay() {
 
   const taxid_relab = [];  // [relative abundance, taxid]
   for (const taxid in comparison_sample_counts) {
+    if (comparison_taxid_classifications[VIRUS].includes(Number(taxid))) {
+      if (!comparison_viruses.checked) continue;
+    } else if (comparison_taxid_classifications[BACTERIA].includes(
+                 Number(taxid))) {
+      if (!comparison_bacteria.checked) continue;
+    } else {
+      if (!comparison_other.checked) continue;
+    }
+
     let n_reads = 0;
     let n_matches = 0;
     for (let i = 0; i < column_samples.length; i++) {
-      const samples = column_samples[i];
       n_reads += column_totals[i];
-      for (const sample of samples) {
-        n_matches += comparison_sample_counts?.[taxid]?.[sample];
+      for (const sample of column_samples[i]) {
+        n_matches += comparison_sample_counts?.[taxid]?.[sample] || 0;
       }
     }
-    taxid_relab.push([n_matches / n_reads, taxid]);
+    if (n_matches > 0) {
+      taxid_relab.push([n_matches / n_reads, taxid]);
+    }
   }
   taxid_relab.sort(function(a, b){return b[0] - a[0]});
   for (let i = 0; i < 15 && i < taxid_relab.length; i++) {
     active_comparisons.add(taxid_relab[i][1]);
   }
-  
+
   function render_comparison_nodes() {
     let added_divider = false;
     for (const taxid of active_comparisons) {
@@ -1250,6 +1276,10 @@ min_reads_search.addEventListener("input", search);
 taxonomic_search.addEventListener("input", search);
 comparison_search.addEventListener("input", search);
 
+comparison_viruses.addEventListener("input", search);
+comparison_bacteria.addEventListener("input", search);
+comparison_other.addEventListener("input", search);
+
 country_search.addEventListener("input", search);
 city_search.addEventListener("input", search);
 na_sample_dna.addEventListener("input", search);
@@ -1279,6 +1309,9 @@ const checkboxes_by_param_name = {
   "e_none": enrichment_none,
   "e_viral": enrichment_viral,
   "e_panel": enrichment_panel,
+  "c_viruses": comparison_viruses,
+  "c_bacteria": comparison_bacteria,
+  "c_other": comparison_other,
 }
 
 if (window.location.hash) {
