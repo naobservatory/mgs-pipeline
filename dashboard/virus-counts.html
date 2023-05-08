@@ -1163,11 +1163,11 @@ function redisplay() {
   render_subtree();
 
   const taxid_relab = [];  // [relative abundance, taxid]
-  for (const taxid in comparison_sample_counts) {
+  for (const taxid_str in comparison_sample_counts) {
+    const taxid = Number(taxid_str);
     if (comparison_taxid_classifications[VIRUS].includes(Number(taxid))) {
       if (!comparison_viruses.checked) continue;
-    } else if (comparison_taxid_classifications[BACTERIA].includes(
-                 Number(taxid))) {
+    } else if (comparison_taxid_classifications[BACTERIA].includes(taxid)) {
       if (!comparison_bacteria.checked) continue;
     } else {
       if (!comparison_other.checked) continue;
@@ -1189,6 +1189,7 @@ function redisplay() {
   for (let i = 0; i < 15 && i < taxid_relab.length; i++) {
     active_comparisons.add(taxid_relab[i][1]);
   }
+  console.log(active_comparisons);
 
   function render_comparison_nodes() {
     let added_divider = false;
