@@ -259,6 +259,19 @@ for project in projects:
                     date=date,
                     country="USA",
                     location="Ohio",
+                    # https://github.com/naobservatory/mgs-pipeline/issues/9
+                    county={
+                        "A": "Summit",
+                        "B": "Trumbull",
+                        "C": "Lucas",
+                        "D": "Lawrence",
+                        "E": "Sandusky",
+                        "F": "Franklin",
+                        "G": "Licking",
+                        "H": "Franklin",
+                        "I": "Greene",
+                        "J": "Montogmery",
+                    }[loc],
                     fine_location=loc,
                     enrichment="viral",
                     method={

@@ -15593,6 +15593,7 @@
   },
   "SRR23083716": {
     "country": "USA",
+    "county": "Greene",
     "date": "2022-01-09",
     "enrichment": "viral",
     "fine_location": "I",
@@ -15602,6 +15603,7 @@
   },
   "SRR23083718": {
     "country": "USA",
+    "county": "Greene",
     "date": "2022-01-02",
     "enrichment": "viral",
     "fine_location": "I",
@@ -15611,6 +15613,7 @@
   },
   "SRR23083720": {
     "country": "USA",
+    "county": "Franklin",
     "date": "2021-12-26",
     "enrichment": "viral",
     "fine_location": "H",
@@ -15620,6 +15623,7 @@
   },
   "SRR23083722": {
     "country": "USA",
+    "county": "Franklin",
     "date": "2021-12-19",
     "enrichment": "viral",
     "fine_location": "H",
@@ -15629,6 +15633,7 @@
   },
   "SRR23083725": {
     "country": "USA",
+    "county": "Franklin",
     "date": "2021-12-05",
     "enrichment": "viral",
     "fine_location": "H",
@@ -15638,6 +15643,7 @@
   },
   "SRR23083727": {
     "country": "USA",
+    "county": "Franklin",
     "date": "2022-01-09",
     "enrichment": "viral",
     "fine_location": "H",
@@ -15647,6 +15653,7 @@
   },
   "SRR23083729": {
     "country": "USA",
+    "county": "Franklin",
     "date": "2022-01-02",
     "enrichment": "viral",
     "fine_location": "H",
@@ -15656,6 +15663,7 @@
   },
   "SRR23083731": {
     "country": "USA",
+    "county": "Licking",
     "date": "2021-12-26",
     "enrichment": "viral",
     "fine_location": "G",
@@ -15665,6 +15673,7 @@
   },
   "SRR23083733": {
     "country": "USA",
+    "county": "Licking",
     "date": "2021-12-19",
     "enrichment": "viral",
     "fine_location": "G",
@@ -15674,6 +15683,7 @@
   },
   "SRR23083734": {
     "country": "USA",
+    "county": "Summit",
     "date": "2021-12-12",
     "enrichment": "viral",
     "fine_location": "A",
@@ -15683,6 +15693,7 @@
   },
   "SRR23083736": {
     "country": "USA",
+    "county": "Licking",
     "date": "2021-12-12",
     "enrichment": "viral",
     "fine_location": "G",
@@ -15692,6 +15703,7 @@
   },
   "SRR23083738": {
     "country": "USA",
+    "county": "Licking",
     "date": "2021-12-05",
     "enrichment": "viral",
     "fine_location": "G",
@@ -15701,6 +15713,7 @@
   },
   "SRR23083740": {
     "country": "USA",
+    "county": "Licking",
     "date": "2022-01-09",
     "enrichment": "viral",
     "fine_location": "G",
@@ -15710,6 +15723,7 @@
   },
   "SRR23083742": {
     "country": "USA",
+    "county": "Licking",
     "date": "2022-01-02",
     "enrichment": "viral",
     "fine_location": "G",
@@ -15719,6 +15733,7 @@
   },
   "SRR23083744": {
     "country": "USA",
+    "county": "Franklin",
     "date": "2021-12-26",
     "enrichment": "viral",
     "fine_location": "F",
@@ -15728,6 +15743,7 @@
   },
   "SRR23083747": {
     "country": "USA",
+    "county": "Franklin",
     "date": "2021-12-19",
     "enrichment": "viral",
     "fine_location": "F",
@@ -15737,6 +15753,7 @@
   },
   "SRR23083749": {
     "country": "USA",
+    "county": "Franklin",
     "date": "2021-12-12",
     "enrichment": "viral",
     "fine_location": "F",
@@ -15746,6 +15763,7 @@
   },
   "SRR23083751": {
     "country": "USA",
+    "county": "Franklin",
     "date": "2021-12-05",
     "enrichment": "viral",
     "fine_location": "F",
@@ -15755,6 +15773,7 @@
   },
   "SRR23083753": {
     "country": "USA",
+    "county": "Franklin",
     "date": "2022-01-09",
     "enrichment": "viral",
     "fine_location": "F",
@@ -15764,6 +15783,7 @@
   },
   "SRR23083755": {
     "country": "USA",
+    "county": "Franklin",
     "date": "2022-01-02",
     "enrichment": "viral",
     "fine_location": "F",
@@ -15773,6 +15793,7 @@
   },
   "SRR23083756": {
     "country": "USA",
+    "county": "Summit",
     "date": "2021-12-05",
     "enrichment": "viral",
     "fine_location": "A",
@@ -15782,6 +15803,7 @@
   },
   "SRR23083758": {
     "country": "USA",
+    "county": "Sandusky",
     "date": "2021-12-26",
     "enrichment": "viral",
     "fine_location": "E",
@@ -15791,6 +15813,7 @@
   },
   "SRR23083760": {
     "country": "USA",
+    "county": "Sandusky",
     "date": "2021-12-19",
     "enrichment": "viral",
     "fine_location": "E",
@@ -15800,6 +15823,7 @@
   },
   "SRR23083762": {
     "country": "USA",
+    "county": "Sandusky",
     "date": "2021-12-12",
     "enrichment": "viral",
     "fine_location": "E",
@@ -15809,6 +15833,7 @@
   },
   "SRR23083764": {
     "country": "USA",
+    "county": "Sandusky",
     "date": "2021-12-05",
     "enrichment": "viral",
     "fine_location": "E",
@@ -15818,6 +15843,7 @@
   },
   "SRR23083766": {
     "country": "USA",
+    "county": "Sandusky",
     "date": "2022-01-09",
     "enrichment": "viral",
     "fine_location": "E",
@@ -15827,6 +15853,7 @@
   },
   "SRR23083769": {
     "country": "USA",
+    "county": "Sandusky",
     "date": "2022-01-02",
     "enrichment": "viral",
     "fine_location": "E",
@@ -15836,6 +15863,7 @@
   },
   "SRR23083771": {
     "country": "USA",
+    "county": "Lawrence",
     "date": "2021-12-19",
     "enrichment": "viral",
     "fine_location": "D",
@@ -15845,6 +15873,7 @@
   },
   "SRR23083773": {
     "country": "USA",
+    "county": "Lawrence",
     "date": "2021-12-12",
     "enrichment": "viral",
     "fine_location": "D",
@@ -15854,6 +15883,7 @@
   },
   "SRR23083775": {
     "country": "USA",
+    "county": "Lawrence",
     "date": "2021-12-05",
     "enrichment": "viral",
     "fine_location": "D",
@@ -15863,6 +15893,7 @@
   },
   "SRR23083778": {
     "country": "USA",
+    "county": "Montogmery",
     "date": "2022-01-09",
     "enrichment": "viral",
     "fine_location": "J",
@@ -15872,6 +15903,7 @@
   },
   "SRR23083780": {
     "country": "USA",
+    "county": "Montogmery",
     "date": "2022-01-02",
     "enrichment": "viral",
     "fine_location": "J",
@@ -15881,6 +15913,7 @@
   },
   "SRR23083782": {
     "country": "USA",
+    "county": "Greene",
     "date": "2021-12-26",
     "enrichment": "viral",
     "fine_location": "I",
@@ -15890,6 +15923,7 @@
   },
   "SRR23083784": {
     "country": "USA",
+    "county": "Greene",
     "date": "2021-12-19",
     "enrichment": "viral",
     "fine_location": "I",
@@ -15899,6 +15933,7 @@
   },
   "SRR23083786": {
     "country": "USA",
+    "county": "Greene",
     "date": "2021-12-12",
     "enrichment": "viral",
     "fine_location": "I",
@@ -15908,6 +15943,7 @@
   },
   "SRR23083787": {
     "country": "USA",
+    "county": "Summit",
     "date": "2021-12-19",
     "enrichment": "viral",
     "fine_location": "A",
@@ -15917,6 +15953,7 @@
   },
   "SRR23083789": {
     "country": "USA",
+    "county": "Greene",
     "date": "2021-12-05",
     "enrichment": "viral",
     "fine_location": "I",
@@ -15926,6 +15963,7 @@
   },
   "SRR23083790": {
     "country": "USA",
+    "county": "Lawrence",
     "date": "2022-01-09",
     "enrichment": "viral",
     "fine_location": "D",
@@ -15935,6 +15973,7 @@
   },
   "SRR23083792": {
     "country": "USA",
+    "county": "Summit",
     "date": "2022-01-09",
     "enrichment": "viral",
     "fine_location": "A",
@@ -15944,6 +15983,7 @@
   },
   "SRR23083794": {
     "country": "USA",
+    "county": "Lucas",
     "date": "2021-12-19",
     "enrichment": "viral",
     "fine_location": "C",
@@ -15953,6 +15993,7 @@
   },
   "SRR23083795": {
     "country": "USA",
+    "county": "Lucas",
     "date": "2021-12-05",
     "enrichment": "viral",
     "fine_location": "C",
@@ -15962,6 +16003,7 @@
   },
   "SRR23083797": {
     "country": "USA",
+    "county": "Lucas",
     "date": "2022-01-09",
     "enrichment": "viral",
     "fine_location": "C",
@@ -15971,6 +16013,7 @@
   },
   "SRR23083798": {
     "country": "USA",
+    "county": "Lucas",
     "date": "2022-01-02",
     "enrichment": "viral",
     "fine_location": "C",
@@ -15980,6 +16023,7 @@
   },
   "SRR23083799": {
     "country": "USA",
+    "county": "Trumbull",
     "date": "2021-12-26",
     "enrichment": "viral",
     "fine_location": "B",
@@ -15989,6 +16033,7 @@
   },
   "SRR23083801": {
     "country": "USA",
+    "county": "Trumbull",
     "date": "2021-12-19",
     "enrichment": "viral",
     "fine_location": "B",
@@ -15998,6 +16043,7 @@
   },
   "SRR23083804": {
     "country": "USA",
+    "county": "Trumbull",
     "date": "2021-12-12",
     "enrichment": "viral",
     "fine_location": "B",
@@ -16007,6 +16053,7 @@
   },
   "SRR23083806": {
     "country": "USA",
+    "county": "Trumbull",
     "date": "2021-12-05",
     "enrichment": "viral",
     "fine_location": "B",
@@ -16016,6 +16063,7 @@
   },
   "SRR23083808": {
     "country": "USA",
+    "county": "Trumbull",
     "date": "2022-01-09",
     "enrichment": "viral",
     "fine_location": "B",
@@ -16025,6 +16073,7 @@
   },
   "SRR23083810": {
     "country": "USA",
+    "county": "Trumbull",
     "date": "2022-01-02",
     "enrichment": "viral",
     "fine_location": "B",
@@ -16034,6 +16083,7 @@
   },
   "SRR23083813": {
     "country": "USA",
+    "county": "Summit",
     "date": "2021-12-26",
     "enrichment": "viral",
     "fine_location": "A",
@@ -16043,6 +16093,7 @@
   },
   "SRR23083818": {
     "country": "USA",
+    "county": "Montogmery",
     "date": "2021-12-26",
     "enrichment": "viral",
     "fine_location": "J",
@@ -16052,6 +16103,7 @@
   },
   "SRR23083820": {
     "country": "USA",
+    "county": "Montogmery",
     "date": "2021-12-19",
     "enrichment": "viral",
     "fine_location": "J",
@@ -16061,6 +16113,7 @@
   },
   "SRR23083822": {
     "country": "USA",
+    "county": "Montogmery",
     "date": "2021-12-12",
     "enrichment": "viral",
     "fine_location": "J",
@@ -16070,6 +16123,7 @@
   },
   "SRR23083823": {
     "country": "USA",
+    "county": "Montogmery",
     "date": "2021-12-05",
     "enrichment": "viral",
     "fine_location": "J",
@@ -16079,6 +16133,7 @@
   },
   "SRR23083825": {
     "country": "USA",
+    "county": "Summit",
     "date": "2022-01-02",
     "enrichment": "viral",
     "fine_location": "A",
