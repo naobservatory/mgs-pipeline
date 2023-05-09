@@ -475,7 +475,8 @@ function cell_value(count, total) {
     return "< " + sci_num(1/total) + " (0)";
   }
   const val = count / total;
-  return sci_num(val) + " (" + count + ")";
+  const pretty_count = count < 1000 ? count : sci_num(count);
+  return sci_num(val) + " (" + pretty_count + ")";
 }
 
 function sci_num(x) {
@@ -1149,7 +1150,8 @@ function redisplay() {
 
     if (taxid == VIRUS) { // viruses, root of tree
       add_divider("Human infecting viruses.  Counts on higher clades only " +
-                  "include reads assigned to human-infecting viruses.");
+                  "include reads assigned to human-infecting viruses.  Format " +
+                  "is 'relative_abundance (read count)'.");
     }
 
     if (taxid != 1) {
@@ -1241,7 +1243,8 @@ function redisplay() {
       if (!added_divider) {
         add_divider(
           "Comparison clades.  Counts are of reads assigned anywhere in the "
-            + "clade, and not just to human-infecting viruses.");
+            + "clade, and not just to human-infecting viruses.  Format "
+            + "is 'relative_abundance (read count)'.");
       }
       added_divider = true;
       tbl.appendChild(tr);
