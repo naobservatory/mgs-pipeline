@@ -198,21 +198,21 @@ for project in projects:
                     location="Los Angeles",
                     county={
                         # Hyperion
-                        "HTP": "Los Angeles",
+                        "HTP": "Los Angeles County",
                         # San Jose Creek
-                        "SJ": "Los Angeles",
+                        "SJ": "Los Angeles County",
                         # Joint Water Pollution Control Plant
-                        "JWPCP": "Los Angeles",
+                        "JWPCP": "Los Angeles County",
                         # Orange County
-                        "OC": "Orange",
+                        "OC": "Orange County",
                         # Point Loma
-                        "PL": "San Diego",
+                        "PL": "San Diego County",
                         # South Bay
-                        "SB": "San Diego",
+                        "SB": "San Diego County",
                         # North City
-                        "NC": "San Diego",
+                        "NC": "San Diego County",
                         # Escondido Hale Avenue Resource Recovery Facility
-                        "ESC": "San Diego",
+                        "ESC": "San Diego County",
                     }[wtp],
                     fine_location=wtp,
                     enrichment="panel" if is_enriched == "1" else "viral")
@@ -223,10 +223,10 @@ for project in projects:
                     country="USA",
                     location="San Francisco",
                     county={
-                        "Berkeley": "Alameda",
-                        "Marin": "Marin",
-                        "Oakland": "Alameda",
-                        "SF": "San Francisco",
+                        "Berkeley": "Alameda County",
+                        "Marin": "Marin County",
+                        "Oakland": "Alameda County",
+                        "SF": "San Francisco County",
                     }[municipality],
                     fine_location=municipality,
                     method=method,
@@ -261,16 +261,16 @@ for project in projects:
                     location="Ohio",
                     # https://github.com/naobservatory/mgs-pipeline/issues/9
                     county={
-                        "A": "Summit",
-                        "B": "Trumbull",
-                        "C": "Lucas",
-                        "D": "Lawrence",
-                        "E": "Sandusky",
-                        "F": "Franklin",
-                        "G": "Licking",
-                        "H": "Franklin",
-                        "I": "Greene",
-                        "J": "Montogmery",
+                        "A": "Summit County",
+                        "B": "Trumbull County",
+                        "C": "Lucas County",
+                        "D": "Lawrence County",
+                        "E": "Sandusky County",
+                        "F": "Franklin County",
+                        "G": "Licking County",
+                        "H": "Franklin County",
+                        "I": "Greene County",
+                        "J": "Montogmery County",
                     }[loc],
                     fine_location=loc,
                     enrichment="viral",
