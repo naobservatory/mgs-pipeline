@@ -476,7 +476,8 @@ function cell_value(count, total) {
   }
   const val = count / total;
   const pretty_count = count < 1000 ? count : sci_num(count);
-  return sci_num(val) + " (" + pretty_count + ")";
+  const pretty_val = val >= 0.0001 ? ((val*100).toPrecision(2) + "%") : sci_num(val);
+  return pretty_val + " (" + pretty_count + ")";
 }
 
 function sci_num(x) {
