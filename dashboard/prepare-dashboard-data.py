@@ -194,7 +194,8 @@ for project in projects:
 
                 sample_metadata[sample] = dict(
                     date=date,
-                    country="USA",
+                    country="United States",
+                    state="California",
                     location="Los Angeles",
                     county={
                         # Hyperion
@@ -220,7 +221,8 @@ for project in projects:
                 sample, municipality, date, method, sequencing = line.split("\t")
                 sample_metadata[sample] = dict(
                     date=date,
-                    country="USA",
+                    country="United States",
+                    state="California",
                     location="San Francisco",
                     county={
                         "Berkeley": "Alameda County",
@@ -235,7 +237,7 @@ for project in projects:
                 sample, na_type, date = line.split("\t")
                 sample_metadata[sample] = dict(
                     date=date,
-                    country="USA",
+                    country="United States",
                     location="Maryland",
                     fine_location="Manhole",
                     na_type=na_type)
@@ -257,7 +259,8 @@ for project in projects:
                 sample, loc, date = line.split("\t")
                 sample_metadata[sample] = dict(
                     date=date,
-                    country="USA",
+                    country="United States",
+                    state="Ohio",
                     location="Ohio",
                     # https://github.com/naobservatory/mgs-pipeline/issues/9
                     county={
@@ -306,7 +309,7 @@ for project in projects:
             elif project in papers["Maritz 2019"]["projects"]:
                 sample = line.split("\t")[0]
                 sample_metadata[sample] = dict(
-                    country="USA",
+                    country="United States",
                     location="New York City",
                     # Paper has "17 raw sewage samples collected from 14 DEP
                     # wastewater treatment plants from the five NYC boroughs in
@@ -315,7 +318,7 @@ for project in projects:
             elif project in papers["Fierer 2022"]["projects"]:
                 sample = line.strip().split("\t")[0]
                 sample_metadata[sample] = dict(
-                    country="USA",
+                    country="United States",
                     location="Boulder, CO",
                     # I can't find metadata on which samples are from which
                     # days or which spots on campus.
