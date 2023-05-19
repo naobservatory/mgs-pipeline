@@ -72,7 +72,7 @@ def exists_s3_prefix(s3_path):
 
       raise # any other exit code means something else is wrong
 
-def ls_s3_dir(s3_dir, min_size=0):
+def ls_s3_dir(s3_dir, min_size=0, min_date=''):
    try:
       cmd_out = subprocess.check_output(["aws", "s3", "ls", s3_dir])
    except subprocess.CalledProcessError as e:
@@ -91,6 +91,8 @@ def ls_s3_dir(s3_dir, min_size=0):
          raise
 
       if int(size) < min_size: continue
+      if date.decode('utf-8') < min_date: continue
+
       yield fname.decode('utf-8')
 
 def get_adapters(in1, in2, adapter1_fname, adapter2_fname):
@@ -192,9 +194,9 @@ def clean(args):
 def rmadapter(args):
    adapter_removal(args, "noadapters", trim_quality=False, collapse=False)
 
-def get_files(args, dirname, min_size=1):
+def get_files(args, dirname, min_size=1, min_date=''):
    return set(ls_s3_dir("%s/%s/%s/" % (S3_BUCKET, args.bioproject, dirname),
-                        min_size=min_size))
+                        min_size=min_size, min_date=min_date))
 
 def interpret(args):
    available_inputs = get_files(args, "cleaned",
@@ -242,7 +244,8 @@ def interpret(args):
 
 def cladecounts(args):
    available_inputs = get_files(args, "processed")
-   existing_outputs = get_files(args, "cladecounts", min_size=100)
+   existing_outputs = get_files(args, "cladecounts", min_size=100,
+                                min_date='2023-05-19')
 
    for sample in get_samples(args):
       output = "%s.tsv.gz" % sample
