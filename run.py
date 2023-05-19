@@ -208,6 +208,7 @@ def interpret(args):
       for potential_input in available_inputs:
          if not potential_input.startswith(sample): continue
          if ".settings" in potential_input: continue
+         if "discarded" in potential_input: continue
 
          output = potential_input.replace(".gz", ".kraken2.tsv")
          inputs = [potential_input]
