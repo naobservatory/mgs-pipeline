@@ -273,7 +273,7 @@ for project in projects:
                         "G": "Licking County",
                         "H": "Franklin County",
                         "I": "Greene County",
-                        "J": "Montogmery County",
+                        "J": "Montgomery County",
                     }[loc],
                     fine_location=loc,
                     enrichment="viral",
