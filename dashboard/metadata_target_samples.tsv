@@ -1,0 +1,437 @@
+accession	country	county	enrichment	fine_location	reads	state	method	na_type	location	date
+SRR12596165	United States	Alameda County	panel	Berkeley	469609	California	amicon		San Francisco	2020-06-09
+SRR12596166	United States	Alameda County	panel	Berkeley	504599	California	amicon		San Francisco	2020-05-28
+SRR12596167	United States	Alameda County	panel	Oakland	12072	California	amicon		San Francisco	2020-05-13
+SRR12596168	United States	Alameda County	panel	Oakland	476640	California	amicon		San Francisco	2020-06-09
+SRR12596169	United States	Alameda County	panel	Oakland	624031	California	amicon		San Francisco	2020-05-28
+SRR12596170	United States	Alameda County	panel	Oakland	171626	California	amicon		San Francisco	2020-05-19
+SRR12596171	United States	Alameda County	panel	Oakland	2405482	California	COL		San Francisco	2020-06-30
+SRR12596172	United States	Alameda County	panel	Oakland	167374	California	amicon		San Francisco	2020-05-19
+SRR12596173	United States	Alameda County	panel	Oakland	41087	California	amicon		San Francisco	2020-05-13
+SRR12596174	United States	Alameda County	panel	Oakland	953038	California	MOS		San Francisco	2020-06-30
+SRR12596175	United States	Marin County	panel	Marin	2891359	California	MOS		San Francisco	2020-07-01
+SRR14530724	United States	San Diego County	viral	SB	2737872	California			Los Angeles	2020-09-10
+SRR14530725	United States	San Diego County	viral	SB	6515759	California			Los Angeles	2020-09-24
+SRR14530726	United States	San Diego County	viral	SB	3204232	California			Los Angeles	2020-08-27
+SRR14530727	United States	San Diego County	viral	SB	2782200	California			Los Angeles	2020-08-13
+SRR14530728	United States	San Diego County	viral	SB	3429177	California			Los Angeles	2020-10-22
+SRR14530729	United States	San Diego County	viral	PL	3842559	California			Los Angeles	2020-09-24
+SRR14530730	United States	San Diego County	viral	PL	4419124	California			Los Angeles	2020-09-10
+SRR14530731	United States	San Diego County	viral	PL	3402804	California			Los Angeles	2020-08-27
+SRR14530732	United States	San Diego County	viral	PL	3786318	California			Los Angeles	2020-08-13
+SRR14530733	United States	San Diego County	viral	PL	3857662	California			Los Angeles	2020-10-22
+SRR14530734	United States	Orange County	viral	OC	3588085	California			Los Angeles	2020-09-30
+SRR14530735	United States	Los Angeles County	panel	HTP	2807360	California			Los Angeles	2020-09-15
+SRR14530736	United States	Orange County	viral	OC	4520022	California			Los Angeles	2020-09-23
+SRR14530737	United States	Orange County	viral	OC	1327075	California			Los Angeles	2020-09-16
+SRR14530738	United States	Orange County	viral	OC	4874211	California			Los Angeles	2020-09-03
+SRR14530739	United States	Orange County	viral	OC	3689634	California			Los Angeles	2020-09-02
+SRR14530740	United States	Orange County	viral	OC	3283166	California			Los Angeles	2020-08-26
+SRR14530741	United States	Orange County	viral	OC	3182825	California			Los Angeles	2020-08-19
+SRR14530742	United States	Orange County	viral	OC	1292650	California			Los Angeles	2020-08-12
+SRR14530743	United States	Orange County	viral	OC	3890259	California			Los Angeles	2020-10-07
+SRR14530744	United States	San Diego County	viral	NC	2901986	California			Los Angeles	2020-09-11
+SRR14530745	United States	San Diego County	viral	NC	3467617	California			Los Angeles	2020-08-28
+SRR14530746	United States	Los Angeles County	panel	HTP	3233824	California			Los Angeles	2020-09-08
+SRR14530747	United States	San Diego County	viral	NC	4099096	California			Los Angeles	2020-08-14
+SRR14530748	United States	San Diego County	viral	NC	4124544	California			Los Angeles	2020-10-23
+SRR14530749	United States	San Diego County	viral	NC	4902017	California			Los Angeles	2020-10-09
+SRR14530750	United States	Los Angeles County	viral	JWPCP	4514886	California			Los Angeles	2020-09-22
+SRR14530751	United States	Los Angeles County	viral	JWPCP	4234727	California			Los Angeles	2020-09-15
+SRR14530752	United States	Los Angeles County	viral	JWPCP	4018438	California			Los Angeles	2020-09-08
+SRR14530753	United States	Los Angeles County	viral	JWPCP	3630148	California			Los Angeles	2020-09-01
+SRR14530754	United States	Los Angeles County	viral	JWPCP	3183234	California			Los Angeles	2020-08-25
+SRR14530755	United States	Los Angeles County	viral	JWPCP	4059288	California			Los Angeles	2020-08-18
+SRR14530756	United States	Los Angeles County	viral	JWPCP	2102736	California			Los Angeles	2020-08-11
+SRR14530757	United States	Los Angeles County	panel	HTP	4286417	California			Los Angeles	2020-09-01
+SRR14530758	United States	Los Angeles County	viral	JWPCP	4221630	California			Los Angeles	2020-10-13
+SRR14530759	United States	Los Angeles County	viral	JWPCP	4832507	California			Los Angeles	2020-10-06
+SRR14530760	United States	Los Angeles County	viral	JWPCP	2374918	California			Los Angeles	2020-10-27
+SRR14530761	United States	Los Angeles County	viral	JWPCP	4362852	California			Los Angeles	2020-10-20
+SRR14530762	United States	Los Angeles County	viral	HTP	3579700	California			Los Angeles	2020-09-15
+SRR14530763	United States	Los Angeles County	viral	HTP	3551002	California			Los Angeles	2020-09-08
+SRR14530764	United States	Los Angeles County	viral	HTP	3604679	California			Los Angeles	2020-09-01
+SRR14530765	United States	Los Angeles County	viral	HTP	3486258	California			Los Angeles	2020-08-25
+SRR14530766	United States	Los Angeles County	viral	HTP	2800039	California			Los Angeles	2020-08-18
+SRR14530767	United States	Los Angeles County	viral	HTP	3318348	California			Los Angeles	2020-08-11
+SRR14530768	United States	Los Angeles County	panel	HTP	4066111	California			Los Angeles	2020-08-25
+SRR14530769	United States	Los Angeles County	viral	HTP	4215471	California			Los Angeles	2020-10-27
+SRR14530770	United States	Los Angeles County	viral	HTP	4350744	California			Los Angeles	2020-10-20
+SRR14530771	United States	Los Angeles County	viral	HTP	2179170	California			Los Angeles	2020-10-13
+SRR14530772	United States	Los Angeles County	viral	HTP	4595209	California			Los Angeles	2020-10-02
+SRR14530773	United States	Los Angeles County	panel	SJ	1615689	California			Los Angeles	2020-09-30
+SRR14530774	United States	Los Angeles County	panel	SJ	4478207	California			Los Angeles	2020-09-16
+SRR14530775	United States	Los Angeles County	panel	SJ	3538301	California			Los Angeles	2020-09-09
+SRR14530776	United States	Los Angeles County	panel	SJ	3233946	California			Los Angeles	2020-09-02
+SRR14530777	United States	Los Angeles County	panel	SJ	4395025	California			Los Angeles	2020-08-26
+SRR14530778	United States	Los Angeles County	panel	SJ	3312596	California			Los Angeles	2020-08-19
+SRR14530779	United States	Los Angeles County	panel	HTP	3810545	California			Los Angeles	2020-08-18
+SRR14530780	United States	Los Angeles County	panel	SJ	5045252	California			Los Angeles	2020-08-12
+SRR14530781	United States	Los Angeles County	panel	SJ	5592467	California			Los Angeles	2020-10-28
+SRR14530782	United States	Los Angeles County	panel	SJ	2529771	California			Los Angeles	2020-10-21
+SRR14530783	United States	Los Angeles County	panel	SJ	3743058	California			Los Angeles	2020-10-14
+SRR14530784	United States	Los Angeles County	panel	SJ	6620418	California			Los Angeles	2020-10-07
+SRR14530785	United States	San Diego County	panel	SB	8113925	California			Los Angeles	2020-09-24
+SRR14530786	United States	San Diego County	panel	SB	2556497	California			Los Angeles	2020-09-10
+SRR14530787	United States	San Diego County	panel	SB	4596913	California			Los Angeles	2020-08-27
+SRR14530788	United States	San Diego County	panel	SB	2057061	California			Los Angeles	2020-08-13
+SRR14530789	United States	San Diego County	panel	SB	3293890	California			Los Angeles	2020-10-22
+SRR14530790	United States	Los Angeles County	panel	HTP	1901768	California			Los Angeles	2020-08-11
+SRR14530791	United States	San Diego County	panel	PL	6227653	California			Los Angeles	2020-09-24
+SRR14530792	United States	San Diego County	panel	PL	3272174	California			Los Angeles	2020-09-10
+SRR14530793	United States	San Diego County	panel	PL	1832839	California			Los Angeles	2020-08-27
+SRR14530794	United States	San Diego County	panel	PL	3582304	California			Los Angeles	2020-08-13
+SRR14530795	United States	San Diego County	panel	PL	2000753	California			Los Angeles	2020-10-22
+SRR14530796	United States	Orange County	panel	OC	2495164	California			Los Angeles	2020-09-30
+SRR14530797	United States	Orange County	panel	OC	3618278	California			Los Angeles	2020-09-23
+SRR14530798	United States	Orange County	panel	OC	2282933	California			Los Angeles	2020-09-16
+SRR14530799	United States	Orange County	panel	OC	5551606	California			Los Angeles	2020-09-03
+SRR14530800	United States	Orange County	panel	OC	3156280	California			Los Angeles	2020-09-02
+SRR14530801	United States	Los Angeles County	panel	HTP	3477646	California			Los Angeles	2020-10-27
+SRR14530802	United States	Orange County	panel	OC	1462677	California			Los Angeles	2020-08-26
+SRR14530803	United States	Orange County	panel	OC	2389728	California			Los Angeles	2020-08-19
+SRR14530804	United States	Orange County	panel	OC	6241597	California			Los Angeles	2020-08-12
+SRR14530805	United States	Orange County	panel	OC	3355936	California			Los Angeles	2020-10-07
+SRR14530806	United States	San Diego County	panel	NC	2258105	California			Los Angeles	2020-09-11
+SRR14530807	United States	San Diego County	panel	NC	4308728	California			Los Angeles	2020-08-28
+SRR14530808	United States	San Diego County	panel	NC	5650167	California			Los Angeles	2020-08-14
+SRR14530809	United States	San Diego County	panel	NC	3925138	California			Los Angeles	2020-10-23
+SRR14530810	United States	San Diego County	panel	NC	1231997	California			Los Angeles	2020-10-09
+SRR14530811	United States	Los Angeles County	panel	JWPCP	3811362	California			Los Angeles	2020-09-22
+SRR14530812	United States	Los Angeles County	panel	HTP	3094229	California			Los Angeles	2020-10-20
+SRR14530813	United States	Los Angeles County	panel	JWPCP	3981090	California			Los Angeles	2020-09-15
+SRR14530814	United States	Los Angeles County	panel	JWPCP	3530954	California			Los Angeles	2020-09-08
+SRR14530815	United States	Los Angeles County	panel	SJ	1043613	California			Los Angeles	2020-09-23
+SRR14530816	United States	Los Angeles County	panel	SJ	1380941	California			Los Angeles	2020-11-04
+SRR14530817	United States	Los Angeles County	panel	SJ	1230272	California			Los Angeles	2020-11-18
+SRR14530818	United States	Los Angeles County	panel	JWPCP	2950881	California			Los Angeles	2020-10-20
+SRR14530819	United States	Los Angeles County	panel	HTP	3357535	California			Los Angeles	2020-10-13
+SRR14530820	United States	Los Angeles County	panel	HTP	3441208	California			Los Angeles	2020-10-02
+SRR14530821	United States	Los Angeles County	panel	SJ	1459625	California			Los Angeles	2020-11-11
+SRR14530822	United States	San Diego County	panel	SB	1118519	California			Los Angeles	2020-11-05
+SRR14530823	United States	San Diego County	panel	SB	1159722	California			Los Angeles	2020-10-08
+SRR14530824	United States	San Diego County	panel	PL	1208997	California			Los Angeles	2020-12-28
+SRR14530825	United States	San Diego County	panel	PL	1263185	California			Los Angeles	2020-12-22
+SRR14530826	United States	San Diego County	panel	PL	1405184	California			Los Angeles	2020-12-14
+SRR14530827	United States	San Diego County	panel	PL	773261	California			Los Angeles	2020-11-05
+SRR14530828	United States	Los Angeles County	panel	JWPCP	4457786	California			Los Angeles	2020-09-01
+SRR14530829	United States	San Diego County	panel	PL	1067834	California			Los Angeles	2020-11-30
+SRR14530830	United States	San Diego County	panel	PL	1346473	California			Los Angeles	2020-11-29
+SRR14530831	United States	San Diego County	panel	PL	1753622	California			Los Angeles	2021-01-04
+SRR14530832	United States	San Diego County	panel	PL	1346042	California			Los Angeles	2021-01-03
+SRR14530833	United States	Orange County	panel	OC	1164045	California			Los Angeles	2020-12-21
+SRR14530834	United States	Orange County	panel	OC	1231078	California			Los Angeles	2020-12-14
+SRR14530835	United States	Orange County	panel	OC	1246005	California			Los Angeles	2020-11-04
+SRR14530836	United States	Orange County	panel	OC	1605735	California			Los Angeles	2020-11-11
+SRR14530837	United States	Los Angeles County	panel	JWPCP	1653176	California			Los Angeles	2020-09-29
+SRR14530838	United States	Los Angeles County	panel	JWPCP	1561405	California			Los Angeles	2020-11-03
+SRR14530839	United States	Los Angeles County	panel	JWPCP	1925694	California			Los Angeles	2020-08-25
+SRR14530840	United States	Los Angeles County	panel	JWPCP	1112103	California			Los Angeles	2020-11-17
+SRR14530841	United States	Los Angeles County	panel	JWPCP	1232548	California			Los Angeles	2020-11-10
+SRR14530842	United States	Los Angeles County	panel	HTP	1603711	California			Los Angeles	2020-09-29
+SRR14530843	United States	Los Angeles County	panel	HTP	1294643	California			Los Angeles	2020-09-22
+SRR14530844	United States	Los Angeles County	panel	HTP	1142935	California			Los Angeles	2020-12-29
+SRR14530845	United States	Los Angeles County	panel	HTP	1298420	California			Los Angeles	2020-12-22
+SRR14530846	United States	Los Angeles County	panel	HTP	1264824	California			Los Angeles	2020-12-04
+SRR14530847	United States	Los Angeles County	panel	HTP	1073151	California			Los Angeles	2020-11-03
+SRR14530848	United States	Los Angeles County	panel	HTP	1479324	California			Los Angeles	2020-11-24
+SRR14530849	United States	Los Angeles County	panel	HTP	990379	California			Los Angeles	2021-01-03
+SRR14530850	United States	Los Angeles County	panel	JWPCP	3034820	California			Los Angeles	2020-08-18
+SRR14530851	United States	Los Angeles County	viral	SJ	10246075	California			Los Angeles	2020-09-23
+SRR14530852	United States	Los Angeles County	viral	SJ	10232266	California			Los Angeles	2020-11-04
+SRR14530853	United States	Los Angeles County	viral	SJ	13154158	California			Los Angeles	2020-11-18
+SRR14530854	United States	Los Angeles County	viral	SJ	11601202	California			Los Angeles	2020-11-11
+SRR14530855	United States	San Diego County	viral	SB	11389423	California			Los Angeles	2020-11-05
+SRR14530856	United States	San Diego County	viral	SB	11257694	California			Los Angeles	2020-10-08
+SRR14530857	United States	San Diego County	viral	PL	8833468	California			Los Angeles	2020-12-28
+SRR14530858	United States	San Diego County	viral	PL	9334593	California			Los Angeles	2020-12-22
+SRR14530859	United States	San Diego County	viral	PL	10305132	California			Los Angeles	2020-12-14
+SRR14530860	United States	San Diego County	viral	PL	8153083	California			Los Angeles	2020-11-05
+SRR14530861	United States	Los Angeles County	panel	JWPCP	2920601	California			Los Angeles	2020-08-11
+SRR14530862	United States	San Diego County	viral	PL	10775374	California			Los Angeles	2020-11-30
+SRR14530863	United States	San Diego County	viral	PL	10112554	California			Los Angeles	2020-11-29
+SRR14530864	United States	San Diego County	viral	PL	10182955	California			Los Angeles	2021-01-04
+SRR14530865	United States	San Diego County	viral	PL	10140886	California			Los Angeles	2021-01-03
+SRR14530866	United States	Orange County	viral	OC	9826830	California			Los Angeles	2020-12-21
+SRR14530867	United States	Orange County	viral	OC	9840771	California			Los Angeles	2020-12-14
+SRR14530868	United States	Orange County	viral	OC	10616714	California			Los Angeles	2020-11-09
+SRR14530869	United States	Orange County	viral	OC	8583928	California			Los Angeles	2020-11-04
+SRR14530870	United States	Orange County	viral	OC	9408142	California			Los Angeles	2020-11-25
+SRR14530871	United States	Orange County	viral	OC	10523877	California			Los Angeles	2020-11-18
+SRR14530872	United States	Los Angeles County	panel	JWPCP	4345005	California			Los Angeles	2020-10-13
+SRR14530873	United States	Orange County	viral	OC	11667235	California			Los Angeles	2020-11-11
+SRR14530874	United States	San Diego County	viral	NC	9670784	California			Los Angeles	2020-09-25
+SRR14530875	United States	San Diego County	viral	NC	12434072	California			Los Angeles	2020-11-06
+SRR14530876	United States	Los Angeles County	viral	JWPCP	10164300	California			Los Angeles	2020-09-29
+SRR14530877	United States	Los Angeles County	viral	JWPCP	11233097	California			Los Angeles	2020-11-03
+SRR14530878	United States	Los Angeles County	viral	JWPCP	12720283	California			Los Angeles	2020-11-17
+SRR14530879	United States	Los Angeles County	viral	JWPCP	9675052	California			Los Angeles	2020-11-10
+SRR14530880	United States	Los Angeles County	viral	HTP	13626688	California			Los Angeles	2020-09-29
+SRR14530881	United States	Los Angeles County	viral	HTP	12904150	California			Los Angeles	2020-09-22
+SRR14530882	United States	Los Angeles County	viral	HTP	11504066	California			Los Angeles	2020-12-29
+SRR14530883	United States	Los Angeles County	panel	JWPCP	4786787	California			Los Angeles	2020-10-06
+SRR14530884	United States	Los Angeles County	viral	HTP	8861526	California			Los Angeles	2020-12-22
+SRR14530885	United States	Los Angeles County	viral	HTP	11960233	California			Los Angeles	2020-12-15
+SRR14530886	United States	Los Angeles County	viral	HTP	10874604	California			Los Angeles	2020-12-04
+SRR14530887	United States	Los Angeles County	viral	HTP	11912829	California			Los Angeles	2020-12-01
+SRR14530888	United States	Los Angeles County	viral	HTP	11534523	California			Los Angeles	2020-11-03
+SRR14530889	United States	Los Angeles County	viral	HTP	11045877	California			Los Angeles	2020-11-24
+SRR14530890	United States	Los Angeles County	viral	HTP	16394657	California			Los Angeles	2020-11-17
+SRR14530891	United States	Los Angeles County	viral	HTP	9626457	California			Los Angeles	2021-01-03
+SRR14530892	United States	Los Angeles County	viral	SJ	2810576	California			Los Angeles	2020-09-30
+SRR14530893	United States	Los Angeles County	viral	SJ	3829748	California			Los Angeles	2020-09-16
+SRR14530894	United States	Los Angeles County	panel	JWPCP	4599945	California			Los Angeles	2020-10-27
+SRR14530895	United States	Los Angeles County	viral	SJ	3184286	California			Los Angeles	2020-09-09
+SRR14530896	United States	Los Angeles County	viral	SJ	3041921	California			Los Angeles	2020-09-02
+SRR14530897	United States	Los Angeles County	viral	SJ	3108434	California			Los Angeles	2020-08-26
+SRR14530898	United States	Los Angeles County	viral	SJ	3011011	California			Los Angeles	2020-08-19
+SRR14530899	United States	Los Angeles County	viral	SJ	3241686	California			Los Angeles	2020-08-12
+SRR14530900	United States	Los Angeles County	viral	SJ	4604124	California			Los Angeles	2020-10-28
+SRR14530901	United States	Los Angeles County	viral	SJ	4192507	California			Los Angeles	2020-10-21
+SRR14530902	United States	Los Angeles County	viral	SJ	5260005	California			Los Angeles	2020-10-14
+SRR14530903	United States	Los Angeles County	viral	SJ	4632349	California			Los Angeles	2020-10-07
+SRR18340958	United States	Los Angeles County	panel	HTP	26253383	California			Los Angeles	2021-04-08
+SRR18340959	United States	Los Angeles County	panel	HTP	33283433	California			Los Angeles	2021-04-06
+SRR18340960	United States	Los Angeles County	panel	HTP	33474083	California			Los Angeles	2021-04-04
+SRR18340961	United States	Los Angeles County	panel	HTP	18130763	California			Los Angeles	2021-04-29
+SRR18340962	United States	Los Angeles County	panel	HTP	26741133	California			Los Angeles	2021-04-26
+SRR18340963	United States	Los Angeles County	panel	HTP	24205139	California			Los Angeles	2021-04-25
+SRR18340964	United States	Los Angeles County	panel	HTP	22475531	California			Los Angeles	2021-04-22
+SRR18340965	United States	Los Angeles County	panel	HTP	16175837	California			Los Angeles	2021-04-15
+SRR18340966	United States	Los Angeles County	panel	HTP	32992693	California			Los Angeles	2021-03-09
+SRR18340967	United States	San Diego County	panel	ESC	31872110	California			Los Angeles	2020-11-16
+SRR18340968	United States	Los Angeles County	panel	HTP	45970871	California			Los Angeles	2021-03-07
+SRR18340969	United States	Los Angeles County	panel	HTP	81545969	California			Los Angeles	2021-03-04
+SRR18340970	United States	Los Angeles County	panel	HTP	20116820	California			Los Angeles	2021-03-31
+SRR18340971	United States	Los Angeles County	panel	HTP	25250160	California			Los Angeles	2021-03-30
+SRR18340972	United States	Los Angeles County	panel	HTP	19159183	California			Los Angeles	2021-03-29
+SRR18340973	United States	Los Angeles County	panel	HTP	17319354	California			Los Angeles	2021-03-25
+SRR18340974	United States	Los Angeles County	panel	HTP	24095711	California			Los Angeles	2021-03-23
+SRR18340975	United States	Los Angeles County	panel	HTP	20956204	California			Los Angeles	2021-03-21
+SRR18340976	United States	Los Angeles County	panel	HTP	15857561	California			Los Angeles	2021-03-02
+SRR18340977	United States	Los Angeles County	panel	HTP	28403414	California			Los Angeles	2021-03-18
+SRR18340978	United States	San Diego County	panel	ESC	25117131	California			Los Angeles	2020-10-05
+SRR18340979	United States	Los Angeles County	panel	HTP	40274906	California			Los Angeles	2021-03-16
+SRR18340980	United States	Los Angeles County	panel	HTP	54137635	California			Los Angeles	2021-03-14
+SRR18340981	United States	Los Angeles County	panel	HTP	88897609	California			Los Angeles	2021-03-11
+SRR18340982	United States	Los Angeles County	panel	HTP	28860531	California			Los Angeles	2021-02-09
+SRR18340983	United States	Los Angeles County	panel	HTP	26508968	California			Los Angeles	2021-02-07
+SRR18340984	United States	Los Angeles County	panel	HTP	45571835	California			Los Angeles	2021-02-04
+SRR18340985	United States	Los Angeles County	panel	HTP	19406249	California			Los Angeles	2021-02-28
+SRR18340986	United States	San Diego County	panel	ESC	20688286	California			Los Angeles	2020-08-10
+SRR18340987	United States	San Diego County	panel	ESC	23328395	California			Los Angeles	2021-07-05
+SRR18340988	United States	San Diego County	panel	ESC	24510073	California			Los Angeles	2021-07-19
+SRR18340989	United States	San Diego County	panel	ESC	31905281	California			Los Angeles	2021-07-12
+SRR18340990	United States	San Diego County	panel	ESC	62759357	California			Los Angeles	2021-06-09
+SRR18340991	United States	San Diego County	panel	ESC	27876441	California			Los Angeles	2021-06-24
+SRR18340992	United States	San Diego County	panel	ESC	32055129	California			Los Angeles	2021-06-14
+SRR18340993	United States	San Diego County	panel	ESC	30030783	California			Los Angeles	2021-05-31
+SRR18340994	United States	San Diego County	panel	ESC	18932969	California			Los Angeles	2021-01-04
+SRR18340995	United States	San Diego County	panel	ESC	28184363	California			Los Angeles	2021-05-24
+SRR18340996	United States	San Diego County	panel	ESC	34715147	California			Los Angeles	2021-05-10
+SRR18340997	United States	San Diego County	panel	ESC	48623917	California			Los Angeles	2021-04-05
+SRR18340998	United States	San Diego County	panel	ESC	21110292	California			Los Angeles	2021-04-26
+SRR18340999	United States	San Diego County	panel	ESC	21499815	California			Los Angeles	2021-04-19
+SRR18341000	United States	San Diego County	panel	ESC	21123849	California			Los Angeles	2021-04-12
+SRR18341001	United States	San Diego County	panel	ESC	21341916	California			Los Angeles	2021-03-08
+SRR18341002	United States	San Diego County	panel	ESC	19208504	California			Los Angeles	2021-03-29
+SRR18341003	United States	San Diego County	panel	ESC	19154003	California			Los Angeles	2021-03-22
+SRR18341004	United States	San Diego County	panel	ESC	33445992	California			Los Angeles	2021-03-17
+SRR18341005	United States	San Diego County	panel	ESC	18203904	California			Los Angeles	2021-01-25
+SRR18341006	United States	San Diego County	panel	ESC	15760352	California			Los Angeles	2021-03-01
+SRR18341007	United States	San Diego County	panel	ESC	17840303	California			Los Angeles	2021-02-08
+SRR18341008	United States	San Diego County	panel	PL	27436733	California			Los Angeles	2021-08-03
+SRR18341009	United States	San Diego County	panel	PL	36996619	California			Los Angeles	2021-07-05
+SRR18341010	United States	San Diego County	panel	PL	35019158	California			Los Angeles	2021-07-29
+SRR18341011	United States	San Diego County	panel	PL	26690142	California			Los Angeles	2021-07-25
+SRR18341012	United States	San Diego County	panel	PL	31517495	California			Los Angeles	2021-07-19
+SRR18341013	United States	San Diego County	panel	PL	39909586	California			Los Angeles	2021-07-12
+SRR18341014	United States	Los Angeles County	panel	HTP	20105076	California			Los Angeles	2021-02-23
+SRR18341015	United States	Los Angeles County	panel	HTP	15309642	California			Los Angeles	2021-02-21
+SRR18341016	United States	Los Angeles County	panel	HTP	22119886	California			Los Angeles	2021-02-02
+SRR18341017	United States	San Diego County	panel	ESC	20102428	California			Los Angeles	2020-10-26
+SRR18341018	United States	Los Angeles County	panel	HTP	42161537	California			Los Angeles	2021-02-18
+SRR18341019	United States	Los Angeles County	panel	HTP	21817522	California			Los Angeles	2021-02-16
+SRR18341020	United States	Los Angeles County	panel	HTP	20575397	California			Los Angeles	2021-02-15
+SRR18341021	United States	Los Angeles County	panel	HTP	24322097	California			Los Angeles	2021-02-10
+SRR18341022	United States	Los Angeles County	panel	HTP	30116471	California			Los Angeles	2021-01-07
+SRR18341023	United States	Los Angeles County	panel	HTP	30197133	California			Los Angeles	2021-01-05
+SRR18341024	United States	Los Angeles County	panel	HTP	31167284	California			Los Angeles	2021-01-31
+SRR18341025	United States	Los Angeles County	panel	HTP	51529762	California			Los Angeles	2021-01-28
+SRR18341026	United States	Los Angeles County	panel	HTP	14688921	California			Los Angeles	2021-01-26
+SRR18341027	United States	Los Angeles County	panel	HTP	14541009	California			Los Angeles	2021-01-24
+SRR18341028	United States	San Diego County	panel	ESC	23707063	California			Los Angeles	2020-10-19
+SRR18341029	United States	Los Angeles County	panel	HTP	33096849	California			Los Angeles	2021-01-21
+SRR18341030	United States	Los Angeles County	panel	HTP	42128435	California			Los Angeles	2021-01-19
+SRR18341031	United States	Los Angeles County	panel	HTP	35541273	California			Los Angeles	2021-01-14
+SRR18341032	United States	Los Angeles County	panel	HTP	19397585	California			Los Angeles	2021-01-12
+SRR18341033	United States	Los Angeles County	panel	HTP	16123940	California			Los Angeles	2021-01-10
+SRR18341034	United States	San Diego County	panel	ESC	13129712	California			Los Angeles	2020-09-07
+SRR18341035	United States	San Diego County	panel	ESC	20408957	California			Los Angeles	2020-09-21
+SRR18341036	United States	San Diego County	panel	ESC	17753618	California			Los Angeles	2020-09-14
+SRR18341037	United States	San Diego County	panel	ESC	19394777	California			Los Angeles	2020-08-31
+SRR18341038	United States	San Diego County	panel	ESC	20008511	California			Los Angeles	2020-08-03
+SRR18341039	United States	San Diego County	panel	ESC	11005318	California			Los Angeles	2020-10-12
+SRR18341040	United States	San Diego County	panel	ESC	18631191	California			Los Angeles	2020-08-24
+SRR18341041	United States	San Diego County	panel	ESC	18151826	California			Los Angeles	2020-08-17
+SRR18341042	United States	San Diego County	panel	PL	27092534	California			Los Angeles	2021-03-03
+SRR18341043	United States	San Diego County	panel	PL	27974187	California			Los Angeles	2021-03-29
+SRR18341044	United States	San Diego County	panel	PL	14135750	California			Los Angeles	2021-03-28
+SRR18341045	United States	San Diego County	panel	PL	21196717	California			Los Angeles	2021-03-24
+SRR18341046	United States	San Diego County	panel	PL	17087067	California			Los Angeles	2021-03-22
+SRR18341047	United States	San Diego County	panel	PL	22006682	California			Los Angeles	2021-03-21
+SRR18341048	United States	San Diego County	panel	PL	19207196	California			Los Angeles	2021-03-18
+SRR18341049	United States	San Diego County	panel	PL	23195576	California			Los Angeles	2021-03-15
+SRR18341050	United States	San Diego County	panel	PL	28590407	California			Los Angeles	2021-03-14
+SRR18341051	United States	San Diego County	panel	ESC	24739827	California			Los Angeles	2020-12-28
+SRR18341052	United States	San Diego County	panel	PL	30987893	California			Los Angeles	2021-03-10
+SRR18341053	United States	San Diego County	panel	PL	60418007	California			Los Angeles	2021-03-01
+SRR18341054	United States	San Diego County	panel	PL	18350700	California			Los Angeles	2021-02-08
+SRR18341055	United States	San Diego County	panel	PL	18698080	California			Los Angeles	2021-02-07
+SRR18341056	United States	San Diego County	panel	PL	18298641	California			Los Angeles	2021-02-03
+SRR18341057	United States	San Diego County	panel	PL	33750340	California			Los Angeles	2021-02-28
+SRR18341058	United States	San Diego County	panel	PL	18102742	California			Los Angeles	2021-02-22
+SRR18341059	United States	San Diego County	panel	PL	20641022	California			Los Angeles	2021-02-21
+SRR18341060	United States	San Diego County	panel	PL	27006804	California			Los Angeles	2021-02-17
+SRR18341061	United States	San Diego County	panel	PL	16196324	California			Los Angeles	2021-02-15
+SRR18341062	United States	San Diego County	panel	ESC	33957228	California			Los Angeles	2020-12-21
+SRR18341063	United States	San Diego County	panel	PL	14935795	California			Los Angeles	2021-02-14
+SRR18341064	United States	San Diego County	panel	PL	16983547	California			Los Angeles	2021-02-10
+SRR18341065	United States	San Diego County	panel	PL	33644472	California			Los Angeles	2021-02-01
+SRR18341066	United States	San Diego County	panel	PL	19405373	California			Los Angeles	2021-01-06
+SRR18341067	United States	San Diego County	panel	PL	22552533	California			Los Angeles	2021-01-31
+SRR18341068	United States	San Diego County	panel	PL	16212776	California			Los Angeles	2021-01-27
+SRR18341069	United States	San Diego County	panel	PL	19346950	California			Los Angeles	2021-01-25
+SRR18341070	United States	Los Angeles County	panel	HTP	21033696	California			Los Angeles	2021-05-04
+SRR18341071	United States	Los Angeles County	panel	HTP	45560441	California			Los Angeles	2021-05-31
+SRR18341072	United States	Los Angeles County	panel	HTP	41552492	California			Los Angeles	2021-05-25
+SRR18341073	United States	Los Angeles County	panel	HTP	32477043	California			Los Angeles	2021-05-24
+SRR18341074	United States	Los Angeles County	panel	HTP	53349248	California			Los Angeles	2021-05-23
+SRR18341075	United States	Los Angeles County	panel	HTP	54066214	California			Los Angeles	2021-05-20
+SRR18341076	United States	Los Angeles County	panel	HTP	27981855	California			Los Angeles	2021-05-02
+SRR18341077	United States	Los Angeles County	panel	HTP	60462482	California			Los Angeles	2021-05-18
+SRR18341078	United States	Los Angeles County	panel	HTP	63138081	California			Los Angeles	2021-05-16
+SRR18341079	United States	Los Angeles County	panel	HTP	19135374	California			Los Angeles	2021-05-13
+SRR18341080	United States	San Diego County	panel	ESC	44283851	California			Los Angeles	2020-11-02
+SRR18341081	United States	Los Angeles County	panel	HTP	18479773	California			Los Angeles	2021-05-11
+SRR18341082	United States	San Diego County	panel	PL	26340586	California			Los Angeles	2021-06-07
+SRR18341083	United States	San Diego County	panel	PL	40776879	California			Los Angeles	2021-06-28
+SRR18341084	United States	San Diego County	panel	PL	33586361	California			Los Angeles	2021-06-21
+SRR18341085	United States	San Diego County	panel	PL	51722853	California			Los Angeles	2021-06-02
+SRR18341086	United States	San Diego County	panel	ESC	20786144	California			Los Angeles	2021-02-22
+SRR18341087	United States	San Diego County	panel	PL	28924021	California			Los Angeles	2021-06-14
+SRR18341088	United States	San Diego County	panel	PL	41251583	California			Los Angeles	2021-05-09
+SRR18341089	United States	San Diego County	panel	PL	40281689	California			Los Angeles	2021-05-05
+SRR18341090	United States	San Diego County	panel	PL	24639394	California			Los Angeles	2021-05-04
+SRR18341091	United States	San Diego County	panel	PL	37289091	California			Los Angeles	2021-05-31
+SRR18341092	United States	San Diego County	panel	PL	13887023	California			Los Angeles	2021-05-03
+SRR18341093	United States	San Diego County	panel	PL	35544326	California			Los Angeles	2021-05-24
+SRR18341094	United States	San Diego County	panel	PL	26989665	California			Los Angeles	2021-05-17
+SRR18341095	United States	San Diego County	panel	PL	20428056	California			Los Angeles	2021-05-12
+SRR18341096	United States	San Diego County	panel	PL	21993700	California			Los Angeles	2021-05-10
+SRR18341097	United States	San Diego County	panel	ESC	19269393	California			Los Angeles	2021-02-15
+SRR18341098	United States	San Diego County	panel	PL	22655623	California			Los Angeles	2021-04-07
+SRR18341099	United States	San Diego County	panel	PL	18542548	California			Los Angeles	2021-04-05
+SRR18341100	United States	San Diego County	panel	PL	29772207	California			Los Angeles	2021-04-04
+SRR18341101	United States	San Diego County	panel	PL	25686428	California			Los Angeles	2021-04-28
+SRR18341102	United States	San Diego County	panel	PL	38431621	California			Los Angeles	2021-04-26
+SRR18341103	United States	San Diego County	panel	PL	24951796	California			Los Angeles	2021-04-25
+SRR18341104	United States	San Diego County	panel	PL	26074221	California			Los Angeles	2021-04-21
+SRR18341105	United States	San Diego County	panel	PL	26848265	California			Los Angeles	2021-04-14
+SRR18341106	United States	San Diego County	panel	PL	45412176	California			Los Angeles	2021-03-08
+SRR18341107	United States	San Diego County	panel	PL	21699355	California			Los Angeles	2021-03-07
+SRR18341108	United States	San Diego County	panel	ESC	36184126	California			Los Angeles	2020-12-07
+SRR18341109	United States	San Diego County	panel	PL	25705651	California			Los Angeles	2021-03-31
+SRR18341110	United States	San Diego County	panel	PL	18819650	California			Los Angeles	2021-01-24
+SRR18341111	United States	San Diego County	panel	PL	19464457	California			Los Angeles	2021-01-20
+SRR18341112	United States	San Diego County	panel	PL	15080442	California			Los Angeles	2021-01-18
+SRR18341113	United States	San Diego County	panel	ESC	18120152	California			Los Angeles	2020-12-14
+SRR18341114	United States	San Diego County	panel	PL	13756065	California			Los Angeles	2021-01-17
+SRR18341115	United States	San Diego County	panel	PL	20597441	California			Los Angeles	2021-01-14
+SRR18341116	United States	San Diego County	panel	PL	15873953	California			Los Angeles	2021-01-13
+SRR18341117	United States	San Diego County	panel	PL	17577902	California			Los Angeles	2021-01-12
+SRR18341118	United States	Los Angeles County	panel	HTP	26946502	California			Los Angeles	2021-07-08
+SRR18341119	United States	Los Angeles County	panel	HTP	43889785	California			Los Angeles	2021-07-29
+SRR18341120	United States	Los Angeles County	panel	HTP	33006348	California			Los Angeles	2021-07-22
+SRR18341121	United States	Los Angeles County	panel	HTP	36078362	California			Los Angeles	2021-07-15
+SRR18341122	United States	Los Angeles County	panel	HTP	29636432	California			Los Angeles	2021-07-13
+SRR18341123	United States	Los Angeles County	panel	HTP	43201688	California			Los Angeles	2021-07-01
+SRR18341124	United States	San Diego County	panel	ESC	20755081	California			Los Angeles	2020-11-30
+SRR18341125	United States	Los Angeles County	panel	HTP	50748094	California			Los Angeles	2021-06-06
+SRR18341126	United States	Los Angeles County	panel	HTP	31242591	California			Los Angeles	2021-06-03
+SRR18341127	United States	Los Angeles County	panel	HTP	45725584	California			Los Angeles	2021-06-27
+SRR18341128	United States	Los Angeles County	panel	HTP	33680979	California			Los Angeles	2021-06-24
+SRR18341129	United States	Los Angeles County	panel	HTP	28332194	California			Los Angeles	2021-06-20
+SRR18341130	United States	Los Angeles County	panel	HTP	28581122	California			Los Angeles	2021-06-15
+SRR18341131	United States	Los Angeles County	panel	HTP	35441428	California			Los Angeles	2021-06-10
+SRR18341132	United States	Los Angeles County	panel	HTP	53966640	California			Los Angeles	2021-06-01
+SRR18341133	United States	Los Angeles County	panel	HTP	19219200	California			Los Angeles	2021-05-09
+SRR18341134	United States	Los Angeles County	panel	HTP	18028259	California			Los Angeles	2021-05-06
+SRR18341135	United States	San Diego County	panel	ESC	47877103	California			Los Angeles	2020-11-23
+SRR18341136	United States	San Diego County	panel	ESC	23030994	California			Los Angeles	2021-01-18
+SRR18341137	United States	San Diego County	panel	ESC	14804126	California			Los Angeles	2021-01-11
+SRR21452135	United States	Orange County	viral	OC	2413516	California			Los Angeles	2020-10-21
+SRR21452136	United States	San Diego County	viral	ESC	16101528	California			Los Angeles	2020-07-27
+SRR21452137	United States	San Diego County	viral	ESC	23482928	California			Los Angeles	2020-07-20
+SRR23083716	United States	Greene County	viral	I	34152465	Ohio	IJ		Ohio	2022-01-09
+SRR23083718	United States	Greene County	viral	I	15536236	Ohio	IJ		Ohio	2022-01-02
+SRR23083720	United States	Franklin County	viral	H	24496461	Ohio	EFGH		Ohio	2021-12-26
+SRR23083722	United States	Franklin County	viral	H	19873663	Ohio	EFGH		Ohio	2021-12-19
+SRR23083725	United States	Franklin County	viral	H	65391438	Ohio	EFGH		Ohio	2021-12-05
+SRR23083727	United States	Franklin County	viral	H	7683321	Ohio	EFGH		Ohio	2022-01-09
+SRR23083729	United States	Franklin County	viral	H	106734757	Ohio	EFGH		Ohio	2022-01-02
+SRR23083731	United States	Licking County	viral	G	27498895	Ohio	EFGH		Ohio	2021-12-26
+SRR23083733	United States	Licking County	viral	G	21866784	Ohio	EFGH		Ohio	2021-12-19
+SRR23083734	United States	Summit County	viral	A	25615577	Ohio	AB		Ohio	2021-12-12
+SRR23083736	United States	Licking County	viral	G	49701182	Ohio	EFGH		Ohio	2021-12-12
+SRR23083738	United States	Licking County	viral	G	50541071	Ohio	EFGH		Ohio	2021-12-05
+SRR23083740	United States	Licking County	viral	G	26758722	Ohio	EFGH		Ohio	2022-01-09
+SRR23083742	United States	Licking County	viral	G	30488030	Ohio	EFGH		Ohio	2022-01-02
+SRR23083744	United States	Franklin County	viral	F	21587487	Ohio	EFGH		Ohio	2021-12-26
+SRR23083747	United States	Franklin County	viral	F	21693115	Ohio	EFGH		Ohio	2021-12-19
+SRR23083749	United States	Franklin County	viral	F	24611947	Ohio	EFGH		Ohio	2021-12-12
+SRR23083751	United States	Franklin County	viral	F	10324347	Ohio	EFGH		Ohio	2021-12-05
+SRR23083753	United States	Franklin County	viral	F	4526832	Ohio	EFGH		Ohio	2022-01-09
+SRR23083755	United States	Franklin County	viral	F	26761777	Ohio	EFGH		Ohio	2022-01-02
+SRR23083756	United States	Summit County	viral	A	93165126	Ohio	AB		Ohio	2021-12-05
+SRR23083758	United States	Sandusky County	viral	E	8675446	Ohio	EFGH		Ohio	2021-12-26
+SRR23083760	United States	Sandusky County	viral	E	22756198	Ohio	EFGH		Ohio	2021-12-19
+SRR23083762	United States	Sandusky County	viral	E	53418977	Ohio	EFGH		Ohio	2021-12-12
+SRR23083764	United States	Sandusky County	viral	E	27489114	Ohio	EFGH		Ohio	2021-12-05
+SRR23083766	United States	Sandusky County	viral	E	62643623	Ohio	EFGH		Ohio	2022-01-09
+SRR23083769	United States	Sandusky County	viral	E	9885903	Ohio	EFGH		Ohio	2022-01-02
+SRR23083771	United States	Lawrence County	viral	D	25194552	Ohio	D		Ohio	2021-12-19
+SRR23083773	United States	Lawrence County	viral	D	27576698	Ohio	D		Ohio	2021-12-12
+SRR23083775	United States	Lawrence County	viral	D	64262607	Ohio	D		Ohio	2021-12-05
+SRR23083778	United States	Montgomery County	viral	J	28567806	Ohio	IJ		Ohio	2022-01-09
+SRR23083780	United States	Montgomery County	viral	J	6390165	Ohio	IJ		Ohio	2022-01-02
+SRR23083782	United States	Greene County	viral	I	26423592	Ohio	IJ		Ohio	2021-12-26
+SRR23083784	United States	Greene County	viral	I	18922081	Ohio	IJ		Ohio	2021-12-19
+SRR23083786	United States	Greene County	viral	I	21319668	Ohio	IJ		Ohio	2021-12-12
+SRR23083787	United States	Summit County	viral	A	72582176	Ohio	AB		Ohio	2021-12-19
+SRR23083789	United States	Greene County	viral	I	23726564	Ohio	IJ		Ohio	2021-12-05
+SRR23083790	United States	Lawrence County	viral	D	28732700	Ohio	D		Ohio	2022-01-09
+SRR23083792	United States	Summit County	viral	A	40626978	Ohio	AB		Ohio	2022-01-09
+SRR23083794	United States	Lucas County	viral	C	15260483	Ohio	C		Ohio	2021-12-19
+SRR23083795	United States	Lucas County	viral	C	93084891	Ohio	C		Ohio	2021-12-05
+SRR23083797	United States	Lucas County	viral	C	20057162	Ohio	C		Ohio	2022-01-09
+SRR23083798	United States	Lucas County	viral	C	35169394	Ohio	C		Ohio	2022-01-02
+SRR23083799	United States	Trumbull County	viral	B	22987581	Ohio	AB		Ohio	2021-12-26
+SRR23083801	United States	Trumbull County	viral	B	50531562	Ohio	AB		Ohio	2021-12-19
+SRR23083804	United States	Trumbull County	viral	B	19233869	Ohio	AB		Ohio	2021-12-12
+SRR23083806	United States	Trumbull County	viral	B	55741383	Ohio	AB		Ohio	2021-12-05
+SRR23083808	United States	Trumbull County	viral	B	12644434	Ohio	AB		Ohio	2022-01-09
+SRR23083810	United States	Trumbull County	viral	B	40871463	Ohio	AB		Ohio	2022-01-02
+SRR23083813	United States	Summit County	viral	A	25003302	Ohio	AB		Ohio	2021-12-26
+SRR23083818	United States	Montgomery County	viral	J	32262151	Ohio	IJ		Ohio	2021-12-26
+SRR23083820	United States	Montgomery County	viral	J	60208872	Ohio	IJ		Ohio	2021-12-19
+SRR23083822	United States	Montgomery County	viral	J	22583173	Ohio	IJ		Ohio	2021-12-12
+SRR23083823	United States	Montgomery County	viral	J	27717586	Ohio	IJ		Ohio	2021-12-05
+SRR23083825	United States	Summit County	viral	A	26039331	Ohio	AB		Ohio	2022-01-02
+SRR23998353	United States	Alameda County	viral	Oakland	45434265	California	COL		San Francisco	2020-06-30
+SRR23998354	United States	Marin County	viral	Marin	41207484	California	MOS		San Francisco	2020-07-01
+SRR23998355	United States	Marin County	viral	Marin	38572859	California	MOS		San Francisco	2020-07-01
+SRR23998356	United States	San Francisco County	viral	SF	47832942	California	MOS		San Francisco	2020-06-30
+SRR23998357	United States	Alameda County	viral	Oakland	48462833	California	COL		San Francisco	2020-06-30
+SRR23998358	United States	Alameda County	viral	Oakland	39759745	California	COL		San Francisco	2020-06-30
+SRR23998359	United States	Alameda County	viral	Berkeley	36420649	California	COL		San Francisco	2020-06-30
