@@ -1,16 +1,26 @@
 import json
 import csv
 
+# TODO: Make script target studies by providing a list of papers, querying
+# "metadata_papers.json" to pull bioproject ids from, and then pull sample ids
+# from metadata_bioprojects.json
+
 # load the json data
 with open("metadata_samples.json") as f:
-    data = json.load(f)
+    samples = json.load(f)
+
+# with open("metadata_papers.json") as f:
+#     papers = json.load(f)
+
+# with open("metadata_bioprojects.json") as f:
+#     bioprojects = json.load(f)
 
 # initialize an empty set of headers
 headers = set()
 rows = []
 
-# iterate through the json data and prepare rows
-for accession, values in data.items():
+# iterate through the json samples and prepare rows
+for accession, values in samples.items():
     # add the new keys to the headers
     headers.update(values.keys())
     # create a row dictionary where missing values are represented as empty strings
