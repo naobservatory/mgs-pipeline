@@ -520,6 +520,9 @@ def start():
       description='Run the Metagenomic Sequencing Pipeline')
 
    parser.add_argument(
+      '--s3-bucket', help='The S3 bucket to user')
+
+   parser.add_argument(
       '--bioproject', help='The ID of the bioproject to process')
    parser.add_argument(
       '--sample', default='',
@@ -545,6 +548,10 @@ def start():
    if args.status:
       print_status(args)
       return
+
+   if args.s3_bucket:
+      global S3_BUCKET
+      S3_BUCKET = args.s3_bucket
 
    if not os.path.isdir("bioprojects/%s" % args.bioproject):
       raise Exception(
