@@ -14,6 +14,8 @@ else
     exit 1
 fi
 
+$MGS_PIPELINE_DIR/collect-n-reads.sh
+
 cd $ROOT_DIR/dashboard
 mkdir -p humanviruses/
 mkdir -p cladecounts/
@@ -40,5 +42,3 @@ $MGS_PIPELINE_DIR/dashboard/prepare-dashboard-data.py $ROOT_DIR $MGS_PIPELINE_DI
 
 echo "Now check in data.js and the json files and check out on prod"
 echo "Then run copy-down-hvreads.sh and send the result to prod out of band"
-echo
-echo "(Paper not showing up?  Did you remember to run ./collect-n-reads.sh ?)"
