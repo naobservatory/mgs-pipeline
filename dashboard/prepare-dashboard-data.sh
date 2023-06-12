@@ -23,6 +23,10 @@ if [ ! -e names.dmp ] ; then
     unzip taxdmp_2022-12-01.zip
 fi
 
+cd $ROOT_DIR
+$MGS_PIPELINE_DIR/dashboard/determine_comparison_species.sh
+
+cd $ROOT_DIR/dashboard
 for study in $(aws s3 ls $S3_DIR | awk '{print $NF}'); do
     for hv in $(aws s3 ls $S3_DIR${study}humanviruses/ | \
                     awk '{print $NF}'); do

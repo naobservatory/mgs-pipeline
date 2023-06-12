@@ -45,5 +45,3 @@ for bioproject in $(ls ../bioprojects/); do
         fi
     done
 done | xargs -P 32 -I {} $DASHBOARD_CODE_DIR/count_top_species_and_key_clades.sh {}
-
-echo "Now run ./prepare-dashboard-data.sh"
