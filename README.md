@@ -75,7 +75,8 @@ SRR14530724 belongs to PRJNA729801 (Rothman 2021) and (per
 `SB` plant.
 
 Output and intermediate steps for each bioproject are in S3, under
-`s3://nao-mgs/[bioprojectid]`.  Available files, and their formats:
+`s3://nao-mgs/[bioprojectid]` (or `s3://nao-restricted/...` for private data).
+Available files, and their formats:
 
 * `raw/`: Input, as downloaded from SRA
    * ex: `SRR14530724_1.fastq.gz` and `SRR14530724_2.fastq.gz`

@@ -16,7 +16,8 @@ from collections import Counter
 from collections import defaultdict
 from Bio.SeqIO.QualityIO import FastqGeneralIterator
 
-S3_BUCKET="s3://nao-mgs"
+S3_BUCKET=None
+WORK_ROOT=None
 THISDIR=os.path.abspath(os.path.dirname(__file__))
 
 COLOR_RED = '\x1b[0;31m'
@@ -36,17 +37,15 @@ def check_output_shell(cmd):
    return subprocess.check_output([
       'bash', '-c', 'set -o  pipefail; %s' % cmd])
 
-def relative_fname(fname):
-   return os.path.join(THISDIR, fname)
-
-def get_metadata_dir(args):
-   return relative_fname("bioprojects/%s/metadata" % args.bioproject)
+def work_fname(*fnames):
+   return os.path.join(THISDIR, WORK_ROOT, *fnames)
 
 def get_samples(args):
    if args.sample:
       return [args.sample]
 
-   with open(os.path.join(get_metadata_dir(args), "metadata.tsv")) as inf:
+   with open(work_fname(
+         "bioprojects", args.bioproject, "metadata", "metadata.tsv")) as inf:
       return [line.strip().split("\t")[0]
               for line in inf]
 
@@ -120,14 +119,14 @@ def get_adapters(in1, in2, adapter1_fname, adapter2_fname):
          outf.write(adapter)
 
 def adapter_removal(args, dirname, trim_quality, collapse):
-   adapter_dir = os.path.join(THISDIR, "bioprojects", args.bioproject, "adapters")
+   adapter_dir = work_fname("bioprojects", args.bioproject, "adapters")
    try:
       os.mkdir(adapter_dir)
    except FileExistsError:
       pass
 
    available_inputs = get_files(args, "raw")
-   existing_outputs = get_files(args, "clean", min_size=100)
+   existing_outputs = get_files(args, "cleaned", min_size=100)
 
    for sample in get_samples(args):
       raw1 = "%s_1.fastq.gz" % sample
@@ -256,7 +255,7 @@ def cladecounts(args):
          continue
 
       subprocess.check_call([
-         "./count_clades.sh", args.bioproject, sample])
+         "./count_clades.sh", S3_BUCKET, args.bioproject, sample])
 
 def humanviruses(args):
    human_viruses = {}
@@ -427,7 +426,7 @@ def print_status(args):
    else:
       bioprojects = [
          os.path.basename(x)
-         for x in glob.glob(os.path.join(THISDIR, "bioprojects", "*"))]
+         for x in glob.glob(work_fname("bioprojects", "*"))]
 
    running_processes = subprocess.check_output(["ps", "aux"]).decode("utf-8")
 
@@ -437,7 +436,7 @@ def print_status(args):
 
    papers_to_projects = defaultdict(list) # paper -> [project]
    for bioproject in bioprojects:
-      metadata_dir = os.path.join(THISDIR, "bioprojects", bioproject, "metadata")
+      metadata_dir = work_fname("bioprojects", bioproject, "metadata")
       if not os.path.exists(metadata_dir): continue
       with open(os.path.join(metadata_dir, "name.txt")) as inf:
          name = inf.read().strip()
@@ -459,8 +458,8 @@ def print_status(args):
                ("  " + bioproject).ljust(name_width) +
                (COLOR_END if color else ""), end="", flush=True)
 
-         fully_processed_fname = os.path.join(
-            THISDIR, "bioprojects", bioproject, "fully_processed")
+         fully_processed_fname = work_fname(
+            "bioprojects", bioproject, "fully_processed")
          fully_processed = os.path.exists(fully_processed_fname)
          if fully_processed:
             with open(fully_processed_fname) as inf:
@@ -473,8 +472,7 @@ def print_status(args):
             continue
 
          s3_bioproject_dir = "%s/%s" % (S3_BUCKET, bioproject)
-         metadata_dir = os.path.join(THISDIR, "bioprojects", bioproject,
-                                     "metadata")
+         metadata_dir = work_fname("bioprojects", bioproject, "metadata")
 
          stage_counters = defaultdict(Counter) # sample -> stage -> count
 
@@ -520,7 +518,8 @@ def start():
       description='Run the Metagenomic Sequencing Pipeline')
 
    parser.add_argument(
-      '--s3-bucket', help='The S3 bucket to user')
+      '--restricted', action='store_true',
+      help='Whether to work on private data')
 
    parser.add_argument(
       '--bioproject', help='The ID of the bioproject to process')
@@ -541,6 +540,15 @@ def start():
 
    args = parser.parse_args()
 
+   global S3_BUCKET
+   global WORK_ROOT
+   if args.restricted:
+      S3_BUCKET = "s3://nao-restricted"
+      WORK_ROOT = "../mgs-restricted/"
+   else:
+      S3_BUCKET = "s3://nao-mgs"
+      WORK_ROOT = "./"
+
    if not args.status and not args.bioproject:
       parser.print_help()
       exit(1)
@@ -549,13 +557,10 @@ def start():
       print_status(args)
       return
 
-   if args.s3_bucket:
-      global S3_BUCKET
-      S3_BUCKET = args.s3_bucket
-
-   if not os.path.isdir("bioprojects/%s" % args.bioproject):
+   if not os.path.isdir(work_fname("bioprojects", args.bioproject)):
       raise Exception(
-         "Bioproject %s not found in bioprojects/" % args.bioproject)
+         "Bioproject %s not found in %s/bioprojects/" % (
+            WORK_ROOT, args.bioproject))
 
    selected_stages = args.stages.split(",")
    for selected_stage in selected_stages:
