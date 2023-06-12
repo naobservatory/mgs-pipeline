@@ -12,9 +12,18 @@ else
 fi
 
 for bioproject in $(aws s3 ls $S3_DIR | awk '{print $NF}'); do
-    for raw in $(aws s3 ls $S3_DIR${bioproject}raw/ | \
-                     awk '{print $NF}' | \
-                     grep "_1.fastq"); do
-        echo $S3_DIR${bioproject}raw/$raw
-    done | xargs -I {} -P 32 $SCRIPT_DIR/collect-n-reads-single.sh $bioproject {}
+    raw_dir=$S3_DIR${bioproject}raw/
+    n_1=$(aws s3 ls $S3_DIR${bioproject}raw/ | grep "_1.fastq" | wc -l)
+    if [ $n_1 == 0 ]; then
+        for raw in $(aws s3 ls $S3_DIR${bioproject}raw/ | \
+                         awk '{print $NF}'); do
+            echo $S3_DIR${bioproject}raw/$raw
+        done
+    else
+        for raw in $(aws s3 ls $S3_DIR${bioproject}raw/ | \
+                         awk '{print $NF}' | \
+                         grep "_1.fastq"); do
+            echo $S3_DIR${bioproject}raw/$raw
+        done
+    fi | xargs -I {} -P 32 $SCRIPT_DIR/collect-n-reads-single.sh $bioproject {}
 done 
