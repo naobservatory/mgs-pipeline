@@ -191,8 +191,9 @@ def interpret(project, papers, bits):
         designation = designation.replace("Rice_ViroCap_", "")
         fine_location, sample_letter = designation.split(" ")
 
+        targeted_DE = sample_letter.endswith("_targetedDE")
         sample_letter = sample_letter.split("_")[0]
-        
+
         fine_location = {
             "ECC": "Child Care",
             "HS": "High School",
@@ -201,11 +202,15 @@ def interpret(project, papers, bits):
             "NH": "Nursing Home",
             "WWTP": "WTP",
         }[fine_location] + "-" + sample_letter
+
+        if targeted_DE:
+            fine_location += "-DE"
+
         enrichment = {
             "Targeted-Capture": "panel",
             "WGS": "viral",
         }[method]
-        
+
         return sample, dict(
             country="United States",
             state="Texas",

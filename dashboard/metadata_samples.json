@@ -16665,7 +16665,7 @@
     "county": "Harris County",
     "date": "2022",
     "enrichment": "panel",
-    "fine_location": "WTP-O",
+    "fine_location": "WTP-O-DE",
     "location": "Houston",
     "reads": 5813267,
     "state": "Texas"
@@ -16685,7 +16685,7 @@
     "county": "Harris County",
     "date": "2022",
     "enrichment": "panel",
-    "fine_location": "WTP-M",
+    "fine_location": "WTP-M-DE",
     "location": "Houston",
     "reads": 560881,
     "state": "Texas"
