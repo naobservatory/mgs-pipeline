@@ -186,5 +186,35 @@ def interpret(project, papers, bits):
             location="Harbin",
             # Also possible this was 2020-10-15
             date="2022-10-19")
+    elif project in papers["McCall 2023"]["projects"]:
+        sample, reads, method, designation = bits
+        designation = designation.replace("Rice_ViroCap_", "")
+        fine_location, sample_letter = designation.split(" ")
+
+        sample_letter = sample_letter.split("_")[0]
+        
+        fine_location = {
+            "ECC": "Child Care",
+            "HS": "High School",
+            "Jail": "Jail",
+            "Shel": "Shelter",
+            "NH": "Nursing Home",
+            "WWTP": "WTP",
+        }[fine_location] + "-" + sample_letter
+        enrichment = {
+            "Targeted-Capture": "panel",
+            "WGS": "viral",
+        }
+        
+        return sample, dict(
+            country="United States",
+            state="Texas",
+            county="Harris County",
+            location="Houston",
+            fine_location=fine_location,
+            # Paper doesn't seem to list a date.  Guess 2022 while we find out.
+            # https://twist.com/a/197793/ch/619193/t/4469435/
+            date="2022",
+            enrichment=enrichment)
     else:
         raise Exception("Metadata format for %s unknown" % project)

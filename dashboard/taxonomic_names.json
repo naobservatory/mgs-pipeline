@@ -1248,6 +1248,14 @@
     "Fusobacterium prausnitzii",
     "NCIMB 13872"
   ],
+  "865": [
+    "Pectinatus frisingensis",
+    "ATCC 33332",
+    "CCUG 43283",
+    "DSM 6306",
+    "HAMBI 1347",
+    "Pectinatus frisingensis Schleifer et al. 1990"
+  ],
   "872": [
     "Desulfovibrio",
     "Desulfomonas Moore et al. 1976",
@@ -1300,6 +1308,25 @@
     "strain Hildenborough",
     "VKM B-1760"
   ],
+  "906": [
+    "Megasphaera",
+    "Megasphaera Rogosa 1971 (Approved Lists 1980) emend. Marchandin et al. 2003"
+  ],
+  "907": [
+    "Megasphaera elsdenii",
+    "ATCC 25940",
+    "CCUG 6199",
+    "CIP 106852",
+    "DSM 20460",
+    "JCM 1772",
+    "Megasphaera elsdenii (Gutierrez et al. 1959) Rogosa 1971",
+    "\"Organism LC\" Elsden and Lewis 1953",
+    "Organism LC",
+    "\"Peptostreptococcus elsdenii\" Gutierrez et al. 1959",
+    "Peptostreptococcus elsdenii",
+    "\"rumen organism LC\" Elsden et al. 1956",
+    "rumen organism LC"
+  ],
   "926": [
     "Thiomonas intermedia",
     "ATCC 15466",
@@ -1326,6 +1353,10 @@
     "DSM 12778",
     "DSM 50722",
     "strain Uki2"
+  ],
+  "970": [
+    "Selenomonas",
+    "Selenomonas von Prowazek 1913"
   ],
   "976": [
     "Bacteroidota",
@@ -1947,6 +1978,25 @@
     "Mycobacteriaceae Chester 1897 (Approved Lists 1980) emend. Nouioui et al. 2018",
     "Mycobacteriaceae Chester 1897 (Approved Lists 1980) emend. Stackebrandt et al. 1997",
     "Mycobacteriaceae Chester 1897 (Approved Lists 1980) emend. Zhi et al. 2009"
+  ],
+  "1766": [
+    "Mycolicibacterium fortuitum",
+    "ATCC 6841",
+    "CCUG 20994",
+    "CIP 104534",
+    "DSM 46621",
+    "IFO 13159",
+    "JCM 6387",
+    "Mycobacterium fortuitum da Costa Cruz 1938 (Approved Lists 1980)",
+    "Mycobacterium fortuitum da Costa Cruz 1938 emend. Nouioui et al. 2018",
+    "Mycobacterium fortuitum",
+    "\"Mycobacterium giae\" Darzins 1950",
+    "Mycobacterium giae",
+    "\"Mycobacterium minetti\" Penso et al. 1952",
+    "Mycobacterium minetti",
+    "Mycolicibacterium fortuitum (da Costa Cruz 1938) Gupta et al. 2018",
+    "NBRC 13159",
+    "NCTC 10394"
   ],
   "1827": [
     "Rhodococcus",
@@ -2605,6 +2655,10 @@
   ],
   "10780": [
     "Parvoviridae"
+  ],
+  "10788": [
+    "Canine parvovirus",
+    "CPV"
   ],
   "10798": [
     "Human parvovirus B19",
@@ -3350,6 +3404,9 @@
   "12253": [
     "Tomato mosaic virus"
   ],
+  "12282": [
+    "Tobacco ringspot virus"
+  ],
   "12286": [
     "Boolarra virus"
   ],
@@ -3398,6 +3455,15 @@
     "Seoul virus 80-39",
     "Seoul 80-39 virus",
     "Seoul virus (STRAIN 80-39)"
+  ],
+  "12618": [
+    "Chicken anemia virus",
+    "CAV",
+    "chicken anaemia agent CAA",
+    "chicken anaemia agent virus CAA",
+    "chicken anemia virus CAV",
+    "chicken anemia virus, CAV",
+    "Chicken infectious anemia virus"
   ],
   "12637": [
     "Dengue virus"
@@ -4267,6 +4333,10 @@
   "35249": [
     "unclassified Gammaherpesvirinae",
     "unassigned Gammaherpesvirinae"
+  ],
+  "35269": [
+    "Woodchuck hepatitis virus",
+    "Woodchuck hepatitis B virus"
   ],
   "35276": [
     "unclassified Retroviridae"
@@ -6369,6 +6439,17 @@
   "123738": [
     "Enterovirus Yanbian 96-83csf"
   ],
+  "123899": [
+    "Bordetella trematum",
+    "Bordetella trematum Vandamme et al. 1996",
+    "CCUG 32381",
+    "CIP 105351",
+    "DSM 11334",
+    "LMG 13506",
+    "LMG:13506",
+    "NCTC 12995",
+    "strain 1779"
+  ],
   "126794": [
     "Vaccinia virus Ankara",
     "Vaccinia virus (strain Ankara)"
@@ -8006,6 +8087,9 @@
     "strain SZ",
     "Trichlorobacter lovleyi (Sung et al. 2009) Waite et al. 2020"
   ],
+  "315393": [
+    "Mimivirus"
+  ],
   "318167": [
     "Shewanella frigidimarina NCIMB 400",
     "Shewanella frigidimarina strain NCIMB 400",
@@ -8594,6 +8678,10 @@
     "unclassified Anelloviridae",
     "unclassified Anellovirus"
   ],
+  "363745": [
+    "Avian leukosis virus - RSA",
+    "ALV-A"
+  ],
   "363952": [
     "Comamonas thiooxydans",
     "Comamonas sp. S23",
@@ -9037,6 +9125,9 @@
     "Cloacibacterium",
     "Cloacibacterium Allen et al. 2006"
   ],
+  "504501": [
+    "Propionibacterium phage PAD20"
+  ],
   "508458": [
     "Synergistetes",
     "\"Aminanaerobia\" Hugenholtz",
@@ -9133,6 +9224,13 @@
   "543153": [
     "Mycobacterium phage Predator",
     "Mycobacteriophage Predator"
+  ],
+  "545932": [
+    "Bruynoghevirus",
+    "Luz24likevirus",
+    "\"LUZ24-like viruses\"",
+    "LUZ24-like viruses",
+    "Luz24virus"
   ],
   "546367": [
     "Hafnia paralvei",
@@ -10389,6 +10487,10 @@
     "Phocaeicola",
     "Phocaeicola Al Masalma et al. 2009"
   ],
+  "909932": [
+    "Negativicutes",
+    "Negativicutes Marchandin et al. 2010"
+  ],
   "910475": [
     "Burkholderia phage KS14"
   ],
@@ -10426,6 +10528,11 @@
   "915429": [
     "Human papillomavirus 121",
     "Human papillomavirus type 121"
+  ],
+  "927704": [
+    "Selenomonas ruminantium subsp. lactilytica TAM6421",
+    "Selenomonas ruminantium subsp. lactilytica strain TAM6421",
+    "Selenomonas ruminantium subsp. lactilytica str. TAM6421"
   ],
   "927771": [
     "human papillomavirus 118",
@@ -10795,6 +10902,10 @@
   "1127514": [
     "Aeromonas phage vB_AsaM-56"
   ],
+  "1128151": [
+    "Mimivirus terra2",
+    "Mimiviridae Terra2"
+  ],
   "1128424": [
     "Helicoverpa zea nudivirus 2"
   ],
@@ -11070,6 +11181,9 @@
   "1204517": [
     "Pseudomonas phage MP1412"
   ],
+  "1204542": [
+    "Pseudomonas phage PA26"
+  ],
   "1206300": [
     "Enterobacteria phage Hgal1",
     "bacteriophage Hgal1"
@@ -11161,6 +11275,14 @@
   ],
   "1231709": [
     "MX polyomavirus"
+  ],
+  "1232428": [
+    "Megasphaera massiliensis",
+    "culture-collection:CSUR P245",
+    "DSM 26228",
+    "Megasphaera massiliensis Padmanabhan et al. 2016",
+    "Megasphaera sp. NP3",
+    "strain NP3"
   ],
   "1232647": [
     "Dinodnavirus"
@@ -11477,6 +11599,9 @@
   ],
   "1269028": [
     "Acanthamoeba polyphaga moumouvirus"
+  ],
+  "1273709": [
+    "Pseudomonas phage PaP4"
   ],
   "1273738": [
     "Escherichia phage PBECO4",
@@ -11925,6 +12050,10 @@
   "1406809": [
     "Norovirus Hu/GII.4/NIHIC1.16/2012/USA",
     "Norovirus Hu/GII.4/SA102512/2012/USA"
+  ],
+  "1406974": [
+    "Pseudomonas phage TL",
+    "Pseudomonas bacteriophage TL"
   ],
   "1407638": [
     "Circo-like virus-Brazil"
@@ -12442,6 +12571,10 @@
   "1529932": [
     "Norovirus GII/Hu/TW/2012/GII.Pe_GII.4_Sydney2012/Taipei/109"
   ],
+  "1530400": [
+    "Pseudomonas phage Pa2",
+    "Pseudomonas aeruginosa Pa2 phage"
+  ],
   "1535289": [
     "unclassified Betatorquevirus"
   ],
@@ -12517,6 +12650,10 @@
   ],
   "1566828": [
     "Norovirus Hu/GII.4/gg-12-08-04/2012/KR"
+  ],
+  "1566995": [
+    "Pseudomonas phage YH6",
+    "Pseudomonas aeruginosa phage YH6"
   ],
   "1567027": [
     "Escherichia phage vB_EcoM_VR20",
@@ -12682,6 +12819,10 @@
   "1629654": [
     "Pseudomonas phage phiPsa17"
   ],
+  "1636189": [
+    "Pseudomonas phage YH30",
+    "Pseudomonas aeruginosa phage YH30"
+  ],
   "1636270": [
     "Rhodoferax phage P26218"
   ],
@@ -12690,6 +12831,10 @@
   ],
   "1636573": [
     "Lactococcus phage 936 group phage PhiB1127"
+  ],
+  "1639814": [
+    "Pseudomonas phage vB_PaeP_MAG4",
+    "Pseudomonas aeruginosa bacteriophage vB_PaeP_MAG4"
   ],
   "1643649": [
     "Human adenovirus 71",
@@ -13223,6 +13368,14 @@
   "1920753": [
     "Gamaleyavirus",
     "G7cvirus"
+  ],
+  "1920762": [
+    "Litunavirus",
+    "Lit1virus"
+  ],
+  "1920765": [
+    "Litunavirus Ab09",
+    "Pseudomonas virus Ab09"
   ],
   "1920774": [
     "Drulisvirus",
@@ -16067,6 +16220,9 @@
   ],
   "2986415": [
     "uncultured phage cr105_1"
+  ],
+  "2986417": [
+    "uncultured phage cr61_1"
   ],
   "2986418": [
     "uncultured phage cr29_1"
