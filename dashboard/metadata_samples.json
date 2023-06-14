@@ -16574,10 +16574,7 @@
     "country": "United States",
     "county": "Harris County",
     "date": "2022",
-    "enrichment": {
-      "Targeted-Capture": "panel",
-      "WGS": "viral"
-    },
+    "enrichment": "panel",
     "fine_location": "WTP-J",
     "location": "Houston",
     "reads": 6207281,
@@ -16587,10 +16584,7 @@
     "country": "United States",
     "county": "Harris County",
     "date": "2022",
-    "enrichment": {
-      "Targeted-Capture": "panel",
-      "WGS": "viral"
-    },
+    "enrichment": "panel",
     "fine_location": "WTP-I",
     "location": "Houston",
     "reads": 1264519,
@@ -16600,10 +16594,7 @@
     "country": "United States",
     "county": "Harris County",
     "date": "2022",
-    "enrichment": {
-      "Targeted-Capture": "panel",
-      "WGS": "viral"
-    },
+    "enrichment": "panel",
     "fine_location": "Jail-H",
     "location": "Houston",
     "reads": 11099561,
@@ -16613,10 +16604,7 @@
     "country": "United States",
     "county": "Harris County",
     "date": "2022",
-    "enrichment": {
-      "Targeted-Capture": "panel",
-      "WGS": "viral"
-    },
+    "enrichment": "panel",
     "fine_location": "Shelter-G",
     "location": "Houston",
     "reads": 6128079,
@@ -16626,10 +16614,7 @@
     "country": "United States",
     "county": "Harris County",
     "date": "2022",
-    "enrichment": {
-      "Targeted-Capture": "panel",
-      "WGS": "viral"
-    },
+    "enrichment": "panel",
     "fine_location": "Shelter-F",
     "location": "Houston",
     "reads": 9096343,
@@ -16639,10 +16624,7 @@
     "country": "United States",
     "county": "Harris County",
     "date": "2022",
-    "enrichment": {
-      "Targeted-Capture": "panel",
-      "WGS": "viral"
-    },
+    "enrichment": "panel",
     "fine_location": "Nursing Home-E",
     "location": "Houston",
     "reads": 1393808,
@@ -16652,10 +16634,7 @@
     "country": "United States",
     "county": "Harris County",
     "date": "2022",
-    "enrichment": {
-      "Targeted-Capture": "panel",
-      "WGS": "viral"
-    },
+    "enrichment": "panel",
     "fine_location": "Nursing Home-D",
     "location": "Houston",
     "reads": 13716093,
@@ -16665,10 +16644,7 @@
     "country": "United States",
     "county": "Harris County",
     "date": "2022",
-    "enrichment": {
-      "Targeted-Capture": "panel",
-      "WGS": "viral"
-    },
+    "enrichment": "panel",
     "fine_location": "High School-C",
     "location": "Houston",
     "reads": 9700627,
@@ -16678,10 +16654,7 @@
     "country": "United States",
     "county": "Harris County",
     "date": "2022",
-    "enrichment": {
-      "Targeted-Capture": "panel",
-      "WGS": "viral"
-    },
+    "enrichment": "viral",
     "fine_location": "WTP-O",
     "location": "Houston",
     "reads": 37003891,
@@ -16691,10 +16664,7 @@
     "country": "United States",
     "county": "Harris County",
     "date": "2022",
-    "enrichment": {
-      "Targeted-Capture": "panel",
-      "WGS": "viral"
-    },
+    "enrichment": "panel",
     "fine_location": "WTP-O",
     "location": "Houston",
     "reads": 5813267,
@@ -16704,10 +16674,7 @@
     "country": "United States",
     "county": "Harris County",
     "date": "2022",
-    "enrichment": {
-      "Targeted-Capture": "panel",
-      "WGS": "viral"
-    },
+    "enrichment": "viral",
     "fine_location": "WTP-M",
     "location": "Houston",
     "reads": 34651108,
@@ -16717,10 +16684,7 @@
     "country": "United States",
     "county": "Harris County",
     "date": "2022",
-    "enrichment": {
-      "Targeted-Capture": "panel",
-      "WGS": "viral"
-    },
+    "enrichment": "panel",
     "fine_location": "WTP-M",
     "location": "Houston",
     "reads": 560881,
@@ -16730,10 +16694,7 @@
     "country": "United States",
     "county": "Harris County",
     "date": "2022",
-    "enrichment": {
-      "Targeted-Capture": "panel",
-      "WGS": "viral"
-    },
+    "enrichment": "panel",
     "fine_location": "WTP-O",
     "location": "Houston",
     "reads": 10662590,
@@ -16743,10 +16704,7 @@
     "country": "United States",
     "county": "Harris County",
     "date": "2022",
-    "enrichment": {
-      "Targeted-Capture": "panel",
-      "WGS": "viral"
-    },
+    "enrichment": "panel",
     "fine_location": "WTP-N",
     "location": "Houston",
     "reads": 7894842,
@@ -16756,10 +16714,7 @@
     "country": "United States",
     "county": "Harris County",
     "date": "2022",
-    "enrichment": {
-      "Targeted-Capture": "panel",
-      "WGS": "viral"
-    },
+    "enrichment": "panel",
     "fine_location": "WTP-M",
     "location": "Houston",
     "reads": 12787376,
@@ -16769,10 +16724,7 @@
     "country": "United States",
     "county": "Harris County",
     "date": "2022",
-    "enrichment": {
-      "Targeted-Capture": "panel",
-      "WGS": "viral"
-    },
+    "enrichment": "panel",
     "fine_location": "WTP-L",
     "location": "Houston",
     "reads": 11850543,
@@ -16782,10 +16734,7 @@
     "country": "United States",
     "county": "Harris County",
     "date": "2022",
-    "enrichment": {
-      "Targeted-Capture": "panel",
-      "WGS": "viral"
-    },
+    "enrichment": "panel",
     "fine_location": "WTP-K",
     "location": "Houston",
     "reads": 3740438,
@@ -16795,10 +16744,7 @@
     "country": "United States",
     "county": "Harris County",
     "date": "2022",
-    "enrichment": {
-      "Targeted-Capture": "panel",
-      "WGS": "viral"
-    },
+    "enrichment": "panel",
     "fine_location": "Child Care-B",
     "location": "Houston",
     "reads": 865136,
@@ -16808,10 +16754,7 @@
     "country": "United States",
     "county": "Harris County",
     "date": "2022",
-    "enrichment": {
-      "Targeted-Capture": "panel",
-      "WGS": "viral"
-    },
+    "enrichment": "panel",
     "fine_location": "Child Care-A",
     "location": "Houston",
     "reads": 1345017,

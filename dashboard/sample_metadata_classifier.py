@@ -204,7 +204,7 @@ def interpret(project, papers, bits):
         enrichment = {
             "Targeted-Capture": "panel",
             "WGS": "viral",
-        }
+        }[method]
         
         return sample, dict(
             country="United States",
