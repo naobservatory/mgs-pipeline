@@ -167,7 +167,7 @@ for taxid in sorted(comparison_sample_counts):
             comparison_taxid_classifications[p].append(taxid)
             break
         p = parents[p]
-                
+
 # taxid -> [name]
 # first name is scientific name
 taxonomic_names = defaultdict(list)
@@ -242,4 +242,3 @@ for name, val in [
     with open(DASHBOARD_DIR + name + ".json", "w") as outf:
         json.dump(val, outf, sort_keys=True,
                   indent=None if val is human_virus_tree else 2)
- 
