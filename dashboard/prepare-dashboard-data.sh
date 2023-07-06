@@ -18,7 +18,7 @@ $MGS_PIPELINE_DIR/collect-n-reads.sh
 
 cd $ROOT_DIR/dashboard
 mkdir -p humanviruses/
-mkdir -p cladecounts/
+mkdir -p allmatches/
 
 if [ ! -e names.dmp ] ; then
     wget https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/taxdump_archive/taxdmp_2022-12-01.zip
@@ -37,6 +37,15 @@ for study in $(aws s3 ls $S3_DIR | awk '{print $NF}'); do
         fi
     done
 done | xargs -I {} -P 32 aws s3 cp {} humanviruses/
+
+for study in $(aws s3 ls $S3_DIR | awk '{print $NF}'); do
+    for am in $(aws s3 ls $S3_DIR${study}allmatches/ | \
+                    awk '{print $NF}'); do
+        if [ ! -s allmatches/$am ]; then
+            echo $S3_DIR${study}allmatches/$am
+        fi
+    done
+done | xargs -I {} -P 32 aws s3 cp {} allmatches/
 
 $MGS_PIPELINE_DIR/dashboard/prepare-dashboard-data.py $ROOT_DIR $MGS_PIPELINE_DIR
 
