@@ -231,6 +231,7 @@ def interpret(args):
                "/home/ec2-user/kraken2-install/kraken2",
                "--db", "/home/ec2-user/kraken-db/",
                "--use-names",
+               "--threads", "24",
                "--output", output]
             if len(inputs) > 1:
                kraken_cmd.append("--paired")
