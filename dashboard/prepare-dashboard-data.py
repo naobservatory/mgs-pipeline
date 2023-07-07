@@ -16,6 +16,11 @@ identified in the samples.
 Columns are bioprojects, rows are taxonomic nodes, cells are relative abundances.
 
 Rows can be expanded or collapsed to show child nodes.
+
+We include a row for a taxid under human viruses if any of:
+1. It is a human virus and was observed in any study
+2. It is a human virus and it's parent isn't
+3. It is an ancestor of something we include
 """
 
 ROOT_DIR, MGS_PIPELINE_DIR = sys.argv[1:]
@@ -24,12 +29,12 @@ DASHBOARD_DIR = ROOT_DIR + "/dashboard/"
 sys.path.insert(0, DASHBOARD_DIR)
 import sample_metadata_classifier
 
-human_viruses = set()   # {taxid}
+all_human_viruses = set()   # {taxid}
 with open("%s/human-viruses.tsv" % MGS_PIPELINE_DIR) as inf:
     for line in inf:
         taxid, name = line.strip().split("\t")
         taxid = int(taxid)
-        human_viruses.add(taxid)
+        all_human_viruses.add(taxid)
 
 parents = {}  # child_taxid -> parent_taxid
 with open("%s/nodes.dmp" % DASHBOARD_DIR) as inf:
@@ -40,11 +45,50 @@ with open("%s/nodes.dmp" % DASHBOARD_DIR) as inf:
         parent_taxid = int(parent_taxid)
         parents[child_taxid] = parent_taxid
 
+root_human_viruses = set()
+for taxid in all_human_viruses:
+    if parents[taxid] not in all_human_viruses:
+        root_human_viruses.add(taxid)
+
+# project -> sample -> n_reads
+project_sample_reads = defaultdict(dict)
+for metadata_fname in glob.glob(
+        "%s/bioprojects/*/metadata/metadata.tsv" % ROOT_DIR):
+    project = metadata_fname.split("/")[-3]
+    if project == "PRJEB30546":
+         # didn't finish importing this one, and the dashboard chokes on papers
+         # where we don't understand the metadata.
+        continue
+    with open(metadata_fname) as inf:
+        for line in inf:
+            sample = line.strip().split("\t")[0]
+            reads_fname = "%s/bioprojects/%s/metadata/%s.n_reads" %(
+                ROOT_DIR, project, sample)
+            if not os.path.exists(reads_fname): continue
+            with open(reads_fname) as readsf:
+                 project_sample_reads[project][sample] = int(readsf.read())
+
+projects = list(sorted(project_sample_reads))
+
+observed_taxids = set()
+for project in projects:
+    for sample in project_sample_reads[project]:
+        fname = "humanviruses/%s.humanviruses.tsv" % sample
+        if not os.path.exists(fname): continue
+        with open(fname) as inf:
+            for line in inf:
+                line = line.strip()
+                if not line: continue
+
+                taxid, count, name = line.split("\t")
+                taxid = int(taxid)
+                observed_taxids.add(taxid)
+        
 # taxid -> node
 human_virus_nodes = {}
 
 mentioned_taxids = set()
-for virus_taxid in human_viruses:
+for virus_taxid in root_human_viruses | observed_taxids:
     taxid = virus_taxid
     mentioned_taxids.add(taxid)
     while taxid != 1:
@@ -70,26 +114,6 @@ for taxid in sorted(mentioned_taxids):
 #                       [693626, ...],
 #                       [1299307, ...]]], ...], ...], ...]
 human_virus_tree = human_virus_nodes[1]
-
-# project -> sample -> n_reads
-project_sample_reads = defaultdict(dict)
-for metadata_fname in glob.glob(
-        "%s/bioprojects/*/metadata/metadata.tsv" % ROOT_DIR):
-    project = metadata_fname.split("/")[-3]
-    if project == "PRJEB30546":
-         # didn't finish importing this one, and the dashboard chokes on papers
-         # where we don't understand the metadata.
-        continue
-    with open(metadata_fname) as inf:
-        for line in inf:
-            sample = line.strip().split("\t")[0]
-            reads_fname = "%s/bioprojects/%s/metadata/%s.n_reads" %(
-                ROOT_DIR, project, sample)
-            if not os.path.exists(reads_fname): continue
-            with open(reads_fname) as readsf:
-                 project_sample_reads[project][sample] = int(readsf.read())
-
-projects = list(sorted(project_sample_reads))
 
 # paper -> {link, samples, projects, na_type, subset}
 papers = {}
@@ -203,7 +227,7 @@ for project in projects:
         sample_metadata[sample]["reads"] = \
             project_sample_reads[project][sample]
 
-for taxid in human_viruses:
+for taxid in observed_taxids:
     for project in projects:
         for sample in project_sample_reads[project]:
             count = project_sample_virus_counts[project, sample, taxid]

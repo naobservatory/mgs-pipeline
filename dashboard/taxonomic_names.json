@@ -2162,10 +2162,6 @@
     "Vaccinia virus",
     "vaccinia virus VV"
   ],
-  "10249": [
-    "Vaccinia virus Copenhagen",
-    "Vaccinia virus (strain Copenhagen)"
-  ],
   "10255": [
     "Variola virus",
     "smallpox",
@@ -2272,11 +2268,6 @@
     "varicella-zoster virus VZV",
     "VZV"
   ],
-  "10338": [
-    "Human herpesvirus 3 strain Dumas",
-    "Human herpesvirus 3 (strain Dumas)",
-    "Varicella-zoster virus (STRAIN DUMAS)"
-  ],
   "10357": [
     "Betaherpesvirinae",
     "Betaherpesviruses"
@@ -2337,10 +2328,6 @@
     "Human hepatitis B virus",
     "human hepatitis B virus HBV"
   ],
-  "10408": [
-    "Hepatitis B virus subtype adw2",
-    "Hepatitis B virus (SUBTYPE ADW2)"
-  ],
   "10472": [
     "Plasmaviridae",
     "bacterial virus",
@@ -2359,17 +2346,6 @@
   "10509": [
     "Mastadenovirus"
   ],
-  "10515": [
-    "Human adenovirus 2",
-    "adenovirus-2",
-    "Adenovirus 2",
-    "Adenovirus type 2",
-    "Human adenovirus C2",
-    "Human adenovirus type 2",
-    "Human mastadenovirus 2",
-    "Mastadenovirus 2",
-    "Mastadenovirus h2"
-  ],
   "10519": [
     "Human adenovirus 7",
     "Adenovirus 7",
@@ -2384,40 +2360,11 @@
     "Mastadenovirus h7",
     "Mastadenovirus p7"
   ],
-  "10521": [
-    "Human adenovirus 14",
-    "Adenovirus 14",
-    "Human adenovirus type 14",
-    "Mastadenovirus h14"
-  ],
   "10522": [
     "Human adenovirus 35",
     "Adenovirus serotype 35",
     "Human adenovirus type 35",
     "Mastadenovirus h35"
-  ],
-  "10524": [
-    "Human adenovirus 41",
-    "Adenovirus type 41",
-    "Human adenovirus F41",
-    "Human adenovirus type 41",
-    "Mastadenovirus 41",
-    "Mastadenovirus h41"
-  ],
-  "10528": [
-    "Human adenovirus 18",
-    "Adenovirus type 18",
-    "Human adenovirus type 18",
-    "Mastadenovirus 18"
-  ],
-  "10529": [
-    "Human adenovirus 31",
-    "Adenovirus type 31",
-    "Human adenovirus A31",
-    "Human adenovirus type 31",
-    "Human mastadenovirus 31",
-    "Mastadenovirus 31",
-    "Mastadenovirus h31"
   ],
   "10533": [
     "Human adenovirus 1",
@@ -2426,27 +2373,6 @@
     "Human adenovirus C1",
     "Human adenovirus type 1",
     "Human mastadenovirus 1"
-  ],
-  "10534": [
-    "Human adenovirus 6",
-    "Adenovirus 6",
-    "Adenovirus type 6",
-    "Human adenovirus C6",
-    "Human adenovirus type 6"
-  ],
-  "10541": [
-    "Human adenovirus 11",
-    "adenovirus 11",
-    "Human adenovirus B11",
-    "Human adenovirus type 11",
-    "Human mastadenovirus 11",
-    "Mastadenovirus 11",
-    "Mastadenovirus h11"
-  ],
-  "10548": [
-    "Human adenovirus 34",
-    "Human adenovirus type 34",
-    "Mastadenovirus h34"
   ],
   "10566": [
     "Human papillomavirus",
@@ -2471,13 +2397,6 @@
     "HPV-11",
     "Human papillomavirus - 11",
     "Human papillomavirus type 11"
-  ],
-  "10583": [
-    "Human papillomavirus type 1a"
-  ],
-  "10584": [
-    "Human papillomavirus type 2a",
-    "Human papillomavirus - 2a"
   ],
   "10585": [
     "human papillomavirus 31",
@@ -2795,11 +2714,6 @@
     "Dengue virus 3",
     "Dengue virus serotype 3"
   ],
-  "11070": [
-    "Dengue virus type 4",
-    "dengue type 4 virus DEN4",
-    "Dengue virus 4"
-  ],
   "11072": [
     "Japanese encephalitis virus",
     "Japanese encephalitis (JE) virus",
@@ -2844,10 +2758,6 @@
     "Flavivirus febricis",
     "yellow fever virus YFV",
     "YFV"
-  ],
-  "11090": [
-    "Yellow fever virus 17D",
-    "Yellow fever virus (STRAIN 17D)"
   ],
   "11102": [
     "Hepacivirus",
@@ -2894,11 +2804,6 @@
   "11158": [
     "Paramyxoviridae"
   ],
-  "11168": [
-    "Mumps virus strain Jeryl Lynn",
-    "Mumps virus strain Jeryl-Lynn",
-    "Mumps virus (STRAIN JERYL-LYNN)"
-  ],
   "11216": [
     "Human respirovirus 3",
     "HPIV-3",
@@ -2942,11 +2847,6 @@
     "subacute sclerose panencephalitis virus",
     "Subacute sclerosing panencephalitis virus",
     "subacute sclerosing panencephalitis virus, SSPEV"
-  ],
-  "11235": [
-    "Measles virus strain Edmonston",
-    "Measles morbillivirus strain Edmonston",
-    "Measles virus (STRAIN EDMONSTON)"
   ],
   "11244": [
     "Pneumoviridae",
@@ -3215,27 +3115,6 @@
     "Rhinoviruses",
     "Rhinovirus"
   ],
-  "12060": [
-    "Echovirus E9",
-    "Coxsackievirus A23",
-    "E9",
-    "EC-9-V",
-    "Echo 9 virus",
-    "Echovirus 9",
-    "Echovirus type 9",
-    "Human coxsackievirus A23",
-    "Human echovirus 9",
-    "Human echovirus E9"
-  ],
-  "12062": [
-    "Echovirus E6",
-    "E6",
-    "Echo 6 virus",
-    "Echovirus 6",
-    "Echovirus type 6",
-    "Human echovirus 6",
-    "Human echovirus E6"
-  ],
   "12063": [
     "Human parechovirus 1",
     "Echovirus 22",
@@ -3244,88 +3123,11 @@
     "Human echovirus 22",
     "Human parechovirus type 1"
   ],
-  "12067": [
-    "Coxsackievirus A9",
-    "Coxsackie A type 9",
-    "Coxsackie A virus type 9",
-    "Coxsackie virus A9",
-    "CVA9",
-    "Human coxsackievirus A9"
-  ],
-  "12069": [
-    "Coxsackievirus A21",
-    "CV-A21",
-    "Human coxsackievirus A21"
-  ],
-  "12070": [
-    "Human coxsackievirus A21 Coe",
-    "Coxsackievirus A21 (strain Coe)",
-    "Human coxsackievirus A21 (strain Coe)"
-  ],
-  "12071": [
-    "Coxsackievirus B1",
-    "Coxsackie B virus type 1",
-    "Coxsackievirus type B1 CBV1",
-    "CVB1",
-    "Human coxsackievirus B1",
-    "Human enterovirus CVB1"
-  ],
   "12072": [
     "Coxsackievirus B3",
     "coxsackievirus B3 CVB3",
     "CVB3",
     "Human coxsackievirus B3"
-  ],
-  "12073": [
-    "Coxsackievirus B4",
-    "Coxsackie B4 virus CB4",
-    "Coxsackie B virus type 4",
-    "CVB4",
-    "Human coxsackievirus B4",
-    "Human enterovirus CVB4"
-  ],
-  "12074": [
-    "Coxsackievirus B5",
-    "Coxsackie B virus type 5",
-    "CVB5",
-    "Human coxsackievirus B5"
-  ],
-  "12078": [
-    "Echovirus E11",
-    "E11",
-    "Echo 11 virus",
-    "Echovirus 11",
-    "Echovirus type 11",
-    "Human echovirus 11",
-    "Human echovirus E11"
-  ],
-  "12080": [
-    "Poliovirus 1",
-    "HPV-1",
-    "Human poliovirus 1",
-    "Human poliovirus type 1",
-    "Polio virus 1",
-    "Poliovirus type 1",
-    "poliovirus type 1 PV1",
-    "PV1"
-  ],
-  "12081": [
-    "Human poliovirus 1 Mahoney",
-    "human poliovirus 1 strain Mahoney",
-    "Poliovirus type 1 (strain Mahoney)"
-  ],
-  "12089": [
-    "Coxsackievirus A24",
-    "Coxsackievirus A-24",
-    "CV-A24",
-    "Human coxsackievirus A24",
-    "Human enterovirus CVA24"
-  ],
-  "12090": [
-    "enterovirus D70",
-    "Enterovirus 70",
-    "Enterovirus type 70",
-    "Human enterovirus 70"
   ],
   "12091": [
     "Hepatovirus"
@@ -3345,30 +3147,12 @@
     "encephalomyocarditis virus EMCV",
     "encephalomyocarditis virus, EMCV"
   ],
-  "12107": [
-    "Mengo virus",
-    "Mengo encephalomyocarditis virus",
-    "Mengovirus"
-  ],
   "12131": [
     "rhinovirus B14",
     "HRV-14",
     "human rhinovirus 14 HRV14",
     "Human rhinovirus 14",
     "Human rhinovirus B14"
-  ],
-  "12132": [
-    "rhinovirus A89",
-    "HRV-89",
-    "HRV-A89",
-    "Human rhinovirus 89",
-    "Human rhinovirus A89"
-  ],
-  "12135": [
-    "rhinovirus A23",
-    "HRV-23",
-    "Human rhinovirus 23",
-    "Human rhinovirus A23"
   ],
   "12139": [
     "Southern bean mosaic virus",
@@ -3424,12 +3208,6 @@
     "unassigned viruses",
     "unclassified virus"
   ],
-  "12456": [
-    "Human astrovirus 1",
-    "HAstV-1",
-    "human astrovirus serotype 1",
-    "Human astrovirus type 1"
-  ],
   "12475": [
     "Hepatitis delta virus",
     "HDV",
@@ -3451,11 +3229,6 @@
     "Omsk haemorrhagic fever virus",
     "Omsk haemorrhagic fever virus OHF"
   ],
-  "12557": [
-    "Seoul virus 80-39",
-    "Seoul 80-39 virus",
-    "Seoul virus (STRAIN 80-39)"
-  ],
   "12618": [
     "Chicken anemia virus",
     "CAV",
@@ -3473,12 +3246,6 @@
     "Ectromelia mousepox virus",
     "mousepox",
     "mousepox virus"
-  ],
-  "12701": [
-    "Human astrovirus 2",
-    "H-Ast2",
-    "Human astrovirus serotype 2 H-Ast2",
-    "Human astrovirus type 2"
   ],
   "12721": [
     "Human immunodeficiency virus",
@@ -3704,36 +3471,6 @@
     "Purple bacteria, delta subdivision",
     "Sulfate- or sulfur-reducing dissimilatory bacteria",
     "Sulfate-reducing or sulfur-reducing dissimilatory bacteria"
-  ],
-  "28275": [
-    "Human adenovirus D10",
-    "Adenovirus type 10",
-    "Human adenovirus 10",
-    "Human adenovirus type 10",
-    "Mastadenovirus 10"
-  ],
-  "28278": [
-    "Human adenovirus 19",
-    "Adenovirus type 19",
-    "Human adenovirus type 19",
-    "Mastadenovirus 19"
-  ],
-  "28280": [
-    "Human adenovirus E4",
-    "Adenovirus 4",
-    "Adenovirus type 4",
-    "Human adenovirus 4",
-    "Human adenovirus type 4",
-    "Mastadenovirus h4"
-  ],
-  "28282": [
-    "Human adenovirus 12",
-    "Adenovirus Ad12",
-    "Adenovirus type 12",
-    "Human adenovirus A12",
-    "Human adenovirus type 12",
-    "Mastadenovirus 12",
-    "Mastadenovirus h12"
   ],
   "28285": [
     "Human adenovirus 5",
@@ -4048,20 +3785,6 @@
     "Janthinobacterium",
     "Janthinobacterium De Ley et al. 1978 (Approved List 1980) emend. Lincoln et al. 1999"
   ],
-  "31544": [
-    "Human adenovirus 16",
-    "Adenovirus type 16",
-    "Human adenovirus type 16",
-    "Mastadenovirus h16"
-  ],
-  "31545": [
-    "Human adenovirus D8",
-    "Adenovirus type 8 AV15",
-    "Adenovirus type 8",
-    "Human adenovirus 8",
-    "Human adenovirus type 8",
-    "Mastadenovirus h8"
-  ],
   "31546": [
     "Human papillomavirus type 14D"
   ],
@@ -4084,48 +3807,6 @@
     "HCoV-OC43",
     "Human coronavirus (strain OC43)",
     "Human coronavirus strain OC43"
-  ],
-  "31647": [
-    "Hepatitis C virus subtype 1b",
-    "Hepatitis C virus type 1b",
-    "hepatitis C virus type 1b HCV-1b"
-  ],
-  "31649": [
-    "Hepatitis C virus subtype 2a",
-    "Hepatitis C virus type 2a"
-  ],
-  "31651": [
-    "Hepatitis C virus subtype 2c",
-    "Hepatitis C virus type 2c"
-  ],
-  "31653": [
-    "Hepatitis C virus subtype 4a",
-    "Hepatitis C virus type 4a"
-  ],
-  "31655": [
-    "Hepatitis C virus subtype 6a",
-    "Hepatitis C virus 6a",
-    "Hepatitis C virus type 6a"
-  ],
-  "31699": [
-    "Ockelbo virus",
-    "Sindbis virus (subtype Ockelbo / strain Edsbyn 82-5)"
-  ],
-  "31704": [
-    "Coxsackievirus A16",
-    "Coxsackie A virus type 16",
-    "Coxsackie virus A-16",
-    "CV-A16",
-    "CVA-16",
-    "CVA16",
-    "Human coxsackievirus A16",
-    "Human enterovirus CVA16"
-  ],
-  "31708": [
-    "rhinovirus A16",
-    "Human rhinovirus 16",
-    "Human rhinovirus A16",
-    "Human rhinovirus type 16"
   ],
   "32033": [
     "Xanthomonadaceae",
@@ -4152,36 +3833,14 @@
     "Human herpesvirus 6B",
     "Human herpesvirus 6 type B"
   ],
-  "32608": [
-    "Human adenovirus 21",
-    "Human adenovirus B21",
-    "Human adenovirus type 21",
-    "Mastadenovirus h21"
-  ],
   "33025": [
     "Phascolarctobacterium faecium",
     "ACM 3679",
     "DSM 14760",
     "Phascolarctobacterium faecium Del Dot et al. 1994"
   ],
-  "33727": [
-    "Marburg virus - Musoke, Kenya, 1980",
-    "Lake Victoria marburgvirus - Musoke",
-    "Lake Victoria marburgvirus - Musoke (Kenya, 1980)",
-    "Marburg virus (strain Musoke)",
-    "MARV-Mus"
-  ],
   "33743": [
     "Kyasanur Forest disease virus"
-  ],
-  "33745": [
-    "Hepatitis C virus genotype 4",
-    "Hepatitis C virus 4",
-    "Hepatitis C virus type 4"
-  ],
-  "33746": [
-    "Hepatitis C virus genotype 5",
-    "Hepatitis C virus type 5"
   ],
   "33757": [
     "Coxsackievirus A2",
@@ -4354,33 +4013,6 @@
   "35281": [
     "Paprika mild mottle virus"
   ],
-  "35293": [
-    "Echovirus E12",
-    "Echo-12",
-    "Echovirus 12",
-    "Echovirus type 12",
-    "Human echovirus 12",
-    "Human echovirus E12"
-  ],
-  "35294": [
-    "Echovirus E2",
-    "Echovirus 2",
-    "Echovirus type 2",
-    "Human echovirus 2",
-    "Human echovirus E2"
-  ],
-  "35295": [
-    "Echovirus E4",
-    "Echovirus 4",
-    "Echovirus type 4",
-    "Human echovirus 4",
-    "Human echovirus E4"
-  ],
-  "35300": [
-    "Human astrovirus 4",
-    "HAstV-4",
-    "Human astrovirus type 4"
-  ],
   "35304": [
     "Bunyamwera virus",
     "Bunyamwera bunyavirus group",
@@ -4410,11 +4042,6 @@
   "35515": [
     "Melao virus"
   ],
-  "35741": [
-    "Human astrovirus 5",
-    "HAstV-5",
-    "Human astrovirus type 5"
-  ],
   "35841": [
     "Caldibacillus thermoamylovorans",
     "Bacillus sp. LMG 18084",
@@ -4430,12 +4057,6 @@
     "LMG 18084",
     "LMG:18084",
     "strain DKP"
-  ],
-  "36368": [
-    "Human T-cell lymphotropic virus type 2b",
-    "HTLV-IIB",
-    "Human T cell leukemia virus type 2b",
-    "Human T cell leukemia virus type IIb HTLV-IIb"
   ],
   "36427": [
     "Rotavirus C",
@@ -4494,9 +4115,6 @@
     "Human papillomavirus - 59",
     "Human papillomavirus type 59"
   ],
-  "37116": [
-    "Human papillomavirus type 61"
-  ],
   "37119": [
     "human papillomavirus 66",
     "Human papillomavirus - 66",
@@ -4518,11 +4136,6 @@
   ],
   "37124": [
     "Chikungunya virus"
-  ],
-  "37130": [
-    "Human astrovirus 6",
-    "HAstV-6",
-    "Human astrovirus type 6"
   ],
   "37296": [
     "Human gammaherpesvirus 8",
@@ -4604,6 +4217,10 @@
   "38144": [
     "unclassified Flaviviridae"
   ],
+  "38416": [
+    "Simian adenovirus 19",
+    "Simian adenovirus type 19"
+  ],
   "38767": [
     "Lyssavirus duvenhage",
     "Duvenhage lyssavirus",
@@ -4616,24 +4233,6 @@
   ],
   "38837": [
     "Banzi virus"
-  ],
-  "39054": [
-    "Enterovirus A71",
-    "Enterovirus 71",
-    "Enterovirus EV-A71",
-    "enterovirus type 71",
-    "EV-71",
-    "EV71",
-    "EV-A71",
-    "Human enterovirus 71",
-    "Human enterovirus A71",
-    "Human enterovirus type 71"
-  ],
-  "39085": [
-    "Human parechovirus 2",
-    "Echovirus 23",
-    "Echovirus 23 EV23",
-    "Human echovirus 23"
   ],
   "39457": [
     "Human papillomavirus type 70",
@@ -4683,12 +4282,6 @@
   ],
   "39759": [
     "Deltavirus"
-  ],
-  "39767": [
-    "rhinovirus A11",
-    "Human rhinovirus 11",
-    "Human rhinovirus A11",
-    "Human rhinovirus type 11"
   ],
   "39948": [
     "Dialister",
@@ -4778,12 +4371,6 @@
   ],
   "40272": [
     "Roseolovirus"
-  ],
-  "40280": [
-    "Echovirus E5",
-    "Echovirus 5",
-    "Human echovirus 5",
-    "Human echovirus E5"
   ],
   "40323": [
     "Stenotrophomonas",
@@ -4879,111 +4466,9 @@
     "Sphingomonas group",
     "Zymomonas group"
   ],
-  "41846": [
-    "Echovirus E30",
-    "E30",
-    "Echovirus 30",
-    "Echovirus type 30 E30",
-    "Echovirus type 30",
-    "Enterovirus E30",
-    "Human echovirus 30",
-    "Human echovirus E30",
-    "Human echovirus type 30"
-  ],
-  "41856": [
-    "Hepatitis C virus genotype 1",
-    "Hepatitis C virus 1",
-    "hepatitis C virus 1 HCV 1",
-    "Hepatitis C virus type 1"
-  ],
   "42182": [
     "Hepatitis C virus genotype 6",
     "Hepatitis C virus type 6"
-  ],
-  "42769": [
-    "Coxsackievirus A10",
-    "CV-A10",
-    "CVA10",
-    "Enterovirus CA10",
-    "Human coxsackievirus A10",
-    "Human enterovirus CVA10"
-  ],
-  "42770": [
-    "Coxsackievirus A11",
-    "CV-A11",
-    "Human coxsackievirus A11"
-  ],
-  "42771": [
-    "Coxsackievirus A12",
-    "CV-A12",
-    "Human coxsackievirus A12"
-  ],
-  "42772": [
-    "Coxsackievirus A13",
-    "Coxsackievirus A-13",
-    "CV-A13",
-    "CVA13",
-    "Enterovirus CVA13",
-    "Human coxsackievirus A13",
-    "Human enterovirus CVA13"
-  ],
-  "42773": [
-    "Coxsackievirus A14",
-    "CV-A14",
-    "CVA14",
-    "Human coxsackievirus A14"
-  ],
-  "42775": [
-    "Coxsackievirus A17",
-    "CV-A17",
-    "Enterovirus CVA17",
-    "Human coxsackievirus A17"
-  ],
-  "42776": [
-    "Coxsackievirus A18",
-    "Human coxsackievirus A18"
-  ],
-  "42779": [
-    "Coxsackievirus A1",
-    "CV-A1",
-    "Human coxsackievirus A1"
-  ],
-  "42782": [
-    "Coxsackievirus A20",
-    "Coxsackievirus 20",
-    "CV-A20",
-    "CVA20",
-    "Enterovirus CVA20",
-    "Human coxsackievirus A20"
-  ],
-  "42783": [
-    "Coxsackievirus A22",
-    "Human coxsackievirus A22"
-  ],
-  "42785": [
-    "Coxsackievirus A4",
-    "Coxsackie A virus type 4",
-    "CV-A4",
-    "CVA-4",
-    "CVA4",
-    "Enterovirus CA4",
-    "Human coxsackievirus A4",
-    "Human enterovirus CoxA4",
-    "Human enterovirus CVA4"
-  ],
-  "42786": [
-    "Coxsackievirus A5",
-    "CV-A5",
-    "CVA5",
-    "Enterovirus CA5",
-    "Enterovirus CVA5",
-    "Human coxsackievirus A5",
-    "Human enterovirus CVA5"
-  ],
-  "42788": [
-    "Coxsackievirus A8",
-    "CV-A8",
-    "Human coxsackievirus A8"
   ],
   "42789": [
     "enterovirus D68",
@@ -4992,10 +4477,6 @@
     "Human enterovirus 68",
     "Human enterovirus D68",
     "Human enterovirus EV68"
-  ],
-  "42792": [
-    "Hepatitis C virus subtype 3g",
-    "Hepatitis C virus type 3g"
   ],
   "43263": [
     "Pseudomonas alcaligenes",
@@ -5015,11 +4496,6 @@
     "NCTC 10367",
     "Pseudomonas alcaligenes Monias 1928",
     "VKM B-2171"
-  ],
-  "43358": [
-    "Human astrovirus 8",
-    "HAstV-8",
-    "Human astrovirus type 8"
   ],
   "44008": [
     "Enterococcus cecorum",
@@ -5048,84 +4524,12 @@
   "44024": [
     "Kokobera virus"
   ],
-  "44027": [
-    "Stratford virus"
-  ],
-  "44128": [
-    "rhinovirus A21",
-    "HRV-A21",
-    "Human rhinovirus 21",
-    "Human rhinovirus A21",
-    "Human rhinovirus type 21"
-  ],
-  "44129": [
-    "rhinovirus A29",
-    "Human rhinovirus 29",
-    "Human rhinovirus A29",
-    "Human rhinovirus type 29"
-  ],
   "44130": [
     "rhinovirus B3",
     "Human rhinovirus 3",
     "human rhinovirus 3, FEB",
     "Human rhinovirus B3",
     "Human rhinovirus type 3"
-  ],
-  "44131": [
-    "rhinovirus A49",
-    "HRV-A49",
-    "Human rhinovirus 49",
-    "Human rhinovirus A49",
-    "Human rhinovirus type 49"
-  ],
-  "44132": [
-    "rhinovirus A50",
-    "Human rhinovirus 50",
-    "Human rhinovirus A50",
-    "Human rhinovirus type 50"
-  ],
-  "44133": [
-    "rhinovirus A58",
-    "HRV-A58",
-    "Human rhinovirus 58",
-    "Human rhinovirus A58",
-    "Human rhinovirus type 58"
-  ],
-  "44134": [
-    "rhinovirus A62",
-    "Human rhinovirus 62",
-    "Human rhinovirus A62",
-    "Human rhinovirus type 62"
-  ],
-  "44135": [
-    "rhinovirus A65",
-    "HRV-A65",
-    "Human rhinovirus 65",
-    "Human rhinovirus A65",
-    "Human rhinovirus type 65"
-  ],
-  "44136": [
-    "rhinovirus A7",
-    "Human rhinovirus 7",
-    "Human rhinovirus A7",
-    "Human rhinovirus type 7"
-  ],
-  "44137": [
-    "rhinovirus B72",
-    "Human rhinovirus 72",
-    "Human rhinovirus B72",
-    "Human rhinovirus type 72"
-  ],
-  "44419": [
-    "Sindbis-like virus"
-  ],
-  "45101": [
-    "Echovirus E25",
-    "E25",
-    "Echovirus 25",
-    "Echovirus type 25",
-    "Human echovirus 25",
-    "Human echovirus E25"
   ],
   "45219": [
     "Guanarito mammarenavirus",
@@ -5148,34 +4552,10 @@
     "Human Mmtv-Like (HML) retrovirus",
     "Human Mmtv-Like retrovirus"
   ],
-  "45659": [
-    "Human adenovirus B3",
-    "Adenovirus 3",
-    "Adenovirus type 3",
-    "Human adenovirus 3",
-    "Human adenovirus type 3",
-    "Mastadenovirus 3",
-    "Mastadenovirus h3"
-  ],
   "45989": [
     "Methanoculleus",
     "Methaniculleus",
     "Methanoculleus Maestrojun et al. 1990"
-  ],
-  "45999": [
-    "Echovirus E27",
-    "Echovirus 27",
-    "Enterovirus E27",
-    "Human echovirus 27",
-    "Human echovirus E27"
-  ],
-  "46018": [
-    "Echovirus E7",
-    "E7",
-    "Echovirus 7",
-    "Echovirus type 7",
-    "Human echovirus 7",
-    "Human echovirus E7"
   ],
   "46350": [
     "Adeno-associated virus - 3",
@@ -5198,146 +4578,10 @@
     "Colorado tick fever virus",
     "CTFV"
   ],
-  "46922": [
-    "Human adenovirus 17",
-    "Human adenovirus D17",
-    "Human adenovirus type 17"
-  ],
-  "46924": [
-    "Human adenovirus 22",
-    "Human adenovirus type 22"
-  ],
-  "46925": [
-    "Human adenovirus 23",
-    "Human adenovirus type 23"
-  ],
-  "46930": [
-    "Human adenovirus 28",
-    "Human adenovirus type 28"
-  ],
-  "46936": [
-    "Human adenovirus 36",
-    "Human adenovirus type 36"
-  ],
-  "46938": [
-    "Human adenovirus 43",
-    "Human adenovirus type 43"
-  ],
-  "46941": [
-    "Human adenovirus 46",
-    "Human adenovirus type 46"
-  ],
   "47420": [
     "Hydrogenophaga",
     "Hydrogeniphaga",
     "Hydrogenophaga Willems et al. 1989"
-  ],
-  "47501": [
-    "Echovirus E13",
-    "Echovirus 13",
-    "Human echovirus 13",
-    "Human echovirus E13",
-    "Human echovirus type 13"
-  ],
-  "47502": [
-    "Echovirus E14",
-    "Echovirus 14",
-    "Echovirus type 14",
-    "Human echovirus 14",
-    "Human echovirus E14"
-  ],
-  "47503": [
-    "Echovirus E15",
-    "Echovirus 15",
-    "Human echovirus 15",
-    "Human echovirus E15"
-  ],
-  "47504": [
-    "Echovirus E16",
-    "E16",
-    "Echovirus 16",
-    "Human echovirus 16"
-  ],
-  "47505": [
-    "Echovirus E17",
-    "E17",
-    "Echovirus 17",
-    "Echovirus type 17",
-    "Human echovirus 17",
-    "Human echovirus E17"
-  ],
-  "47506": [
-    "Echovirus E18",
-    "Echovirus 18",
-    "Echovirus type 18",
-    "Human echovirus 18",
-    "Human echovirus E18"
-  ],
-  "47507": [
-    "Echovirus E19",
-    "E19",
-    "Echovirus 19",
-    "Human echovirus 19",
-    "Human echovirus E19"
-  ],
-  "47508": [
-    "Echovirus E20",
-    "E20",
-    "Echovirus 20",
-    "Human echovirus 20",
-    "Human echovirus E20"
-  ],
-  "47509": [
-    "Echovirus E21",
-    "Echovirus 21",
-    "Human echovirus 21",
-    "Human echovirus E21"
-  ],
-  "47510": [
-    "Echovirus E24",
-    "Echovirus 24",
-    "Human echovirus 24",
-    "Human echovirus E24"
-  ],
-  "47511": [
-    "Echovirus E26",
-    "Echovirus 26",
-    "Human echovirus 26",
-    "Human echovirus E26"
-  ],
-  "47512": [
-    "Echovirus E29",
-    "Echovirus 29",
-    "Echovirus type 29",
-    "Human echovirus 29",
-    "Human echovirus E29"
-  ],
-  "47513": [
-    "Echovirus E31",
-    "Echovirus 31",
-    "Human echovirus 31",
-    "Human echovirus E31"
-  ],
-  "47514": [
-    "Echovirus E32",
-    "E32",
-    "Echovirus 32",
-    "Human echovirus 32",
-    "Human echovirus E32"
-  ],
-  "47515": [
-    "Echovirus E33",
-    "Echovirus 33",
-    "Human echovirus 33",
-    "Human echovirus E33"
-  ],
-  "47516": [
-    "Echovirus E3",
-    "E3",
-    "Echovirus 3",
-    "Echovirus type 3",
-    "Human echovirus 3",
-    "Human echovirus E3"
   ],
   "47678": [
     "Bacteroides caccae",
@@ -5489,16 +4733,6 @@
     "LMG:7871",
     "Microbacterium sp. BDR3P1B2",
     "NBRC 102466"
-  ],
-  "52275": [
-    "Human adenovirus D37",
-    "Adenovirus type 37",
-    "Human adenovirus 37",
-    "Human adenovirus type 37"
-  ],
-  "52276": [
-    "Snow Mountain virus",
-    "Snow Mountain strain"
   ],
   "53246": [
     "Pseudoalteromonas",
@@ -5715,10 +4949,6 @@
     "Equine morbillivirus",
     "Hendra virus"
   ],
-  "63746": [
-    "Hepatitis C virus (isolate H77)",
-    "Hepatitis C virus strain H77"
-  ],
   "64284": [
     "Saboya virus"
   ],
@@ -5799,21 +5029,12 @@
     "Adeno-associated virus 6",
     "adeno-associated virus type 6"
   ],
-  "68742": [
-    "Adeno-associated virus 3B",
-    "adeno-associated virus type 3B"
-  ],
   "68887": [
     "Torque teno virus",
     "Hepatitis TT virus",
     "TTV",
     "TT virus",
     "unidentified ssDNA virus TA278"
-  ],
-  "70149": [
-    "Measles virus strain Edmonston-Zagreb",
-    "measles virus (strain edmonston-zagreb)",
-    "Measles virus strain Zagreb"
   ],
   "70346": [
     "Acinetobacter variabilis",
@@ -5871,11 +5092,6 @@
     "\"Pseudobacterium aerofaciens\" (Eggerth 1935) Krasil'nikov 1949",
     "Pseudobacterium aerofaciens",
     "VPI 1003"
-  ],
-  "74561": [
-    "Coxsackievirus B6",
-    "Enterovirus CVB6",
-    "Human coxsackievirus B6"
   ],
   "75588": [
     "Pseudomonas libanensis",
@@ -5981,14 +5197,6 @@
     "adeno-associated virus 5",
     "Adeno-associated virus - 5"
   ],
-  "82639": [
-    "Coxsackievirus B2",
-    "CVB2",
-    "Human coxsackievirus B2"
-  ],
-  "82658": [
-    "Lordsdale virus"
-  ],
   "83655": [
     "Leclercia adecarboxylata",
     "ATCC 23216",
@@ -6005,9 +5213,6 @@
     "LMG:2803",
     "NBRC 102595",
     "NCTC 13032"
-  ],
-  "84272": [
-    "Sindbis-like virus YN87448"
   ],
   "85006": [
     "Micrococcales",
@@ -6088,16 +5293,6 @@
     "strain Hugh 2838",
     "strain KM 543",
     "strain Yabuuchi KM 543"
-  ],
-  "86107": [
-    "Coxsackievirus A6",
-    "Coxsackie A virus type 6",
-    "CV-A6",
-    "CVA-6",
-    "CVA6",
-    "Enterovirus CA6",
-    "Human coxsackievirus A6",
-    "Human enterovirus CVA6"
   ],
   "86185": [
     "Pseudomonas lundensis",
@@ -6208,9 +5403,6 @@
     "influenza A virus (A/goose/Guangdong/1/96/(H5N1))",
     "Influenza A virus (A/Goose/Guangdong/1/96(H5N1))"
   ],
-  "94433": [
-    "Camberwell virus"
-  ],
   "95337": [
     "Vesivirus"
   ],
@@ -6237,9 +5429,6 @@
   ],
   "99182": [
     "Murine leukemia-related retroviruses"
-  ],
-  "99565": [
-    "Chiba virus"
   ],
   "100886": [
     "Catenibacterium mitsuokai",
@@ -6271,26 +5460,6 @@
   "102796": [
     "H9N2 subtype",
     "H9N2"
-  ],
-  "103914": [
-    "Echovirus 9 strain Barty",
-    "Echovirus 9 (strain Barty)"
-  ],
-  "103915": [
-    "Echovirus 9 strain Hill",
-    "Echovirus 9 (strain Hill)"
-  ],
-  "106820": [
-    "Hepatitis B virus subtype adr",
-    "Hepatitis B virus (SUBTYPE ADR)"
-  ],
-  "106821": [
-    "Hepatitis B virus subtype adw",
-    "Hepatitis B virus (SUBTYPE ADW)"
-  ],
-  "107462": [
-    "Human adenovirus 50",
-    "Human adenovirus type 50"
   ],
   "108098": [
     "Human mastadenovirus B",
@@ -6370,12 +5539,6 @@
   "119910": [
     "Ryegrass mottle virus"
   ],
-  "120381": [
-    "human papillomavirus 87",
-    "Human papillomavirus - cand87",
-    "Human papillomavirus type 87",
-    "Human papillomavirus type HAN2294"
-  ],
   "120686": [
     "human papillomavirus 71",
     "Human papillomavirus type 71"
@@ -6436,9 +5599,6 @@
     "Norwalk-like viruses genogroup 2",
     "Norwalk-like virus genogroup 2"
   ],
-  "123738": [
-    "Enterovirus Yanbian 96-83csf"
-  ],
   "123899": [
     "Bordetella trematum",
     "Bordetella trematum Vandamme et al. 1996",
@@ -6449,10 +5609,6 @@
     "LMG:13506",
     "NCTC 12995",
     "strain 1779"
-  ],
-  "126794": [
-    "Vaccinia virus Ankara",
-    "Vaccinia virus (strain Ankara)"
   ],
   "128780": [
     "Stenotrophomonas acidaminiphila",
@@ -6476,14 +5632,6 @@
     "Pseudoxanthomonas mexicana Thierry et al. 2004",
     "Pseudoxanthomonas sp. UR374_02",
     "strain AMX 26B"
-  ],
-  "128952": [
-    "Ebola virus - Mayinga, Zaire, 1976",
-    "Ebola virus (strain Zaire Mayinga)",
-    "Ebola virus strain Zaire Mayinga",
-    "EBOV-May",
-    "Zaire ebolavirus Mayinga strain",
-    "Zaire ebolavirus - Mayinga (Zaire, 1976)"
   ],
   "129337": [
     "Geobacillus",
@@ -6602,87 +5750,6 @@
   "145856": [
     "Human picobirnavirus"
   ],
-  "147672": [
-    "rhinovirus A28",
-    "HRV-A28",
-    "Human rhinovirus 28",
-    "Human rhinovirus A28",
-    "Human rhinovirus type 28"
-  ],
-  "147673": [
-    "rhinovirus A36",
-    "Human rhinovirus 36",
-    "Human rhinovirus A36",
-    "Human rhinovirus type 36"
-  ],
-  "147674": [
-    "rhinovirus A18",
-    "HRV-A18",
-    "Human rhinovirus 18",
-    "Human rhinovirus A18",
-    "Human rhinovirus type 18"
-  ],
-  "147675": [
-    "rhinovirus A20",
-    "Human rhinovirus 20",
-    "Human rhinovirus A20",
-    "Human rhinovirus type 20"
-  ],
-  "147676": [
-    "rhinovirus A45",
-    "Human rhinovirus 45",
-    "Human rhinovirus A45",
-    "Human rhinovirus type 45"
-  ],
-  "147677": [
-    "rhinovirus B52",
-    "Human rhinovirus 52",
-    "Human rhinovirus B52",
-    "Human rhinovirus type 52"
-  ],
-  "147678": [
-    "Rhinovirus B69",
-    "Human rhinovirus 69",
-    "Human rhinovirus B69",
-    "Human rhinovirus type 69"
-  ],
-  "147679": [
-    "Rhinovirus B48",
-    "Human rhinovirus 48",
-    "Human rhinovirus B48",
-    "Human rhinovirus type 48"
-  ],
-  "147680": [
-    "rhinovirus B37",
-    "Human rhinovirus 37",
-    "Human rhinovirus B37",
-    "Human rhinovirus type 37"
-  ],
-  "147681": [
-    "rhinovirus B6",
-    "Human rhinovirus 6",
-    "Human rhinovirus B6",
-    "Human rhinovirus type 6"
-  ],
-  "147683": [
-    "rhinovirus B42",
-    "Human rhinovirus 42",
-    "Human rhinovirus B42",
-    "Human rhinovirus type 42"
-  ],
-  "147684": [
-    "rhinovirus A12",
-    "Human rhinovirus 12",
-    "Human rhinovirus A12",
-    "Human rhinovirus type 12"
-  ],
-  "147685": [
-    "rhinovirus A78",
-    "HRV-A78",
-    "Human rhinovirus 78",
-    "Human rhinovirus A78",
-    "Human rhinovirus type 78"
-  ],
   "147711": [
     "Rhinovirus A",
     "Human rhinovirus A"
@@ -6690,12 +5757,6 @@
   "147712": [
     "Rhinovirus B",
     "Human rhinovirus B"
-  ],
-  "147714": [
-    "rhinovirus B5",
-    "Human rhinovirus 5",
-    "Human rhinovirus B5",
-    "Human rhinovirus type 5"
   ],
   "149539": [
     "Salmonella enterica subsp. enterica serovar Enteritidis",
@@ -6707,33 +5768,9 @@
     "Salmonella sp. SJTUF12367v2",
     "Salmonella sp. SJTUF12519v2"
   ],
-  "150080": [
-    "Norovirus isolates",
-    "human calicivirus",
-    "Human calicivirus isolates",
-    "Human calicivirus NLV"
-  ],
-  "150137": [
-    "Norovirus Hu/NLV/GII/Neustrelitz260/2000/DE",
-    "Human calicivirus NLV/Neustrelitz 260/2000/DE"
-  ],
   "150247": [
     "Anoxybacillus",
     "Anoxybacillus Pikuta et al. 2000 emend. Pikuta et al. 2003"
-  ],
-  "150546": [
-    "human papillomavirus 84",
-    "Human papillomavirus - 84",
-    "Human papillomavirus type 84"
-  ],
-  "150846": [
-    "Enterovirus 5865/sin/000009"
-  ],
-  "150904": [
-    "rhinovirus B17",
-    "Human rhinovirus 17",
-    "Human rhinovirus B17",
-    "Human rhinovirus type 17"
   ],
   "151340": [
     "Papillomaviridae",
@@ -6762,12 +5799,6 @@
   "154784": [
     "Acinetobacter phage AP205",
     "Bacteriophage AP205"
-  ],
-  "156647": [
-    "Enterovirus 5666/sin/002209"
-  ],
-  "158465": [
-    "Human calicivirus Hu/NLV/GII/MD145-12/1987/US"
   ],
   "158836": [
     "Enterobacter hormaechei",
@@ -6830,95 +5861,16 @@
     "Roseburia intestinalis Duncan et al. 2002 emend. Duncan et al. 2006",
     "strain L1-82"
   ],
-  "167321": [
-    "rhinovirus A43",
-    "Human rhinovirus 43",
-    "Human rhinovirus A43",
-    "Human rhinovirus type 43"
-  ],
-  "167322": [
-    "rhinovirus A82",
-    "Human rhinovirus 82",
-    "Human rhinovirus A82",
-    "Human rhinovirus type 82"
-  ],
-  "167324": [
-    "rhinovirus A46",
-    "Human rhinovirus 46",
-    "Human rhinovirus A46",
-    "Human rhinovirus type 46"
-  ],
-  "167325": [
-    "rhinovirus B91",
-    "Human rhinovirus 91",
-    "Human rhinovirus B91",
-    "Human rhinovirus type 91"
-  ],
-  "167326": [
-    "rhinovirus B92",
-    "Human rhinovirus 92",
-    "Human rhinovirus B92",
-    "Human rhinovirus type 92"
-  ],
-  "167327": [
-    "rhinovirus B93",
-    "Human rhinovirus 93",
-    "Human rhinovirus B93",
-    "Human rhinovirus type 93"
-  ],
-  "167328": [
-    "rhinovirus B84",
-    "HRV-B84",
-    "Human rhinovirus 84",
-    "Human rhinovirus B84",
-    "Human rhinovirus type 84"
-  ],
-  "167329": [
-    "rhinovirus B35",
-    "Human rhinovirus 35",
-    "Human rhinovirus B35",
-    "Human rhinovirus type 35"
-  ],
-  "167330": [
-    "rhinovirus B97",
-    "Human rhinovirus 97",
-    "Human rhinovirus B97",
-    "Human rhinovirus type 97"
-  ],
-  "170525": [
-    "Measles virus genotype D4",
-    "Measles morbillivirus genotype D4"
-  ],
-  "170528": [
-    "Measles virus genotype D8",
-    "Measles morbillivirus genotype D8"
-  ],
-  "171370": [
-    "human papillomavirus 86",
-    "Human papillomavirus - cand86",
-    "Human papillomavirus type 86"
+  "168238": [
+    "Porcine endogenous retrovirus E",
+    "Porcine endogenous retrovirus class E"
   ],
   "171549": [
     "Bacteroidales",
     "Bacteroidales Krieg 2012 emend. Pikuta et al. 2017"
   ],
-  "171720": [
-    "Enterovirus B69",
-    "Enterovirus 69",
-    "Enterovirus type 69",
-    "EV-B69",
-    "Human enterovirus 69"
-  ],
-  "172148": [
-    "Alkhumra hemorrhagic fever virus",
-    "AHFV"
-  ],
   "172314": [
     "Ljungan virus"
-  ],
-  "172316": [
-    "Ljungan virus 174F",
-    "Ljungan virus strain 174F"
   ],
   "172317": [
     "Ljungan virus 145SL",
@@ -6957,10 +5909,6 @@
   "182093": [
     "unclassified Vesivirus"
   ],
-  "183764": [
-    "Influenza A virus (A/Puerto Rico/8/34/Mount Sinai(H1N1))",
-    "Influenza A virus (A/Puerto Rico/8/1934(mt sinai)(H1N1))"
-  ],
   "185638": [
     "Culex pipiens densovirus",
     "CpDNV"
@@ -6972,372 +5920,6 @@
   "185752": [
     "Avsunviroidae",
     "Viroids"
-  ],
-  "185889": [
-    "rhinovirus B4",
-    "HRV-B4",
-    "Human rhinovirus 4",
-    "Human rhinovirus B4",
-    "Human rhinovirus type 4"
-  ],
-  "185890": [
-    "rhinovirus A8",
-    "Human rhinovirus 8",
-    "Human rhinovirus A8",
-    "Human rhinovirus type 8"
-  ],
-  "185891": [
-    "rhinovirus A9",
-    "Human rhinovirus 9",
-    "Human rhinovirus A9",
-    "Human rhinovirus type 9"
-  ],
-  "185892": [
-    "rhinovirus A10",
-    "Human rhinovirus 10",
-    "Human rhinovirus A10",
-    "Human rhinovirus type 10"
-  ],
-  "185893": [
-    "rhinovirus A13",
-    "Human rhinovirus 13",
-    "Human rhinovirus A13",
-    "Human rhinovirus type 13"
-  ],
-  "185894": [
-    "rhinovirus A15",
-    "Human rhinovirus 15",
-    "Human rhinovirus A15",
-    "Human rhinovirus type 15"
-  ],
-  "185895": [
-    "rhinovirus A19",
-    "HRV-A19",
-    "Human rhinovirus 19",
-    "Human rhinovirus A19",
-    "Human rhinovirus type 19"
-  ],
-  "185896": [
-    "rhinovirus A22",
-    "Human rhinovirus 22",
-    "Human rhinovirus A22",
-    "Human rhinovirus type 22"
-  ],
-  "185897": [
-    "rhinovirus A24",
-    "HRV-A24",
-    "Human rhinovirus 24",
-    "Human rhinovirus A24",
-    "Human rhinovirus type 24"
-  ],
-  "185898": [
-    "rhinovirus A25",
-    "Human rhinovirus 25",
-    "Human rhinovirus A25",
-    "Human rhinovirus type 25"
-  ],
-  "185899": [
-    "rhinovirus B26",
-    "Human rhinovirus 26",
-    "Human rhinovirus B26",
-    "Human rhinovirus type 26"
-  ],
-  "185900": [
-    "rhinovirus B27",
-    "Human rhinovirus 27",
-    "Human rhinovirus B27",
-    "Human rhinovirus type 27"
-  ],
-  "185901": [
-    "rhinovirus A30",
-    "Human rhinovirus 30",
-    "Human rhinovirus A30",
-    "Human rhinovirus type 30"
-  ],
-  "185902": [
-    "rhinovirus A31",
-    "Human rhinovirus 31",
-    "Human rhinovirus A31",
-    "Human rhinovirus type 31"
-  ],
-  "185903": [
-    "rhinovirus A32",
-    "Human rhinovirus 32",
-    "Human rhinovirus A32",
-    "Human rhinovirus type 32"
-  ],
-  "185904": [
-    "rhinovirus A33",
-    "Human rhinovirus 33",
-    "Human rhinovirus A33",
-    "Human rhinovirus type 33"
-  ],
-  "185905": [
-    "rhinovirus A34",
-    "HRV-A34",
-    "Human rhinovirus 34",
-    "Human rhinovirus A34",
-    "Human rhinovirus type 34"
-  ],
-  "185906": [
-    "rhinovirus A38",
-    "Human rhinovirus 38",
-    "Human rhinovirus A38",
-    "Human rhinovirus type 38"
-  ],
-  "185907": [
-    "rhinovirus A39",
-    "HRV-A39",
-    "Human rhinovirus 39",
-    "Human rhinovirus A39",
-    "Human rhinovirus type 39"
-  ],
-  "185908": [
-    "rhinovirus A40",
-    "Human rhinovirus 40",
-    "Human rhinovirus A40",
-    "Human rhinovirus type 40"
-  ],
-  "185909": [
-    "rhinovirus A41",
-    "Human rhinovirus 41",
-    "Human rhinovirus A41",
-    "Human rhinovirus type 41"
-  ],
-  "185910": [
-    "Human rhinovirus A44",
-    "Human rhinovirus 44",
-    "Human rhinovirus type 44"
-  ],
-  "185911": [
-    "rhinovirus A47",
-    "HRV-A47",
-    "Human rhinovirus 47",
-    "Human rhinovirus A47",
-    "Human rhinovirus type 47"
-  ],
-  "185912": [
-    "rhinovirus A51",
-    "HRV-A51",
-    "Human rhinovirus 51",
-    "Human rhinovirus A51",
-    "Human rhinovirus type 51"
-  ],
-  "185913": [
-    "rhinovirus A53",
-    "Human rhinovirus 53",
-    "Human rhinovirus A53",
-    "Human rhinovirus type 53"
-  ],
-  "185914": [
-    "rhinovirus A54",
-    "Human rhinovirus 54",
-    "Human rhinovirus A54",
-    "Human rhinovirus type 54"
-  ],
-  "185915": [
-    "rhinovirus A55",
-    "Human rhinovirus 55",
-    "Human rhinovirus A55",
-    "Human rhinovirus type 55"
-  ],
-  "185916": [
-    "rhinovirus A56",
-    "Human rhinovirus 56",
-    "Human rhinovirus A56",
-    "Human rhinovirus type 56"
-  ],
-  "185917": [
-    "rhinovirus A57",
-    "HRV-A57",
-    "Human rhinovirus 57",
-    "Human rhinovirus A57",
-    "Human rhinovirus type 57"
-  ],
-  "185918": [
-    "rhinovirus A59",
-    "Human rhinovirus 59",
-    "Human rhinovirus A59",
-    "Human rhinovirus type 59"
-  ],
-  "185919": [
-    "rhinovirus A60",
-    "Human rhinovirus 60",
-    "Human rhinovirus A60",
-    "Human rhinovirus type 60"
-  ],
-  "185920": [
-    "rhinovirus A61",
-    "HRV-A61",
-    "Human rhinovirus 61",
-    "Human rhinovirus A61",
-    "Human rhinovirus type 61"
-  ],
-  "185921": [
-    "rhinovirus A63",
-    "HRV-A63",
-    "Human rhinovirus 63",
-    "Human rhinovirus A63",
-    "Human rhinovirus type 63"
-  ],
-  "185922": [
-    "rhinovirus A64",
-    "Human rhinovirus 64",
-    "Human rhinovirus A64",
-    "Human rhinovirus type 64"
-  ],
-  "185923": [
-    "rhinovirus A66",
-    "HRV-A66",
-    "Human rhinovirus 66",
-    "Human rhinovirus A66",
-    "Human rhinovirus type 66"
-  ],
-  "185924": [
-    "rhinovirus A67",
-    "Human rhinovirus 67",
-    "Human rhinovirus A67",
-    "Human rhinovirus type 67"
-  ],
-  "185925": [
-    "rhinovirus A68",
-    "Human rhinovirus 68",
-    "Human rhinovirus A68",
-    "Human rhinovirus type 68"
-  ],
-  "185926": [
-    "rhinovirus B70",
-    "HRV-B70",
-    "Human rhinovirus 70",
-    "Human rhinovirus B70",
-    "Human rhinovirus type 70"
-  ],
-  "185927": [
-    "rhinovirus A71",
-    "HRV-A71",
-    "Human rhinovirus 71",
-    "Human rhinovirus A71",
-    "Human rhinovirus type 71"
-  ],
-  "185928": [
-    "rhinovirus A73",
-    "Human rhinovirus 73",
-    "Human rhinovirus A73",
-    "Human rhinovirus type 73"
-  ],
-  "185929": [
-    "rhinovirus A74",
-    "Human rhinovirus 74",
-    "Human rhinovirus A74",
-    "Human rhinovirus type 74"
-  ],
-  "185930": [
-    "rhinovirus A75",
-    "Human rhinovirus 75",
-    "Human rhinovirus A75",
-    "Human rhinovirus type 75"
-  ],
-  "185931": [
-    "rhinovirus A76",
-    "Human rhinovirus 76",
-    "Human rhinovirus A76",
-    "Human rhinovirus type 76"
-  ],
-  "185932": [
-    "rhinovirus A77",
-    "Human rhinovirus 77",
-    "Human rhinovirus A77",
-    "Human rhinovirus type 77"
-  ],
-  "185933": [
-    "rhinovirus B79",
-    "Human rhinovirus 79",
-    "Human rhinovirus B79",
-    "Human rhinovirus type 79"
-  ],
-  "185934": [
-    "rhinovirus A80",
-    "Human rhinovirus 80",
-    "Human rhinovirus A80",
-    "Human rhinovirus type 80"
-  ],
-  "185935": [
-    "Rhinovirus A81",
-    "Human rhinovirus 81",
-    "Human rhinovirus A81",
-    "Human rhinovirus type 81",
-    "Rhinovirus 81"
-  ],
-  "185936": [
-    "rhinovirus B83",
-    "Human rhinovirus 83",
-    "Human rhinovirus B83",
-    "Human rhinovirus type 83"
-  ],
-  "185937": [
-    "rhinovirus A85",
-    "HRV-A85",
-    "Human rhinovirus 85",
-    "Human rhinovirus A85",
-    "Human rhinovirus type 85"
-  ],
-  "185938": [
-    "rhinovirus B86",
-    "Human rhinovirus 86",
-    "Human rhinovirus B86",
-    "Human rhinovirus type 86"
-  ],
-  "185939": [
-    "rhinovirus A88",
-    "HRV-A88",
-    "Human rhinovirus 88",
-    "Human rhinovirus A88",
-    "Human rhinovirus type 88"
-  ],
-  "185940": [
-    "rhinovirus A90",
-    "Human rhinovirus 90",
-    "Human rhinovirus A90",
-    "Human rhinovirus type 90"
-  ],
-  "185941": [
-    "rhinovirus A94",
-    "Human rhinovirus 94",
-    "Human rhinovirus A94",
-    "Human rhinovirus type 94"
-  ],
-  "185942": [
-    "Human rhinovirus A95",
-    "Human rhinovirus 95",
-    "Human rhinovirus type 95"
-  ],
-  "185943": [
-    "rhinovirus A96",
-    "Human rhinovirus 96",
-    "Human rhinovirus A96",
-    "Human rhinovirus type 96"
-  ],
-  "185944": [
-    "rhinovirus A98",
-    "Human rhinovirus 98",
-    "Human rhinovirus A98",
-    "Human rhinovirus type 98"
-  ],
-  "185945": [
-    "rhinovirus B99",
-    "Human rhinovirus 99",
-    "Human rhinovirus B99",
-    "Human rhinovirus type 99"
-  ],
-  "185946": [
-    "rhinovirus A100",
-    "Human rhinovirus 100",
-    "Human rhinovirus A100",
-    "Human rhinovirus type 100"
-  ],
-  "186160": [
-    "Human papillomavirus type 57b",
-    "Human papillomavirus - 57b"
   ],
   "186188": [
     "Xylanimonas",
@@ -7408,9 +5990,6 @@
   "186938": [
     "Respirovirus"
   ],
-  "188538": [
-    "Human parainfluenza virus 1 strain Washington/1964"
-  ],
   "188539": [
     "Amphotropic murine leukemia virus"
   ],
@@ -7461,11 +6040,6 @@
     "Aichivirus B",
     "Aichi virus B"
   ],
-  "195055": [
-    "Human parechovirus 3",
-    "HPEV-3",
-    "Parechovirus A3"
-  ],
   "195105": [
     "Haematobacter massiliensis",
     "CCUG 47968",
@@ -7514,12 +6088,10 @@
     "Gammainfluenzavirus",
     "Influenzavirus C"
   ],
-  "200154": [
-    "Enterovirus B73",
-    "Enterovirus 73",
-    "Enterovirus EV-B73",
-    "EV-B73",
-    "Human enterovirus 73"
+  "198503": [
+    "Simian adenovirus 21",
+    "SAdV-21",
+    "Simian adenovirus type 21"
   ],
   "200450": [
     "Pseudomonas trivialis",
@@ -7566,6 +6138,15 @@
     "Thermodesulfobacteraeota",
     "Thermodesulfobacteria Garrity and Holt 2002",
     "Thermodesulfobacteriota"
+  ],
+  "202812": [
+    "Adeno-associated virus - 7",
+    "Adeno-associated virus 7"
+  ],
+  "202813": [
+    "Adeno-associated virus - 8",
+    "AAV8",
+    "Adeno-associated virus 8"
   ],
   "202954": [
     "Acinetobacter tandoii",
@@ -7615,16 +6196,6 @@
   ],
   "208294": [
     "Seadornavirus"
-  ],
-  "208893": [
-    "Human respiratory syncytial virus A",
-    "HRSV-A",
-    "Respiratory syncytial virus group A"
-  ],
-  "208895": [
-    "Human respiratory syncytial virus B",
-    "HRSV-B",
-    "Respiratory syncytial virus group B"
   ],
   "211044": [
     "Influenza A virus (A/Puerto Rico/8/1934(H1N1))",
@@ -7688,24 +6259,6 @@
     "Faecalibacterium",
     "Faecalibacterium Duncan et al. 2002"
   ],
-  "218120": [
-    "Human adenovirus 49",
-    "Human adenovirus type 49"
-  ],
-  "222887": [
-    "Enterovirus B77",
-    "Enterovirus 77",
-    "EV-B77",
-    "Human enterovirus 77"
-  ],
-  "222889": [
-    "Enterovirus B74",
-    "Enterovirus 74",
-    "Enterovirus EV-B74",
-    "EV-74",
-    "EV-B74",
-    "Human enterovirus 74"
-  ],
   "225991": [
     "Comamonas aquatica",
     "Aquaspirillum aquaticum Hylemon et al. 1973 (Approved Lists 1980)",
@@ -7739,20 +6292,6 @@
     "SARS coronavirus Tor2",
     "SARS Tor2",
     "Severe acute respiratory syndrome-related coronavirus Tor2"
-  ],
-  "228330": [
-    "SARS coronavirus Urbani",
-    "SARS coronavirus strain Urbani",
-    "SARS-CoV (Urbani strain)"
-  ],
-  "228404": [
-    "SARS coronavirus HKU-39849"
-  ],
-  "228407": [
-    "SARS coronavirus BJ01"
-  ],
-  "228415": [
-    "SARS coronavirus CUHK-W1"
   ],
   "228578": [
     "Youcai mosaic virus"
@@ -7812,9 +6351,6 @@
     "Pseudomonas lurida Behrendt et al. 2007",
     "strain P 513/18"
   ],
-  "247149": [
-    "SARS coronavirus WHU"
-  ],
   "247269": [
     "Human papillomavirus type 96"
   ],
@@ -7845,18 +6381,6 @@
     "Neisseria sp. CCUG 47806",
     "strain 1258/02",
     "Uruburuella suis Vela et al. 2005"
-  ],
-  "253182": [
-    "Human Respiratory syncytial virus 9320"
-  ],
-  "253433": [
-    "SARS coronavirus PUMC01"
-  ],
-  "253434": [
-    "SARS coronavirus PUMC02"
-  ],
-  "253435": [
-    "SARS coronavirus PUMC03"
   ],
   "253700": [
     "Schlumbergera virus X",
@@ -7889,14 +6413,6 @@
     "CIP 104026",
     "Roseomonas gilardii Rihs et al. 1998 emend. Sanchez-Porro et al. 2009",
     "strain 5424"
-  ],
-  "258453": [
-    "Human calicivirus NLV/GII/Langen1061/2002/DE"
-  ],
-  "260047": [
-    "Human adenovirus 3+7",
-    "Human adenovirus type 3+7",
-    "recombinant of Human adenovirus type 3 and 7"
   ],
   "260717": [
     "Human papillomavirus 94",
@@ -7931,9 +6447,6 @@
   "268746": [
     "Prochlorococcus phage P-SSM2",
     "Cyanophage P-SSM2"
-  ],
-  "270642": [
-    "Human group 1 coronavirus associated with pneumonia"
   ],
   "272942": [
     "Rhodobacter capsulatus SB 1003",
@@ -7981,13 +6494,6 @@
     "DSM 15892",
     "strain ED1"
   ],
-  "282345": [
-    "Enterovirus B75",
-    "Enterovirus 75",
-    "EV-75",
-    "EV-B75",
-    "Human enterovirus 75"
-  ],
   "289365": [
     "Human parvovirus 4"
   ],
@@ -8008,9 +6514,6 @@
     "CoV-HKU1",
     "HCoV-HKU1",
     "Human CoV/HKU1"
-  ],
-  "290280": [
-    "Norovirus Hu/GI/Otofuke/1979/JP"
   ],
   "290314": [
     "Sapovirus C12"
@@ -8033,15 +6536,6 @@
     "Escherichia phage JS98",
     "Enterobacteria phage JS98"
   ],
-  "296145": [
-    "Norovirus Hu/NLV/Dresden174/pUS-NorII/1997/GE"
-  ],
-  "297248": [
-    "Enterovirus A90",
-    "enterovirus 90",
-    "EV-A90",
-    "Human enterovirus 90"
-  ],
   "299767": [
     "Enterobacter ludwigii",
     "bacterium K9",
@@ -8054,23 +6548,6 @@
     "Enterobacter sp. GN02730",
     "Pantoea sp. RCE-5",
     "strain EN-119"
-  ],
-  "301186": [
-    "Mumps virus strain L-Zagreb",
-    "Mumps virus L-Zagreb"
-  ],
-  "306588": [
-    "Enterovirus A76",
-    "enterovirus 76",
-    "Enterovirus EV-A76",
-    "EV-A76",
-    "Human enterovirus 76"
-  ],
-  "310755": [
-    "Human enterovirus Ningbo3-02"
-  ],
-  "310756": [
-    "Human enterovirus Hangzhou13-02"
   ],
   "310907": [
     "Enterovirus H",
@@ -8099,55 +6576,6 @@
     "Human T-lymphotropic virus 4",
     "Human T-lymphotropic virus type 4"
   ],
-  "318563": [
-    "Enterovirus B80",
-    "Enterovirus 80",
-    "EV-B80",
-    "Human enterovirus 80"
-  ],
-  "318564": [
-    "Enterovirus B81",
-    "Enterovirus 81",
-    "Human enterovirus 81",
-    "Human enterovirus B81"
-  ],
-  "318565": [
-    "Enterovirus B82",
-    "Enterovirus 82",
-    "EV-B82",
-    "Human enterovirus 82"
-  ],
-  "318566": [
-    "Enterovirus B83",
-    "Enterovirus 83",
-    "Human enterovirus 83"
-  ],
-  "318567": [
-    "Enterovirus B84",
-    "Enterovirus 84",
-    "Human enterovirus 84"
-  ],
-  "318568": [
-    "Enterovirus B85",
-    "Enterovirus 85",
-    "Human enterovirus 85"
-  ],
-  "318569": [
-    "Enterovirus B86",
-    "Enterovirus 86",
-    "Human enterovirus 86"
-  ],
-  "318570": [
-    "Enterovirus B87",
-    "Enterovirus 87",
-    "EV-B87",
-    "Human enterovirus 87"
-  ],
-  "318571": [
-    "Enterovirus B88",
-    "Enterovirus 88",
-    "Human enterovirus 88"
-  ],
   "318843": [
     "Almpiwar virus",
     "Almpivar virus"
@@ -8165,12 +6593,6 @@
     "Mycobacterium phocaicum",
     "Mycolicibacterium phocaicum (Adekambi et al. 2006) Gupta et al. 2018",
     "strain N4"
-  ],
-  "321147": [
-    "SARS coronavirus BJ162"
-  ],
-  "321149": [
-    "SARS coronavirus BJ202"
   ],
   "321846": [
     "Pseudomonas simiae",
@@ -8196,35 +6618,8 @@
     "Methanospirillum hungatei strain JF-1",
     "Methanospirillum hungatei str. JF-1"
   ],
-  "325445": [
-    "Enterovirus C96",
-    "Enterovirus 96",
-    "EV-C96",
-    "Human enterovirus 96",
-    "Human enterovirus C96"
-  ],
-  "325446": [
-    "Enterovirus B97",
-    "Enterovirus 97",
-    "EV-B97",
-    "Human enterovirus 97"
-  ],
-  "325447": [
-    "Enterovirus B100",
-    "Enterovirus 100",
-    "EV-B100",
-    "Human enterovirus 100"
-  ],
   "325455": [
     "Gammapapillomavirus"
-  ],
-  "325568": [
-    "Human papillomavirus type 27b",
-    "Human papillomavirus - 27b"
-  ],
-  "326124": [
-    "Human adenovirus 7d2",
-    "Human adenovirus type 7d2"
   ],
   "327045": [
     "Orthoretrovirinae"
@@ -8279,19 +6674,6 @@
   "333750": [
     "Alphapapillomavirus"
   ],
-  "333751": [
-    "Human papillomavirus type 2"
-  ],
-  "333752": [
-    "human papillomavirus 27",
-    "Human papillomavirus - 27",
-    "Human papillomavirus type 27"
-  ],
-  "333753": [
-    "human papillomavirus 57",
-    "Human papillomavirus - 57",
-    "Human papillomavirus type 57"
-  ],
   "333754": [
     "Alphapapillomavirus 10",
     "Human papillomavirus - 6",
@@ -8343,21 +6725,6 @@
   "333769": [
     "Human papillomavirus type 90",
     "Human papillomavirus - cand90"
-  ],
-  "333770": [
-    "human papillomavirus 72",
-    "Human papillomavirus - 72",
-    "Human papillomavirus type 72"
-  ],
-  "333771": [
-    "human papillomavirus 81",
-    "Human papillomavirus - 81",
-    "Human papillomavirus type 81"
-  ],
-  "333772": [
-    "human papillomavirus 83",
-    "Human papillomavirus - 83",
-    "Human papillomavirus type 83"
   ],
   "333774": [
     "unclassified Papillomaviridae"
@@ -8431,15 +6798,6 @@
     "Human papillomavirus 96",
     "Human papillomavirus - cand96"
   ],
-  "334210": [
-    "human papillomavirus 62",
-    "Human papillomavirus - cand62",
-    "Human papillomavirus type 62"
-  ],
-  "334514": [
-    "Human papillomavirus type 38b",
-    "Human papillomavirus - 38b"
-  ],
   "334584": [
     "Sapovirus Ehime1107/2002/JP",
     "Sapovirus OSV20"
@@ -8462,9 +6820,6 @@
   "335929": [
     "Erythrobacteraceae",
     "Erythrobacteraceae Lee et al. 2005 emend. Xu et al. 2009"
-  ],
-  "336619": [
-    "Norovirus Hu/Chiba/04-1050/2005/JP"
   ],
   "337039": [
     "Alphapapillomavirus 2",
@@ -8521,10 +6876,6 @@
     "Coliphage NC28",
     "Enterobacteria phage NC28"
   ],
-  "338322": [
-    "Human papillomavirus type 68a",
-    "Human papillomavirus - 68a"
-  ],
   "338323": [
     "human papillomavirus 103",
     "Human papillomavirus type 103"
@@ -8537,10 +6888,6 @@
     "human papillomavirus 106",
     "Human papillomavirus type 106"
   ],
-  "338327": [
-    "human papillomavirus 102",
-    "Human papillomavirus type 102"
-  ],
   "338478": [
     "Macaque simian foamy virus",
     "SFV-1",
@@ -8551,6 +6898,11 @@
   ],
   "339351": [
     "unclassified Hantavirus"
+  ],
+  "340017": [
+    "Norovirus GIII",
+    "Norovirus genogroup 3",
+    "Norovirus genogroup III"
   ],
   "340146": [
     "Exiguobacterium mexicanum",
@@ -8572,11 +6924,6 @@
   ],
   "341053": [
     "Beilong virus"
-  ],
-  "343463": [
-    "Human adenovirus 11a",
-    "Human adenovirus type 11 (Ad11A) (strain BC34)",
-    "Human adenovirus type 11a"
   ],
   "343874": [
     "Empedobacter falsenii",
@@ -8600,15 +6947,8 @@
   "348013": [
     "Madrid virus"
   ],
-  "351680": [
-    "Measles virus genotypes and isolates",
-    "Measles morbillivirus genotypes and isolates"
-  ],
   "352926": [
     "unclassified Astroviridae"
-  ],
-  "353145": [
-    "SARS coronavirus ZJ02"
   ],
   "353769": [
     "unclassified Gammaretrovirus"
@@ -8616,26 +6956,10 @@
   "354276": [
     "Enterobacter cloacae complex"
   ],
-  "356113": [
-    "unclassified Hepatitis C virus"
-  ],
   "356114": [
     "Hepatitis C virus genotype 3",
     "Hepatitis C virus 3",
     "Hepatitis C virus type 3"
-  ],
-  "356391": [
-    "Hepatitis C virus (isolate 6a33)"
-  ],
-  "356426": [
-    "Hepatitis C virus subtype 3a",
-    "Hepatitis C virus 3a",
-    "Hepatitis C virus genotype 3a",
-    "Hepatitis C virus type 3a",
-    "hepatitis C virus type 3a HCV-3a"
-  ],
-  "356466": [
-    "Hepatitis C virus subtype 2k"
   ],
   "356663": [
     "Xenotropic MuLV-related virus VP35",
@@ -8670,9 +6994,6 @@
   ],
   "360911": [
     "Exiguobacterium sp. AT1b"
-  ],
-  "362784": [
-    "Human parechovirus 4"
   ],
   "363628": [
     "unclassified Anelloviridae",
@@ -8718,9 +7039,6 @@
   "369960": [
     "Porcine type-C oncovirus"
   ],
-  "370037": [
-    "Norovirus Hu/Guangzhou/NVgz01/CHN"
-  ],
   "370128": [
     "Influenza A virus (A/Northern Territory/60/1968(H3N2))",
     "Influenza A Virus (A/Northern Territory/1960(H3N2))",
@@ -8765,28 +7083,6 @@
     "Parabacteroides",
     "Parabacteroides Sakamoto and Benno 2006"
   ],
-  "376148": [
-    "Human parechovirus 5"
-  ],
-  "377612": [
-    "unclassified Human adenovirus B"
-  ],
-  "378809": [
-    "Ravn virus - Ravn, Kenya, 1987",
-    "Lake Victoria marburgvirus - Ravn",
-    "Lake Victoria marburgvirus-Ravn",
-    "Lake Victoria marburgvirus - Ravn (Kenya, 1987)",
-    "RAVV-Rav"
-  ],
-  "378830": [
-    "Lake Victoria marburgvirus - Angola2005"
-  ],
-  "378831": [
-    "Lake Victoria marburgvirus - DRC1999"
-  ],
-  "379081": [
-    "Norovirus Hu/MK04/2004/JP"
-  ],
   "381638": [
     "unclassified Orthoreovirus"
   ],
@@ -8805,13 +7101,6 @@
     "Moraxella bovoculi Angelos et al. 2007",
     "strain 237"
   ],
-  "388737": [
-    "SARS coronavirus GDH-BJH01"
-  ],
-  "392172": [
-    "Norovirus Hu/GII.4/MD-2004/2004/US",
-    "Norovirus Hu/NoV/GII.4/MD-2004/2004/US"
-  ],
   "392610": [
     "Sphingorhabdus lacus",
     "alpha proteobacterium IMCC1753",
@@ -8828,22 +7117,15 @@
   "394504": [
     "Human bocavirus WLL-1"
   ],
+  "397342": [
+    "Horsepox virus"
+  ],
   "398767": [
     "Trichlorobacter lovleyi SZ",
     "Geobacter lovleyi SZ"
   ],
   "404135": [
     "Bovine coronavirus isolate Alpaca"
-  ],
-  "408681": [
-    "Enterovirus B101",
-    "Enterovirus 101",
-    "EV-B101",
-    "Human enterovirus 101"
-  ],
-  "411152": [
-    "Human parechovirus 6",
-    "Human parechovirus type 6"
   ],
   "411459": [
     "Blautia obeum ATCC 29174",
@@ -8853,12 +7135,6 @@
     "Streptococcus phage SMP",
     "Streptococcus suis phage SMP"
   ],
-  "413256": [
-    "Hepatitis C virus subtype 6l"
-  ],
-  "413257": [
-    "Hepatitis C virus subtype 6o"
-  ],
   "419697": [
     "Melaka orthoreovirus"
   ],
@@ -8867,16 +7143,6 @@
     "archaeal virus",
     "bacterial viruses",
     "prokaryotic virus"
-  ],
-  "423446": [
-    "KI polyomavirus Stockholm 60",
-    "KIPyV strain Stockholm 60"
-  ],
-  "423447": [
-    "KI polyomavirus Stockholm 350"
-  ],
-  "423448": [
-    "KI polyomavirus Stockholm 380"
   ],
   "425279": [
     "Rehmannia mosaic virus"
@@ -8919,12 +7185,6 @@
     "Lactobacillus phage phiPYB5",
     "Lactobacillus phage YB5"
   ],
-  "438880": [
-    "Hepatitis C virus subtype 6c"
-  ],
-  "438881": [
-    "Hepatitis C virus subtype 6p"
-  ],
   "439490": [
     "unclassified ssRNA viruses",
     "unassigned ssRNA viruses"
@@ -8959,18 +7219,6 @@
     "Geobacillus virus E2",
     "Bacteriophage GSVE2"
   ],
-  "449277": [
-    "West Nile virus SA93/01"
-  ],
-  "449278": [
-    "West Nile virus SPU116/89"
-  ],
-  "449279": [
-    "West Nile virus SA381/00"
-  ],
-  "449280": [
-    "West Nile virus H442"
-  ],
   "451344": [
     "unclassified archaeal viruses",
     "archaeal virus",
@@ -8987,9 +7235,6 @@
   "459349": [
     "Candidatus Cloacimonas acidaminovorans str. Evry",
     "Candidatus Cloacamonas acidaminovorans str. Evry"
-  ],
-  "459785": [
-    "Human adenovirus 3+11p"
   ],
   "461711": [
     "Synechococcus phage S-CBP42",
@@ -9008,16 +7253,6 @@
   "464095": [
     "Picornavirales"
   ],
-  "466217": [
-    "Chikungunya virus Wuerzburg 1",
-    "Chikungunya virus strain Wuerzburg-1"
-  ],
-  "467339": [
-    "Hepatitis C virus subtype 6q"
-  ],
-  "471358": [
-    "Human papillomavirus type 57c"
-  ],
   "472759": [
     "Nitrosococcus halophilus Nc 4",
     "Nitrosococcus halophilus strain Nc 4",
@@ -9025,9 +7260,6 @@
   ],
   "475861": [
     "Nupapillomavirus"
-  ],
-  "479952": [
-    "Norovirus Hu/Texas/TCH04-577/2004/US"
   ],
   "482957": [
     "Burkholderia lata",
@@ -9045,9 +7277,6 @@
     "LMG:22485",
     "strain 383"
   ],
-  "484894": [
-    "Hepatitis C virus subtype 1g"
-  ],
   "487316": [
     "Acinetobacter soli",
     "Acinetobacter soli Kim et al. 2009",
@@ -9062,20 +7291,6 @@
     "Influenza A virus (A/Korea/426/68(H2N2))",
     "Influenza A virus (STRAIN A/KOREA/426/68)"
   ],
-  "489450": [
-    "HBV genotype A1"
-  ],
-  "489451": [
-    "HBV genotype A2"
-  ],
-  "489455": [
-    "hepatitis B virus genotype A",
-    "HBV genotype A"
-  ],
-  "489460": [
-    "Hepatitis B virus genotype B",
-    "HBV genotype B"
-  ],
   "489632": [
     "Pseudomonas chengduensis",
     "CGMCC 2318",
@@ -9084,17 +7299,9 @@
     "Pseudomonas sp. MBR",
     "strain MBR"
   ],
-  "489821": [
-    "Norovirus GII.4",
-    "Norovirus genogroup GII.4"
-  ],
   "490039": [
     "Norovirus GII.2",
     "Norovirus genogroup GII.2"
-  ],
-  "490041": [
-    "Norovirus GII.3",
-    "Norovirus genogroup GII.3"
   ],
   "490043": [
     "Norovirus GII isolates",
@@ -9112,10 +7319,6 @@
   "493803": [
     "Merkel cell polyomavirus",
     "MCPyV isolate R17b"
-  ],
-  "499193": [
-    "Norovirus GII.6",
-    "Norovirus genogroup GII.6"
   ],
   "499556": [
     "Chapare mammarenavirus",
@@ -9136,29 +7339,6 @@
     "Synergistaeota",
     "Synergistetes Jumas-Bilak et al. 2007 emend. 2009",
     "Synergistota"
-  ],
-  "508775": [
-    "Norovirus GII.9",
-    "Norovirus genogroup GII.9"
-  ],
-  "509628": [
-    "Hepatitis E virus type 3",
-    "Hepatitis E virus genotype 3"
-  ],
-  "511429": [
-    "SARS coronavirus BJ182-12"
-  ],
-  "511430": [
-    "SARS coronavirus BJ182-4"
-  ],
-  "511431": [
-    "SARS coronavirus BJ182-8"
-  ],
-  "511432": [
-    "SARS coronavirus BJ182a"
-  ],
-  "511433": [
-    "SARS coronavirus BJ182b"
   ],
   "512169": [
     "Tulane virus"
@@ -9242,117 +7422,6 @@
     "LMG 24706",
     "LMG:24706"
   ],
-  "546951": [
-    "Norovirus Hu/GII-4/Hokkaido1/2006/JP"
-  ],
-  "546952": [
-    "Norovirus Hu/GII-4/Hokkaido2/2006/JP"
-  ],
-  "546953": [
-    "Norovirus Hu/GII-4/Hokkaido3/2006/JP"
-  ],
-  "546954": [
-    "Norovirus Hu/GII-4/Hokkaido4/2006/JP"
-  ],
-  "546955": [
-    "Norovirus Hu/GII-4/Hokkaido5/2006/JP"
-  ],
-  "546956": [
-    "Norovirus Hu/GII-4/Aomori1/2006/JP"
-  ],
-  "546957": [
-    "Norovirus Hu/GII-4/Aomori2/2006/JP"
-  ],
-  "546958": [
-    "Norovirus Hu/GII-4/Aomori4/2006/JP"
-  ],
-  "546959": [
-    "Norovirus Hu/GII-4/Aomori5/2006/JP"
-  ],
-  "546960": [
-    "Norovirus Hu/GII-4/Akita1/2006/JP"
-  ],
-  "546961": [
-    "Norovirus Hu/GII-4/Akita2/2006/JP"
-  ],
-  "546962": [
-    "Norovirus Hu/GII-4/Akita4/2006/JP"
-  ],
-  "546963": [
-    "Norovirus Hu/GII-4/Akita5/2006/JP"
-  ],
-  "546964": [
-    "Norovirus Hu/GII-4/Miyagi2/2006/JP"
-  ],
-  "546965": [
-    "Norovirus Hu/GII-4/Miyagi4/2006/JP"
-  ],
-  "546966": [
-    "Norovirus Hu/GII-4/Miyagi5/2006/JP"
-  ],
-  "546967": [
-    "Norovirus Hu/GII-4/Toyama1/2006/JP"
-  ],
-  "546968": [
-    "Norovirus Hu/GII-4/Toyama4/2006/JP"
-  ],
-  "546969": [
-    "Norovirus Hu/GII-4/Toyama5/2006/JP"
-  ],
-  "546970": [
-    "Norovirus Hu/GII-4/Aichi3/2006/JP"
-  ],
-  "546971": [
-    "Norovirus Hu/GII-4/Aichi4/2006/JP"
-  ],
-  "546972": [
-    "Norovirus Hu/GII-4/Sakai2/2006/JP"
-  ],
-  "546973": [
-    "Norovirus Hu/GII-4/Sakai3/2006/JP"
-  ],
-  "546974": [
-    "Norovirus Hu/GII-4/Sakai4/2006/JP"
-  ],
-  "546975": [
-    "Norovirus Hu/GII-4/Hiroshima1/2006/JP"
-  ],
-  "546976": [
-    "Norovirus Hu/GII-4/Hiroshima2/2006/JP"
-  ],
-  "546977": [
-    "Norovirus Hu/GII-4/Ehime1/2006/JP"
-  ],
-  "546978": [
-    "Norovirus Hu/GII-4/Ehime2/2006/JP"
-  ],
-  "546979": [
-    "Norovirus Hu/GII-4/Ehime5/2006/JP"
-  ],
-  "546980": [
-    "Norovirus Hu/GII-4/Saga1/2006/JP"
-  ],
-  "546981": [
-    "Norovirus Hu/GII-4/Saga4/2006/JP"
-  ],
-  "546982": [
-    "Norovirus Hu/GII-4/Saga5/2006/JP"
-  ],
-  "546983": [
-    "Norovirus Hu/GII-4/Kumamoto1/2006/JP"
-  ],
-  "546984": [
-    "Norovirus Hu/GII-4/Kumamoto2/2006/JP"
-  ],
-  "546985": [
-    "Norovirus Hu/GII-4/Kumamoto3/2006/JP"
-  ],
-  "546986": [
-    "Norovirus Hu/GII-4/Kumamoto4/2006/JP"
-  ],
-  "546987": [
-    "Norovirus Hu/GII-4/Kumamoto5/2006/JP"
-  ],
   "547228": [
     "Bacillus phage PM1",
     "Bacillus subtilis (natto) bacteriophage PM1"
@@ -9399,15 +7468,6 @@
     "LMG 24775",
     "LMG:24775",
     "strain 332"
-  ],
-  "563190": [
-    "Human papillomavirus FA75/KI88-03"
-  ],
-  "565302": [
-    "Human adenovirus B1"
-  ],
-  "565303": [
-    "Human adenovirus B2"
   ],
   "565537": [
     "human papillomavirus 108",
@@ -9474,116 +7534,10 @@
     "Desulfobulbus propionicus strain DSM 2032",
     "Desulfobulbus propionicus str. DSM 2032"
   ],
-  "579114": [
-    "Norovirus GII.14",
-    "Norovirus genogroup GII.14"
-  ],
   "584708": [
     "Aminomonas paucivorans DSM 12260",
     "Aminomonas paucivorans strain DSM 12260",
     "Aminomonas paucivorans str. DSM 12260"
-  ],
-  "585060": [
-    "Simian adenovirus 26"
-  ],
-  "585063": [
-    "Simian adenovirus 29"
-  ],
-  "585064": [
-    "Simian adenovirus 30"
-  ],
-  "585066": [
-    "Simian adenovirus 32"
-  ],
-  "585067": [
-    "Simian adenovirus 33"
-  ],
-  "585068": [
-    "Simian adenovirus 34"
-  ],
-  "585070": [
-    "Simian adenovirus 36"
-  ],
-  "585071": [
-    "Simian adenovirus 37",
-    "SAdV-37"
-  ],
-  "585072": [
-    "Simian adenovirus 38",
-    "SAdV-38"
-  ],
-  "585073": [
-    "Simian adenovirus 39",
-    "SAdV-39"
-  ],
-  "585077": [
-    "Simian adenovirus 43"
-  ],
-  "585078": [
-    "Simian adenovirus 44"
-  ],
-  "585079": [
-    "Simian adenovirus 45"
-  ],
-  "585080": [
-    "Simian adenovirus 46"
-  ],
-  "585081": [
-    "Simian adenovirus 47"
-  ],
-  "585082": [
-    "Simian adenovirus 25.2"
-  ],
-  "585083": [
-    "Simian adenovirus 27.1"
-  ],
-  "585084": [
-    "Simian adenovirus 27.2"
-  ],
-  "585085": [
-    "Simian adenovirus 28.1"
-  ],
-  "585086": [
-    "Simian adenovirus 28.2"
-  ],
-  "585087": [
-    "Simian adenovirus 31.1"
-  ],
-  "585088": [
-    "Simian adenovirus 31.2"
-  ],
-  "585089": [
-    "Simian adenovirus 35.1"
-  ],
-  "585090": [
-    "Simian adenovirus 35.2"
-  ],
-  "585091": [
-    "Simian adenovirus 37.1"
-  ],
-  "585092": [
-    "Simian adenovirus 37.2"
-  ],
-  "585093": [
-    "Simian adenovirus 40.1"
-  ],
-  "585094": [
-    "Simian adenovirus 40.2"
-  ],
-  "585095": [
-    "Simian adenovirus 41.1"
-  ],
-  "585096": [
-    "Simian adenovirus 41.2"
-  ],
-  "585097": [
-    "Simian adenovirus 42.1"
-  ],
-  "585098": [
-    "Simian adenovirus 42.2"
-  ],
-  "585099": [
-    "Simian adenovirus 42.3"
   ],
   "585893": [
     "Picobirnaviridae"
@@ -9620,9 +7574,6 @@
     "Human papillomavirus 113",
     "Human papillomavirus type 113"
   ],
-  "587432": [
-    "Norovirus Hu/GII-4/CUK-3/2008/KR"
-  ],
   "588932": [
     "Brevundimonas naejangsanensis",
     "Brevundimonas naejangsanensis Kang et al. 2009",
@@ -9647,41 +7598,6 @@
     "Variovorax paradoxus EPS",
     "Variovorax paradoxus strain EPS",
     "Variovorax paradoxus str. EPS"
-  ],
-  "602074": [
-    "Human parechovirus 8"
-  ],
-  "617102": [
-    "Yellow fever virus 17D/Tiantan"
-  ],
-  "619591": [
-    "Monkeypox virus Zaire-96-I-16"
-  ],
-  "621277": [
-    "Hepatitis B virus 146/Thailand",
-    "Hepatitis B virus 146/Thailand C/G recombinant"
-  ],
-  "621278": [
-    "recombinant Hepatitis B virus"
-  ],
-  "626160": [
-    "Human astrovirus 1 Beijing/128/2005/CHN"
-  ],
-  "626164": [
-    "Human astrovirus 1 Beijing/176/2006/CHN"
-  ],
-  "626180": [
-    "Human astrovirus 1 Beijing/291/2007/CHN"
-  ],
-  "626181": [
-    "Human astrovirus 1 Beijing/293/2007/CHN"
-  ],
-  "627439": [
-    "Human enteric coronavirus strain 4408"
-  ],
-  "627442": [
-    "SARS coronavirus P2",
-    "SARS coronavirus strain P2"
   ],
   "629725": [
     "Chandiru virus",
@@ -9752,18 +7668,6 @@
     "Astrovirus VA1",
     "Human astrovirus VA1"
   ],
-  "647514": [
-    "Norovirus GI.1",
-    "Norovirus genogroup GI.1"
-  ],
-  "647515": [
-    "Norovirus GI.2",
-    "Norovirus genogroup GI.2"
-  ],
-  "647520": [
-    "Norovirus GI.6",
-    "Norovirus genogroup GI.6"
-  ],
   "649188": [
     "Lujo mammarenavirus",
     "Lujo virus"
@@ -9787,34 +7691,15 @@
   "652810": [
     "Human papillomavirus type 85"
   ],
-  "655428": [
-    "Human rhinovirus QCE",
-    "Human rhinovirus C strain QCE"
-  ],
   "657313": [
     "[Ruminococcus] torques L2-14",
     "Ruminococcus torques L2-14",
     "Ruminococcus torques strain L2-14",
     "Ruminococcus torques str. L2-14"
   ],
-  "658397": [
-    "Norovirus Hu/GI.2/Leuven/2003/BEL"
-  ],
   "660470": [
     "Mesotoga prima MesG1.Ag.4.2",
     "Thermotogales bacterium MesG1.Ag.4.2"
-  ],
-  "660656": [
-    "Norovirus Hu/GII.4/CHDC2094/1974/US"
-  ],
-  "660657": [
-    "Norovirus Hu/GII.4/CHDC3967/1988/US"
-  ],
-  "660658": [
-    "Norovirus Hu/GII.4/CHDC4108/1987/US"
-  ],
-  "660659": [
-    "Norovirus Hu/GII.4/CHDC4871/1977/US"
   ],
   "663243": [
     "unclassified Variovorax"
@@ -9841,6 +7726,9 @@
     "Human papillomavirus 125",
     "Human papillomavirus SIBX9",
     "Human papillomavirus type 125"
+  ],
+  "673457": [
+    "Norovirus dog/GVI.1/HKU_Ca026F/2007/HKG"
   ],
   "675074": [
     "unclassified Picornavirales",
@@ -9879,10 +7767,6 @@
   ],
   "683174": [
     "Astrovirus VA3"
-  ],
-  "684605": [
-    "Norovirus GII.12",
-    "Norovirus genogroup GII.12"
   ],
   "687329": [
     "Anelloviridae",
@@ -10015,11 +7899,6 @@
     "Sandfly fever Turkey virus",
     "Sandfly Sicilian Turkey virus"
   ],
-  "689403": [
-    "Human bocavirus 1",
-    "Human bocaparvovirus 1",
-    "Human bocavirus type 1"
-  ],
   "691963": [
     "Rhodococcus phage ReqiPine5",
     "Rhodococcus equi phage ReqiPine5"
@@ -10033,12 +7912,6 @@
     "Cafeteria roenbergensis virus MGF-2008",
     "Cafeteria roenbergensis virus strain BV-PW1",
     "CroV"
-  ],
-  "693426": [
-    "Hepatitis C virus subtype 4n"
-  ],
-  "693427": [
-    "Hepatitis C virus subtype 4r"
   ],
   "693582": [
     "Pseudomonas phage phi-2"
@@ -10121,21 +7994,6 @@
     "NBRC114689",
     "strain C5S11"
   ],
-  "707384": [
-    "Norovirus Hu/GII-4/Aichi1/2007/JP"
-  ],
-  "707385": [
-    "Norovirus Hu/GII-4/Aichi1/2008/JP"
-  ],
-  "707386": [
-    "Norovirus Hu/GII-4/Aichi2/2007/JP"
-  ],
-  "707387": [
-    "Norovirus Hu/GII-4/Aichi2/2008/JP"
-  ],
-  "707388": [
-    "Norovirus Hu/GII-4/Aichi3/2007/JP"
-  ],
   "709032": [
     "Sulfuricurvum kujiense DSM 16994",
     "Sulfuricurvum kujiense strain DSM 16994",
@@ -10150,21 +8008,9 @@
     "Mycobacterium phage RedRock",
     "Mycobacteriophage RedRock"
   ],
-  "714567": [
-    "Norovirus Hu/GII-4/FUMI/2010/JP"
-  ],
-  "714978": [
-    "Human adenovirus 55",
-    "Human adenovirus B55",
-    "Human adenovirus type 55"
-  ],
   "720708": [
     "Human papillomavirus 117",
     "Human papillomavirus type 117"
-  ],
-  "735496": [
-    "Human papillomavirus type 114",
-    "Human papillomavirus 114"
   ],
   "735504": [
     "unclassified Gammapapillomavirus"
@@ -10222,9 +8068,6 @@
     "Human papillomavirus SIBX2",
     "Human papillomavirus type 151"
   ],
-  "745709": [
-    "Hepatitis C virus subtype 4o"
-  ],
   "746830": [
     "Human polyomavirus 6",
     "Polyomavirus HPyV6"
@@ -10240,10 +8083,6 @@
   ],
   "747056": [
     "Blueberry shock virus"
-  ],
-  "748172": [
-    "Norovirus Hu/GII.14/8610/Saga/2008/JPN",
-    "Norovirus Hu/GII/8610/Saga/2008/JPN"
   ],
   "749340": [
     "Xenotropic MuLV-related virus 22Rv1/CWR-R1",
@@ -10277,15 +8116,6 @@
   "754066": [
     "Halorubrum virus CGphi46",
     "Halorubrum phage CGphi46"
-  ],
-  "756495": [
-    "Norovirus Hu/GII/Shanghai/SH2/2008/CHN"
-  ],
-  "756496": [
-    "Norovirus Hu/Shanghai/SH5/2009/CHN"
-  ],
-  "756497": [
-    "Norovirus Hu/Shanghai/SH312/2009/CHN"
   ],
   "756892": [
     "Acinetobacter indicus",
@@ -10331,10 +8161,6 @@
   "762660": [
     "Acinetobacter phage Ac42"
   ],
-  "763792": [
-    "Measles virus genotype H1",
-    "Measles morbillivirus genotype H1"
-  ],
   "764561": [
     "Brochothrix phage NF5",
     "Brochothrix thermosphacta bacteriophage NF5"
@@ -10363,12 +8189,6 @@
   "767521": [
     "Astrovirus SG"
   ],
-  "804310": [
-    "JC polyomavirus type 3"
-  ],
-  "858367": [
-    "Astrovirus MLB1 HK05"
-  ],
   "858619": [
     "Corynebacterium variabile DSM 44702",
     "Corynebacterium variabile CIP 107183",
@@ -10388,19 +8208,12 @@
     "Psychrobacter sp. K11B3",
     "strain 13983"
   ],
-  "861519": [
-    "Enterovirus C109",
-    "EV-C109",
-    "HEV109",
-    "Human enterovirus 109",
-    "Human enterovirus C109"
-  ],
   "862909": [
     "Trichodysplasia spinulosa-associated polyomavirus",
     "TSPyV"
   ],
-  "863240": [
-    "Norovirus Hu/GII.3/CBNU1/2006/KOR"
+  "864686": [
+    "Bocavirus gorilla/GBoV1/2009"
   ],
   "869209": [
     "Treponema succinifaciens DSM 2489",
@@ -10411,47 +8224,14 @@
   "873551": [
     "Recovirus"
   ],
+  "879096": [
+    "Hepatitis E virus rat/R63/DEU/2009"
+  ],
   "879212": [
     "Desulfobacter postgatei 2ac9",
     "Desulfobacter postgatei DSM 2034",
     "Desulfobacter postgatei str. 2ac9",
     "Desulfobacter postgatei strain 2ac9"
-  ],
-  "880562": [
-    "Norovirus Hu/GII.4/JB-15/KOR/2008"
-  ],
-  "880565": [
-    "Human adenovirus 56",
-    "HAdV-D56",
-    "Human adenovirus CR/France/2008",
-    "Human adenovirus D56"
-  ],
-  "884093": [
-    "Measles virus strain MVi/New York.USA/26.09/3"
-  ],
-  "884094": [
-    "Measles virus strain MVi/Florida.USA/19.09"
-  ],
-  "884095": [
-    "Measles virus strain MVi/Virginia.USA/15.09"
-  ],
-  "884096": [
-    "Measles virus strain MVi/Arizona.USA/11.08/2"
-  ],
-  "884097": [
-    "Measles virus strain MVi/Texas.USA/4.07"
-  ],
-  "884098": [
-    "Measles virus strain MVi/New Jersey.USA/45.05"
-  ],
-  "884099": [
-    "Measles virus strain MVi/California.USA/8.04"
-  ],
-  "884100": [
-    "Measles virus strain MVi/California.USA/16.03"
-  ],
-  "884101": [
-    "Measles virus strain MVi/Pennsylvania.USA/20.09"
   ],
   "909328": [
     "Human papillomavirus 149",
@@ -10538,6 +8318,10 @@
     "human papillomavirus 118",
     "Human papillomavirus type 118"
   ],
+  "929831": [
+    "Simian Agent 10",
+    "SA10"
+  ],
   "931209": [
     "Human papillomavirus type 128",
     "Human papillomavirus 128"
@@ -10553,14 +8337,8 @@
   "933438": [
     "Murine leukemia virus N417"
   ],
-  "934293": [
-    "Norovirus Hu/GII.12/HS210/2010/USA"
-  ],
   "935222": [
     "Flavobacterium sp. Sr18"
-  ],
-  "940838": [
-    "Human papillomavirus type 68b"
   ],
   "942038": [
     "Human papillomavirus 148",
@@ -10583,18 +8361,12 @@
     "Marseillevirus Senegal",
     "Senegalvirus"
   ],
-  "980087": [
-    "Human adenovirus 58"
-  ],
   "981323": [
     "Gordonia phage GTE2",
     "Bacteriophage GTE2"
   ],
   "985691": [
     "Sapovirus Hu/GI.2/BR-DF01/BRA/2009"
-  ],
-  "988774": [
-    "Human polyomavirus IPPyV"
   ],
   "988776": [
     "Human gyrovirus 1",
@@ -10646,9 +8418,6 @@
   "1004889": [
     "Maldonado virus"
   ],
-  "1006008": [
-    "Human enterovirus 71 HZ08/Hangzhou/2008"
-  ],
   "1006576": [
     "Defluviitoga tunisiensis",
     "Defluviitoga tunisiensis Ben Hania et al. 2012",
@@ -10656,6 +8425,10 @@
     "JCM 17210",
     "strain SulfLac1",
     "Thermotogaceae bacterium SulfLac1"
+  ],
+  "1009842": [
+    "unclassified Hepeviridae",
+    "unassigned Hepeviridae"
   ],
   "1028416": [
     "Psychrobacter sp. DAB_AL43B"
@@ -10680,9 +8453,6 @@
     "Clostridium phage phi34O",
     "PhiCP34O"
   ],
-  "1046049": [
-    "Norovirus Hu/GII.12/HS206/2010/USA"
-  ],
   "1046251": [
     "Maraba virus",
     "MARAV"
@@ -10699,12 +8469,6 @@
   "1049224": [
     "Xenotropic MuLV-related virus RKO",
     "Xenotropic MuLV-related virus XCL4"
-  ],
-  "1052603": [
-    "HBV recombinant B/C"
-  ],
-  "1052604": [
-    "HBV recombinant C/G"
   ],
   "1054033": [
     "Arcobacter venerupis",
@@ -10726,16 +8490,6 @@
     "Human papillomavirus 126",
     "HPV126",
     "Human papillomavirus type 126"
-  ],
-  "1056492": [
-    "Measles virus genotype G3",
-    "Measles morbillivirus genotype G3"
-  ],
-  "1069441": [
-    "Human adenovirus 61",
-    "HAdV 61",
-    "Human adenovirus MZ",
-    "Human adenovirus strain MZ"
   ],
   "1070408": [
     "Human papillomavirus 135",
@@ -10812,17 +8566,9 @@
     "Mycobacterium phage Stinger",
     "Mycobacteriophage Stinger"
   ],
-  "1089795": [
-    "Measles virus strain MVi/Washington.USA/18.08/1"
-  ],
   "1090134": [
     "Salmonella phage SPN3US",
     "Salmonella bacteriophage SPN3US"
-  ],
-  "1094363": [
-    "Human adenovirus 65",
-    "HAdV 65",
-    "Human adenovirus D B172/Dhaka City"
   ],
   "1094466": [
     "Flavobacterium indicum GPTSA100-9 = DSM 17447",
@@ -10835,37 +8581,8 @@
   "1094892": [
     "Megavirus chiliensis"
   ],
-  "1094895": [
-    "Hepatitis C virus subtype 3i",
-    "Hepatitis C virus 3i"
-  ],
-  "1094898": [
-    "Hepatitis C virus subtype 4L",
-    "Hepatitis C virus 4L"
-  ],
-  "1094899": [
-    "Hepatitis C virus subtype 4g",
-    "Hepatitis C virus 4g"
-  ],
-  "1094900": [
-    "Hepatitis C virus subtype 4m",
-    "Hepatitis C virus 4m"
-  ],
-  "1094901": [
-    "Hepatitis C virus subtype 2m",
-    "Hepatitis C virus 2m"
-  ],
-  "1096763": [
-    "Human adenovirus 68",
-    "Human adenovirus 3-16",
-    "Human adenovirus type 68"
-  ],
   "1100043": [
     "Apis mellifera filamentous virus"
-  ],
-  "1101371": [
-    "Human adenovirus 67",
-    "Human adenovirus D B109/Dhaka City"
   ],
   "1108925": [
     "Human bocavirus isolate SH1"
@@ -10893,11 +8610,8 @@
     "Blautia wexlerae WAL 14507",
     "Ruminococcus sp. WAL 14507"
   ],
-  "1124795": [
-    "Human adenovirus 63"
-  ],
-  "1126254": [
-    "Lake Victoria marburgvirus - Leiden"
+  "1123958": [
+    "Chimpanzee adenovirus Y25"
   ],
   "1127514": [
     "Aeromonas phage vB_AsaM-56"
@@ -10922,15 +8636,8 @@
     "Rhodobacter phage RcapNL",
     "Rhodobacter capsulatus phage RcapNL"
   ],
-  "1133122": [
-    "Norovirus Hu/GII.4/New Orleans/2010/USA"
-  ],
   "1141138": [
     "Cronobacter phage vB_CsaM_GAP161"
-  ],
-  "1145295": [
-    "Human adenovirus 64",
-    "Human adenovirus type 64"
   ],
   "1146877": [
     "Bat mastadenovirus A",
@@ -10974,24 +8681,6 @@
     "Stenotrophomonas phage Smp131",
     "Stenotrophomonas maltophilia phage Smp131"
   ],
-  "1173217": [
-    "Norovirus Hu/GI.6/Kingston/ACT160D/2010/AU"
-  ],
-  "1175308": [
-    "Norovirus Hu/GI/10360/2010/VNM"
-  ],
-  "1175309": [
-    "Norovirus Hu/GII/10002/2009/VNM"
-  ],
-  "1175310": [
-    "Norovirus Hu/GII/10003/2009/VNM"
-  ],
-  "1175311": [
-    "Norovirus Hu/GII/10012/2009/VNM"
-  ],
-  "1175312": [
-    "Norovirus Hu/GII/10037/2009/VNM"
-  ],
   "1175654": [
     "Pseudomonas phage PaMx25"
   ],
@@ -11022,32 +8711,11 @@
   "1176736": [
     "Pitaya virus X"
   ],
-  "1183312": [
-    "Norovirus Hu/GII.4/Rockdale/NSW006D/2009/AU"
-  ],
-  "1183318": [
-    "Norovirus Hu/GIV.1/LakeMacquarie/NSW268O/2010/AU"
-  ],
-  "1183319": [
-    "Norovirus Hu/GII.g-GII.12/Gunnedah/NSW895P/2010/AU"
-  ],
-  "1183320": [
-    "Norovirus Hu/GII.g-GII.12/Wahroonga/NSW004P/2009/AU"
-  ],
   "1184267": [
     "Pseudobdellovibrio exovorus JSS",
     "Bdellovibrio exovorus strain JSS",
     "Bdellovibrio exovorus str. JSS",
     "Bdellovibrio sp. JSS"
-  ],
-  "1184496": [
-    "Norovirus Hu/GII-4/CBNU2/2007/KR"
-  ],
-  "1184497": [
-    "Norovirus Hu/GII.4/CHDC5191/1974/USA"
-  ],
-  "1184498": [
-    "Norovirus Hu/GI.1/8FIIa/1968/USA"
   ],
   "1193502": [
     "Sulfurospirillum halorespirans DSM 13726",
@@ -11056,93 +8724,6 @@
   "1195085": [
     "Cronobacter phage CR5",
     "Cronobacter sakazakii bacteriophage CR5"
-  ],
-  "1195613": [
-    "Norovirus Hu/GII-4/CGMH01/2006/TW"
-  ],
-  "1195614": [
-    "Norovirus Hu/GII-4/CGMH02/2006/TW"
-  ],
-  "1195615": [
-    "Norovirus Hu/GII-4/CGMH03/2006/TW"
-  ],
-  "1195616": [
-    "Norovirus Hu/GII-4/CGMH04/2006/TW"
-  ],
-  "1195617": [
-    "Norovirus Hu/GII-4/CGMH05/2006/TW"
-  ],
-  "1195618": [
-    "Norovirus Hu/GII-4/CGMH06/2006/TW"
-  ],
-  "1195619": [
-    "Norovirus Hu/GII-4/CGMH07/2006/TW"
-  ],
-  "1195620": [
-    "Norovirus Hu/GII-4/CGMH08/2006/TW"
-  ],
-  "1195621": [
-    "Norovirus Hu/GII-4/CGMH09/2006/TW"
-  ],
-  "1195622": [
-    "Norovirus Hu/GII-4/CGMH10/2006/TW"
-  ],
-  "1195623": [
-    "Norovirus Hu/GII-4/CGMH11/2006/TW"
-  ],
-  "1195624": [
-    "Norovirus Hu/GII-4/CGMH12/2007/TW"
-  ],
-  "1195625": [
-    "Norovirus Hu/GII-4/CGMH13/2007/TW"
-  ],
-  "1195626": [
-    "Norovirus Hu/GII-4/CGMH14/2007/TW"
-  ],
-  "1195627": [
-    "Norovirus Hu/GII-4/CGMH15/2007/TW"
-  ],
-  "1195628": [
-    "Norovirus Hu/GII-4/CGMH16/2007/TW"
-  ],
-  "1195629": [
-    "Norovirus Hu/GII-4/CGMH17/2007/TW"
-  ],
-  "1195630": [
-    "Norovirus Hu/GII-4/CGMH18/2008/TW"
-  ],
-  "1195631": [
-    "Norovirus Hu/GII-4/CGMH19/2009/TW"
-  ],
-  "1195632": [
-    "Norovirus Hu/GII-4/CGMH20/2009/TW"
-  ],
-  "1195633": [
-    "Norovirus Hu/GII-4/CGMH21/2010/TW"
-  ],
-  "1195634": [
-    "Norovirus Hu/GII-4/CGMH22/2010/TW"
-  ],
-  "1195635": [
-    "Norovirus Hu/GII-4/CGMH23/2010/TW"
-  ],
-  "1195636": [
-    "Norovirus Hu/GII-4/CGMH24/2010/TW"
-  ],
-  "1195637": [
-    "Norovirus Hu/GII-4/CGMH25/2010/TW"
-  ],
-  "1195638": [
-    "Norovirus Hu/GII-4/CGMH26/2010/TW"
-  ],
-  "1195639": [
-    "Norovirus Hu/GII-4/CGMH27/2010/TW"
-  ],
-  "1195640": [
-    "Norovirus Hu/GII-4/CGMH28/2010/TW"
-  ],
-  "1195791": [
-    "Norovirus Hu/GII.4/5M/USA/2004"
   ],
   "1195796": [
     "Human papillomavirus 154",
@@ -11195,12 +8776,6 @@
     "Pseudomonas sp. Lz4W",
     "Pseudomonas [syringae] Lz4W"
   ],
-  "1208062": [
-    "Hepatitis C virus subtype 4v"
-  ],
-  "1208063": [
-    "Hepatitis C virus subtype 2k/1b"
-  ],
   "1208309": [
     "Deltapolyomavirus decihominis",
     "Human polyomavirus 10"
@@ -11221,51 +8796,18 @@
     "Gyrovirus 4",
     "GyV4"
   ],
-  "1216927": [
-    "Sudan ebolavirus - Nakisamata",
-    "Nakisamata ebolavirus",
-    "Sudan ebolavirus strain Nakisamata"
-  ],
   "1216928": [
     "Heartland virus"
-  ],
-  "1219350": [
-    "HBV genotype F2"
-  ],
-  "1219351": [
-    "HBV genotype F4"
-  ],
-  "1219352": [
-    "HBV genotype D4"
-  ],
-  "1219353": [
-    "HBV genotype D3"
-  ],
-  "1219381": [
-    "rhinovirus A101",
-    "HRV-A101",
-    "Human rhinovirus 101",
-    "Human rhinovirus A101"
   ],
   "1219416": [
     "rhinovirus C1",
     "Human rhinovirus C1"
-  ],
-  "1219419": [
-    "rhinovirus C10",
-    "Human rhinovirus C10"
   ],
   "1219465": [
     "Lone Star virus"
   ],
   "1221522": [
     "Pseudomonas fluorescens NCIMB 11764"
-  ],
-  "1221622": [
-    "Norovirus Hu/GII.4/Ohio/7G/2012/USA"
-  ],
-  "1221623": [
-    "Norovirus Hu/GII.4/Ohio/7I/2012/USA"
   ],
   "1224515": [
     "Picalivirus A"
@@ -11296,10 +8838,6 @@
   "1233383": [
     "Human cosavirus"
   ],
-  "1235996": [
-    "Human betacoronavirus 2c EMC/2012",
-    "human betacoronavirus 2c EMC"
-  ],
   "1237159": [
     "Escherichia phage NJ01",
     "Enterobacteria phage NJ01"
@@ -11316,33 +8854,6 @@
     "Mamastrovirus 9",
     "Mamastrovirus-9"
   ],
-  "1241966": [
-    "Norovirus Hu/GII.4/Berowra/NSW767L/2012/AU"
-  ],
-  "1241967": [
-    "Norovirus Hu/GII.4/Caringbah/NSW409G/2011/AU"
-  ],
-  "1241968": [
-    "Norovirus Hu/GII.4/Doonside/NSW536I/2011/AU"
-  ],
-  "1241969": [
-    "Norovirus Hu/GII.4/Jannali/NSW774M/2011/AU"
-  ],
-  "1241970": [
-    "Norovirus Hu/GII.4/Miranda/NSW850K/2011/AU"
-  ],
-  "1241971": [
-    "Norovirus Hu/GII.4/Randwick/NSW882J/2011/AU"
-  ],
-  "1241972": [
-    "Norovirus Hu/GII.4/Randwick/NSW938K/2011/AU"
-  ],
-  "1241973": [
-    "Norovirus Hu/GII.4/Sydney/NSW0514/2012/AU"
-  ],
-  "1241974": [
-    "Norovirus Hu/GII.4/Woonona/NSW3309/2012/AU"
-  ],
   "1245526": [
     "Pseudomonas guangdongensis",
     "CCTCC AB 2012022",
@@ -11355,247 +8866,26 @@
   "1246301": [
     "Variovorax paradoxus B4"
   ],
+  "1246677": [
+    "Norovirus GV",
+    "Norovirus genogroup 5",
+    "Norovirus genogroup V"
+  ],
   "1247113": [
     "Astrovirus VA4"
   ],
   "1247114": [
     "Astrovirus MLB3"
   ],
-  "1248136": [
-    "Enterovirus B106",
-    "EV-B106",
-    "Human enterovirus 106"
-  ],
   "1248396": [
     "Human papillomavirus type 156",
     "Human papillomavirus 156"
-  ],
-  "1260941": [
-    "Norovirus Hu/GII.3/HK71/1978/CHN",
-    "Norovirus Hu/NLV/GII.3/Norwalk/HK71/1978/CHN"
-  ],
-  "1260944": [
-    "Norovirus Hu/GII.6/CHDC4073/1984/USA",
-    "Norovirus Hu/NLV/GII.9/Norwalk/CHDC4073/1984/USA"
-  ],
-  "1261195": [
-    "Norovirus Hu/Norwalk/10034/2009/VNM"
-  ],
-  "1261196": [
-    "Norovirus Hu/Norwalk/10051/2009/VNM"
-  ],
-  "1261197": [
-    "Norovirus Hu/Norwalk/10054/2009/VNM"
-  ],
-  "1261198": [
-    "Norovirus Hu/Norwalk/10062/2009/VNM"
-  ],
-  "1261199": [
-    "Norovirus Hu/Norwalk/10074/2009/VNM"
-  ],
-  "1261200": [
-    "Norovirus Hu/Norwalk/10075/2009/VNM"
-  ],
-  "1261201": [
-    "Norovirus Hu/Norwalk/10078/2009/VNM"
-  ],
-  "1261202": [
-    "Norovirus Hu/Norwalk/10079/2009/VNM"
-  ],
-  "1261203": [
-    "Norovirus Hu/Norwalk/10110/2009/VNM"
-  ],
-  "1261204": [
-    "Norovirus Hu/Norwalk/10114/2009/VNM"
-  ],
-  "1261205": [
-    "Norovirus Hu/Norwalk/10116/2009/VNM"
-  ],
-  "1261206": [
-    "Norovirus Hu/Norwalk/10129/2009/VNM"
-  ],
-  "1261207": [
-    "Norovirus Hu/Norwalk/10136/2009/VNM"
-  ],
-  "1261208": [
-    "Norovirus Hu/Norwalk/10137/2009/VNM"
-  ],
-  "1261209": [
-    "Norovirus Hu/Norwalk/10145/2009/VNM"
-  ],
-  "1261210": [
-    "Norovirus Hu/Norwalk/10148/2009/VNM"
-  ],
-  "1261211": [
-    "Norovirus Hu/Norwalk/10158/2009/VNM"
-  ],
-  "1261212": [
-    "Norovirus Hu/Norwalk/10160/2009/VNM"
-  ],
-  "1261213": [
-    "Norovirus Hu/Norwalk/10162/2009/VNM"
-  ],
-  "1261214": [
-    "Norovirus Hu/Norwalk/10163/2009/VNM"
-  ],
-  "1261215": [
-    "Norovirus Hu/Norwalk/10169/2009/VNM"
-  ],
-  "1261216": [
-    "Norovirus Hu/Norwalk/10173/2009/VNM"
-  ],
-  "1261217": [
-    "Norovirus Hu/Norwalk/10176/2009/VNM"
-  ],
-  "1261218": [
-    "Norovirus Hu/Norwalk/10177/2009/VNM"
-  ],
-  "1261219": [
-    "Norovirus Hu/Norwalk/10179/2009/VNM"
-  ],
-  "1261220": [
-    "Norovirus Hu/Norwalk/10182/2009/VNM"
-  ],
-  "1261221": [
-    "Norovirus Hu/Norwalk/10183/2009/VNM"
-  ],
-  "1261222": [
-    "Norovirus Hu/Norwalk/10194/2009/VNM"
-  ],
-  "1261223": [
-    "Norovirus Hu/Norwalk/10199/2009/VNM"
-  ],
-  "1261224": [
-    "Norovirus Hu/Norwalk/10203/2009/VNM"
-  ],
-  "1261225": [
-    "Norovirus Hu/Norwalk/10204/2009/VNM"
-  ],
-  "1261226": [
-    "Norovirus Hu/Norwalk/10222/2009/VNM"
-  ],
-  "1261227": [
-    "Norovirus Hu/Norwalk/10223/2009/VNM"
-  ],
-  "1261228": [
-    "Norovirus Hu/Norwalk/10235/2009/VNM"
-  ],
-  "1261229": [
-    "Norovirus Hu/Norwalk/10236/2009/VNM"
-  ],
-  "1261230": [
-    "Norovirus Hu/Norwalk/10238/2009/VNM"
-  ],
-  "1261231": [
-    "Norovirus Hu/Norwalk/10247/2009/VNM"
-  ],
-  "1261232": [
-    "Norovirus Hu/Norwalk/10255/2009/VNM"
-  ],
-  "1261233": [
-    "Norovirus Hu/Norwalk/10285/2010/VNM"
-  ],
-  "1261234": [
-    "Norovirus Hu/Norwalk/10296/2010/VNM"
-  ],
-  "1261235": [
-    "Norovirus Hu/Norwalk/10313/2010/VNM"
-  ],
-  "1261236": [
-    "Norovirus Hu/Norwalk/10325/2010/VNM"
-  ],
-  "1261237": [
-    "Norovirus Hu/Norwalk/10328/2010/VNM"
-  ],
-  "1261238": [
-    "Norovirus Hu/Norwalk/10368/2010/VNM"
-  ],
-  "1261239": [
-    "Norovirus Hu/Norwalk/10378/2010/VNM"
-  ],
-  "1261240": [
-    "Norovirus Hu/Norwalk/10386/2010/VNM"
-  ],
-  "1261241": [
-    "Norovirus Hu/Norwalk/20008/2009/VNM"
-  ],
-  "1261242": [
-    "Norovirus Hu/Norwalk/20010/2009/VNM"
-  ],
-  "1261243": [
-    "Norovirus Hu/Norwalk/20014/2009/VNM"
-  ],
-  "1261244": [
-    "Norovirus Hu/Norwalk/20016/2009/VNM"
-  ],
-  "1261245": [
-    "Norovirus Hu/Norwalk/20019/2009/VNM"
-  ],
-  "1261246": [
-    "Norovirus Hu/Norwalk/20033/2009/VNM"
-  ],
-  "1261247": [
-    "Norovirus Hu/Norwalk/20035/2009/VNM"
-  ],
-  "1261248": [
-    "Norovirus Hu/Norwalk/20044/2009/VNM"
-  ],
-  "1261249": [
-    "Norovirus Hu/Norwalk/20047/2009/VNM"
-  ],
-  "1261250": [
-    "Norovirus Hu/Norwalk/20066/2009/VNM"
-  ],
-  "1261251": [
-    "Norovirus Hu/Norwalk/20067/2009/VNM"
-  ],
-  "1261252": [
-    "Norovirus Hu/Norwalk/20069/2009/VNM"
-  ],
-  "1261253": [
-    "Norovirus Hu/Norwalk/20092/2009/VNM"
-  ],
-  "1261254": [
-    "Norovirus Hu/Norwalk/20093/2009/VNM"
-  ],
-  "1261255": [
-    "Norovirus Hu/Norwalk/20094/2009/VNM"
-  ],
-  "1261256": [
-    "Norovirus Hu/Norwalk/20118/2009/VNM"
-  ],
-  "1261257": [
-    "Norovirus Hu/Norwalk/20122/2009/VNM"
-  ],
-  "1261258": [
-    "Norovirus Hu/Norwalk/20123/2009/VNM"
-  ],
-  "1261259": [
-    "Norovirus Hu/Norwalk/20128/2009/VNM"
-  ],
-  "1261260": [
-    "Norovirus Hu/Norwalk/20135/2009/VNM"
-  ],
-  "1261261": [
-    "Norovirus Hu/Norwalk/20139/2009/VNM"
-  ],
-  "1261262": [
-    "Norovirus Hu/Norwalk/20140/2009/VNM"
-  ],
-  "1261263": [
-    "Norovirus Hu/Norwalk/20142/2009/VNM"
-  ],
-  "1262401": [
-    "Norovirus Hu/GII.4/Hong Kong/CUHK3630/2012/CHN"
   ],
   "1262540": [
     "Vibrio phage VP4B"
   ],
   "1263720": [
     "Betacoronavirus England 1"
-  ],
-  "1268361": [
-    "Norovirus Hu/GII.4/HS191/2004/USA"
   ],
   "1269028": [
     "Acanthamoeba polyphaga moumouvirus"
@@ -11625,19 +8915,6 @@
     "Sapovirus Hu/Nagoya/NGY-1/2012/JPN",
     "Sapovirus Hu/SaV/Nagoya/NGY-1/2012/JPN"
   ],
-  "1282342": [
-    "Hepatitis B virus subgenotype A3/genotype E",
-    "Hepatitis B virus subgenotype A3/genotype E recombinant"
-  ],
-  "1282423": [
-    "Norovirus Hu/GII.4/GZ2010-L26/Guangzhou/CHN/2010"
-  ],
-  "1282425": [
-    "Norovirus Hu/GII.4/GZ2010-L87/Guangzhou/CHN/2011"
-  ],
-  "1282430": [
-    "Norovirus Hu/GII.6/GZ2010-L96/Guangzhou/CHN/2011"
-  ],
   "1283308": [
     "Ferlavirus"
   ],
@@ -11648,27 +8925,12 @@
   "1288116": [
     "Human papillomavirus type XS2"
   ],
-  "1291872": [
-    "Norovirus Hu/GII/20469/2010/VNM"
-  ],
-  "1291873": [
-    "Norovirus Hu/GII/20477/2010/VNM"
-  ],
-  "1295563": [
-    "Enterovirus C99",
-    "Enterovirus 99",
-    "Enterovirus EV-C99",
-    "EV99",
-    "EV-C99",
-    "Human enterovirus 99",
-    "Human enterovirus C99"
-  ],
   "1297549": [
     "Human papillomavirus type 78",
     "Human papillomavirus 78"
   ],
-  "1298362": [
-    "Human betacoronavirus 2c England-Qatar/2012"
+  "1298385": [
+    "Baboon adenovirus 3"
   ],
   "1299306": [
     "Tibrovirus"
@@ -11683,10 +8945,6 @@
   "1303334": [
     "Human polyomavirus 12"
   ],
-  "1306931": [
-    "Human betacoronavirus 2c Jordan-N3/2012",
-    "Human betacoronavirus 2c strain Jordan-N3/2012"
-  ],
   "1307798": [
     "Negevirus"
   ],
@@ -11700,9 +8958,6 @@
   "1308899": [
     "Pseudomonas phage LKO4",
     "Pseudomonas aeruginosa Siphophage LKO4"
-  ],
-  "1312076": [
-    "Norovirus Hu/GII.4/Seoul/1071/2010/KOR"
   ],
   "1313215": [
     "Aichi virus 1",
@@ -11723,9 +8978,6 @@
     "Human papillomavirus type 161",
     "Human papillomavirus 161"
   ],
-  "1316726": [
-    "Norovirus Hu/GII.4/Ohio/684/USA"
-  ],
   "1324796": [
     "Lysobacter lycopersici",
     "BCRC 80612",
@@ -11733,9 +8985,6 @@
     "Lysobacter lycopersici Lin et al. 2015",
     "Lysobacter sp. CC-Bw-6",
     "strain CC-Bw-6"
-  ],
-  "1325533": [
-    "Norovirus Hu/GII.4/20199/2009/VNM"
   ],
   "1327770": [
     "Mycobacterium phage HINdeR",
@@ -11754,57 +9003,6 @@
   "1330992": [
     "unclassified Salivirus"
   ],
-  "1331832": [
-    "Norovirus Hu/GII.4/C00006631/2011/UK"
-  ],
-  "1331833": [
-    "Norovirus Hu/GII.4/C00007876/2011/UK"
-  ],
-  "1331834": [
-    "Norovirus Hu/GII.4/C00007879/2011/UK"
-  ],
-  "1331835": [
-    "Norovirus Hu/GII.4/C00007880/2011/UK"
-  ],
-  "1331836": [
-    "Norovirus Hu/GII.4/C00007881/2011/UK"
-  ],
-  "1331837": [
-    "Norovirus Hu/GII.4/C00007892/2011/UK"
-  ],
-  "1331838": [
-    "Norovirus Hu/GII.4/C00007893/2011/UK"
-  ],
-  "1331839": [
-    "Norovirus Hu/GII.4/C00007904/2011/UK"
-  ],
-  "1331840": [
-    "Norovirus Hu/GII.4/C00007905/2011/UK"
-  ],
-  "1331841": [
-    "Norovirus Hu/GII.4/C00007915/2010/UK"
-  ],
-  "1331842": [
-    "Norovirus Hu/GII.4/C00007916/2011/UK"
-  ],
-  "1331843": [
-    "Norovirus Hu/GII.4/C00007918/2011/UK"
-  ],
-  "1331844": [
-    "Norovirus Hu/GII.4/C00007927/2010/UK"
-  ],
-  "1331845": [
-    "Norovirus Hu/GII.4/C00007928/2011/UK"
-  ],
-  "1331846": [
-    "Norovirus Hu/GII.4/C00007934/2010/UK"
-  ],
-  "1331847": [
-    "Norovirus Hu/GII.4/C00007941/2011/UK"
-  ],
-  "1331848": [
-    "Norovirus Hu/GII.4/C00007952/2011/UK"
-  ],
   "1332244": [
     "Influenza A virus (A/Shanghai/02/2013(H7N9))"
   ],
@@ -11821,32 +9019,6 @@
     "MERS virus",
     "Middle East respiratory syndrome coronavirus",
     "Middle East Respiratory Syndrome Coronavirus (MERS-CoV)"
-  ],
-  "1336082": [
-    "Norovirus Hu/GII/Seoul1055/KOR/2010"
-  ],
-  "1336084": [
-    "Norovirus Hu/GII/Seoul1072/KOR/2010"
-  ],
-  "1336095": [
-    "Norovirus Hu/GII/Seoul1282/KOR/2010"
-  ],
-  "1336100": [
-    "Norovirus Hu/GII/Seoul1367/KOR/2010"
-  ],
-  "1336131": [
-    "Norovirus Hu/GII/Seoul1488/KOR/2011"
-  ],
-  "1337398": [
-    "Human adenovirus 66",
-    "Human Adenovirus type 66"
-  ],
-  "1337425": [
-    "Norovirus Hu/GII.4/Hong Kong/CUHK6080/2012/CHN"
-  ],
-  "1338688": [
-    "Norovirus Hu/GIV.1/CCDC GR1113-59/CHN/2011",
-    "Norovirus Hu/GIV.1/CCDC GR1113-59/China/2011"
   ],
   "1341019": [
     "Parvovirus NIH-CQV"
@@ -11884,111 +9056,11 @@
   "1349410": [
     "Pandoravirus salinus"
   ],
-  "1352534": [
-    "Parvo-like hybrid virus UC1"
-  ],
-  "1379486": [
-    "Norovirus Hu/GII.4/Guangzhou/GZ2010-L88/CHN/2011"
-  ],
-  "1379487": [
-    "Norovirus Hu/GII.4/Guangzhou/GZ2010-L91/CHN/2011"
-  ],
-  "1380573": [
-    "Norovirus Hu/GII.12/CGMH38/2010/TW"
-  ],
-  "1380574": [
-    "Norovirus Hu/GII.12/CGMH39/2010/TW"
-  ],
-  "1380575": [
-    "Norovirus Hu/GII.12/CGMH40/2010/TW"
-  ],
-  "1380576": [
-    "Norovirus Hu/GII.12/CGMH41/2010/TW"
-  ],
-  "1380577": [
-    "Norovirus Hu/GII.12/CGMH42/2010/TW"
-  ],
-  "1383577": [
-    "Norovirus Hu/GI.1/8CKIIIc/1974/USA"
-  ],
-  "1383578": [
-    "Norovirus Hu/GI.1/8K/1979/USA"
-  ],
-  "1383579": [
-    "Norovirus Hu/GI.1/8MC/1978/USA"
-  ],
-  "1383580": [
-    "Norovirus Hu/GI.1/8McIII/1973/USA"
-  ],
-  "1383581": [
-    "Norovirus Hu/GI.1/8MoIIIL/1972/USA"
-  ],
-  "1383582": [
-    "Norovirus Hu/GI.1/8UIIIf/1973/USA"
-  ],
-  "1383583": [
-    "Norovirus Hu/GI.1/8W/1968/USA",
-    "Norovirus Hu/GI.1/8W/1951/USA"
-  ],
-  "1383590": [
-    "Norovirus Hu/GII.4/NIHIC18.1/2012/USA",
-    "Norovirus Hu/GII.4/DF21812/2012/USA"
-  ],
-  "1383591": [
-    "Norovirus Hu/GII.4/NIHIC13/2011/USA",
-    "Norovirus Hu/GII.4/JOC122011/2011/USA"
-  ],
-  "1383596": [
-    "Norovirus Hu/GII.4/NIHIC27.1/2012/USA",
-    "Norovirus Hu/GII.4/LC31912/2012/USA"
-  ],
-  "1383599": [
-    "Norovirus Hu/GII.4/NIHIC17.1/2012/USA",
-    "Norovirus Hu/GII.4/PB21712/2012/USA"
-  ],
-  "1383601": [
-    "Norovirus Hu/GII.4/NIHIC17.5/2012/USA",
-    "Norovirus Hu/GII.4/PB9512/2012/USA"
-  ],
-  "1383602": [
-    "Norovirus Hu/GII.4/NIHIC1.13/2012/USA",
-    "Norovirus Hu/GII.4/SA102012/2012/USA"
-  ],
-  "1383606": [
-    "Norovirus Hu/GII.4/NIHIC28.5/2012/USA",
-    "Norovirus Hu/GII.4/SAF10812/2012/USA"
-  ],
-  "1383609": [
-    "Norovirus Hu/GII.4/NIHIC28.4/2012/USA",
-    "Norovirus Hu/GII.4/SAF71412/2012/USA"
-  ],
-  "1384672": [
-    "Mumps virus genotype G",
-    "Mumps orthorubulavirus genotype G",
-    "Mumps rubulavirus genotype G"
-  ],
   "1391667": [
     "Bufavirus-3"
   ],
   "1391702": [
     "Tomato mottle mosaic virus"
-  ],
-  "1395181": [
-    "Mumps virus genotype A",
-    "Mumps rubulavirus genotype A"
-  ],
-  "1395183": [
-    "Mumps virus genotype N",
-    "Mumps rubulavirus genotype N"
-  ],
-  "1395611": [
-    "Parvo-like hybrid virus UC11"
-  ],
-  "1395615": [
-    "Parvo-like hybrid virus UC4"
-  ],
-  "1395620": [
-    "Parvo-like hybrid virus UC9"
   ],
   "1398551": [
     "Sapovirus GI.2",
@@ -12003,53 +9075,8 @@
     "Erwinia phage PhiEaH1",
     "Erwinia amylovora bacteriophage PhiEaH1"
   ],
-  "1406147": [
-    "Norovirus Hu/GI.2/Jingzhou/2013401/CHN"
-  ],
-  "1406148": [
-    "Norovirus Hu/GII.3/Jingzhou/2013402/CHN"
-  ],
-  "1406149": [
-    "Norovirus Hu/GII.4/Jingzhou/2013403/CHN"
-  ],
   "1406779": [
     "Acinetobacter phage Petty"
-  ],
-  "1406796": [
-    "Norovirus Hu/GII.4/NIHIC35/2013/USA",
-    "Norovirus Hu/GII.4/DMF2513/2013/USA"
-  ],
-  "1406797": [
-    "Norovirus Hu/GII.4/NIHIC2.2/2010/USA",
-    "Norovirus Hu/GII.4/KG62310/2010/USA"
-  ],
-  "1406798": [
-    "Norovirus Hu/GII.4/NIHIC2.3/2010/USA",
-    "Norovirus Hu/GII.4/KG62410/2010/USA"
-  ],
-  "1406799": [
-    "Norovirus Hu/GII.4/NIHIC11.3/2013/USA",
-    "Norovirus Hu/GII.4/KLD1813/2013/USA"
-  ],
-  "1406800": [
-    "Norovirus Hu/GII.4/NIHIC27.2/2012/USA",
-    "Norovirus Hu/GII.4/LC4612/2012/USA"
-  ],
-  "1406801": [
-    "Norovirus Hu/GII.4/NIHIC17.8/2013/USA",
-    "Norovirus Hu/GII.4/PB11413/2013/USA"
-  ],
-  "1406802": [
-    "Norovirus Hu/GII.4/NIHIC17.9/2013/USA",
-    "Norovirus Hu/GII.4/PB31813/2013/USA"
-  ],
-  "1406805": [
-    "Norovirus Hu/GII.4/NIHIC17.6/2012/USA",
-    "Norovirus Hu/GII.4/PB91812/2012/USA"
-  ],
-  "1406809": [
-    "Norovirus Hu/GII.4/NIHIC1.16/2012/USA",
-    "Norovirus Hu/GII.4/SA102512/2012/USA"
   ],
   "1406974": [
     "Pseudomonas phage TL",
@@ -12080,9 +9107,6 @@
   "1415628": [
     "Gyrovirus Tu789"
   ],
-  "1415852": [
-    "Bat SARS-like coronavirus WIV1"
-  ],
   "1416009": [
     "Achromobacter phage JWAlpha"
   ],
@@ -12091,14 +9115,6 @@
   ],
   "1416631": [
     "Marine RNA virus SF-2"
-  ],
-  "1418031": [
-    "rhinovirus C5",
-    "HRV-C5",
-    "Human rhinovirus C5"
-  ],
-  "1419710": [
-    "JC polyomavirus type 3A"
   ],
   "1420545": [
     "Human papillomavirus 167",
@@ -12118,12 +9134,6 @@
   ],
   "1429759": [
     "Mycobacterium phage EagleEye"
-  ],
-  "1432852": [
-    "Norovirus Hu/GII.4/Jiangsu1/2011/CHN"
-  ],
-  "1432853": [
-    "Norovirus Hu/GII.4/Jiangsu2/2012/CHN"
   ],
   "1434720": [
     "Beluga whale alphaherpesvirus 1",
@@ -12149,27 +9159,14 @@
     "HPV 173",
     "Human papillomavirus type 173"
   ],
-  "1435148": [
-    "Enterovirus A120",
-    "Human enterovirus A type 120"
-  ],
   "1436889": [
     "Escherichia phage KBNP1711"
   ],
   "1437824": [
     "Castellaniella defragrans 65Phen"
   ],
-  "1439707": [
-    "Respiratory syncytial virus type A",
-    "Respiratory syncytial virus subsp. A",
-    "Respiratory syncytial virus subsp. subgroup A"
-  ],
   "1439894": [
     "Klebsiella phage K64-1"
-  ],
-  "1442164": [
-    "Enterovirus B111",
-    "EV-B111"
   ],
   "1445858": [
     "Enterococcus phage IME-EFm1"
@@ -12207,21 +9204,6 @@
   "1458670": [
     "Microbacterium phage vB_MoxS-ISF9"
   ],
-  "1458701": [
-    "Norovirus Hu/GII.2/HS255/2011/USA"
-  ],
-  "1458702": [
-    "Norovirus Hu/GII.4/HS288/2012/USA"
-  ],
-  "1458703": [
-    "Norovirus Hu/GII.4/HS292/2012/USA"
-  ],
-  "1458704": [
-    "Norovirus Hu/GII.4/HS66/2001/USA"
-  ],
-  "1458705": [
-    "Norovirus Hu/GII.6/HS245/2010/USA"
-  ],
   "1458711": [
     "Mycobacterium phage Hawkeye",
     "Mycobacteriophage Hawkeye"
@@ -12234,10 +9216,6 @@
   ],
   "1459003": [
     "Pteropine orthoreovirus"
-  ],
-  "1461395": [
-    "Human adenovirus 11+34",
-    "Human adenovirus 11+34 recombinant"
   ],
   "1463158": [
     "Thermomonas carbonis",
@@ -12283,33 +9261,6 @@
     "Acinetobacter phage vB_AbaP_Acibel007",
     "Acinetobacter baumannii phage vB_AbaP_Acibel007"
   ],
-  "1484958": [
-    "Human papillomavirus type 72b"
-  ],
-  "1486684": [
-    "Norovirus Hu/GII/BG1C0004/2010/BGD"
-  ],
-  "1486685": [
-    "Norovirus Hu/GII/BG1C0066/2011/BGD"
-  ],
-  "1486687": [
-    "Norovirus Hu/GII/BG1C0204/2011/BGD"
-  ],
-  "1486689": [
-    "Norovirus Hu/GII/BG1C0241-33/2011/BGD"
-  ],
-  "1486691": [
-    "Norovirus Hu/GII/BG1C0270/2011/BGD"
-  ],
-  "1486692": [
-    "Norovirus Hu/GII/BG1C0282/2011/BGD"
-  ],
-  "1486694": [
-    "Norovirus Hu/GII/BG1C0317/2011/BGD"
-  ],
-  "1486697": [
-    "Norovirus Hu/GII/BG1C0405/2012/BGD"
-  ],
   "1488574": [
     "Human genital-associated circular DNA virus-1"
   ],
@@ -12323,9 +9274,6 @@
     "Escherichia phage ECBP5",
     "coliphage ECBP5",
     "Escherichia coli phage ECBP5"
-  ],
-  "1498296": [
-    "Norovirus Hu/GII.4/SGU-110421/KOR/2011"
   ],
   "1501662": [
     "Streptococcus parasuis",
@@ -12392,6 +9340,9 @@
   ],
   "1511872": [
     "Primate bocaparvovirus 2"
+  ],
+  "1511879": [
+    "Gorilla bocavirus"
   ],
   "1511882": [
     "Human bocavirus 2c PK",
@@ -12460,9 +9411,6 @@
   "1513458": [
     "Marseillevirus"
   ],
-  "1514999": [
-    "Norovirus GII/Hu/HKG/2013/GII.4/CUHK-NS-141"
-  ],
   "1516081": [
     "MSSI2.225 virus",
     "unclassified virus MSSI2.225"
@@ -12482,9 +9430,6 @@
     "Cyclovirus SL-108277",
     "cyclovirus strain SL-108277"
   ],
-  "1521028": [
-    "Human adenovirus 21a"
-  ],
   "1525173": [
     "Human circovirus VS6600022"
   ],
@@ -12502,74 +9447,11 @@
   "1529909": [
     "Norovirus GI/Hu/JP/2007/GI.P3_GI.3/Shimizu/KK2866"
   ],
-  "1529910": [
-    "Norovirus GI/Hu/JP/2007/GI.P8_GI.8/Nagoya/KY531"
-  ],
-  "1529911": [
-    "Norovirus GII/Hu/JP/2000/GII.P12_GII.12/Saitama/KU16"
-  ],
-  "1529912": [
-    "Norovirus GII/Hu/JP/2001/GII.P12_GII.12/Saitama/T15"
-  ],
-  "1529913": [
-    "Norovirus GII/Hu/JP/2001/GII.P12_GII.12/Saitama/T18"
-  ],
-  "1529914": [
-    "Norovirus GII/Hu/JP/2001/GII.P22_GII.5/Saitama/T49"
-  ],
-  "1529915": [
-    "Norovirus GII/Hu/JP/2002/GII.P12_GII.13/Saitama/T80"
-  ],
-  "1529916": [
-    "Norovirus GII/Hu/JP/2002/GII.P16_GII.17/Saitama/T87"
-  ],
-  "1529917": [
-    "Norovirus GII/Hu/JP/2002/GII.P5_GII.5/Saitama/T52"
-  ],
   "1529918": [
     "Norovirus GII/Hu/JP/2007/GII.P15_GII.15/Sapporo/HK299"
   ],
-  "1529919": [
-    "Norovirus GII/Hu/JP/2007/GII.P21_GII.21/Kawasaki/YO284"
-  ],
-  "1529920": [
-    "Norovirus GII/Hu/JP/2007/GII.P7_GII.14/Fukuoka/KK282"
-  ],
-  "1529921": [
-    "Norovirus GII/Hu/JP/2007/GII.P7_GII.14/Sendai/YG99"
-  ],
-  "1529922": [
-    "Norovirus GII/Hu/JP/2010/GII.P4_GII.4/Shimada/ASC96"
-  ],
-  "1529923": [
-    "Norovirus GII/Hu/JP/2010/GII.P7_GII.7/Musashimurayama/TAKAsanKimchi"
-  ],
   "1529924": [
     "Norovirus GII/Hu/JP/2011/GII/Yuzawa/Gira2HS"
-  ],
-  "1529925": [
-    "Norovirus GII/Hu/JP/2012/GII.Pe_GII.4_Sydney2012/Fukuyama/1"
-  ],
-  "1529926": [
-    "Norovirus GII/Hu/JP/2012/GII.Pe_GII.4_Sydney2012/Fukuyama/2"
-  ],
-  "1529927": [
-    "Norovirus GII/Hu/JP/2012/GII.Pe_GII.4_Sydney2012/Fukuyama/3"
-  ],
-  "1529928": [
-    "Norovirus GII/Hu/JP/2012/GII.Pe_GII.4_Sydney2012/Fukuyama/5"
-  ],
-  "1529929": [
-    "Norovirus GII/Hu/TW/2012/GII.Pe_GII.4_Sydney2012/Taipei/105"
-  ],
-  "1529930": [
-    "Norovirus GII/Hu/TW/2012/GII.Pe_GII.4_Sydney2012/Taipei/106"
-  ],
-  "1529931": [
-    "Norovirus GII/Hu/TW/2012/GII.Pe_GII.4_Sydney2012/Taipei/108"
-  ],
-  "1529932": [
-    "Norovirus GII/Hu/TW/2012/GII.Pe_GII.4_Sydney2012/Taipei/109"
   ],
   "1530400": [
     "Pseudomonas phage Pa2",
@@ -12600,9 +9482,6 @@
   "1542744": [
     "Gemycircularvirus",
     "Gemycircularvirus group"
-  ],
-  "1544901": [
-    "Hepatitis C virus genotype 7"
   ],
   "1545044": [
     "Paracoccus sanguinis",
@@ -12648,9 +9527,6 @@
   "1563661": [
     "Delftia phage RG-2014"
   ],
-  "1566828": [
-    "Norovirus Hu/GII.4/gg-12-08-04/2012/KR"
-  ],
   "1566995": [
     "Pseudomonas phage YH6",
     "Pseudomonas aeruginosa phage YH6"
@@ -12673,11 +9549,6 @@
   ],
   "1569922": [
     "Mukawa virus"
-  ],
-  "1570291": [
-    "Ebola virus",
-    "Ebola",
-    "EBOV"
   ],
   "1572712": [
     "Geobacillus virus E3",
@@ -12760,9 +9631,6 @@
   "1608310": [
     "Edwardsiella phage PEi20"
   ],
-  "1608453": [
-    "Parvovirus NIH-CQV-Co"
-  ],
   "1610509": [
     "Achromobacter phage phiAxp-1",
     "Achromobacter phage 22732H",
@@ -12836,10 +9704,6 @@
     "Pseudomonas phage vB_PaeP_MAG4",
     "Pseudomonas aeruginosa bacteriophage vB_PaeP_MAG4"
   ],
-  "1643649": [
-    "Human adenovirus 71",
-    "Adenovirus type 71"
-  ],
   "1644131": [
     "Janthinobacterium sp. 1_2014MBL_MicDiv"
   ],
@@ -12870,6 +9734,9 @@
     "Achromobacter phage phiAxp-3",
     "Achromobacter xylosoxidans phage phiAxp-3"
   ],
+  "1667587": [
+    "Papio ursinus cytomegalovirus"
+  ],
   "1671798": [
     "Human papillomavirus type 54",
     "Human papillomavirus - 54",
@@ -12896,6 +9763,14 @@
   "1678143": [
     "Paslahepevirus balayani",
     "Orthohepevirus A"
+  ],
+  "1678144": [
+    "Avihepevirus magniiecur",
+    "Orthohepevirus B"
+  ],
+  "1678145": [
+    "Rocahepevirus ratti",
+    "Orthohepevirus C"
   ],
   "1678225": [
     "Catu virus"
@@ -12926,6 +9801,9 @@
   ],
   "1698708": [
     "Dickeya phage BF25/12"
+  ],
+  "1699095": [
+    "Camel alphacoronavirus"
   ],
   "1699621": [
     "Psychrobacter sp. P11F6"
@@ -13563,12 +10441,6 @@
     "Vesiculovirus indiana",
     "Indiana vesiculovirus"
   ],
-  "1972755": [
-    "Human adenovirus 81",
-    "HAdV 81",
-    "HAdV genotype 81",
-    "Human adenovirus genotype 81"
-  ],
   "1978532": [
     "Ledantevirus"
   ],
@@ -13874,14 +10746,6 @@
   ],
   "2015370": [
     "Bat mastadenovirus C"
-  ],
-  "2015550": [
-    "enterovirus D94",
-    "EGY-2003",
-    "Enterovirus 94",
-    "Enterovirus EV-94",
-    "EV-94",
-    "Human enterovirus 94"
   ],
   "2015853": [
     "Arthrobacter phage Abidatro"
@@ -14202,6 +11066,9 @@
   "2138299": [
     "Aeromonas phage AhSzw-1"
   ],
+  "2152923": [
+    "Sogatella furcifera hepe-like virus"
+  ],
   "2153354": [
     "Klebsiella huaxiensis",
     "CNCTC 7650",
@@ -14312,6 +11179,9 @@
   ],
   "2182350": [
     "Microbacterium phage Appa"
+  ],
+  "2185281": [
+    "Rana hepevirus"
   ],
   "2200716": [
     "Opuntia virus 2",
@@ -14953,13 +11823,6 @@
     "JCM 33481",
     "strain HF-5287"
   ],
-  "2650411": [
-    "Enterovirus C104",
-    "EV-C104",
-    "Human enterovirus 104",
-    "Human enterovirus C104",
-    "Human enterovirus type 104"
-  ],
   "2655002": [
     "Acinetobacter phage VB_ApiP_XC38"
   ],
@@ -15448,27 +12311,6 @@
   "2760809": [
     "enterovirus A114"
   ],
-  "2760813": [
-    "enterovirus B79",
-    "Enterovirus 79",
-    "Human enterovirus 79"
-  ],
-  "2760818": [
-    "enterovirus C102",
-    "Enterovirus 102",
-    "Human enterovirus 102",
-    "Human enterovirus C102"
-  ],
-  "2760819": [
-    "enterovirus C117",
-    "EV-C117",
-    "Human enterovirus 117",
-    "Human enterovirus C117"
-  ],
-  "2760820": [
-    "enterovirus C118",
-    "Human enterovirus C118"
-  ],
   "2762283": [
     "Mycobacterium phage Reindeer"
   ],
@@ -15500,11 +12342,6 @@
     "Lachnospiraceae bacterium NSJ-8",
     "\"Simiaoa sunii\" Liu et al. 2021_b",
     "strain NSJ-8"
-  ],
-  "2764122": [
-    "hepatitis B virus genotype C",
-    "HBV genotype C",
-    "hepatitis B virus type C"
   ],
   "2767188": [
     "Amniculibacterium sp. G2-70"
@@ -15602,17 +12439,8 @@
   "2773471": [
     "human bocavirus 2c"
   ],
-  "2777147": [
-    "rhinovirus A1B",
-    "HRV-1B",
-    "Human rhinovirus 1B",
-    "human rhinovirus A1B"
-  ],
   "2778054": [
     "Aeromonas sp. FDAARGOS 1405"
-  ],
-  "2779846": [
-    "Sapporo-HK299 virus"
   ],
   "2779847": [
     "cardiovirus D1",
@@ -15869,27 +12697,6 @@
     "Escherichia phage ev207",
     "Escherichia phage Lambda_ev207"
   ],
-  "2847137": [
-    "hepatitis B virus genotype D",
-    "HBV genotype D"
-  ],
-  "2847138": [
-    "hepatitis B virus genotype E",
-    "HBV genotype E"
-  ],
-  "2847139": [
-    "hepatitis B virus genotype F",
-    "HBV genotype F"
-  ],
-  "2847141": [
-    "hepatitis B virus genotype H",
-    "HBV genotype H"
-  ],
-  "2847144": [
-    "hepatitis C virus genotype 1a",
-    "Hepatitis C virus subtype 1a",
-    "Hepatitis C virus type 1a"
-  ],
   "2849477": [
     "equine foamy virus Equus caballus"
   ],
@@ -15993,6 +12800,9 @@
     "Sabia mammarenavirus",
     "Sabi mammarenavirus"
   ],
+  "2907992": [
+    "Avian hepatitis E virus"
+  ],
   "2908637": [
     "Acinetobacter sp. SCLZS86"
   ],
@@ -16086,6 +12896,9 @@
   "2946648": [
     "Weiservirinae"
   ],
+  "2946812": [
+    "Avihepevirus"
+  ],
   "2946815": [
     "Backyardiganvirus"
   ],
@@ -16124,6 +12937,9 @@
   ],
   "2948877": [
     "Quesadillavirus"
+  ],
+  "2948883": [
+    "Rocahepevirus"
   ],
   "2949635": [
     "Alkaliflexus sp. Ai-910"
