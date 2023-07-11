@@ -73,16 +73,18 @@ projects = list(sorted(project_sample_reads))
 observed_taxids = set()
 for project in projects:
     for sample in project_sample_reads[project]:
-        fname = "humanviruses/%s.humanviruses.tsv" % sample
+        fname = "allmatches/%s.allmatches.tsv" % sample
         if not os.path.exists(fname): continue
+
         with open(fname) as inf:
             for line in inf:
                 line = line.strip()
                 if not line: continue
 
-                taxid, count, name = line.split("\t")
-                taxid = int(taxid)
-                observed_taxids.add(taxid)
+                _, _, name_and_taxid, _, kraken_info = line.split("\t")
+                taxid = int(name_and_taxid.split()[-1].replace(")", ""))
+                if taxid in all_human_viruses:
+                    observed_taxids.add(taxid)
         
 # taxid -> node
 human_virus_nodes = {}
@@ -152,20 +154,26 @@ bioprojects = defaultdict(set)
 project_sample_virus_counts = Counter()
 for project in projects:
     for sample in project_sample_reads[project]:
-        fname = "humanviruses/%s.humanviruses.tsv" % sample
+        fname = "allmatches/%s.allmatches.tsv" % sample
         if not os.path.exists(fname): continue
 
         bioprojects[project].add(sample)
+        # If there are two identical kraken infos for the same sample we only
+        # count once, but that's fine because that almost certainly represents
+        # a duplicate read.
+        matches = defaultdict(set) # taxid -> [kraken info]
         with open(fname) as inf:
             for line in inf:
                 line = line.strip()
                 if not line: continue
 
-                taxid, count, name = line.split("\t")
-                taxid = int(taxid)
-                count = int(count)
-
-                project_sample_virus_counts[project, sample, taxid] = count
+                _, _, name_and_taxid, _, kraken_info = line.split("\t")
+                taxid = int(name_and_taxid.split()[-1].replace(")", ""))
+                matches[taxid].add(kraken_info)
+                
+        for taxid in matches:
+            project_sample_virus_counts[project, sample, taxid] = len(
+                matches[taxid])
 
 # comparison taxid -> sample -> clade count
 comparison_sample_counts = defaultdict(Counter)

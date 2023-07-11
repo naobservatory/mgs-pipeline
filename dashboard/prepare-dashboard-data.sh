@@ -17,7 +17,6 @@ fi
 $MGS_PIPELINE_DIR/collect-n-reads.sh
 
 cd $ROOT_DIR/dashboard
-mkdir -p humanviruses/
 mkdir -p allmatches/
 
 if [ ! -e names.dmp ] ; then
@@ -30,15 +29,6 @@ $MGS_PIPELINE_DIR/dashboard/determine_comparison_species.sh
 
 cd $ROOT_DIR/dashboard
 for study in $(aws s3 ls $S3_DIR | awk '{print $NF}'); do
-    for hv in $(aws s3 ls $S3_DIR${study}humanviruses/ | \
-                    awk '{print $NF}'); do
-        if [ ! -s humanviruses/$hv ]; then
-            echo $S3_DIR${study}humanviruses/$hv
-        fi
-    done
-done | xargs -I {} -P 32 aws s3 cp {} humanviruses/
-
-for study in $(aws s3 ls $S3_DIR | awk '{print $NF}'); do
     for am in $(aws s3 ls $S3_DIR${study}allmatches/ | \
                     awk '{print $NF}'); do
         if [ ! -s allmatches/$am ]; then
@@ -46,6 +36,15 @@ for study in $(aws s3 ls $S3_DIR | awk '{print $NF}'); do
         fi
     done
 done | xargs -I {} -P 32 aws s3 cp {} allmatches/
+
+for study in $(aws s3 ls $S3_DIR | awk '{print $NF}'); do
+    for hvr in $(aws s3 ls $S3_DIR${study}hvreads/ | \
+                    awk '{print $NF}'); do
+        if [ ! -s hvreads/$avr ]; then
+            echo $S3_DIR${study}hvreads/$avr
+        fi
+    done
+done | xargs -I {} -P 32 aws s3 cp {} hvreads/
 
 $MGS_PIPELINE_DIR/dashboard/prepare-dashboard-data.py $ROOT_DIR $MGS_PIPELINE_DIR
 
