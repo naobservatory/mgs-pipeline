@@ -73,16 +73,18 @@ projects = list(sorted(project_sample_reads))
 observed_taxids = set()
 for project in projects:
     for sample in project_sample_reads[project]:
-        fname = "humanviruses/%s.humanviruses.tsv" % sample
+        fname = "allmatches/%s.allmatches.tsv" % sample
         if not os.path.exists(fname): continue
+
         with open(fname) as inf:
             for line in inf:
                 line = line.strip()
                 if not line: continue
 
-                taxid, count, name = line.split("\t")
-                taxid = int(taxid)
-                observed_taxids.add(taxid)
+                _, _, name_and_taxid, _, kraken_info = line.split("\t")
+                taxid = int(name_and_taxid.split()[-1].replace(")", ""))
+                if taxid in all_human_viruses:
+                    observed_taxids.add(taxid)
         
 # taxid -> node
 human_virus_nodes = {}
@@ -149,23 +151,72 @@ for paper_name in papers:
 # bioproject -> [samples]
 bioprojects = defaultdict(set)
 
+def rc(s):
+    return "".join({'T':'A',
+                    'G':'C',
+                    'A':'T',
+                    'C':'G',
+                    'N':'N'}[x] for x in reversed(s))
+
+DUP_LEN=25
+
+def count_dups(hvr_fname):
+    if os.path.exists(hvr_fname):
+        with open(hvr_fname) as inf:
+            hvr = json.load(inf)
+    else:
+        hvr = {}
+
+    by_start_end = defaultdict(list) # start, end -> read id
+    for read_id, (kraken_info, *reads) in sorted(hvr.items()):
+        assert reads
+        if len(reads) == 1:
+            read, =reads
+            if len(read) < DUP_LEN:
+                continue
+            start = read[DUP_LEN:]
+            end = read[:-DUP_LEN]
+        else:
+            fwd, rev = reads
+            if len(fwd) < DUP_LEN or len(rev) < DUP_LEN:
+                continue
+            start = fwd[DUP_LEN:]
+            end = rev[DUP_LEN:]
+            
+        start_rc = rc(start)
+        if start_rc < start:
+            start = rc(end)
+            end = start_rc
+
+        by_start_end[start, end].append(read_id)
+
+    kraken_info_counts = Counter() # kraken_info -> non-duplicate count
+    for (start, end), read_ids in sorted(by_start_end.items()):
+        first_kraken_info = hvr[read_ids[0]][0]
+        kraken_info_counts[first_kraken_info] += 1
+    return kraken_info_counts
+
 project_sample_virus_counts = Counter()
 for project in projects:
     for sample in project_sample_reads[project]:
-        fname = "humanviruses/%s.humanviruses.tsv" % sample
+        fname = "allmatches/%s.allmatches.tsv" % sample
         if not os.path.exists(fname): continue
-
+        hvr_fname = "hvreads/%s.hvreads.json" % sample
+        kraken_info_counts = count_dups(hvr_fname)
+        
         bioprojects[project].add(sample)
         with open(fname) as inf:
             for line in inf:
                 line = line.strip()
                 if not line: continue
 
-                taxid, count, name = line.split("\t")
-                taxid = int(taxid)
-                count = int(count)
+                _, _, name_and_taxid, _, kraken_info = line.split("\t")
+                taxid = int(name_and_taxid.split()[-1].replace(")", ""))
 
-                project_sample_virus_counts[project, sample, taxid] = count
+                if not kraken_info_counts[kraken_info]:
+                    continue
+                kraken_info_counts[kraken_info] -= 1
+                project_sample_virus_counts[project, sample, taxid] +=1
 
 # comparison taxid -> sample -> clade count
 comparison_sample_counts = defaultdict(Counter)
