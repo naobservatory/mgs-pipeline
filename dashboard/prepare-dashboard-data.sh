@@ -18,6 +18,7 @@ $MGS_PIPELINE_DIR/collect-n-reads.sh
 
 cd $ROOT_DIR/dashboard
 mkdir -p allmatches/
+mkdir -p hvreads/
 
 if [ ! -e names.dmp ] ; then
     wget https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/taxdump_archive/taxdmp_2022-12-01.zip
@@ -40,8 +41,8 @@ done | xargs -I {} -P 32 aws s3 cp {} allmatches/
 for study in $(aws s3 ls $S3_DIR | awk '{print $NF}'); do
     for hvr in $(aws s3 ls $S3_DIR${study}hvreads/ | \
                     awk '{print $NF}'); do
-        if [ ! -s hvreads/$avr ]; then
-            echo $S3_DIR${study}hvreads/$avr
+        if [ ! -s hvreads/$hvr ]; then
+            echo $S3_DIR${study}hvreads/$hvr
         fi
     done
 done | xargs -I {} -P 32 aws s3 cp {} hvreads/
