@@ -1235,6 +1235,14 @@
     "\"Ristella distasonis\" (Eggerth and Gagnon 1933) Prevot 1938",
     "Ristella distasonis"
   ],
+  "838": [
+    "Prevotella",
+    "Prevotella Shah and Collins 1990 emend. Sakamoto and Ohkuma 2012",
+    "Prevotella Shah and Collins 1990 emend. Willems and Collins 1995",
+    "Xylanibacter",
+    "Xylanibacter Ueki et al. 2006",
+    "Xylanibacter Ueki et al. 2006 emend. Hitch et al."
+  ],
   "853": [
     "Faecalibacterium prausnitzii",
     "ATCC 27768",
@@ -3362,6 +3370,45 @@
     "NCTC 5866",
     "strain GC2 [[Acinetobacter mesopotamicus]]"
   ],
+  "28132": [
+    "Prevotella melaninogenica",
+    "ATCC 25845",
+    "\"Bacterium melaninogenicum\" Oliver and Wherry 1921",
+    "Bacterium melaninogenicum",
+    "Bacteroides melaninogenicus melaninogenicus",
+    "Bacteroides melaninogenicus (Oliver and Wherry 1921) Roy and Kelly 1939 (Approved Lists 1980)",
+    "Bacteroides melaninogenicus (Oliver and Wherry 1921) Roy and Kelly 1939 (Approved Lists 1980) emend. Holdeman and Johnson 1982",
+    "Bacteroides melaninogenicus subsp. melaninogenicus (Oliver and Wherry 1921) Roy and Kelly 1939",
+    "Bacteroides melaninogenicus subsp. melaninogenicus",
+    "Bacteroides melaninogenicus",
+    "CCUG 4944 B",
+    "CIP 105346",
+    "DSM 7089",
+    "\"Fusiformis nigrescens\" Schwabacher et al. 1947",
+    "Fusiformis nigrescens",
+    "\"Hemophilus melaninogenicus\" (sic) (Oliver and Wherry 1921) Bergey et al. 1930",
+    "Hemophilus melaninogenicus",
+    "JCM 6325",
+    "NCTC 12963",
+    "Prevotella melaninogenica (Oliver and Wherry 1921) Shah and Collins 1990 emend. Hahnke et al. 2016",
+    "Prevotella melaninogenica (Oliver and Wherry 1921) Shah and Collins 1990 emend. Wu et al. 1992",
+    "\"Ristella melaninogenica\" (Oliver and Wherry 1921) Prevot 1938",
+    "Ristella melaninogenica",
+    "strain Finegold B282",
+    "VPI 15087",
+    "VPI 4196"
+  ],
+  "28137": [
+    "Prevotella veroralis",
+    "ATCC 33779",
+    "Bacteroides veroralis",
+    "Bacteroides veroralis Watabe et al. 1983",
+    "CCUG 15422",
+    "DSM 19559",
+    "JCM 6290",
+    "Prevotella veroralis (Watabe et al. 1983) Shah and Collins 1990 emend. Wu et al. 1992",
+    "VPI D22A-7"
+  ],
   "28183": [
     "Leptospira santarosai",
     "ATCC 43286",
@@ -3780,6 +3827,33 @@
     "NRRL B-14756",
     "Staphylococcus cohnii Schleifer and Kloos 1975",
     "Staphylococcus sp. AL1"
+  ],
+  "29465": [
+    "Veillonella",
+    "Veillonella Prevot 1933 (Approved Lists 1980) emend. Aujoulat et al. 2014",
+    "Veillonella Prevot 1933 (Approved Lists 1980) emend. Mays et al. 1982"
+  ],
+  "29466": [
+    "Veillonella parvula",
+    "ATCC 10790",
+    "ATCC 17745 [[Veillonella alcalescens]]",
+    "CCUG 5123",
+    "DSM 2008",
+    "JCM 12972",
+    "\"Micrococcus gazogenes alcalescens anaerobius\" Lewkowicz 1901",
+    "Micrococcus gazogenes alcalescens anaerobius",
+    "\"Micrococcus gazogenes\" Hall and Howitt 1925",
+    "Micrococcus gazogenes",
+    "\"Micrococcus lactilyticus\" Foubert and Douglas 1948",
+    "Micrococcus lactilyticus",
+    "NCTC 11810",
+    "Staphylococcus parvulus",
+    "\"Staphylococcus parvulus\" Veillon and Zuber 1898",
+    "Veillonella alcalescens Prevot 1933",
+    "Veillonella alcalescens",
+    "\"Veillonella gazogenes\" (Hall and Howitt 1925) Murray 1939",
+    "Veillonella gazogenes",
+    "Veillonella parvula (Veillon and Zuber 1898) Prevot 1933 (Approved Lists 1980) emend. Mays et al. 1982"
   ],
   "29580": [
     "Janthinobacterium",
@@ -4470,6 +4544,9 @@
     "Hepatitis C virus genotype 6",
     "Hepatitis C virus type 6"
   ],
+  "42683": [
+    "Paramecium bursaria Chlorella virus CVA-1"
+  ],
   "42789": [
     "enterovirus D68",
     "Enterovirus 68",
@@ -4754,6 +4831,10 @@
     "Hepatitis G virus",
     "HGV-1",
     "HGV"
+  ],
+  "56947": [
+    "Choristoneura fumiferana granulovirus",
+    "CfGV"
   ],
   "57480": [
     "Microvirgula aerodenitrificans",
@@ -7124,6 +7205,10 @@
     "Trichlorobacter lovleyi SZ",
     "Geobacter lovleyi SZ"
   ],
+  "399781": [
+    "Paramecium bursaria Chlorella virus FR483",
+    "Chlorella virus FR483"
+  ],
   "404135": [
     "Bovine coronavirus isolate Alpaca"
   ],
@@ -7519,6 +7604,10 @@
     "Adelavirus W153",
     "Adelavirus W208"
   ],
+  "575614": [
+    "Prevotella sp. oral taxon 299 str. F0039",
+    "Prevotella sp. oral taxon 299 strain F0039"
+  ],
   "576610": [
     "Polynucleobacter necessarius",
     "ATCC 30859",
@@ -7659,6 +7748,10 @@
   ],
   "642248": [
     "unclassified Circoviridae"
+  ],
+  "644007": [
+    "Streptococcus phage PH10",
+    "Streptococcus oralis phage PH10"
   ],
   "645664": [
     "Shigella phage SP18",
@@ -8710,6 +8803,16 @@
   ],
   "1176736": [
     "Pitaya virus X"
+  ],
+  "1177574": [
+    "Prevotella jejuni",
+    "CCUG 60371",
+    "DSM 26989",
+    "Prevotella jejuni Hedberg et al. 2013",
+    "Prevotella sp. CD3:27",
+    "Prevotella sp. CD3:28",
+    "Prevotella sp. CD3:33",
+    "strain CD3:28"
   ],
   "1184267": [
     "Pseudobdellovibrio exovorus JSS",
@@ -10558,6 +10661,9 @@
   ],
   "1983557": [
     "Pseudomonas phage PspYZU08"
+  ],
+  "1983784": [
+    "Curvibacter phage P26059B"
   ],
   "1985303": [
     "Mooglevirus"

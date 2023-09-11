@@ -55,7 +55,7 @@ project_sample_reads = defaultdict(dict)
 for metadata_fname in glob.glob(
         "%s/bioprojects/*/metadata/metadata.tsv" % ROOT_DIR):
     project = metadata_fname.split("/")[-3]
-    if project == "PRJEB30546":
+    if project in [ "PRJEB30546", "PRJNA691135"]:
          # didn't finish importing this one, and the dashboard chokes on papers
          # where we don't understand the metadata.
         continue

@@ -6,6 +6,8 @@ s3_bucket="$1"
 bioproject="$2"
 sample="$3"
 
+./download-taxonomy.sh
+
 echo "Counting by clade for $bioproject $sample"
 for kraken_file in $(
    aws s3 ls "$s3_bucket/$bioproject/processed/$sample" |

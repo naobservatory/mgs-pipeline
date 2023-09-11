@@ -10935,6 +10935,14 @@
     "location": "Guangzhou",
     "reads": 37572746
   },
+  "SRR10971381": {
+    "city": "Wuhan",
+    "collection": "bronchoalveolar lavage fluid",
+    "country": "China",
+    "date": "2020-01",
+    "reads": 28282964,
+    "state": "Hubei"
+  },
   "SRR12204734": {
     "country": "China",
     "date": "2018",

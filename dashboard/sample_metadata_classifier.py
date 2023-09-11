@@ -221,5 +221,15 @@ def interpret(project, papers, bits):
             # https://twist.com/a/197793/ch/619193/t/4469435/
             date="2022",
             enrichment=enrichment)
+    elif project in papers["Wu 2020"]["projects"]:
+        sample, = bits
+        return sample, dict(
+            country="China",
+            city="Wuhan",
+            state="Hubei",
+            # Patient admitted 2019-12-26. Transferred 6 days after
+            #  admission.
+            date="2020-01",
+            collection="bronchoalveolar lavage fluid")
     else:
         raise Exception("Metadata format for %s unknown" % project)
