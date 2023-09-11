@@ -174,10 +174,11 @@ Available files, and their formats:
    b. Put "RNA" or "DNA" in `papers/AuthorYear/na_type.txt`
 5. `./run.py --bioproject=[accession]`
 6. Collect full metadata, update metadata.tsv, and modify
-   `dashboard/prepare-dashboard-data.py` to handle it.
+   `dashboard/sample_metadata_classifier.py` to handle it.
 7. If you leave out any samples, perhaps because they represent something we're
    not interested in, document which samples are included in
    `papers/AuthorYear/subset.txt`.
+8. Run `dashboard/prepare_dashboard_data.sh`.
 
 When collecting metadata, put it in this repo under
 `bioprojects/[accession]/metadata/`.  Include both the metadata files and the
