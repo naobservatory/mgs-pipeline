@@ -166,7 +166,7 @@ Available files, and their formats:
    b. Create `bioprojects/[accession]/metadata/name.txt` with the short name of
       the associated paper.  For example, `Rothman 2021`.
    c. Create `bioprojects/[accession]/metadata/metadata.tsv` with a list of the
-      sample accessions in the first column and anything else in the later
+      sample accessions in the first column and anything else you want to record about the sample in the later
       columns.  If you don't have the rest of the metadata sorted out yet and
       just want to unblock the pipeline you can put the accessions only with:
 
