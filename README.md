@@ -3,6 +3,12 @@
 Runs all incoming metagenomic sequencing data through a consistent process,
 including cleaning, species assignment, and counting human-infecting viruses.
 
+## Table of contents
+- [Working with the output](#working-with-the-output)
+- [Adding new data](#adding-new-data)
+- [Design](#design)
+- [Dependencies](#dependencies)
+
 ## Status
 
 As of 2023-04-12, handles the data from nine papers.  Currently only handles
