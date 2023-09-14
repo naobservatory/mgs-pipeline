@@ -239,6 +239,6 @@ def interpret(project, papers, bits):
                 state="Kampong Speu",
                 # Patient samples collected between March 2019 and October 2020
                 date="2020",
-                collection="sera")
+                collection="blood serum")
     else:
         raise Exception("Metadata format for %s unknown" % project)
