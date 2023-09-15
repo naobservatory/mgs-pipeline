@@ -11113,6 +11113,2430 @@
     "reads": 2891359,
     "state": "California"
   },
+  "SRR13167434": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 2132,
+    "state": "Kampong Speu"
+  },
+  "SRR13167435": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 1662,
+    "state": "Kampong Speu"
+  },
+  "SRR13167436": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 3600,
+    "state": "Kampong Speu"
+  },
+  "SRR13167437": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 148,
+    "state": "Kampong Speu"
+  },
+  "SRR13167438": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 149,
+    "state": "Kampong Speu"
+  },
+  "SRR13167439": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 319,
+    "state": "Kampong Speu"
+  },
+  "SRR13167440": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 611,
+    "state": "Kampong Speu"
+  },
+  "SRR13167441": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 216,
+    "state": "Kampong Speu"
+  },
+  "SRR13167442": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 29,
+    "state": "Kampong Speu"
+  },
+  "SRR13167443": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 891,
+    "state": "Kampong Speu"
+  },
+  "SRR13176755": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 1582,
+    "state": "Kampong Speu"
+  },
+  "SRR13176756": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 12348,
+    "state": "Kampong Speu"
+  },
+  "SRR13176757": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 25,
+    "state": "Kampong Speu"
+  },
+  "SRR13176758": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 18323,
+    "state": "Kampong Speu"
+  },
+  "SRR13176759": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 66,
+    "state": "Kampong Speu"
+  },
+  "SRR13176760": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 9490,
+    "state": "Kampong Speu"
+  },
+  "SRR13176761": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 19,
+    "state": "Kampong Speu"
+  },
+  "SRR13176762": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 175,
+    "state": "Kampong Speu"
+  },
+  "SRR13176763": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 247,
+    "state": "Kampong Speu"
+  },
+  "SRR13176764": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 65,
+    "state": "Kampong Speu"
+  },
+  "SRR13176765": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 8194,
+    "state": "Kampong Speu"
+  },
+  "SRR13176766": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 183,
+    "state": "Kampong Speu"
+  },
+  "SRR13176767": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 381,
+    "state": "Kampong Speu"
+  },
+  "SRR13176768": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 60,
+    "state": "Kampong Speu"
+  },
+  "SRR13176769": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 50,
+    "state": "Kampong Speu"
+  },
+  "SRR13176770": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 64,
+    "state": "Kampong Speu"
+  },
+  "SRR13176771": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 3664,
+    "state": "Kampong Speu"
+  },
+  "SRR13176772": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 493,
+    "state": "Kampong Speu"
+  },
+  "SRR13176773": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 109,
+    "state": "Kampong Speu"
+  },
+  "SRR13176774": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 80,
+    "state": "Kampong Speu"
+  },
+  "SRR13176903": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 85,
+    "state": "Kampong Speu"
+  },
+  "SRR13176904": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 61,
+    "state": "Kampong Speu"
+  },
+  "SRR13176905": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 77,
+    "state": "Kampong Speu"
+  },
+  "SRR13176906": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 215,
+    "state": "Kampong Speu"
+  },
+  "SRR13176907": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 13,
+    "state": "Kampong Speu"
+  },
+  "SRR13176908": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 1612,
+    "state": "Kampong Speu"
+  },
+  "SRR13176909": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 428,
+    "state": "Kampong Speu"
+  },
+  "SRR13176910": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 722,
+    "state": "Kampong Speu"
+  },
+  "SRR13176911": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 11597,
+    "state": "Kampong Speu"
+  },
+  "SRR13176912": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 13845,
+    "state": "Kampong Speu"
+  },
+  "SRR13176913": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 7478,
+    "state": "Kampong Speu"
+  },
+  "SRR13176914": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 8514,
+    "state": "Kampong Speu"
+  },
+  "SRR13176915": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 6538,
+    "state": "Kampong Speu"
+  },
+  "SRR13176916": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 1330,
+    "state": "Kampong Speu"
+  },
+  "SRR13176917": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 6087,
+    "state": "Kampong Speu"
+  },
+  "SRR13176918": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 8733,
+    "state": "Kampong Speu"
+  },
+  "SRR13176919": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 14943,
+    "state": "Kampong Speu"
+  },
+  "SRR13176920": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 8770,
+    "state": "Kampong Speu"
+  },
+  "SRR13176921": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 85,
+    "state": "Kampong Speu"
+  },
+  "SRR13176922": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 8431,
+    "state": "Kampong Speu"
+  },
+  "SRR13177050": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 4,
+    "state": "Kampong Speu"
+  },
+  "SRR13177051": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 1174,
+    "state": "Kampong Speu"
+  },
+  "SRR13177052": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 1011,
+    "state": "Kampong Speu"
+  },
+  "SRR13177053": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 1670,
+    "state": "Kampong Speu"
+  },
+  "SRR13177054": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 1414,
+    "state": "Kampong Speu"
+  },
+  "SRR13177055": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 10784,
+    "state": "Kampong Speu"
+  },
+  "SRR13177056": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 3370,
+    "state": "Kampong Speu"
+  },
+  "SRR13177057": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 20384,
+    "state": "Kampong Speu"
+  },
+  "SRR13177058": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 1437,
+    "state": "Kampong Speu"
+  },
+  "SRR13177059": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 897,
+    "state": "Kampong Speu"
+  },
+  "SRR13177060": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 937,
+    "state": "Kampong Speu"
+  },
+  "SRR13177061": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 2886,
+    "state": "Kampong Speu"
+  },
+  "SRR13177062": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 1841,
+    "state": "Kampong Speu"
+  },
+  "SRR13177063": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 4281,
+    "state": "Kampong Speu"
+  },
+  "SRR13177064": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 2458,
+    "state": "Kampong Speu"
+  },
+  "SRR13177065": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 594,
+    "state": "Kampong Speu"
+  },
+  "SRR13177066": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 3310,
+    "state": "Kampong Speu"
+  },
+  "SRR13177067": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 7600,
+    "state": "Kampong Speu"
+  },
+  "SRR13177068": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 8096,
+    "state": "Kampong Speu"
+  },
+  "SRR13177069": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 7941,
+    "state": "Kampong Speu"
+  },
+  "SRR13177070": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 5161,
+    "state": "Kampong Speu"
+  },
+  "SRR13177071": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 2999,
+    "state": "Kampong Speu"
+  },
+  "SRR13177072": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 832,
+    "state": "Kampong Speu"
+  },
+  "SRR13177073": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 1896,
+    "state": "Kampong Speu"
+  },
+  "SRR13177074": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 6426,
+    "state": "Kampong Speu"
+  },
+  "SRR13177075": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 3377,
+    "state": "Kampong Speu"
+  },
+  "SRR13177076": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 1298,
+    "state": "Kampong Speu"
+  },
+  "SRR13177077": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 6597,
+    "state": "Kampong Speu"
+  },
+  "SRR13177078": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 2560,
+    "state": "Kampong Speu"
+  },
+  "SRR13177079": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 66902,
+    "state": "Kampong Speu"
+  },
+  "SRR13177080": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 14753,
+    "state": "Kampong Speu"
+  },
+  "SRR13177081": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 22089,
+    "state": "Kampong Speu"
+  },
+  "SRR13177082": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 15243,
+    "state": "Kampong Speu"
+  },
+  "SRR13177083": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 9555,
+    "state": "Kampong Speu"
+  },
+  "SRR13177084": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 6461,
+    "state": "Kampong Speu"
+  },
+  "SRR13177085": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 11848,
+    "state": "Kampong Speu"
+  },
+  "SRR13177086": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 9383,
+    "state": "Kampong Speu"
+  },
+  "SRR13177087": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 7967,
+    "state": "Kampong Speu"
+  },
+  "SRR13177088": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 1799,
+    "state": "Kampong Speu"
+  },
+  "SRR13177089": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 16949,
+    "state": "Kampong Speu"
+  },
+  "SRR13177090": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 11018,
+    "state": "Kampong Speu"
+  },
+  "SRR13177091": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 3015,
+    "state": "Kampong Speu"
+  },
+  "SRR13177092": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 765,
+    "state": "Kampong Speu"
+  },
+  "SRR13177093": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 1122,
+    "state": "Kampong Speu"
+  },
+  "SRR13177094": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 4817,
+    "state": "Kampong Speu"
+  },
+  "SRR13177095": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 14302,
+    "state": "Kampong Speu"
+  },
+  "SRR13177096": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 2710,
+    "state": "Kampong Speu"
+  },
+  "SRR13177097": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 1792,
+    "state": "Kampong Speu"
+  },
+  "SRR13177098": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 5055,
+    "state": "Kampong Speu"
+  },
+  "SRR13177099": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 35499,
+    "state": "Kampong Speu"
+  },
+  "SRR13177100": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 33637,
+    "state": "Kampong Speu"
+  },
+  "SRR13711298": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 6188,
+    "state": "Kampong Speu"
+  },
+  "SRR13711299": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 3196,
+    "state": "Kampong Speu"
+  },
+  "SRR13711300": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 1709,
+    "state": "Kampong Speu"
+  },
+  "SRR13711301": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 11402,
+    "state": "Kampong Speu"
+  },
+  "SRR13711302": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 3883,
+    "state": "Kampong Speu"
+  },
+  "SRR13711303": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 14231,
+    "state": "Kampong Speu"
+  },
+  "SRR13711304": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 7,
+    "state": "Kampong Speu"
+  },
+  "SRR13711305": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 9681,
+    "state": "Kampong Speu"
+  },
+  "SRR13711306": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 19,
+    "state": "Kampong Speu"
+  },
+  "SRR13711307": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 3193,
+    "state": "Kampong Speu"
+  },
+  "SRR13711853": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 92,
+    "state": "Kampong Speu"
+  },
+  "SRR13711854": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 159,
+    "state": "Kampong Speu"
+  },
+  "SRR13711855": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 5479,
+    "state": "Kampong Speu"
+  },
+  "SRR13711856": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 111,
+    "state": "Kampong Speu"
+  },
+  "SRR13711857": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 49,
+    "state": "Kampong Speu"
+  },
+  "SRR13711858": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 427,
+    "state": "Kampong Speu"
+  },
+  "SRR13711859": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 532,
+    "state": "Kampong Speu"
+  },
+  "SRR13711860": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 271,
+    "state": "Kampong Speu"
+  },
+  "SRR13711861": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 137,
+    "state": "Kampong Speu"
+  },
+  "SRR13711862": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 3172,
+    "state": "Kampong Speu"
+  },
+  "SRR13711863": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 17596,
+    "state": "Kampong Speu"
+  },
+  "SRR13711864": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 1432,
+    "state": "Kampong Speu"
+  },
+  "SRR13711865": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 414,
+    "state": "Kampong Speu"
+  },
+  "SRR13711866": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 861,
+    "state": "Kampong Speu"
+  },
+  "SRR13711867": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 15662,
+    "state": "Kampong Speu"
+  },
+  "SRR13711868": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 17812,
+    "state": "Kampong Speu"
+  },
+  "SRR13711869": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 3538,
+    "state": "Kampong Speu"
+  },
+  "SRR13711870": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 116,
+    "state": "Kampong Speu"
+  },
+  "SRR13711871": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 24462,
+    "state": "Kampong Speu"
+  },
+  "SRR13711872": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 615,
+    "state": "Kampong Speu"
+  },
+  "SRR13711873": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 97306,
+    "state": "Kampong Speu"
+  },
+  "SRR13711874": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 10360,
+    "state": "Kampong Speu"
+  },
+  "SRR13711875": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 457,
+    "state": "Kampong Speu"
+  },
+  "SRR13711876": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 400,
+    "state": "Kampong Speu"
+  },
+  "SRR13711877": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 2286,
+    "state": "Kampong Speu"
+  },
+  "SRR13711878": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 396,
+    "state": "Kampong Speu"
+  },
+  "SRR13711879": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 2936,
+    "state": "Kampong Speu"
+  },
+  "SRR13711880": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 9665,
+    "state": "Kampong Speu"
+  },
+  "SRR13711881": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 3937,
+    "state": "Kampong Speu"
+  },
+  "SRR13711882": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 1036,
+    "state": "Kampong Speu"
+  },
+  "SRR13711883": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 451,
+    "state": "Kampong Speu"
+  },
+  "SRR13711884": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 236,
+    "state": "Kampong Speu"
+  },
+  "SRR13711885": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 3861,
+    "state": "Kampong Speu"
+  },
+  "SRR13711886": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 10904,
+    "state": "Kampong Speu"
+  },
+  "SRR13711887": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 451,
+    "state": "Kampong Speu"
+  },
+  "SRR13711888": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 890,
+    "state": "Kampong Speu"
+  },
+  "SRR13711889": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 34,
+    "state": "Kampong Speu"
+  },
+  "SRR13711890": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 1375,
+    "state": "Kampong Speu"
+  },
+  "SRR13711891": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 68450,
+    "state": "Kampong Speu"
+  },
+  "SRR13711892": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 87,
+    "state": "Kampong Speu"
+  },
+  "SRR13711893": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 1163,
+    "state": "Kampong Speu"
+  },
+  "SRR13711894": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 925,
+    "state": "Kampong Speu"
+  },
+  "SRR13711895": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 2504,
+    "state": "Kampong Speu"
+  },
+  "SRR13711896": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 1443,
+    "state": "Kampong Speu"
+  },
+  "SRR13711897": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 168067,
+    "state": "Kampong Speu"
+  },
+  "SRR13711898": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 59,
+    "state": "Kampong Speu"
+  },
+  "SRR13711899": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 34,
+    "state": "Kampong Speu"
+  },
+  "SRR13711900": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 162,
+    "state": "Kampong Speu"
+  },
+  "SRR13711901": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 95,
+    "state": "Kampong Speu"
+  },
+  "SRR13711902": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 80,
+    "state": "Kampong Speu"
+  },
+  "SRR13711903": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 22655,
+    "state": "Kampong Speu"
+  },
+  "SRR13711904": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 737,
+    "state": "Kampong Speu"
+  },
+  "SRR13711905": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 992,
+    "state": "Kampong Speu"
+  },
+  "SRR13711906": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 6563,
+    "state": "Kampong Speu"
+  },
+  "SRR13711907": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 3963,
+    "state": "Kampong Speu"
+  },
+  "SRR13711908": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 5076,
+    "state": "Kampong Speu"
+  },
+  "SRR13711909": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 126253,
+    "state": "Kampong Speu"
+  },
+  "SRR13711910": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 6970,
+    "state": "Kampong Speu"
+  },
+  "SRR13711911": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 9562,
+    "state": "Kampong Speu"
+  },
+  "SRR13711912": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 2452,
+    "state": "Kampong Speu"
+  },
+  "SRR13711913": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 1595,
+    "state": "Kampong Speu"
+  },
+  "SRR13711914": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 10185,
+    "state": "Kampong Speu"
+  },
+  "SRR13711915": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 71133,
+    "state": "Kampong Speu"
+  },
+  "SRR13711916": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 9279,
+    "state": "Kampong Speu"
+  },
+  "SRR13711917": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 413,
+    "state": "Kampong Speu"
+  },
+  "SRR13711918": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 130,
+    "state": "Kampong Speu"
+  },
+  "SRR13711919": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 4907,
+    "state": "Kampong Speu"
+  },
+  "SRR13711920": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 132,
+    "state": "Kampong Speu"
+  },
+  "SRR13711921": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 440,
+    "state": "Kampong Speu"
+  },
+  "SRR13711922": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 586,
+    "state": "Kampong Speu"
+  },
+  "SRR13711923": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 598,
+    "state": "Kampong Speu"
+  },
+  "SRR13711924": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 675,
+    "state": "Kampong Speu"
+  },
+  "SRR13711925": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 1717,
+    "state": "Kampong Speu"
+  },
+  "SRR13711926": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 578,
+    "state": "Kampong Speu"
+  },
+  "SRR13711927": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 2803,
+    "state": "Kampong Speu"
+  },
+  "SRR13711928": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 517,
+    "state": "Kampong Speu"
+  },
+  "SRR13711929": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 699,
+    "state": "Kampong Speu"
+  },
+  "SRR13711930": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 1993,
+    "state": "Kampong Speu"
+  },
+  "SRR13711931": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 9632,
+    "state": "Kampong Speu"
+  },
+  "SRR13712247": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 998,
+    "state": "Kampong Speu"
+  },
+  "SRR13712248": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 300,
+    "state": "Kampong Speu"
+  },
+  "SRR13712249": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 1977,
+    "state": "Kampong Speu"
+  },
+  "SRR13712250": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 1212,
+    "state": "Kampong Speu"
+  },
+  "SRR13712251": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 479,
+    "state": "Kampong Speu"
+  },
+  "SRR13712252": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 1865,
+    "state": "Kampong Speu"
+  },
+  "SRR13712253": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 24,
+    "state": "Kampong Speu"
+  },
+  "SRR13712254": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 22285,
+    "state": "Kampong Speu"
+  },
+  "SRR13712255": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 413,
+    "state": "Kampong Speu"
+  },
+  "SRR13712256": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 348,
+    "state": "Kampong Speu"
+  },
+  "SRR13712257": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 547,
+    "state": "Kampong Speu"
+  },
+  "SRR13712258": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 21775,
+    "state": "Kampong Speu"
+  },
+  "SRR13712259": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 37305,
+    "state": "Kampong Speu"
+  },
+  "SRR13712260": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 2169,
+    "state": "Kampong Speu"
+  },
+  "SRR13712261": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 2310,
+    "state": "Kampong Speu"
+  },
+  "SRR13712262": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 7730,
+    "state": "Kampong Speu"
+  },
+  "SRR13712263": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 415,
+    "state": "Kampong Speu"
+  },
+  "SRR13712264": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 642,
+    "state": "Kampong Speu"
+  },
+  "SRR13712265": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 13410,
+    "state": "Kampong Speu"
+  },
+  "SRR13712266": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 4405,
+    "state": "Kampong Speu"
+  },
+  "SRR13712267": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 884,
+    "state": "Kampong Speu"
+  },
+  "SRR13712268": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 159,
+    "state": "Kampong Speu"
+  },
+  "SRR13712269": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 223,
+    "state": "Kampong Speu"
+  },
+  "SRR13712270": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 1349,
+    "state": "Kampong Speu"
+  },
+  "SRR13712271": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 8590,
+    "state": "Kampong Speu"
+  },
+  "SRR13712272": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 4466,
+    "state": "Kampong Speu"
+  },
+  "SRR13712273": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 265,
+    "state": "Kampong Speu"
+  },
+  "SRR13712274": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 8680,
+    "state": "Kampong Speu"
+  },
+  "SRR13712275": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 7964,
+    "state": "Kampong Speu"
+  },
+  "SRR13712276": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 863,
+    "state": "Kampong Speu"
+  },
+  "SRR13712277": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 2132,
+    "state": "Kampong Speu"
+  },
+  "SRR13712278": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 135,
+    "state": "Kampong Speu"
+  },
+  "SRR13712279": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 14945,
+    "state": "Kampong Speu"
+  },
+  "SRR13712280": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 3140,
+    "state": "Kampong Speu"
+  },
+  "SRR13712281": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 13465,
+    "state": "Kampong Speu"
+  },
+  "SRR13712282": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 11230,
+    "state": "Kampong Speu"
+  },
+  "SRR13712283": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 1349,
+    "state": "Kampong Speu"
+  },
+  "SRR13712284": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 8488,
+    "state": "Kampong Speu"
+  },
+  "SRR13712285": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 1356,
+    "state": "Kampong Speu"
+  },
+  "SRR13712286": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 805,
+    "state": "Kampong Speu"
+  },
+  "SRR13712287": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 4096,
+    "state": "Kampong Speu"
+  },
+  "SRR13712288": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 410,
+    "state": "Kampong Speu"
+  },
+  "SRR13712289": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 2642,
+    "state": "Kampong Speu"
+  },
+  "SRR13712290": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 474,
+    "state": "Kampong Speu"
+  },
+  "SRR13712291": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 506,
+    "state": "Kampong Speu"
+  },
+  "SRR13712292": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 1017,
+    "state": "Kampong Speu"
+  },
+  "SRR13712293": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 543,
+    "state": "Kampong Speu"
+  },
+  "SRR13712294": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 2437,
+    "state": "Kampong Speu"
+  },
+  "SRR13712295": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 1476,
+    "state": "Kampong Speu"
+  },
+  "SRR13712296": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 1192,
+    "state": "Kampong Speu"
+  },
+  "SRR13712297": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 50052,
+    "state": "Kampong Speu"
+  },
+  "SRR13712298": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 503,
+    "state": "Kampong Speu"
+  },
+  "SRR13712299": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 160,
+    "state": "Kampong Speu"
+  },
+  "SRR13712300": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 484,
+    "state": "Kampong Speu"
+  },
+  "SRR13712301": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 858,
+    "state": "Kampong Speu"
+  },
+  "SRR13712302": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 32966,
+    "state": "Kampong Speu"
+  },
+  "SRR13712303": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 199,
+    "state": "Kampong Speu"
+  },
+  "SRR13712304": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 101,
+    "state": "Kampong Speu"
+  },
+  "SRR13712305": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 2078,
+    "state": "Kampong Speu"
+  },
+  "SRR13712306": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 220,
+    "state": "Kampong Speu"
+  },
+  "SRR13712307": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 441,
+    "state": "Kampong Speu"
+  },
+  "SRR13712308": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 1058,
+    "state": "Kampong Speu"
+  },
+  "SRR13712309": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 11915,
+    "state": "Kampong Speu"
+  },
+  "SRR13712310": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 35561,
+    "state": "Kampong Speu"
+  },
+  "SRR13712311": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 147,
+    "state": "Kampong Speu"
+  },
+  "SRR13712312": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 251,
+    "state": "Kampong Speu"
+  },
+  "SRR13712313": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 221,
+    "state": "Kampong Speu"
+  },
+  "SRR13712314": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 28155,
+    "state": "Kampong Speu"
+  },
+  "SRR13712315": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 1293,
+    "state": "Kampong Speu"
+  },
+  "SRR13712316": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 310,
+    "state": "Kampong Speu"
+  },
+  "SRR13712317": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 240,
+    "state": "Kampong Speu"
+  },
+  "SRR13712318": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 28,
+    "state": "Kampong Speu"
+  },
+  "SRR13712319": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 274,
+    "state": "Kampong Speu"
+  },
+  "SRR13712320": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 380,
+    "state": "Kampong Speu"
+  },
+  "SRR13712321": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 12968,
+    "state": "Kampong Speu"
+  },
+  "SRR13712322": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 22010,
+    "state": "Kampong Speu"
+  },
+  "SRR13712323": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 938,
+    "state": "Kampong Speu"
+  },
+  "SRR13712324": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 449,
+    "state": "Kampong Speu"
+  },
+  "SRR13712325": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 320,
+    "state": "Kampong Speu"
+  },
+  "SRR13712326": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 586,
+    "state": "Kampong Speu"
+  },
+  "SRR13712327": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 98602,
+    "state": "Kampong Speu"
+  },
+  "SRR13712328": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 1028,
+    "state": "Kampong Speu"
+  },
+  "SRR13712329": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 1472,
+    "state": "Kampong Speu"
+  },
+  "SRR13712330": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 195,
+    "state": "Kampong Speu"
+  },
+  "SRR13712331": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 58359,
+    "state": "Kampong Speu"
+  },
+  "SRR13712332": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 1884,
+    "state": "Kampong Speu"
+  },
+  "SRR13712333": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 2458,
+    "state": "Kampong Speu"
+  },
+  "SRR13712334": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 1991,
+    "state": "Kampong Speu"
+  },
+  "SRR13712335": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 70762,
+    "state": "Kampong Speu"
+  },
+  "SRR13712336": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 597,
+    "state": "Kampong Speu"
+  },
+  "SRR13712337": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 389,
+    "state": "Kampong Speu"
+  },
+  "SRR13712338": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 886,
+    "state": "Kampong Speu"
+  },
+  "SRR13712339": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 252,
+    "state": "Kampong Speu"
+  },
+  "SRR13712340": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 879,
+    "state": "Kampong Speu"
+  },
+  "SRR13712341": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 212,
+    "state": "Kampong Speu"
+  },
+  "SRR13712342": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 118,
+    "state": "Kampong Speu"
+  },
+  "SRR13712343": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 4323,
+    "state": "Kampong Speu"
+  },
+  "SRR13712344": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 209,
+    "state": "Kampong Speu"
+  },
+  "SRR13712345": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 12825,
+    "state": "Kampong Speu"
+  },
+  "SRR13712346": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 192,
+    "state": "Kampong Speu"
+  },
+  "SRR13712347": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 7563,
+    "state": "Kampong Speu"
+  },
+  "SRR13712348": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 364,
+    "state": "Kampong Speu"
+  },
+  "SRR13712349": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 149,
+    "state": "Kampong Speu"
+  },
+  "SRR13712350": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 772,
+    "state": "Kampong Speu"
+  },
+  "SRR13712351": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 3,
+    "state": "Kampong Speu"
+  },
+  "SRR13712352": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 15,
+    "state": "Kampong Speu"
+  },
+  "SRR13966303": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 123,
+    "state": "Kampong Speu"
+  },
+  "SRR13966304": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 342,
+    "state": "Kampong Speu"
+  },
+  "SRR14088347": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 5802,
+    "state": "Kampong Speu"
+  },
+  "SRR14088538": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 9945,
+    "state": "Kampong Speu"
+  },
+  "SRR14099091": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 22013,
+    "state": "Kampong Speu"
+  },
+  "SRR14106159": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 44985,
+    "state": "Kampong Speu"
+  },
+  "SRR14155280": {
+    "city": "Chbar Mon",
+    "collection": "blood serum",
+    "country": "Cambodia",
+    "date": "2020",
+    "reads": 164761,
+    "state": "Kampong Speu"
+  },
   "SRR14530724": {
     "country": "United States",
     "county": "San Diego County",
