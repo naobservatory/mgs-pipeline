@@ -197,6 +197,82 @@ def get_files(args, dirname, min_size=1, min_date=''):
    return set(ls_s3_dir("%s/%s/%s/" % (S3_BUCKET, args.bioproject, dirname),
                         min_size=min_size, min_date=min_date))
 
+def ribocounts(args):
+    """Count the number of reads classified as non-rRNA by RiboDetector"""
+
+    available_inputs = get_files(args, "cleaned",
+                                 # tiny files are empty; ignore them
+                                 min_size=100)
+    existing_outputs = get_files(args, "ribocounts")
+        
+    for sample in get_samples(args):
+        # Check for name of output file
+        sample_output_file = sample + ".ribocounts.txt"
+        if sample_output_file in existing_outputs: continue
+
+        sample_nonrrna_count = 0
+        for potential_input in available_inputs:
+            if not potential_input.startswith(sample): continue
+            if ".settings" in potential_input: continue
+            if "discarded" in potential_input: continue
+
+            # Number of output and input files must match 
+            tmp_fq_outputs = potential_input.replace(".gz", ".nonrrna.fq")
+            tmp_fq_outputs_list = [tmp_fq_outputs]
+            inputs = [potential_input]
+
+            if ".pair1." in potential_input:
+                tmp_fq_outputs_list.append(tmp_fq_outputs.replace(".pair1.", ".pair2."))
+                inputs.append(potential_input.replace(".pair1.", ".pair2."))
+            elif ".pair2." in potential_input:
+                # Ribodetector handles pair1 and pair2 together.
+                continue
+
+            with tempdir("ribocounts", sample + " inputs") as workdir:
+                for input_fname in inputs:
+                    subprocess.check_call([
+                        "aws", "s3", "cp", "%s/%s/cleaned/%s" % (
+                            S3_BUCKET, args.bioproject, input_fname), input_fname])
+
+                    # Ribodetector gets angry if the .fq extension isn't in the filename 
+                    os.rename(input_fname, input_fname.replace(".gz", ".fq.gz"))
+
+                # Add .fq extensions to input files
+                inputs = [i.replace(".gz", ".fq.gz") for i in inputs]
+
+                ribodetector_cmd = [
+                    "ribodetector_cpu",
+                    "--ensure", "rrna",
+                    "--threads", "24",
+                    "--len", "100"
+                    ]
+                
+                ribodetector_cmd.append("--input")
+                ribodetector_cmd.extend(inputs)
+                ribodetector_cmd.append("--output")
+                ribodetector_cmd.extend(tmp_fq_outputs_list)
+
+                subprocess.check_call(ribodetector_cmd)
+                
+                # Count the number of reads passing rRNA screening (i.e. classified as non-rRNA)
+                def count_reads_in_fastq(file_path):
+                    with open(file_path, 'r') as f:
+                        line_count = sum(1 for _ in f)
+                    return line_count // 4
+                
+                # Count non-rRNA reads in sample. Paired-end reads are counted once
+                sample_nonrrna_count += count_reads_in_fastq(tmp_fq_outputs_list[0])
+
+        # Send count number to bucket
+        with tempdir("ribocounts", sample + "output") as workdir:
+            with open(sample_output_file, 'w') as file:
+                file.write(str(sample_nonrrna_count))
+
+            subprocess.check_call([
+                "aws", "s3", "cp", sample_output_file, "%s/%s/ribocounts/" % (
+                    S3_BUCKET, args.bioproject)])
+
+
 def interpret(args):
    available_inputs = get_files(args, "cleaned",
                                 # tiny files are empty; ignore them
@@ -431,9 +507,9 @@ def print_status(args):
 
    running_processes = subprocess.check_output(["ps", "aux"]).decode("utf-8")
 
-   stages = ["raw", "cleaned", "processed", "cladecounts", "humanviruses",
+   stages = ["raw", "cleaned", "ribocounts", "processed", "cladecounts", "humanviruses",
              "allmatches", "hvreads"]
-   short_stages = ["raw", "clean", "kraken", "cc", "hv", "am", "hvr"]
+   short_stages = ["raw", "clean", "rc", "kraken", "cc", "hv", "am", "hvr"]
 
    papers_to_projects = defaultdict(list) # paper -> [project]
    for bioproject in bioprojects:
@@ -505,6 +581,7 @@ def print_status(args):
 STAGES_ORDERED = []
 STAGE_FNS = {}
 for stage_name, stage_fn in [("clean", clean),
+                             ("ribocounts", ribocounts),
                              ("interpret", interpret),
                              ("cladecounts", cladecounts),
                              ("humanviruses", humanviruses),
