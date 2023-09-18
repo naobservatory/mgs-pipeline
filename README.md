@@ -162,6 +162,8 @@ Available files, and their formats:
    can only handle short-read paired-end data.
 2. Run `./import-accession.sh [accession]`.  Continue in parallel; this doesn't
    have to finish before you get to step #5, it just needs a small head start.
+   * If some files hit errors it's fine to re-run; it skips any files that are
+     already complete.
 3. Make a directory `bioprojects/[accession]/metadata` and:
    b. Create `bioprojects/[accession]/metadata/name.txt` with the short name of
       the associated paper.  For example, `Rothman 2021`.
