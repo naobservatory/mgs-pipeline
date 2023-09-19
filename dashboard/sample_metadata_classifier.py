@@ -231,5 +231,11 @@ def interpret(project, papers, bits):
             #  admission.
             date="2020-01",
             collection="bronchoalveolar lavage fluid")
+    elif project in papers["Riquelme 2022"]["projects"]:
+        sample,wtp,country,date = bits
+        return sample, dict(
+            date=date,
+            country=country,
+            location=wtp)
     else:
         raise Exception("Metadata format for %s unknown" % project)
