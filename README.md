@@ -255,3 +255,90 @@ Don't update the version of Kraken's DB without talking to everyone: we would
 need to reprocess all older data to handle taxonomy changes and to keep
 everything consistent.  Also keep this in sync with the version of the taxonomy
 in prepare-dashboard-data.sh.
+
+## Operations
+
+We normally run this pipeline on EC2 instances, generally c6a.8xlarge ones.
+
+### Rerunning for all Bioprojects
+
+The pipeline runs serially within each bioproject. It would be possible to
+extend it to be much more parallel, but we haven't felt the need yet.
+
+When we parallize it we usually do it over bioprojects.  For example:
+
+```
+mgs-pipeline $ for bioproject in $(ls bioprojects/) ; do
+    screen -d -m ./run.py --bioproject $bioproject --arguments-here
+done
+mgs-pipeline $ for bioproject in $(ls ../mgs-restricted/bioprojects/) ; do
+    screen -d -m ./run.py --bioproject $bioproject --restricted --arguments-here
+done
+```
+
+This will run the pipeline once for each bioproject, each in its own screen
+session.  If the stages you're running require a lot of memory or disk,
+however, you should do it serially instead:
+
+```
+mgs-pipeline $ for bioproject in $(ls bioprojects/) ; do
+    ./run.py --bioproject $bioproject --arguments-here
+done ; for bioproject in $(ls ../mgs-restricted/bioprojects/) ; do
+    ./run.py --bioproject $bioproject --restricted --arguments-here
+done
+
+```
+
+### Parallelization Oversight
+
+You can check in on parallelized jobs under screen with:
+
+```
+mgs-pipeline $ pipeline-operation/screen-summary.py
+8769..assembly:
+4.collapsed.gz
+hvreads: handling ERR7850094.collapsed.truncated.gz in /tmp/tmphu0ym26c
+download: s3://nao-mgs/PRJEB49260/cleaned/ERR7850094.collapsed.truncated.gz to
+.
+/ERR7850094.collapsed.truncated.gz
+hvreads: handling ERR7850094.discarded.gz in /tmp/tmpegmh_drc
+download: s3://nao-mgs/PRJEB49260/cleaned/ERR7850094.discarded.gz to
+./ERR785009
+4.discarded.gz
+hvreads: handling ERR7850094.pair1.truncated.gz in /tmp/tmpmel9okco
+download: s3://nao-mgs/PRJEB49260/cleaned/ERR7850094.pair1.truncated.gz to
+./ERR
+7850094.pair1.truncated.gz
+````
+
+This prints the bottom ten lines of each active screen session on the computer.
+
+You can also run:
+
+```
+mgs-pipeline $ pipeline-operation/print-running-jobs.sh
+ --bioproject PRJEB49260 --stages hvreads
+```
+
+This prints, for every currently executing instance of the pipeline, what
+arguments it was started with.
+
+### Regenerating Data
+
+Normally the pipeline doesn't repeat work, but when the code changes some data
+typically also needs to change.
+
+Normally the flow is:
+
+1. Run the pipeline on a single sample (`--sample RUN_ACCESSION`) until you're
+   happy with what it does.
+
+2. Find where it checks whether your output already exists. For example, for
+   `hvreads` there's a line like:
+   `existing_outputs = get_files(args, "hvreads")`.
+
+3. Add a `min_date` argument to the `get_files` call, like
+   `min_date='2023-09-18'`.
+
+4. Follow the instructions above to rerun across all bioprojects.
+   
