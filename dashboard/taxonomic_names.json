@@ -18,6 +18,10 @@
     "Shewanella",
     "Shewanella MacDonell and Colwell 1986"
   ],
+  "68": [
+    "Lysobacter",
+    "Lysobacter Christensen and Cook 1978 (Approved Lists 1980) emend. Park et al. 2008"
+  ],
   "222": [
     "Achromobacter",
     "Achromobacter Yabuuchi and Yano 1981",
@@ -46,6 +50,11 @@
     "NRRL B-14902",
     "Sphingobacterium thalpophilum (Holmes et al. 1983) Takeuchi and Yokota 1993 emend. Hahnke et al. 2016",
     "strain K-1173"
+  ],
+  "265": [
+    "Paracoccus",
+    "Paracoccus Davis 1969 (Approved Lists 1980) emend. Liu et al. 2008",
+    "Paracoccus Davis 1969 (Approved Lists 1980) emend. Ludwig et al. 1993"
   ],
   "280": [
     "Xanthobacter autotrophicus",
@@ -1103,6 +1112,21 @@
     "NCTC 4557",
     "strain 1374"
   ],
+  "780": [
+    "Rickettsia",
+    "Rickettsia da Rocha-Lima 1916"
+  ],
+  "785": [
+    "Rickettsia typhi",
+    "ATCC VR-144",
+    "culture-collection:ATCC:VR:144",
+    "Dermacentroxenus typhi",
+    "\"Dermacentroxenus typhi\" Wolbach and Todd 1920",
+    "\"Rickettsia mooseri\" Monteiro 1931",
+    "Rickettsia mooseri",
+    "Rickettsia typhi (Wolbach and Todd 1920) Philip 1943",
+    "strain Wilmington"
+  ],
   "815": [
     "Bacteroidaceae",
     "Bacteroidaceae Pribram 1933"
@@ -1441,9 +1465,29 @@
     "Porphyrobacter neustonensis Fuerst et al. 1993",
     "Porphyrobacter neustonensis"
   ],
+  "1117": [
+    "Cyanobacteria",
+    "blue-green algae",
+    "blue-green bacteria",
+    "cyanobacteria",
+    "\"Cyanobacteria\" (ex Stanier 1974) Cavalier-Smith 2002",
+    "Cyanobacteriota Oren et al. 2022",
+    "Cyanobacteriota",
+    "Cyanophyceae",
+    "Cyanophycota",
+    "Cyanophyta",
+    "cyanophytes",
+    "Oxygenic photosynthetic bacteria",
+    "Oxyphotobacteria"
+  ],
   "1150": [
     "Oscillatoriales",
     "Oscillatoriales Elenkin 1934"
+  ],
+  "1161": [
+    "Nostocales",
+    "Nostocales Borzi, 1914",
+    "Stigonematales"
   ],
   "1224": [
     "Proteobacteria",
@@ -1525,6 +1569,58 @@
     "strain Gibson L5",
     "strain L5",
     "strain LL76 [[Leuconostoc argentinum]]"
+  ],
+  "1255": [
+    "Pediococcus pentosaceus",
+    "ATCC 33316",
+    "CCUG 32205",
+    "CIP 102260",
+    "DSM 20336",
+    "JCM 5890",
+    "Lactobacillus sp. SL-1",
+    "LMG 11488",
+    "LMG:11488",
+    "NCDO 990",
+    "NCIMB 12012",
+    "NCTC 12956",
+    "\"Pediococcus hennebergii\" Sollied 1903",
+    "Pediococcus hennebergii",
+    "\"Pediococcus parvulus\" Gunther and White 1961",
+    "Pediococcus pentosaceus Mees 1934",
+    "Pediococcus sp. MR001",
+    "Tetracoccus No. 2",
+    "\"Tetracoccus No. 2\" Orla-Jensen 1919"
+  ],
+  "1269": [
+    "Micrococcus",
+    "Micrococcus Cohn 1872 (Approved Lists 1980) emend. Wieser et al. 2002",
+    "Micrococcus Cohn 1872 emend. Stackebrandt et al. 1995"
+  ],
+  "1276": [
+    "Kytococcus sedentarius",
+    "ATCC 14392",
+    "CCM 314",
+    "CCUG 33030",
+    "CIP 81.72",
+    "culture-collection:VKM:B:1316",
+    "DSM 20547",
+    "IFO 15357",
+    "JCM 11482",
+    "Kytococcus sedentarius (ZoBell and Upham 1944) Stackebrandt et al. 1995",
+    "Kytococcus sedentarius (ZoBell and Upham 1944) Stackebrandt et al. 1995 emend. Nouioui et al. 2018",
+    "LMG 14228",
+    "LMG:14228",
+    "Micrococcus sedentarius",
+    "Micrococcus sedentarius ZoBell and Upham 1944 (Approved Lists 1980)",
+    "NBRC 15357",
+    "NCTC 11040",
+    "VKM B-1316"
+  ],
+  "1279": [
+    "Staphylococcus",
+    "Aurococcus",
+    "\"Aurococcus\" Winslow and Rogers 1906",
+    "Staphylococcus Rosenbach 1884"
   ],
   "1280": [
     "Staphylococcus aureus",
@@ -1686,6 +1782,48 @@
     "NCTC 8251",
     "\"Pediococcus homari\" Deibel and Niven 1960",
     "Pediococcus homari"
+  ],
+  "1386": [
+    "Bacillus",
+    "Bacillus Cohn 1872 (Approved lists 1980)",
+    "Bacillus Cohn 1872 (Approved lists 1980) emend. Gupta et al. 2020",
+    "Bacillus rRNA group 1"
+  ],
+  "1404": [
+    "Priestia megaterium",
+    "ATCC 14581",
+    "Bacillus sp. JP44SK2",
+    "Bacillus sp. NCIM 2032",
+    "Bacillus sp. NCIM 2087",
+    "Bacillus sp. NCIM 5472",
+    "Bacillus sp. OS42",
+    "Bacillus sp. WHO",
+    "BCRC 10608",
+    "Brevibacillus sp. NAK1-14",
+    "CCM 2007",
+    "CCRC 10608",
+    "CCRC:10608",
+    "CCUG 1817",
+    "CIP 66.20",
+    "culture-collection:NRRL:B:14308",
+    "culture-collection:VKM:B:512",
+    "DSM 32",
+    "HAMBI 2018",
+    "IAM 13418",
+    "IFO 15308",
+    "JCM 2506",
+    "KCTC 3007",
+    "LMG 7127",
+    "LMG:7127",
+    "NBRC 15308",
+    "NCCB 75016",
+    "NCIB 9376",
+    "NCIMB 9376",
+    "NCTC 10342",
+    "NRIC 1710",
+    "NRRL B-14308",
+    "Priestia megaterium (de Bary 1884) Gupta et al. 2020",
+    "VKM B-512"
   ],
   "1422": [
     "Geobacillus stearothermophilus",
@@ -1934,6 +2072,10 @@
     "NCIMB 702257",
     "NCTC 11815"
   ],
+  "1696": [
+    "Brevibacterium",
+    "Brevibacterium Breed 1953"
+  ],
   "1716": [
     "Corynebacterium",
     "Caseobacter Crombach 1978",
@@ -2074,6 +2216,11 @@
     "Not yet classified (Prokaryotae)",
     "unclassified Eubacteria",
     "unclassified Procaryotae"
+  ],
+  "2701": [
+    "Gardnerella",
+    "Gardnerella Greenwood and Pickett 1980",
+    "Gardnerella Greenwood and Pickett 1980 emend. Vaneechoutte et al. 2019"
   ],
   "2748": [
     "Carnobacterium divergens",
@@ -2722,6 +2869,11 @@
     "Dengue virus 3",
     "Dengue virus serotype 3"
   ],
+  "11070": [
+    "Dengue virus type 4",
+    "dengue type 4 virus DEN4",
+    "Dengue virus 4"
+  ],
   "11072": [
     "Japanese encephalitis virus",
     "Japanese encephalitis (JE) virus",
@@ -3042,6 +3194,13 @@
     "murine leukemia virus MLV",
     "murine leukemia virus MuLV"
   ],
+  "11801": [
+    "Moloney murine leukemia virus",
+    "MMLV",
+    "Moloney murine leukemia virus M-MuLV",
+    "MoMLV",
+    "rat Moloney murine leukemia virus MoMuLV"
+  ],
   "11837": [
     "Xenotropic murine leukemia virus"
   ],
@@ -3296,6 +3455,41 @@
     "Sphingomonas Yabuuchi et al. 1990 emend. Takeuchi et al. 2001",
     "Sphingomonas Yabuuchi et al. 1990 emend. Yabuuchi et al. 1999",
     "Sphingomonas Yabuuchi et al. 1990 emend. Yabuuchi et al. 2002"
+  ],
+  "13689": [
+    "Sphingomonas paucimobilis",
+    "ATCC 10829 [[Flavobacterium devorans]]",
+    "ATCC 29837",
+    "Bacillus devorans",
+    "\"Bacillus devorans\" Zimmermann 1890",
+    "CCUG 1819 [[Flavobacterium devorans]]",
+    "CCUG 31192",
+    "CCUG 6518",
+    "Chromobacterium devorans",
+    "\"Chromobacterium devorans\" (Zimmermann 1890) Krasil'nikov 1949",
+    "CIP 100752",
+    "culture-collection:NRRL:B:54 [[Flavobacterium devorans]]",
+    "DSM 1098",
+    "DSM 30198 [[Flavobacterium devorans]]",
+    "Flavobacterium devorans",
+    "Flavobacterium devorans (Zimmermann 1890) Bergey et al. 1923 (Approved Lists 1980)",
+    "GIFU 2395",
+    "GIFU:2395",
+    "HAMBI 1744",
+    "IFO 13935",
+    "JCM 7516",
+    "LMG 1227",
+    "LMG:1227",
+    "LMG 4017 [[Flavobacterium devorans]]",
+    "LMG:4017 [[Flavobacterium devorans]]",
+    "NBRC 13935",
+    "NCAIM B.01654",
+    "NCPPB 3838",
+    "NCTC 11030",
+    "NRRL B-54 [[Flavobacterium devorans]]",
+    "Pseudomonas paucimobilis Holmes et al. 1977 (Approved Lists 1980)",
+    "Pseudomonas paucimobilis",
+    "Sphingomonas paucimobilis (Holmes et al. 1977) Yabuuchi et al. 1990"
   ],
   "13690": [
     "Sphingobium yanoikuyae",
@@ -3813,6 +4007,20 @@
     "Turnip vein-clearing virus",
     "TVCV"
   ],
+  "29378": [
+    "Staphylococcus arlettae",
+    "ATCC 43957",
+    "CCUG 32416",
+    "CIP 103501",
+    "culture-collection:NRRL:B:14764",
+    "DSM 20672",
+    "LMG 19114",
+    "LMG:19114",
+    "NCTC 12413",
+    "NRRL B-14764",
+    "Staphylococcus arlettae Schleifer et al. 1985",
+    "strain BP47"
+  ],
   "29382": [
     "Staphylococcus cohnii",
     "ATCC 29974",
@@ -3882,6 +4090,14 @@
     "Human coronavirus (strain OC43)",
     "Human coronavirus strain OC43"
   ],
+  "31989": [
+    "Rhodobacteraceae",
+    "alpha-3 proteobacteria",
+    "Rhodobacteraceae Garrity et al. 2006",
+    "Rhodobacteraceae Garrity et al. 2006 emend. Liang et al. 2021",
+    "Rhodobacter clade",
+    "Rhodobacter group"
+  ],
   "32033": [
     "Xanthomonadaceae",
     "Lysobacteraceae Christensen and Cook 1978 (Approved Lists 1980) emend. Naushad et al. 2015",
@@ -3923,6 +4139,16 @@
     "CVA2",
     "Human coxsackievirus A2",
     "Human enterovirus CVA2"
+  ],
+  "33882": [
+    "Microbacterium",
+    "Aureibacterium",
+    "Aureobacterium Collins et al. 1983 emend. Yokota et al. 1993",
+    "Aureobacterium",
+    "Microbacterium Orla-Jensen 1919 (Approved Lists 1980) emend. Alves et al. 2014",
+    "Microbacterium Orla-Jensen 1919 (Approved Lists 1980) emend. Fidalgo et al. 2016",
+    "Microbacterium Orla-Jensen 1919 (Approved Lists 1980) emend. Krishnamurthi et al. 2012",
+    "Microbacterium Orla-Jensen 1919 (Approved Lists 1980) emend. Takeuchi and Hatano 1998"
   ],
   "33889": [
     "Brevibacterium casei",
@@ -4017,6 +4243,20 @@
     "NRIC 1777",
     "strain 39",
     "strain Moss 39"
+  ],
+  "34004": [
+    "Paracoccus aminovorans",
+    "ATCC 49632",
+    "CIP 106076",
+    "culture-collection:VKM:B:2140",
+    "DSM 8537",
+    "IFO 16711",
+    "JCM 7685",
+    "NBRC 16711",
+    "Paracoccus aminivorans",
+    "Paracoccus aminovorans Urakami et al. 1990",
+    "strain DM-82",
+    "VKM B-2140"
   ],
   "34037": [
     "Rahnella",
@@ -4258,6 +4498,32 @@
     "Streptococcus faecium subsp. casseliflavus",
     "Streptococcus faecium var. casseliflavus",
     "Streptococcus flavescens"
+  ],
+  "37923": [
+    "Rothia kristinae",
+    "ATCC 27570",
+    "CCM 2690",
+    "CCUG 33026",
+    "CIP 81.69",
+    "culture-collection:NRRL:B:14835",
+    "culture-collection:VKM:B:1811",
+    "DSM 20032",
+    "IEGM 390",
+    "IFO 15354",
+    "JCM 7237",
+    "Kocuria kristinae (Kloos et al. 1974) Stackebrandt et al. 1995",
+    "Kocuria kristinae",
+    "Kocuria kristiniae",
+    "LMG 14215",
+    "LMG:14215",
+    "Micrococcus kristinae Kloos et al. 1974 (Approved Lists 1980)",
+    "Micrococcus kristinae",
+    "Micrococcus kristiniae",
+    "NBRC 15354",
+    "NCTC 11038",
+    "NRRL B-14835",
+    "Rothia kristinae (Kloos et al. 1974) Nouioui et al. 2018",
+    "VKM B-1811"
   ],
   "37954": [
     "Human papillomavirus 22",
@@ -4533,6 +4799,15 @@
     "Brevundimonas",
     "Brevundimonas Segers et al. 1994 emend. Abraham et al. 1999"
   ],
+  "41294": [
+    "Nitrobacteraceae",
+    "alpha-2 proteobacteria",
+    "BANA domain",
+    "Bradyrhizobiaceae Garrity et al. 2006",
+    "Bradyrhizobiaceae",
+    "Bradyrhizobium group",
+    "Nitrobacteraceae corrig. Buchanan 1917 (Approved Lists 1980)"
+  ],
   "41297": [
     "Sphingomonadaceae",
     "alpha-4 proteobacteria",
@@ -4601,12 +4876,20 @@
   "44024": [
     "Kokobera virus"
   ],
+  "44026": [
+    "Sepik virus"
+  ],
   "44130": [
     "rhinovirus B3",
     "Human rhinovirus 3",
     "human rhinovirus 3, FEB",
     "Human rhinovirus B3",
     "Human rhinovirus type 3"
+  ],
+  "44283": [
+    "Pasteurella multocida subsp. multocida",
+    "Pasteurella multocida multocida",
+    "Pasteurella multocida subsp. multocida (Lehmann and Neumann 1899) Rosenbusch and Merchant 1939"
   ],
   "45219": [
     "Guanarito mammarenavirus",
@@ -4705,6 +4988,22 @@
     "VKM B-574",
     "VKM:B:574"
   ],
+  "47770": [
+    "Lactobacillus crispatus",
+    "ATCC 33820",
+    "CCUG 30722",
+    "CIP 102990",
+    "CIPP II",
+    "DSM 20584",
+    "\"Eubacterium crispatum\" Brygoo and Aladame 1953",
+    "Eubacterium crispatum",
+    "JCM 1185",
+    "Lactobacillus crispatus (Brygoo and Aladame 1953) Moore and Holdeman 1970 (Approved Lists) emend. Cato et al. 1983",
+    "Lactobacillus sp. 1D",
+    "LMG 9479",
+    "LMG:9479",
+    "VPI 3199"
+  ],
   "47883": [
     "Pseudomonas synxantha",
     "ATCC 9890",
@@ -4779,6 +5078,10 @@
     "environmental samples",
     "Eubacteria environmental samples"
   ],
+  "48736": [
+    "Ralstonia",
+    "Ralstonia Yabuuchi et al. 1996"
+  ],
   "49546": [
     "Flavobacteriaceae",
     "Flavobacteriaceae Reichenbach et al. 1992 emend. Bernardet et al. 1996",
@@ -4831,6 +5134,10 @@
     "Hepatitis G virus",
     "HGV-1",
     "HGV"
+  ],
+  "54298": [
+    "Chroococcidiopsis",
+    "Chroococcidiopsis (Geitler, 1933) emend. Waterbury & Stanier, 1978"
   ],
   "56947": [
     "Choristoneura fumiferana granulovirus",
@@ -4932,6 +5239,24 @@
   "59563": [
     "Ilheus virus",
     "ILHV"
+  ],
+  "59732": [
+    "Chryseobacterium",
+    "Chryseobacterium Vandamme et al. 1994",
+    "Chryseobacterium Vandamme et al. 1994 emend. Chen et al. 2015",
+    "Chryseobacterium Vandamme et al. 1994 emend. Hahnke et al. 2016",
+    "Chryseobacterium Vandamme et al. 1994 emend. Heidler von Heilborn et al. 2022",
+    "Chryseobacterium Vandamme et al. 1994 emend. Kampfer et al. 2009",
+    "Chryseobacterium Vandamme et al. 1994 emend. Montero-Calasanz et al. 2014",
+    "Chryseobacterium Vandamme et al. 1994 emend. Wu et al. 2013",
+    "Planobacterium Peng et al. 2009",
+    "Planobacterium"
+  ],
+  "59779": [
+    "Paracoccus marcusii",
+    "DSM 11574",
+    "Paracoccus marcusii Harker et al. 1998",
+    "strain MH1"
   ],
   "60877": [
     "Tonate virus",
@@ -5046,6 +5371,9 @@
     "Ntaya virus",
     "NTAV"
   ],
+  "64294": [
+    "Yokose virus"
+  ],
   "64300": [
     "Modoc virus",
     "MODV"
@@ -5058,6 +5386,9 @@
   ],
   "64310": [
     "Kadam virus"
+  ],
+  "64311": [
+    "Kedougou virus"
   ],
   "64314": [
     "Potiskum virus"
@@ -5174,6 +5505,19 @@
     "Pseudobacterium aerofaciens",
     "VPI 1003"
   ],
+  "74829": [
+    "Stutzerimonas balearica",
+    "CCUG 44487",
+    "CIP 105297",
+    "DSM 6083",
+    "LMG 18376",
+    "LMG:18376",
+    "Pseudomonas balearica Bennasar et al. 1996",
+    "Pseudomonas balearica",
+    "Pseudomonas stutzeri genonovar 6",
+    "strain SP1402",
+    "Stutzerimonas balearica (Bennasar et al. 1996) Lalucat et al. 2022"
+  ],
   "75588": [
     "Pseudomonas libanensis",
     "CCUG 43190",
@@ -5271,6 +5615,45 @@
     "Delftia",
     "Delftia Wen et al. 1999"
   ],
+  "80866": [
+    "Delftia acidovorans",
+    "ACM 489",
+    "ATCC 15668",
+    "CCUG 12692",
+    "CCUG 14481",
+    "CFBP 2444",
+    "CIP 103021",
+    "Comamonas acidivorans",
+    "Comamonas acidovorans (den Dooren de Jong 1926) Tamaoka et al. 1987 emend. Willems et al. 1991",
+    "Comamonas acidovorans",
+    "Comamonas sp. MC1",
+    "Delftia acidovorans (den Dooren de Jong 1926) Wen et al. 1999",
+    "DSM 39",
+    "IAM 12409",
+    "IFO 14950",
+    "JCM 5833",
+    "JCM 6203",
+    "LMG 1226",
+    "LMG:1226",
+    "LMG 6031",
+    "LMG:6031",
+    "NBRC 14950",
+    "NCCB 26037",
+    "NCIB 9681",
+    "NCIB:9681",
+    "NCIMB 9681",
+    "NCTC 10683",
+    "Pseudomonas acidovorans den Dooren de Jong 1926 (Approved Lists 1980)",
+    "Pseudomonas acidovorans",
+    "\"Pseudomonas desmolytica\" Gray and Thornton 1928",
+    "Pseudomonas desmolytica",
+    "\"Pseudomonas indoloxidans\" Gray 1928",
+    "Pseudomonas indoloxidans",
+    "Pseudomonas sp. NCIM 2112",
+    "strain den Dooren de Jong 7",
+    "strain KS 0057",
+    "strain Stanier 14"
+  ],
   "80941": [
     "Guaroa virus"
   ],
@@ -5303,6 +5686,11 @@
     "Micrococcineae Stackebrandt et al. 1997 emend. Yassin et al. 2011",
     "Micrococcineae Stackebrandt et al. 1997 emend. Zhi et al. 2009",
     "Micrococcineae"
+  ],
+  "85023": [
+    "Microbacteriaceae",
+    "Microbacteriaceae Park et al. 1995 emend. Rainey et al. 1997",
+    "Microbacteriaceae Park et al. 1995 emend. Zhi et al. 2009"
   ],
   "85106": [
     "Adeno-associated virus - 1",
@@ -5881,6 +6269,13 @@
     "Acinetobacter phage AP205",
     "Bacteriophage AP205"
   ],
+  "155894": [
+    "Chroococcidiopsis sp. CCMEE 29",
+    "Chroococcidiopsis sp. (029)N6904",
+    "Chroococcidiopsis sp. 029",
+    "Chroococcidiopsis sp. CCMEE '029 N6904'",
+    "Chroococcidiopsis sp. N6904"
+  ],
   "158836": [
     "Enterobacter hormaechei",
     "ATCC 49162",
@@ -6131,6 +6526,9 @@
     "Rhodobacter massiliensis",
     "strain Framboise"
   ],
+  "196159": [
+    "unclassified Sphingomonas"
+  ],
   "196806": [
     "unclassified Psychrobacter"
   ],
@@ -6257,6 +6655,10 @@
     "GIV",
     "Great Island virus (GIV)"
   ],
+  "204455": [
+    "Rhodobacterales",
+    "Rhodobacterales Garrity et al. 2006"
+  ],
   "204457": [
     "Sphingomonadales",
     "Sphingomonadales Yabuuchi and Kosako 2006"
@@ -6297,6 +6699,24 @@
   "213849": [
     "Campylobacterales",
     "Campylobacterales Garrity et al. 2006"
+  ],
+  "215580": [
+    "Schlegelella thermodepolymerans",
+    "Caenibacterium thermophilum Manaia et al. 2003",
+    "Caenibacterium thermophilum",
+    "\"Caldimonas thermodepolymerans\" (Elbanna et al. 2003) Liu et al.",
+    "Caldimonas thermodepolymerans",
+    "CCUG 50333",
+    "DSM 15264 [[Caenibacterium thermophilum Manaia et al. 2003]]",
+    "DSM 15344",
+    "LMG 21644",
+    "LMG:21644",
+    "LMG 21760 [[Caenibacterium thermophilum Manaia et al. 2003]]",
+    "LMG:21760 [[Caenibacterium thermophilum Manaia et al. 2003]]",
+    "N2-680 [[Caenibacterium thermophilum Manaia et al. 2003]]",
+    "Schlegelella thermodepolymerans Elbanna et al. 2003",
+    "Schlegelella thermodepolymerans Elbanna et al. 2003 emend. Lutke-Eversloh et al. 2004",
+    "strain K14"
   ],
   "215691": [
     "Thermomonas brevis",
@@ -7317,6 +7737,14 @@
   "455364": [
     "Chrysochromulina ericina virus"
   ],
+  "455432": [
+    "Nocardia terpenica",
+    "DSM 44935",
+    "IFM 0706",
+    "JCM 13033",
+    "NBRC 100888",
+    "Nocardia terpenica Hoshino et al. 2007"
+  ],
   "459349": [
     "Candidatus Cloacimonas acidaminovorans str. Evry",
     "Candidatus Cloacamonas acidaminovorans str. Evry"
@@ -7783,6 +8211,15 @@
   ],
   "652810": [
     "Human papillomavirus type 85"
+  ],
+  "653931": [
+    "Sphingomonas alpina",
+    "DSM 22537",
+    "LMG 26055",
+    "LMG:26055",
+    "Sphingomonas alpina Margesin et al. 2012",
+    "Sphingomonas sp. S8-3",
+    "strain S8-3"
   ],
   "657313": [
     "[Ruminococcus] torques L2-14",
@@ -8774,6 +9211,18 @@
     "Stenotrophomonas phage Smp131",
     "Stenotrophomonas maltophilia phage Smp131"
   ],
+  "1170562": [
+    "Calothrix sp. PCC 6303",
+    "Calothrix parietina 1018",
+    "Calothrix parietina SAG 1410-3",
+    "Calothrix sp. ATCC 29156",
+    "Fulbrightiella sp. PCC 6303"
+  ],
+  "1173026": [
+    "Gloeocapsa sp. PCC 7428",
+    "Chroococcus sp. Cey un",
+    "Gloeocapsa sp. ATCC 29159"
+  ],
   "1175654": [
     "Pseudomonas phage PaMx25"
   ],
@@ -8990,6 +9439,15 @@
   "1263720": [
     "Betacoronavirus England 1"
   ],
+  "1267217": [
+    "Melaminivora jejuensis",
+    "Alicycliphilus sp. BB12",
+    "Comamonadaceae bacterium KBB12",
+    "JCM 18740",
+    "KCTC 32230",
+    "Melaminivora jejuensis Kim et al. 2018",
+    "strain KBB12"
+  ],
   "1269028": [
     "Acanthamoeba polyphaga moumouvirus"
   ],
@@ -9027,6 +9485,16 @@
   ],
   "1288116": [
     "Human papillomavirus type XS2"
+  ],
+  "1296669": [
+    "Aquabacterium olei",
+    "Aquabacterium olei Pham et al. 2015",
+    "Aquabacterium sp. NHI-1",
+    "KACC 18244",
+    "KEMB 9005-082",
+    "KEMB:9005-082",
+    "NBRC 110486",
+    "strain NHI-1"
   ],
   "1297549": [
     "Human papillomavirus type 78",
@@ -9081,6 +9549,16 @@
     "Human papillomavirus type 161",
     "Human papillomavirus 161"
   ],
+  "1324352": [
+    "Chryseobacterium gallinarum",
+    "CCM 8493",
+    "Chryseobacterium gallinarum Kampfer et al. 2014 emend. Hahnke et al. 2016",
+    "Chryseobacterium sp. 100",
+    "DSM 27622",
+    "LMG 27808",
+    "LMG:27808",
+    "strain 100"
+  ],
   "1324796": [
     "Lysobacter lycopersici",
     "BCRC 80612",
@@ -9122,6 +9600,9 @@
     "MERS virus",
     "Middle East respiratory syndrome coronavirus",
     "Middle East Respiratory Syndrome Coronavirus (MERS-CoV)"
+  ],
+  "1337936": [
+    "Calothrix sp. 336/3"
   ],
   "1341019": [
     "Parvovirus NIH-CQV"
@@ -9958,6 +10439,9 @@
   "1735591": [
     "Yersinia phage vB_YenP_AP10"
   ],
+  "1750527": [
+    "Roseomonas sp. S08"
+  ],
   "1751046": [
     "Fluviibacter phosphoraccumulans",
     "Fluviibacter phosphoraccumulans Watanabe et al. 2020",
@@ -10221,6 +10705,10 @@
   "1887647": [
     "Gordonia phage Ghobes"
   ],
+  "1890450": [
+    "Aphanothecaceae",
+    "Aphanothecaceae (J.Komarek et Anagnostidis) J.Komarek et al. 2014"
+  ],
   "1891713": [
     "Alphapolyomavirus"
   ],
@@ -10346,6 +10834,11 @@
     "Vequintavirus",
     "V5virus"
   ],
+  "1917166": [
+    "Thermostichus lividus PCC 6715",
+    "Synechococcus lividus PCC 6715",
+    "Synechococcus sp. PCC 6715"
+  ],
   "1920753": [
     "Gamaleyavirus",
     "G7cvirus"
@@ -10470,6 +10963,9 @@
   ],
   "1938606": [
     "Janthinobacterium sp. LM6"
+  ],
+  "1938607": [
+    "Sphingomonas sp. LM7"
   ],
   "1941236": [
     "Gemykibivirus"
@@ -10822,6 +11318,12 @@
   "2005048": [
     "Escherichia phage ST32"
   ],
+  "2005458": [
+    "Nostoc sp. NIES-4103"
+  ],
+  "2005462": [
+    "Calothrix sp. NIES-3974"
+  ],
   "2005509": [
     "Centapoxvirus"
   ],
@@ -10949,6 +11451,9 @@
   "2038728": [
     "Human associated cyclovirus 10"
   ],
+  "2039166": [
+    "Chryseobacterium sp. 6424"
+  ],
   "2044561": [
     "Stenotrophomonas phage vB_SmaS_DLP_5",
     "Stenotrophomonas maltophilia phage vB_SmaS_DLP_5",
@@ -11018,6 +11523,9 @@
     "Spirosoma pollinicola Ambika Manirajan et al. 2018",
     "Spirosoma sp. Ha7",
     "strain Ha7"
+  ],
+  "2057741": [
+    "Bradyrhizobium sp. SK17"
   ],
   "2059856": [
     "Pseudomonas phage PMBT3"
@@ -11446,6 +11954,15 @@
   ],
   "2484206": [
     "Microbacterium phage Goodman"
+  ],
+  "2487072": [
+    "Epilithonimonas vandammei",
+    "CCUG 73498",
+    "Chryseobacterium sp. F5649",
+    "Chryseobacterium sp. H6466",
+    "CIP 111693",
+    "Epilithonimonas vandammei Nicholson et al. 2020",
+    "strain F5649"
   ],
   "2488571": [
     "Lactococcus phage phiQ1"
@@ -11904,6 +12421,9 @@
   "2618290": [
     "unclassified Sulfurospirillum"
   ],
+  "2619626": [
+    "unclassified Calothrix"
+  ],
   "2625466": [
     "unclassified Thiomonas"
   ],
@@ -11912,6 +12432,9 @@
   ],
   "2628399": [
     "unclassified Husavirus"
+  ],
+  "2636767": [
+    "unclassified Mycolicibacterium"
   ],
   "2640945": [
     "unclassified Polynucleobacter"
@@ -12556,6 +13079,9 @@
   "2779889": [
     "Anabaenopsis elenkinii CCIBt3563"
   ],
+  "2782232": [
+    "Chryseobacterium group"
+  ],
   "2787854": [
     "other entries"
   ],
@@ -12575,6 +13101,10 @@
   ],
   "2798861": [
     "Acinetobacter sp. CS-2"
+  ],
+  "2800373": [
+    "Priestia",
+    "Priestia Gupta et al. 2020"
   ],
   "2801477": [
     "Flavobacterium phage vB_FspM_immuto_2-6A"
@@ -12805,6 +13335,9 @@
   ],
   "2849477": [
     "equine foamy virus Equus caballus"
+  ],
+  "2853257": [
+    "Comamonas sp. Y33R10-2"
   ],
   "2861284": [
     "Janthinobacterium sp. PAMC25594"
@@ -13076,6 +13609,9 @@
   ],
   "2962597": [
     "Pseudomonas sp. Z8(2022)"
+  ],
+  "2972485": [
+    "Sphingomonas sp. ZFBP2030"
   ],
   "2983299": [
     "Psychrobacter sp. SC65A.3"
