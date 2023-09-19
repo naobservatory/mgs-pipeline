@@ -364,7 +364,9 @@ def hvreads(args):
       # tiny files are empty; ignore them
       min_size=100)
 
-   existing_outputs = get_files(args, "hvreads")
+   existing_outputs = get_files(args, "hvreads",
+                                # date we added quality scores
+                                min_date='2023-09-18')
 
    for sample in get_samples(args):
       output = "%s.hvreads.json" % sample
@@ -399,7 +401,7 @@ def hvreads(args):
                for (title, sequence, quality) in FastqGeneralIterator(inf):
                   seq_id = title.split()[0]
                   if seq_id in seqs:
-                     seqs[seq_id].append(sequence)
+                     seqs[seq_id].append([sequence, quality])
 
       with tempdir("hvreads", output) as workdir:
          with open(output, "w") as outf:
