@@ -10935,6 +10935,54 @@
     "location": "Guangzhou",
     "reads": 37572746
   },
+  "SRR10059214": {
+    "country": "Sweden",
+    "date": "2016-06-09",
+    "location": "SWE1-P2",
+    "reads": 17783118
+  },
+  "SRR10059215": {
+    "country": "India",
+    "date": "2016-03-10",
+    "location": "IND1-P2",
+    "reads": 17779435
+  },
+  "SRR10059216": {
+    "country": "Hong Kong",
+    "date": "2016-12-06",
+    "location": "HKG2-P1",
+    "reads": 11828847
+  },
+  "SRR10059217": {
+    "country": "USA",
+    "date": "2016-11-01",
+    "location": "USA1-P1",
+    "reads": 15829176
+  },
+  "SRR10059218": {
+    "country": "Hong Kong",
+    "date": "2016-12-06",
+    "location": "HKG2-P2",
+    "reads": 16470425
+  },
+  "SRR10059219": {
+    "country": "Philippines",
+    "date": "2016-12-02",
+    "location": "PHL1-P1",
+    "reads": 14658329
+  },
+  "SRR10059220": {
+    "country": "Hong Kong",
+    "date": "2016-07-14",
+    "location": "HKG1-P2",
+    "reads": 15922374
+  },
+  "SRR10059222": {
+    "country": "Switzerland",
+    "date": "2016-05-17",
+    "location": "CHE1-P1",
+    "reads": 17418184
+  },
   "SRR10971381": {
     "city": "Wuhan",
     "collection": "bronchoalveolar lavage fluid",
@@ -19520,5 +19568,35 @@
     "fine_location": "WW",
     "location": "Singapore",
     "reads": 60018436
+  },
+  "SRR8749020": {
+    "country": "Philippines",
+    "date": "2016-11-29",
+    "location": "PHL1-P2",
+    "reads": 17929500
+  },
+  "SRR8749021": {
+    "country": "Switzerland",
+    "date": "2016-05-18",
+    "location": "CHE1-P2",
+    "reads": 18512195
+  },
+  "SRR8749022": {
+    "country": "India",
+    "date": "2016-03-10",
+    "location": "IND1-P1",
+    "reads": 16239473
+  },
+  "SRR8749023": {
+    "country": "USA",
+    "date": "2017-01-19",
+    "location": "USA1-P2",
+    "reads": 16771584
+  },
+  "SRR8749024": {
+    "country": "Sweden",
+    "date": "2016-06-08",
+    "location": "SWE1-P1",
+    "reads": 13976205
   }
 }
