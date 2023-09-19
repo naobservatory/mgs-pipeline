@@ -199,12 +199,10 @@ def get_files(args, dirname, min_size=1, min_date=''):
 
 def ribocounts(args):
     """Count the number of reads classified as non-rRNA by RiboDetector"""
-    calc_avg_read_length = False
-
     available_inputs = get_files(args, "cleaned",
                                  # tiny files are empty; ignore them
                                  min_size=100)
-    existing_outputs = get_files(args, "ribocounts")
+    existing_outputs = get_files(args, "ribocounts", min_date='2023-09-19')
         
     for sample in get_samples(args):
         # Check for name of output file
@@ -212,18 +210,19 @@ def ribocounts(args):
         if sample_output_file in existing_outputs: continue
 
         sample_nonrrna_count = 0
+        sample_read_count = 0
         for potential_input in available_inputs:
             if not potential_input.startswith(sample): continue
             if ".settings" in potential_input: continue
             if "discarded" in potential_input: continue
 
             # Number of output and input files must match 
-            tmp_fq_outputs = potential_input.replace(".gz", ".nonrrna.fq")
-            tmp_fq_outputs_list = [tmp_fq_outputs]
+            tmp_fq_output = potential_input.replace(".gz", ".nonrrna.fq")
+            tmp_fq_outputs = [tmp_fq_output]
             inputs = [potential_input]
 
             if ".pair1." in potential_input:
-                tmp_fq_outputs_list.append(tmp_fq_outputs.replace(".pair1.", ".pair2."))
+                tmp_fq_outputs.append(tmp_fq_output.replace(".pair1.", ".pair2."))
                 inputs.append(potential_input.replace(".pair1.", ".pair2."))
             elif ".pair2." in potential_input:
                 # Ribodetector handles pair1 and pair2 together.
@@ -241,57 +240,56 @@ def ribocounts(args):
                 # Add .fq extensions to input files
                 inputs = [i.replace(".gz", ".fq.gz") for i in inputs]
 
-                # Optional: compute average read lengths. Note that if we implement this option we can count total reads here. For paired-end reads, average length is computed only from pair1 reads.
-                if calc_avg_read_length:
-                    print("Calculating average read length...")
-                    def calculate_average_read_length(file_path):
-                        with open(file_path, 'r') as f:
-                            lines = f.readlines()
+                # Compute average read lengths. For paired-end reads, average length is 
+                # computed only from pair1 reads.
+                print("Calculating average read length...")
+                def calculate_average_read_length(file_path):
+                    total_len = 0
+                    total_reads = 0
+                    with gzip.open(file_path, 'rt') as inf:
+                        for (title, sequence, quality) in FastqGeneralIterator(inf):
+                            total_len += len(sequence)
+                            total_reads += 1
+                    return total_reads, round(total_len / total_reads)
 
-                        total_length = sum(len(line.strip()) for i, line in enumerate(lines) if i % 4 == 1)
-                        total_reads = len(lines) // 4
-
-                        avg_length = int(total_length / total_reads)
-                        return total_reads, avg_length
-
-                    unzipped_input_fname = inputs[0].replace(".gz", "")
-                    with open(unzipped_input_fname, 'wb') as f_out:
-                        subprocess.check_call(["gzip", "-c", "-d", inputs[0]], stdout=f_out)
-
-                    _, avg_length = calculate_average_read_length(unzipped_input_fname)
-                    print("Done. Average read length is ", avg_length)
+                total_reads, avg_length = calculate_average_read_length(inputs[0])
+                sample_read_count += total_reads
+                print("Done. Average read length is ", avg_length)
 
                 ribodetector_cmd = [
                     "ribodetector_cpu",
                     "--ensure", "rrna",
                     "--threads", "24"
                     ]
-                
-                if calc_avg_read_length:
-                    ribodetector_cmd.extend(["--len", str(avg_length)])
-                else:
-                    ribodetector_cmd.extend(["--len", "100"])
+                ribodetector_cmd.extend(["--len", str(avg_length)])
 
                 ribodetector_cmd.append("--input")
                 ribodetector_cmd.extend(inputs)
                 ribodetector_cmd.append("--output")
-                ribodetector_cmd.extend(tmp_fq_outputs_list)
+                ribodetector_cmd.extend(tmp_fq_outputs)
 
                 subprocess.check_call(ribodetector_cmd)
                 
-                # Count the number of reads passing rRNA screening (i.e. classified as non-rRNA)
+                # Count the number of reads passing rRNA screening (i.e. classified as 
+                # non-rRNA)
                 def count_reads_in_fastq(file_path):
-                    with open(file_path, 'r') as f:
-                        line_count = sum(1 for _ in f)
-                    return line_count // 4
+                    total_reads = 0
+                    with open(file_path, 'r') as inf:
+                        for (title, sequence, quality) in FastqGeneralIterator(inf):
+                            total_reads += 1
+                    return total_reads
                 
                 # Count non-rRNA reads in sample. Paired-end reads are counted once
-                sample_nonrrna_count += count_reads_in_fastq(tmp_fq_outputs_list[0])
+                sample_nonrrna_count += count_reads_in_fastq(tmp_fq_outputs[0])
 
-        # Send count number to bucket
+        # Count number of rRNA reads in sample and send to /ribocounts in S3
+        sample_rrna_count = sample_read_count - sample_nonrrna_count
+        print(f"Number of rRNA reads in {sample} = {sample_rrna_count}/{sample_read_count} "
+                f"({round(sample_rrna_count/sample_read_count*100)}%)")
+
         with tempdir("ribocounts", sample + " output") as workdir:
             with open(sample_output_file, 'w') as file:
-                file.write(str(sample_nonrrna_count))
+                file.write(str(sample_rrna_count) + '\n')
 
             subprocess.check_call([
                 "aws", "s3", "cp", sample_output_file, "%s/%s/ribocounts/" % (

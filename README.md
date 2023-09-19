@@ -101,6 +101,14 @@ Available files, and their formats:
      * `discarded` if it dropped the whole pair
      * Plus a `settings` file with info on how cleaning went
 
+* `ribocounts/`: Intermediate, processed output of `RiboDetector`
+    * ex: SRR13167443.ribocounts.txt
+    * txt
+    * RiboDetector default output format
+        * FASTQ file with all the input reads classified as non-rRNA.
+    * `.ribocounts.txt` stores the number of rRNA reads in a sample.
+
+
 * `processed/`: Intermediate, output of `Kraken2`
    * ex: `SRR14530724.collapsed.kraken2.tsv.gz`
    * Gzipped TSV
