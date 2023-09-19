@@ -226,6 +226,11 @@ make
 sudo make install
 ```
 
+### RiboDetector
+See [documentation](https://github.com/hzi-bifo/RiboDetector).
+
+```pip install ribodetector```
+
 ### Kraken
 
 #### Install
