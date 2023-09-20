@@ -198,11 +198,16 @@ def get_files(args, dirname, min_size=1, min_date=''):
                         min_size=min_size, min_date=min_date))
 
 def ribocounts(args):
-    """Count the number of reads classified as non-rRNA by RiboDetector"""
+    """Count the number of reads identified as rRNA by RiboDetector and save them to AWS.
+
+    To save the default RiboDetector output (fastq files excluding rRNA reads) to AWS, 
+    copy the `tmp_fq_outputs` to AWS."""
+
+
     available_inputs = get_files(args, "cleaned",
                                  # tiny files are empty; ignore them
                                  min_size=100)
-    existing_outputs = get_files(args, "ribocounts", min_date='2023-09-19')
+    existing_outputs = get_files(args, "ribocounts", min_date='2023-09-20')
         
     for sample in get_samples(args):
         # Check for name of output file
