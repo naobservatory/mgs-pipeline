@@ -101,6 +101,11 @@ Available files, and their formats:
      * `discarded` if it dropped the whole pair
      * Plus a `settings` file with info on how cleaning went
 
+* `ribocounts/`: Intermediate, processed output of `RiboDetector`
+    * ex: SRR13167443.ribocounts.txt
+    * txt
+    * Stores the number of rRNA reads in a sample.
+
 * `processed/`: Intermediate, output of `Kraken2`
    * ex: `SRR14530724.collapsed.kraken2.tsv.gz`
    * Gzipped TSV
@@ -226,6 +231,13 @@ tar xvzf adapterremoval-2.3.1.tar.gz
 cd adapterremoval-2.3.1
 make
 sudo make install
+```
+
+### RiboDetector
+See [documentation](https://github.com/hzi-bifo/RiboDetector). To install:
+
+```
+pip install ribodetector
 ```
 
 ### Kraken
