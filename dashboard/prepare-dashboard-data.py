@@ -66,7 +66,14 @@ for metadata_fname in glob.glob(
                 ROOT_DIR, project, sample)
             if not os.path.exists(reads_fname): continue
             with open(reads_fname) as readsf:
-                 project_sample_reads[project][sample] = int(readsf.read())
+                reads_str = readsf.read().strip()
+                if not reads_str:
+                    continue
+                try:
+                    project_sample_reads[project][sample] = int(reads_str)
+                except Exception:
+                    print(reads_fname)
+                    raise
 
 projects = list(sorted(project_sample_reads))
 
@@ -74,7 +81,7 @@ projects = list(sorted(project_sample_reads))
 exclusions = set()
 with open(os.path.join(DASHBOARD_DIR, "excluded-read-ids.txt")) as inf:
     for line in inf:
-        exclusions.add(line.removesuffix("\n"))
+        exclusions.add(line.strip())
 
 observed_taxids = set()
 for project in projects:
@@ -177,13 +184,17 @@ def count_dups(hvr_fname):
     for read_id, (kraken_info, *reads) in sorted(hvr.items()):
         assert reads
         if len(reads) == 1:
-            read, =reads
+            try:
+                (read, quality), = reads
+            except Exception:
+                print(read_id, hvr_fname)
+                raise
             if len(read) < DUP_LEN:
                 continue
             start = read[DUP_LEN:]
             end = read[:-DUP_LEN]
         else:
-            fwd, rev = reads
+            (fwd, fwd_quality), (rev, rev_quality) = reads
             if len(fwd) < DUP_LEN or len(rev) < DUP_LEN:
                 continue
             start = fwd[DUP_LEN:]
