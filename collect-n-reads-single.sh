@@ -13,4 +13,4 @@ if [ -e $n_reads ]; then
     exit 0
 fi
 
-aws s3 cp "$raw" - | gunzip | grep -c ^@ > "$n_reads"
+aws s3 cp "$raw" - | gunzip | ./collect-n-reads-single.py > "$n_reads"
