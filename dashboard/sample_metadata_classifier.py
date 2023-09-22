@@ -237,6 +237,17 @@ def interpret(project, papers, bits):
             date=date,
             country=country,
             location=wtp)
+    elif project in papers["Langenfeld 2022"]["projects"]:
+        sample, date, collection = bits
+        return sample, dict(
+            date=date,
+            # secondary effluent | raw influent
+            source=source,
+            country="USA",
+            state="Michigan",
+            county="Washtenaw County",
+            city="Ann Arbor",
+        )
     elif project in papers["Bohl 2022"]["projects"]:
         sample, = bits
         return sample, dict(
