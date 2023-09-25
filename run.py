@@ -264,7 +264,8 @@ def ribocounts(args):
                 ribodetector_cmd = [
                     "ribodetector_cpu",
                     "--ensure", "rrna",
-                    "--threads", "24"
+                    "--threads", "24",
+                    "--chunk_size", "512"
                     ]
                 ribodetector_cmd.extend(["--len", str(avg_length)])
 
