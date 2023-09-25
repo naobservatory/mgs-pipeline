@@ -293,11 +293,10 @@ for project in projects:
         rc_fname = "ribocounts/%s.ribocounts.txt" % sample
         try:
             with open(rc_fname, 'r') as file:
-                content = file.read().strip()
-                ribocount = int(content)
+                ribocount = int(file.read().strip())
             sample_metadata[sample]["ribocounts"] = ribocount
         except FileNotFoundError:
-            continue
+            pass
 
 for taxid in observed_taxids:
     for project in projects:
