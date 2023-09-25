@@ -285,6 +285,7 @@ virus_sample_counts = defaultdict(Counter)
 
 # sample -> {metadata}
 sample_metadata = defaultdict(dict)
+
 for project in projects:
     with open("%s/bioprojects/%s/metadata/metadata.tsv" % (
             ROOT_DIR, project)) as inf:
@@ -299,6 +300,15 @@ for project in projects:
     for sample in project_sample_reads[project]:
         sample_metadata[sample]["reads"] = \
             project_sample_reads[project][sample]
+
+        rc_fname = "ribocounts/%s.ribocounts.txt" % sample
+        try:
+            with open(rc_fname, 'r') as file:
+                content = file.read().strip()
+                ribocount = int(content)
+            sample_metadata[sample]["ribocounts"] = ribocount
+        except FileNotFoundError:
+            continue
 
 for taxid in observed_taxids:
     for project in projects:

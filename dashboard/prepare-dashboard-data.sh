@@ -20,6 +20,7 @@ cd $ROOT_DIR/dashboard
 mkdir -p allmatches/
 mkdir -p hvreads/
 mkdir -p hvrfull/
+mkdir -p ribocounts/
 
 if [ ! -e names.dmp ] ; then
     wget https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/taxdump_archive/taxdmp_2022-12-01.zip
@@ -47,6 +48,15 @@ for study in $(aws s3 ls $S3_DIR | awk '{print $NF}'); do
         fi
     done
 done | xargs -I {} -P 32 aws s3 cp {} hvreads/
+
+for study in $(aws s3 ls $S3_DIR | awk '{print $NF}'); do
+    for rc in $(aws s3 ls $S3_DIR${study}ribocounts/ | \
+                    awk '{print $NF}'); do
+    	if [ ! -s ribocounts/$rc ]; then
+	    echo $S3_DIR${study}ribocounts/$rc
+	fi
+     done
+done | xargs -I {} -P 32 aws s3 cp {} ribocounts/
 
 $MGS_PIPELINE_DIR/dashboard/prepare-dashboard-data.py $ROOT_DIR $MGS_PIPELINE_DIR
 
