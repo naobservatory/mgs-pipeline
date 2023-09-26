@@ -207,7 +207,7 @@ def ribocounts(args):
     available_inputs = get_files(args, "cleaned",
                                  # tiny files are empty; ignore them
                                  min_size=100)
-    existing_outputs = get_files(args, "ribocounts", min_date='2023-09-20')
+    existing_outputs = get_files(args, "ribocounts", min_date='2023-09-25')
         
     for sample in get_samples(args):
         # Check for name of output file
