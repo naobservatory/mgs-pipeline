@@ -237,7 +237,7 @@ The adapter removal step downloads the fastq files one sample at a time from S3 
 The step also generates local output files there before copying them to S3.
 On Linux these files are stored in `\tmp`.
 If you don’t have enough space available in `\tmp`, AdapterRemoval will crash.
-To check the available space in `\tmp` run: `df -H`
+To check the available space in `\tmp` run `df -H`.
 You should have at least 2x the size of your largest pair of fastq files.
 To resize `\tmp`, run (with whatever size you need):
 
@@ -253,7 +253,7 @@ See [documentation](https://github.com/hzi-bifo/RiboDetector). To install:
 ```
 pip install ribodetector
 ```
-As of 2023/09/26, there is a bug in the latest version of one of the dependencies of RiboDetector,
+As of 2023/09/26, there is a [bug](https://github.com/microsoft/onnxruntime/issues/17631) in the latest version of one of the dependencies of RiboDetector,
 which causes the program to crash. To avoid this, install an earlier version of the dependency:
 
 ```
