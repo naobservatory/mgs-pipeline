@@ -7037,6 +7037,12 @@
     "Escherichia phage JS98",
     "Enterobacteria phage JS98"
   ],
+  "297352": [
+    "Lactococcus piscium MKFS47",
+    "Lactococcus piscium strain MKFS47",
+    "Lactococcus piscium str. MKFS47",
+    "Lactococcus sp. MKFS47"
+  ],
   "299767": [
     "Enterobacter ludwigii",
     "bacterium K9",
@@ -10489,6 +10495,10 @@
   ],
   "1777065": [
     "Pseudomonas phage vB_PsyM_KIL1"
+  ],
+  "1777122": [
+    "Nodularia phage vB_NpeS-2AV2",
+    "Bacteriophage vB_NpeS-2AV2"
   ],
   "1780507": [
     "Myotis gammaherpesvirus 8"
