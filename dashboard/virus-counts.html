@@ -920,9 +920,7 @@ function redisplay() {
           }
         }
         tr.appendChild(e("td", (total_reads > 0 ? (
-          (100 * total_ribocounts /
-           human_readable(total_reads)).toFixed(1) + "%") :
-                                "--") + " " + plural));
+          (100 * total_ribocounts / total_reads).toFixed(1) + "%") : "--") + " " + plural));
       } else {
         const vals = new Set();
         for (const sample of samples) {
