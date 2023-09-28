@@ -235,17 +235,21 @@ sudo make install
 
 The adapter removal step downloads the fastq files one sample at a time from S3 to the local machine.
 The step also generates local output files there before copying them to S3.
-On Linux these files are stored in `\tmp`.
-If you don’t have enough space available in `\tmp`, AdapterRemoval will crash.
-To check the available space in `\tmp` run `df -H`.
+On Linux these files are stored in `/tmp`.
+If you don’t have enough space available in `/tmp`, AdapterRemoval will crash.
+To check the available space in `/tmp` run `df -H`.
 You should have at least 2x the size of your largest pair of fastq files.
-To resize `\tmp`, run (with whatever size you need):
+To resize `/tmp`, add this line to `/etc/fstab` (tab-separated, with whatever size you need):
 
 ```
-sudo mount -o remount,size=64G /tmp/
+tmpfs  /tmp  tmpfs  size=64G  0  0
 ```
 
-Note this is temporary and will reset the next time you log out.
+then run:
+
+```
+sudo mount -o remount /tmp/
+```
 
 ### RiboDetector
 See [documentation](https://github.com/hzi-bifo/RiboDetector). To install:
