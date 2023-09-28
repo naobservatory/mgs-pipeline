@@ -239,7 +239,10 @@ On Linux these files are stored in `/tmp`.
 If you don’t have enough space available in `/tmp`, AdapterRemoval will crash.
 To check the available space in `/tmp` run `df -H`.
 You should have at least 2x the size of your largest pair of fastq files.
-To resize `/tmp`, add this line to `/etc/fstab` (tab-separated, with whatever size you need):
+
+To resize `/tmp`, edit `/etc/fstab`.
+If there is an entry for `/tmp`, add the option `size=64G` (or whatever size you need) to the 4th column.
+If not, add this line to the end of the file (tab-separated):
 
 ```
 tmpfs  /tmp  tmpfs  size=64G  0  0
