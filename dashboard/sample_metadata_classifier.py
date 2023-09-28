@@ -238,7 +238,7 @@ def interpret(project, papers, bits):
             country=country,
             location=wtp)
     elif project in papers["Langenfeld 2022"]["projects"]:
-        sample, date, collection = bits
+        sample, date, source = bits
         return sample, dict(
             date=date,
             # secondary effluent | raw influent

@@ -4,35 +4,40 @@
     "date": "2022",
     "enrichment": "viral",
     "location": "Municipal",
-    "reads": 93753080
+    "reads": 93753080,
+    "ribocounts": 27266896
   },
   "COMO2": {
     "country": "United States",
     "date": "2022",
     "enrichment": "viral",
     "location": "Municipal",
-    "reads": 15103197
+    "reads": 15103197,
+    "ribocounts": 6933477
   },
   "COMO3": {
     "country": "United States",
     "date": "2022",
     "enrichment": "viral",
     "location": "Municipal",
-    "reads": 14700571
+    "reads": 14700571,
+    "ribocounts": 6751252
   },
   "COMO4": {
     "country": "United States",
     "date": "2022",
     "enrichment": "viral",
     "location": "Municipal",
-    "reads": 15578784
+    "reads": 15578784,
+    "ribocounts": 7201505
   },
   "COMO5": {
     "country": "United States",
     "date": "2022",
     "enrichment": "viral",
     "location": "Municipal",
-    "reads": 14600679
+    "reads": 14600679,
+    "ribocounts": 6719791
   },
   "ERR1224340": {
     "country": "China",
@@ -10989,6 +10994,7 @@
     "country": "China",
     "date": "2020-01",
     "reads": 28282964,
+    "ribocounts": 9187390,
     "state": "Hubei"
   },
   "SRR12204734": {
@@ -11167,6 +11173,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 2132,
+    "ribocounts": 0,
     "state": "Kampong Speu"
   },
   "SRR13167435": {
@@ -11175,6 +11182,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1662,
+    "ribocounts": 245,
     "state": "Kampong Speu"
   },
   "SRR13167436": {
@@ -11183,6 +11191,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 3600,
+    "ribocounts": 638,
     "state": "Kampong Speu"
   },
   "SRR13167437": {
@@ -11191,6 +11200,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 148,
+    "ribocounts": 17,
     "state": "Kampong Speu"
   },
   "SRR13167438": {
@@ -11199,6 +11209,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 149,
+    "ribocounts": 22,
     "state": "Kampong Speu"
   },
   "SRR13167439": {
@@ -11207,6 +11218,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 319,
+    "ribocounts": 35,
     "state": "Kampong Speu"
   },
   "SRR13167440": {
@@ -11215,6 +11227,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 611,
+    "ribocounts": 56,
     "state": "Kampong Speu"
   },
   "SRR13167441": {
@@ -11223,6 +11236,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 216,
+    "ribocounts": 28,
     "state": "Kampong Speu"
   },
   "SRR13167442": {
@@ -11231,6 +11245,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 29,
+    "ribocounts": 2,
     "state": "Kampong Speu"
   },
   "SRR13167443": {
@@ -11239,6 +11254,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 891,
+    "ribocounts": 120,
     "state": "Kampong Speu"
   },
   "SRR13176755": {
@@ -11247,6 +11263,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1582,
+    "ribocounts": 348,
     "state": "Kampong Speu"
   },
   "SRR13176756": {
@@ -11255,6 +11272,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 12348,
+    "ribocounts": 250,
     "state": "Kampong Speu"
   },
   "SRR13176757": {
@@ -11263,6 +11281,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 25,
+    "ribocounts": 9,
     "state": "Kampong Speu"
   },
   "SRR13176758": {
@@ -11271,6 +11290,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 18323,
+    "ribocounts": 3439,
     "state": "Kampong Speu"
   },
   "SRR13176759": {
@@ -11279,6 +11299,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 66,
+    "ribocounts": 3,
     "state": "Kampong Speu"
   },
   "SRR13176760": {
@@ -11287,6 +11308,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 9490,
+    "ribocounts": 1503,
     "state": "Kampong Speu"
   },
   "SRR13176761": {
@@ -11295,6 +11317,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 19,
+    "ribocounts": 3,
     "state": "Kampong Speu"
   },
   "SRR13176762": {
@@ -11303,6 +11326,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 175,
+    "ribocounts": 31,
     "state": "Kampong Speu"
   },
   "SRR13176763": {
@@ -11311,6 +11335,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 247,
+    "ribocounts": 28,
     "state": "Kampong Speu"
   },
   "SRR13176764": {
@@ -11319,6 +11344,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 65,
+    "ribocounts": 10,
     "state": "Kampong Speu"
   },
   "SRR13176765": {
@@ -11327,6 +11353,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 8194,
+    "ribocounts": 1588,
     "state": "Kampong Speu"
   },
   "SRR13176766": {
@@ -11335,6 +11362,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 183,
+    "ribocounts": 18,
     "state": "Kampong Speu"
   },
   "SRR13176767": {
@@ -11343,6 +11371,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 381,
+    "ribocounts": 25,
     "state": "Kampong Speu"
   },
   "SRR13176768": {
@@ -11351,6 +11380,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 60,
+    "ribocounts": 4,
     "state": "Kampong Speu"
   },
   "SRR13176769": {
@@ -11359,6 +11389,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 50,
+    "ribocounts": 3,
     "state": "Kampong Speu"
   },
   "SRR13176770": {
@@ -11367,6 +11398,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 64,
+    "ribocounts": 13,
     "state": "Kampong Speu"
   },
   "SRR13176771": {
@@ -11375,6 +11407,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 3664,
+    "ribocounts": 960,
     "state": "Kampong Speu"
   },
   "SRR13176772": {
@@ -11383,6 +11416,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 493,
+    "ribocounts": 17,
     "state": "Kampong Speu"
   },
   "SRR13176773": {
@@ -11391,6 +11425,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 109,
+    "ribocounts": 17,
     "state": "Kampong Speu"
   },
   "SRR13176774": {
@@ -11399,6 +11434,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 80,
+    "ribocounts": 8,
     "state": "Kampong Speu"
   },
   "SRR13176903": {
@@ -11407,6 +11443,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 85,
+    "ribocounts": 17,
     "state": "Kampong Speu"
   },
   "SRR13176904": {
@@ -11415,6 +11452,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 61,
+    "ribocounts": 16,
     "state": "Kampong Speu"
   },
   "SRR13176905": {
@@ -11423,6 +11461,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 77,
+    "ribocounts": 6,
     "state": "Kampong Speu"
   },
   "SRR13176906": {
@@ -11431,6 +11470,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 215,
+    "ribocounts": 59,
     "state": "Kampong Speu"
   },
   "SRR13176907": {
@@ -11439,6 +11479,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 13,
+    "ribocounts": 1,
     "state": "Kampong Speu"
   },
   "SRR13176908": {
@@ -11447,6 +11488,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1612,
+    "ribocounts": 299,
     "state": "Kampong Speu"
   },
   "SRR13176909": {
@@ -11455,6 +11497,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 428,
+    "ribocounts": 62,
     "state": "Kampong Speu"
   },
   "SRR13176910": {
@@ -11463,6 +11506,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 722,
+    "ribocounts": 47,
     "state": "Kampong Speu"
   },
   "SRR13176911": {
@@ -11471,6 +11515,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 11597,
+    "ribocounts": 1206,
     "state": "Kampong Speu"
   },
   "SRR13176912": {
@@ -11479,6 +11524,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 13845,
+    "ribocounts": 3501,
     "state": "Kampong Speu"
   },
   "SRR13176913": {
@@ -11487,6 +11533,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 7478,
+    "ribocounts": 2017,
     "state": "Kampong Speu"
   },
   "SRR13176914": {
@@ -11495,6 +11542,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 8514,
+    "ribocounts": 1960,
     "state": "Kampong Speu"
   },
   "SRR13176915": {
@@ -11503,6 +11551,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 6538,
+    "ribocounts": 1042,
     "state": "Kampong Speu"
   },
   "SRR13176916": {
@@ -11511,6 +11560,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1330,
+    "ribocounts": 241,
     "state": "Kampong Speu"
   },
   "SRR13176917": {
@@ -11519,6 +11569,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 6087,
+    "ribocounts": 1349,
     "state": "Kampong Speu"
   },
   "SRR13176918": {
@@ -11527,6 +11578,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 8733,
+    "ribocounts": 1649,
     "state": "Kampong Speu"
   },
   "SRR13176919": {
@@ -11535,6 +11587,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 14943,
+    "ribocounts": 67,
     "state": "Kampong Speu"
   },
   "SRR13176920": {
@@ -11543,6 +11596,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 8770,
+    "ribocounts": 185,
     "state": "Kampong Speu"
   },
   "SRR13176921": {
@@ -11551,6 +11605,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 85,
+    "ribocounts": 10,
     "state": "Kampong Speu"
   },
   "SRR13176922": {
@@ -11559,6 +11614,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 8431,
+    "ribocounts": 1669,
     "state": "Kampong Speu"
   },
   "SRR13177050": {
@@ -11567,6 +11623,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 4,
+    "ribocounts": 2,
     "state": "Kampong Speu"
   },
   "SRR13177051": {
@@ -11575,6 +11632,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1174,
+    "ribocounts": 194,
     "state": "Kampong Speu"
   },
   "SRR13177052": {
@@ -11583,6 +11641,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1011,
+    "ribocounts": 207,
     "state": "Kampong Speu"
   },
   "SRR13177053": {
@@ -11591,6 +11650,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1670,
+    "ribocounts": 401,
     "state": "Kampong Speu"
   },
   "SRR13177054": {
@@ -11599,6 +11659,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1414,
+    "ribocounts": 270,
     "state": "Kampong Speu"
   },
   "SRR13177055": {
@@ -11607,6 +11668,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 10784,
+    "ribocounts": 62,
     "state": "Kampong Speu"
   },
   "SRR13177056": {
@@ -11615,6 +11677,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 3370,
+    "ribocounts": 707,
     "state": "Kampong Speu"
   },
   "SRR13177057": {
@@ -11623,6 +11686,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 20384,
+    "ribocounts": 3871,
     "state": "Kampong Speu"
   },
   "SRR13177058": {
@@ -11631,6 +11695,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1437,
+    "ribocounts": 318,
     "state": "Kampong Speu"
   },
   "SRR13177059": {
@@ -11639,6 +11704,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 897,
+    "ribocounts": 234,
     "state": "Kampong Speu"
   },
   "SRR13177060": {
@@ -11647,6 +11713,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 937,
+    "ribocounts": 458,
     "state": "Kampong Speu"
   },
   "SRR13177061": {
@@ -11655,6 +11722,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 2886,
+    "ribocounts": 855,
     "state": "Kampong Speu"
   },
   "SRR13177062": {
@@ -11663,6 +11731,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1841,
+    "ribocounts": 1042,
     "state": "Kampong Speu"
   },
   "SRR13177063": {
@@ -11671,6 +11740,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 4281,
+    "ribocounts": 1501,
     "state": "Kampong Speu"
   },
   "SRR13177064": {
@@ -11679,6 +11749,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 2458,
+    "ribocounts": 1268,
     "state": "Kampong Speu"
   },
   "SRR13177065": {
@@ -11687,6 +11758,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 594,
+    "ribocounts": 278,
     "state": "Kampong Speu"
   },
   "SRR13177066": {
@@ -11695,6 +11767,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 3310,
+    "ribocounts": 1104,
     "state": "Kampong Speu"
   },
   "SRR13177067": {
@@ -11703,6 +11776,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 7600,
+    "ribocounts": 2028,
     "state": "Kampong Speu"
   },
   "SRR13177068": {
@@ -11711,6 +11785,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 8096,
+    "ribocounts": 1913,
     "state": "Kampong Speu"
   },
   "SRR13177069": {
@@ -11719,6 +11794,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 7941,
+    "ribocounts": 3904,
     "state": "Kampong Speu"
   },
   "SRR13177070": {
@@ -11727,6 +11803,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 5161,
+    "ribocounts": 2070,
     "state": "Kampong Speu"
   },
   "SRR13177071": {
@@ -11735,6 +11812,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 2999,
+    "ribocounts": 883,
     "state": "Kampong Speu"
   },
   "SRR13177072": {
@@ -11743,6 +11821,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 832,
+    "ribocounts": 236,
     "state": "Kampong Speu"
   },
   "SRR13177073": {
@@ -11751,6 +11830,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1896,
+    "ribocounts": 719,
     "state": "Kampong Speu"
   },
   "SRR13177074": {
@@ -11759,6 +11839,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 6426,
+    "ribocounts": 1717,
     "state": "Kampong Speu"
   },
   "SRR13177075": {
@@ -11767,6 +11848,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 3377,
+    "ribocounts": 1431,
     "state": "Kampong Speu"
   },
   "SRR13177076": {
@@ -11775,6 +11857,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1298,
+    "ribocounts": 478,
     "state": "Kampong Speu"
   },
   "SRR13177077": {
@@ -11783,6 +11866,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 6597,
+    "ribocounts": 1739,
     "state": "Kampong Speu"
   },
   "SRR13177078": {
@@ -11791,6 +11875,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 2560,
+    "ribocounts": 1321,
     "state": "Kampong Speu"
   },
   "SRR13177079": {
@@ -11799,6 +11884,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 66902,
+    "ribocounts": 203,
     "state": "Kampong Speu"
   },
   "SRR13177080": {
@@ -11807,6 +11893,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 14753,
+    "ribocounts": 6240,
     "state": "Kampong Speu"
   },
   "SRR13177081": {
@@ -11815,6 +11902,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 22089,
+    "ribocounts": 8339,
     "state": "Kampong Speu"
   },
   "SRR13177082": {
@@ -11823,6 +11911,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 15243,
+    "ribocounts": 3928,
     "state": "Kampong Speu"
   },
   "SRR13177083": {
@@ -11831,6 +11920,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 9555,
+    "ribocounts": 2128,
     "state": "Kampong Speu"
   },
   "SRR13177084": {
@@ -11839,6 +11929,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 6461,
+    "ribocounts": 2703,
     "state": "Kampong Speu"
   },
   "SRR13177085": {
@@ -11847,6 +11938,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 11848,
+    "ribocounts": 4042,
     "state": "Kampong Speu"
   },
   "SRR13177086": {
@@ -11855,6 +11947,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 9383,
+    "ribocounts": 3862,
     "state": "Kampong Speu"
   },
   "SRR13177087": {
@@ -11863,6 +11956,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 7967,
+    "ribocounts": 2088,
     "state": "Kampong Speu"
   },
   "SRR13177088": {
@@ -11871,6 +11965,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1799,
+    "ribocounts": 634,
     "state": "Kampong Speu"
   },
   "SRR13177089": {
@@ -11879,6 +11974,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 16949,
+    "ribocounts": 5780,
     "state": "Kampong Speu"
   },
   "SRR13177090": {
@@ -11887,6 +11983,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 11018,
+    "ribocounts": 3585,
     "state": "Kampong Speu"
   },
   "SRR13177091": {
@@ -11895,6 +11992,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 3015,
+    "ribocounts": 1100,
     "state": "Kampong Speu"
   },
   "SRR13177092": {
@@ -11903,6 +12001,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 765,
+    "ribocounts": 119,
     "state": "Kampong Speu"
   },
   "SRR13177093": {
@@ -11911,6 +12010,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1122,
+    "ribocounts": 221,
     "state": "Kampong Speu"
   },
   "SRR13177094": {
@@ -11919,6 +12019,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 4817,
+    "ribocounts": 1930,
     "state": "Kampong Speu"
   },
   "SRR13177095": {
@@ -11927,6 +12028,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 14302,
+    "ribocounts": 2016,
     "state": "Kampong Speu"
   },
   "SRR13177096": {
@@ -11935,6 +12037,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 2710,
+    "ribocounts": 1057,
     "state": "Kampong Speu"
   },
   "SRR13177097": {
@@ -11943,6 +12046,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1792,
+    "ribocounts": 679,
     "state": "Kampong Speu"
   },
   "SRR13177098": {
@@ -11951,6 +12055,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 5055,
+    "ribocounts": 988,
     "state": "Kampong Speu"
   },
   "SRR13177099": {
@@ -11959,6 +12064,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 35499,
+    "ribocounts": 135,
     "state": "Kampong Speu"
   },
   "SRR13177100": {
@@ -11967,6 +12073,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 33637,
+    "ribocounts": 8087,
     "state": "Kampong Speu"
   },
   "SRR13711298": {
@@ -11975,6 +12082,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 6188,
+    "ribocounts": 997,
     "state": "Kampong Speu"
   },
   "SRR13711299": {
@@ -11983,6 +12091,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 3196,
+    "ribocounts": 503,
     "state": "Kampong Speu"
   },
   "SRR13711300": {
@@ -11991,6 +12100,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1709,
+    "ribocounts": 320,
     "state": "Kampong Speu"
   },
   "SRR13711301": {
@@ -11999,6 +12109,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 11402,
+    "ribocounts": 3174,
     "state": "Kampong Speu"
   },
   "SRR13711302": {
@@ -12007,6 +12118,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 3883,
+    "ribocounts": 1045,
     "state": "Kampong Speu"
   },
   "SRR13711303": {
@@ -12015,6 +12127,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 14231,
+    "ribocounts": 3574,
     "state": "Kampong Speu"
   },
   "SRR13711304": {
@@ -12023,6 +12136,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 7,
+    "ribocounts": 1,
     "state": "Kampong Speu"
   },
   "SRR13711305": {
@@ -12031,6 +12145,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 9681,
+    "ribocounts": 4385,
     "state": "Kampong Speu"
   },
   "SRR13711306": {
@@ -12039,6 +12154,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 19,
+    "ribocounts": 5,
     "state": "Kampong Speu"
   },
   "SRR13711307": {
@@ -12047,6 +12163,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 3193,
+    "ribocounts": 560,
     "state": "Kampong Speu"
   },
   "SRR13711853": {
@@ -12055,6 +12172,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 92,
+    "ribocounts": 1,
     "state": "Kampong Speu"
   },
   "SRR13711854": {
@@ -12063,6 +12181,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 159,
+    "ribocounts": 53,
     "state": "Kampong Speu"
   },
   "SRR13711855": {
@@ -12071,6 +12190,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 5479,
+    "ribocounts": 83,
     "state": "Kampong Speu"
   },
   "SRR13711856": {
@@ -12079,6 +12199,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 111,
+    "ribocounts": 37,
     "state": "Kampong Speu"
   },
   "SRR13711857": {
@@ -12087,6 +12208,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 49,
+    "ribocounts": 8,
     "state": "Kampong Speu"
   },
   "SRR13711858": {
@@ -12095,6 +12217,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 427,
+    "ribocounts": 115,
     "state": "Kampong Speu"
   },
   "SRR13711859": {
@@ -12103,6 +12226,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 532,
+    "ribocounts": 98,
     "state": "Kampong Speu"
   },
   "SRR13711860": {
@@ -12111,6 +12235,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 271,
+    "ribocounts": 97,
     "state": "Kampong Speu"
   },
   "SRR13711861": {
@@ -12119,6 +12244,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 137,
+    "ribocounts": 27,
     "state": "Kampong Speu"
   },
   "SRR13711862": {
@@ -12127,6 +12253,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 3172,
+    "ribocounts": 607,
     "state": "Kampong Speu"
   },
   "SRR13711863": {
@@ -12135,6 +12262,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 17596,
+    "ribocounts": 546,
     "state": "Kampong Speu"
   },
   "SRR13711864": {
@@ -12143,6 +12271,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1432,
+    "ribocounts": 279,
     "state": "Kampong Speu"
   },
   "SRR13711865": {
@@ -12151,6 +12280,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 414,
+    "ribocounts": 104,
     "state": "Kampong Speu"
   },
   "SRR13711866": {
@@ -12159,6 +12289,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 861,
+    "ribocounts": 199,
     "state": "Kampong Speu"
   },
   "SRR13711867": {
@@ -12167,6 +12298,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 15662,
+    "ribocounts": 3573,
     "state": "Kampong Speu"
   },
   "SRR13711868": {
@@ -12175,6 +12307,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 17812,
+    "ribocounts": 3252,
     "state": "Kampong Speu"
   },
   "SRR13711869": {
@@ -12183,6 +12316,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 3538,
+    "ribocounts": 72,
     "state": "Kampong Speu"
   },
   "SRR13711870": {
@@ -12191,6 +12325,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 116,
+    "ribocounts": 29,
     "state": "Kampong Speu"
   },
   "SRR13711871": {
@@ -12199,6 +12334,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 24462,
+    "ribocounts": 141,
     "state": "Kampong Speu"
   },
   "SRR13711872": {
@@ -12207,6 +12343,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 615,
+    "ribocounts": 109,
     "state": "Kampong Speu"
   },
   "SRR13711873": {
@@ -12215,6 +12352,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 97306,
+    "ribocounts": 151,
     "state": "Kampong Speu"
   },
   "SRR13711874": {
@@ -12223,6 +12361,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 10360,
+    "ribocounts": 1798,
     "state": "Kampong Speu"
   },
   "SRR13711875": {
@@ -12231,6 +12370,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 457,
+    "ribocounts": 75,
     "state": "Kampong Speu"
   },
   "SRR13711876": {
@@ -12239,6 +12379,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 400,
+    "ribocounts": 65,
     "state": "Kampong Speu"
   },
   "SRR13711877": {
@@ -12247,6 +12388,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 2286,
+    "ribocounts": 333,
     "state": "Kampong Speu"
   },
   "SRR13711878": {
@@ -12255,6 +12397,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 396,
+    "ribocounts": 84,
     "state": "Kampong Speu"
   },
   "SRR13711879": {
@@ -12263,6 +12406,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 2936,
+    "ribocounts": 781,
     "state": "Kampong Speu"
   },
   "SRR13711880": {
@@ -12271,6 +12415,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 9665,
+    "ribocounts": 2527,
     "state": "Kampong Speu"
   },
   "SRR13711881": {
@@ -12279,6 +12424,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 3937,
+    "ribocounts": 795,
     "state": "Kampong Speu"
   },
   "SRR13711882": {
@@ -12287,6 +12433,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1036,
+    "ribocounts": 272,
     "state": "Kampong Speu"
   },
   "SRR13711883": {
@@ -12295,6 +12442,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 451,
+    "ribocounts": 140,
     "state": "Kampong Speu"
   },
   "SRR13711884": {
@@ -12303,6 +12451,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 236,
+    "ribocounts": 74,
     "state": "Kampong Speu"
   },
   "SRR13711885": {
@@ -12311,6 +12460,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 3861,
+    "ribocounts": 530,
     "state": "Kampong Speu"
   },
   "SRR13711886": {
@@ -12319,6 +12469,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 10904,
+    "ribocounts": 8866,
     "state": "Kampong Speu"
   },
   "SRR13711887": {
@@ -12327,6 +12478,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 451,
+    "ribocounts": 88,
     "state": "Kampong Speu"
   },
   "SRR13711888": {
@@ -12335,6 +12487,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 890,
+    "ribocounts": 160,
     "state": "Kampong Speu"
   },
   "SRR13711889": {
@@ -12343,6 +12496,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 34,
+    "ribocounts": 9,
     "state": "Kampong Speu"
   },
   "SRR13711890": {
@@ -12351,6 +12505,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1375,
+    "ribocounts": 100,
     "state": "Kampong Speu"
   },
   "SRR13711891": {
@@ -12359,6 +12514,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 68450,
+    "ribocounts": 46,
     "state": "Kampong Speu"
   },
   "SRR13711892": {
@@ -12367,6 +12523,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 87,
+    "ribocounts": 45,
     "state": "Kampong Speu"
   },
   "SRR13711893": {
@@ -12375,6 +12532,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1163,
+    "ribocounts": 688,
     "state": "Kampong Speu"
   },
   "SRR13711894": {
@@ -12383,6 +12541,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 925,
+    "ribocounts": 162,
     "state": "Kampong Speu"
   },
   "SRR13711895": {
@@ -12391,6 +12550,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 2504,
+    "ribocounts": 29,
     "state": "Kampong Speu"
   },
   "SRR13711896": {
@@ -12399,6 +12559,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1443,
+    "ribocounts": 36,
     "state": "Kampong Speu"
   },
   "SRR13711897": {
@@ -12407,6 +12568,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 168067,
+    "ribocounts": 311,
     "state": "Kampong Speu"
   },
   "SRR13711898": {
@@ -12415,6 +12577,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 59,
+    "ribocounts": 26,
     "state": "Kampong Speu"
   },
   "SRR13711899": {
@@ -12423,6 +12586,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 34,
+    "ribocounts": 16,
     "state": "Kampong Speu"
   },
   "SRR13711900": {
@@ -12431,6 +12595,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 162,
+    "ribocounts": 78,
     "state": "Kampong Speu"
   },
   "SRR13711901": {
@@ -12439,6 +12604,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 95,
+    "ribocounts": 16,
     "state": "Kampong Speu"
   },
   "SRR13711902": {
@@ -12447,6 +12613,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 80,
+    "ribocounts": 16,
     "state": "Kampong Speu"
   },
   "SRR13711903": {
@@ -12455,6 +12622,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 22655,
+    "ribocounts": 3831,
     "state": "Kampong Speu"
   },
   "SRR13711904": {
@@ -12463,6 +12631,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 737,
+    "ribocounts": 152,
     "state": "Kampong Speu"
   },
   "SRR13711905": {
@@ -12471,6 +12640,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 992,
+    "ribocounts": 206,
     "state": "Kampong Speu"
   },
   "SRR13711906": {
@@ -12479,6 +12649,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 6563,
+    "ribocounts": 1259,
     "state": "Kampong Speu"
   },
   "SRR13711907": {
@@ -12487,6 +12658,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 3963,
+    "ribocounts": 1954,
     "state": "Kampong Speu"
   },
   "SRR13711908": {
@@ -12495,6 +12667,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 5076,
+    "ribocounts": 2479,
     "state": "Kampong Speu"
   },
   "SRR13711909": {
@@ -12503,6 +12676,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 126253,
+    "ribocounts": 601,
     "state": "Kampong Speu"
   },
   "SRR13711910": {
@@ -12511,6 +12685,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 6970,
+    "ribocounts": 4017,
     "state": "Kampong Speu"
   },
   "SRR13711911": {
@@ -12519,6 +12694,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 9562,
+    "ribocounts": 2627,
     "state": "Kampong Speu"
   },
   "SRR13711912": {
@@ -12527,6 +12703,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 2452,
+    "ribocounts": 1211,
     "state": "Kampong Speu"
   },
   "SRR13711913": {
@@ -12535,6 +12712,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1595,
+    "ribocounts": 881,
     "state": "Kampong Speu"
   },
   "SRR13711914": {
@@ -12543,6 +12721,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 10185,
+    "ribocounts": 3777,
     "state": "Kampong Speu"
   },
   "SRR13711915": {
@@ -12551,6 +12730,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 71133,
+    "ribocounts": 927,
     "state": "Kampong Speu"
   },
   "SRR13711916": {
@@ -12559,6 +12739,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 9279,
+    "ribocounts": 2131,
     "state": "Kampong Speu"
   },
   "SRR13711917": {
@@ -12567,6 +12748,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 413,
+    "ribocounts": 121,
     "state": "Kampong Speu"
   },
   "SRR13711918": {
@@ -12575,6 +12757,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 130,
+    "ribocounts": 28,
     "state": "Kampong Speu"
   },
   "SRR13711919": {
@@ -12583,6 +12766,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 4907,
+    "ribocounts": 1011,
     "state": "Kampong Speu"
   },
   "SRR13711920": {
@@ -12591,6 +12775,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 132,
+    "ribocounts": 40,
     "state": "Kampong Speu"
   },
   "SRR13711921": {
@@ -12599,6 +12784,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 440,
+    "ribocounts": 181,
     "state": "Kampong Speu"
   },
   "SRR13711922": {
@@ -12607,6 +12793,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 586,
+    "ribocounts": 107,
     "state": "Kampong Speu"
   },
   "SRR13711923": {
@@ -12615,6 +12802,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 598,
+    "ribocounts": 179,
     "state": "Kampong Speu"
   },
   "SRR13711924": {
@@ -12623,6 +12811,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 675,
+    "ribocounts": 175,
     "state": "Kampong Speu"
   },
   "SRR13711925": {
@@ -12631,6 +12820,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1717,
+    "ribocounts": 419,
     "state": "Kampong Speu"
   },
   "SRR13711926": {
@@ -12639,6 +12829,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 578,
+    "ribocounts": 177,
     "state": "Kampong Speu"
   },
   "SRR13711927": {
@@ -12647,6 +12838,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 2803,
+    "ribocounts": 924,
     "state": "Kampong Speu"
   },
   "SRR13711928": {
@@ -12655,6 +12847,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 517,
+    "ribocounts": 382,
     "state": "Kampong Speu"
   },
   "SRR13711929": {
@@ -12663,6 +12856,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 699,
+    "ribocounts": 287,
     "state": "Kampong Speu"
   },
   "SRR13711930": {
@@ -12671,6 +12865,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1993,
+    "ribocounts": 615,
     "state": "Kampong Speu"
   },
   "SRR13711931": {
@@ -12679,6 +12874,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 9632,
+    "ribocounts": 1699,
     "state": "Kampong Speu"
   },
   "SRR13712247": {
@@ -12687,6 +12883,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 998,
+    "ribocounts": 4,
     "state": "Kampong Speu"
   },
   "SRR13712248": {
@@ -12695,6 +12892,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 300,
+    "ribocounts": 1,
     "state": "Kampong Speu"
   },
   "SRR13712249": {
@@ -12703,6 +12901,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1977,
+    "ribocounts": 8,
     "state": "Kampong Speu"
   },
   "SRR13712250": {
@@ -12711,6 +12910,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1212,
+    "ribocounts": 2,
     "state": "Kampong Speu"
   },
   "SRR13712251": {
@@ -12719,6 +12919,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 479,
+    "ribocounts": 2,
     "state": "Kampong Speu"
   },
   "SRR13712252": {
@@ -12727,6 +12928,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1865,
+    "ribocounts": 3,
     "state": "Kampong Speu"
   },
   "SRR13712253": {
@@ -12735,6 +12937,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 24,
+    "ribocounts": 0,
     "state": "Kampong Speu"
   },
   "SRR13712254": {
@@ -12743,6 +12946,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 22285,
+    "ribocounts": 33,
     "state": "Kampong Speu"
   },
   "SRR13712255": {
@@ -12751,6 +12955,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 413,
+    "ribocounts": 170,
     "state": "Kampong Speu"
   },
   "SRR13712256": {
@@ -12759,6 +12964,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 348,
+    "ribocounts": 58,
     "state": "Kampong Speu"
   },
   "SRR13712257": {
@@ -12767,6 +12973,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 547,
+    "ribocounts": 140,
     "state": "Kampong Speu"
   },
   "SRR13712258": {
@@ -12775,6 +12982,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 21775,
+    "ribocounts": 74,
     "state": "Kampong Speu"
   },
   "SRR13712259": {
@@ -12783,6 +12991,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 37305,
+    "ribocounts": 826,
     "state": "Kampong Speu"
   },
   "SRR13712260": {
@@ -12791,6 +13000,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 2169,
+    "ribocounts": 1518,
     "state": "Kampong Speu"
   },
   "SRR13712261": {
@@ -12799,6 +13009,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 2310,
+    "ribocounts": 1565,
     "state": "Kampong Speu"
   },
   "SRR13712262": {
@@ -12807,6 +13018,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 7730,
+    "ribocounts": 966,
     "state": "Kampong Speu"
   },
   "SRR13712263": {
@@ -12815,6 +13027,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 415,
+    "ribocounts": 272,
     "state": "Kampong Speu"
   },
   "SRR13712264": {
@@ -12823,6 +13036,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 642,
+    "ribocounts": 440,
     "state": "Kampong Speu"
   },
   "SRR13712265": {
@@ -12831,6 +13045,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 13410,
+    "ribocounts": 735,
     "state": "Kampong Speu"
   },
   "SRR13712266": {
@@ -12839,6 +13054,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 4405,
+    "ribocounts": 3208,
     "state": "Kampong Speu"
   },
   "SRR13712267": {
@@ -12847,6 +13063,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 884,
+    "ribocounts": 629,
     "state": "Kampong Speu"
   },
   "SRR13712268": {
@@ -12855,6 +13072,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 159,
+    "ribocounts": 98,
     "state": "Kampong Speu"
   },
   "SRR13712269": {
@@ -12863,6 +13081,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 223,
+    "ribocounts": 164,
     "state": "Kampong Speu"
   },
   "SRR13712270": {
@@ -12871,6 +13090,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1349,
+    "ribocounts": 1188,
     "state": "Kampong Speu"
   },
   "SRR13712271": {
@@ -12879,6 +13099,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 8590,
+    "ribocounts": 7524,
     "state": "Kampong Speu"
   },
   "SRR13712272": {
@@ -12887,6 +13108,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 4466,
+    "ribocounts": 3916,
     "state": "Kampong Speu"
   },
   "SRR13712273": {
@@ -12895,6 +13117,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 265,
+    "ribocounts": 75,
     "state": "Kampong Speu"
   },
   "SRR13712274": {
@@ -12903,6 +13126,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 8680,
+    "ribocounts": 7823,
     "state": "Kampong Speu"
   },
   "SRR13712275": {
@@ -12911,6 +13135,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 7964,
+    "ribocounts": 1430,
     "state": "Kampong Speu"
   },
   "SRR13712276": {
@@ -12919,6 +13144,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 863,
+    "ribocounts": 481,
     "state": "Kampong Speu"
   },
   "SRR13712277": {
@@ -12927,6 +13153,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 2132,
+    "ribocounts": 1835,
     "state": "Kampong Speu"
   },
   "SRR13712278": {
@@ -12935,6 +13162,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 135,
+    "ribocounts": 59,
     "state": "Kampong Speu"
   },
   "SRR13712279": {
@@ -12943,6 +13171,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 14945,
+    "ribocounts": 11913,
     "state": "Kampong Speu"
   },
   "SRR13712280": {
@@ -12951,6 +13180,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 3140,
+    "ribocounts": 2835,
     "state": "Kampong Speu"
   },
   "SRR13712281": {
@@ -12959,6 +13189,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 13465,
+    "ribocounts": 10193,
     "state": "Kampong Speu"
   },
   "SRR13712282": {
@@ -12967,6 +13198,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 11230,
+    "ribocounts": 10243,
     "state": "Kampong Speu"
   },
   "SRR13712283": {
@@ -12975,6 +13207,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1349,
+    "ribocounts": 115,
     "state": "Kampong Speu"
   },
   "SRR13712284": {
@@ -12983,6 +13216,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 8488,
+    "ribocounts": 1072,
     "state": "Kampong Speu"
   },
   "SRR13712285": {
@@ -12991,6 +13225,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1356,
+    "ribocounts": 372,
     "state": "Kampong Speu"
   },
   "SRR13712286": {
@@ -12999,6 +13234,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 805,
+    "ribocounts": 129,
     "state": "Kampong Speu"
   },
   "SRR13712287": {
@@ -13007,6 +13243,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 4096,
+    "ribocounts": 383,
     "state": "Kampong Speu"
   },
   "SRR13712288": {
@@ -13015,6 +13252,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 410,
+    "ribocounts": 54,
     "state": "Kampong Speu"
   },
   "SRR13712289": {
@@ -13023,6 +13261,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 2642,
+    "ribocounts": 392,
     "state": "Kampong Speu"
   },
   "SRR13712290": {
@@ -13031,6 +13270,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 474,
+    "ribocounts": 67,
     "state": "Kampong Speu"
   },
   "SRR13712291": {
@@ -13039,6 +13279,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 506,
+    "ribocounts": 144,
     "state": "Kampong Speu"
   },
   "SRR13712292": {
@@ -13047,6 +13288,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1017,
+    "ribocounts": 182,
     "state": "Kampong Speu"
   },
   "SRR13712293": {
@@ -13055,6 +13297,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 543,
+    "ribocounts": 82,
     "state": "Kampong Speu"
   },
   "SRR13712294": {
@@ -13063,6 +13306,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 2437,
+    "ribocounts": 371,
     "state": "Kampong Speu"
   },
   "SRR13712295": {
@@ -13071,6 +13315,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1476,
+    "ribocounts": 204,
     "state": "Kampong Speu"
   },
   "SRR13712296": {
@@ -13079,6 +13324,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1192,
+    "ribocounts": 172,
     "state": "Kampong Speu"
   },
   "SRR13712297": {
@@ -13087,6 +13333,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 50052,
+    "ribocounts": 75,
     "state": "Kampong Speu"
   },
   "SRR13712298": {
@@ -13095,6 +13342,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 503,
+    "ribocounts": 88,
     "state": "Kampong Speu"
   },
   "SRR13712299": {
@@ -13103,6 +13351,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 160,
+    "ribocounts": 24,
     "state": "Kampong Speu"
   },
   "SRR13712300": {
@@ -13111,6 +13360,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 484,
+    "ribocounts": 119,
     "state": "Kampong Speu"
   },
   "SRR13712301": {
@@ -13119,6 +13369,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 858,
+    "ribocounts": 355,
     "state": "Kampong Speu"
   },
   "SRR13712302": {
@@ -13127,6 +13378,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 32966,
+    "ribocounts": 187,
     "state": "Kampong Speu"
   },
   "SRR13712303": {
@@ -13135,6 +13387,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 199,
+    "ribocounts": 46,
     "state": "Kampong Speu"
   },
   "SRR13712304": {
@@ -13143,6 +13396,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 101,
+    "ribocounts": 9,
     "state": "Kampong Speu"
   },
   "SRR13712305": {
@@ -13151,6 +13405,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 2078,
+    "ribocounts": 430,
     "state": "Kampong Speu"
   },
   "SRR13712306": {
@@ -13159,6 +13414,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 220,
+    "ribocounts": 45,
     "state": "Kampong Speu"
   },
   "SRR13712307": {
@@ -13167,6 +13423,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 441,
+    "ribocounts": 73,
     "state": "Kampong Speu"
   },
   "SRR13712308": {
@@ -13175,6 +13432,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1058,
+    "ribocounts": 128,
     "state": "Kampong Speu"
   },
   "SRR13712309": {
@@ -13183,6 +13441,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 11915,
+    "ribocounts": 851,
     "state": "Kampong Speu"
   },
   "SRR13712310": {
@@ -13191,6 +13450,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 35561,
+    "ribocounts": 95,
     "state": "Kampong Speu"
   },
   "SRR13712311": {
@@ -13199,6 +13459,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 147,
+    "ribocounts": 37,
     "state": "Kampong Speu"
   },
   "SRR13712312": {
@@ -13207,6 +13468,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 251,
+    "ribocounts": 49,
     "state": "Kampong Speu"
   },
   "SRR13712313": {
@@ -13215,6 +13477,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 221,
+    "ribocounts": 29,
     "state": "Kampong Speu"
   },
   "SRR13712314": {
@@ -13223,6 +13486,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 28155,
+    "ribocounts": 167,
     "state": "Kampong Speu"
   },
   "SRR13712315": {
@@ -13231,6 +13495,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1293,
+    "ribocounts": 183,
     "state": "Kampong Speu"
   },
   "SRR13712316": {
@@ -13239,6 +13504,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 310,
+    "ribocounts": 216,
     "state": "Kampong Speu"
   },
   "SRR13712317": {
@@ -13247,6 +13513,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 240,
+    "ribocounts": 102,
     "state": "Kampong Speu"
   },
   "SRR13712318": {
@@ -13255,6 +13522,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 28,
+    "ribocounts": 8,
     "state": "Kampong Speu"
   },
   "SRR13712319": {
@@ -13263,6 +13531,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 274,
+    "ribocounts": 73,
     "state": "Kampong Speu"
   },
   "SRR13712320": {
@@ -13271,6 +13540,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 380,
+    "ribocounts": 100,
     "state": "Kampong Speu"
   },
   "SRR13712321": {
@@ -13279,6 +13549,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 12968,
+    "ribocounts": 30,
     "state": "Kampong Speu"
   },
   "SRR13712322": {
@@ -13287,6 +13558,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 22010,
+    "ribocounts": 148,
     "state": "Kampong Speu"
   },
   "SRR13712323": {
@@ -13295,6 +13567,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 938,
+    "ribocounts": 40,
     "state": "Kampong Speu"
   },
   "SRR13712324": {
@@ -13303,6 +13576,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 449,
+    "ribocounts": 57,
     "state": "Kampong Speu"
   },
   "SRR13712325": {
@@ -13311,6 +13585,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 320,
+    "ribocounts": 77,
     "state": "Kampong Speu"
   },
   "SRR13712326": {
@@ -13319,6 +13594,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 586,
+    "ribocounts": 205,
     "state": "Kampong Speu"
   },
   "SRR13712327": {
@@ -13327,6 +13603,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 98602,
+    "ribocounts": 1133,
     "state": "Kampong Speu"
   },
   "SRR13712328": {
@@ -13335,6 +13612,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1028,
+    "ribocounts": 330,
     "state": "Kampong Speu"
   },
   "SRR13712329": {
@@ -13343,6 +13621,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1472,
+    "ribocounts": 507,
     "state": "Kampong Speu"
   },
   "SRR13712330": {
@@ -13351,6 +13630,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 195,
+    "ribocounts": 39,
     "state": "Kampong Speu"
   },
   "SRR13712331": {
@@ -13359,6 +13639,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 58359,
+    "ribocounts": 208,
     "state": "Kampong Speu"
   },
   "SRR13712332": {
@@ -13367,6 +13648,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1884,
+    "ribocounts": 170,
     "state": "Kampong Speu"
   },
   "SRR13712333": {
@@ -13375,6 +13657,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 2458,
+    "ribocounts": 244,
     "state": "Kampong Speu"
   },
   "SRR13712334": {
@@ -13383,6 +13666,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1991,
+    "ribocounts": 285,
     "state": "Kampong Speu"
   },
   "SRR13712335": {
@@ -13391,6 +13675,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 70762,
+    "ribocounts": 466,
     "state": "Kampong Speu"
   },
   "SRR13712336": {
@@ -13399,6 +13684,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 597,
+    "ribocounts": 49,
     "state": "Kampong Speu"
   },
   "SRR13712337": {
@@ -13407,6 +13693,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 389,
+    "ribocounts": 122,
     "state": "Kampong Speu"
   },
   "SRR13712338": {
@@ -13415,6 +13702,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 886,
+    "ribocounts": 197,
     "state": "Kampong Speu"
   },
   "SRR13712339": {
@@ -13423,6 +13711,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 252,
+    "ribocounts": 33,
     "state": "Kampong Speu"
   },
   "SRR13712340": {
@@ -13431,6 +13720,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 879,
+    "ribocounts": 176,
     "state": "Kampong Speu"
   },
   "SRR13712341": {
@@ -13439,6 +13729,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 212,
+    "ribocounts": 53,
     "state": "Kampong Speu"
   },
   "SRR13712342": {
@@ -13447,6 +13738,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 118,
+    "ribocounts": 44,
     "state": "Kampong Speu"
   },
   "SRR13712343": {
@@ -13455,6 +13747,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 4323,
+    "ribocounts": 12,
     "state": "Kampong Speu"
   },
   "SRR13712344": {
@@ -13463,6 +13756,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 209,
+    "ribocounts": 55,
     "state": "Kampong Speu"
   },
   "SRR13712345": {
@@ -13471,6 +13765,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 12825,
+    "ribocounts": 69,
     "state": "Kampong Speu"
   },
   "SRR13712346": {
@@ -13479,6 +13774,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 192,
+    "ribocounts": 46,
     "state": "Kampong Speu"
   },
   "SRR13712347": {
@@ -13487,6 +13783,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 7563,
+    "ribocounts": 72,
     "state": "Kampong Speu"
   },
   "SRR13712348": {
@@ -13495,6 +13792,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 364,
+    "ribocounts": 97,
     "state": "Kampong Speu"
   },
   "SRR13712349": {
@@ -13503,6 +13801,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 149,
+    "ribocounts": 42,
     "state": "Kampong Speu"
   },
   "SRR13712350": {
@@ -13511,6 +13810,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 772,
+    "ribocounts": 161,
     "state": "Kampong Speu"
   },
   "SRR13712351": {
@@ -13519,6 +13819,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 3,
+    "ribocounts": 0,
     "state": "Kampong Speu"
   },
   "SRR13712352": {
@@ -13527,6 +13828,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 15,
+    "ribocounts": 0,
     "state": "Kampong Speu"
   },
   "SRR13966303": {
@@ -13535,6 +13837,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 123,
+    "ribocounts": 87,
     "state": "Kampong Speu"
   },
   "SRR13966304": {
@@ -13543,6 +13846,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 342,
+    "ribocounts": 105,
     "state": "Kampong Speu"
   },
   "SRR14088347": {
@@ -13551,6 +13855,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 5802,
+    "ribocounts": 3957,
     "state": "Kampong Speu"
   },
   "SRR14088538": {
@@ -13559,6 +13864,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 9945,
+    "ribocounts": 5592,
     "state": "Kampong Speu"
   },
   "SRR14099091": {
@@ -13567,6 +13873,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 22013,
+    "ribocounts": 16005,
     "state": "Kampong Speu"
   },
   "SRR14106159": {
@@ -13575,6 +13882,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 44985,
+    "ribocounts": 26580,
     "state": "Kampong Speu"
   },
   "SRR14155280": {
@@ -13583,6 +13891,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 164761,
+    "ribocounts": 109030,
     "state": "Kampong Speu"
   },
   "SRR14530724": {
@@ -17287,6 +17596,96 @@
     "reads": 14804126,
     "state": "California"
   },
+  "SRR20000426": {
+    "city": "Ann Arbor",
+    "country": "USA",
+    "county": "Washtenaw County",
+    "date": "2020-12-24",
+    "reads": 84300049,
+    "source": "secondary effluent",
+    "state": "Michigan"
+  },
+  "SRR20000427": {
+    "city": "Ann Arbor",
+    "country": "USA",
+    "county": "Washtenaw County",
+    "date": "2020-12-23",
+    "reads": 103215741,
+    "source": "raw influent",
+    "state": "Michigan"
+  },
+  "SRR20000428": {
+    "city": "Ann Arbor",
+    "country": "USA",
+    "county": "Washtenaw County",
+    "date": "2020-12-22",
+    "reads": 109423341,
+    "source": "secondary effluent",
+    "state": "Michigan"
+  },
+  "SRR20000429": {
+    "city": "Ann Arbor",
+    "country": "USA",
+    "county": "Washtenaw County",
+    "date": "2020-12-22",
+    "reads": 90911592,
+    "source": "secondary effluent",
+    "state": "Michigan"
+  },
+  "SRR20000430": {
+    "city": "Ann Arbor",
+    "country": "USA",
+    "county": "Washtenaw County",
+    "date": "2020-12-22",
+    "reads": 95032202,
+    "source": "secondary effluent",
+    "state": "Michigan"
+  },
+  "SRR20000431": {
+    "city": "Ann Arbor",
+    "country": "USA",
+    "county": "Washtenaw County",
+    "date": "2020-12-21",
+    "reads": 71927822,
+    "source": "raw influent",
+    "state": "Michigan"
+  },
+  "SRR20000432": {
+    "city": "Ann Arbor",
+    "country": "USA",
+    "county": "Washtenaw County",
+    "date": "2020-12-21",
+    "reads": 66877516,
+    "source": "raw influent",
+    "state": "Michigan"
+  },
+  "SRR20000433": {
+    "city": "Ann Arbor",
+    "country": "USA",
+    "county": "Washtenaw County",
+    "date": "2020-12-21",
+    "reads": 56671801,
+    "source": "raw influent",
+    "state": "Michigan"
+  },
+  "SRR20000440": {
+    "city": "Ann Arbor",
+    "country": "USA",
+    "county": "Washtenaw County",
+    "date": "2020-12-20",
+    "reads": 95514193,
+    "source": "secondary effluent",
+    "state": "Michigan"
+  },
+  "SRR20000441": {
+    "city": "Ann Arbor",
+    "country": "USA",
+    "county": "Washtenaw County",
+    "date": "2020-12-19",
+    "reads": 98828383,
+    "source": "raw influent",
+    "state": "Michigan"
+  },
   "SRR21374446": {
     "country": "United States",
     "date": "2020-09",
@@ -19058,6 +19457,7 @@
     "fine_location": "WTP-J",
     "location": "Houston",
     "reads": 6207281,
+    "ribocounts": 3034261,
     "state": "Texas"
   },
   "SRR23800642": {
@@ -19068,6 +19468,7 @@
     "fine_location": "WTP-I",
     "location": "Houston",
     "reads": 1264519,
+    "ribocounts": 600766,
     "state": "Texas"
   },
   "SRR23800643": {

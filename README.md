@@ -225,12 +225,33 @@ Visit https://github.com/MikkelSchubert/adapterremoval/ to get the latest
 version number, and then:
 
 ```
-wget -O adapterremoval-2.3.1.tar.gz \
-     https://github.com/MikkelSchubert/adapterremoval/archive/v2.3.1.tar.gz
-tar xvzf adapterremoval-2.3.1.tar.gz
-cd adapterremoval-2.3.1
+wget -O adapterremoval-2.3.3.tar.gz \
+     https://github.com/MikkelSchubert/adapterremoval/archive/v2.3.3.tar.gz
+tar xvzf adapterremoval-2.3.3.tar.gz
+cd adapterremoval-2.3.3
 make
 sudo make install
+```
+
+The adapter removal step downloads the fastq files one sample at a time from S3 to the local machine.
+The step also generates local output files there before copying them to S3.
+On Linux these files are stored in `/tmp`.
+If you don’t have enough space available in `/tmp`, AdapterRemoval will crash.
+To check the available space in `/tmp` run `df -H`.
+You should have at least 2x the size of your largest pair of fastq files.
+
+To resize `/tmp`, edit `/etc/fstab`.
+If there is an entry for `/tmp`, add the option `size=64G` (or whatever size you need) to the 4th column.
+If not, add this line to the end of the file (tab-separated):
+
+```
+tmpfs  /tmp  tmpfs  size=64G  0  0
+```
+
+then run:
+
+```
+sudo mount -o remount /tmp/
 ```
 
 ### RiboDetector
@@ -238,6 +259,12 @@ See [documentation](https://github.com/hzi-bifo/RiboDetector). To install:
 
 ```
 pip install ribodetector
+```
+As of 2023/09/26, there is a [bug](https://github.com/microsoft/onnxruntime/issues/17631) in the latest version of one of the dependencies of RiboDetector,
+which causes the program to crash. To avoid this, install an earlier version of the dependency:
+
+```
+pip install onnxruntime==1.15.1
 ```
 
 ### Kraken

@@ -66,6 +66,14 @@
       "MJCOMO1"
     ]
   },
+  "Langenfeld 2022": {
+    "link": "https://www.biorxiv.org/content/10.1101/2022.07.08.499345v2.full",
+    "na_type": "DNA",
+    "projects": [
+      "PRJNA853368"
+    ],
+    "subset": "Illumina sequencing only; excluding Oxford nanopore samples"
+  },
   "Maritz 2019": {
     "link": "https://www.nature.com/articles/s41396-019-0467-z",
     "na_type": "DNA",
