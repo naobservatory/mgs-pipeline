@@ -207,7 +207,7 @@ def ribocounts(args):
     available_inputs = get_files(args, "cleaned",
                                  # tiny files are empty; ignore them
                                  min_size=100)
-    existing_outputs = get_files(args, "ribocounts", min_date='2023-09-25')
+    existing_outputs = get_files(args, "ribocounts", min_date='2023-10-01')
         
     for sample in get_samples(args):
         # Check for name of output file
@@ -216,6 +216,7 @@ def ribocounts(args):
 
         sample_nonrrna_count = 0
         sample_read_count = 0
+        sample_nonrrna_reads = []
         for potential_input in available_inputs:
             if not potential_input.startswith(sample): continue
             if ".settings" in potential_input: continue
@@ -264,13 +265,16 @@ def ribocounts(args):
                 ribodetector_cmd = [
                     "ribodetector_cpu",
                     "--ensure", "rrna",
-                    "--threads", "24",
+                    "--threads", "28",
                     "--chunk_size", "512"
                     ]
                 ribodetector_cmd.extend(["--len", str(avg_length)])
 
                 ribodetector_cmd.append("--input")
                 ribodetector_cmd.extend(inputs)
+
+                # RiboDetector outputs fastq files containing non-rRNA sequences
+                # https://github.com/hzi-bifo/RiboDetector
                 ribodetector_cmd.append("--output")
                 ribodetector_cmd.extend(tmp_fq_outputs)
 
@@ -278,28 +282,47 @@ def ribocounts(args):
                 
                 # Count the number of reads passing rRNA screening (i.e. classified as 
                 # non-rRNA)
-                def count_reads_in_fastq(file_path):
+                # Append titles of non-rRNA sequences to a list
+                def pass_reads_in_fastq(file_path):
                     total_reads = 0
+                    seq_titles = []
                     with open(file_path, 'r') as inf:
                         for (title, sequence, quality) in FastqGeneralIterator(inf):
                             total_reads += 1
-                    return total_reads
+                            seq_titles.append(title)
+                    return total_reads, seq_titles
                 
                 # Count non-rRNA reads in sample. Paired-end reads are counted once
-                sample_nonrrna_count += count_reads_in_fastq(tmp_fq_outputs[0])
+                non_rrna_count, non_rrna_reads = pass_reads_in_fastq(tmp_fq_outputs[0])
+                sample_nonrrna_count += non_rrna_count
+                sample_nonrrna_reads.extend(non_rrna_reads)
 
         # Count number of rRNA reads in sample and send to /ribocounts in S3
         sample_rrna_count = sample_read_count - sample_nonrrna_count
         print(f"Number of rRNA reads in {sample} = {sample_rrna_count}/{sample_read_count} "
                 f"({round(sample_rrna_count/sample_read_count*100)}%)")
 
-        with tempdir("ribocounts", sample + " output") as workdir:
+        # Save number of rRNA reads in sample
+        with tempdir("ribocounts", sample + "_output1") as workdir:
             with open(sample_output_file, 'w') as file:
                 file.write(str(sample_rrna_count) + '\n')
 
             subprocess.check_call([
                 "aws", "s3", "cp", sample_output_file, "%s/%s/ribocounts/" % (
                     S3_BUCKET, args.bioproject)])
+
+        # Save titles of non-rRNA reads
+        # For paired-end reads, only the title of the first reads is saved
+        with tempdir("ribopass_reads", sample + "_output2") as workdirea
+            ribopass_reads_file = os.path.join(workdir, f"{sample}_ribopass_reads.txt")
+            with open(ribopass_reads_file, 'w') as file:
+                for title in sample_nonrrna_reads:
+                    file.write(title + '\n')
+            
+            subprocess.check_call([
+                "aws", "s3", "cp", ribopass_reads_file, "%s/%s/ribopass-reads/" % (
+                    S3_BUCKET, args.bioproject)])
+
 
 def interpret(args):
    available_inputs = get_files(args, "cleaned",
