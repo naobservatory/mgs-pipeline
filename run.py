@@ -314,7 +314,7 @@ def ribocounts(args):
         # Save titles of non-rRNA reads
         # For paired-end reads, only the title of the first reads is saved
         with tempdir("ribopass_reads", sample + "_output2") as workdir:
-            ribopass_reads_file = os.path.join(workdir, f"{sample}_ribopass_reads.txt")
+            ribopass_reads_file = os.path.join(workdir, f"{sample}.ribopass.txt")
             gzipped_file_path = ribopass_reads_file + ".gz"
 
             # Write text file
