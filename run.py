@@ -313,14 +313,22 @@ def ribocounts(args):
 
         # Save titles of non-rRNA reads
         # For paired-end reads, only the title of the first reads is saved
-        with tempdir("ribopass_reads", sample + "_output2") as workdirea
+        with tempdir("ribopass_reads", sample + "_output2") as workdir:
             ribopass_reads_file = os.path.join(workdir, f"{sample}_ribopass_reads.txt")
+            gzipped_file_path = ribopass_reads_file + ".gz"
+
+            # Write text file
             with open(ribopass_reads_file, 'w') as file:
                 for title in sample_nonrrna_reads:
                     file.write(title + '\n')
+
+            # Gzip the text file
+            with open(ribopass_reads_file, 'rb') as orig_file:
+                with gzip.open(gzipped_file_path, 'wb') as gzipped_file:
+                    gzipped_file.writelines(orig_file)
             
             subprocess.check_call([
-                "aws", "s3", "cp", ribopass_reads_file, "%s/%s/ribopass-reads/" % (
+                "aws", "s3", "cp", gzipped_file_path, "%s/%s/ribopass-reads/" % (
                     S3_BUCKET, args.bioproject)])
 
 
