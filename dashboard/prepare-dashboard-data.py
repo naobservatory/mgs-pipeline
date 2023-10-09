@@ -301,10 +301,10 @@ for project in projects:
         sample_metadata[sample]["reads"] = \
             project_sample_reads[project][sample]
 
-        rc_fname = "ribocounts/%s.ribocounts.txt" % sample
+        rr_fname = "riboreads/%s.riboreads.txt.gz" % sample
         try:
-            with open(rc_fname, 'r') as file:
-                ribocount = int(file.read().strip())
+            with gzip.open(rr_fname, 'rt') as file:
+                ribocount = sum(1 for _ in file)
             sample_metadata[sample]["ribocounts"] = ribocount
         except FileNotFoundError:
             pass
