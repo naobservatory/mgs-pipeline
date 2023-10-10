@@ -13,4 +13,5 @@ if [ -e $n_reads ]; then
     exit 0
 fi
 
-aws s3 cp "$raw" - | gunzip | ./collect-n-reads-single.py > "$n_reads"
+SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+aws s3 cp "$raw" - | gunzip | $SCRIPT_DIR/collect-n-reads-single.py > "$n_reads"
