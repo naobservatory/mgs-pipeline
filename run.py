@@ -704,9 +704,10 @@ def start():
       if stage not in STAGE_FNS:
          raise Exception("Unknown stage %r" % stage)
 
-   for stage in skipped_stages:
-      if stage not in STAGE_FNS:
-         raise Exception("Unknown stage %r" % stage)
+   if skipped_stages != ['']:
+      for stage in skipped_stages:
+         if stage not in STAGE_FNS:
+            raise Exception("Unknown stage %r" % stage)
 
    for stage in STAGES_ORDERED:
       if stage in selected_stages and stage not in skipped_stages:
