@@ -646,6 +646,11 @@ def start():
       help='Comma-separated list of stages to run.  Allowed stages: %s' % (
          ", ".join(repr(x) for x in STAGES_ORDERED)))
 
+   parser.add_argument(
+      '--skip-stages',
+      default="",
+      help='Comma-separated list of stages not to run.')
+
    args = parser.parse_args()
 
    global S3_BUCKET
@@ -671,12 +676,17 @@ def start():
             WORK_ROOT, args.bioproject))
 
    selected_stages = args.stages.split(",")
-   for selected_stage in selected_stages:
-      if selected_stage not in STAGE_FNS:
-         raise Exception("Unknown stage %r" % selected_stage)
+   skipped_stages = args.skip_stages.split(",")
+   for stage in selected_stages:
+      if stage not in STAGE_FNS:
+         raise Exception("Unknown stage %r" % stage)
+
+   for stage in skipped_stages:
+      if stage not in STAGE_FNS:
+         raise Exception("Unknown stage %r" % stage)
 
    for stage in STAGES_ORDERED:
-      if stage in selected_stages:
+      if stage in selected_stages and stage not in skipped_stages:
          STAGE_FNS[stage](args)
 
 if __name__ == "__main__":
