@@ -182,7 +182,9 @@ def count_dups(hvr_fname):
 
     by_start_end = defaultdict(list) # start, end -> read id
     for read_id, (kraken_info, *reads) in sorted(hvr.items()):
-        assert reads
+        if not reads:
+            print(hvr_fname, read_id)
+            continue
         if len(reads) == 1:
             try:
                 (read, quality), = reads
