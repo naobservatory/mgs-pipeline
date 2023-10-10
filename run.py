@@ -314,15 +314,10 @@ def riboreads(args):
             riboreads_file = os.path.join(workdir, f"{sample}.riboreads.txt")
             gzipped_file_path = riboreads_file + ".gz"
 
-            # Write text file
-            with open(riboreads_file, 'w') as file:
+            # Write and gzip the text file
+            with gzip.open(gzipped_file_path, 'wb') as gzipped_file:
                 for title in sample_rrna_reads:
-                    file.write(title + '\n')
-
-            # Gzip the text file
-            with open(riboreads_file, 'rb') as orig_file:
-                with gzip.open(gzipped_file_path, 'wb') as gzipped_file:
-                    gzipped_file.writelines(orig_file)
+                    gzipped_file.write(title + '\n')
             
             subprocess.check_call([
                 "aws", "s3", "cp", gzipped_file_path, "%s/%s/riboreads/" % (
