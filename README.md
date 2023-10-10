@@ -101,10 +101,10 @@ Available files, and their formats:
      * `discarded` if it dropped the whole pair
      * Plus a `settings` file with info on how cleaning went
 
-* `ribocounts/`: Intermediate, processed output of `RiboDetector`
-    * ex: SRR13167443.ribocounts.txt
+* `riboreads/`: Intermediate, read IDs of `RiboDetector` output
+    * ex: SRR13167436.riboreads.txt.gz
     * txt
-    * Stores the number of rRNA reads in a sample.
+    * Stores rRNA read IDs 
 
 * `processed/`: Intermediate, output of `Kraken2`
    * ex: `SRR14530724.collapsed.kraken2.tsv.gz`
