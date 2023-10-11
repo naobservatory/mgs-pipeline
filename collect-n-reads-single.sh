@@ -5,8 +5,8 @@ raw="$2"
 
 accession=$(echo "$raw" | \
                 awk -F/ '{print $NF}' | \
-                awk -F_ '{print $1}' | \
-                sed s/.fastq.gz//)
+                sed s/_1[.]fastq[.]gz// | \
+                sed s/[.]fastq[.]gz//)
 n_reads="bioprojects/${bioproject}metadata/$accession.n_reads"
 
 if [ -e $n_reads ]; then
