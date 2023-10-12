@@ -333,7 +333,7 @@ def ribocounts(args, subset_size=1000):
         weighted_rrna_fraction = total_weighted_fraction / total_reads_all
 
         fraction_rrna = round(weighted_rrna_fraction, 4)
-        print(f"Estimated fraction of rRNA reads in {sample} = {fraction_rrna*100}%")
+        print(f"Estimated fraction of rRNA reads in {sample} = {round(fraction_rrna*100, 2)}%")
 
         # Save fraction of rRNA reads
         with tempdir("ribocounts", sample + "_output") as workdir:
