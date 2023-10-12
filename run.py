@@ -210,10 +210,7 @@ def ribocounts(args, subset_size=1000):
     existing_outputs = get_files(args, "ribocounts", min_date='2023-10-10')
 
     def first_subset_fastq(file_paths, subset_size):
-        """
-        Selects the first subset of reads from gzipped fastq files.
-        Assumes that paired-end reads are in the same order in both files.
-        """
+        """Selects the first subset of reads from gzipped fastq files"""
         print(f"Counting reads in input and selecting the first {subset_size}...")
         output_files = []
         total_reads = 0
@@ -222,6 +219,7 @@ def ribocounts(args, subset_size=1000):
             total_reads = sum(1 for _ in FastqGeneralIterator(f))
 
         for fp in file_paths:
+            # When reads in file < subset_size, return actual number of reads in subset
             actual_subset_size = 0
 
             with gzip.open(fp, 'rt') as f:
@@ -317,20 +315,17 @@ def ribocounts(args, subset_size=1000):
                 non_rrna_count = sum(1 for _ in FastqGeneralIterator(open(tmp_fq_outputs[0], 'rt')))
                 rrna_reads_dict[inputs[0]] = subset_reads - non_rrna_count
 
-        
-        # Calculate the total number of reads across all inputs in sample
-        total_reads_all = sum(total_reads_dict.values())
+        # Extract the fractions of rRNA reads for each input
+        fractions_rrna_in_subset = [
+            rrna_reads_dict[input_filename] / subset_reads_dict[input_filename]
+            for input_filename in total_reads_dict
+        ]
 
-        # Calculate the weighted fraction for each input
-        weighted_fractions = []
-        for input_filename in total_reads_dict:
-            fraction_rrna_in_subset = rrna_reads_dict[input_filename] / subset_reads_dict[input_filename]
-            weighted_fraction = fraction_rrna_in_subset * total_reads_dict[input_filename]
-            weighted_fractions.append(weighted_fraction)
+        # Use the total number of reads for each input as weights
+        weights = list(total_reads_dict.values())
 
-        # Calculate the weighted average fraction of rRNA reads across all inputs in sample
-        total_weighted_fraction = sum(weighted_fractions)
-        weighted_rrna_fraction = total_weighted_fraction / total_reads_all
+        # Calculate the weighted average fraction of rRNA reads across all inputs in sample using numpy
+        weighted_rrna_fraction = np.average(fractions_rrna_in_subset, weights=weights)
 
         fraction_rrna = round(weighted_rrna_fraction, 4)
         print(f"Estimated fraction of rRNA reads in {sample} = {round(fraction_rrna*100, 2)}%")
