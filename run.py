@@ -346,8 +346,6 @@ def ribocounts(args, subset_size=1000):
             "aws", "s3", "cp", ribocounts_file, "%s/%s/ribocounts/" % (
                 S3_BUCKET, args.bioproject)])
 
-
-
 def riboreads(args):
     """Save title of reads identified as rRNA by RiboDetector to AWS"""
 
