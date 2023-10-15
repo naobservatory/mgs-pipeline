@@ -201,13 +201,13 @@ def get_files(args, dirname, min_size=1, min_date=''):
    return set(ls_s3_dir("%s/%s/%s/" % (S3_BUCKET, args.bioproject, dirname),
                         min_size=min_size, min_date=min_date))
 
-def ribocounts(args, subset_size=1000):
+def ribofrac(args, subset_size=1000):
     """Fast algorithm to compute fraction of reads identified as rRNA by RiboDetector"""
 
     available_inputs = get_files(args, "cleaned",
                                  # tiny files are empty; ignore them
                                  min_size=100)
-    existing_outputs = get_files(args, "ribocounts", min_date='2023-10-10')
+    existing_outputs = get_files(args, "ribofrac", min_date='2023-10-12')
 
     def first_subset_fastq(file_paths, subset_size):
         """Selects the first subset of reads from gzipped fastq files"""
@@ -239,7 +239,7 @@ def ribocounts(args, subset_size=1000):
 
     for sample in get_samples(args):
         # Check for name of output file
-        sample_output_file = sample + ".ribocounts.txt"
+        sample_output_file = sample + ".ribofrac.txt"
         if sample_output_file in existing_outputs: continue
 
         total_reads_dict = {}
@@ -262,7 +262,7 @@ def ribocounts(args, subset_size=1000):
                 # Ribodetector handles pair1 and pair2 together.
                 continue
 
-            with tempdir("ribocounts", sample + " inputs") as workdir:
+            with tempdir("ribofrac", sample + " inputs") as workdir:
                 for input_fname in inputs:
                     subprocess.check_call([
                         "aws", "s3", "cp", "%s/%s/cleaned/%s" % (
@@ -331,14 +331,14 @@ def ribocounts(args, subset_size=1000):
         print(f"Estimated fraction of rRNA reads in {sample} = {round(fraction_rrna*100, 2)}%")
 
         # Save fraction of rRNA reads
-        with tempdir("ribocounts", sample + "_output") as workdir:
-            ribocounts_file = os.path.join(workdir, f"{sample}.ribocounts.txt")
+        with tempdir("ribofrac", sample + "_output") as workdir:
+            ribofrac_file = os.path.join(workdir, f"{sample}.ribofrac.txt")
 
-            with open(ribocounts_file, 'w') as txt_file:
+            with open(ribofrac_file, 'w') as txt_file:
                 txt_file.write(str(fraction_rrna))
 
             subprocess.check_call([
-            "aws", "s3", "cp", ribocounts_file, "%s/%s/ribocounts/" % (
+            "aws", "s3", "cp", ribofrac_file, "%s/%s/ribofrac/" % (
                 S3_BUCKET, args.bioproject)])
 
 def riboreads(args):
@@ -779,7 +779,7 @@ STAGES_ORDERED = []
 STAGE_FNS = {}
 for stage_name, stage_fn in [("clean", clean),
                              ("riboreads", riboreads),
-                             ("ribocounts", ribocounts),
+                             ("ribofrac", ribofrac),
                              ("interpret", interpret),
                              ("cladecounts", cladecounts),
                              ("humanviruses", humanviruses),

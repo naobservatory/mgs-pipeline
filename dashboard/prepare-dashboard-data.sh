@@ -50,13 +50,13 @@ for study in $(aws s3 ls $S3_DIR | awk '{print $NF}'); do
 done | xargs -I {} -P 32 aws s3 cp {} hvreads/
 
 for study in $(aws s3 ls $S3_DIR | awk '{print $NF}'); do
-    for rc in $(aws s3 ls $S3_DIR${study}ribocounts/ | \
+    for rc in $(aws s3 ls $S3_DIR${study}ribofrac/ | \
                     awk '{print $NF}'); do
-    	if [ ! -s ribocounts/$rc ]; then
-	    echo $S3_DIR${study}ribocounts/$rc
+    	if [ ! -s ribofrac/$rf ]; then
+	    echo $S3_DIR${study}ribofrac/$rf
 	fi
      done
-done | xargs -I {} -P 32 aws s3 cp {} ribocounts/
+done | xargs -I {} -P 32 aws s3 cp {} ribofrac/
 
 $MGS_PIPELINE_DIR/dashboard/prepare-dashboard-data.py $ROOT_DIR $MGS_PIPELINE_DIR
 

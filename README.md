@@ -101,8 +101,8 @@ Available files, and their formats:
      * `discarded` if it dropped the whole pair
      * Plus a `settings` file with info on how cleaning went
 
-* `ribocounts/`: Intermediate, fraction of rRNA from fast `RiboDetector`
-    * ex: COMO1.ribocounts.txt
+* `ribofrac/`: Intermediate, fraction of rRNA from fast `RiboDetector`
+    * ex: COMO1.ribofrac.txt
     * txt
     * Fraction of rRNA in sample using subset of input reads
 
