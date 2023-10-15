@@ -303,10 +303,10 @@ for project in projects:
         sample_metadata[sample]["reads"] = \
             project_sample_reads[project][sample]
 
-        rc_fname = "ribofrac/%s.ribofrac.txt" % sample
+        rf_fname = "ribofrac/%s.ribofrac.txt" % sample
         try:
-            with open(rc_fname, 'r') as file:
-                ribocount = file.readline()
+            with open(rf_fname, 'r') as file:
+                ribofrac = file.readline()
             sample_metadata[sample]["ribofrac"] = ribofrac
         except FileNotFoundError:
             pass

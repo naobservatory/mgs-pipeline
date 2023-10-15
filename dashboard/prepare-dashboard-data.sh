@@ -50,7 +50,7 @@ for study in $(aws s3 ls $S3_DIR | awk '{print $NF}'); do
 done | xargs -I {} -P 32 aws s3 cp {} hvreads/
 
 for study in $(aws s3 ls $S3_DIR | awk '{print $NF}'); do
-    for rc in $(aws s3 ls $S3_DIR${study}ribofrac/ | \
+    for rf in $(aws s3 ls $S3_DIR${study}ribofrac/ | \
                     awk '{print $NF}'); do
     	if [ ! -s ribofrac/$rf ]; then
 	    echo $S3_DIR${study}ribofrac/$rf
