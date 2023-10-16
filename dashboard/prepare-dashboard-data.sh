@@ -20,6 +20,7 @@ cd $ROOT_DIR/dashboard
 mkdir -p allmatches/
 mkdir -p hvreads/
 mkdir -p hvrfull/
+mkdir -p ribofrac/
 mkdir -p riboreads/
 
 if [ ! -e names.dmp ] ; then
@@ -51,7 +52,7 @@ done | xargs -I {} -P 32 aws s3 cp {} hvreads/
 
 for study in $(aws s3 ls $S3_DIR | awk '{print $NF}'); do
     for rf in $(aws s3 ls $S3_DIR${study}ribofrac/ | \
-                    awk '{print $NF}'); do
+   	    awk '{print $NF}'); do
     	if [ ! -s ribofrac/$rf ]; then
 	    echo $S3_DIR${study}ribofrac/$rf
 	fi
