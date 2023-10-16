@@ -2,13 +2,22 @@
 
 import sys
 import gzip
+import os
 
-ROOT_DIR, MGS_PIPELINE_DIR = sys.argv[1:]
-REPORT_DIR = ROOT_DIR + "/report/"
+ROOT_DIR, MGS_PIPELINE_DIR, BIOPROJECT, SAMPLES, REPORT_NAME = sys.argv[1:]
+SAMPLE_LIST = SAMPLES.split(',')
+REPORT_DIR = os.path.join(ROOT_DIR, f"bioprojects/{BIOPROJECT}/reports/{REPORT_NAME}")
 
 sys.path.insert(0, REPORT_DIR)
 
-def count_reads_by_taxonomic_category(cladecounts_file):
+def count_reads_by_taxonomic_category(sample):
+    cladecounts_dir = os.path.join(REPORT_DIR, "cladecounts")
+    cladecounts_file = os.path.join(cladecounts_dir, f"{sample}.tsv.gz")
+
+
+    output_dir = os.path.join(REPORT_DIR, "tax-categories")
+    os.makedirs(output_dir, exist_ok=True)
+    output_file_path = os.path.join(output_dir, f"{sample}.tax-category.tsv")
 
     # Taxids and names
     tax_data = { 
@@ -35,11 +44,11 @@ def count_reads_by_taxonomic_category(cladecounts_file):
                 counts[taxid] += clade_assignments
 
     # Write the results to a TSV file
-    with open("tax_category_counts.tsv", "w") as out:
+    with open(output_file_path, "w") as out:
         out.write("taxid\ttaxname\tparent taxid\tcount\n")
         for taxid, data in tax_data.items():
             out.write(f"{taxid}\t{data['name']}\t{data['parent']}\t{counts[taxid]}\n")
 
 if __name__ == "__main__":
-    count_reads_by_taxonomic_category("tax_category_counts.tsv")  # You should provide the path to your clade file here
-
+    for sample in SAMPLE_LIST:
+        count_reads_by_taxonomic_category(sample)
