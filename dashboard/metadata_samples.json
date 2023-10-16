@@ -5,7 +5,7 @@
     "enrichment": "viral",
     "location": "Municipal",
     "reads": 93753080,
-    "ribocounts": 27266896
+    "ribofrac": "0.2889"
   },
   "COMO2": {
     "country": "United States",
@@ -13,7 +13,7 @@
     "enrichment": "viral",
     "location": "Municipal",
     "reads": 15103197,
-    "ribocounts": 6933477
+    "ribofrac": "0.5284"
   },
   "COMO3": {
     "country": "United States",
@@ -21,7 +21,7 @@
     "enrichment": "viral",
     "location": "Municipal",
     "reads": 14700571,
-    "ribocounts": 6751252
+    "ribofrac": "0.453"
   },
   "COMO4": {
     "country": "United States",
@@ -29,7 +29,7 @@
     "enrichment": "viral",
     "location": "Municipal",
     "reads": 15578784,
-    "ribocounts": 7201505
+    "ribofrac": "0.469"
   },
   "COMO5": {
     "country": "United States",
@@ -37,7 +37,7 @@
     "enrichment": "viral",
     "location": "Municipal",
     "reads": 14600679,
-    "ribocounts": 6719791
+    "ribofrac": "0.4569"
   },
   "ERR1224340": {
     "country": "China",
@@ -10994,7 +10994,7 @@
     "country": "China",
     "date": "2020-01",
     "reads": 28282964,
-    "ribocounts": 9187390,
+    "ribofrac": "0.6106",
     "state": "Hubei"
   },
   "SRR12204734": {
@@ -11055,6 +11055,7 @@
     "location": "San Francisco",
     "method": "amicon",
     "reads": 469609,
+    "ribofrac": "0.575",
     "state": "California"
   },
   "SRR12596166": {
@@ -11066,6 +11067,7 @@
     "location": "San Francisco",
     "method": "amicon",
     "reads": 504599,
+    "ribofrac": "0.1699",
     "state": "California"
   },
   "SRR12596167": {
@@ -11077,6 +11079,7 @@
     "location": "San Francisco",
     "method": "amicon",
     "reads": 12072,
+    "ribofrac": "0.7373",
     "state": "California"
   },
   "SRR12596168": {
@@ -11088,6 +11091,7 @@
     "location": "San Francisco",
     "method": "amicon",
     "reads": 476640,
+    "ribofrac": "0.5333",
     "state": "California"
   },
   "SRR12596169": {
@@ -11099,6 +11103,7 @@
     "location": "San Francisco",
     "method": "amicon",
     "reads": 624031,
+    "ribofrac": "0.3181",
     "state": "California"
   },
   "SRR12596170": {
@@ -11110,6 +11115,7 @@
     "location": "San Francisco",
     "method": "amicon",
     "reads": 171626,
+    "ribofrac": "0.3864",
     "state": "California"
   },
   "SRR12596171": {
@@ -11121,6 +11127,7 @@
     "location": "San Francisco",
     "method": "COL",
     "reads": 2405482,
+    "ribofrac": "0.5428",
     "state": "California"
   },
   "SRR12596172": {
@@ -11132,6 +11139,7 @@
     "location": "San Francisco",
     "method": "amicon",
     "reads": 167374,
+    "ribofrac": "0.7712",
     "state": "California"
   },
   "SRR12596173": {
@@ -11143,6 +11151,7 @@
     "location": "San Francisco",
     "method": "amicon",
     "reads": 41087,
+    "ribofrac": "0.7884",
     "state": "California"
   },
   "SRR12596174": {
@@ -11154,6 +11163,7 @@
     "location": "San Francisco",
     "method": "MOS",
     "reads": 953038,
+    "ribofrac": "0.0288",
     "state": "California"
   },
   "SRR12596175": {
@@ -11165,6 +11175,7 @@
     "location": "San Francisco",
     "method": "MOS",
     "reads": 2891359,
+    "ribofrac": "0.6074",
     "state": "California"
   },
   "SRR13167434": {
@@ -11173,7 +11184,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 2132,
-    "ribocounts": 0,
+    "ribofrac": "0.2007",
     "state": "Kampong Speu"
   },
   "SRR13167435": {
@@ -11182,7 +11193,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1662,
-    "ribocounts": 245,
+    "ribofrac": "0.1563",
     "state": "Kampong Speu"
   },
   "SRR13167436": {
@@ -11191,7 +11202,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 3600,
-    "ribocounts": 638,
+    "ribofrac": "0.1779",
     "state": "Kampong Speu"
   },
   "SRR13167437": {
@@ -11200,7 +11211,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 148,
-    "ribocounts": 17,
+    "ribofrac": "0.1149",
     "state": "Kampong Speu"
   },
   "SRR13167438": {
@@ -11209,7 +11220,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 149,
-    "ribocounts": 22,
+    "ribofrac": "0.1477",
     "state": "Kampong Speu"
   },
   "SRR13167439": {
@@ -11218,7 +11229,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 319,
-    "ribocounts": 35,
+    "ribofrac": "0.1097",
     "state": "Kampong Speu"
   },
   "SRR13167440": {
@@ -11227,7 +11238,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 611,
-    "ribocounts": 56,
+    "ribofrac": "0.0917",
     "state": "Kampong Speu"
   },
   "SRR13167441": {
@@ -11236,7 +11247,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 216,
-    "ribocounts": 28,
+    "ribofrac": "0.1296",
     "state": "Kampong Speu"
   },
   "SRR13167442": {
@@ -11245,7 +11256,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 29,
-    "ribocounts": 2,
+    "ribofrac": "0.069",
     "state": "Kampong Speu"
   },
   "SRR13167443": {
@@ -11254,7 +11265,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 891,
-    "ribocounts": 120,
+    "ribofrac": "0.1347",
     "state": "Kampong Speu"
   },
   "SRR13176755": {
@@ -11263,7 +11274,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1582,
-    "ribocounts": 348,
+    "ribofrac": "0.2178",
     "state": "Kampong Speu"
   },
   "SRR13176756": {
@@ -11272,7 +11283,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 12348,
-    "ribocounts": 250,
+    "ribofrac": "0.0124",
     "state": "Kampong Speu"
   },
   "SRR13176757": {
@@ -11281,7 +11292,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 25,
-    "ribocounts": 9,
+    "ribofrac": "0.36",
     "state": "Kampong Speu"
   },
   "SRR13176758": {
@@ -11290,7 +11301,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 18323,
-    "ribocounts": 3439,
+    "ribofrac": "0.1679",
     "state": "Kampong Speu"
   },
   "SRR13176759": {
@@ -11299,7 +11310,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 66,
-    "ribocounts": 3,
+    "ribofrac": "0.0455",
     "state": "Kampong Speu"
   },
   "SRR13176760": {
@@ -11308,7 +11319,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 9490,
-    "ribocounts": 1503,
+    "ribofrac": "0.1564",
     "state": "Kampong Speu"
   },
   "SRR13176761": {
@@ -11317,7 +11328,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 19,
-    "ribocounts": 3,
+    "ribofrac": "0.1579",
     "state": "Kampong Speu"
   },
   "SRR13176762": {
@@ -11326,7 +11337,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 175,
-    "ribocounts": 31,
+    "ribofrac": "0.1771",
     "state": "Kampong Speu"
   },
   "SRR13176763": {
@@ -11335,7 +11346,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 247,
-    "ribocounts": 28,
+    "ribofrac": "0.1134",
     "state": "Kampong Speu"
   },
   "SRR13176764": {
@@ -11344,7 +11355,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 65,
-    "ribocounts": 10,
+    "ribofrac": "0.1538",
     "state": "Kampong Speu"
   },
   "SRR13176765": {
@@ -11353,7 +11364,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 8194,
-    "ribocounts": 1588,
+    "ribofrac": "0.1827",
     "state": "Kampong Speu"
   },
   "SRR13176766": {
@@ -11362,7 +11373,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 183,
-    "ribocounts": 18,
+    "ribofrac": "0.0984",
     "state": "Kampong Speu"
   },
   "SRR13176767": {
@@ -11371,7 +11382,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 381,
-    "ribocounts": 25,
+    "ribofrac": "0.0656",
     "state": "Kampong Speu"
   },
   "SRR13176768": {
@@ -11380,7 +11391,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 60,
-    "ribocounts": 4,
+    "ribofrac": "0.0667",
     "state": "Kampong Speu"
   },
   "SRR13176769": {
@@ -11389,7 +11400,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 50,
-    "ribocounts": 3,
+    "ribofrac": "0.06",
     "state": "Kampong Speu"
   },
   "SRR13176770": {
@@ -11398,7 +11409,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 64,
-    "ribocounts": 13,
+    "ribofrac": "0.2031",
     "state": "Kampong Speu"
   },
   "SRR13176771": {
@@ -11407,7 +11418,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 3664,
-    "ribocounts": 960,
+    "ribofrac": "0.2676",
     "state": "Kampong Speu"
   },
   "SRR13176772": {
@@ -11416,7 +11427,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 493,
-    "ribocounts": 17,
+    "ribofrac": "0.0345",
     "state": "Kampong Speu"
   },
   "SRR13176773": {
@@ -11425,7 +11436,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 109,
-    "ribocounts": 17,
+    "ribofrac": "0.156",
     "state": "Kampong Speu"
   },
   "SRR13176774": {
@@ -11434,7 +11445,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 80,
-    "ribocounts": 8,
+    "ribofrac": "0.1",
     "state": "Kampong Speu"
   },
   "SRR13176903": {
@@ -11443,7 +11454,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 85,
-    "ribocounts": 17,
+    "ribofrac": "0.2",
     "state": "Kampong Speu"
   },
   "SRR13176904": {
@@ -11452,7 +11463,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 61,
-    "ribocounts": 16,
+    "ribofrac": "0.2623",
     "state": "Kampong Speu"
   },
   "SRR13176905": {
@@ -11461,7 +11472,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 77,
-    "ribocounts": 6,
+    "ribofrac": "0.0779",
     "state": "Kampong Speu"
   },
   "SRR13176906": {
@@ -11470,7 +11481,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 215,
-    "ribocounts": 59,
+    "ribofrac": "0.2744",
     "state": "Kampong Speu"
   },
   "SRR13176907": {
@@ -11479,7 +11490,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 13,
-    "ribocounts": 1,
+    "ribofrac": "0.0769",
     "state": "Kampong Speu"
   },
   "SRR13176908": {
@@ -11488,7 +11499,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1612,
-    "ribocounts": 299,
+    "ribofrac": "0.1855",
     "state": "Kampong Speu"
   },
   "SRR13176909": {
@@ -11497,7 +11508,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 428,
-    "ribocounts": 62,
+    "ribofrac": "0.1449",
     "state": "Kampong Speu"
   },
   "SRR13176910": {
@@ -11506,7 +11517,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 722,
-    "ribocounts": 47,
+    "ribofrac": "0.0651",
     "state": "Kampong Speu"
   },
   "SRR13176911": {
@@ -11515,7 +11526,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 11597,
-    "ribocounts": 1206,
+    "ribofrac": "0.1078",
     "state": "Kampong Speu"
   },
   "SRR13176912": {
@@ -11524,7 +11535,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 13845,
-    "ribocounts": 3501,
+    "ribofrac": "0.2638",
     "state": "Kampong Speu"
   },
   "SRR13176913": {
@@ -11533,7 +11544,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 7478,
-    "ribocounts": 2017,
+    "ribofrac": "0.2678",
     "state": "Kampong Speu"
   },
   "SRR13176914": {
@@ -11542,7 +11553,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 8514,
-    "ribocounts": 1960,
+    "ribofrac": "0.2202",
     "state": "Kampong Speu"
   },
   "SRR13176915": {
@@ -11551,7 +11562,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 6538,
-    "ribocounts": 1042,
+    "ribofrac": "0.1525",
     "state": "Kampong Speu"
   },
   "SRR13176916": {
@@ -11560,7 +11571,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1330,
-    "ribocounts": 241,
+    "ribofrac": "0.1749",
     "state": "Kampong Speu"
   },
   "SRR13176917": {
@@ -11569,7 +11580,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 6087,
-    "ribocounts": 1349,
+    "ribofrac": "0.232",
     "state": "Kampong Speu"
   },
   "SRR13176918": {
@@ -11578,7 +11589,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 8733,
-    "ribocounts": 1649,
+    "ribofrac": "0.1808",
     "state": "Kampong Speu"
   },
   "SRR13176919": {
@@ -11587,7 +11598,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 14943,
-    "ribocounts": 67,
+    "ribofrac": "0.0046",
     "state": "Kampong Speu"
   },
   "SRR13176920": {
@@ -11596,7 +11607,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 8770,
-    "ribocounts": 185,
+    "ribofrac": "0.0221",
     "state": "Kampong Speu"
   },
   "SRR13176921": {
@@ -11605,7 +11616,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 85,
-    "ribocounts": 10,
+    "ribofrac": "0.1176",
     "state": "Kampong Speu"
   },
   "SRR13176922": {
@@ -11614,7 +11625,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 8431,
-    "ribocounts": 1669,
+    "ribofrac": "0.1946",
     "state": "Kampong Speu"
   },
   "SRR13177050": {
@@ -11623,7 +11634,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 4,
-    "ribocounts": 2,
+    "ribofrac": "0.5",
     "state": "Kampong Speu"
   },
   "SRR13177051": {
@@ -11632,7 +11643,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1174,
-    "ribocounts": 194,
+    "ribofrac": "0.1584",
     "state": "Kampong Speu"
   },
   "SRR13177052": {
@@ -11641,7 +11652,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1011,
-    "ribocounts": 207,
+    "ribofrac": "0.2047",
     "state": "Kampong Speu"
   },
   "SRR13177053": {
@@ -11650,7 +11661,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1670,
-    "ribocounts": 401,
+    "ribofrac": "0.2402",
     "state": "Kampong Speu"
   },
   "SRR13177054": {
@@ -11659,7 +11670,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1414,
-    "ribocounts": 270,
+    "ribofrac": "0.1963",
     "state": "Kampong Speu"
   },
   "SRR13177055": {
@@ -11668,7 +11679,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 10784,
-    "ribocounts": 62,
+    "ribofrac": "0.0048",
     "state": "Kampong Speu"
   },
   "SRR13177056": {
@@ -11677,7 +11688,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 3370,
-    "ribocounts": 707,
+    "ribofrac": "0.2075",
     "state": "Kampong Speu"
   },
   "SRR13177057": {
@@ -11686,7 +11697,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 20384,
-    "ribocounts": 3871,
+    "ribofrac": "0.2126",
     "state": "Kampong Speu"
   },
   "SRR13177058": {
@@ -11695,7 +11706,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1437,
-    "ribocounts": 318,
+    "ribofrac": "0.2246",
     "state": "Kampong Speu"
   },
   "SRR13177059": {
@@ -11704,7 +11715,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 897,
-    "ribocounts": 234,
+    "ribofrac": "0.2609",
     "state": "Kampong Speu"
   },
   "SRR13177060": {
@@ -11713,7 +11724,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 937,
-    "ribocounts": 458,
+    "ribofrac": "0.4888",
     "state": "Kampong Speu"
   },
   "SRR13177061": {
@@ -11722,7 +11733,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 2886,
-    "ribocounts": 855,
+    "ribofrac": "0.2876",
     "state": "Kampong Speu"
   },
   "SRR13177062": {
@@ -11731,7 +11742,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1841,
-    "ribocounts": 1042,
+    "ribofrac": "0.566",
     "state": "Kampong Speu"
   },
   "SRR13177063": {
@@ -11740,7 +11751,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 4281,
-    "ribocounts": 1501,
+    "ribofrac": "0.3596",
     "state": "Kampong Speu"
   },
   "SRR13177064": {
@@ -11749,7 +11760,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 2458,
-    "ribocounts": 1268,
+    "ribofrac": "0.5306",
     "state": "Kampong Speu"
   },
   "SRR13177065": {
@@ -11758,7 +11769,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 594,
-    "ribocounts": 278,
+    "ribofrac": "0.468",
     "state": "Kampong Speu"
   },
   "SRR13177066": {
@@ -11767,7 +11778,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 3310,
-    "ribocounts": 1104,
+    "ribofrac": "0.3459",
     "state": "Kampong Speu"
   },
   "SRR13177067": {
@@ -11776,7 +11787,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 7600,
-    "ribocounts": 2028,
+    "ribofrac": "0.2638",
     "state": "Kampong Speu"
   },
   "SRR13177068": {
@@ -11785,7 +11796,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 8096,
-    "ribocounts": 1913,
+    "ribofrac": "0.2199",
     "state": "Kampong Speu"
   },
   "SRR13177069": {
@@ -11794,7 +11805,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 7941,
-    "ribocounts": 3904,
+    "ribofrac": "0.4917",
     "state": "Kampong Speu"
   },
   "SRR13177070": {
@@ -11803,7 +11814,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 5161,
-    "ribocounts": 2070,
+    "ribofrac": "0.4129",
     "state": "Kampong Speu"
   },
   "SRR13177071": {
@@ -11812,7 +11823,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 2999,
-    "ribocounts": 883,
+    "ribofrac": "0.2901",
     "state": "Kampong Speu"
   },
   "SRR13177072": {
@@ -11821,7 +11832,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 832,
-    "ribocounts": 236,
+    "ribofrac": "0.2837",
     "state": "Kampong Speu"
   },
   "SRR13177073": {
@@ -11830,7 +11841,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1896,
-    "ribocounts": 719,
+    "ribofrac": "0.3792",
     "state": "Kampong Speu"
   },
   "SRR13177074": {
@@ -11839,7 +11850,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 6426,
-    "ribocounts": 1717,
+    "ribofrac": "0.2433",
     "state": "Kampong Speu"
   },
   "SRR13177075": {
@@ -11848,7 +11859,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 3377,
-    "ribocounts": 1431,
+    "ribofrac": "0.4133",
     "state": "Kampong Speu"
   },
   "SRR13177076": {
@@ -11857,7 +11868,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1298,
-    "ribocounts": 478,
+    "ribofrac": "0.3683",
     "state": "Kampong Speu"
   },
   "SRR13177077": {
@@ -11866,7 +11877,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 6597,
-    "ribocounts": 1739,
+    "ribofrac": "0.2681",
     "state": "Kampong Speu"
   },
   "SRR13177078": {
@@ -11875,7 +11886,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 2560,
-    "ribocounts": 1321,
+    "ribofrac": "0.5209",
     "state": "Kampong Speu"
   },
   "SRR13177079": {
@@ -11884,7 +11895,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 66902,
-    "ribocounts": 203,
+    "ribofrac": "0.0014",
     "state": "Kampong Speu"
   },
   "SRR13177080": {
@@ -11893,7 +11904,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 14753,
-    "ribocounts": 6240,
+    "ribofrac": "0.4068",
     "state": "Kampong Speu"
   },
   "SRR13177081": {
@@ -11902,7 +11913,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 22089,
-    "ribocounts": 8339,
+    "ribofrac": "0.3799",
     "state": "Kampong Speu"
   },
   "SRR13177082": {
@@ -11911,7 +11922,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 15243,
-    "ribocounts": 3928,
+    "ribofrac": "0.2531",
     "state": "Kampong Speu"
   },
   "SRR13177083": {
@@ -11920,7 +11931,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 9555,
-    "ribocounts": 2128,
+    "ribofrac": "0.2198",
     "state": "Kampong Speu"
   },
   "SRR13177084": {
@@ -11929,7 +11940,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 6461,
-    "ribocounts": 2703,
+    "ribofrac": "0.4158",
     "state": "Kampong Speu"
   },
   "SRR13177085": {
@@ -11938,7 +11949,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 11848,
-    "ribocounts": 4042,
+    "ribofrac": "0.3458",
     "state": "Kampong Speu"
   },
   "SRR13177086": {
@@ -11947,7 +11958,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 9383,
-    "ribocounts": 3862,
+    "ribofrac": "0.4109",
     "state": "Kampong Speu"
   },
   "SRR13177087": {
@@ -11956,7 +11967,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 7967,
-    "ribocounts": 2088,
+    "ribofrac": "0.2738",
     "state": "Kampong Speu"
   },
   "SRR13177088": {
@@ -11965,7 +11976,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1799,
-    "ribocounts": 634,
+    "ribofrac": "0.352",
     "state": "Kampong Speu"
   },
   "SRR13177089": {
@@ -11974,7 +11985,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 16949,
-    "ribocounts": 5780,
+    "ribofrac": "0.3341",
     "state": "Kampong Speu"
   },
   "SRR13177090": {
@@ -11983,7 +11994,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 11018,
-    "ribocounts": 3585,
+    "ribofrac": "0.3226",
     "state": "Kampong Speu"
   },
   "SRR13177091": {
@@ -11992,7 +12003,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 3015,
-    "ribocounts": 1100,
+    "ribofrac": "0.3597",
     "state": "Kampong Speu"
   },
   "SRR13177092": {
@@ -12001,7 +12012,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 765,
-    "ribocounts": 119,
+    "ribofrac": "0.1556",
     "state": "Kampong Speu"
   },
   "SRR13177093": {
@@ -12010,7 +12021,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1122,
-    "ribocounts": 221,
+    "ribofrac": "0.2003",
     "state": "Kampong Speu"
   },
   "SRR13177094": {
@@ -12019,7 +12030,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 4817,
-    "ribocounts": 1930,
+    "ribofrac": "0.3987",
     "state": "Kampong Speu"
   },
   "SRR13177095": {
@@ -12028,7 +12039,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 14302,
-    "ribocounts": 2016,
+    "ribofrac": "0.131",
     "state": "Kampong Speu"
   },
   "SRR13177096": {
@@ -12037,7 +12048,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 2710,
-    "ribocounts": 1057,
+    "ribofrac": "0.3978",
     "state": "Kampong Speu"
   },
   "SRR13177097": {
@@ -12046,7 +12057,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1792,
-    "ribocounts": 679,
+    "ribofrac": "0.3766",
     "state": "Kampong Speu"
   },
   "SRR13177098": {
@@ -12055,7 +12066,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 5055,
-    "ribocounts": 988,
+    "ribofrac": "0.1973",
     "state": "Kampong Speu"
   },
   "SRR13177099": {
@@ -12064,7 +12075,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 35499,
-    "ribocounts": 135,
+    "ribofrac": "0.0048",
     "state": "Kampong Speu"
   },
   "SRR13177100": {
@@ -12073,7 +12084,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 33637,
-    "ribocounts": 8087,
+    "ribofrac": "0.2204",
     "state": "Kampong Speu"
   },
   "SRR13711298": {
@@ -12082,7 +12093,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 6188,
-    "ribocounts": 997,
+    "ribofrac": "0.1616",
     "state": "Kampong Speu"
   },
   "SRR13711299": {
@@ -12091,7 +12102,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 3196,
-    "ribocounts": 503,
+    "ribofrac": "0.1485",
     "state": "Kampong Speu"
   },
   "SRR13711300": {
@@ -12100,7 +12111,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1709,
-    "ribocounts": 320,
+    "ribofrac": "0.1963",
     "state": "Kampong Speu"
   },
   "SRR13711301": {
@@ -12109,7 +12120,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 11402,
-    "ribocounts": 3174,
+    "ribofrac": "0.2813",
     "state": "Kampong Speu"
   },
   "SRR13711302": {
@@ -12118,7 +12129,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 3883,
-    "ribocounts": 1045,
+    "ribofrac": "0.2758",
     "state": "Kampong Speu"
   },
   "SRR13711303": {
@@ -12127,7 +12138,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 14231,
-    "ribocounts": 3574,
+    "ribofrac": "0.2751",
     "state": "Kampong Speu"
   },
   "SRR13711304": {
@@ -12136,7 +12147,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 7,
-    "ribocounts": 1,
+    "ribofrac": "0.1429",
     "state": "Kampong Speu"
   },
   "SRR13711305": {
@@ -12145,7 +12156,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 9681,
-    "ribocounts": 4385,
+    "ribofrac": "0.4581",
     "state": "Kampong Speu"
   },
   "SRR13711306": {
@@ -12154,7 +12165,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 19,
-    "ribocounts": 5,
+    "ribofrac": "0.2632",
     "state": "Kampong Speu"
   },
   "SRR13711307": {
@@ -12163,7 +12174,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 3193,
-    "ribocounts": 560,
+    "ribofrac": "0.1632",
     "state": "Kampong Speu"
   },
   "SRR13711853": {
@@ -12172,7 +12183,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 92,
-    "ribocounts": 1,
+    "ribofrac": "0.0109",
     "state": "Kampong Speu"
   },
   "SRR13711854": {
@@ -12181,7 +12192,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 159,
-    "ribocounts": 53,
+    "ribofrac": "0.3333",
     "state": "Kampong Speu"
   },
   "SRR13711855": {
@@ -12190,7 +12201,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 5479,
-    "ribocounts": 83,
+    "ribofrac": "0.0185",
     "state": "Kampong Speu"
   },
   "SRR13711856": {
@@ -12199,7 +12210,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 111,
-    "ribocounts": 37,
+    "ribofrac": "0.3333",
     "state": "Kampong Speu"
   },
   "SRR13711857": {
@@ -12208,7 +12219,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 49,
-    "ribocounts": 8,
+    "ribofrac": "0.1633",
     "state": "Kampong Speu"
   },
   "SRR13711858": {
@@ -12217,7 +12228,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 427,
-    "ribocounts": 115,
+    "ribofrac": "0.2693",
     "state": "Kampong Speu"
   },
   "SRR13711859": {
@@ -12226,7 +12237,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 532,
-    "ribocounts": 98,
+    "ribofrac": "0.1842",
     "state": "Kampong Speu"
   },
   "SRR13711860": {
@@ -12235,7 +12246,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 271,
-    "ribocounts": 97,
+    "ribofrac": "0.3579",
     "state": "Kampong Speu"
   },
   "SRR13711861": {
@@ -12244,7 +12255,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 137,
-    "ribocounts": 27,
+    "ribofrac": "0.1971",
     "state": "Kampong Speu"
   },
   "SRR13711862": {
@@ -12253,7 +12264,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 3172,
-    "ribocounts": 607,
+    "ribofrac": "0.1864",
     "state": "Kampong Speu"
   },
   "SRR13711863": {
@@ -12262,7 +12273,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 17596,
-    "ribocounts": 546,
+    "ribofrac": "0.0289",
     "state": "Kampong Speu"
   },
   "SRR13711864": {
@@ -12271,7 +12282,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1432,
-    "ribocounts": 279,
+    "ribofrac": "0.1952",
     "state": "Kampong Speu"
   },
   "SRR13711865": {
@@ -12280,7 +12291,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 414,
-    "ribocounts": 104,
+    "ribofrac": "0.2512",
     "state": "Kampong Speu"
   },
   "SRR13711866": {
@@ -12289,7 +12300,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 861,
-    "ribocounts": 199,
+    "ribofrac": "0.2311",
     "state": "Kampong Speu"
   },
   "SRR13711867": {
@@ -12298,7 +12309,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 15662,
-    "ribocounts": 3573,
+    "ribofrac": "0.2269",
     "state": "Kampong Speu"
   },
   "SRR13711868": {
@@ -12307,7 +12318,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 17812,
-    "ribocounts": 3252,
+    "ribofrac": "0.1997",
     "state": "Kampong Speu"
   },
   "SRR13711869": {
@@ -12316,7 +12327,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 3538,
-    "ribocounts": 72,
+    "ribofrac": "0.0172",
     "state": "Kampong Speu"
   },
   "SRR13711870": {
@@ -12325,7 +12336,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 116,
-    "ribocounts": 29,
+    "ribofrac": "0.25",
     "state": "Kampong Speu"
   },
   "SRR13711871": {
@@ -12334,7 +12345,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 24462,
-    "ribocounts": 141,
+    "ribofrac": "0.0054",
     "state": "Kampong Speu"
   },
   "SRR13711872": {
@@ -12343,7 +12354,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 615,
-    "ribocounts": 109,
+    "ribofrac": "0.1772",
     "state": "Kampong Speu"
   },
   "SRR13711873": {
@@ -12352,7 +12363,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 97306,
-    "ribocounts": 151,
+    "ribofrac": "0.0012",
     "state": "Kampong Speu"
   },
   "SRR13711874": {
@@ -12361,7 +12372,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 10360,
-    "ribocounts": 1798,
+    "ribofrac": "0.1862",
     "state": "Kampong Speu"
   },
   "SRR13711875": {
@@ -12370,7 +12381,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 457,
-    "ribocounts": 75,
+    "ribofrac": "0.1641",
     "state": "Kampong Speu"
   },
   "SRR13711876": {
@@ -12379,7 +12390,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 400,
-    "ribocounts": 65,
+    "ribofrac": "0.1625",
     "state": "Kampong Speu"
   },
   "SRR13711877": {
@@ -12388,7 +12399,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 2286,
-    "ribocounts": 333,
+    "ribofrac": "0.1485",
     "state": "Kampong Speu"
   },
   "SRR13711878": {
@@ -12397,7 +12408,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 396,
-    "ribocounts": 84,
+    "ribofrac": "0.2121",
     "state": "Kampong Speu"
   },
   "SRR13711879": {
@@ -12406,7 +12417,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 2936,
-    "ribocounts": 781,
+    "ribofrac": "0.2572",
     "state": "Kampong Speu"
   },
   "SRR13711880": {
@@ -12415,7 +12426,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 9665,
-    "ribocounts": 2527,
+    "ribofrac": "0.2682",
     "state": "Kampong Speu"
   },
   "SRR13711881": {
@@ -12424,7 +12435,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 3937,
-    "ribocounts": 795,
+    "ribofrac": "0.2085",
     "state": "Kampong Speu"
   },
   "SRR13711882": {
@@ -12433,7 +12444,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1036,
-    "ribocounts": 272,
+    "ribofrac": "0.2625",
     "state": "Kampong Speu"
   },
   "SRR13711883": {
@@ -12442,7 +12453,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 451,
-    "ribocounts": 140,
+    "ribofrac": "0.3104",
     "state": "Kampong Speu"
   },
   "SRR13711884": {
@@ -12451,7 +12462,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 236,
-    "ribocounts": 74,
+    "ribofrac": "0.3136",
     "state": "Kampong Speu"
   },
   "SRR13711885": {
@@ -12460,7 +12471,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 3861,
-    "ribocounts": 530,
+    "ribofrac": "0.1501",
     "state": "Kampong Speu"
   },
   "SRR13711886": {
@@ -12469,7 +12480,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 10904,
-    "ribocounts": 8866,
+    "ribofrac": "0.8277",
     "state": "Kampong Speu"
   },
   "SRR13711887": {
@@ -12478,7 +12489,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 451,
-    "ribocounts": 88,
+    "ribofrac": "0.1951",
     "state": "Kampong Speu"
   },
   "SRR13711888": {
@@ -12487,7 +12498,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 890,
-    "ribocounts": 160,
+    "ribofrac": "0.1798",
     "state": "Kampong Speu"
   },
   "SRR13711889": {
@@ -12496,7 +12507,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 34,
-    "ribocounts": 9,
+    "ribofrac": "0.2647",
     "state": "Kampong Speu"
   },
   "SRR13711890": {
@@ -12505,7 +12516,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1375,
-    "ribocounts": 100,
+    "ribofrac": "0.0736",
     "state": "Kampong Speu"
   },
   "SRR13711891": {
@@ -12514,7 +12525,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 68450,
-    "ribocounts": 46,
+    "ribofrac": "0.0",
     "state": "Kampong Speu"
   },
   "SRR13711892": {
@@ -12523,7 +12534,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 87,
-    "ribocounts": 45,
+    "ribofrac": "0.5172",
     "state": "Kampong Speu"
   },
   "SRR13711893": {
@@ -12532,7 +12543,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1163,
-    "ribocounts": 688,
+    "ribofrac": "0.5916",
     "state": "Kampong Speu"
   },
   "SRR13711894": {
@@ -12541,7 +12552,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 925,
-    "ribocounts": 162,
+    "ribofrac": "0.1751",
     "state": "Kampong Speu"
   },
   "SRR13711895": {
@@ -12550,7 +12561,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 2504,
-    "ribocounts": 29,
+    "ribofrac": "0.0132",
     "state": "Kampong Speu"
   },
   "SRR13711896": {
@@ -12559,7 +12570,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1443,
-    "ribocounts": 36,
+    "ribofrac": "0.0249",
     "state": "Kampong Speu"
   },
   "SRR13711897": {
@@ -12568,7 +12579,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 168067,
-    "ribocounts": 311,
+    "ribofrac": "0.0031",
     "state": "Kampong Speu"
   },
   "SRR13711898": {
@@ -12577,7 +12588,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 59,
-    "ribocounts": 26,
+    "ribofrac": "0.4407",
     "state": "Kampong Speu"
   },
   "SRR13711899": {
@@ -12586,7 +12597,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 34,
-    "ribocounts": 16,
+    "ribofrac": "0.4706",
     "state": "Kampong Speu"
   },
   "SRR13711900": {
@@ -12595,7 +12606,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 162,
-    "ribocounts": 78,
+    "ribofrac": "0.4815",
     "state": "Kampong Speu"
   },
   "SRR13711901": {
@@ -12604,7 +12615,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 95,
-    "ribocounts": 16,
+    "ribofrac": "0.1684",
     "state": "Kampong Speu"
   },
   "SRR13711902": {
@@ -12613,7 +12624,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 80,
-    "ribocounts": 16,
+    "ribofrac": "0.2",
     "state": "Kampong Speu"
   },
   "SRR13711903": {
@@ -12622,7 +12633,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 22655,
-    "ribocounts": 3831,
+    "ribofrac": "0.1853",
     "state": "Kampong Speu"
   },
   "SRR13711904": {
@@ -12631,7 +12642,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 737,
-    "ribocounts": 152,
+    "ribofrac": "0.2062",
     "state": "Kampong Speu"
   },
   "SRR13711905": {
@@ -12640,7 +12651,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 992,
-    "ribocounts": 206,
+    "ribofrac": "0.2077",
     "state": "Kampong Speu"
   },
   "SRR13711906": {
@@ -12649,7 +12660,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 6563,
-    "ribocounts": 1259,
+    "ribofrac": "0.2097",
     "state": "Kampong Speu"
   },
   "SRR13711907": {
@@ -12658,7 +12669,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 3963,
-    "ribocounts": 1954,
+    "ribofrac": "0.4965",
     "state": "Kampong Speu"
   },
   "SRR13711908": {
@@ -12667,7 +12678,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 5076,
-    "ribocounts": 2479,
+    "ribofrac": "0.4942",
     "state": "Kampong Speu"
   },
   "SRR13711909": {
@@ -12676,7 +12687,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 126253,
-    "ribocounts": 601,
+    "ribofrac": "0.0015",
     "state": "Kampong Speu"
   },
   "SRR13711910": {
@@ -12685,7 +12696,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 6970,
-    "ribocounts": 4017,
+    "ribofrac": "0.576",
     "state": "Kampong Speu"
   },
   "SRR13711911": {
@@ -12694,7 +12705,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 9562,
-    "ribocounts": 2627,
+    "ribofrac": "0.2659",
     "state": "Kampong Speu"
   },
   "SRR13711912": {
@@ -12703,7 +12714,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 2452,
-    "ribocounts": 1211,
+    "ribofrac": "0.4954",
     "state": "Kampong Speu"
   },
   "SRR13711913": {
@@ -12712,7 +12723,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1595,
-    "ribocounts": 881,
+    "ribofrac": "0.5524",
     "state": "Kampong Speu"
   },
   "SRR13711914": {
@@ -12721,7 +12732,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 10185,
-    "ribocounts": 3777,
+    "ribofrac": "0.3752",
     "state": "Kampong Speu"
   },
   "SRR13711915": {
@@ -12730,7 +12741,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 71133,
-    "ribocounts": 927,
+    "ribofrac": "0.011",
     "state": "Kampong Speu"
   },
   "SRR13711916": {
@@ -12739,7 +12750,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 9279,
-    "ribocounts": 2131,
+    "ribofrac": "0.2275",
     "state": "Kampong Speu"
   },
   "SRR13711917": {
@@ -12748,7 +12759,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 413,
-    "ribocounts": 121,
+    "ribofrac": "0.293",
     "state": "Kampong Speu"
   },
   "SRR13711918": {
@@ -12757,7 +12768,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 130,
-    "ribocounts": 28,
+    "ribofrac": "0.2154",
     "state": "Kampong Speu"
   },
   "SRR13711919": {
@@ -12766,7 +12777,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 4907,
-    "ribocounts": 1011,
+    "ribofrac": "0.1878",
     "state": "Kampong Speu"
   },
   "SRR13711920": {
@@ -12775,7 +12786,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 132,
-    "ribocounts": 40,
+    "ribofrac": "0.303",
     "state": "Kampong Speu"
   },
   "SRR13711921": {
@@ -12784,7 +12795,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 440,
-    "ribocounts": 181,
+    "ribofrac": "0.4114",
     "state": "Kampong Speu"
   },
   "SRR13711922": {
@@ -12793,7 +12804,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 586,
-    "ribocounts": 107,
+    "ribofrac": "0.1826",
     "state": "Kampong Speu"
   },
   "SRR13711923": {
@@ -12802,7 +12813,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 598,
-    "ribocounts": 179,
+    "ribofrac": "0.2993",
     "state": "Kampong Speu"
   },
   "SRR13711924": {
@@ -12811,7 +12822,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 675,
-    "ribocounts": 175,
+    "ribofrac": "0.2593",
     "state": "Kampong Speu"
   },
   "SRR13711925": {
@@ -12820,7 +12831,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1717,
-    "ribocounts": 419,
+    "ribofrac": "0.2352",
     "state": "Kampong Speu"
   },
   "SRR13711926": {
@@ -12829,7 +12840,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 578,
-    "ribocounts": 177,
+    "ribofrac": "0.3062",
     "state": "Kampong Speu"
   },
   "SRR13711927": {
@@ -12838,7 +12849,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 2803,
-    "ribocounts": 924,
+    "ribofrac": "0.3589",
     "state": "Kampong Speu"
   },
   "SRR13711928": {
@@ -12847,7 +12858,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 517,
-    "ribocounts": 382,
+    "ribofrac": "0.7389",
     "state": "Kampong Speu"
   },
   "SRR13711929": {
@@ -12856,7 +12867,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 699,
-    "ribocounts": 287,
+    "ribofrac": "0.4106",
     "state": "Kampong Speu"
   },
   "SRR13711930": {
@@ -12865,7 +12876,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1993,
-    "ribocounts": 615,
+    "ribofrac": "0.3068",
     "state": "Kampong Speu"
   },
   "SRR13711931": {
@@ -12874,7 +12885,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 9632,
-    "ribocounts": 1699,
+    "ribofrac": "0.1631",
     "state": "Kampong Speu"
   },
   "SRR13712247": {
@@ -12883,7 +12894,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 998,
-    "ribocounts": 4,
+    "ribofrac": "0.004",
     "state": "Kampong Speu"
   },
   "SRR13712248": {
@@ -12892,7 +12903,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 300,
-    "ribocounts": 1,
+    "ribofrac": "0.0033",
     "state": "Kampong Speu"
   },
   "SRR13712249": {
@@ -12901,7 +12912,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1977,
-    "ribocounts": 8,
+    "ribofrac": "0.0039",
     "state": "Kampong Speu"
   },
   "SRR13712250": {
@@ -12910,7 +12921,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1212,
-    "ribocounts": 2,
+    "ribofrac": "0.0017",
     "state": "Kampong Speu"
   },
   "SRR13712251": {
@@ -12919,7 +12930,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 479,
-    "ribocounts": 2,
+    "ribofrac": "0.0042",
     "state": "Kampong Speu"
   },
   "SRR13712252": {
@@ -12928,7 +12939,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1865,
-    "ribocounts": 3,
+    "ribofrac": "0.0025",
     "state": "Kampong Speu"
   },
   "SRR13712253": {
@@ -12937,7 +12948,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 24,
-    "ribocounts": 0,
+    "ribofrac": "0.0",
     "state": "Kampong Speu"
   },
   "SRR13712254": {
@@ -12946,7 +12957,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 22285,
-    "ribocounts": 33,
+    "ribofrac": "0.001",
     "state": "Kampong Speu"
   },
   "SRR13712255": {
@@ -12955,7 +12966,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 413,
-    "ribocounts": 170,
+    "ribofrac": "0.4116",
     "state": "Kampong Speu"
   },
   "SRR13712256": {
@@ -12964,7 +12975,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 348,
-    "ribocounts": 58,
+    "ribofrac": "0.1667",
     "state": "Kampong Speu"
   },
   "SRR13712257": {
@@ -12973,7 +12984,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 547,
-    "ribocounts": 140,
+    "ribofrac": "0.2559",
     "state": "Kampong Speu"
   },
   "SRR13712258": {
@@ -12982,7 +12993,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 21775,
-    "ribocounts": 74,
+    "ribofrac": "0.0047",
     "state": "Kampong Speu"
   },
   "SRR13712259": {
@@ -12991,7 +13002,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 37305,
-    "ribocounts": 826,
+    "ribofrac": "0.0258",
     "state": "Kampong Speu"
   },
   "SRR13712260": {
@@ -13000,7 +13011,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 2169,
-    "ribocounts": 1518,
+    "ribofrac": "0.6877",
     "state": "Kampong Speu"
   },
   "SRR13712261": {
@@ -13009,7 +13020,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 2310,
-    "ribocounts": 1565,
+    "ribofrac": "0.6817",
     "state": "Kampong Speu"
   },
   "SRR13712262": {
@@ -13018,7 +13029,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 7730,
-    "ribocounts": 966,
+    "ribofrac": "0.1251",
     "state": "Kampong Speu"
   },
   "SRR13712263": {
@@ -13027,7 +13038,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 415,
-    "ribocounts": 272,
+    "ribofrac": "0.6554",
     "state": "Kampong Speu"
   },
   "SRR13712264": {
@@ -13036,7 +13047,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 642,
-    "ribocounts": 440,
+    "ribofrac": "0.6864",
     "state": "Kampong Speu"
   },
   "SRR13712265": {
@@ -13045,7 +13056,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 13410,
-    "ribocounts": 735,
+    "ribofrac": "0.0655",
     "state": "Kampong Speu"
   },
   "SRR13712266": {
@@ -13054,7 +13065,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 4405,
-    "ribocounts": 3208,
+    "ribofrac": "0.732",
     "state": "Kampong Speu"
   },
   "SRR13712267": {
@@ -13063,7 +13074,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 884,
-    "ribocounts": 629,
+    "ribofrac": "0.7115",
     "state": "Kampong Speu"
   },
   "SRR13712268": {
@@ -13072,7 +13083,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 159,
-    "ribocounts": 98,
+    "ribofrac": "0.6164",
     "state": "Kampong Speu"
   },
   "SRR13712269": {
@@ -13081,7 +13092,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 223,
-    "ribocounts": 164,
+    "ribofrac": "0.7354",
     "state": "Kampong Speu"
   },
   "SRR13712270": {
@@ -13090,7 +13101,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1349,
-    "ribocounts": 1188,
+    "ribofrac": "0.8792",
     "state": "Kampong Speu"
   },
   "SRR13712271": {
@@ -13099,7 +13110,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 8590,
-    "ribocounts": 7524,
+    "ribofrac": "0.8653",
     "state": "Kampong Speu"
   },
   "SRR13712272": {
@@ -13108,7 +13119,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 4466,
-    "ribocounts": 3916,
+    "ribofrac": "0.8572",
     "state": "Kampong Speu"
   },
   "SRR13712273": {
@@ -13117,7 +13128,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 265,
-    "ribocounts": 75,
+    "ribofrac": "0.283",
     "state": "Kampong Speu"
   },
   "SRR13712274": {
@@ -13126,7 +13137,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 8680,
-    "ribocounts": 7823,
+    "ribofrac": "0.8948",
     "state": "Kampong Speu"
   },
   "SRR13712275": {
@@ -13135,7 +13146,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 7964,
-    "ribocounts": 1430,
+    "ribofrac": "0.1628",
     "state": "Kampong Speu"
   },
   "SRR13712276": {
@@ -13144,7 +13155,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 863,
-    "ribocounts": 481,
+    "ribofrac": "0.5574",
     "state": "Kampong Speu"
   },
   "SRR13712277": {
@@ -13153,7 +13164,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 2132,
-    "ribocounts": 1835,
+    "ribofrac": "0.8547",
     "state": "Kampong Speu"
   },
   "SRR13712278": {
@@ -13162,7 +13173,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 135,
-    "ribocounts": 59,
+    "ribofrac": "0.437",
     "state": "Kampong Speu"
   },
   "SRR13712279": {
@@ -13171,7 +13182,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 14945,
-    "ribocounts": 11913,
+    "ribofrac": "0.7867",
     "state": "Kampong Speu"
   },
   "SRR13712280": {
@@ -13180,7 +13191,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 3140,
-    "ribocounts": 2835,
+    "ribofrac": "0.9038",
     "state": "Kampong Speu"
   },
   "SRR13712281": {
@@ -13189,7 +13200,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 13465,
-    "ribocounts": 10193,
+    "ribofrac": "0.758",
     "state": "Kampong Speu"
   },
   "SRR13712282": {
@@ -13198,7 +13209,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 11230,
-    "ribocounts": 10243,
+    "ribofrac": "0.9027",
     "state": "Kampong Speu"
   },
   "SRR13712283": {
@@ -13207,7 +13218,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1349,
-    "ribocounts": 115,
+    "ribofrac": "0.0852",
     "state": "Kampong Speu"
   },
   "SRR13712284": {
@@ -13216,7 +13227,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 8488,
-    "ribocounts": 1072,
+    "ribofrac": "0.1215",
     "state": "Kampong Speu"
   },
   "SRR13712285": {
@@ -13225,7 +13236,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1356,
-    "ribocounts": 372,
+    "ribofrac": "0.2743",
     "state": "Kampong Speu"
   },
   "SRR13712286": {
@@ -13234,7 +13245,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 805,
-    "ribocounts": 129,
+    "ribofrac": "0.1602",
     "state": "Kampong Speu"
   },
   "SRR13712287": {
@@ -13243,7 +13254,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 4096,
-    "ribocounts": 383,
+    "ribofrac": "0.0967",
     "state": "Kampong Speu"
   },
   "SRR13712288": {
@@ -13252,7 +13263,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 410,
-    "ribocounts": 54,
+    "ribofrac": "0.1317",
     "state": "Kampong Speu"
   },
   "SRR13712289": {
@@ -13261,7 +13272,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 2642,
-    "ribocounts": 392,
+    "ribofrac": "0.1513",
     "state": "Kampong Speu"
   },
   "SRR13712290": {
@@ -13270,7 +13281,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 474,
-    "ribocounts": 67,
+    "ribofrac": "0.1414",
     "state": "Kampong Speu"
   },
   "SRR13712291": {
@@ -13279,7 +13290,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 506,
-    "ribocounts": 144,
+    "ribofrac": "0.2846",
     "state": "Kampong Speu"
   },
   "SRR13712292": {
@@ -13288,7 +13299,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1017,
-    "ribocounts": 182,
+    "ribofrac": "0.179",
     "state": "Kampong Speu"
   },
   "SRR13712293": {
@@ -13297,7 +13308,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 543,
-    "ribocounts": 82,
+    "ribofrac": "0.151",
     "state": "Kampong Speu"
   },
   "SRR13712294": {
@@ -13306,7 +13317,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 2437,
-    "ribocounts": 371,
+    "ribofrac": "0.149",
     "state": "Kampong Speu"
   },
   "SRR13712295": {
@@ -13315,7 +13326,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1476,
-    "ribocounts": 204,
+    "ribofrac": "0.1382",
     "state": "Kampong Speu"
   },
   "SRR13712296": {
@@ -13324,7 +13335,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1192,
-    "ribocounts": 172,
+    "ribofrac": "0.1443",
     "state": "Kampong Speu"
   },
   "SRR13712297": {
@@ -13333,7 +13344,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 50052,
-    "ribocounts": 75,
+    "ribofrac": "0.002",
     "state": "Kampong Speu"
   },
   "SRR13712298": {
@@ -13342,7 +13353,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 503,
-    "ribocounts": 88,
+    "ribofrac": "0.175",
     "state": "Kampong Speu"
   },
   "SRR13712299": {
@@ -13351,7 +13362,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 160,
-    "ribocounts": 24,
+    "ribofrac": "0.15",
     "state": "Kampong Speu"
   },
   "SRR13712300": {
@@ -13360,7 +13371,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 484,
-    "ribocounts": 119,
+    "ribofrac": "0.2459",
     "state": "Kampong Speu"
   },
   "SRR13712301": {
@@ -13369,7 +13380,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 858,
-    "ribocounts": 355,
+    "ribofrac": "0.4138",
     "state": "Kampong Speu"
   },
   "SRR13712302": {
@@ -13378,7 +13389,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 32966,
-    "ribocounts": 187,
+    "ribofrac": "0.0067",
     "state": "Kampong Speu"
   },
   "SRR13712303": {
@@ -13387,7 +13398,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 199,
-    "ribocounts": 46,
+    "ribofrac": "0.2323",
     "state": "Kampong Speu"
   },
   "SRR13712304": {
@@ -13396,7 +13407,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 101,
-    "ribocounts": 9,
+    "ribofrac": "0.0891",
     "state": "Kampong Speu"
   },
   "SRR13712305": {
@@ -13405,7 +13416,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 2078,
-    "ribocounts": 430,
+    "ribofrac": "0.199",
     "state": "Kampong Speu"
   },
   "SRR13712306": {
@@ -13414,7 +13425,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 220,
-    "ribocounts": 45,
+    "ribofrac": "0.2045",
     "state": "Kampong Speu"
   },
   "SRR13712307": {
@@ -13423,7 +13434,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 441,
-    "ribocounts": 73,
+    "ribofrac": "0.1655",
     "state": "Kampong Speu"
   },
   "SRR13712308": {
@@ -13432,7 +13443,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1058,
-    "ribocounts": 128,
+    "ribofrac": "0.121",
     "state": "Kampong Speu"
   },
   "SRR13712309": {
@@ -13441,7 +13452,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 11915,
-    "ribocounts": 851,
+    "ribofrac": "0.0605",
     "state": "Kampong Speu"
   },
   "SRR13712310": {
@@ -13450,7 +13461,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 35561,
-    "ribocounts": 95,
+    "ribofrac": "0.0019",
     "state": "Kampong Speu"
   },
   "SRR13712311": {
@@ -13459,7 +13470,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 147,
-    "ribocounts": 37,
+    "ribofrac": "0.2517",
     "state": "Kampong Speu"
   },
   "SRR13712312": {
@@ -13468,7 +13479,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 251,
-    "ribocounts": 49,
+    "ribofrac": "0.1952",
     "state": "Kampong Speu"
   },
   "SRR13712313": {
@@ -13477,7 +13488,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 221,
-    "ribocounts": 29,
+    "ribofrac": "0.1312",
     "state": "Kampong Speu"
   },
   "SRR13712314": {
@@ -13486,7 +13497,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 28155,
-    "ribocounts": 167,
+    "ribofrac": "0.01",
     "state": "Kampong Speu"
   },
   "SRR13712315": {
@@ -13495,7 +13506,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1293,
-    "ribocounts": 183,
+    "ribofrac": "0.1415",
     "state": "Kampong Speu"
   },
   "SRR13712316": {
@@ -13504,7 +13515,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 310,
-    "ribocounts": 216,
+    "ribofrac": "0.6968",
     "state": "Kampong Speu"
   },
   "SRR13712317": {
@@ -13513,7 +13524,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 240,
-    "ribocounts": 102,
+    "ribofrac": "0.425",
     "state": "Kampong Speu"
   },
   "SRR13712318": {
@@ -13522,7 +13533,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 28,
-    "ribocounts": 8,
+    "ribofrac": "0.2857",
     "state": "Kampong Speu"
   },
   "SRR13712319": {
@@ -13531,7 +13542,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 274,
-    "ribocounts": 73,
+    "ribofrac": "0.2664",
     "state": "Kampong Speu"
   },
   "SRR13712320": {
@@ -13540,7 +13551,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 380,
-    "ribocounts": 100,
+    "ribofrac": "0.2632",
     "state": "Kampong Speu"
   },
   "SRR13712321": {
@@ -13549,7 +13560,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 12968,
-    "ribocounts": 30,
+    "ribofrac": "0.0011",
     "state": "Kampong Speu"
   },
   "SRR13712322": {
@@ -13558,7 +13569,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 22010,
-    "ribocounts": 148,
+    "ribofrac": "0.0087",
     "state": "Kampong Speu"
   },
   "SRR13712323": {
@@ -13567,7 +13578,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 938,
-    "ribocounts": 40,
+    "ribofrac": "0.0426",
     "state": "Kampong Speu"
   },
   "SRR13712324": {
@@ -13576,7 +13587,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 449,
-    "ribocounts": 57,
+    "ribofrac": "0.1269",
     "state": "Kampong Speu"
   },
   "SRR13712325": {
@@ -13585,7 +13596,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 320,
-    "ribocounts": 77,
+    "ribofrac": "0.2406",
     "state": "Kampong Speu"
   },
   "SRR13712326": {
@@ -13594,7 +13605,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 586,
-    "ribocounts": 205,
+    "ribofrac": "0.3498",
     "state": "Kampong Speu"
   },
   "SRR13712327": {
@@ -13603,7 +13614,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 98602,
-    "ribocounts": 1133,
+    "ribofrac": "0.0081",
     "state": "Kampong Speu"
   },
   "SRR13712328": {
@@ -13612,7 +13623,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1028,
-    "ribocounts": 330,
+    "ribofrac": "0.321",
     "state": "Kampong Speu"
   },
   "SRR13712329": {
@@ -13621,7 +13632,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1472,
-    "ribocounts": 507,
+    "ribofrac": "0.3444",
     "state": "Kampong Speu"
   },
   "SRR13712330": {
@@ -13630,7 +13641,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 195,
-    "ribocounts": 39,
+    "ribofrac": "0.2",
     "state": "Kampong Speu"
   },
   "SRR13712331": {
@@ -13639,7 +13650,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 58359,
-    "ribocounts": 208,
+    "ribofrac": "0.0033",
     "state": "Kampong Speu"
   },
   "SRR13712332": {
@@ -13648,7 +13659,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1884,
-    "ribocounts": 170,
+    "ribofrac": "0.091",
     "state": "Kampong Speu"
   },
   "SRR13712333": {
@@ -13657,7 +13668,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 2458,
-    "ribocounts": 244,
+    "ribofrac": "0.1013",
     "state": "Kampong Speu"
   },
   "SRR13712334": {
@@ -13666,7 +13677,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 1991,
-    "ribocounts": 285,
+    "ribofrac": "0.1474",
     "state": "Kampong Speu"
   },
   "SRR13712335": {
@@ -13675,7 +13686,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 70762,
-    "ribocounts": 466,
+    "ribofrac": "0.008",
     "state": "Kampong Speu"
   },
   "SRR13712336": {
@@ -13684,7 +13695,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 597,
-    "ribocounts": 49,
+    "ribofrac": "0.0821",
     "state": "Kampong Speu"
   },
   "SRR13712337": {
@@ -13693,7 +13704,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 389,
-    "ribocounts": 122,
+    "ribofrac": "0.3136",
     "state": "Kampong Speu"
   },
   "SRR13712338": {
@@ -13702,7 +13713,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 886,
-    "ribocounts": 197,
+    "ribofrac": "0.2223",
     "state": "Kampong Speu"
   },
   "SRR13712339": {
@@ -13711,7 +13722,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 252,
-    "ribocounts": 33,
+    "ribofrac": "0.131",
     "state": "Kampong Speu"
   },
   "SRR13712340": {
@@ -13720,7 +13731,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 879,
-    "ribocounts": 176,
+    "ribofrac": "0.2002",
     "state": "Kampong Speu"
   },
   "SRR13712341": {
@@ -13729,7 +13740,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 212,
-    "ribocounts": 53,
+    "ribofrac": "0.25",
     "state": "Kampong Speu"
   },
   "SRR13712342": {
@@ -13738,7 +13749,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 118,
-    "ribocounts": 44,
+    "ribofrac": "0.3729",
     "state": "Kampong Speu"
   },
   "SRR13712343": {
@@ -13747,7 +13758,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 4323,
-    "ribocounts": 12,
+    "ribofrac": "0.0039",
     "state": "Kampong Speu"
   },
   "SRR13712344": {
@@ -13756,7 +13767,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 209,
-    "ribocounts": 55,
+    "ribofrac": "0.2632",
     "state": "Kampong Speu"
   },
   "SRR13712345": {
@@ -13765,7 +13776,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 12825,
-    "ribocounts": 69,
+    "ribofrac": "0.0052",
     "state": "Kampong Speu"
   },
   "SRR13712346": {
@@ -13774,7 +13785,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 192,
-    "ribocounts": 46,
+    "ribofrac": "0.2396",
     "state": "Kampong Speu"
   },
   "SRR13712347": {
@@ -13783,7 +13794,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 7563,
-    "ribocounts": 72,
+    "ribofrac": "0.0104",
     "state": "Kampong Speu"
   },
   "SRR13712348": {
@@ -13792,7 +13803,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 364,
-    "ribocounts": 97,
+    "ribofrac": "0.2665",
     "state": "Kampong Speu"
   },
   "SRR13712349": {
@@ -13801,7 +13812,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 149,
-    "ribocounts": 42,
+    "ribofrac": "0.2819",
     "state": "Kampong Speu"
   },
   "SRR13712350": {
@@ -13810,7 +13821,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 772,
-    "ribocounts": 161,
+    "ribofrac": "0.2085",
     "state": "Kampong Speu"
   },
   "SRR13712351": {
@@ -13819,7 +13830,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 3,
-    "ribocounts": 0,
+    "ribofrac": "0.0",
     "state": "Kampong Speu"
   },
   "SRR13712352": {
@@ -13828,7 +13839,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 15,
-    "ribocounts": 0,
+    "ribofrac": "0.0",
     "state": "Kampong Speu"
   },
   "SRR13966303": {
@@ -13837,7 +13848,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 123,
-    "ribocounts": 87,
+    "ribofrac": "0.7073",
     "state": "Kampong Speu"
   },
   "SRR13966304": {
@@ -13846,7 +13857,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 342,
-    "ribocounts": 105,
+    "ribofrac": "0.307",
     "state": "Kampong Speu"
   },
   "SRR14088347": {
@@ -13855,7 +13866,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 5802,
-    "ribocounts": 3957,
+    "ribofrac": "0.6748",
     "state": "Kampong Speu"
   },
   "SRR14088538": {
@@ -13864,7 +13875,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 9945,
-    "ribocounts": 5592,
+    "ribofrac": "0.5952",
     "state": "Kampong Speu"
   },
   "SRR14099091": {
@@ -13873,7 +13884,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 22013,
-    "ribocounts": 16005,
+    "ribofrac": "0.7271",
     "state": "Kampong Speu"
   },
   "SRR14106159": {
@@ -13882,7 +13893,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 44985,
-    "ribocounts": 26580,
+    "ribofrac": "0.5831",
     "state": "Kampong Speu"
   },
   "SRR14155280": {
@@ -13891,7 +13902,7 @@
     "country": "Cambodia",
     "date": "2020",
     "reads": 164761,
-    "ribocounts": 109030,
+    "ribofrac": "0.6723",
     "state": "Kampong Speu"
   },
   "SRR14530724": {
@@ -13902,6 +13913,7 @@
     "fine_location": "SB",
     "location": "Los Angeles",
     "reads": 2737872,
+    "ribofrac": "0.4001",
     "state": "California"
   },
   "SRR14530725": {
@@ -13912,6 +13924,7 @@
     "fine_location": "SB",
     "location": "Los Angeles",
     "reads": 6515759,
+    "ribofrac": "0.036",
     "state": "California"
   },
   "SRR14530726": {
@@ -13922,6 +13935,7 @@
     "fine_location": "SB",
     "location": "Los Angeles",
     "reads": 3204232,
+    "ribofrac": "0.2884",
     "state": "California"
   },
   "SRR14530727": {
@@ -13932,6 +13946,7 @@
     "fine_location": "SB",
     "location": "Los Angeles",
     "reads": 2782200,
+    "ribofrac": "0.1909",
     "state": "California"
   },
   "SRR14530728": {
@@ -13942,6 +13957,7 @@
     "fine_location": "SB",
     "location": "Los Angeles",
     "reads": 3429177,
+    "ribofrac": "0.5421",
     "state": "California"
   },
   "SRR14530729": {
@@ -13952,6 +13968,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 3842559,
+    "ribofrac": "0.7874",
     "state": "California"
   },
   "SRR14530730": {
@@ -13962,6 +13979,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 4419124,
+    "ribofrac": "0.3011",
     "state": "California"
   },
   "SRR14530731": {
@@ -13972,6 +13990,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 3402804,
+    "ribofrac": "0.8518",
     "state": "California"
   },
   "SRR14530732": {
@@ -13982,6 +14001,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 3786318,
+    "ribofrac": "0.8401",
     "state": "California"
   },
   "SRR14530733": {
@@ -13992,6 +14012,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 3857662,
+    "ribofrac": "0.8516",
     "state": "California"
   },
   "SRR14530734": {
@@ -14002,6 +14023,7 @@
     "fine_location": "OC",
     "location": "Los Angeles",
     "reads": 3588085,
+    "ribofrac": "0.7565",
     "state": "California"
   },
   "SRR14530735": {
@@ -14012,6 +14034,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 2807360,
+    "ribofrac": "0.5175",
     "state": "California"
   },
   "SRR14530736": {
@@ -14022,6 +14045,7 @@
     "fine_location": "OC",
     "location": "Los Angeles",
     "reads": 4520022,
+    "ribofrac": "0.7785",
     "state": "California"
   },
   "SRR14530737": {
@@ -14032,6 +14056,7 @@
     "fine_location": "OC",
     "location": "Los Angeles",
     "reads": 1327075,
+    "ribofrac": "0.0254",
     "state": "California"
   },
   "SRR14530738": {
@@ -14042,6 +14067,7 @@
     "fine_location": "OC",
     "location": "Los Angeles",
     "reads": 4874211,
+    "ribofrac": "0.0829",
     "state": "California"
   },
   "SRR14530739": {
@@ -14052,6 +14078,7 @@
     "fine_location": "OC",
     "location": "Los Angeles",
     "reads": 3689634,
+    "ribofrac": "0.1319",
     "state": "California"
   },
   "SRR14530740": {
@@ -14062,6 +14089,7 @@
     "fine_location": "OC",
     "location": "Los Angeles",
     "reads": 3283166,
+    "ribofrac": "0.83",
     "state": "California"
   },
   "SRR14530741": {
@@ -14072,6 +14100,7 @@
     "fine_location": "OC",
     "location": "Los Angeles",
     "reads": 3182825,
+    "ribofrac": "0.7631",
     "state": "California"
   },
   "SRR14530742": {
@@ -14082,6 +14111,7 @@
     "fine_location": "OC",
     "location": "Los Angeles",
     "reads": 1292650,
+    "ribofrac": "0.8051",
     "state": "California"
   },
   "SRR14530743": {
@@ -14092,6 +14122,7 @@
     "fine_location": "OC",
     "location": "Los Angeles",
     "reads": 3890259,
+    "ribofrac": "0.386",
     "state": "California"
   },
   "SRR14530744": {
@@ -14102,6 +14133,7 @@
     "fine_location": "NC",
     "location": "Los Angeles",
     "reads": 2901986,
+    "ribofrac": "0.1809",
     "state": "California"
   },
   "SRR14530745": {
@@ -14112,6 +14144,7 @@
     "fine_location": "NC",
     "location": "Los Angeles",
     "reads": 3467617,
+    "ribofrac": "0.1117",
     "state": "California"
   },
   "SRR14530746": {
@@ -14122,6 +14155,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 3233824,
+    "ribofrac": "0.2379",
     "state": "California"
   },
   "SRR14530747": {
@@ -14132,6 +14166,7 @@
     "fine_location": "NC",
     "location": "Los Angeles",
     "reads": 4099096,
+    "ribofrac": "0.813",
     "state": "California"
   },
   "SRR14530748": {
@@ -14142,6 +14177,7 @@
     "fine_location": "NC",
     "location": "Los Angeles",
     "reads": 4124544,
+    "ribofrac": "0.1473",
     "state": "California"
   },
   "SRR14530749": {
@@ -14152,6 +14188,7 @@
     "fine_location": "NC",
     "location": "Los Angeles",
     "reads": 4902017,
+    "ribofrac": "0.7047",
     "state": "California"
   },
   "SRR14530750": {
@@ -14162,6 +14199,7 @@
     "fine_location": "JWPCP",
     "location": "Los Angeles",
     "reads": 4514886,
+    "ribofrac": "0.8232",
     "state": "California"
   },
   "SRR14530751": {
@@ -14172,6 +14210,7 @@
     "fine_location": "JWPCP",
     "location": "Los Angeles",
     "reads": 4234727,
+    "ribofrac": "0.0494",
     "state": "California"
   },
   "SRR14530752": {
@@ -14182,6 +14221,7 @@
     "fine_location": "JWPCP",
     "location": "Los Angeles",
     "reads": 4018438,
+    "ribofrac": "0.1319",
     "state": "California"
   },
   "SRR14530753": {
@@ -14192,6 +14232,7 @@
     "fine_location": "JWPCP",
     "location": "Los Angeles",
     "reads": 3630148,
+    "ribofrac": "0.8448",
     "state": "California"
   },
   "SRR14530754": {
@@ -14202,6 +14243,7 @@
     "fine_location": "JWPCP",
     "location": "Los Angeles",
     "reads": 3183234,
+    "ribofrac": "0.8109",
     "state": "California"
   },
   "SRR14530755": {
@@ -14212,6 +14254,7 @@
     "fine_location": "JWPCP",
     "location": "Los Angeles",
     "reads": 4059288,
+    "ribofrac": "0.868",
     "state": "California"
   },
   "SRR14530756": {
@@ -14222,6 +14265,7 @@
     "fine_location": "JWPCP",
     "location": "Los Angeles",
     "reads": 2102736,
+    "ribofrac": "0.7749",
     "state": "California"
   },
   "SRR14530757": {
@@ -14232,6 +14276,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 4286417,
+    "ribofrac": "0.3102",
     "state": "California"
   },
   "SRR14530758": {
@@ -14242,6 +14287,7 @@
     "fine_location": "JWPCP",
     "location": "Los Angeles",
     "reads": 4221630,
+    "ribofrac": "0.8246",
     "state": "California"
   },
   "SRR14530759": {
@@ -14252,6 +14298,7 @@
     "fine_location": "JWPCP",
     "location": "Los Angeles",
     "reads": 4832507,
+    "ribofrac": "0.8776",
     "state": "California"
   },
   "SRR14530760": {
@@ -14262,6 +14309,7 @@
     "fine_location": "JWPCP",
     "location": "Los Angeles",
     "reads": 2374918,
+    "ribofrac": "0.6169",
     "state": "California"
   },
   "SRR14530761": {
@@ -14272,6 +14320,7 @@
     "fine_location": "JWPCP",
     "location": "Los Angeles",
     "reads": 4362852,
+    "ribofrac": "0.2113",
     "state": "California"
   },
   "SRR14530762": {
@@ -14282,6 +14331,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 3579700,
+    "ribofrac": "0.5122",
     "state": "California"
   },
   "SRR14530763": {
@@ -14292,6 +14342,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 3551002,
+    "ribofrac": "0.255",
     "state": "California"
   },
   "SRR14530764": {
@@ -14302,6 +14353,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 3604679,
+    "ribofrac": "0.3891",
     "state": "California"
   },
   "SRR14530765": {
@@ -14312,6 +14364,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 3486258,
+    "ribofrac": "0.1858",
     "state": "California"
   },
   "SRR14530766": {
@@ -14322,6 +14375,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 2800039,
+    "ribofrac": "0.5499",
     "state": "California"
   },
   "SRR14530767": {
@@ -14332,6 +14386,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 3318348,
+    "ribofrac": "0.5244",
     "state": "California"
   },
   "SRR14530768": {
@@ -14342,6 +14397,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 4066111,
+    "ribofrac": "0.1856",
     "state": "California"
   },
   "SRR14530769": {
@@ -14352,6 +14408,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 4215471,
+    "ribofrac": "0.4538",
     "state": "California"
   },
   "SRR14530770": {
@@ -14362,6 +14419,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 4350744,
+    "ribofrac": "0.2484",
     "state": "California"
   },
   "SRR14530771": {
@@ -14372,6 +14430,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 2179170,
+    "ribofrac": "0.4114",
     "state": "California"
   },
   "SRR14530772": {
@@ -14382,6 +14441,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 4595209,
+    "ribofrac": "0.3135",
     "state": "California"
   },
   "SRR14530773": {
@@ -14392,6 +14452,7 @@
     "fine_location": "SJ",
     "location": "Los Angeles",
     "reads": 1615689,
+    "ribofrac": "0.1124",
     "state": "California"
   },
   "SRR14530774": {
@@ -14402,6 +14463,7 @@
     "fine_location": "SJ",
     "location": "Los Angeles",
     "reads": 4478207,
+    "ribofrac": "0.4926",
     "state": "California"
   },
   "SRR14530775": {
@@ -14412,6 +14474,7 @@
     "fine_location": "SJ",
     "location": "Los Angeles",
     "reads": 3538301,
+    "ribofrac": "0.3406",
     "state": "California"
   },
   "SRR14530776": {
@@ -14422,6 +14485,7 @@
     "fine_location": "SJ",
     "location": "Los Angeles",
     "reads": 3233946,
+    "ribofrac": "0.2404",
     "state": "California"
   },
   "SRR14530777": {
@@ -14432,6 +14496,7 @@
     "fine_location": "SJ",
     "location": "Los Angeles",
     "reads": 4395025,
+    "ribofrac": "0.4982",
     "state": "California"
   },
   "SRR14530778": {
@@ -14442,6 +14507,7 @@
     "fine_location": "SJ",
     "location": "Los Angeles",
     "reads": 3312596,
+    "ribofrac": "0.4393",
     "state": "California"
   },
   "SRR14530779": {
@@ -14452,6 +14518,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 3810545,
+    "ribofrac": "0.4373",
     "state": "California"
   },
   "SRR14530780": {
@@ -14462,6 +14529,7 @@
     "fine_location": "SJ",
     "location": "Los Angeles",
     "reads": 5045252,
+    "ribofrac": "0.4082",
     "state": "California"
   },
   "SRR14530781": {
@@ -14472,6 +14540,7 @@
     "fine_location": "SJ",
     "location": "Los Angeles",
     "reads": 5592467,
+    "ribofrac": "0.64",
     "state": "California"
   },
   "SRR14530782": {
@@ -14482,6 +14551,7 @@
     "fine_location": "SJ",
     "location": "Los Angeles",
     "reads": 2529771,
+    "ribofrac": "0.3239",
     "state": "California"
   },
   "SRR14530783": {
@@ -14492,6 +14562,7 @@
     "fine_location": "SJ",
     "location": "Los Angeles",
     "reads": 3743058,
+    "ribofrac": "0.2614",
     "state": "California"
   },
   "SRR14530784": {
@@ -14502,6 +14573,7 @@
     "fine_location": "SJ",
     "location": "Los Angeles",
     "reads": 6620418,
+    "ribofrac": "0.3633",
     "state": "California"
   },
   "SRR14530785": {
@@ -14512,6 +14584,7 @@
     "fine_location": "SB",
     "location": "Los Angeles",
     "reads": 8113925,
+    "ribofrac": "0.0277",
     "state": "California"
   },
   "SRR14530786": {
@@ -14522,6 +14595,7 @@
     "fine_location": "SB",
     "location": "Los Angeles",
     "reads": 2556497,
+    "ribofrac": "0.3435",
     "state": "California"
   },
   "SRR14530787": {
@@ -14532,6 +14606,7 @@
     "fine_location": "SB",
     "location": "Los Angeles",
     "reads": 4596913,
+    "ribofrac": "0.2543",
     "state": "California"
   },
   "SRR14530788": {
@@ -14542,6 +14617,7 @@
     "fine_location": "SB",
     "location": "Los Angeles",
     "reads": 2057061,
+    "ribofrac": "0.1609",
     "state": "California"
   },
   "SRR14530789": {
@@ -14552,6 +14628,7 @@
     "fine_location": "SB",
     "location": "Los Angeles",
     "reads": 3293890,
+    "ribofrac": "0.4029",
     "state": "California"
   },
   "SRR14530790": {
@@ -14562,6 +14639,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 1901768,
+    "ribofrac": "0.5013",
     "state": "California"
   },
   "SRR14530791": {
@@ -14572,6 +14650,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 6227653,
+    "ribofrac": "0.4823",
     "state": "California"
   },
   "SRR14530792": {
@@ -14582,6 +14661,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 3272174,
+    "ribofrac": "0.3383",
     "state": "California"
   },
   "SRR14530793": {
@@ -14592,6 +14672,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 1832839,
+    "ribofrac": "0.5438",
     "state": "California"
   },
   "SRR14530794": {
@@ -14602,6 +14683,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 3582304,
+    "ribofrac": "0.5961",
     "state": "California"
   },
   "SRR14530795": {
@@ -14612,6 +14694,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 2000753,
+    "ribofrac": "0.671",
     "state": "California"
   },
   "SRR14530796": {
@@ -14622,6 +14705,7 @@
     "fine_location": "OC",
     "location": "Los Angeles",
     "reads": 2495164,
+    "ribofrac": "0.5141",
     "state": "California"
   },
   "SRR14530797": {
@@ -14632,6 +14716,7 @@
     "fine_location": "OC",
     "location": "Los Angeles",
     "reads": 3618278,
+    "ribofrac": "0.4457",
     "state": "California"
   },
   "SRR14530798": {
@@ -14642,6 +14727,7 @@
     "fine_location": "OC",
     "location": "Los Angeles",
     "reads": 2282933,
+    "ribofrac": "0.0173",
     "state": "California"
   },
   "SRR14530799": {
@@ -14652,6 +14738,7 @@
     "fine_location": "OC",
     "location": "Los Angeles",
     "reads": 5551606,
+    "ribofrac": "0.0715",
     "state": "California"
   },
   "SRR14530800": {
@@ -14662,6 +14749,7 @@
     "fine_location": "OC",
     "location": "Los Angeles",
     "reads": 3156280,
+    "ribofrac": "0.0803",
     "state": "California"
   },
   "SRR14530801": {
@@ -14672,6 +14760,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 3477646,
+    "ribofrac": "0.4013",
     "state": "California"
   },
   "SRR14530802": {
@@ -14682,6 +14771,7 @@
     "fine_location": "OC",
     "location": "Los Angeles",
     "reads": 1462677,
+    "ribofrac": "0.6249",
     "state": "California"
   },
   "SRR14530803": {
@@ -14692,6 +14782,7 @@
     "fine_location": "OC",
     "location": "Los Angeles",
     "reads": 2389728,
+    "ribofrac": "0.5925",
     "state": "California"
   },
   "SRR14530804": {
@@ -14702,6 +14793,7 @@
     "fine_location": "OC",
     "location": "Los Angeles",
     "reads": 6241597,
+    "ribofrac": "0.5643",
     "state": "California"
   },
   "SRR14530805": {
@@ -14712,6 +14804,7 @@
     "fine_location": "OC",
     "location": "Los Angeles",
     "reads": 3355936,
+    "ribofrac": "0.2243",
     "state": "California"
   },
   "SRR14530806": {
@@ -14722,6 +14815,7 @@
     "fine_location": "NC",
     "location": "Los Angeles",
     "reads": 2258105,
+    "ribofrac": "0.1992",
     "state": "California"
   },
   "SRR14530807": {
@@ -14732,6 +14826,7 @@
     "fine_location": "NC",
     "location": "Los Angeles",
     "reads": 4308728,
+    "ribofrac": "0.1134",
     "state": "California"
   },
   "SRR14530808": {
@@ -14742,6 +14837,7 @@
     "fine_location": "NC",
     "location": "Los Angeles",
     "reads": 5650167,
+    "ribofrac": "0.6995",
     "state": "California"
   },
   "SRR14530809": {
@@ -14752,6 +14848,7 @@
     "fine_location": "NC",
     "location": "Los Angeles",
     "reads": 3925138,
+    "ribofrac": "0.126",
     "state": "California"
   },
   "SRR14530810": {
@@ -14762,6 +14859,7 @@
     "fine_location": "NC",
     "location": "Los Angeles",
     "reads": 1231997,
+    "ribofrac": "0.5074",
     "state": "California"
   },
   "SRR14530811": {
@@ -14772,6 +14870,7 @@
     "fine_location": "JWPCP",
     "location": "Los Angeles",
     "reads": 3811362,
+    "ribofrac": "0.5765",
     "state": "California"
   },
   "SRR14530812": {
@@ -14782,6 +14881,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 3094229,
+    "ribofrac": "0.2034",
     "state": "California"
   },
   "SRR14530813": {
@@ -14792,6 +14892,7 @@
     "fine_location": "JWPCP",
     "location": "Los Angeles",
     "reads": 3981090,
+    "ribofrac": "0.0499",
     "state": "California"
   },
   "SRR14530814": {
@@ -14802,6 +14903,7 @@
     "fine_location": "JWPCP",
     "location": "Los Angeles",
     "reads": 3530954,
+    "ribofrac": "0.0883",
     "state": "California"
   },
   "SRR14530815": {
@@ -14812,6 +14914,7 @@
     "fine_location": "SJ",
     "location": "Los Angeles",
     "reads": 1043613,
+    "ribofrac": "0.5794",
     "state": "California"
   },
   "SRR14530816": {
@@ -14822,6 +14925,7 @@
     "fine_location": "SJ",
     "location": "Los Angeles",
     "reads": 1380941,
+    "ribofrac": "0.5932",
     "state": "California"
   },
   "SRR14530817": {
@@ -14832,6 +14936,7 @@
     "fine_location": "SJ",
     "location": "Los Angeles",
     "reads": 1230272,
+    "ribofrac": "0.6743",
     "state": "California"
   },
   "SRR14530818": {
@@ -14842,6 +14947,7 @@
     "fine_location": "JWPCP",
     "location": "Los Angeles",
     "reads": 2950881,
+    "ribofrac": "0.1863",
     "state": "California"
   },
   "SRR14530819": {
@@ -14852,6 +14958,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 3357535,
+    "ribofrac": "0.3948",
     "state": "California"
   },
   "SRR14530820": {
@@ -14862,6 +14969,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 3441208,
+    "ribofrac": "0.2499",
     "state": "California"
   },
   "SRR14530821": {
@@ -14872,6 +14980,7 @@
     "fine_location": "SJ",
     "location": "Los Angeles",
     "reads": 1459625,
+    "ribofrac": "0.721",
     "state": "California"
   },
   "SRR14530822": {
@@ -14882,6 +14991,7 @@
     "fine_location": "SB",
     "location": "Los Angeles",
     "reads": 1118519,
+    "ribofrac": "0.3818",
     "state": "California"
   },
   "SRR14530823": {
@@ -14892,6 +15002,7 @@
     "fine_location": "SB",
     "location": "Los Angeles",
     "reads": 1159722,
+    "ribofrac": "0.348",
     "state": "California"
   },
   "SRR14530824": {
@@ -14902,6 +15013,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 1208997,
+    "ribofrac": "0.378",
     "state": "California"
   },
   "SRR14530825": {
@@ -14912,6 +15024,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 1263185,
+    "ribofrac": "0.4237",
     "state": "California"
   },
   "SRR14530826": {
@@ -14922,6 +15035,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 1405184,
+    "ribofrac": "0.4042",
     "state": "California"
   },
   "SRR14530827": {
@@ -14932,6 +15046,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 773261,
+    "ribofrac": "0.7355",
     "state": "California"
   },
   "SRR14530828": {
@@ -14942,6 +15057,7 @@
     "fine_location": "JWPCP",
     "location": "Los Angeles",
     "reads": 4457786,
+    "ribofrac": "0.6334",
     "state": "California"
   },
   "SRR14530829": {
@@ -14952,6 +15068,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 1067834,
+    "ribofrac": "0.1817",
     "state": "California"
   },
   "SRR14530830": {
@@ -14962,6 +15079,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 1346473,
+    "ribofrac": "0.2207",
     "state": "California"
   },
   "SRR14530831": {
@@ -14972,6 +15090,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 1753622,
+    "ribofrac": "0.4626",
     "state": "California"
   },
   "SRR14530832": {
@@ -14982,6 +15101,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 1346042,
+    "ribofrac": "0.4213",
     "state": "California"
   },
   "SRR14530833": {
@@ -14992,6 +15112,7 @@
     "fine_location": "OC",
     "location": "Los Angeles",
     "reads": 1164045,
+    "ribofrac": "0.5105",
     "state": "California"
   },
   "SRR14530834": {
@@ -15002,6 +15123,7 @@
     "fine_location": "OC",
     "location": "Los Angeles",
     "reads": 1231078,
+    "ribofrac": "0.3825",
     "state": "California"
   },
   "SRR14530835": {
@@ -15012,6 +15134,7 @@
     "fine_location": "OC",
     "location": "Los Angeles",
     "reads": 1246005,
+    "ribofrac": "0.6587",
     "state": "California"
   },
   "SRR14530836": {
@@ -15022,6 +15145,7 @@
     "fine_location": "OC",
     "location": "Los Angeles",
     "reads": 1605735,
+    "ribofrac": "0.454",
     "state": "California"
   },
   "SRR14530837": {
@@ -15032,6 +15156,7 @@
     "fine_location": "JWPCP",
     "location": "Los Angeles",
     "reads": 1653176,
+    "ribofrac": "0.7791",
     "state": "California"
   },
   "SRR14530838": {
@@ -15042,6 +15167,7 @@
     "fine_location": "JWPCP",
     "location": "Los Angeles",
     "reads": 1561405,
+    "ribofrac": "0.7425",
     "state": "California"
   },
   "SRR14530839": {
@@ -15052,6 +15178,7 @@
     "fine_location": "JWPCP",
     "location": "Los Angeles",
     "reads": 1925694,
+    "ribofrac": "0.5683",
     "state": "California"
   },
   "SRR14530840": {
@@ -15062,6 +15189,7 @@
     "fine_location": "JWPCP",
     "location": "Los Angeles",
     "reads": 1112103,
+    "ribofrac": "0.6466",
     "state": "California"
   },
   "SRR14530841": {
@@ -15072,6 +15200,7 @@
     "fine_location": "JWPCP",
     "location": "Los Angeles",
     "reads": 1232548,
+    "ribofrac": "0.809",
     "state": "California"
   },
   "SRR14530842": {
@@ -15082,6 +15211,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 1603711,
+    "ribofrac": "0.5193",
     "state": "California"
   },
   "SRR14530843": {
@@ -15092,6 +15222,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 1294643,
+    "ribofrac": "0.4576",
     "state": "California"
   },
   "SRR14530844": {
@@ -15102,6 +15233,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 1142935,
+    "ribofrac": "0.4405",
     "state": "California"
   },
   "SRR14530845": {
@@ -15112,6 +15244,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 1298420,
+    "ribofrac": "0.3779",
     "state": "California"
   },
   "SRR14530846": {
@@ -15122,6 +15255,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 1264824,
+    "ribofrac": "0.4851",
     "state": "California"
   },
   "SRR14530847": {
@@ -15132,6 +15266,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 1073151,
+    "ribofrac": "0.4655",
     "state": "California"
   },
   "SRR14530848": {
@@ -15142,6 +15277,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 1479324,
+    "ribofrac": "0.3867",
     "state": "California"
   },
   "SRR14530849": {
@@ -15152,6 +15288,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 990379,
+    "ribofrac": "0.3296",
     "state": "California"
   },
   "SRR14530850": {
@@ -15162,6 +15299,7 @@
     "fine_location": "JWPCP",
     "location": "Los Angeles",
     "reads": 3034820,
+    "ribofrac": "0.7438",
     "state": "California"
   },
   "SRR14530851": {
@@ -15172,6 +15310,7 @@
     "fine_location": "SJ",
     "location": "Los Angeles",
     "reads": 10246075,
+    "ribofrac": "0.678",
     "state": "California"
   },
   "SRR14530852": {
@@ -15182,6 +15321,7 @@
     "fine_location": "SJ",
     "location": "Los Angeles",
     "reads": 10232266,
+    "ribofrac": "0.6361",
     "state": "California"
   },
   "SRR14530853": {
@@ -15192,6 +15332,7 @@
     "fine_location": "SJ",
     "location": "Los Angeles",
     "reads": 13154158,
+    "ribofrac": "0.7672",
     "state": "California"
   },
   "SRR14530854": {
@@ -15202,6 +15343,7 @@
     "fine_location": "SJ",
     "location": "Los Angeles",
     "reads": 11601202,
+    "ribofrac": "0.7671",
     "state": "California"
   },
   "SRR14530855": {
@@ -15212,6 +15354,7 @@
     "fine_location": "SB",
     "location": "Los Angeles",
     "reads": 11389423,
+    "ribofrac": "0.427",
     "state": "California"
   },
   "SRR14530856": {
@@ -15222,6 +15365,7 @@
     "fine_location": "SB",
     "location": "Los Angeles",
     "reads": 11257694,
+    "ribofrac": "0.4392",
     "state": "California"
   },
   "SRR14530857": {
@@ -15232,6 +15376,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 8833468,
+    "ribofrac": "0.4241",
     "state": "California"
   },
   "SRR14530858": {
@@ -15242,6 +15387,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 9334593,
+    "ribofrac": "0.5105",
     "state": "California"
   },
   "SRR14530859": {
@@ -15252,6 +15398,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 10305132,
+    "ribofrac": "0.5077",
     "state": "California"
   },
   "SRR14530860": {
@@ -15262,6 +15409,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 8153083,
+    "ribofrac": "0.8492",
     "state": "California"
   },
   "SRR14530861": {
@@ -15272,6 +15420,7 @@
     "fine_location": "JWPCP",
     "location": "Los Angeles",
     "reads": 2920601,
+    "ribofrac": "0.5995",
     "state": "California"
   },
   "SRR14530862": {
@@ -15282,6 +15431,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 10775374,
+    "ribofrac": "0.2722",
     "state": "California"
   },
   "SRR14530863": {
@@ -15292,6 +15442,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 10112554,
+    "ribofrac": "0.2986",
     "state": "California"
   },
   "SRR14530864": {
@@ -15302,6 +15453,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 10182955,
+    "ribofrac": "0.5725",
     "state": "California"
   },
   "SRR14530865": {
@@ -15312,6 +15464,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 10140886,
+    "ribofrac": "0.5237",
     "state": "California"
   },
   "SRR14530866": {
@@ -15322,6 +15475,7 @@
     "fine_location": "OC",
     "location": "Los Angeles",
     "reads": 9826830,
+    "ribofrac": "0.6365",
     "state": "California"
   },
   "SRR14530867": {
@@ -15332,6 +15486,7 @@
     "fine_location": "OC",
     "location": "Los Angeles",
     "reads": 9840771,
+    "ribofrac": "0.5343",
     "state": "California"
   },
   "SRR14530868": {
@@ -15342,6 +15497,7 @@
     "fine_location": "OC",
     "location": "Los Angeles",
     "reads": 10616714,
+    "ribofrac": "0.6969",
     "state": "California"
   },
   "SRR14530869": {
@@ -15352,6 +15508,7 @@
     "fine_location": "OC",
     "location": "Los Angeles",
     "reads": 8583928,
+    "ribofrac": "0.7781",
     "state": "California"
   },
   "SRR14530870": {
@@ -15362,6 +15519,7 @@
     "fine_location": "OC",
     "location": "Los Angeles",
     "reads": 9408142,
+    "ribofrac": "0.4616",
     "state": "California"
   },
   "SRR14530871": {
@@ -15372,6 +15530,7 @@
     "fine_location": "OC",
     "location": "Los Angeles",
     "reads": 10523877,
+    "ribofrac": "0.6024",
     "state": "California"
   },
   "SRR14530872": {
@@ -15382,6 +15541,7 @@
     "fine_location": "JWPCP",
     "location": "Los Angeles",
     "reads": 4345005,
+    "ribofrac": "0.6485",
     "state": "California"
   },
   "SRR14530873": {
@@ -15392,6 +15552,7 @@
     "fine_location": "OC",
     "location": "Los Angeles",
     "reads": 11667235,
+    "ribofrac": "0.5703",
     "state": "California"
   },
   "SRR14530874": {
@@ -15402,6 +15563,7 @@
     "fine_location": "NC",
     "location": "Los Angeles",
     "reads": 9670784,
+    "ribofrac": "0.8083",
     "state": "California"
   },
   "SRR14530875": {
@@ -15412,6 +15574,7 @@
     "fine_location": "NC",
     "location": "Los Angeles",
     "reads": 12434072,
+    "ribofrac": "0.7119",
     "state": "California"
   },
   "SRR14530876": {
@@ -15422,6 +15585,7 @@
     "fine_location": "JWPCP",
     "location": "Los Angeles",
     "reads": 10164300,
+    "ribofrac": "0.8812",
     "state": "California"
   },
   "SRR14530877": {
@@ -15432,6 +15596,7 @@
     "fine_location": "JWPCP",
     "location": "Los Angeles",
     "reads": 11233097,
+    "ribofrac": "0.8489",
     "state": "California"
   },
   "SRR14530878": {
@@ -15442,6 +15607,7 @@
     "fine_location": "JWPCP",
     "location": "Los Angeles",
     "reads": 12720283,
+    "ribofrac": "0.7689",
     "state": "California"
   },
   "SRR14530879": {
@@ -15452,6 +15618,7 @@
     "fine_location": "JWPCP",
     "location": "Los Angeles",
     "reads": 9675052,
+    "ribofrac": "0.8993",
     "state": "California"
   },
   "SRR14530880": {
@@ -15462,6 +15629,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 13626688,
+    "ribofrac": "0.5311",
     "state": "California"
   },
   "SRR14530881": {
@@ -15472,6 +15640,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 12904150,
+    "ribofrac": "0.4624",
     "state": "California"
   },
   "SRR14530882": {
@@ -15482,6 +15651,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 11504066,
+    "ribofrac": "0.5534",
     "state": "California"
   },
   "SRR14530883": {
@@ -15492,6 +15662,7 @@
     "fine_location": "JWPCP",
     "location": "Los Angeles",
     "reads": 4786787,
+    "ribofrac": "0.6896",
     "state": "California"
   },
   "SRR14530884": {
@@ -15502,6 +15673,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 8861526,
+    "ribofrac": "0.6169",
     "state": "California"
   },
   "SRR14530885": {
@@ -15512,6 +15684,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 11960233,
+    "ribofrac": "0.6211",
     "state": "California"
   },
   "SRR14530886": {
@@ -15522,6 +15695,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 10874604,
+    "ribofrac": "0.5355",
     "state": "California"
   },
   "SRR14530887": {
@@ -15532,6 +15706,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 11912829,
+    "ribofrac": "0.4125",
     "state": "California"
   },
   "SRR14530888": {
@@ -15542,6 +15717,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 11534523,
+    "ribofrac": "0.5437",
     "state": "California"
   },
   "SRR14530889": {
@@ -15552,6 +15728,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 11045877,
+    "ribofrac": "0.5058",
     "state": "California"
   },
   "SRR14530890": {
@@ -15562,6 +15739,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 16394657,
+    "ribofrac": "0.342",
     "state": "California"
   },
   "SRR14530891": {
@@ -15572,6 +15750,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 9626457,
+    "ribofrac": "0.4194",
     "state": "California"
   },
   "SRR14530892": {
@@ -15582,6 +15761,7 @@
     "fine_location": "SJ",
     "location": "Los Angeles",
     "reads": 2810576,
+    "ribofrac": "0.1355",
     "state": "California"
   },
   "SRR14530893": {
@@ -15592,6 +15772,7 @@
     "fine_location": "SJ",
     "location": "Los Angeles",
     "reads": 3829748,
+    "ribofrac": "0.6234",
     "state": "California"
   },
   "SRR14530894": {
@@ -15602,6 +15783,7 @@
     "fine_location": "JWPCP",
     "location": "Los Angeles",
     "reads": 4599945,
+    "ribofrac": "0.4805",
     "state": "California"
   },
   "SRR14530895": {
@@ -15612,6 +15794,7 @@
     "fine_location": "SJ",
     "location": "Los Angeles",
     "reads": 3184286,
+    "ribofrac": "0.3557",
     "state": "California"
   },
   "SRR14530896": {
@@ -15622,6 +15805,7 @@
     "fine_location": "SJ",
     "location": "Los Angeles",
     "reads": 3041921,
+    "ribofrac": "0.2447",
     "state": "California"
   },
   "SRR14530897": {
@@ -15632,6 +15816,7 @@
     "fine_location": "SJ",
     "location": "Los Angeles",
     "reads": 3108434,
+    "ribofrac": "0.6287",
     "state": "California"
   },
   "SRR14530898": {
@@ -15642,6 +15827,7 @@
     "fine_location": "SJ",
     "location": "Los Angeles",
     "reads": 3011011,
+    "ribofrac": "0.4864",
     "state": "California"
   },
   "SRR14530899": {
@@ -15652,6 +15838,7 @@
     "fine_location": "SJ",
     "location": "Los Angeles",
     "reads": 3241686,
+    "ribofrac": "0.5033",
     "state": "California"
   },
   "SRR14530900": {
@@ -15662,6 +15849,7 @@
     "fine_location": "SJ",
     "location": "Los Angeles",
     "reads": 4604124,
+    "ribofrac": "0.7451",
     "state": "California"
   },
   "SRR14530901": {
@@ -15672,6 +15860,7 @@
     "fine_location": "SJ",
     "location": "Los Angeles",
     "reads": 4192507,
+    "ribofrac": "0.3229",
     "state": "California"
   },
   "SRR14530902": {
@@ -15682,6 +15871,7 @@
     "fine_location": "SJ",
     "location": "Los Angeles",
     "reads": 5260005,
+    "ribofrac": "0.221",
     "state": "California"
   },
   "SRR14530903": {
@@ -15692,6 +15882,7 @@
     "fine_location": "SJ",
     "location": "Los Angeles",
     "reads": 4632349,
+    "ribofrac": "0.4605",
     "state": "California"
   },
   "SRR17814995": {
@@ -15706,7 +15897,8 @@
     "fine_location": "Manhole",
     "location": "Maryland",
     "na_type": "RNA",
-    "reads": 63950779
+    "reads": 63950779,
+    "ribofrac": "0.4291"
   },
   "SRR18218718": {
     "country": "United States",
@@ -15714,7 +15906,8 @@
     "fine_location": "Manhole",
     "location": "Maryland",
     "na_type": "RNA",
-    "reads": 55603482
+    "reads": 55603482,
+    "ribofrac": "0.9424"
   },
   "SRR18218719": {
     "country": "United States",
@@ -15722,7 +15915,8 @@
     "fine_location": "Manhole",
     "location": "Maryland",
     "na_type": "RNA",
-    "reads": 55184533
+    "reads": 55184533,
+    "ribofrac": "0.3733"
   },
   "SRR18218720": {
     "country": "United States",
@@ -15730,7 +15924,8 @@
     "fine_location": "Manhole",
     "location": "Maryland",
     "na_type": "RNA",
-    "reads": 38416197
+    "reads": 38416197,
+    "ribofrac": "0.8077"
   },
   "SRR18218721": {
     "country": "United States",
@@ -15738,7 +15933,8 @@
     "fine_location": "Manhole",
     "location": "Maryland",
     "na_type": "DNA",
-    "reads": 44649676
+    "reads": 44649676,
+    "ribofrac": "0.0116"
   },
   "SRR18218722": {
     "country": "United States",
@@ -15746,7 +15942,8 @@
     "fine_location": "Manhole",
     "location": "Maryland",
     "na_type": "DNA",
-    "reads": 29397305
+    "reads": 29397305,
+    "ribofrac": "0.0076"
   },
   "SRR18218723": {
     "country": "United States",
@@ -15754,7 +15951,8 @@
     "fine_location": "Manhole",
     "location": "Maryland",
     "na_type": "DNA",
-    "reads": 23992996
+    "reads": 23992996,
+    "ribofrac": "0.0076"
   },
   "SRR18218724": {
     "country": "United States",
@@ -15762,7 +15960,8 @@
     "fine_location": "Manhole",
     "location": "Maryland",
     "na_type": "DNA",
-    "reads": 27866082
+    "reads": 27866082,
+    "ribofrac": "0.0116"
   },
   "SRR18218730": {
     "country": "United States",
@@ -15770,7 +15969,8 @@
     "fine_location": "Manhole",
     "location": "Maryland",
     "na_type": "RNA",
-    "reads": 28942881
+    "reads": 28942881,
+    "ribofrac": "0.6924"
   },
   "SRR18218731": {
     "country": "United States",
@@ -15778,7 +15978,8 @@
     "fine_location": "Manhole",
     "location": "Maryland",
     "na_type": "RNA",
-    "reads": 34344443
+    "reads": 34344443,
+    "ribofrac": "0.3911"
   },
   "SRR18218732": {
     "country": "United States",
@@ -15786,7 +15987,8 @@
     "fine_location": "Manhole",
     "location": "Maryland",
     "na_type": "DNA",
-    "reads": 28371759
+    "reads": 28371759,
+    "ribofrac": "0.0084"
   },
   "SRR18218733": {
     "country": "United States",
@@ -15794,7 +15996,8 @@
     "fine_location": "Manhole",
     "location": "Maryland",
     "na_type": "DNA",
-    "reads": 41788792
+    "reads": 41788792,
+    "ribofrac": "0.0047"
   },
   "SRR18340958": {
     "country": "United States",
@@ -15804,6 +16007,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 26253383,
+    "ribofrac": "0.0534",
     "state": "California"
   },
   "SRR18340959": {
@@ -15814,6 +16018,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 33283433,
+    "ribofrac": "0.0806",
     "state": "California"
   },
   "SRR18340960": {
@@ -15824,6 +16029,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 33474083,
+    "ribofrac": "0.0194",
     "state": "California"
   },
   "SRR18340961": {
@@ -15834,6 +16040,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 18130763,
+    "ribofrac": "0.098",
     "state": "California"
   },
   "SRR18340962": {
@@ -15844,6 +16051,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 26741133,
+    "ribofrac": "0.1524",
     "state": "California"
   },
   "SRR18340963": {
@@ -15854,6 +16062,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 24205139,
+    "ribofrac": "0.637",
     "state": "California"
   },
   "SRR18340964": {
@@ -15864,6 +16073,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 22475531,
+    "ribofrac": "0.1174",
     "state": "California"
   },
   "SRR18340965": {
@@ -15874,6 +16084,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 16175837,
+    "ribofrac": "0.23",
     "state": "California"
   },
   "SRR18340966": {
@@ -15884,6 +16095,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 32992693,
+    "ribofrac": "0.4171",
     "state": "California"
   },
   "SRR18340967": {
@@ -15894,6 +16106,7 @@
     "fine_location": "ESC",
     "location": "Los Angeles",
     "reads": 31872110,
+    "ribofrac": "0.7717",
     "state": "California"
   },
   "SRR18340968": {
@@ -15904,6 +16117,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 45970871,
+    "ribofrac": "0.2798",
     "state": "California"
   },
   "SRR18340969": {
@@ -15914,6 +16128,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 81545969,
+    "ribofrac": "0.1788",
     "state": "California"
   },
   "SRR18340970": {
@@ -15924,6 +16139,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 20116820,
+    "ribofrac": "0.1214",
     "state": "California"
   },
   "SRR18340971": {
@@ -15934,6 +16150,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 25250160,
+    "ribofrac": "0.4947",
     "state": "California"
   },
   "SRR18340972": {
@@ -15944,6 +16161,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 19159183,
+    "ribofrac": "0.1672",
     "state": "California"
   },
   "SRR18340973": {
@@ -15954,6 +16172,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 17319354,
+    "ribofrac": "0.4023",
     "state": "California"
   },
   "SRR18340974": {
@@ -15964,6 +16183,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 24095711,
+    "ribofrac": "0.6896",
     "state": "California"
   },
   "SRR18340975": {
@@ -15974,6 +16194,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 20956204,
+    "ribofrac": "0.1393",
     "state": "California"
   },
   "SRR18340976": {
@@ -15984,6 +16205,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 15857561,
+    "ribofrac": "0.5622",
     "state": "California"
   },
   "SRR18340977": {
@@ -15994,6 +16216,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 28403414,
+    "ribofrac": "0.2104",
     "state": "California"
   },
   "SRR18340978": {
@@ -16004,6 +16227,7 @@
     "fine_location": "ESC",
     "location": "Los Angeles",
     "reads": 25117131,
+    "ribofrac": "0.0026",
     "state": "California"
   },
   "SRR18340979": {
@@ -16014,6 +16238,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 40274906,
+    "ribofrac": "0.6159",
     "state": "California"
   },
   "SRR18340980": {
@@ -16024,6 +16249,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 54137635,
+    "ribofrac": "0.3016",
     "state": "California"
   },
   "SRR18340981": {
@@ -16034,6 +16260,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 88897609,
+    "ribofrac": "0.1912",
     "state": "California"
   },
   "SRR18340982": {
@@ -16044,6 +16271,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 28860531,
+    "ribofrac": "0.6821",
     "state": "California"
   },
   "SRR18340983": {
@@ -16054,6 +16282,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 26508968,
+    "ribofrac": "0.6239",
     "state": "California"
   },
   "SRR18340984": {
@@ -16064,6 +16293,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 45571835,
+    "ribofrac": "0.013",
     "state": "California"
   },
   "SRR18340985": {
@@ -16074,6 +16304,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 19406249,
+    "ribofrac": "0.6154",
     "state": "California"
   },
   "SRR18340986": {
@@ -16084,6 +16315,7 @@
     "fine_location": "ESC",
     "location": "Los Angeles",
     "reads": 20688286,
+    "ribofrac": "0.4233",
     "state": "California"
   },
   "SRR18340987": {
@@ -16094,6 +16326,7 @@
     "fine_location": "ESC",
     "location": "Los Angeles",
     "reads": 23328395,
+    "ribofrac": "0.283",
     "state": "California"
   },
   "SRR18340988": {
@@ -16104,6 +16337,7 @@
     "fine_location": "ESC",
     "location": "Los Angeles",
     "reads": 24510073,
+    "ribofrac": "0.3928",
     "state": "California"
   },
   "SRR18340989": {
@@ -16114,6 +16348,7 @@
     "fine_location": "ESC",
     "location": "Los Angeles",
     "reads": 31905281,
+    "ribofrac": "0.342",
     "state": "California"
   },
   "SRR18340990": {
@@ -16124,6 +16359,7 @@
     "fine_location": "ESC",
     "location": "Los Angeles",
     "reads": 62759357,
+    "ribofrac": "0.0224",
     "state": "California"
   },
   "SRR18340991": {
@@ -16134,6 +16370,7 @@
     "fine_location": "ESC",
     "location": "Los Angeles",
     "reads": 27876441,
+    "ribofrac": "0.1391",
     "state": "California"
   },
   "SRR18340992": {
@@ -16144,6 +16381,7 @@
     "fine_location": "ESC",
     "location": "Los Angeles",
     "reads": 32055129,
+    "ribofrac": "0.2405",
     "state": "California"
   },
   "SRR18340993": {
@@ -16154,6 +16392,7 @@
     "fine_location": "ESC",
     "location": "Los Angeles",
     "reads": 30030783,
+    "ribofrac": "0.4534",
     "state": "California"
   },
   "SRR18340994": {
@@ -16164,6 +16403,7 @@
     "fine_location": "ESC",
     "location": "Los Angeles",
     "reads": 18932969,
+    "ribofrac": "0.0292",
     "state": "California"
   },
   "SRR18340995": {
@@ -16174,6 +16414,7 @@
     "fine_location": "ESC",
     "location": "Los Angeles",
     "reads": 28184363,
+    "ribofrac": "0.4003",
     "state": "California"
   },
   "SRR18340996": {
@@ -16184,6 +16425,7 @@
     "fine_location": "ESC",
     "location": "Los Angeles",
     "reads": 34715147,
+    "ribofrac": "0.1809",
     "state": "California"
   },
   "SRR18340997": {
@@ -16194,6 +16436,7 @@
     "fine_location": "ESC",
     "location": "Los Angeles",
     "reads": 48623917,
+    "ribofrac": "0.664",
     "state": "California"
   },
   "SRR18340998": {
@@ -16204,6 +16447,7 @@
     "fine_location": "ESC",
     "location": "Los Angeles",
     "reads": 21110292,
+    "ribofrac": "0.4413",
     "state": "California"
   },
   "SRR18340999": {
@@ -16214,6 +16458,7 @@
     "fine_location": "ESC",
     "location": "Los Angeles",
     "reads": 21499815,
+    "ribofrac": "0.122",
     "state": "California"
   },
   "SRR18341000": {
@@ -16224,6 +16469,7 @@
     "fine_location": "ESC",
     "location": "Los Angeles",
     "reads": 21123849,
+    "ribofrac": "0.1278",
     "state": "California"
   },
   "SRR18341001": {
@@ -16234,6 +16480,7 @@
     "fine_location": "ESC",
     "location": "Los Angeles",
     "reads": 21341916,
+    "ribofrac": "0.4678",
     "state": "California"
   },
   "SRR18341002": {
@@ -16244,6 +16491,7 @@
     "fine_location": "ESC",
     "location": "Los Angeles",
     "reads": 19208504,
+    "ribofrac": "0.1611",
     "state": "California"
   },
   "SRR18341003": {
@@ -16254,6 +16502,7 @@
     "fine_location": "ESC",
     "location": "Los Angeles",
     "reads": 19154003,
+    "ribofrac": "0.1569",
     "state": "California"
   },
   "SRR18341004": {
@@ -16264,6 +16513,7 @@
     "fine_location": "ESC",
     "location": "Los Angeles",
     "reads": 33445992,
+    "ribofrac": "0.246",
     "state": "California"
   },
   "SRR18341005": {
@@ -16274,6 +16524,7 @@
     "fine_location": "ESC",
     "location": "Los Angeles",
     "reads": 18203904,
+    "ribofrac": "0.3415",
     "state": "California"
   },
   "SRR18341006": {
@@ -16284,6 +16535,7 @@
     "fine_location": "ESC",
     "location": "Los Angeles",
     "reads": 15760352,
+    "ribofrac": "0.2521",
     "state": "California"
   },
   "SRR18341007": {
@@ -16294,6 +16546,7 @@
     "fine_location": "ESC",
     "location": "Los Angeles",
     "reads": 17840303,
+    "ribofrac": "0.464",
     "state": "California"
   },
   "SRR18341008": {
@@ -16304,6 +16557,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 27436733,
+    "ribofrac": "0.6663",
     "state": "California"
   },
   "SRR18341009": {
@@ -16314,6 +16568,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 36996619,
+    "ribofrac": "0.4563",
     "state": "California"
   },
   "SRR18341010": {
@@ -16324,6 +16579,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 35019158,
+    "ribofrac": "0.0063",
     "state": "California"
   },
   "SRR18341011": {
@@ -16334,6 +16590,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 26690142,
+    "ribofrac": "0.5384",
     "state": "California"
   },
   "SRR18341012": {
@@ -16344,6 +16601,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 31517495,
+    "ribofrac": "0.3003",
     "state": "California"
   },
   "SRR18341013": {
@@ -16354,6 +16612,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 39909586,
+    "ribofrac": "0.2455",
     "state": "California"
   },
   "SRR18341014": {
@@ -16364,6 +16623,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 20105076,
+    "ribofrac": "0.6292",
     "state": "California"
   },
   "SRR18341015": {
@@ -16374,6 +16634,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 15309642,
+    "ribofrac": "0.6002",
     "state": "California"
   },
   "SRR18341016": {
@@ -16384,6 +16645,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 22119886,
+    "ribofrac": "0.3291",
     "state": "California"
   },
   "SRR18341017": {
@@ -16394,6 +16656,7 @@
     "fine_location": "ESC",
     "location": "Los Angeles",
     "reads": 20102428,
+    "ribofrac": "0.0185",
     "state": "California"
   },
   "SRR18341018": {
@@ -16404,6 +16667,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 42161537,
+    "ribofrac": "0.0589",
     "state": "California"
   },
   "SRR18341019": {
@@ -16414,6 +16678,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 21817522,
+    "ribofrac": "0.3191",
     "state": "California"
   },
   "SRR18341020": {
@@ -16424,6 +16689,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 20575397,
+    "ribofrac": "0.7091",
     "state": "California"
   },
   "SRR18341021": {
@@ -16434,6 +16700,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 24322097,
+    "ribofrac": "0.7075",
     "state": "California"
   },
   "SRR18341022": {
@@ -16444,6 +16711,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 30116471,
+    "ribofrac": "0.1059",
     "state": "California"
   },
   "SRR18341023": {
@@ -16454,6 +16722,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 30197133,
+    "ribofrac": "0.2264",
     "state": "California"
   },
   "SRR18341024": {
@@ -16464,6 +16733,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 31167284,
+    "ribofrac": "0.2647",
     "state": "California"
   },
   "SRR18341025": {
@@ -16474,6 +16744,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 51529762,
+    "ribofrac": "0.0045",
     "state": "California"
   },
   "SRR18341026": {
@@ -16484,6 +16755,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 14688921,
+    "ribofrac": "0.2892",
     "state": "California"
   },
   "SRR18341027": {
@@ -16494,6 +16766,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 14541009,
+    "ribofrac": "0.2801",
     "state": "California"
   },
   "SRR18341028": {
@@ -16504,6 +16777,7 @@
     "fine_location": "ESC",
     "location": "Los Angeles",
     "reads": 23707063,
+    "ribofrac": "0.0011",
     "state": "California"
   },
   "SRR18341029": {
@@ -16514,6 +16788,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 33096849,
+    "ribofrac": "0.1022",
     "state": "California"
   },
   "SRR18341030": {
@@ -16524,6 +16799,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 42128435,
+    "ribofrac": "0.0277",
     "state": "California"
   },
   "SRR18341031": {
@@ -16534,6 +16810,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 35541273,
+    "ribofrac": "0.1105",
     "state": "California"
   },
   "SRR18341032": {
@@ -16544,6 +16821,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 19397585,
+    "ribofrac": "0.6412",
     "state": "California"
   },
   "SRR18341033": {
@@ -16554,6 +16832,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 16123940,
+    "ribofrac": "0.3356",
     "state": "California"
   },
   "SRR18341034": {
@@ -16564,6 +16843,7 @@
     "fine_location": "ESC",
     "location": "Los Angeles",
     "reads": 13129712,
+    "ribofrac": "0.0458",
     "state": "California"
   },
   "SRR18341035": {
@@ -16574,6 +16854,7 @@
     "fine_location": "ESC",
     "location": "Los Angeles",
     "reads": 20408957,
+    "ribofrac": "0.6022",
     "state": "California"
   },
   "SRR18341036": {
@@ -16584,6 +16865,7 @@
     "fine_location": "ESC",
     "location": "Los Angeles",
     "reads": 17753618,
+    "ribofrac": "0.327",
     "state": "California"
   },
   "SRR18341037": {
@@ -16594,6 +16876,7 @@
     "fine_location": "ESC",
     "location": "Los Angeles",
     "reads": 19394777,
+    "ribofrac": "0.646",
     "state": "California"
   },
   "SRR18341038": {
@@ -16604,6 +16887,7 @@
     "fine_location": "ESC",
     "location": "Los Angeles",
     "reads": 20008511,
+    "ribofrac": "0.2699",
     "state": "California"
   },
   "SRR18341039": {
@@ -16614,6 +16898,7 @@
     "fine_location": "ESC",
     "location": "Los Angeles",
     "reads": 11005318,
+    "ribofrac": "0.2934",
     "state": "California"
   },
   "SRR18341040": {
@@ -16624,6 +16909,7 @@
     "fine_location": "ESC",
     "location": "Los Angeles",
     "reads": 18631191,
+    "ribofrac": "0.2671",
     "state": "California"
   },
   "SRR18341041": {
@@ -16634,6 +16920,7 @@
     "fine_location": "ESC",
     "location": "Los Angeles",
     "reads": 18151826,
+    "ribofrac": "0.0191",
     "state": "California"
   },
   "SRR18341042": {
@@ -16644,6 +16931,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 27092534,
+    "ribofrac": "0.2379",
     "state": "California"
   },
   "SRR18341043": {
@@ -16654,6 +16942,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 27974187,
+    "ribofrac": "0.0071",
     "state": "California"
   },
   "SRR18341044": {
@@ -16664,6 +16953,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 14135750,
+    "ribofrac": "0.2023",
     "state": "California"
   },
   "SRR18341045": {
@@ -16674,6 +16964,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 21196717,
+    "ribofrac": "0.2347",
     "state": "California"
   },
   "SRR18341046": {
@@ -16684,6 +16975,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 17087067,
+    "ribofrac": "0.436",
     "state": "California"
   },
   "SRR18341047": {
@@ -16694,6 +16986,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 22006682,
+    "ribofrac": "0.3584",
     "state": "California"
   },
   "SRR18341048": {
@@ -16704,6 +16997,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 19207196,
+    "ribofrac": "0.4007",
     "state": "California"
   },
   "SRR18341049": {
@@ -16714,6 +17008,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 23195576,
+    "ribofrac": "0.7592",
     "state": "California"
   },
   "SRR18341050": {
@@ -16724,6 +17019,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 28590407,
+    "ribofrac": "0.6481",
     "state": "California"
   },
   "SRR18341051": {
@@ -16734,6 +17030,7 @@
     "fine_location": "ESC",
     "location": "Los Angeles",
     "reads": 24739827,
+    "ribofrac": "0.1268",
     "state": "California"
   },
   "SRR18341052": {
@@ -16744,6 +17041,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 30987893,
+    "ribofrac": "0.7782",
     "state": "California"
   },
   "SRR18341053": {
@@ -16754,6 +17052,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 60418007,
+    "ribofrac": "0.7017",
     "state": "California"
   },
   "SRR18341054": {
@@ -16764,6 +17063,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 18350700,
+    "ribofrac": "0.6806",
     "state": "California"
   },
   "SRR18341055": {
@@ -16774,6 +17074,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 18698080,
+    "ribofrac": "0.5908",
     "state": "California"
   },
   "SRR18341056": {
@@ -16784,6 +17085,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 18298641,
+    "ribofrac": "0.5219",
     "state": "California"
   },
   "SRR18341057": {
@@ -16794,6 +17096,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 33750340,
+    "ribofrac": "0.236",
     "state": "California"
   },
   "SRR18341058": {
@@ -16804,6 +17107,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 18102742,
+    "ribofrac": "0.7123",
     "state": "California"
   },
   "SRR18341059": {
@@ -16814,6 +17118,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 20641022,
+    "ribofrac": "0.4533",
     "state": "California"
   },
   "SRR18341060": {
@@ -16824,6 +17129,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 27006804,
+    "ribofrac": "0.7691",
     "state": "California"
   },
   "SRR18341061": {
@@ -16834,6 +17140,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 16196324,
+    "ribofrac": "0.4989",
     "state": "California"
   },
   "SRR18341062": {
@@ -16844,6 +17151,7 @@
     "fine_location": "ESC",
     "location": "Los Angeles",
     "reads": 33957228,
+    "ribofrac": "0.0029",
     "state": "California"
   },
   "SRR18341063": {
@@ -16854,6 +17162,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 14935795,
+    "ribofrac": "0.6931",
     "state": "California"
   },
   "SRR18341064": {
@@ -16864,6 +17173,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 16983547,
+    "ribofrac": "0.5936",
     "state": "California"
   },
   "SRR18341065": {
@@ -16874,6 +17184,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 33644472,
+    "ribofrac": "0.108",
     "state": "California"
   },
   "SRR18341066": {
@@ -16884,6 +17195,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 19405373,
+    "ribofrac": "0.4026",
     "state": "California"
   },
   "SRR18341067": {
@@ -16894,6 +17206,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 22552533,
+    "ribofrac": "0.401",
     "state": "California"
   },
   "SRR18341068": {
@@ -16904,6 +17217,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 16212776,
+    "ribofrac": "0.1892",
     "state": "California"
   },
   "SRR18341069": {
@@ -16914,6 +17228,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 19346950,
+    "ribofrac": "0.0403",
     "state": "California"
   },
   "SRR18341070": {
@@ -16924,6 +17239,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 21033696,
+    "ribofrac": "0.1268",
     "state": "California"
   },
   "SRR18341071": {
@@ -16934,6 +17250,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 45560441,
+    "ribofrac": "0.0119",
     "state": "California"
   },
   "SRR18341072": {
@@ -16944,6 +17261,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 41552492,
+    "ribofrac": "0.0102",
     "state": "California"
   },
   "SRR18341073": {
@@ -16954,6 +17272,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 32477043,
+    "ribofrac": "0.0383",
     "state": "California"
   },
   "SRR18341074": {
@@ -16964,6 +17283,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 53349248,
+    "ribofrac": "0.0126",
     "state": "California"
   },
   "SRR18341075": {
@@ -16974,6 +17294,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 54066214,
+    "ribofrac": "0.0142",
     "state": "California"
   },
   "SRR18341076": {
@@ -16984,6 +17305,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 27981855,
+    "ribofrac": "0.1087",
     "state": "California"
   },
   "SRR18341077": {
@@ -16994,6 +17316,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 60462482,
+    "ribofrac": "0.0079",
     "state": "California"
   },
   "SRR18341078": {
@@ -17004,6 +17327,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 63138081,
+    "ribofrac": "0.0284",
     "state": "California"
   },
   "SRR18341079": {
@@ -17014,6 +17338,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 19135374,
+    "ribofrac": "0.7075",
     "state": "California"
   },
   "SRR18341080": {
@@ -17024,6 +17349,7 @@
     "fine_location": "ESC",
     "location": "Los Angeles",
     "reads": 44283851,
+    "ribofrac": "0.0025",
     "state": "California"
   },
   "SRR18341081": {
@@ -17034,6 +17360,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 18479773,
+    "ribofrac": "0.3007",
     "state": "California"
   },
   "SRR18341082": {
@@ -17044,6 +17371,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 26340586,
+    "ribofrac": "0.313",
     "state": "California"
   },
   "SRR18341083": {
@@ -17054,6 +17382,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 40776879,
+    "ribofrac": "0.4972",
     "state": "California"
   },
   "SRR18341084": {
@@ -17064,6 +17393,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 33586361,
+    "ribofrac": "0.2217",
     "state": "California"
   },
   "SRR18341085": {
@@ -17074,6 +17404,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 51722853,
+    "ribofrac": "0.0561",
     "state": "California"
   },
   "SRR18341086": {
@@ -17084,6 +17415,7 @@
     "fine_location": "ESC",
     "location": "Los Angeles",
     "reads": 20786144,
+    "ribofrac": "0.3651",
     "state": "California"
   },
   "SRR18341087": {
@@ -17094,6 +17426,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 28924021,
+    "ribofrac": "0.4147",
     "state": "California"
   },
   "SRR18341088": {
@@ -17104,6 +17437,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 41251583,
+    "ribofrac": "0.3775",
     "state": "California"
   },
   "SRR18341089": {
@@ -17114,6 +17448,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 40281689,
+    "ribofrac": "0.5858",
     "state": "California"
   },
   "SRR18341090": {
@@ -17124,6 +17459,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 24639394,
+    "ribofrac": "0.7096",
     "state": "California"
   },
   "SRR18341091": {
@@ -17134,6 +17470,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 37289091,
+    "ribofrac": "0.7197",
     "state": "California"
   },
   "SRR18341092": {
@@ -17144,6 +17481,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 13887023,
+    "ribofrac": "0.6064",
     "state": "California"
   },
   "SRR18341093": {
@@ -17154,6 +17492,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 35544326,
+    "ribofrac": "0.4273",
     "state": "California"
   },
   "SRR18341094": {
@@ -17164,6 +17503,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 26989665,
+    "ribofrac": "0.6781",
     "state": "California"
   },
   "SRR18341095": {
@@ -17174,6 +17514,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 20428056,
+    "ribofrac": "0.7294",
     "state": "California"
   },
   "SRR18341096": {
@@ -17184,6 +17525,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 21993700,
+    "ribofrac": "0.5923",
     "state": "California"
   },
   "SRR18341097": {
@@ -17194,6 +17536,7 @@
     "fine_location": "ESC",
     "location": "Los Angeles",
     "reads": 19269393,
+    "ribofrac": "0.5538",
     "state": "California"
   },
   "SRR18341098": {
@@ -17204,6 +17547,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 22655623,
+    "ribofrac": "0.3327",
     "state": "California"
   },
   "SRR18341099": {
@@ -17214,6 +17558,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 18542548,
+    "ribofrac": "0.4334",
     "state": "California"
   },
   "SRR18341100": {
@@ -17224,6 +17569,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 29772207,
+    "ribofrac": "0.0297",
     "state": "California"
   },
   "SRR18341101": {
@@ -17234,6 +17580,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 25686428,
+    "ribofrac": "0.4872",
     "state": "California"
   },
   "SRR18341102": {
@@ -17244,6 +17591,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 38431621,
+    "ribofrac": "0.4367",
     "state": "California"
   },
   "SRR18341103": {
@@ -17254,6 +17602,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 24951796,
+    "ribofrac": "0.6729",
     "state": "California"
   },
   "SRR18341104": {
@@ -17264,6 +17613,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 26074221,
+    "ribofrac": "0.7352",
     "state": "California"
   },
   "SRR18341105": {
@@ -17274,6 +17624,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 26848265,
+    "ribofrac": "0.7435",
     "state": "California"
   },
   "SRR18341106": {
@@ -17284,6 +17635,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 45412176,
+    "ribofrac": "0.5821",
     "state": "California"
   },
   "SRR18341107": {
@@ -17294,6 +17646,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 21699355,
+    "ribofrac": "0.1828",
     "state": "California"
   },
   "SRR18341108": {
@@ -17304,6 +17657,7 @@
     "fine_location": "ESC",
     "location": "Los Angeles",
     "reads": 36184126,
+    "ribofrac": "0.6899",
     "state": "California"
   },
   "SRR18341109": {
@@ -17314,6 +17668,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 25705651,
+    "ribofrac": "0.0107",
     "state": "California"
   },
   "SRR18341110": {
@@ -17324,6 +17679,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 18819650,
+    "ribofrac": "0.4327",
     "state": "California"
   },
   "SRR18341111": {
@@ -17334,6 +17690,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 19464457,
+    "ribofrac": "0.0888",
     "state": "California"
   },
   "SRR18341112": {
@@ -17344,6 +17701,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 15080442,
+    "ribofrac": "0.0139",
     "state": "California"
   },
   "SRR18341113": {
@@ -17354,6 +17712,7 @@
     "fine_location": "ESC",
     "location": "Los Angeles",
     "reads": 18120152,
+    "ribofrac": "0.4556",
     "state": "California"
   },
   "SRR18341114": {
@@ -17364,6 +17723,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 13756065,
+    "ribofrac": "0.0812",
     "state": "California"
   },
   "SRR18341115": {
@@ -17374,6 +17734,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 20597441,
+    "ribofrac": "0.3507",
     "state": "California"
   },
   "SRR18341116": {
@@ -17384,6 +17745,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 15873953,
+    "ribofrac": "0.4274",
     "state": "California"
   },
   "SRR18341117": {
@@ -17394,6 +17756,7 @@
     "fine_location": "PL",
     "location": "Los Angeles",
     "reads": 17577902,
+    "ribofrac": "0.4186",
     "state": "California"
   },
   "SRR18341118": {
@@ -17404,6 +17767,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 26946502,
+    "ribofrac": "0.4115",
     "state": "California"
   },
   "SRR18341119": {
@@ -17414,6 +17778,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 43889785,
+    "ribofrac": "0.2371",
     "state": "California"
   },
   "SRR18341120": {
@@ -17424,6 +17789,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 33006348,
+    "ribofrac": "0.4919",
     "state": "California"
   },
   "SRR18341121": {
@@ -17434,6 +17800,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 36078362,
+    "ribofrac": "0.1511",
     "state": "California"
   },
   "SRR18341122": {
@@ -17444,6 +17811,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 29636432,
+    "ribofrac": "0.6103",
     "state": "California"
   },
   "SRR18341123": {
@@ -17454,6 +17822,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 43201688,
+    "ribofrac": "0.2157",
     "state": "California"
   },
   "SRR18341124": {
@@ -17464,6 +17833,7 @@
     "fine_location": "ESC",
     "location": "Los Angeles",
     "reads": 20755081,
+    "ribofrac": "0.2024",
     "state": "California"
   },
   "SRR18341125": {
@@ -17474,6 +17844,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 50748094,
+    "ribofrac": "0.0762",
     "state": "California"
   },
   "SRR18341126": {
@@ -17484,6 +17855,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 31242591,
+    "ribofrac": "0.1397",
     "state": "California"
   },
   "SRR18341127": {
@@ -17494,6 +17866,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 45725584,
+    "ribofrac": "0.2428",
     "state": "California"
   },
   "SRR18341128": {
@@ -17504,6 +17877,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 33680979,
+    "ribofrac": "0.3672",
     "state": "California"
   },
   "SRR18341129": {
@@ -17514,6 +17888,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 28332194,
+    "ribofrac": "0.6307",
     "state": "California"
   },
   "SRR18341130": {
@@ -17524,6 +17899,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 28581122,
+    "ribofrac": "0.1296",
     "state": "California"
   },
   "SRR18341131": {
@@ -17534,6 +17910,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 35441428,
+    "ribofrac": "0.1523",
     "state": "California"
   },
   "SRR18341132": {
@@ -17544,6 +17921,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 53966640,
+    "ribofrac": "0.005",
     "state": "California"
   },
   "SRR18341133": {
@@ -17554,6 +17932,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 19219200,
+    "ribofrac": "0.246",
     "state": "California"
   },
   "SRR18341134": {
@@ -17564,6 +17943,7 @@
     "fine_location": "HTP",
     "location": "Los Angeles",
     "reads": 18028259,
+    "ribofrac": "0.4119",
     "state": "California"
   },
   "SRR18341135": {
@@ -17574,6 +17954,7 @@
     "fine_location": "ESC",
     "location": "Los Angeles",
     "reads": 47877103,
+    "ribofrac": "0.4669",
     "state": "California"
   },
   "SRR18341136": {
@@ -17584,6 +17965,7 @@
     "fine_location": "ESC",
     "location": "Los Angeles",
     "reads": 23030994,
+    "ribofrac": "0.1081",
     "state": "California"
   },
   "SRR18341137": {
@@ -17594,6 +17976,7 @@
     "fine_location": "ESC",
     "location": "Los Angeles",
     "reads": 14804126,
+    "ribofrac": "0.7528",
     "state": "California"
   },
   "SRR20000426": {
@@ -18822,6 +19205,7 @@
     "fine_location": "OC",
     "location": "Los Angeles",
     "reads": 2413516,
+    "ribofrac": "0.2381",
     "state": "California"
   },
   "SRR21452136": {
@@ -18832,6 +19216,7 @@
     "fine_location": "ESC",
     "location": "Los Angeles",
     "reads": 16101528,
+    "ribofrac": "0.7541",
     "state": "California"
   },
   "SRR21452137": {
@@ -18842,6 +19227,7 @@
     "fine_location": "ESC",
     "location": "Los Angeles",
     "reads": 23482928,
+    "ribofrac": "0.0058",
     "state": "California"
   },
   "SRR23083716": {
@@ -18853,6 +19239,7 @@
     "location": "Ohio",
     "method": "IJ",
     "reads": 34152465,
+    "ribofrac": "0.9117",
     "state": "Ohio"
   },
   "SRR23083718": {
@@ -18864,6 +19251,7 @@
     "location": "Ohio",
     "method": "IJ",
     "reads": 15536236,
+    "ribofrac": "0.9222",
     "state": "Ohio"
   },
   "SRR23083720": {
@@ -18875,6 +19263,7 @@
     "location": "Ohio",
     "method": "EFGH",
     "reads": 24496461,
+    "ribofrac": "0.3994",
     "state": "Ohio"
   },
   "SRR23083722": {
@@ -18886,6 +19275,7 @@
     "location": "Ohio",
     "method": "EFGH",
     "reads": 19873663,
+    "ribofrac": "0.0068",
     "state": "Ohio"
   },
   "SRR23083725": {
@@ -18897,6 +19287,7 @@
     "location": "Ohio",
     "method": "EFGH",
     "reads": 65391438,
+    "ribofrac": "0.0139",
     "state": "Ohio"
   },
   "SRR23083727": {
@@ -18908,6 +19299,7 @@
     "location": "Ohio",
     "method": "EFGH",
     "reads": 7683321,
+    "ribofrac": "0.6221",
     "state": "Ohio"
   },
   "SRR23083729": {
@@ -18919,6 +19311,7 @@
     "location": "Ohio",
     "method": "EFGH",
     "reads": 106734757,
+    "ribofrac": "0.7037",
     "state": "Ohio"
   },
   "SRR23083731": {
@@ -18930,6 +19323,7 @@
     "location": "Ohio",
     "method": "EFGH",
     "reads": 27498895,
+    "ribofrac": "0.8044",
     "state": "Ohio"
   },
   "SRR23083733": {
@@ -18941,6 +19335,7 @@
     "location": "Ohio",
     "method": "EFGH",
     "reads": 21866784,
+    "ribofrac": "0.0071",
     "state": "Ohio"
   },
   "SRR23083734": {
@@ -18952,6 +19347,7 @@
     "location": "Ohio",
     "method": "AB",
     "reads": 25615577,
+    "ribofrac": "0.9271",
     "state": "Ohio"
   },
   "SRR23083736": {
@@ -18963,6 +19359,7 @@
     "location": "Ohio",
     "method": "EFGH",
     "reads": 49701182,
+    "ribofrac": "0.8818",
     "state": "Ohio"
   },
   "SRR23083738": {
@@ -18974,6 +19371,7 @@
     "location": "Ohio",
     "method": "EFGH",
     "reads": 50541071,
+    "ribofrac": "0.5647",
     "state": "Ohio"
   },
   "SRR23083740": {
@@ -18985,6 +19383,7 @@
     "location": "Ohio",
     "method": "EFGH",
     "reads": 26758722,
+    "ribofrac": "0.8062",
     "state": "Ohio"
   },
   "SRR23083742": {
@@ -18996,6 +19395,7 @@
     "location": "Ohio",
     "method": "EFGH",
     "reads": 30488030,
+    "ribofrac": "0.9398",
     "state": "Ohio"
   },
   "SRR23083744": {
@@ -19007,6 +19407,7 @@
     "location": "Ohio",
     "method": "EFGH",
     "reads": 21587487,
+    "ribofrac": "0.4732",
     "state": "Ohio"
   },
   "SRR23083747": {
@@ -19018,6 +19419,7 @@
     "location": "Ohio",
     "method": "EFGH",
     "reads": 21693115,
+    "ribofrac": "0.045",
     "state": "Ohio"
   },
   "SRR23083749": {
@@ -19029,6 +19431,7 @@
     "location": "Ohio",
     "method": "EFGH",
     "reads": 24611947,
+    "ribofrac": "0.8337",
     "state": "Ohio"
   },
   "SRR23083751": {
@@ -19040,6 +19443,7 @@
     "location": "Ohio",
     "method": "EFGH",
     "reads": 10324347,
+    "ribofrac": "0.2091",
     "state": "Ohio"
   },
   "SRR23083753": {
@@ -19051,6 +19455,7 @@
     "location": "Ohio",
     "method": "EFGH",
     "reads": 4526832,
+    "ribofrac": "0.8057",
     "state": "Ohio"
   },
   "SRR23083755": {
@@ -19062,6 +19467,7 @@
     "location": "Ohio",
     "method": "EFGH",
     "reads": 26761777,
+    "ribofrac": "0.6266",
     "state": "Ohio"
   },
   "SRR23083756": {
@@ -19073,6 +19479,7 @@
     "location": "Ohio",
     "method": "AB",
     "reads": 93165126,
+    "ribofrac": "0.9641",
     "state": "Ohio"
   },
   "SRR23083758": {
@@ -19084,6 +19491,7 @@
     "location": "Ohio",
     "method": "EFGH",
     "reads": 8675446,
+    "ribofrac": "0.3097",
     "state": "Ohio"
   },
   "SRR23083760": {
@@ -19095,6 +19503,7 @@
     "location": "Ohio",
     "method": "EFGH",
     "reads": 22756198,
+    "ribofrac": "0.0058",
     "state": "Ohio"
   },
   "SRR23083762": {
@@ -19106,6 +19515,7 @@
     "location": "Ohio",
     "method": "EFGH",
     "reads": 53418977,
+    "ribofrac": "0.5579",
     "state": "Ohio"
   },
   "SRR23083764": {
@@ -19117,6 +19527,7 @@
     "location": "Ohio",
     "method": "EFGH",
     "reads": 27489114,
+    "ribofrac": "0.0666",
     "state": "Ohio"
   },
   "SRR23083766": {
@@ -19128,6 +19539,7 @@
     "location": "Ohio",
     "method": "EFGH",
     "reads": 62643623,
+    "ribofrac": "0.5878",
     "state": "Ohio"
   },
   "SRR23083769": {
@@ -19139,6 +19551,7 @@
     "location": "Ohio",
     "method": "EFGH",
     "reads": 9885903,
+    "ribofrac": "0.4636",
     "state": "Ohio"
   },
   "SRR23083771": {
@@ -19150,6 +19563,7 @@
     "location": "Ohio",
     "method": "D",
     "reads": 25194552,
+    "ribofrac": "0.468",
     "state": "Ohio"
   },
   "SRR23083773": {
@@ -19161,6 +19575,7 @@
     "location": "Ohio",
     "method": "D",
     "reads": 27576698,
+    "ribofrac": "0.2228",
     "state": "Ohio"
   },
   "SRR23083775": {
@@ -19172,6 +19587,7 @@
     "location": "Ohio",
     "method": "D",
     "reads": 64262607,
+    "ribofrac": "0.8713",
     "state": "Ohio"
   },
   "SRR23083778": {
@@ -19183,6 +19599,7 @@
     "location": "Ohio",
     "method": "IJ",
     "reads": 28567806,
+    "ribofrac": "0.9388",
     "state": "Ohio"
   },
   "SRR23083780": {
@@ -19194,6 +19611,7 @@
     "location": "Ohio",
     "method": "IJ",
     "reads": 6390165,
+    "ribofrac": "0.9002",
     "state": "Ohio"
   },
   "SRR23083782": {
@@ -19205,6 +19623,7 @@
     "location": "Ohio",
     "method": "IJ",
     "reads": 26423592,
+    "ribofrac": "0.9602",
     "state": "Ohio"
   },
   "SRR23083784": {
@@ -19216,6 +19635,7 @@
     "location": "Ohio",
     "method": "IJ",
     "reads": 18922081,
+    "ribofrac": "0.9346",
     "state": "Ohio"
   },
   "SRR23083786": {
@@ -19227,6 +19647,7 @@
     "location": "Ohio",
     "method": "IJ",
     "reads": 21319668,
+    "ribofrac": "0.9226",
     "state": "Ohio"
   },
   "SRR23083787": {
@@ -19238,6 +19659,7 @@
     "location": "Ohio",
     "method": "AB",
     "reads": 72582176,
+    "ribofrac": "0.943",
     "state": "Ohio"
   },
   "SRR23083789": {
@@ -19249,6 +19671,7 @@
     "location": "Ohio",
     "method": "IJ",
     "reads": 23726564,
+    "ribofrac": "0.9509",
     "state": "Ohio"
   },
   "SRR23083790": {
@@ -19260,6 +19683,7 @@
     "location": "Ohio",
     "method": "D",
     "reads": 28732700,
+    "ribofrac": "0.7577",
     "state": "Ohio"
   },
   "SRR23083792": {
@@ -19271,6 +19695,7 @@
     "location": "Ohio",
     "method": "AB",
     "reads": 40626978,
+    "ribofrac": "0.9408",
     "state": "Ohio"
   },
   "SRR23083794": {
@@ -19282,6 +19707,7 @@
     "location": "Ohio",
     "method": "C",
     "reads": 15260483,
+    "ribofrac": "0.0201",
     "state": "Ohio"
   },
   "SRR23083795": {
@@ -19293,6 +19719,7 @@
     "location": "Ohio",
     "method": "C",
     "reads": 93084891,
+    "ribofrac": "0.8672",
     "state": "Ohio"
   },
   "SRR23083797": {
@@ -19304,6 +19731,7 @@
     "location": "Ohio",
     "method": "C",
     "reads": 20057162,
+    "ribofrac": "0.9091",
     "state": "Ohio"
   },
   "SRR23083798": {
@@ -19315,6 +19743,7 @@
     "location": "Ohio",
     "method": "C",
     "reads": 35169394,
+    "ribofrac": "0.8439",
     "state": "Ohio"
   },
   "SRR23083799": {
@@ -19326,6 +19755,7 @@
     "location": "Ohio",
     "method": "AB",
     "reads": 22987581,
+    "ribofrac": "0.9479",
     "state": "Ohio"
   },
   "SRR23083801": {
@@ -19337,6 +19767,7 @@
     "location": "Ohio",
     "method": "AB",
     "reads": 50531562,
+    "ribofrac": "0.9241",
     "state": "Ohio"
   },
   "SRR23083804": {
@@ -19348,6 +19779,7 @@
     "location": "Ohio",
     "method": "AB",
     "reads": 19233869,
+    "ribofrac": "0.9479",
     "state": "Ohio"
   },
   "SRR23083806": {
@@ -19359,6 +19791,7 @@
     "location": "Ohio",
     "method": "AB",
     "reads": 55741383,
+    "ribofrac": "0.975",
     "state": "Ohio"
   },
   "SRR23083808": {
@@ -19370,6 +19803,7 @@
     "location": "Ohio",
     "method": "AB",
     "reads": 12644434,
+    "ribofrac": "0.866",
     "state": "Ohio"
   },
   "SRR23083810": {
@@ -19381,6 +19815,7 @@
     "location": "Ohio",
     "method": "AB",
     "reads": 40871463,
+    "ribofrac": "0.9451",
     "state": "Ohio"
   },
   "SRR23083813": {
@@ -19392,6 +19827,7 @@
     "location": "Ohio",
     "method": "AB",
     "reads": 25003302,
+    "ribofrac": "0.9224",
     "state": "Ohio"
   },
   "SRR23083818": {
@@ -19403,6 +19839,7 @@
     "location": "Ohio",
     "method": "IJ",
     "reads": 32262151,
+    "ribofrac": "0.9005",
     "state": "Ohio"
   },
   "SRR23083820": {
@@ -19414,6 +19851,7 @@
     "location": "Ohio",
     "method": "IJ",
     "reads": 60208872,
+    "ribofrac": "0.9114",
     "state": "Ohio"
   },
   "SRR23083822": {
@@ -19425,6 +19863,7 @@
     "location": "Ohio",
     "method": "IJ",
     "reads": 22583173,
+    "ribofrac": "0.838",
     "state": "Ohio"
   },
   "SRR23083823": {
@@ -19436,6 +19875,7 @@
     "location": "Ohio",
     "method": "IJ",
     "reads": 27717586,
+    "ribofrac": "0.902",
     "state": "Ohio"
   },
   "SRR23083825": {
@@ -19447,6 +19887,7 @@
     "location": "Ohio",
     "method": "AB",
     "reads": 26039331,
+    "ribofrac": "0.9207",
     "state": "Ohio"
   },
   "SRR23800641": {
@@ -19457,7 +19898,6 @@
     "fine_location": "WTP-J",
     "location": "Houston",
     "reads": 6207281,
-    "ribocounts": 3034261,
     "state": "Texas"
   },
   "SRR23800642": {
@@ -19468,7 +19908,6 @@
     "fine_location": "WTP-I",
     "location": "Houston",
     "reads": 1264519,
-    "ribocounts": 600766,
     "state": "Texas"
   },
   "SRR23800643": {
@@ -19650,6 +20089,7 @@
     "location": "San Francisco",
     "method": "COL",
     "reads": 45434265,
+    "ribofrac": "0.0934",
     "state": "California"
   },
   "SRR23998354": {
@@ -19661,6 +20101,7 @@
     "location": "San Francisco",
     "method": "MOS",
     "reads": 41207484,
+    "ribofrac": "0.0685",
     "state": "California"
   },
   "SRR23998355": {
@@ -19672,6 +20113,7 @@
     "location": "San Francisco",
     "method": "MOS",
     "reads": 38572859,
+    "ribofrac": "0.0659",
     "state": "California"
   },
   "SRR23998356": {
@@ -19683,6 +20125,7 @@
     "location": "San Francisco",
     "method": "MOS",
     "reads": 47832942,
+    "ribofrac": "0.0378",
     "state": "California"
   },
   "SRR23998357": {
@@ -19694,6 +20137,7 @@
     "location": "San Francisco",
     "method": "COL",
     "reads": 48462833,
+    "ribofrac": "0.0779",
     "state": "California"
   },
   "SRR23998358": {
@@ -19705,6 +20149,7 @@
     "location": "San Francisco",
     "method": "COL",
     "reads": 39759745,
+    "ribofrac": "0.0104",
     "state": "California"
   },
   "SRR23998359": {
@@ -19716,6 +20161,7 @@
     "location": "San Francisco",
     "method": "COL",
     "reads": 36420649,
+    "ribofrac": "0.0077",
     "state": "California"
   },
   "SRR6837549": {
