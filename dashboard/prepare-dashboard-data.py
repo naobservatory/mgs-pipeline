@@ -303,11 +303,11 @@ for project in projects:
         sample_metadata[sample]["reads"] = \
             project_sample_reads[project][sample]
 
-        rr_fname = "riboreads/%s.riboreads.txt.gz" % sample
+        rf_fname = "ribofrac/%s.ribofrac.txt" % sample
         try:
-            with gzip.open(rr_fname, 'rt') as file:
-                ribocount = sum(1 for _ in file)
-            sample_metadata[sample]["ribocounts"] = ribocount
+            with open(rf_fname, 'r') as file:
+                ribofrac = file.readline()
+            sample_metadata[sample]["ribofrac"] = ribofrac
         except FileNotFoundError:
             pass
 

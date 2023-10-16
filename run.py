@@ -12,9 +12,13 @@ import tempfile
 import contextlib
 import subprocess
 import numpy as np
+import random
 from collections import Counter
 from collections import defaultdict
+from Bio import SeqIO
 from Bio.SeqIO.QualityIO import FastqGeneralIterator
+from Bio.Seq import Seq
+from Bio.SeqRecord import SeqRecord
 
 S3_BUCKET=None
 WORK_ROOT=None
@@ -197,13 +201,153 @@ def get_files(args, dirname, min_size=1, min_date=''):
    return set(ls_s3_dir("%s/%s/%s/" % (S3_BUCKET, args.bioproject, dirname),
                         min_size=min_size, min_date=min_date))
 
+def ribofrac(args, subset_size=1000):
+    """Fast algorithm to compute fraction of reads identified as rRNA by RiboDetector"""
+
+    available_inputs = get_files(args, "cleaned",
+                                 # tiny files are empty; ignore them
+                                 min_size=100)
+    existing_outputs = get_files(args, "ribofrac", min_date='2023-10-12')
+
+    def first_subset_fastq(file_paths, subset_size):
+        """Selects the first subset of reads from gzipped fastq files"""
+        print(f"Counting reads in input and selecting the first {subset_size}...")
+        output_files = []
+        total_reads = 0
+        # Count the total number of reads only for the first input file
+        with gzip.open(file_paths[0], 'rt') as f:
+            total_reads = sum(1 for _ in FastqGeneralIterator(f))
+
+        for fp in file_paths:
+            # When reads in file < subset_size, return actual number of reads in subset
+            actual_subset_size = 0
+
+            with gzip.open(fp, 'rt') as f:
+                # Create an output file handle
+                output_file = fp.replace(".fq.gz", ".subset.fq")
+                with open(output_file, "w") as out_handle:
+                    for index, (title, seq, qual) in enumerate(FastqGeneralIterator(f)):
+                        if index >= subset_size:
+                            break
+                        actual_subset_size += 1
+                        out_handle.write("@%s\n%s\n+\n%s\n" % (title, seq, qual))
+
+                output_files.append(output_file)
+
+        return output_files, total_reads, actual_subset_size
+
+
+    for sample in get_samples(args):
+        # Check for name of output file
+        sample_output_file = sample + ".ribofrac.txt"
+        if sample_output_file in existing_outputs: continue
+
+        total_reads_dict = {}
+        subset_reads_dict = {}
+        rrna_reads_dict = {}
+        for potential_input in available_inputs:
+            if not potential_input.startswith(sample): continue
+            if ".settings" in potential_input: continue
+            if "discarded" in potential_input: continue
+
+            # Number of output and input files must match 
+            tmp_fq_output = potential_input.replace(".gz", ".subset.nonrrna.fq")
+            tmp_fq_outputs = [tmp_fq_output]
+            inputs = [potential_input]
+
+            if ".pair1." in potential_input:
+                tmp_fq_outputs.append(tmp_fq_output.replace(".pair1.", ".pair2."))
+                inputs.append(potential_input.replace(".pair1.", ".pair2."))
+            elif ".pair2." in potential_input:
+                # Ribodetector handles pair1 and pair2 together.
+                continue
+
+            with tempdir("ribofrac", sample + " inputs") as workdir:
+                for input_fname in inputs:
+                    subprocess.check_call([
+                        "aws", "s3", "cp", "%s/%s/cleaned/%s" % (
+                            S3_BUCKET, args.bioproject, input_fname), input_fname])
+
+                    # Ribodetector gets angry if the .fq extension isn't in the filename
+                    os.rename(input_fname, input_fname.replace(".gz", ".fq.gz"))
+
+                # Add .fq extensions to input files
+                inputs = [i.replace(".gz", ".fq.gz") for i in inputs]
+
+                # Get subset of inputs
+                subsets, total_reads, subset_reads  = first_subset_fastq(inputs, subset_size)
+                subset_reads_dict[inputs[0]] = subset_reads
+                total_reads_dict[inputs[0]] = total_reads
+                
+                # Compute average read lengths. For paired-end reads, average length is
+                # computed only from pair1 reads.
+                print("Calculating average read length...")
+                def calculate_average_read_length(file_path):
+                    total_len = 0
+                    total_reads = 0
+                    with open(file_path, 'rt') as inf:
+                        for (title, sequence, quality) in FastqGeneralIterator(inf):
+                            total_len += len(sequence)
+                            total_reads += 1
+                    return round(total_len / total_reads)
+
+                avg_length = calculate_average_read_length(subsets[0])
+                print("Done. Average read length is ", avg_length)
+
+                ribodetector_cmd = [
+                    "ribodetector_cpu",
+                    "--ensure", "rrna",
+                    "--threads", "28"
+                    ]
+                ribodetector_cmd.extend(["--len", str(avg_length)])
+
+                ribodetector_cmd.append("--input")
+                ribodetector_cmd.extend(subsets)
+
+                # RiboDetector outputs fastq files containing non-rRNA sequences
+                # https://github.com/hzi-bifo/RiboDetector
+                ribodetector_cmd.append("--output")
+                ribodetector_cmd.extend(tmp_fq_outputs)
+
+                subprocess.check_call(ribodetector_cmd)
+
+                # Count number of rRNA reads in subset
+                non_rrna_count = sum(1 for _ in FastqGeneralIterator(open(tmp_fq_outputs[0], 'rt')))
+                rrna_reads_dict[inputs[0]] = subset_reads - non_rrna_count
+
+        # Extract the fractions of rRNA reads for each input
+        fractions_rrna_in_subset = [
+            rrna_reads_dict[input_filename] / subset_reads_dict[input_filename]
+            for input_filename in total_reads_dict
+        ]
+
+        # Use the total number of reads for each input as weights
+        weights = list(total_reads_dict.values())
+
+        # Calculate the weighted average fraction of rRNA reads across all inputs in sample using numpy
+        weighted_rrna_fraction = np.average(fractions_rrna_in_subset, weights=weights)
+
+        fraction_rrna = round(weighted_rrna_fraction, 4)
+        print(f"Estimated fraction of rRNA reads in {sample} = {round(fraction_rrna*100, 2)}%")
+
+        # Save fraction of rRNA reads
+        with tempdir("ribofrac", sample + "_output") as workdir:
+            ribofrac_file = os.path.join(workdir, f"{sample}.ribofrac.txt")
+
+            with open(ribofrac_file, 'w') as txt_file:
+                txt_file.write(str(fraction_rrna))
+
+            subprocess.check_call([
+            "aws", "s3", "cp", ribofrac_file, "%s/%s/ribofrac/" % (
+                S3_BUCKET, args.bioproject)])
+
 def riboreads(args):
     """Save title of reads identified as rRNA by RiboDetector to AWS"""
 
     available_inputs = get_files(args, "cleaned",
                                  # tiny files are empty; ignore them
                                  min_size=100)
-    existing_outputs = get_files(args, "riboreads", min_date='2023-10-01')
+    existing_outputs = get_files(args, "riboreads", min_date='2023-10-10')
         
     for sample in get_samples(args):
         # Check for name of output file
@@ -560,9 +704,9 @@ def print_status(args):
 
    running_processes = subprocess.check_output(["ps", "aux"]).decode("utf-8")
 
-   stages = ["raw", "cleaned", "ribocounts", "processed", "cladecounts", "humanviruses",
+   stages = ["raw", "cleaned", "ribofrac", "riboreads", "processed", "cladecounts", "humanviruses",
              "allmatches", "hvreads"]
-   short_stages = ["raw", "clean", "rc", "kraken", "cc", "hv", "am", "hvr"]
+   short_stages = ["raw", "clean", "rf", "rr", "kraken", "cc", "hv", "am", "hvr"]
 
    papers_to_projects = defaultdict(list) # paper -> [project]
    for bioproject in bioprojects:
@@ -635,6 +779,7 @@ STAGES_ORDERED = []
 STAGE_FNS = {}
 for stage_name, stage_fn in [("clean", clean),
                              ("riboreads", riboreads),
+                             ("ribofrac", ribofrac),
                              ("interpret", interpret),
                              ("cladecounts", cladecounts),
                              ("humanviruses", humanviruses),

@@ -11,3 +11,5 @@ dashboard/top_species_counts/
 dashboard/top_species_scratch/
 dashboard/allmatches/
 dashboard/riboreads/
+dashboard/ribocounts/
+dashboard/ribofrac/

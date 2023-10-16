@@ -20,6 +20,7 @@ cd $ROOT_DIR/dashboard
 mkdir -p allmatches/
 mkdir -p hvreads/
 mkdir -p hvrfull/
+mkdir -p ribofrac/
 mkdir -p riboreads/
 
 if [ ! -e names.dmp ] ; then
@@ -50,13 +51,13 @@ for study in $(aws s3 ls $S3_DIR | awk '{print $NF}'); do
 done | xargs -I {} -P 32 aws s3 cp {} hvreads/
 
 for study in $(aws s3 ls $S3_DIR | awk '{print $NF}'); do
-    for rc in $(aws s3 ls $S3_DIR${study}riboreads/ | \
-                    awk '{print $NF}'); do
-    	if [ ! -s riboreads/$rc ]; then
-	    echo $S3_DIR${study}riboreads/$rc
+    for rf in $(aws s3 ls $S3_DIR${study}ribofrac/ | \
+   	    awk '{print $NF}'); do
+    	if [ ! -s ribofrac/$rf ]; then
+	    echo $S3_DIR${study}ribofrac/$rf
 	fi
      done
-done | xargs -I {} -P 32 aws s3 cp {} riboreads/
+done | xargs -I {} -P 32 aws s3 cp {} ribofrac/
 
 $MGS_PIPELINE_DIR/dashboard/prepare-dashboard-data.py $ROOT_DIR $MGS_PIPELINE_DIR
 
