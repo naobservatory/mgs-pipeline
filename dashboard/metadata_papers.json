@@ -59,13 +59,6 @@
     ],
     "subset": "pellet"
   },
-  "Johnson 2023": {
-    "link": "personal communication",
-    "na_type": "RNA",
-    "projects": [
-      "MJCOMO1"
-    ]
-  },
   "Langenfeld 2022": {
     "link": "https://www.biorxiv.org/content/10.1101/2022.07.08.499345v2.full",
     "na_type": "DNA",

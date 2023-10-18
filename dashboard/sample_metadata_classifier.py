@@ -171,13 +171,6 @@ def interpret(project, papers, bits):
             location="Jeddah",
             date=date,
             fine_location=hospital)
-    elif project in papers["Johnson 2023"]["projects"]:
-        sample, _, _ = bits
-        return sample, dict(
-            country="United States",
-            location="Municipal",
-            date="2022",
-            enrichment="viral")
     elif project in papers["Cui 2023"]["projects"]:
         sample, = bits
         return sample, dict(
