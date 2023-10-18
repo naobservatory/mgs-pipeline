@@ -152,819 +152,936 @@
     "date": "2012-09",
     "fine_location": "Primary/Surplus",
     "location": "Uppsala",
-    "reads": 33054581
+    "reads": 33054581,
+    "ribofrac": "0.0036"
   },
   "ERR1414210": {
     "country": "Sweden",
     "date": "2012-09",
     "fine_location": "Primary/Surplus",
     "location": "Uppsala",
-    "reads": 31931357
+    "reads": 31931357,
+    "ribofrac": "0.006"
   },
   "ERR1414211": {
     "country": "Sweden",
     "date": "2012-09",
     "fine_location": "Primary/Surplus",
     "location": "Uppsala",
-    "reads": 34926265
+    "reads": 34926265,
+    "ribofrac": "0.0037"
   },
   "ERR1414212": {
     "country": "Sweden",
     "date": "2012-09",
     "fine_location": "Surplus",
     "location": "Uppsala",
-    "reads": 33555931
+    "reads": 33555931,
+    "ribofrac": "0.0028"
   },
   "ERR1414213": {
     "country": "Sweden",
     "date": "2012-09",
     "fine_location": "Surplus",
     "location": "Uppsala",
-    "reads": 34329588
+    "reads": 34329588,
+    "ribofrac": "0.0025"
   },
   "ERR1414214": {
     "country": "Sweden",
     "date": "2012-09",
     "fine_location": "Surplus",
     "location": "Uppsala",
-    "reads": 29926023
+    "reads": 29926023,
+    "ribofrac": "0.0024"
   },
   "ERR1414215": {
     "country": "Sweden",
     "date": "2012-09",
     "fine_location": "Surplus",
     "location": "Uppsala",
-    "reads": 35435224
+    "reads": 35435224,
+    "ribofrac": "0.0029"
   },
   "ERR1414216": {
     "country": "Sweden",
     "date": "2012-09",
     "fine_location": "Digested",
     "location": "Uppsala",
-    "reads": 33492267
+    "reads": 33492267,
+    "ribofrac": "0.0056"
   },
   "ERR1414217": {
     "country": "Sweden",
     "date": "2012-09",
     "fine_location": "Digested",
     "location": "Uppsala",
-    "reads": 33606777
+    "reads": 33606777,
+    "ribofrac": "0.0025"
   },
   "ERR1414218": {
     "country": "Sweden",
     "date": "2012-09",
     "fine_location": "Digested",
     "location": "Uppsala",
-    "reads": 34206301
+    "reads": 34206301,
+    "ribofrac": "0.0009"
   },
   "ERR1414219": {
     "country": "Sweden",
     "date": "2012-09",
     "fine_location": "Digested",
     "location": "Uppsala",
-    "reads": 28403219
+    "reads": 28403219,
+    "ribofrac": "0.0026"
   },
   "ERR1414220": {
     "country": "Sweden",
     "date": "2012-09",
     "fine_location": "Digested",
     "location": "K\u00e4ppala",
-    "reads": 37967465
+    "reads": 37967465,
+    "ribofrac": "0.001"
   },
   "ERR1414221": {
     "country": "Sweden",
     "date": "2012-09",
     "fine_location": "Digested",
     "location": "K\u00e4ppala",
-    "reads": 42224349
+    "reads": 42224349,
+    "ribofrac": "0.0036"
   },
   "ERR1414222": {
     "country": "Sweden",
     "date": "2012-09",
     "fine_location": "Digested",
     "location": "K\u00e4ppala",
-    "reads": 45814824
+    "reads": 45814824,
+    "ribofrac": "0.0039"
   },
   "ERR1414223": {
     "country": "Sweden",
     "date": "2012-09",
     "fine_location": "Kemikond",
     "location": "K\u00e4ppala",
-    "reads": 53495170
+    "reads": 53495170,
+    "ribofrac": "0.0051"
   },
   "ERR1414224": {
     "country": "Sweden",
     "date": "2012-09",
     "fine_location": "Kemikond",
     "location": "K\u00e4ppala",
-    "reads": 41847215
+    "reads": 41847215,
+    "ribofrac": "0.0021"
   },
   "ERR1414225": {
     "country": "Sweden",
     "date": "2012-09",
     "fine_location": "Kemikond",
     "location": "K\u00e4ppala",
-    "reads": 40372915
+    "reads": 40372915,
+    "ribofrac": "0.0023"
   },
   "ERR1414226": {
     "country": "Sweden",
     "date": "2012-09",
     "fine_location": "Surplus",
     "location": "K\u00e4ppala",
-    "reads": 45564796
+    "reads": 45564796,
+    "ribofrac": "0.0019"
   },
   "ERR1414227": {
     "country": "Sweden",
     "date": "2012-09",
     "fine_location": "Surplus",
     "location": "K\u00e4ppala",
-    "reads": 46532227
+    "reads": 46532227,
+    "ribofrac": "0.0037"
   },
   "ERR1414228": {
     "country": "Sweden",
     "date": "2012-09",
     "fine_location": "Surplus",
     "location": "K\u00e4ppala",
-    "reads": 42330428
+    "reads": 42330428,
+    "ribofrac": "0.0015"
   },
   "ERR1414229": {
     "country": "Sweden",
     "date": "2012-09",
     "fine_location": "Surplus",
     "location": "K\u00e4ppala",
-    "reads": 45903968
+    "reads": 45903968,
+    "ribofrac": "0.0017"
   },
   "ERR1414230": {
     "country": "Sweden",
     "date": "2012-09",
     "fine_location": "Surplus",
     "location": "Henriksdal",
-    "reads": 23859265
+    "reads": 23859265,
+    "ribofrac": "0.0015"
   },
   "ERR1414231": {
     "country": "Sweden",
     "date": "2012-09",
     "fine_location": "Surplus",
     "location": "Henriksdal",
-    "reads": 57531334
+    "reads": 57531334,
+    "ribofrac": "0.0026"
   },
   "ERR1414232": {
     "country": "Sweden",
     "date": "2012-09",
     "fine_location": "Surplus",
     "location": "Henriksdal",
-    "reads": 46795930
+    "reads": 46795930,
+    "ribofrac": "0.0057"
   },
   "ERR1414233": {
     "country": "Sweden",
     "date": "2012-09",
     "fine_location": "Digested",
     "location": "Henriksdal",
-    "reads": 26760295
+    "reads": 26760295,
+    "ribofrac": "0.0018"
   },
   "ERR1414234": {
     "country": "Sweden",
     "date": "2012-09",
     "fine_location": "Digested",
     "location": "Henriksdal",
-    "reads": 32828219
+    "reads": 32828219,
+    "ribofrac": "0.0028"
   },
   "ERR1414235": {
     "country": "Sweden",
     "date": "2012-09",
     "fine_location": "Digested",
     "location": "Henriksdal",
-    "reads": 42278017
+    "reads": 42278017,
+    "ribofrac": "0.001"
   },
   "ERR1414236": {
     "country": "Sweden",
     "date": "2012-09",
     "fine_location": "Digested",
     "location": "Henriksdal",
-    "reads": 33919559
+    "reads": 33919559,
+    "ribofrac": "0.0052"
   },
   "ERR1414237": {
     "country": "Sweden",
     "date": "2012-09",
     "fine_location": "Inlet-HA",
     "location": "Henriksdal",
-    "reads": 38973715
+    "reads": 38973715,
+    "ribofrac": "0.011"
   },
   "ERR1414238": {
     "country": "Sweden",
     "date": "2012-09",
     "fine_location": "Inlet-HA",
     "location": "Henriksdal",
-    "reads": 33609766
+    "reads": 33609766,
+    "ribofrac": "0.0137"
   },
   "ERR1414239": {
     "country": "Sweden",
     "date": "2012-09",
     "fine_location": "Inlet-AD",
     "location": "Uppsala",
-    "reads": 35467840
+    "reads": 35467840,
+    "ribofrac": "0.007"
   },
   "ERR1414240": {
     "country": "Sweden",
     "date": "2012-09",
     "fine_location": "Inlet-AD",
     "location": "Uppsala",
-    "reads": 33545630
+    "reads": 33545630,
+    "ribofrac": "0.0091"
   },
   "ERR1414241": {
     "country": "Sweden",
     "date": "2012-09",
     "fine_location": "Inlet-C",
     "location": "Uppsala",
-    "reads": 34704385
+    "reads": 34704385,
+    "ribofrac": "0.0106"
   },
   "ERR1414242": {
     "country": "Sweden",
     "date": "2012-09",
     "fine_location": "Inlet-C",
     "location": "Uppsala",
-    "reads": 37445203
+    "reads": 37445203,
+    "ribofrac": "0.0162"
   },
   "ERR1414243": {
     "country": "Sweden",
     "date": "2012-09",
     "fine_location": "Inlet",
     "location": "K\u00e4ppala",
-    "reads": 40364648
+    "reads": 40364648,
+    "ribofrac": "0.0121"
   },
   "ERR1414244": {
     "country": "Sweden",
     "date": "2012-09",
     "fine_location": "Inlet",
     "location": "K\u00e4ppala",
-    "reads": 43044158
+    "reads": 43044158,
+    "ribofrac": "0.0098"
   },
   "ERR1414245": {
     "country": "Sweden",
     "date": "2012-09",
     "fine_location": "Inlet-S",
     "location": "Henriksdal",
-    "reads": 32807600
+    "reads": 32807600,
+    "ribofrac": "0.012"
   },
   "ERR1414246": {
     "country": "Sweden",
     "date": "2012-09",
     "fine_location": "Inlet-S",
     "location": "Henriksdal",
-    "reads": 28671146
+    "reads": 28671146,
+    "ribofrac": "0.0125"
   },
   "ERR1414247": {
     "country": "Sweden",
     "date": "2012-09",
     "fine_location": "Inlet-Hab",
     "location": "Henriksdal",
-    "reads": 31415731
+    "reads": 31415731,
+    "ribofrac": "0.0023"
   },
   "ERR1414248": {
     "country": "Sweden",
     "date": "2012-09",
     "fine_location": "Inlet-Hab",
     "location": "Henriksdal",
-    "reads": 25720978
+    "reads": 25720978,
+    "ribofrac": "0.0045"
   },
   "ERR1414249": {
     "country": "Sweden",
     "date": "2012-09",
     "fine_location": "Inlet-Adb",
     "location": "Uppsala",
-    "reads": 45446554
+    "reads": 45446554,
+    "ribofrac": "0.0088"
   },
   "ERR1414250": {
     "country": "Sweden",
     "date": "2012-09",
     "fine_location": "Inlet-Adb",
     "location": "Uppsala",
-    "reads": 39308614
+    "reads": 39308614,
+    "ribofrac": "0.0048"
   },
   "ERR1414251": {
     "country": "Sweden",
     "date": "2012-09",
     "fine_location": "Inlet-Cb",
     "location": "Uppsala",
-    "reads": 37601047
+    "reads": 37601047,
+    "ribofrac": "0.0095"
   },
   "ERR1414252": {
     "country": "Sweden",
     "date": "2012-09",
     "fine_location": "Inlet-Cb",
     "location": "Uppsala",
-    "reads": 34456154
+    "reads": 34456154,
+    "ribofrac": "0.0092"
   },
   "ERR1414253": {
     "country": "Sweden",
     "date": "2012-09",
     "fine_location": "Inlet-b",
     "location": "K\u00e4ppala",
-    "reads": 32204564
+    "reads": 32204564,
+    "ribofrac": "0.0086"
   },
   "ERR1414254": {
     "country": "Sweden",
     "date": "2012-09",
     "fine_location": "Inlet-b",
     "location": "K\u00e4ppala",
-    "reads": 33221990
+    "reads": 33221990,
+    "ribofrac": "0.0095"
   },
   "ERR1414255": {
     "country": "Sweden",
     "date": "2012-09",
     "fine_location": "Inlet-Sb",
     "location": "Henriksdal",
-    "reads": 41936746
+    "reads": 41936746,
+    "ribofrac": "0.0059"
   },
   "ERR1414256": {
     "country": "Sweden",
     "date": "2012-09",
     "fine_location": "Inlet-Sb",
     "location": "Henriksdal",
-    "reads": 37072042
+    "reads": 37072042,
+    "ribofrac": "0.003"
   },
   "ERR1414257": {
     "country": "Sweden",
     "date": "2012-09",
     "fine_location": "Treated",
     "location": "Henriksdal",
-    "reads": 23730416
+    "reads": 23730416,
+    "ribofrac": "0.0066"
   },
   "ERR1414258": {
     "country": "Sweden",
     "date": "2012-09",
     "fine_location": "Treated",
     "location": "Henriksdal",
-    "reads": 46321668
+    "reads": 46321668,
+    "ribofrac": "0.0062"
   },
   "ERR1414259": {
     "country": "Sweden",
     "date": "2012-09",
     "fine_location": "Sand-filtered",
     "location": "Henriksdal",
-    "reads": 36176501
+    "reads": 36176501,
+    "ribofrac": "0.004"
   },
   "ERR1414260": {
     "country": "Sweden",
     "date": "2012-09",
     "fine_location": "Sand-filtered",
     "location": "Henriksdal",
-    "reads": 45853886
+    "reads": 45853886,
+    "ribofrac": "0.0063"
   },
   "ERR1414261": {
     "country": "Sweden",
     "date": "2012-09",
     "fine_location": "Treated",
     "location": "K\u00e4ppala",
-    "reads": 44800085
+    "reads": 44800085,
+    "ribofrac": "0.0094"
   },
   "ERR1414262": {
     "country": "Sweden",
     "date": "2012-09",
     "fine_location": "Treated",
     "location": "K\u00e4ppala",
-    "reads": 42437666
+    "reads": 42437666,
+    "ribofrac": "0.0092"
   },
   "ERR1414263": {
     "country": "Sweden",
     "date": "2012-09",
     "fine_location": "Sand-filtered",
     "location": "K\u00e4ppala",
-    "reads": 37587346
+    "reads": 37587346,
+    "ribofrac": "0.0028"
   },
   "ERR1414264": {
     "country": "Sweden",
     "date": "2012-09",
     "fine_location": "Sand-filtered",
     "location": "K\u00e4ppala",
-    "reads": 42029226
+    "reads": 42029226,
+    "ribofrac": "0.0033"
   },
   "ERR1414265": {
     "country": "Sweden",
     "date": "2012-09",
     "fine_location": "Treated",
     "location": "Uppsala",
-    "reads": 32609438
+    "reads": 32609438,
+    "ribofrac": "0.005"
   },
   "ERR1414266": {
     "country": "Sweden",
     "date": "2012-09",
     "fine_location": "Treated",
     "location": "Uppsala",
-    "reads": 38566204
+    "reads": 38566204,
+    "ribofrac": "0.0058"
   },
   "ERR1414267": {
     "country": "Sweden",
     "date": "2012-09",
     "fine_location": "Primary/Surplus",
     "location": "Uppsala",
-    "reads": 29451916
+    "reads": 29451916,
+    "ribofrac": "0.0014"
   },
   "ERR1414268": {
     "country": "Sweden",
     "date": "2012-09",
     "fine_location": "Digested",
     "location": "K\u00e4ppala",
-    "reads": 44059099
+    "reads": 44059099,
+    "ribofrac": "0.003"
   },
   "ERR1414269": {
     "country": "Sweden",
     "date": "2012-09",
     "fine_location": "Kemikond",
     "location": "K\u00e4ppala",
-    "reads": 39254599
+    "reads": 39254599,
+    "ribofrac": "0.0024"
   },
   "ERR1414270": {
     "country": "Sweden",
     "date": "2012-09",
     "fine_location": "Primary",
     "location": "K\u00e4ppala",
-    "reads": 43706943
+    "reads": 43706943,
+    "ribofrac": "0.0077"
   },
   "ERR1414271": {
     "country": "Sweden",
     "date": "2012-09",
     "fine_location": "Primary",
     "location": "K\u00e4ppala",
-    "reads": 43167327
+    "reads": 43167327,
+    "ribofrac": "0.007"
   },
   "ERR1414272": {
     "country": "Sweden",
     "date": "2012-09",
     "fine_location": "Primary",
     "location": "K\u00e4ppala",
-    "reads": 34813058
+    "reads": 34813058,
+    "ribofrac": "0.0076"
   },
   "ERR1414273": {
     "country": "Sweden",
     "date": "2012-09",
     "fine_location": "Primary",
     "location": "K\u00e4ppala",
-    "reads": 61338497
+    "reads": 61338497,
+    "ribofrac": "0.0048"
   },
   "ERR1414274": {
     "country": "Sweden",
     "date": "2012-09",
     "fine_location": "Surplus",
     "location": "Henriksdal",
-    "reads": 52517339
+    "reads": 52517339,
+    "ribofrac": "0.0045"
   },
   "ERR1414275": {
     "country": "Sweden",
     "date": "2012-09",
     "fine_location": "Primary",
     "location": "Henriksdal",
-    "reads": 49207149
+    "reads": 49207149,
+    "ribofrac": "0.0072"
   },
   "ERR1414276": {
     "country": "Sweden",
     "date": "2012-09",
     "fine_location": "Primary",
     "location": "Henriksdal",
-    "reads": 43947896
+    "reads": 43947896,
+    "ribofrac": "0.008"
   },
   "ERR1414277": {
     "country": "Sweden",
     "date": "2012-09",
     "fine_location": "Primary",
     "location": "Henriksdal",
-    "reads": 42256689
+    "reads": 42256689,
+    "ribofrac": "0.0077"
   },
   "ERR1414278": {
     "country": "Sweden",
     "date": "2012-09",
     "fine_location": "Primary",
     "location": "Henriksdal",
-    "reads": 47556708
+    "reads": 47556708,
+    "ribofrac": "0.0056"
   },
   "ERR1467141": {
     "country": "Denmark",
     "date": "2016-04-07",
     "fine_location": "Avedoere",
     "location": "Copenhagen",
-    "reads": 2366927
+    "reads": 2366927,
+    "ribofrac": "0.0056"
   },
   "ERR1467142": {
     "country": "Denmark",
     "date": "2016-04-11",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 1469453
+    "reads": 1469453,
+    "ribofrac": "0.0091"
   },
   "ERR1467143": {
     "country": "Denmark",
     "date": "2016-04-07",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 2997823
+    "reads": 2997823,
+    "ribofrac": "0.0133"
   },
   "ERR1467144": {
     "country": "Denmark",
     "date": "2016-04-13",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 1640162
+    "reads": 1640162,
+    "ribofrac": "0.0052"
   },
   "ERR1467145": {
     "country": "Denmark",
     "date": "2016-04-17",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 2178371
+    "reads": 2178371,
+    "ribofrac": "0.0073"
   },
   "ERR1467146": {
     "country": "Denmark",
     "date": "2016-03-29",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 1424981
+    "reads": 1424981,
+    "ribofrac": "0.0047"
   },
   "ERR1467147": {
     "country": "Denmark",
     "date": "2016-04-02",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 2493077
+    "reads": 2493077,
+    "ribofrac": "0.0021"
   },
   "ERR1467148": {
     "country": "Denmark",
     "date": "2016-04-07",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 1766721
+    "reads": 1766721,
+    "ribofrac": "0.004"
   },
   "ERR1467149": {
     "country": "Denmark",
     "date": "2016-04-11",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 2680588
+    "reads": 2680588,
+    "ribofrac": "0.0067"
   },
   "ERR1467150": {
     "country": "Denmark",
     "date": "2016-04-13",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 1629207
+    "reads": 1629207,
+    "ribofrac": "0.0093"
   },
   "ERR1467151": {
     "country": "Denmark",
     "date": "2016-04-17",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 1590140
+    "reads": 1590140,
+    "ribofrac": "0.0087"
   },
   "ERR1467152": {
     "country": "Denmark",
     "date": "2016-04-02",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 1915510
+    "reads": 1915510,
+    "ribofrac": "0.0104"
   },
   "ERR1467153": {
     "country": "Denmark",
     "date": "2016-04-29",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 1238271
+    "reads": 1238271,
+    "ribofrac": "0.007"
   },
   "ERR1467154": {
     "country": "Denmark",
     "date": "2016-05-02",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 951801
+    "reads": 951801,
+    "ribofrac": "0.005"
   },
   "ERR1470822": {
     "country": "Denmark",
     "date": "2016-03-10",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 2235769
+    "reads": 2235769,
+    "ribofrac": "0.0069"
   },
   "ERR1470823": {
     "country": "Denmark",
     "date": "2016-03-13",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 2359882
+    "reads": 2359882,
+    "ribofrac": "0.0056"
   },
   "ERR1470824": {
     "country": "Denmark",
     "date": "2016-03-15",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 2091605
+    "reads": 2091605,
+    "ribofrac": "0.0052"
   },
   "ERR1470825": {
     "country": "Denmark",
     "date": "2016-03-20",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 2177220
+    "reads": 2177220,
+    "ribofrac": "0.0085"
   },
   "ERR1470826": {
     "country": "Denmark",
     "date": "2016-03-29",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 2251318
+    "reads": 2251318,
+    "ribofrac": "0.0075"
   },
   "ERR1470827": {
     "country": "Denmark",
     "date": "2016-03-08",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 3130666
+    "reads": 3130666,
+    "ribofrac": "0.0066"
   },
   "ERR1470828": {
     "country": "Denmark",
     "date": "2016-03-10",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 1957744
+    "reads": 1957744,
+    "ribofrac": "0.0066"
   },
   "ERR1470829": {
     "country": "Denmark",
     "date": "2016-03-13",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 1771516
+    "reads": 1771516,
+    "ribofrac": "0.0088"
   },
   "ERR1470830": {
     "country": "Denmark",
     "date": "2016-03-15",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 2781672
+    "reads": 2781672,
+    "ribofrac": "0.0048"
   },
   "ERR1512984": {
     "country": "Denmark",
     "date": "2016-03-20",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 1991425
+    "reads": 1991425,
+    "ribofrac": "0.0039"
   },
   "ERR1512985": {
     "country": "Denmark",
     "date": "2016-05-10",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 1887725
+    "reads": 1887725,
+    "ribofrac": "0.0105"
   },
   "ERR1512986": {
     "country": "Denmark",
     "date": "2016-05-12",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 2048700
+    "reads": 2048700,
+    "ribofrac": "0.0067"
   },
   "ERR1512987": {
     "country": "Denmark",
     "date": "2016-05-16",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 2059873
+    "reads": 2059873,
+    "ribofrac": "0.0084"
   },
   "ERR1512988": {
     "country": "Denmark",
     "date": "2016-05-16",
     "fine_location": "Avedoere",
     "location": "Copenhagen",
-    "reads": 2520818
+    "reads": 2520818,
+    "ribofrac": "0.0031"
   },
   "ERR1512990": {
     "country": "Denmark",
     "date": "2016-05-16",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 1746741
+    "reads": 1746741,
+    "ribofrac": "0.0143"
   },
   "ERR1512991": {
     "country": "Denmark",
     "date": "2016-02-20",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 1454483
+    "reads": 1454483,
+    "ribofrac": "0.0105"
   },
   "ERR1512992": {
     "country": "Denmark",
     "date": "2016-02-20",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 1626011
+    "reads": 1626011,
+    "ribofrac": "0.0106"
   },
   "ERR1512993": {
     "country": "Denmark",
     "date": "2016-03-01",
     "fine_location": "Avedoere",
     "location": "Copenhagen",
-    "reads": 2518164
+    "reads": 2518164,
+    "ribofrac": "0.0032"
   },
   "ERR1512994": {
     "country": "Denmark",
     "date": "2016-03-15",
     "fine_location": "Avedoere",
     "location": "Copenhagen",
-    "reads": 1968092
+    "reads": 1968092,
+    "ribofrac": "0.0115"
   },
   "ERR1512995": {
     "country": "Denmark",
     "date": "2016-02-23",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 2163929
+    "reads": 2163929,
+    "ribofrac": "0.0089"
   },
   "ERR1512996": {
     "country": "Denmark",
     "date": "2016-03-01",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 2039546
+    "reads": 2039546,
+    "ribofrac": "0.0118"
   },
   "ERR1512997": {
     "country": "Denmark",
     "date": "2016-02-23",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 1827653
+    "reads": 1827653,
+    "ribofrac": "0.0151"
   },
   "ERR1512998": {
     "country": "Denmark",
     "date": "2016-05-18",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 1970761
+    "reads": 1970761,
+    "ribofrac": "0.0098"
   },
   "ERR1513002": {
     "country": "Denmark",
     "date": "2016-05-20",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 2412942
+    "reads": 2412942,
+    "ribofrac": "0.0061"
   },
   "ERR1513003": {
     "country": "Denmark",
     "date": "2016-05-20",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 2475250
+    "reads": 2475250,
+    "ribofrac": "0.0077"
   },
   "ERR1513004": {
     "country": "Denmark",
     "date": "2016-05-25",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 2211835
+    "reads": 2211835,
+    "ribofrac": "0.009"
   },
   "ERR1513005": {
     "country": "Denmark",
     "date": "2016-05-25",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 2148061
+    "reads": 2148061,
+    "ribofrac": "0.0108"
   },
   "ERR1513006": {
     "country": "Denmark",
     "date": "2016-05-28",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 2017796
+    "reads": 2017796,
+    "ribofrac": "0.0101"
   },
   "ERR1513007": {
     "country": "Denmark",
     "date": "2016-05-28",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 2184521
+    "reads": 2184521,
+    "ribofrac": "0.007"
   },
   "ERR1514427": {
     "country": "Denmark",
     "date": "2016-06-01",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 2143993
+    "reads": 2143993,
+    "ribofrac": "0.0048"
   },
   "ERR1514428": {
     "country": "Denmark",
     "date": "2016-06-01",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 2556493
+    "reads": 2556493,
+    "ribofrac": "0.0057"
   },
   "ERR1514429": {
     "country": "Denmark",
     "date": "2016-06-05",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 2932482
+    "reads": 2932482,
+    "ribofrac": "0.0042"
   },
   "ERR1514430": {
     "country": "Denmark",
     "date": "2016-06-14",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 3333839
+    "reads": 3333839,
+    "ribofrac": "0.011"
   },
   "ERR1713331": {
     "country": "Albania",
@@ -5210,1925 +5327,2200 @@
     "date": "2015-11-23",
     "fine_location": "Avedoere",
     "location": "Copenhagen",
-    "reads": 26035123
+    "reads": 26035123,
+    "ribofrac": "0.0077"
   },
   "ERR3562837": {
     "country": "Denmark",
     "date": "2015-12-02",
     "fine_location": "Avedoere",
     "location": "Copenhagen",
-    "reads": 42800891
+    "reads": 42800891,
+    "ribofrac": "0.0105"
   },
   "ERR3562838": {
     "country": "Denmark",
     "date": "2016-01-09",
     "fine_location": "Avedoere",
     "location": "Copenhagen",
-    "reads": 3773399
+    "reads": 3773399,
+    "ribofrac": "0.0103"
   },
   "ERR3562839": {
     "country": "Denmark",
     "date": "2016-01-11",
     "fine_location": "Avedoere",
     "location": "Copenhagen",
-    "reads": 4223695
+    "reads": 4223695,
+    "ribofrac": "0.0103"
   },
   "ERR3562840": {
     "country": "Denmark",
     "date": "2016-01-20",
     "fine_location": "Avedoere",
     "location": "Copenhagen",
-    "reads": 616149
+    "reads": 616149,
+    "ribofrac": "0.0088"
   },
   "ERR3562841": {
     "country": "Denmark",
     "date": "2016-01-22",
     "fine_location": "Avedoere",
     "location": "Copenhagen",
-    "reads": 658881
+    "reads": 658881,
+    "ribofrac": "0.0144"
   },
   "ERR3562842": {
     "country": "Denmark",
     "date": "2016-02-18",
     "fine_location": "Avedoere",
     "location": "Copenhagen",
-    "reads": 2388949
+    "reads": 2388949,
+    "ribofrac": "0.0079"
   },
   "ERR3562843": {
     "country": "Denmark",
     "date": "2015-12-01",
     "fine_location": "Avedoere",
     "location": "Copenhagen",
-    "reads": 19158198
+    "reads": 19158198,
+    "ribofrac": "0.0086"
   },
   "ERR3562844": {
     "country": "Denmark",
     "date": "2015-12-06",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 12472118
+    "reads": 12472118,
+    "ribofrac": "0.0095"
   },
   "ERR3562845": {
     "country": "Denmark",
     "date": "2015-12-07",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 13292182
+    "reads": 13292182,
+    "ribofrac": "0.0123"
   },
   "ERR3562846": {
     "country": "Denmark",
     "date": "2015-12-09",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 13603243
+    "reads": 13603243,
+    "ribofrac": "0.0091"
   },
   "ERR3562847": {
     "country": "Denmark",
     "date": "2015-12-12",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 13316798
+    "reads": 13316798,
+    "ribofrac": "0.0059"
   },
   "ERR3562848": {
     "country": "Denmark",
     "date": "2015-12-17",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 15443092
+    "reads": 15443092,
+    "ribofrac": "0.0045"
   },
   "ERR3562849": {
     "country": "Denmark",
     "date": "2015-12-21",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 36195360
+    "reads": 36195360,
+    "ribofrac": "0.0143"
   },
   "ERR3562850": {
     "country": "Denmark",
     "date": "2015-12-28",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 30515644
+    "reads": 30515644,
+    "ribofrac": "0.009"
   },
   "ERR3562851": {
     "country": "Denmark",
     "date": "2015-12-29",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 16841347
+    "reads": 16841347,
+    "ribofrac": "0.0053"
   },
   "ERR3562852": {
     "country": "Denmark",
     "date": "2016-01-05",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 49002440
+    "reads": 49002440,
+    "ribofrac": "0.0103"
   },
   "ERR3562853": {
     "country": "Denmark",
     "date": "2016-01-09",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 30206345
+    "reads": 30206345,
+    "ribofrac": "0.0108"
   },
   "ERR3562854": {
     "country": "Denmark",
     "date": "2016-01-11",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 24599973
+    "reads": 24599973,
+    "ribofrac": "0.0067"
   },
   "ERR3562855": {
     "country": "Denmark",
     "date": "2016-01-20",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 666328
+    "reads": 666328,
+    "ribofrac": "0.0097"
   },
   "ERR3562856": {
     "country": "Denmark",
     "date": "2016-01-22",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 984302
+    "reads": 984302,
+    "ribofrac": "0.0082"
   },
   "ERR3562857": {
     "country": "Denmark",
     "date": "2016-01-28",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 894620
+    "reads": 894620,
+    "ribofrac": "0.0032"
   },
   "ERR3562858": {
     "country": "Denmark",
     "date": "2016-02-08",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 515744
+    "reads": 515744,
+    "ribofrac": "0.0095"
   },
   "ERR3562859": {
     "country": "Denmark",
     "date": "2016-02-12",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 816202
+    "reads": 816202,
+    "ribofrac": "0.0102"
   },
   "ERR3562860": {
     "country": "Denmark",
     "date": "2016-02-18",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 2426487
+    "reads": 2426487,
+    "ribofrac": "0.0083"
   },
   "ERR3562861": {
     "country": "Denmark",
     "date": "2015-11-20",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 44493451
+    "reads": 44493451,
+    "ribofrac": "0.0042"
   },
   "ERR3562862": {
     "country": "Denmark",
     "date": "2015-11-25",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 23158276
+    "reads": 23158276,
+    "ribofrac": "0.0099"
   },
   "ERR3562863": {
     "country": "Denmark",
     "date": "2015-12-01",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 25039649
+    "reads": 25039649,
+    "ribofrac": "0.0084"
   },
   "ERR3562864": {
     "country": "Denmark",
     "date": "2015-12-09",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 27997532
+    "reads": 27997532,
+    "ribofrac": "0.012"
   },
   "ERR3562865": {
     "country": "Denmark",
     "date": "2015-12-15",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 34199832
+    "reads": 34199832,
+    "ribofrac": "0.0084"
   },
   "ERR3562866": {
     "country": "Denmark",
     "date": "2015-12-17",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 38958998
+    "reads": 38958998,
+    "ribofrac": "0.0092"
   },
   "ERR3562867": {
     "country": "Denmark",
     "date": "2015-12-21",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 35827486
+    "reads": 35827486,
+    "ribofrac": "0.0084"
   },
   "ERR3562868": {
     "country": "Denmark",
     "date": "2015-12-28",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 29926797
+    "reads": 29926797,
+    "ribofrac": "0.0079"
   },
   "ERR3562869": {
     "country": "Denmark",
     "date": "2015-12-29",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 32796585
+    "reads": 32796585,
+    "ribofrac": "0.009"
   },
   "ERR3562870": {
     "country": "Denmark",
     "date": "2016-01-05",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 33521075
+    "reads": 33521075,
+    "ribofrac": "0.0088"
   },
   "ERR3562871": {
     "country": "Denmark",
     "date": "2016-01-11",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 643261
+    "reads": 643261,
+    "ribofrac": "0.0074"
   },
   "ERR3562872": {
     "country": "Denmark",
     "date": "2016-01-17",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 657883
+    "reads": 657883,
+    "ribofrac": "0.0066"
   },
   "ERR3562873": {
     "country": "Denmark",
     "date": "2016-01-28",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 696063
+    "reads": 696063,
+    "ribofrac": "0.0051"
   },
   "ERR3562874": {
     "country": "Denmark",
     "date": "2016-02-08",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 839740
+    "reads": 839740,
+    "ribofrac": "0.0055"
   },
   "ERR3562875": {
     "country": "Denmark",
     "date": "2016-02-12",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 1469807
+    "reads": 1469807,
+    "ribofrac": "0.0083"
   },
   "ERR3562876": {
     "country": "Denmark",
     "date": "2016-02-18",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 1712526
+    "reads": 1712526,
+    "ribofrac": "0.0064"
   },
   "ERR3562877": {
     "country": "Denmark",
     "date": "2016-05-16",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 91752
+    "reads": 91752,
+    "ribofrac": "0.0095"
   },
   "ERR3562878": {
     "country": "Denmark",
     "date": "2016-05-20",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 69514
+    "reads": 69514,
+    "ribofrac": "0.0057"
   },
   "ERR3562879": {
     "country": "Denmark",
     "date": "2016-05-20",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 88604
+    "reads": 88604,
+    "ribofrac": "0.0115"
   },
   "ERR3562880": {
     "country": "Denmark",
     "date": "2016-05-25",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 42010
+    "reads": 42010,
+    "ribofrac": "0.0161"
   },
   "ERR3562881": {
     "country": "Denmark",
     "date": "2016-05-25",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 50560
+    "reads": 50560,
+    "ribofrac": "0.0136"
   },
   "ERR3562882": {
     "country": "Denmark",
     "date": "2016-05-28",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 559283
+    "reads": 559283,
+    "ribofrac": "0.0107"
   },
   "ERR3562883": {
     "country": "Denmark",
     "date": "2016-05-28",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 185
+    "reads": 185,
+    "ribofrac": "0.0109"
   },
   "ERR3562884": {
     "country": "Denmark",
     "date": "2016-06-08",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 26
+    "reads": 26,
+    "ribofrac": "0.0"
   },
   "ERR3562885": {
     "country": "Denmark",
     "date": "2016-06-08",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 561563
+    "reads": 561563,
+    "ribofrac": "0.0054"
   },
   "ERR3562886": {
     "country": "Denmark",
     "date": "2016-06-08",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 10
+    "reads": 10,
+    "ribofrac": "0.0"
   },
   "ERR3562887": {
     "country": "Denmark",
     "date": "2016-06-08",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 422
+    "reads": 422,
+    "ribofrac": "0.019"
   },
   "ERR3562888": {
     "country": "Denmark",
     "date": "2016-06-08",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 1471517
+    "reads": 1471517,
+    "ribofrac": "0.0087"
   },
   "ERR3562889": {
     "country": "Denmark",
     "date": "2016-06-12",
     "fine_location": "Avedoere",
     "location": "Copenhagen",
-    "reads": 15
+    "reads": 15,
+    "ribofrac": "0.0"
   },
   "ERR3562890": {
     "country": "Denmark",
     "date": "2016-06-12",
     "fine_location": "Avedoere",
     "location": "Copenhagen",
-    "reads": 559
+    "reads": 559,
+    "ribofrac": "0.0108"
   },
   "ERR3562891": {
     "country": "Denmark",
     "date": "2016-06-12",
     "fine_location": "Avedoere",
     "location": "Copenhagen",
-    "reads": 1603589
+    "reads": 1603589,
+    "ribofrac": "0.0011"
   },
   "ERR3562892": {
     "country": "Denmark",
     "date": "2016-06-12",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 17
+    "reads": 17,
+    "ribofrac": "0.0"
   },
   "ERR3562893": {
     "country": "Denmark",
     "date": "2016-06-12",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 694210
+    "reads": 694210,
+    "ribofrac": "0.004"
   },
   "ERR3562894": {
     "country": "Denmark",
     "date": "2016-06-12",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 19
+    "reads": 19,
+    "ribofrac": "0.0526"
   },
   "ERR3562895": {
     "country": "Denmark",
     "date": "2016-06-12",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 1295213
+    "reads": 1295213,
+    "ribofrac": "0.008"
   },
   "ERR3562896": {
     "country": "Denmark",
     "date": "2016-06-14",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 21
+    "reads": 21,
+    "ribofrac": "0.0"
   },
   "ERR3562897": {
     "country": "Denmark",
     "date": "2016-06-14",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 617838
+    "reads": 617838,
+    "ribofrac": "0.0052"
   },
   "ERR3562898": {
     "country": "Denmark",
     "date": "2016-06-18",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 1264602
+    "reads": 1264602,
+    "ribofrac": "0.0096"
   },
   "ERR3562899": {
     "country": "Denmark",
     "date": "2016-06-18",
     "fine_location": "Avedoere",
     "location": "Copenhagen",
-    "reads": 1514349
+    "reads": 1514349,
+    "ribofrac": "0.0117"
   },
   "ERR3562900": {
     "country": "Denmark",
     "date": "2016-06-18",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 2061804
+    "reads": 2061804,
+    "ribofrac": "0.0069"
   },
   "ERR3562901": {
     "country": "Denmark",
     "date": "2016-06-27",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 963575
+    "reads": 963575,
+    "ribofrac": "0.0116"
   },
   "ERR3562902": {
     "country": "Denmark",
     "date": "2016-06-27",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 1206982
+    "reads": 1206982,
+    "ribofrac": "0.0063"
   },
   "ERR3562903": {
     "country": "Denmark",
     "date": "2016-07-02",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 1669340
+    "reads": 1669340,
+    "ribofrac": "0.0051"
   },
   "ERR3562904": {
     "country": "Denmark",
     "date": "2016-07-04",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 1794807
+    "reads": 1794807,
+    "ribofrac": "0.0068"
   },
   "ERR3562905": {
     "country": "Denmark",
     "date": "2016-07-04",
     "fine_location": "Avedoere",
     "location": "Copenhagen",
-    "reads": 1956123
+    "reads": 1956123,
+    "ribofrac": "0.0086"
   },
   "ERR3562906": {
     "country": "Denmark",
     "date": "2016-07-04",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 1829325
+    "reads": 1829325,
+    "ribofrac": "0.0059"
   },
   "ERR3562907": {
     "country": "Denmark",
     "date": "2016-07-02",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 1805749
+    "reads": 1805749,
+    "ribofrac": "0.005"
   },
   "ERR3562908": {
     "country": "Denmark",
     "date": "2016-07-13",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 1686216
+    "reads": 1686216,
+    "ribofrac": "0.0097"
   },
   "ERR3562909": {
     "country": "Denmark",
     "date": "2016-07-13",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 1557130
+    "reads": 1557130,
+    "ribofrac": "0.0047"
   },
   "ERR3562910": {
     "country": "Denmark",
     "date": "2016-07-17",
     "fine_location": "Avedoere",
     "location": "Copenhagen",
-    "reads": 1513115
+    "reads": 1513115,
+    "ribofrac": "0.0047"
   },
   "ERR3562911": {
     "country": "Denmark",
     "date": "2016-07-17",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 1858884
+    "reads": 1858884,
+    "ribofrac": "0.0067"
   },
   "ERR3562912": {
     "country": "Denmark",
     "date": "2016-07-18",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 1847483
+    "reads": 1847483,
+    "ribofrac": "0.0071"
   },
   "ERR3562913": {
     "country": "Denmark",
     "date": "2016-07-20",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 1875342
+    "reads": 1875342,
+    "ribofrac": "0.004"
   },
   "ERR3562914": {
     "country": "Denmark",
     "date": "2016-07-20",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 1774028
+    "reads": 1774028,
+    "ribofrac": "0.0051"
   },
   "ERR3562915": {
     "country": "Denmark",
     "date": "2016-07-22",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 1878657
+    "reads": 1878657,
+    "ribofrac": "0.0089"
   },
   "ERR3562916": {
     "country": "Denmark",
     "date": "2016-07-22",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 1992360
+    "reads": 1992360,
+    "ribofrac": "0.0079"
   },
   "ERR3562917": {
     "country": "Denmark",
     "date": "2016-08-08",
     "fine_location": "Avedoere",
     "location": "Copenhagen",
-    "reads": 419126
+    "reads": 419126,
+    "ribofrac": "0.0105"
   },
   "ERR3562918": {
     "country": "Denmark",
     "date": "2016-08-02",
     "fine_location": "Avedoere",
     "location": "Copenhagen",
-    "reads": 712879
+    "reads": 712879,
+    "ribofrac": "0.0059"
   },
   "ERR3562919": {
     "country": "Denmark",
     "date": "2016-08-02",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 721078
+    "reads": 721078,
+    "ribofrac": "0.0085"
   },
   "ERR3562920": {
     "country": "Denmark",
     "date": "2016-08-10",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 25768237
+    "reads": 25768237,
+    "ribofrac": "0.0052"
   },
   "ERR3562921": {
     "country": "Denmark",
     "date": "2016-08-10",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 25769121
+    "reads": 25769121,
+    "ribofrac": "0.0076"
   },
   "ERR3562922": {
     "country": "Denmark",
     "date": "2016-08-16",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 34071641
+    "reads": 34071641,
+    "ribofrac": "0.0104"
   },
   "ERR3562923": {
     "country": "Denmark",
     "date": "2016-08-18",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 28463411
+    "reads": 28463411,
+    "ribofrac": "0.0101"
   },
   "ERR3562924": {
     "country": "Denmark",
     "date": "2016-08-18",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 5606141
+    "reads": 5606141,
+    "ribofrac": "0.0077"
   },
   "ERR3562925": {
     "country": "Denmark",
     "date": "2016-08-22",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 4714347
+    "reads": 4714347,
+    "ribofrac": "0.0052"
   },
   "ERR3562926": {
     "country": "Denmark",
     "date": "2016-08-16",
     "fine_location": "Avedoere",
     "location": "Copenhagen",
-    "reads": 3890415
+    "reads": 3890415,
+    "ribofrac": "0.007"
   },
   "ERR3562927": {
     "country": "Denmark",
     "date": "2016-08-16",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 41035029
+    "reads": 41035029,
+    "ribofrac": "0.0072"
   },
   "ERR3562928": {
     "country": "Denmark",
     "date": "2016-08-22",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 27772583
+    "reads": 27772583,
+    "ribofrac": "0.0053"
   },
   "ERR3562929": {
     "country": "Denmark",
     "date": "2016-08-29",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 31435694
+    "reads": 31435694,
+    "ribofrac": "0.0066"
   },
   "ERR3562930": {
     "country": "Denmark",
     "date": "2016-08-29",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 16099010
+    "reads": 16099010,
+    "ribofrac": "0.0098"
   },
   "ERR3562931": {
     "country": "Denmark",
     "date": "2016-08-29",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 28775214
+    "reads": 28775214,
+    "ribofrac": "0.0085"
   },
   "ERR3562932": {
     "country": "Denmark",
     "date": "2016-09-07",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 3640029
+    "reads": 3640029,
+    "ribofrac": "0.008"
   },
   "ERR3562933": {
     "country": "Denmark",
     "date": "2016-09-07",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 4641019
+    "reads": 4641019,
+    "ribofrac": "0.0084"
   },
   "ERR3562934": {
     "country": "Denmark",
     "date": "2016-09-07",
     "fine_location": "Avedoere",
     "location": "Copenhagen",
-    "reads": 6246195
+    "reads": 6246195,
+    "ribofrac": "0.0058"
   },
   "ERR3562935": {
     "country": "Denmark",
     "date": "2016-09-07",
     "fine_location": "Avedoere",
     "location": "Copenhagen",
-    "reads": 22937967
+    "reads": 22937967,
+    "ribofrac": "0.005"
   },
   "ERR3562936": {
     "country": "Denmark",
     "date": "2016-09-13",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 37409975
+    "reads": 37409975,
+    "ribofrac": "0.0099"
   },
   "ERR3562937": {
     "country": "Denmark",
     "date": "2016-09-13",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 42334131
+    "reads": 42334131,
+    "ribofrac": "0.0119"
   },
   "ERR3562938": {
     "country": "Denmark",
     "date": "2016-09-18",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 7153342
+    "reads": 7153342,
+    "ribofrac": "0.0068"
   },
   "ERR3562939": {
     "country": "Denmark",
     "date": "2016-09-18",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 13669604
+    "reads": 13669604,
+    "ribofrac": "0.0054"
   },
   "ERR3562940": {
     "country": "Denmark",
     "date": "2016-09-21",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 32600078
+    "reads": 32600078,
+    "ribofrac": "0.0076"
   },
   "ERR3562941": {
     "country": "Denmark",
     "date": "2016-09-21",
     "fine_location": "Avedoere",
     "location": "Copenhagen",
-    "reads": 33446849
+    "reads": 33446849,
+    "ribofrac": "0.0079"
   },
   "ERR3562942": {
     "country": "Denmark",
     "date": "2016-09-21",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 40603061
+    "reads": 40603061,
+    "ribofrac": "0.0107"
   },
   "ERR3562943": {
     "country": "Denmark",
     "date": "2016-09-24",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 36554815
+    "reads": 36554815,
+    "ribofrac": "0.0115"
   },
   "ERR3562944": {
     "country": "Denmark",
     "date": "2016-09-29",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 37096227
+    "reads": 37096227,
+    "ribofrac": "0.0119"
   },
   "ERR3562945": {
     "country": "Denmark",
     "date": "2016-10-02",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 27182426
+    "reads": 27182426,
+    "ribofrac": "0.0118"
   },
   "ERR3562946": {
     "country": "Denmark",
     "date": "2016-10-06",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 25092715
+    "reads": 25092715,
+    "ribofrac": "0.0099"
   },
   "ERR3562947": {
     "country": "Denmark",
     "date": "2016-10-06",
     "fine_location": "Avedoere",
     "location": "Copenhagen",
-    "reads": 30189273
+    "reads": 30189273,
+    "ribofrac": "0.0092"
   },
   "ERR3562948": {
     "country": "Denmark",
     "date": "2016-10-06",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 31497642
+    "reads": 31497642,
+    "ribofrac": "0.0041"
   },
   "ERR3562949": {
     "country": "Denmark",
     "date": "2016-10-09",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 36136496
+    "reads": 36136496,
+    "ribofrac": "0.0064"
   },
   "ERR3562950": {
     "country": "Denmark",
     "date": "2016-10-09",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 22919585
+    "reads": 22919585,
+    "ribofrac": "0.0045"
   },
   "ERR3562951": {
     "country": "Denmark",
     "date": "2016-10-12",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 39501521
+    "reads": 39501521,
+    "ribofrac": "0.0065"
   },
   "ERR3562952": {
     "country": "Denmark",
     "date": "2016-10-12",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 40802893
+    "reads": 40802893,
+    "ribofrac": "0.0075"
   },
   "ERR3562953": {
     "country": "Denmark",
     "date": "2016-10-15",
     "fine_location": "Avedoere",
     "location": "Copenhagen",
-    "reads": 18238408
+    "reads": 18238408,
+    "ribofrac": "0.0063"
   },
   "ERR3562954": {
     "country": "Denmark",
     "date": "2016-10-15",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 27072490
+    "reads": 27072490,
+    "ribofrac": "0.0092"
   },
   "ERR3562955": {
     "country": "Denmark",
     "date": "2016-10-23",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 25334667
+    "reads": 25334667,
+    "ribofrac": "0.0062"
   },
   "ERR3562956": {
     "country": "Denmark",
     "date": "2016-11-02",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 24826458
+    "reads": 24826458,
+    "ribofrac": "0.0046"
   },
   "ERR3562957": {
     "country": "Denmark",
     "date": "2016-11-05",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 33474765
+    "reads": 33474765,
+    "ribofrac": "0.0086"
   },
   "ERR3562958": {
     "country": "Denmark",
     "date": "2016-11-05",
     "fine_location": "Avedoere",
     "location": "Copenhagen",
-    "reads": 12539270
+    "reads": 12539270,
+    "ribofrac": "0.0106"
   },
   "ERR3562959": {
     "country": "Denmark",
     "date": "2016-11-13",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 63002618
+    "reads": 63002618,
+    "ribofrac": "0.0076"
   },
   "ERR3562960": {
     "country": "Denmark",
     "date": "2016-11-13",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 42337521
+    "reads": 42337521,
+    "ribofrac": "0.0065"
   },
   "ERR3562961": {
     "country": "Denmark",
     "date": "2016-11-17",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 31442414
+    "reads": 31442414,
+    "ribofrac": "0.0077"
   },
   "ERR3562962": {
     "country": "Denmark",
     "date": "2016-11-17",
     "fine_location": "Avedoere",
     "location": "Copenhagen",
-    "reads": 21349453
+    "reads": 21349453,
+    "ribofrac": "0.0077"
   },
   "ERR3562963": {
     "country": "Denmark",
     "date": "2016-11-17",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 6278583
+    "reads": 6278583,
+    "ribofrac": "0.0096"
   },
   "ERR3562964": {
     "country": "Denmark",
     "date": "2016-11-02",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 5708601
+    "reads": 5708601,
+    "ribofrac": "0.0128"
   },
   "ERR3562965": {
     "country": "Denmark",
     "date": "2016-11-09",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 5671392
+    "reads": 5671392,
+    "ribofrac": "0.0056"
   },
   "ERR3562966": {
     "country": "Denmark",
     "date": "2016-11-09",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 8529644
+    "reads": 8529644,
+    "ribofrac": "0.0077"
   },
   "ERR3562967": {
     "country": "Denmark",
     "date": "2016-11-26",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 15148425
+    "reads": 15148425,
+    "ribofrac": "0.0111"
   },
   "ERR3562968": {
     "country": "Denmark",
     "date": "2016-11-26",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 14797092
+    "reads": 14797092,
+    "ribofrac": "0.0093"
   },
   "ERR3562969": {
     "country": "Denmark",
     "date": "2016-12-04",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 8436726
+    "reads": 8436726,
+    "ribofrac": "0.005"
   },
   "ERR3562970": {
     "country": "Denmark",
     "date": "2016-12-07",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 16892235
+    "reads": 16892235,
+    "ribofrac": "0.0085"
   },
   "ERR3562971": {
     "country": "Denmark",
     "date": "2016-12-07",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 4759918
+    "reads": 4759918,
+    "ribofrac": "0.0134"
   },
   "ERR3562972": {
     "country": "Denmark",
     "date": "2016-12-09",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 5501619
+    "reads": 5501619,
+    "ribofrac": "0.0077"
   },
   "ERR3562973": {
     "country": "Denmark",
     "date": "2016-12-12",
     "fine_location": "Avedoere",
     "location": "Copenhagen",
-    "reads": 5558370
+    "reads": 5558370,
+    "ribofrac": "0.0068"
   },
   "ERR3562974": {
     "country": "Denmark",
     "date": "2016-12-12",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 6788992
+    "reads": 6788992,
+    "ribofrac": "0.0078"
   },
   "ERR3562975": {
     "country": "Denmark",
     "date": "2016-12-12",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 147999
+    "reads": 147999,
+    "ribofrac": "0.0117"
   },
   "ERR3562976": {
     "country": "Denmark",
     "date": "2016-12-12",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 4354195
+    "reads": 4354195,
+    "ribofrac": "0.0186"
   },
   "ERR3562977": {
     "country": "Denmark",
     "date": "2016-12-18",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 5973558
+    "reads": 5973558,
+    "ribofrac": "0.0086"
   },
   "ERR3562978": {
     "country": "Denmark",
     "date": "2016-12-18",
     "fine_location": "Avedoere",
     "location": "Copenhagen",
-    "reads": 5787830
+    "reads": 5787830,
+    "ribofrac": "0.0069"
   },
   "ERR3562979": {
     "country": "Denmark",
     "date": "2016-12-19",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 3500448
+    "reads": 3500448,
+    "ribofrac": "0.0086"
   },
   "ERR3562980": {
     "country": "Denmark",
     "date": "2016-12-19",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 3278752
+    "reads": 3278752,
+    "ribofrac": "0.0049"
   },
   "ERR3562981": {
     "country": "Denmark",
     "date": "2016-12-22",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 3896209
+    "reads": 3896209,
+    "ribofrac": "0.0089"
   },
   "ERR3562982": {
     "country": "Denmark",
     "date": "2016-12-22",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 3244305
+    "reads": 3244305,
+    "ribofrac": "0.006"
   },
   "ERR3562983": {
     "country": "Denmark",
     "date": "2017-01-01",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 5810800
+    "reads": 5810800,
+    "ribofrac": "0.0051"
   },
   "ERR3562984": {
     "country": "Denmark",
     "date": "2017-01-01",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 7013619
+    "reads": 7013619,
+    "ribofrac": "0.005"
   },
   "ERR3562985": {
     "country": "Denmark",
     "date": "2017-01-04",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 5211233
+    "reads": 5211233,
+    "ribofrac": "0.0078"
   },
   "ERR3562986": {
     "country": "Denmark",
     "date": "2017-01-08",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 4741926
+    "reads": 4741926,
+    "ribofrac": "0.0078"
   },
   "ERR3562987": {
     "country": "Denmark",
     "date": "2017-01-08",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 6526592
+    "reads": 6526592,
+    "ribofrac": "0.0088"
   },
   "ERR3562988": {
     "country": "Denmark",
     "date": "2017-01-12",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 4692300
+    "reads": 4692300,
+    "ribofrac": "0.0096"
   },
   "ERR3562989": {
     "country": "Denmark",
     "date": "2017-01-12",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 3582888
+    "reads": 3582888,
+    "ribofrac": "0.005"
   },
   "ERR3562990": {
     "country": "Denmark",
     "date": "2017-01-16",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 3748433
+    "reads": 3748433,
+    "ribofrac": "0.0088"
   },
   "ERR3562991": {
     "country": "Denmark",
     "date": "2017-01-04",
     "fine_location": "Avedoere",
     "location": "Copenhagen",
-    "reads": 3322199
+    "reads": 3322199,
+    "ribofrac": "0.0059"
   },
   "ERR3562992": {
     "country": "Denmark",
     "date": "2017-01-18",
     "fine_location": "Avedoere",
     "location": "Copenhagen",
-    "reads": 4153902
+    "reads": 4153902,
+    "ribofrac": "0.0076"
   },
   "ERR3562993": {
     "country": "Denmark",
     "date": "2017-01-24",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 4760953
+    "reads": 4760953,
+    "ribofrac": "0.008"
   },
   "ERR3562994": {
     "country": "Denmark",
     "date": "2017-01-24",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 4439550
+    "reads": 4439550,
+    "ribofrac": "0.011"
   },
   "ERR3562995": {
     "country": "Denmark",
     "date": "2017-01-27",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 2942977
+    "reads": 2942977,
+    "ribofrac": "0.0035"
   },
   "ERR3562996": {
     "country": "Denmark",
     "date": "2017-01-27",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 4336115
+    "reads": 4336115,
+    "ribofrac": "0.0068"
   },
   "ERR3562997": {
     "country": "Denmark",
     "date": "2017-02-02",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 4213506
+    "reads": 4213506,
+    "ribofrac": "0.0039"
   },
   "ERR3562998": {
     "country": "Denmark",
     "date": "2017-02-07",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 3277481
+    "reads": 3277481,
+    "ribofrac": "0.0088"
   },
   "ERR3562999": {
     "country": "Denmark",
     "date": "2017-02-07",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 4110030
+    "reads": 4110030,
+    "ribofrac": "0.0121"
   },
   "ERR3563000": {
     "country": "Denmark",
     "date": "2017-02-11",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 5902021
+    "reads": 5902021,
+    "ribofrac": "0.0099"
   },
   "ERR3563001": {
     "country": "Denmark",
     "date": "2017-02-02",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 602118
+    "reads": 602118,
+    "ribofrac": "0.008"
   },
   "ERR3563002": {
     "country": "Denmark",
     "date": "2017-02-02",
     "fine_location": "Avedoere",
     "location": "Copenhagen",
-    "reads": 4049043
+    "reads": 4049043,
+    "ribofrac": "0.0104"
   },
   "ERR3563003": {
     "country": "Denmark",
     "date": "2017-02-11",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 6036925
+    "reads": 6036925,
+    "ribofrac": "0.0102"
   },
   "ERR3563004": {
     "country": "Denmark",
     "date": "2017-02-13",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 4247482
+    "reads": 4247482,
+    "ribofrac": "0.0067"
   },
   "ERR3563005": {
     "country": "Denmark",
     "date": "2017-02-13",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 7322178
+    "reads": 7322178,
+    "ribofrac": "0.0059"
   },
   "ERR3563006": {
     "country": "Denmark",
     "date": "2017-02-13",
     "fine_location": "Avedoere",
     "location": "Copenhagen",
-    "reads": 4110888
+    "reads": 4110888,
+    "ribofrac": "0.0097"
   },
   "ERR3563007": {
     "country": "Denmark",
     "date": "2017-02-17",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 479392
+    "reads": 479392,
+    "ribofrac": "0.0146"
   },
   "ERR3563008": {
     "country": "Denmark",
     "date": "2017-02-22",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 490073
+    "reads": 490073,
+    "ribofrac": "0.0052"
   },
   "ERR3563009": {
     "country": "Denmark",
     "date": "2017-02-28",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 660584
+    "reads": 660584,
+    "ribofrac": "0.0088"
   },
   "ERR3563010": {
     "country": "Denmark",
     "date": "2017-03-02",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 862410
+    "reads": 862410,
+    "ribofrac": "0.0032"
   },
   "ERR3563011": {
     "country": "Denmark",
     "date": "2017-03-05",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 755746
+    "reads": 755746,
+    "ribofrac": "0.0147"
   },
   "ERR3563012": {
     "country": "Denmark",
     "date": "2017-03-05",
     "fine_location": "Avedoere",
     "location": "Copenhagen",
-    "reads": 676214
+    "reads": 676214,
+    "ribofrac": "0.011"
   },
   "ERR3563013": {
     "country": "Denmark",
     "date": "2017-02-17",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 4751071
+    "reads": 4751071,
+    "ribofrac": "0.0078"
   },
   "ERR3563014": {
     "country": "Denmark",
     "date": "2017-02-22",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 2075413
+    "reads": 2075413,
+    "ribofrac": "0.0049"
   },
   "ERR3563015": {
     "country": "Denmark",
     "date": "2017-02-22",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 23907895
+    "reads": 23907895,
+    "ribofrac": "0.0048"
   },
   "ERR3563016": {
     "country": "Denmark",
     "date": "2017-03-02",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 3465811
+    "reads": 3465811,
+    "ribofrac": "0.0088"
   },
   "ERR3563017": {
     "country": "Denmark",
     "date": "2017-03-05",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 7443912
+    "reads": 7443912,
+    "ribofrac": "0.0041"
   },
   "ERR3563018": {
     "country": "Denmark",
     "date": "2017-03-10",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 16762800
+    "reads": 16762800,
+    "ribofrac": "0.0077"
   },
   "ERR3563019": {
     "country": "Denmark",
     "date": "2017-03-16",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 18099044
+    "reads": 18099044,
+    "ribofrac": "0.0123"
   },
   "ERR3563020": {
     "country": "Denmark",
     "date": "2017-03-16",
     "fine_location": "Avedoere",
     "location": "Copenhagen",
-    "reads": 19724440
+    "reads": 19724440,
+    "ribofrac": "0.0057"
   },
   "ERR3563021": {
     "country": "Denmark",
     "date": "2017-03-16",
     "fine_location": "Avedoere",
     "location": "Copenhagen",
-    "reads": 22337982
+    "reads": 22337982,
+    "ribofrac": "0.0066"
   },
   "ERR3563022": {
     "country": "Denmark",
     "date": "2017-03-21",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 13605607
+    "reads": 13605607,
+    "ribofrac": "0.0054"
   },
   "ERR3563023": {
     "country": "Denmark",
     "date": "2017-03-21",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 16581044
+    "reads": 16581044,
+    "ribofrac": "0.0066"
   },
   "ERR3563024": {
     "country": "Denmark",
     "date": "2017-03-27",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 21522701
+    "reads": 21522701,
+    "ribofrac": "0.0096"
   },
   "ERR3563025": {
     "country": "Denmark",
     "date": "2017-03-27",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 21792992
+    "reads": 21792992,
+    "ribofrac": "0.0096"
   },
   "ERR3563026": {
     "country": "Denmark",
     "date": "2017-03-10",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 15396195
+    "reads": 15396195,
+    "ribofrac": "0.0093"
   },
   "ERR3563027": {
     "country": "Denmark",
     "date": "2017-05-13",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 29742375
+    "reads": 29742375,
+    "ribofrac": "0.011"
   },
   "ERR3563028": {
     "country": "Denmark",
     "date": "2017-05-22",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 20039947
+    "reads": 20039947,
+    "ribofrac": "0.0075"
   },
   "ERR3563029": {
     "country": "Denmark",
     "date": "2017-04-11",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 26723267
+    "reads": 26723267,
+    "ribofrac": "0.008"
   },
   "ERR3563030": {
     "country": "Denmark",
     "date": "2017-04-11",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 23959329
+    "reads": 23959329,
+    "ribofrac": "0.0115"
   },
   "ERR3563031": {
     "country": "Denmark",
     "date": "2017-04-18",
     "fine_location": "Avedoere",
     "location": "Copenhagen",
-    "reads": 34509363
+    "reads": 34509363,
+    "ribofrac": "0.0056"
   },
   "ERR3563032": {
     "country": "Denmark",
     "date": "2017-04-24",
     "fine_location": "Avedoere",
     "location": "Copenhagen",
-    "reads": 32718780
+    "reads": 32718780,
+    "ribofrac": "0.009"
   },
   "ERR3563033": {
     "country": "Denmark",
     "date": "2017-06-05",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 25367568
+    "reads": 25367568,
+    "ribofrac": "0.0107"
   },
   "ERR3563034": {
     "country": "Denmark",
     "date": "2017-03-06",
     "fine_location": "Avedoere",
     "location": "Copenhagen",
-    "reads": 35225837
+    "reads": 35225837,
+    "ribofrac": "0.0077"
   },
   "ERR3563035": {
     "country": "Denmark",
     "date": "2017-05-15",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 20782430
+    "reads": 20782430,
+    "ribofrac": "0.0119"
   },
   "ERR3563036": {
     "country": "Denmark",
     "date": "2017-04-05",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 25542706
+    "reads": 25542706,
+    "ribofrac": "0.008"
   },
   "ERR3563037": {
     "country": "Denmark",
     "date": "2017-04-11",
     "fine_location": "Avedoere",
     "location": "Copenhagen",
-    "reads": 24898373
+    "reads": 24898373,
+    "ribofrac": "0.0025"
   },
   "ERR3563038": {
     "country": "Denmark",
     "date": "2017-04-20",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 19122453
+    "reads": 19122453,
+    "ribofrac": "0.0066"
   },
   "ERR3563039": {
     "country": "Denmark",
     "date": "2017-04-24",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 29738766
+    "reads": 29738766,
+    "ribofrac": "0.008"
   },
   "ERR3563040": {
     "country": "Denmark",
     "date": "2017-04-07",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 22222549
+    "reads": 22222549,
+    "ribofrac": "0.0068"
   },
   "ERR3563041": {
     "country": "Denmark",
     "date": "2017-04-20",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 36195295
+    "reads": 36195295,
+    "ribofrac": "0.0141"
   },
   "ERR3563042": {
     "country": "Denmark",
     "date": "2017-05-04",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 21789607
+    "reads": 21789607,
+    "ribofrac": "0.0104"
   },
   "ERR3563043": {
     "country": "Denmark",
     "date": "2017-05-06",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 17917049
+    "reads": 17917049,
+    "ribofrac": "0.0078"
   },
   "ERR3563044": {
     "country": "Denmark",
     "date": "2017-05-09",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 25333875
+    "reads": 25333875,
+    "ribofrac": "0.0073"
   },
   "ERR3563045": {
     "country": "Denmark",
     "date": "2017-05-09",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 18291660
+    "reads": 18291660,
+    "ribofrac": "0.0044"
   },
   "ERR3563046": {
     "country": "Denmark",
     "date": "2017-05-16",
     "fine_location": "Avedoere",
     "location": "Copenhagen",
-    "reads": 25291008
+    "reads": 25291008,
+    "ribofrac": "0.0044"
   },
   "ERR3563047": {
     "country": "Denmark",
     "date": "2017-06-11",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 19696427
+    "reads": 19696427,
+    "ribofrac": "0.0036"
   },
   "ERR3563048": {
     "country": "Denmark",
     "date": "2017-07-01",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 20303496
+    "reads": 20303496,
+    "ribofrac": "0.0055"
   },
   "ERR3563049": {
     "country": "Denmark",
     "date": "2017-07-05",
     "fine_location": "Avedoere",
     "location": "Copenhagen",
-    "reads": 15481041
+    "reads": 15481041,
+    "ribofrac": "0.0076"
   },
   "ERR3563050": {
     "country": "Denmark",
     "date": "2017-07-05",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 20923232
+    "reads": 20923232,
+    "ribofrac": "0.0074"
   },
   "ERR3563051": {
     "country": "Denmark",
     "date": "2017-07-11",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 15038873
+    "reads": 15038873,
+    "ribofrac": "0.0086"
   },
   "ERR3563052": {
     "country": "Denmark",
     "date": "2017-07-18",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 14626320
+    "reads": 14626320,
+    "ribofrac": "0.0064"
   },
   "ERR3563053": {
     "country": "Denmark",
     "date": "2017-07-27",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 21625238
+    "reads": 21625238,
+    "ribofrac": "0.003"
   },
   "ERR3563054": {
     "country": "Denmark",
     "date": "2017-08-08",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 14657253
+    "reads": 14657253,
+    "ribofrac": "0.0091"
   },
   "ERR3563055": {
     "country": "Denmark",
     "date": "2017-08-08",
     "fine_location": "Avedoere",
     "location": "Copenhagen",
-    "reads": 19079997
+    "reads": 19079997,
+    "ribofrac": "0.008"
   },
   "ERR3563056": {
     "country": "Denmark",
     "date": "2017-08-09",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 22209957
+    "reads": 22209957,
+    "ribofrac": "0.006"
   },
   "ERR3563057": {
     "country": "Denmark",
     "date": "2017-08-23",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 20360669
+    "reads": 20360669,
+    "ribofrac": "0.0072"
   },
   "ERR3563058": {
     "country": "Denmark",
     "date": "2017-09-13",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 20995767
+    "reads": 20995767,
+    "ribofrac": "0.0074"
   },
   "ERR3563059": {
     "country": "Denmark",
     "date": "2017-09-13",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 27319848
+    "reads": 27319848,
+    "ribofrac": "0.0073"
   },
   "ERR3563060": {
     "country": "Denmark",
     "date": "2017-09-20",
     "fine_location": "Avedoere",
     "location": "Copenhagen",
-    "reads": 24060145
+    "reads": 24060145,
+    "ribofrac": "0.0069"
   },
   "ERR3563061": {
     "country": "Denmark",
     "date": "2017-10-05",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 20344545
+    "reads": 20344545,
+    "ribofrac": "0.0084"
   },
   "ERR3563062": {
     "country": "Denmark",
     "date": "2017-10-18",
     "fine_location": "Avedoere",
     "location": "Copenhagen",
-    "reads": 29839571
+    "reads": 29839571,
+    "ribofrac": "0.0074"
   },
   "ERR3563063": {
     "country": "Denmark",
     "date": "2017-10-27",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 18381584
+    "reads": 18381584,
+    "ribofrac": "0.0067"
   },
   "ERR3563064": {
     "country": "Denmark",
     "date": "2017-10-30",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 16416239
+    "reads": 16416239,
+    "ribofrac": "0.0051"
   },
   "ERR3563065": {
     "country": "Denmark",
     "date": "2017-11-01",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 24829934
+    "reads": 24829934,
+    "ribofrac": "0.0086"
   },
   "ERR3563066": {
     "country": "Denmark",
     "date": "2017-11-04",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 20768614
+    "reads": 20768614,
+    "ribofrac": "0.009"
   },
   "ERR3563067": {
     "country": "Denmark",
     "date": "2017-11-04",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 19836143
+    "reads": 19836143,
+    "ribofrac": "0.0074"
   },
   "ERR3563068": {
     "country": "Denmark",
     "date": "2017-12-04",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 17417656
+    "reads": 17417656,
+    "ribofrac": "0.005"
   },
   "ERR3563069": {
     "country": "Denmark",
     "date": "2018-01-02",
     "fine_location": "Avedoere",
     "location": "Copenhagen",
-    "reads": 21340627
+    "reads": 21340627,
+    "ribofrac": "0.008"
   },
   "ERR3563070": {
     "country": "Denmark",
     "date": "2018-01-02",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 22911953
+    "reads": 22911953,
+    "ribofrac": "0.013"
   },
   "ERR3563071": {
     "country": "Denmark",
     "date": "2018-01-15",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 19654671
+    "reads": 19654671,
+    "ribofrac": "0.004"
   },
   "ERR3563072": {
     "country": "Denmark",
     "date": "2018-02-02",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 21448662
+    "reads": 21448662,
+    "ribofrac": "0.0079"
   },
   "ERR3563073": {
     "country": "Denmark",
     "date": "2018-02-13",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 16065106
+    "reads": 16065106,
+    "ribofrac": "0.0048"
   },
   "ERR3563074": {
     "country": "Denmark",
     "date": "2018-02-26",
     "fine_location": "Avedoere",
     "location": "Copenhagen",
-    "reads": 20726813
+    "reads": 20726813,
+    "ribofrac": "0.0064"
   },
   "ERR3563075": {
     "country": "Denmark",
     "date": "2018-02-26",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 23304285
+    "reads": 23304285,
+    "ribofrac": "0.0084"
   },
   "ERR3563076": {
     "country": "Denmark",
     "date": "2018-02-26",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 21180843
+    "reads": 21180843,
+    "ribofrac": "0.0072"
   },
   "ERR3563077": {
     "country": "Denmark",
     "date": "2018-03-01",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 19168168
+    "reads": 19168168,
+    "ribofrac": "0.0079"
   },
   "ERR3563078": {
     "country": "Denmark",
     "date": "2018-03-01",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 22439195
+    "reads": 22439195,
+    "ribofrac": "0.01"
   },
   "ERR3563079": {
     "country": "Denmark",
     "date": "2018-03-06",
     "fine_location": "Avedoere",
     "location": "Copenhagen",
-    "reads": 22815543
+    "reads": 22815543,
+    "ribofrac": "0.009"
   },
   "ERR3563080": {
     "country": "Denmark",
     "date": "2018-03-06",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 28282923
+    "reads": 28282923,
+    "ribofrac": "0.0052"
   },
   "ERR3563081": {
     "country": "Denmark",
     "date": "2018-03-06",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 18297615
+    "reads": 18297615,
+    "ribofrac": "0.0062"
   },
   "ERR3563082": {
     "country": "Denmark",
     "date": "2018-03-12",
     "fine_location": "Avedoere",
     "location": "Copenhagen",
-    "reads": 23264523
+    "reads": 23264523,
+    "ribofrac": "0.0106"
   },
   "ERR3563083": {
     "country": "Denmark",
     "date": "2018-03-12",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 31510583
+    "reads": 31510583,
+    "ribofrac": "0.0029"
   },
   "ERR3563084": {
     "country": "Denmark",
     "date": "2018-03-12",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 29003821
+    "reads": 29003821,
+    "ribofrac": "0.0072"
   },
   "ERR3563085": {
     "country": "Denmark",
     "date": "2018-03-16",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 17899231
+    "reads": 17899231,
+    "ribofrac": "0.0043"
   },
   "ERR3563086": {
     "country": "Denmark",
     "date": "2018-03-16",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 21907158
+    "reads": 21907158,
+    "ribofrac": "0.0098"
   },
   "ERR3563087": {
     "country": "Denmark",
     "date": "2018-03-20",
     "fine_location": "Avedoere",
     "location": "Copenhagen",
-    "reads": 33771289
+    "reads": 33771289,
+    "ribofrac": "0.0064"
   },
   "ERR3563088": {
     "country": "Denmark",
     "date": "2018-03-20",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 26566940
+    "reads": 26566940,
+    "ribofrac": "0.0104"
   },
   "ERR3563089": {
     "country": "Denmark",
     "date": "2018-03-20",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 23756953
+    "reads": 23756953,
+    "ribofrac": "0.0075"
   },
   "ERR3563090": {
     "country": "Denmark",
     "date": "2018-04-22",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 22801450
+    "reads": 22801450,
+    "ribofrac": "0.0049"
   },
   "ERR3563091": {
     "country": "Denmark",
     "date": "2018-05-04",
     "fine_location": "Avedoere",
     "location": "Copenhagen",
-    "reads": 32643077
+    "reads": 32643077,
+    "ribofrac": "0.0043"
   },
   "ERR3563092": {
     "country": "Denmark",
     "date": "2018-05-04",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 22010122
+    "reads": 22010122,
+    "ribofrac": "0.0067"
   },
   "ERR3563093": {
     "country": "Denmark",
     "date": "2018-05-04",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 21156289
+    "reads": 21156289,
+    "ribofrac": "0.0064"
   },
   "ERR3563094": {
     "country": "Denmark",
     "date": "2018-05-12",
     "fine_location": "Avedoere",
     "location": "Copenhagen",
-    "reads": 23484001
+    "reads": 23484001,
+    "ribofrac": "0.0066"
   },
   "ERR3563095": {
     "country": "Denmark",
     "date": "2018-05-12",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 19651357
+    "reads": 19651357,
+    "ribofrac": "0.0074"
   },
   "ERR3563096": {
     "country": "Denmark",
     "date": "2018-05-12",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 23665483
+    "reads": 23665483,
+    "ribofrac": "0.0084"
   },
   "ERR3563097": {
     "country": "Denmark",
     "date": "2018-06-24",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 5663068
+    "reads": 5663068,
+    "ribofrac": "0.0073"
   },
   "ERR3563098": {
     "country": "Denmark",
     "date": "2018-07-12",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 21570059
+    "reads": 21570059,
+    "ribofrac": "0.0072"
   },
   "ERR3563100": {
     "country": "Denmark",
     "date": "2018-08-07",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 22741352
+    "reads": 22741352,
+    "ribofrac": "0.0081"
   },
   "ERR3563101": {
     "country": "Denmark",
     "date": "2018-08-07",
     "fine_location": "Avedoere",
     "location": "Copenhagen",
-    "reads": 21689132
+    "reads": 21689132,
+    "ribofrac": "0.006"
   },
   "ERR3563103": {
     "country": "Denmark",
     "date": "2018-08-21",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 29524901
+    "reads": 29524901,
+    "ribofrac": "0.005"
   },
   "ERR3563104": {
     "country": "Denmark",
     "date": "2018-09-05",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 23423083
+    "reads": 23423083,
+    "ribofrac": "0.0064"
   },
   "ERR3563105": {
     "country": "Denmark",
     "date": "2018-09-19",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 19603987
+    "reads": 19603987,
+    "ribofrac": "0.0055"
   },
   "ERR3563106": {
     "country": "Denmark",
     "date": "2018-09-26",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 28555467
+    "reads": 28555467,
+    "ribofrac": "0.0091"
   },
   "ERR3563107": {
     "country": "Denmark",
     "date": "2018-10-04",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 48437901
+    "reads": 48437901,
+    "ribofrac": "0.0095"
   },
   "ERR3563108": {
     "country": "Denmark",
     "date": "2018-10-18",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 12849078
+    "reads": 12849078,
+    "ribofrac": "0.0073"
   },
   "ERR3563109": {
     "country": "Denmark",
     "date": "2018-10-18",
     "fine_location": "Avedoere",
     "location": "Copenhagen",
-    "reads": 37674313
+    "reads": 37674313,
+    "ribofrac": "0.0053"
   },
   "ERR3563110": {
     "country": "Denmark",
     "date": "2018-10-18",
     "fine_location": "Amager",
     "location": "Copenhagen",
-    "reads": 15492296
+    "reads": 15492296,
+    "ribofrac": "0.0086"
   },
   "ERR3563111": {
     "country": "Denmark",
     "date": "2018-11-02",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 27254321
+    "reads": 27254321,
+    "ribofrac": "0.0036"
   },
   "ERR3563112": {
     "country": "Denmark",
     "date": "2018-11-27",
     "fine_location": "Valby",
     "location": "Copenhagen",
-    "reads": 18648489
+    "reads": 18648489,
+    "ribofrac": "0.0089"
   },
   "ERR4678558": {
     "country": "Austria",
@@ -11002,7 +11394,8 @@
     "date": "2018",
     "enrichment": "viral",
     "location": "Kashgar",
-    "reads": 201880938
+    "reads": 201880938,
+    "ribofrac": "0.0486"
   },
   "SRR12204735": {
     "country": "China",
@@ -19898,6 +20291,7 @@
     "fine_location": "WTP-J",
     "location": "Houston",
     "reads": 6207281,
+    "ribofrac": "0.4853",
     "state": "Texas"
   },
   "SRR23800642": {
@@ -19908,6 +20302,7 @@
     "fine_location": "WTP-I",
     "location": "Houston",
     "reads": 1264519,
+    "ribofrac": "0.4737",
     "state": "Texas"
   },
   "SRR23800643": {
@@ -19918,6 +20313,7 @@
     "fine_location": "Jail-H",
     "location": "Houston",
     "reads": 11099561,
+    "ribofrac": "0.3554",
     "state": "Texas"
   },
   "SRR23800644": {
@@ -19928,6 +20324,7 @@
     "fine_location": "Shelter-G",
     "location": "Houston",
     "reads": 6128079,
+    "ribofrac": "0.3799",
     "state": "Texas"
   },
   "SRR23800645": {
@@ -19938,6 +20335,7 @@
     "fine_location": "Shelter-F",
     "location": "Houston",
     "reads": 9096343,
+    "ribofrac": "0.4843",
     "state": "Texas"
   },
   "SRR23800646": {
@@ -19948,6 +20346,7 @@
     "fine_location": "Nursing Home-E",
     "location": "Houston",
     "reads": 1393808,
+    "ribofrac": "0.2569",
     "state": "Texas"
   },
   "SRR23800647": {
@@ -19958,6 +20357,7 @@
     "fine_location": "Nursing Home-D",
     "location": "Houston",
     "reads": 13716093,
+    "ribofrac": "0.1385",
     "state": "Texas"
   },
   "SRR23800648": {
@@ -19968,6 +20368,7 @@
     "fine_location": "High School-C",
     "location": "Houston",
     "reads": 9700627,
+    "ribofrac": "0.2525",
     "state": "Texas"
   },
   "SRR23800649": {
@@ -19978,6 +20379,7 @@
     "fine_location": "WTP-O",
     "location": "Houston",
     "reads": 37003891,
+    "ribofrac": "0.48",
     "state": "Texas"
   },
   "SRR23800650": {
@@ -19988,6 +20390,7 @@
     "fine_location": "WTP-O-DE",
     "location": "Houston",
     "reads": 5813267,
+    "ribofrac": "0.0454",
     "state": "Texas"
   },
   "SRR23800651": {
@@ -19998,6 +20401,7 @@
     "fine_location": "WTP-M",
     "location": "Houston",
     "reads": 34651108,
+    "ribofrac": "0.2998",
     "state": "Texas"
   },
   "SRR23800652": {
@@ -20008,6 +20412,7 @@
     "fine_location": "WTP-M-DE",
     "location": "Houston",
     "reads": 560881,
+    "ribofrac": "0.0359",
     "state": "Texas"
   },
   "SRR23800653": {
@@ -20018,6 +20423,7 @@
     "fine_location": "WTP-O",
     "location": "Houston",
     "reads": 10662590,
+    "ribofrac": "0.5887",
     "state": "Texas"
   },
   "SRR23800654": {
@@ -20028,6 +20434,7 @@
     "fine_location": "WTP-N",
     "location": "Houston",
     "reads": 7894842,
+    "ribofrac": "0.4791",
     "state": "Texas"
   },
   "SRR23800655": {
@@ -20038,6 +20445,7 @@
     "fine_location": "WTP-M",
     "location": "Houston",
     "reads": 12787376,
+    "ribofrac": "0.3247",
     "state": "Texas"
   },
   "SRR23800656": {
@@ -20048,6 +20456,7 @@
     "fine_location": "WTP-L",
     "location": "Houston",
     "reads": 11850543,
+    "ribofrac": "0.448",
     "state": "Texas"
   },
   "SRR23800657": {
@@ -20058,6 +20467,7 @@
     "fine_location": "WTP-K",
     "location": "Houston",
     "reads": 3740438,
+    "ribofrac": "0.4588",
     "state": "Texas"
   },
   "SRR23800658": {
@@ -20068,6 +20478,7 @@
     "fine_location": "Child Care-B",
     "location": "Houston",
     "reads": 865136,
+    "ribofrac": "0.2283",
     "state": "Texas"
   },
   "SRR23800659": {
@@ -20078,6 +20489,7 @@
     "fine_location": "Child Care-A",
     "location": "Houston",
     "reads": 1345017,
+    "ribofrac": "0.1915",
     "state": "Texas"
   },
   "SRR23998353": {
