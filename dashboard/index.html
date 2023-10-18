@@ -854,7 +854,7 @@ function redisplay() {
     ["date", "dates"],
     ["samples", "samples"],
     ["enrichment", "enrichments"],
-    ["ribocounts", "rRNA"],
+    ["ribofrac", "rRNA"],
     ["reads", "reads"]]) {
 
     const tr = e("tr");
@@ -910,17 +910,17 @@ function redisplay() {
         }
         column_totals.push(total_reads);
         tr.appendChild(e("td", human_readable(total_reads) + " " + plural));
-      } else if (property == "ribocounts") {
-        let total_reads = 0;
-        let total_ribocounts = 0;
+      } else if (property == "ribofrac") {
+        let total_samples = 0;
+        let total_ribofrac = 0;
         for (const sample of samples) {
-          if (sample_metadata[sample].hasOwnProperty("ribocounts")) {
-            total_reads += sample_metadata[sample].reads;
-            total_ribocounts += sample_metadata[sample].ribocounts;
+          if (sample_metadata[sample].hasOwnProperty("ribofrac")) {
+            total_samples++;
+            total_ribofrac += Number(sample_metadata[sample].ribofrac);
           }
         }
-        tr.appendChild(e("td", (total_reads > 0 ? (
-          (100 * total_ribocounts / total_reads).toFixed(1) + "%") : "--") + " " + plural));
+        tr.appendChild(e("td", (total_samples > 0 ? (
+          (100 * total_ribofrac / total_samples).toFixed(1) + "%") : "--") + " " + plural));
       } else {
         const vals = new Set();
         for (const sample of samples) {
