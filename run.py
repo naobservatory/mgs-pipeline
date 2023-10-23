@@ -315,23 +315,22 @@ def ribofrac(args, subset_size=1000):
                 non_rrna_count = sum(1 for _ in FastqGeneralIterator(open(tmp_fq_outputs[0], 'rt')))
                 rrna_reads_dict[inputs[0]] = subset_reads - non_rrna_count
 
-        # Extract the fractions of rRNA reads for each input
-        fractions_rrna_in_subset = [
-            rrna_reads_dict[input_filename] / subset_reads_dict[input_filename]
-            for input_filename in total_reads_dict
-        ]
-
-        # Use the total number of reads for each input as weights
-        weights = list(total_reads_dict.values())
-
         # Calculate the weighted average fraction of rRNA reads across all inputs in sample using numpy
         if sum(total_reads_dict.values()) == 0:
             # Sample has zero reads: saves "nan" to ribofrac txt file
-            weighted_rrna_fraction = np.nan
+            fraction_rrna = np.nan
         else:
-            weighted_rrna_fraction = np.average(fractions_rrna_in_subset, weights=weights)
+            # Extract the fractions of rRNA reads for each input
+            fractions_rrna_in_subset = [
+                rrna_reads_dict[input_filename] / subset_reads_dict[input_filename]
+                for input_filename in total_reads_dict
+            ]
 
-        fraction_rrna = round(weighted_rrna_fraction, 4)
+            # Use the total number of reads for each input as weights
+            weights = list(total_reads_dict.values())
+            weighted_rrna_fraction = np.average(fractions_rrna_in_subset, weights=weights)
+            fraction_rrna = round(weighted_rrna_fraction, 4)
+
         print(f"Estimated fraction of rRNA reads in {sample} = {round(fraction_rrna*100, 2)}%")
 
         # Save fraction of rRNA reads
