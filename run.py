@@ -657,10 +657,13 @@ def hvreads(args):
                      'utf-8').split("\n")
          if x.strip()]
 
-      seqs = {} # seqid -> kraken, fwd, rev
-      for _, seq_id, _, _, kraken_details in all_matches:
-         seqs[seq_id] = [kraken_details]
+      seqs = {} # seqid -> kraken_assignment, kraken_hits, fwd, rev
+      for _, seq_id, kraken_assignment, _, kraken_details in all_matches:
+         assignment_taxid = int(
+               re.search(r"\(taxid (\d+)\)", kraken_assignment).group(1)
+         )
 
+         seqs[seq_id] = [assignment_taxid, kraken_details]
       for cleaned_input in sorted(available_cleaned_inputs):
          if not cleaned_input.startswith(sample): continue
          if ".settings" in cleaned_input: continue
