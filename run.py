@@ -359,7 +359,9 @@ def ribofrac(args, subset_size=1000):
         weights = list(total_reads_dict.values())
 
         # Calculate the weighted average fraction of rRNA reads across all inputs in sample using numpy
-        weighted_rrna_fraction = np.average(fractions_rrna_in_subset, weights=weights)
+        weighted_rrna_fraction = -1
+        if sum(weights) > 0:
+           np.average(fractions_rrna_in_subset, weights=weights)
 
         fraction_rrna = round(weighted_rrna_fraction, 4)
         print(f"Estimated fraction of rRNA reads in {sample} = {round(fraction_rrna*100, 2)}%")
