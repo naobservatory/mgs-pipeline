@@ -181,7 +181,13 @@ def count_dups(hvr_fname):
         hvr = {}
 
     by_start_end = defaultdict(list) # start, end -> read id
-    for read_id, (kraken_info, *reads) in sorted(hvr.items()):
+    for read_id, read_info in sorted(hvr.items()):
+        if type(read_info[0]) == int:
+            taxid, kraken_info, *reads = read_info
+        else:
+            taxid = -1
+            kraken_info, *reads = read_info
+
         if not reads:
             print(hvr_fname, read_id)
             continue
