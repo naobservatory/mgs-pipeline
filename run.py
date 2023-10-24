@@ -104,6 +104,7 @@ def get_adapters(in1, in2, adapter1_fname, adapter2_fname):
       "--file1", in1,
       "--file2", in2,
       "--identify-adapters",
+      "--qualitymax", "45", # Aviti goes up to N
       "--threads", "4"])
    output = output.decode("utf-8")
 
@@ -174,6 +175,7 @@ def adapter_removal(args, dirname, trim_quality, collapse):
                 "--file2", in2,
                 "--basename", sample,
                 "--threads", "4",
+                "--qualitymax", "45", # Aviti goes up to N                
                 "--adapter1", adapter1,
                 "--adapter2", adapter2,
                 "--gzip"]
