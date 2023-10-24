@@ -639,8 +639,8 @@ def hvreads(args):
       min_size=100)
 
    existing_outputs = get_files(args, "hvreads",
-                                # date we added quality scores
-                                min_date='2023-09-18')
+                                # date we added kraken assignments
+                                min_date='2023-10-24')
 
    for sample in get_samples(args):
       output = "%s.hvreads.json" % sample
