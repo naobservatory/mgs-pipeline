@@ -638,7 +638,81 @@ def samplereads(args):
             "%s/%s/samplereads/" % (S3_BUCKET, args.bioproject)])
 
 def readlengths(args):
-   pass
+   available_samplereads_inputs = get_files(args, "samplereads")
+   available_cleaned_inputs = get_files(args, "cleaned")
+   existing_outputs = get_files(args, "readlengths", min_date="2023-11-04")
+
+   for sample in get_samples(args):
+      output = "%s.rl.json.gz" % sample
+      if output in existing_outputs: continue
+
+      inputs = [x for x in available_samplereads_inputs if x.startswith(sample)]
+      if not any(inputs):
+         continue
+      fname, = inputs
+
+      target_read_ids = defaultdict(set)
+      process = subprocess.Popen(
+         ["aws", "s3", "cp",
+          "%s/%s/samplereads/%s" % (S3_BUCKET, args.bioproject, fname),
+          "-"],
+         stdout=subprocess.PIPE,
+         shell=False)
+      try:
+         with gzip.open(process.stdout, "rt") as inf:
+            for line in inf:
+               bits = line.rstrip("\n").split("\t")
+               category, read_id = bits
+               target_read_ids[read_id].add(category)
+      finally:
+         process.terminate()
+
+      inputs = [x for x in available_cleaned_inputs if x.startswith(sample)]
+      assert inputs
+
+      lengths = {}
+      for category in "abhv":
+         lengths[category] = {"NC": 0}
+
+      for fname in inputs:
+         if ".collapsed." not in fname:
+            continue
+
+         process = subprocess.Popen(
+            ["aws", "s3", "cp",
+             "%s/%s/cleaned/%s" % (S3_BUCKET, args.bioproject, fname),
+             "-"],
+            stdout=subprocess.PIPE,
+            shell=False)
+         try:
+            with gzip.open(process.stdout, "rt") as inf:
+               for title, sequence, quality in FastqGeneralIterator(inf):
+                  title = title.split()[0]
+                  if title not in target_read_ids: continue
+
+                  for category in target_read_ids[title]:
+                     seql = len(sequence)
+                     if seql not in lengths[category]:
+                        lengths[category][seql] = 1
+                     else:
+                        lengths[category][seql] += 1
+
+                  del target_read_ids[title]
+         finally:
+            process.terminate()
+
+      # We removed as we went, so any left here are non-collapsed
+      for target_read_id, categories in target_read_ids.items():
+         for category in categories:
+            lengths[category]["NC"] += 1
+
+      with tempdir("readlengths", sample) as workdir:
+         with gzip.open(output, "wt") as outf:
+            json.dump(lengths, outf)
+
+         subprocess.check_call([
+            "aws", "s3", "cp", output,
+            "%s/%s/readlengths/" % (S3_BUCKET, args.bioproject)])
 
 def humanviruses(args):
    human_viruses = {}
