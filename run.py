@@ -893,8 +893,9 @@ def print_status(args):
    running_processes = subprocess.check_output(["ps", "aux"]).decode("utf-8")
 
    stages = ["raw", "cleaned", "ribofrac", "riboreads", "processed", "cladecounts", "humanviruses",
-             "allmatches", "hvreads"]
-   short_stages = ["raw", "clean", "rf", "rr", "kraken", "cc", "hv", "am", "hvr"]
+             "allmatches", "hvreads", "samplereads", "readlengths"]
+   short_stages = ["raw", "clean", "rf", "rr", "kraken", "cc", "hv", "am",
+                   "hvr", "sr", "rl"]
 
    papers_to_projects = defaultdict(list) # paper -> [project]
    for bioproject in bioprojects:
