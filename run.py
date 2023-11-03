@@ -2,6 +2,7 @@
 
 import re
 import os
+import warnings
 import glob
 import gzip
 import json
@@ -238,11 +239,34 @@ def ribofrac(args, subset_size=1000):
 
         return output_files, total_reads, actual_subset_size
 
+    def file_integrity_check(filename):
+        """
+        Checks if the file exists and contains any reads.
+        If either condition fails, it raises a warning.
+        """
+        if not os.path.exists(filename):
+            warnings.warn(f"File {filename} does not exist!")
+            return False
+        
+        with gzip.open(filename, 'rt') as f:
+            try:
+                # Check for the first read using the iterator
+                next(FastqGeneralIterator(f))
+            except StopIteration:
+                warnings.warn(f"File {filename} contains no reads!")
+                return False
+
+        return True
+
 
     for sample in get_samples(args):
         # Check for name of output file
         sample_output_file = sample + ".ribofrac.txt"
         if sample_output_file in existing_outputs: continue
+
+        # Track for error handling
+        total_files_in_sample = 0
+        empty_files_in_sample = 0
 
         total_reads_dict = {}
         subset_reads_dict = {}
@@ -251,6 +275,7 @@ def ribofrac(args, subset_size=1000):
             if not potential_input.startswith(sample): continue
             if ".settings" in potential_input: continue
             if "discarded" in potential_input: continue
+            total_files_in_sample += 1
 
             # Number of output and input files must match
             tmp_fq_output = potential_input.replace(".gz", ".subset.nonrrna.fq")
@@ -269,9 +294,18 @@ def ribofrac(args, subset_size=1000):
                     subprocess.check_call([
                         "aws", "s3", "cp", "%s/%s/cleaned/%s" % (
                             S3_BUCKET, args.bioproject, input_fname), input_fname])
+                    
+                    # Check file integrity
+                    file_valid = file_integrity_check(input_fname)
+                    if not file_valid:
+                        empty_files_in_sample += 1
 
                     # Ribodetector gets angry if the .fq extension isn't in the filename
                     os.rename(input_fname, input_fname.replace(".gz", ".fq.gz"))
+
+                if total_files_in_sample == empty_files_for_sample:
+                    print(f"Skipping {sample}... all files are empty.")
+                    continue
 
                 # Add .fq extensions to input files
                 inputs = [i.replace(".gz", ".fq.gz") for i in inputs]
@@ -318,20 +352,16 @@ def ribofrac(args, subset_size=1000):
                 rrna_reads_dict[inputs[0]] = subset_reads - non_rrna_count
 
         # Calculate the weighted average fraction of rRNA reads across all inputs in sample using numpy
-        if sum(total_reads_dict.values()) == 0:
-            # Sample has zero reads: saves "nan" to ribofrac txt file
-            fraction_rrna = np.nan
-        else:
-            # Extract the fractions of rRNA reads for each input
-            fractions_rrna_in_subset = [
+        # Extract the fractions of rRNA reads for each input
+        fractions_rrna_in_subset = [
                 rrna_reads_dict[input_filename] / subset_reads_dict[input_filename]
                 for input_filename in total_reads_dict
             ]
 
-            # Use the total number of reads for each input as weights
-            weights = list(total_reads_dict.values())
-            weighted_rrna_fraction = np.average(fractions_rrna_in_subset, weights=weights)
-            fraction_rrna = round(weighted_rrna_fraction, 4)
+        # Use the total number of reads for each input as weights
+        weights = list(total_reads_dict.values())
+        weighted_rrna_fraction = np.average(fractions_rrna_in_subset, weights=weights)
+        fraction_rrna = round(weighted_rrna_fraction, 4)
 
         print(f"Estimated fraction of rRNA reads in {sample} = {round(fraction_rrna*100, 2)}%")
 
