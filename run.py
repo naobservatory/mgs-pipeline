@@ -676,6 +676,12 @@ def readlengths(args):
 
       for fname in inputs:
          if ".collapsed." not in fname:
+            # We can only get fragment lengths from cases where we could
+            # collapse.  Fragments longer than fwd + rev - minoverlap could be
+            # any length for all we know.
+            #
+            # (It would be possible to do better by aligning to genomes, but
+            # that's a ton of work)
             continue
 
          process = subprocess.Popen(
