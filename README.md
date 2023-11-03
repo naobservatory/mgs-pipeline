@@ -126,6 +126,8 @@ Available files, and their formats:
     * b: bacterial reads
     * v: viral reads
     * h: human viral reads
+  * These are sampled by assuming that order within a sequencing run doesn't
+    matter: it takes the first 100,000 of each category.
   * Columns are:
     * Category (a/b/v/h)
     * Read ID
