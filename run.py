@@ -175,7 +175,7 @@ def adapter_removal(args, dirname, trim_quality, collapse):
                 "--file2", in2,
                 "--basename", sample,
                 "--threads", "4",
-                "--qualitymax", "45", # Aviti goes up to N                
+                "--qualitymax", "45", # Aviti goes up to N
                 "--adapter1", adapter1,
                 "--adapter2", adapter2,
                 "--gzip"]
@@ -252,7 +252,7 @@ def ribofrac(args, subset_size=1000):
             if ".settings" in potential_input: continue
             if "discarded" in potential_input: continue
 
-            # Number of output and input files must match 
+            # Number of output and input files must match
             tmp_fq_output = potential_input.replace(".gz", ".subset.nonrrna.fq")
             tmp_fq_outputs = [tmp_fq_output]
             inputs = [potential_input]
@@ -280,7 +280,7 @@ def ribofrac(args, subset_size=1000):
                 subsets, total_reads, subset_reads  = first_subset_fastq(inputs, subset_size)
                 subset_reads_dict[inputs[0]] = subset_reads
                 total_reads_dict[inputs[0]] = total_reads
-                
+
                 # Compute average read lengths. For paired-end reads, average length is
                 # computed only from pair1 reads.
                 print("Calculating average read length...")
@@ -353,7 +353,7 @@ def riboreads(args):
                                  # tiny files are empty; ignore them
                                  min_size=100)
     existing_outputs = get_files(args, "riboreads", min_date='2023-10-10')
-        
+
     for sample in get_samples(args):
         # Check for name of output file
         sample_output_file = sample + ".riboreads.txt"
@@ -367,7 +367,7 @@ def riboreads(args):
             if ".settings" in potential_input: continue
             if "discarded" in potential_input: continue
 
-            # Number of output and input files must match 
+            # Number of output and input files must match
             tmp_fq_output = potential_input.replace(".gz", ".nonrrna.fq")
             tmp_fq_outputs = [tmp_fq_output]
             inputs = [potential_input]
@@ -385,13 +385,13 @@ def riboreads(args):
                         "aws", "s3", "cp", "%s/%s/cleaned/%s" % (
                             S3_BUCKET, args.bioproject, input_fname), input_fname])
 
-                    # Ribodetector gets angry if the .fq extension isn't in the filename 
+                    # Ribodetector gets angry if the .fq extension isn't in the filename
                     os.rename(input_fname, input_fname.replace(".gz", ".fq.gz"))
 
                 # Add .fq extensions to input files
                 inputs = [i.replace(".gz", ".fq.gz") for i in inputs]
 
-                # Compute average read lengths. For paired-end reads, average length is 
+                # Compute average read lengths. For paired-end reads, average length is
                 # computed only from pair1 reads.
                 print("Calculating average read length...")
                 def calculate_average_read_length(file_path):
@@ -423,7 +423,7 @@ def riboreads(args):
                 ribodetector_cmd.extend(tmp_fq_outputs)
 
                 subprocess.check_call(ribodetector_cmd)
-                
+
                 def parse_reads(file_path):
                     total_reads = 0
                     seq_titles = []
@@ -467,7 +467,7 @@ def riboreads(args):
             with gzip.open(gzipped_file_path, 'wb') as gzipped_file:
                 for title in sample_rrna_reads:
                     gzipped_file.write(title + '\n')
-            
+
             subprocess.check_call([
                 "aws", "s3", "cp", gzipped_file_path, "%s/%s/riboreads/" % (
                     S3_BUCKET, args.bioproject)])
@@ -533,6 +533,112 @@ def cladecounts(args):
 
       subprocess.check_call([
          "./count_clades.sh", S3_BUCKET, args.bioproject, sample])
+
+SAMPLE_READS_TARGET_LEN = 100_000
+def samplereads(args):
+   human_viruses = set()
+   with open(os.path.join(THISDIR, "human-viruses.tsv")) as inf:
+      for line in inf:
+         taxid, _ = line.strip().split("\t")
+         human_viruses.add(int(taxid))
+
+   parents = {}
+   with open(os.path.join(THISDIR, "dashboard", "nodes.dmp")) as inf:
+      for line in inf:
+         child_taxid, parent_taxid, *_ = \
+            line.replace("\t|\n", "").split("\t|\t")
+         parents[int(child_taxid)] = int(parent_taxid)
+
+   def taxid_under(clade, taxid):
+      while taxid not in [0, 1]:
+         if taxid == clade:
+            return True
+         taxid = parents[taxid]
+      return False
+
+   def taxid_matches(taxid, category):
+      if category == "all":
+         return True
+      if category == "humanviral":
+         return taxid in human_viruses
+      return taxid_under(
+         {
+            "bacterial": 2,
+            "viral": 10239,
+         }[category], taxid)
+
+   available_inputs = get_files(args, "processed")
+   existing_outputs = get_files(args, "samplereads", min_date="2023-11-03")
+   for sample in get_samples(args):
+      output = "%s.sr.tsv.gz" % sample
+      if output in existing_outputs: continue
+
+      inputs = [x for x in available_inputs if x.startswith(sample)]
+      if not any(inputs):
+         continue
+
+      read_ids = {}
+      full_counts = Counter()
+      fname_counts = defaultdict(Counter)
+
+      for fname in inputs:
+         read_ids[fname] = {
+            "all": [],
+            "bacterial": [],
+            "viral": [],
+            "humanviral": [],
+         }
+         process = subprocess.Popen(
+            ["aws", "s3", "cp",
+             "%s/%s/processed/%s" % (S3_BUCKET, args.bioproject, fname),
+             "-"],
+            stdout=subprocess.PIPE,
+            shell=False)
+
+         try:
+            with gzip.open(process.stdout, "rt") as inf:
+               for line in inf:
+                  bits = line.rstrip("\n").split("\t")
+                  read_id = bits[1]
+                  full_assignment = bits[2]
+
+                  taxid = int(full_assignment.split()[-1].rstrip(")"))
+
+                  for category in read_ids[fname]:
+                     if taxid_matches(taxid, category):
+                        full_counts[category] += 1
+                        fname_counts[fname][category] += 1
+                        if (len(read_ids[fname][category]) <
+                            SAMPLE_READS_TARGET_LEN):
+                           read_ids[fname][category].append(read_id)
+         finally:
+            process.terminate()
+
+      subsetted_ids = {}
+      for category, full_count in full_counts.items():
+         subsetted_ids[category] = []
+         for fname in read_ids:
+            if full_count <= SAMPLE_READS_TARGET_LEN:
+               subsetted_ids[category].extend(read_ids[fname][category])
+            else:
+               target = (SAMPLE_READS_TARGET_LEN *
+                         fname_counts[fname][category] //
+                         full_count)
+
+               subsetted_ids[category].extend(read_ids[fname][category][:target])
+
+      with tempdir("samplereads", sample) as workdir:
+         with gzip.open(output, "wt") as outf:
+            for category in sorted(subsetted_ids):
+               for selected_read_id in sorted(subsetted_ids[category]):
+                  outf.write("%s\t%s\n" % (category[0], selected_read_id))
+
+         subprocess.check_call([
+            "aws", "s3", "cp", output,
+            "%s/%s/samplereads/" % (S3_BUCKET, args.bioproject)])
+
+def readlengths(args):
+   pass
 
 def humanviruses(args):
    human_viruses = {}
@@ -793,6 +899,8 @@ for stage_name, stage_fn in [("clean", clean),
                              ("humanviruses", humanviruses),
                              ("allmatches", allmatches),
                              ("hvreads", hvreads),
+                             ("samplereads", samplereads),
+                             ("readlengths", readlengths),
                              ]:
    STAGES_ORDERED.append(stage_name)
    STAGE_FNS[stage_name] = stage_fn

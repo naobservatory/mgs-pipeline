@@ -118,6 +118,37 @@ Available files, and their formats:
      * One line per input read with taxonomic classification and detailed hit
        information.
 
+* `samplereads/`: Itermediate, example reads by taxonomic category
+  * ex: `SRR14530724.sr.tsv.gz`
+  * TSV
+  * 100,000 examples (or as many as available) from each sample of:
+    * a: all reads
+    * b: bacterial reads
+    * v: viral reads
+    * h: human viral reads
+  * These are sampled by assuming that order within a sequencing run doesn't
+    matter: it takes the first 100,000 of each category.
+  * Columns are:
+    * Category (a/b/v/h)
+    * Read ID
+
+* `readlengths`: Output, distribution of read lengths by taxonomic category
+  * Not implemented yet!
+  * ex: `SRR14530724.rl.json.gz`
+  * JSON
+  * category -> length -> count
+  * Categories:
+    * a: all reads
+    * b: bacterial reads
+    * v: viral reads
+    * h: human viral reads
+  * Length is a number, and then "NC" is cases where cleaning was unable to
+    collapse the read.  In these cases all we know is that the fragment was
+    long enough to not get overlap.
+  * Because we currently don't have a stage that does adapter removal without
+    quality trimming, these will be an underestimate of fragment lengths,
+    especially for lower quality reads.
+
 * `allmatches/`: Intermediate, subset of `Kraken2` output matching human viruses
    * ex: `SRR14530724.allmatches.tsv`
    * TSV
