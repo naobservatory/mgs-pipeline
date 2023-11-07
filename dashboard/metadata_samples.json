@@ -4,126 +4,126 @@
     "date": "Summer 2013",
     "location": "Beijing",
     "reads": 78741713,
-    "ribofrac": "-1"
+    "ribofrac": "0.0137"
   },
   "ERR1224341": {
     "country": "China",
     "date": "Summer 2013",
     "location": "Beijing",
     "reads": 73884941,
-    "ribofrac": "-1"
+    "ribofrac": "0.0121"
   },
   "ERR1224342": {
     "country": "Greenland",
     "date": "Summer 2013",
     "location": "Kangerlussuaq",
     "reads": 75447717,
-    "ribofrac": "-1"
+    "ribofrac": "0.0085"
   },
   "ERR1224343": {
     "country": "Japan",
     "date": "Summer 2013",
     "location": "Tokyo",
     "reads": 67442305,
-    "ribofrac": "-1"
+    "ribofrac": "0.0096"
   },
   "ERR1224344": {
     "country": "Japan",
     "date": "Summer 2013",
     "location": "Tokyo",
     "reads": 80288799,
-    "ribofrac": "-1"
+    "ribofrac": "0.0081"
   },
   "ERR1224345": {
     "country": "USA",
     "date": "Summer 2013",
     "location": "Newark, NJ",
     "reads": 84806322,
-    "ribofrac": "-1"
+    "ribofrac": "0.01"
   },
   "ERR1224346": {
     "country": "USA",
     "date": "Summer 2013",
     "location": "Newark, NJ",
     "reads": 84697106,
-    "ribofrac": "-1"
+    "ribofrac": "0.0066"
   },
   "ERR1224347": {
     "country": "USA",
     "date": "Summer 2013",
     "location": "Newark, NJ",
     "reads": 90997010,
-    "ribofrac": "-1"
+    "ribofrac": "0.0061"
   },
   "ERR1224348": {
     "country": "Pakistan",
     "date": "Summer 2013",
     "location": "Islamabad",
     "reads": 114551217,
-    "ribofrac": "-1"
+    "ribofrac": "0.0156"
   },
   "ERR1224349": {
     "country": "Singapore",
     "date": "Summer 2013",
     "location": "Singapore",
     "reads": 66502365,
-    "ribofrac": "-1"
+    "ribofrac": "0.0106"
   },
   "ERR1224350": {
     "country": "Singapore",
     "date": "Summer 2013",
     "location": "Singapore",
     "reads": 107090114,
-    "ribofrac": "-1"
+    "ribofrac": "0.0064"
   },
   "ERR1224351": {
     "country": "Thailand",
     "date": "Summer 2013",
     "location": "Bankok",
     "reads": 72615045,
-    "ribofrac": "-1"
+    "ribofrac": "0.0072"
   },
   "ERR1224352": {
     "country": "Thailand",
     "date": "Summer 2013",
     "location": "Bankok",
     "reads": 104104233,
-    "ribofrac": "-1"
+    "ribofrac": "0.0125"
   },
   "ERR1224353": {
     "country": "Thailand",
     "date": "Summer 2013",
     "location": "Bankok",
     "reads": 85614108,
-    "ribofrac": "-1"
+    "ribofrac": "0.0132"
   },
   "ERR1224354": {
     "country": "Canada",
     "date": "Summer 2013",
     "location": "Toronto",
     "reads": 71907306,
-    "ribofrac": "-1"
+    "ribofrac": "0.0097"
   },
   "ERR1224355": {
     "country": "USA",
     "date": "Summer 2013",
     "location": "Washington DC",
     "reads": 91255988,
-    "ribofrac": "-1"
+    "ribofrac": "0.0073"
   },
   "ERR1224356": {
     "country": "USA",
     "date": "Summer 2013",
     "location": "Washington DC",
     "reads": 71504080,
-    "ribofrac": "-1"
+    "ribofrac": "0.0134"
   },
   "ERR1224357": {
     "country": "USA",
     "date": "Summer 2013",
     "location": "Washington DC",
     "reads": 88006830,
-    "ribofrac": "-1"
+    "ribofrac": "0.0086"
   },
   "ERR1414209": {
     "country": "Sweden",
@@ -1066,2366 +1066,2366 @@
     "date": "2016-02-01",
     "location": "Tirana",
     "reads": 40529941,
-    "ribofrac": "-1"
+    "ribofrac": "0.0046"
   },
   "ERR1713332": {
     "country": "Australia",
     "date": "2016-02-04",
     "location": "Canberra",
     "reads": 16343052,
-    "ribofrac": "-1"
+    "ribofrac": "0.003"
   },
   "ERR1713333": {
     "country": "Australia",
     "date": "2016-02-08",
     "location": "Melbourne",
     "reads": 6310888,
-    "ribofrac": "-1"
+    "ribofrac": "0.0045"
   },
   "ERR1713335": {
     "country": "Bulgaria",
     "date": "2016-02-04",
     "location": "Sofia",
     "reads": 25423122,
-    "ribofrac": "-1"
+    "ribofrac": "0.0081"
   },
   "ERR1713336": {
     "country": "Brazil",
     "date": "2016-02-16",
     "location": "Belo Horizonte",
     "reads": 23135106,
-    "ribofrac": "-1"
+    "ribofrac": "0.0041"
   },
   "ERR1713337": {
     "country": "Brazil",
     "date": "2016-02-15",
     "location": "Belem",
     "reads": 40497132,
-    "ribofrac": "-1"
+    "ribofrac": "0.0007"
   },
   "ERR1713338": {
     "country": "Botswana",
     "date": "2016-01-25",
     "location": "Gaborone",
     "reads": 20619819,
-    "ribofrac": "-1"
+    "ribofrac": "0.0015"
   },
   "ERR1713339": {
     "country": "Canada",
     "date": "2016-01-26",
     "location": "Regina",
     "reads": 3122541,
-    "ribofrac": "-1"
+    "ribofrac": "0.0065"
   },
   "ERR1713340": {
     "country": "Canada",
     "date": "2016-02-01",
     "location": "Calgary",
     "reads": 2080480,
-    "ribofrac": "-1"
+    "ribofrac": "0.0067"
   },
   "ERR1713341": {
     "country": "Canada",
     "date": "2016-02-01",
     "location": "Toronto",
     "reads": 17726986,
-    "ribofrac": "-1"
+    "ribofrac": "0.0075"
   },
   "ERR1713342": {
     "country": "Canada",
     "date": "2016-01-26",
     "location": "Ottawa",
     "reads": 45013223,
-    "ribofrac": "-1"
+    "ribofrac": "0.0045"
   },
   "ERR1713343": {
     "country": "Switzerland",
     "date": "2016-01-27",
     "location": "Bern",
     "reads": 11419255,
-    "ribofrac": "-1"
+    "ribofrac": "0.0046"
   },
   "ERR1713344": {
     "country": "China",
     "date": "2016-01-28",
     "location": "Guangzhou",
     "reads": 52319657,
-    "ribofrac": "-1"
+    "ribofrac": "0.0006"
   },
   "ERR1713345": {
     "country": "Cote d'Ivoire",
     "date": "2016-01-25",
     "location": "Abidjan",
     "reads": 30341667,
-    "ribofrac": "-1"
+    "ribofrac": "0.0079"
   },
   "ERR1713346": {
     "country": "Colombia",
     "date": "2016-01-27",
     "location": "Bogota",
     "reads": 28198167,
-    "ribofrac": "-1"
+    "ribofrac": "0.0025"
   },
   "ERR1713347": {
     "country": "Czech Republic",
     "date": "2016-02-01",
     "location": "Prague",
     "reads": 37949844,
-    "ribofrac": "-1"
+    "ribofrac": "0.0045"
   },
   "ERR1713348": {
     "country": "Germany",
     "date": "2016-02-08",
     "location": "Berlin",
     "reads": 10885310,
-    "ribofrac": "-1"
+    "ribofrac": "0.0047"
   },
   "ERR1713349": {
     "country": "Denmark",
     "date": "2016-03-02",
     "location": "Copenhagen",
     "reads": 52784111,
-    "ribofrac": "-1"
+    "ribofrac": "0.0044"
   },
   "ERR1713350": {
     "country": "Denmark",
     "date": "2016-03-02",
     "location": "Copenhagen",
     "reads": 59594589,
-    "ribofrac": "-1"
+    "ribofrac": "0.0087"
   },
   "ERR1713351": {
     "country": "Denmark",
     "date": "2016-03-02",
     "location": "Copenhagen",
     "reads": 27649699,
-    "ribofrac": "-1"
+    "ribofrac": "0.0051"
   },
   "ERR1713352": {
     "country": "Ecuador",
     "date": "2016-02-01",
     "location": "Quito",
     "reads": 68267683,
-    "ribofrac": "-1"
+    "ribofrac": "0.0063"
   },
   "ERR1713353": {
     "country": "Ecuador",
     "date": "2016-02-06",
     "location": "San Cristobal Island, Gal?pagos",
     "reads": 16576713,
-    "ribofrac": "-1"
+    "ribofrac": "0.0094"
   },
   "ERR1713354": {
     "country": "Spain",
     "date": "2016-02-10",
     "location": "Barcelona",
     "reads": 17223596,
-    "ribofrac": "-1"
+    "ribofrac": "0.0046"
   },
   "ERR1713355": {
     "country": "Ethiopia",
     "date": "2016-02-01",
     "location": "Addis Ababa",
     "reads": 53725938,
-    "ribofrac": "-1"
+    "ribofrac": "0.0035"
   },
   "ERR1713356": {
     "country": "Finland",
     "date": "2016-01-26",
     "location": "Helsinki",
     "reads": 22656065,
-    "ribofrac": "-1"
+    "ribofrac": "0.0065"
   },
   "ERR1713357": {
     "country": "Georgia",
     "date": "2016-01-25",
     "location": "Tbilisi",
     "reads": 25013204,
-    "ribofrac": "-1"
+    "ribofrac": "0.009"
   },
   "ERR1713358": {
     "country": "Ghana",
     "date": "2016-01-30",
     "location": "Tamale",
     "reads": 49868484,
-    "ribofrac": "-1"
+    "ribofrac": "0.0036"
   },
   "ERR1713359": {
     "country": "Gambia",
     "date": "2016-01-28",
     "location": "Banjul",
     "reads": 45821876,
-    "ribofrac": "-1"
+    "ribofrac": "0.0077"
   },
   "ERR1713360": {
     "country": "Croatia",
     "date": "2016-02-01",
     "location": "Zagreb",
     "reads": 16299576,
-    "ribofrac": "-1"
+    "ribofrac": "0.0101"
   },
   "ERR1713361": {
     "country": "Hungary",
     "date": "2016-02-02",
     "location": "Budapest",
     "reads": 4176231,
-    "ribofrac": "-1"
+    "ribofrac": "0.0051"
   },
   "ERR1713362": {
     "country": "India",
     "date": "2016-01-27",
     "location": "Kochi",
     "reads": 40014181,
-    "ribofrac": "-1"
+    "ribofrac": "0.0069"
   },
   "ERR1713363": {
     "country": "Ireland",
     "date": "2016-02-10",
     "location": "Galway",
     "reads": 36542372,
-    "ribofrac": "-1"
+    "ribofrac": "0.0039"
   },
   "ERR1713364": {
     "country": "Iran",
     "date": "2016-02-02",
     "location": "Tehran",
     "reads": 24265044,
-    "ribofrac": "-1"
+    "ribofrac": "0.0021"
   },
   "ERR1713365": {
     "country": "Iceland",
     "date": "2016-02-02",
     "location": "Reykjavik",
     "reads": 22537774,
-    "ribofrac": "-1"
+    "ribofrac": "0.0065"
   },
   "ERR1713366": {
     "country": "Israel",
     "date": "2016-01-31",
     "location": "Jerusalem",
     "reads": 4297115,
-    "ribofrac": "-1"
+    "ribofrac": "0.0037"
   },
   "ERR1713367": {
     "country": "Italy",
     "date": "2016-02-02",
     "location": "Rome",
     "reads": 60760389,
-    "ribofrac": "-1"
+    "ribofrac": "0.0035"
   },
   "ERR1713368": {
     "country": "Kazakhstan",
     "date": "2016-02-02",
     "location": "Almaty",
     "reads": 48937944,
-    "ribofrac": "-1"
+    "ribofrac": "0.0036"
   },
   "ERR1713369": {
     "country": "Kenya",
     "date": "2016-02-08",
     "location": "Nairobi",
     "reads": 38565777,
-    "ribofrac": "-1"
+    "ribofrac": "0.0052"
   },
   "ERR1713370": {
     "country": "Cambodia",
     "date": "2016-02-05",
     "location": "Phnom Penh",
     "reads": 41668096,
-    "ribofrac": "-1"
+    "ribofrac": "0.0031"
   },
   "ERR1713371": {
     "country": "Sri Lanka",
     "date": "2016-02-28",
     "location": "Colombo",
     "reads": 58216272,
-    "ribofrac": "-1"
+    "ribofrac": "0.0063"
   },
   "ERR1713372": {
     "country": "Luxembourg",
     "date": "2016-02-01",
     "location": "Luxembourg-city",
     "reads": 46705143,
-    "ribofrac": "-1"
+    "ribofrac": "0.0037"
   },
   "ERR1713373": {
     "country": "Latvia",
     "date": "2016-02-01",
     "location": "Riga",
     "reads": 11488756,
-    "ribofrac": "-1"
+    "ribofrac": "0.0072"
   },
   "ERR1713374": {
     "country": "Moldova",
     "date": "",
     "location": "",
     "reads": 27078086,
-    "ribofrac": "-1"
+    "ribofrac": "0.013"
   },
   "ERR1713375": {
     "country": "North Macedonia",
     "date": "2016-02-02",
     "location": "Skopje",
     "reads": 21799125,
-    "ribofrac": "-1"
+    "ribofrac": "0.0037"
   },
   "ERR1713376": {
     "country": "Malta",
     "date": "2016-02-01",
     "location": "Xghajra",
     "reads": 25398280,
-    "ribofrac": "-1"
+    "ribofrac": "0.0105"
   },
   "ERR1713377": {
     "country": "Malaysia",
     "date": "2016-02-04",
     "location": "Kuala Lumpur",
     "reads": 13436076,
-    "ribofrac": "-1"
+    "ribofrac": "0.0027"
   },
   "ERR1713378": {
     "country": "Nigeria",
     "date": "2016-02-02",
     "location": "Lagos",
     "reads": 23863735,
-    "ribofrac": "-1"
+    "ribofrac": "0.0028"
   },
   "ERR1713379": {
     "country": "Netherlands",
     "date": "2016-01-27",
     "location": "Amsterdam",
     "reads": 8230002,
-    "ribofrac": "-1"
+    "ribofrac": "0.0025"
   },
   "ERR1713380": {
     "country": "Norway",
     "date": "2016-02-03",
     "location": "Oslo",
     "reads": 31968019,
-    "ribofrac": "-1"
+    "ribofrac": "0.0085"
   },
   "ERR1713381": {
     "country": "Nepal",
     "date": "2016-01-30",
     "location": "Kathmandu",
     "reads": 48343422,
-    "ribofrac": "-1"
+    "ribofrac": "0.0033"
   },
   "ERR1713382": {
     "country": "New Zealand",
     "date": "2016-01-27",
     "location": "Dunedin",
     "reads": 68982155,
-    "ribofrac": "-1"
+    "ribofrac": "0.0081"
   },
   "ERR1713383": {
     "country": "Poland",
     "date": "2016-02-02",
     "location": "Pulawy",
     "reads": 27231492,
-    "ribofrac": "-1"
+    "ribofrac": "0.0037"
   },
   "ERR1713384": {
     "country": "Pakistan",
     "date": "2016-01-27",
     "location": "Karachi",
     "reads": 53259350,
-    "ribofrac": "-1"
+    "ribofrac": "0.0021"
   },
   "ERR1713385": {
     "country": "Peru",
     "date": "2016-02-04",
     "location": "Lima",
     "reads": 33527471,
-    "ribofrac": "-1"
+    "ribofrac": "0.0053"
   },
   "ERR1713386": {
     "country": "Senegal",
     "date": "2016-02-02",
     "location": "Dakar",
     "reads": 64613393,
-    "ribofrac": "-1"
+    "ribofrac": "0.0135"
   },
   "ERR1713387": {
     "country": "Singapore",
     "date": "2016-02-03",
     "location": "Singapore, Clementi",
     "reads": 22505101,
-    "ribofrac": "-1"
+    "ribofrac": "0.0008"
   },
   "ERR1713388": {
     "country": "Serbia",
     "date": "2016-01-27",
     "location": "Belgrade",
     "reads": 26366498,
-    "ribofrac": "-1"
+    "ribofrac": "0.0061"
   },
   "ERR1713389": {
     "country": "Slovakia",
     "date": "2016-02-02",
     "location": "in Bratislava",
     "reads": 25933498,
-    "ribofrac": "-1"
+    "ribofrac": "0.006"
   },
   "ERR1713390": {
     "country": "Slovenia",
     "date": "2016-01-25",
     "location": "Ljubljana",
     "reads": 41769812,
-    "ribofrac": "-1"
+    "ribofrac": "0.004"
   },
   "ERR1713391": {
     "country": "Sweden",
     "date": "2016-02-02",
     "location": "Uppsala",
     "reads": 49547797,
-    "ribofrac": "-1"
+    "ribofrac": "0.008"
   },
   "ERR1713392": {
     "country": "Sweden",
     "date": "2016-02-11",
     "location": "Gothenburg",
     "reads": 36338667,
-    "ribofrac": "-1"
+    "ribofrac": "0.0064"
   },
   "ERR1713393": {
     "country": "Chad",
     "date": "2016-01-26",
     "location": "N'Djamena",
     "reads": 4518386,
-    "ribofrac": "-1"
+    "ribofrac": "0.0081"
   },
   "ERR1713394": {
     "country": "Togo",
     "date": "2016-01-29",
     "location": "Lome",
     "reads": 82010139,
-    "ribofrac": "-1"
+    "ribofrac": "0.0056"
   },
   "ERR1713395": {
     "country": "Turkey",
     "date": "2016-02-03",
     "location": "Ankara",
     "reads": 40186029,
-    "ribofrac": "-1"
+    "ribofrac": "0.0056"
   },
   "ERR1713396": {
     "country": "Tanzania",
     "date": "2016-02-03",
     "location": "Moshi",
     "reads": 57489950,
-    "ribofrac": "-1"
+    "ribofrac": "0.0089"
   },
   "ERR1713397": {
     "country": "USA",
     "date": "2016-02-02",
     "location": "Atlanta, GA",
     "reads": 44621047,
-    "ribofrac": "-1"
+    "ribofrac": "0.0053"
   },
   "ERR1713398": {
     "country": "USA",
     "date": "2016-02-01",
     "location": "Seattle, WA",
     "reads": 23361286,
-    "ribofrac": "-1"
+    "ribofrac": "0.0064"
   },
   "ERR1713399": {
     "country": "USA",
     "date": "2016-02-24",
     "location": "Chicago, IL",
     "reads": 19010530,
-    "ribofrac": "-1"
+    "ribofrac": "0.0038"
   },
   "ERR1713400": {
     "country": "USA",
     "date": "2016-02-23",
     "location": "El Paso, TX",
     "reads": 27817657,
-    "ribofrac": "-1"
+    "ribofrac": "0.0086"
   },
   "ERR1713401": {
     "country": "USA",
     "date": "2016-02-10",
     "location": "Portland, OR",
     "reads": 26269830,
-    "ribofrac": "-1"
+    "ribofrac": "0.0051"
   },
   "ERR1713402": {
     "country": "USA",
     "date": "2016-02-22",
     "location": "El Paso, TX",
     "reads": 22121930,
-    "ribofrac": "-1"
+    "ribofrac": "0.0048"
   },
   "ERR1713403": {
     "country": "USA",
     "date": "2016-02-22",
     "location": "El Paso, TX",
     "reads": 8823697,
-    "ribofrac": "-1"
+    "ribofrac": "0.0053"
   },
   "ERR1713404": {
     "country": "USA",
     "date": "2016-02-23",
     "location": "El Paso, TX",
     "reads": 8413273,
-    "ribofrac": "-1"
+    "ribofrac": "0.0046"
   },
   "ERR1713405": {
     "country": "USA",
     "date": "",
     "location": "",
     "reads": 64198263,
-    "ribofrac": "-1"
+    "ribofrac": "0.0079"
   },
   "ERR1713406": {
     "country": "USA",
     "date": "2016-03-28",
     "location": "Boulder, CO",
     "reads": 45737232,
-    "ribofrac": "-1"
+    "ribofrac": "0.0027"
   },
   "ERR1713407": {
     "country": "Viet Nam",
     "date": "2016-01-27",
     "location": "Ho Chi Minh",
     "reads": 62151661,
-    "ribofrac": "-1"
+    "ribofrac": "0.0077"
   },
   "ERR1713408": {
     "country": "Kosovo",
     "date": "2016-02-03",
     "location": "Prishtina",
     "reads": 42563944,
-    "ribofrac": "-1"
+    "ribofrac": "0.0068"
   },
   "ERR1713409": {
     "country": "South Africa",
     "date": "2016-02-04",
     "location": "Pretoria",
     "reads": 21902362,
-    "ribofrac": "-1"
+    "ribofrac": "0.0038"
   },
   "ERR1713410": {
     "country": "Zambia",
     "date": "2016-01-25",
     "location": "Lusaka",
     "reads": 27296861,
-    "ribofrac": "-1"
+    "ribofrac": "0.0055"
   },
   "ERR1713411": {
     "country": "Zambia",
     "date": "2016-01-12",
     "location": "Kitwe",
     "reads": 19360109,
-    "ribofrac": "-1"
+    "ribofrac": "0.0047"
   },
   "ERR1725938": {
     "country": "Albania",
     "date": "2016-02-01",
     "location": "Tirana",
     "reads": 15233109,
-    "ribofrac": "-1"
+    "ribofrac": "0.0098"
   },
   "ERR1725939": {
     "country": "Australia",
     "date": "2016-02-04",
     "location": "Canberra",
     "reads": 4380903,
-    "ribofrac": "-1"
+    "ribofrac": "0.0033"
   },
   "ERR1725940": {
     "country": "Australia",
     "date": "2016-02-04",
     "location": "Canberra",
     "reads": 3284933,
-    "ribofrac": "-1"
+    "ribofrac": "0.0051"
   },
   "ERR1725941": {
     "country": "Australia",
     "date": "2016-02-08",
     "location": "Melbourne",
     "reads": 3707864,
-    "ribofrac": "-1"
+    "ribofrac": "0.0086"
   },
   "ERR1725942": {
     "country": "Australia",
     "date": "2016-02-08",
     "location": "Melbourne",
     "reads": 35784174,
-    "ribofrac": "-1"
+    "ribofrac": "0.0082"
   },
   "ERR1725943": {
     "country": "Australia",
     "date": "2016-02-08",
     "location": "Melbourne",
     "reads": 1567159,
-    "ribofrac": "-1"
+    "ribofrac": "0.0094"
   },
   "ERR1725944": {
     "country": "Australia",
     "date": "2016-02-08",
     "location": "Melbourne",
     "reads": 15369297,
-    "ribofrac": "-1"
+    "ribofrac": "0.0031"
   },
   "ERR1725947": {
     "country": "Bulgaria",
     "date": "2016-02-04",
     "location": "Sofia",
     "reads": 16823070,
-    "ribofrac": "-1"
+    "ribofrac": "0.006"
   },
   "ERR1725948": {
     "country": "Bulgaria",
     "date": "2016-02-04",
     "location": "Sofia",
     "reads": 7220280,
-    "ribofrac": "-1"
+    "ribofrac": "0.0024"
   },
   "ERR1725949": {
     "country": "Brazil",
     "date": "2016-02-16",
     "location": "Belo Horizonte",
     "reads": 2247008,
-    "ribofrac": "-1"
+    "ribofrac": "0.0054"
   },
   "ERR1725950": {
     "country": "Brazil",
     "date": "2016-02-15",
     "location": "Belem",
     "reads": 35539971,
-    "ribofrac": "-1"
+    "ribofrac": "0.0015"
   },
   "ERR1725951": {
     "country": "Brazil",
     "date": "2016-02-15",
     "location": "Belem",
     "reads": 14884472,
-    "ribofrac": "-1"
+    "ribofrac": "0.0019"
   },
   "ERR1725952": {
     "country": "Botswana",
     "date": "2016-01-25",
     "location": "Gaborone",
     "reads": 1299550,
-    "ribofrac": "-1"
+    "ribofrac": "0.0029"
   },
   "ERR1725953": {
     "country": "Botswana",
     "date": "2016-01-25",
     "location": "Gaborone",
     "reads": 5478069,
-    "ribofrac": "-1"
+    "ribofrac": "0.0015"
   },
   "ERR1725954": {
     "country": "Canada",
     "date": "2016-01-26",
     "location": "Regina",
     "reads": 894119,
-    "ribofrac": "-1"
+    "ribofrac": "0.0077"
   },
   "ERR1725955": {
     "country": "Canada",
     "date": "2016-02-01",
     "location": "Calgary",
     "reads": 2298247,
-    "ribofrac": "-1"
+    "ribofrac": "0.0003"
   },
   "ERR1725956": {
     "country": "Canada",
     "date": "2016-02-01",
     "location": "Calgary",
     "reads": 11160908,
-    "ribofrac": "-1"
+    "ribofrac": "0.0027"
   },
   "ERR1725957": {
     "country": "Canada",
     "date": "2016-02-01",
     "location": "Calgary",
     "reads": 983599,
-    "ribofrac": "-1"
+    "ribofrac": "0.0048"
   },
   "ERR1725958": {
     "country": "Canada",
     "date": "2016-02-01",
     "location": "Calgary",
     "reads": 4656095,
-    "ribofrac": "-1"
+    "ribofrac": "0.0005"
   },
   "ERR1725959": {
     "country": "Canada",
     "date": "2016-02-01",
     "location": "Toronto",
     "reads": 10160617,
-    "ribofrac": "-1"
+    "ribofrac": "0.0088"
   },
   "ERR1725960": {
     "country": "Canada",
     "date": "2016-02-01",
     "location": "Toronto",
     "reads": 4213454,
-    "ribofrac": "-1"
+    "ribofrac": "0.0025"
   },
   "ERR1725961": {
     "country": "Switzerland",
     "date": "2016-01-27",
     "location": "Bern",
     "reads": 10780078,
-    "ribofrac": "-1"
+    "ribofrac": "0.0046"
   },
   "ERR1725962": {
     "country": "Switzerland",
     "date": "2016-01-27",
     "location": "Bern",
     "reads": 7272669,
-    "ribofrac": "-1"
+    "ribofrac": "0.0025"
   },
   "ERR1725963": {
     "country": "Switzerland",
     "date": "2016-01-27",
     "location": "Bern",
     "reads": 4556889,
-    "ribofrac": "-1"
+    "ribofrac": "0.004"
   },
   "ERR1725964": {
     "country": "Switzerland",
     "date": "2016-01-27",
     "location": "Bern",
     "reads": 2968723,
-    "ribofrac": "-1"
+    "ribofrac": "0.0006"
   },
   "ERR1725965": {
     "country": "Cote d'Ivoire",
     "date": "2016-01-25",
     "location": "Abidjan",
     "reads": 4676073,
-    "ribofrac": "-1"
+    "ribofrac": "0.0083"
   },
   "ERR1725966": {
     "country": "Czech Republic",
     "date": "2016-02-01",
     "location": "Prague",
     "reads": 10178616,
-    "ribofrac": "-1"
+    "ribofrac": "0.0106"
   },
   "ERR1725967": {
     "country": "Germany",
     "date": "2016-02-08",
     "location": "Berlin",
     "reads": 7252218,
-    "ribofrac": "-1"
+    "ribofrac": "0.0065"
   },
   "ERR1725968": {
     "country": "Germany",
     "date": "2016-02-08",
     "location": "Berlin",
     "reads": 3764860,
-    "ribofrac": "-1"
+    "ribofrac": "0.0043"
   },
   "ERR1725969": {
     "country": "Spain",
     "date": "2016-02-10",
     "location": "Barcelona",
     "reads": 33089057,
-    "ribofrac": "-1"
+    "ribofrac": "0.0021"
   },
   "ERR1725970": {
     "country": "Spain",
     "date": "2016-02-10",
     "location": "Barcelona",
     "reads": 30734533,
-    "ribofrac": "-1"
+    "ribofrac": "0.0013"
   },
   "ERR1725971": {
     "country": "Spain",
     "date": "2016-02-10",
     "location": "Barcelona",
     "reads": 13862624,
-    "ribofrac": "-1"
+    "ribofrac": "0.0012"
   },
   "ERR1725972": {
     "country": "Spain",
     "date": "2016-02-10",
     "location": "Barcelona",
     "reads": 13015936,
-    "ribofrac": "-1"
+    "ribofrac": "0.0031"
   },
   "ERR1725973": {
     "country": "Finland",
     "date": "2016-01-26",
     "location": "Helsinki",
     "reads": 3713418,
-    "ribofrac": "-1"
+    "ribofrac": "0.0097"
   },
   "ERR1725974": {
     "country": "Georgia",
     "date": "2016-01-25",
     "location": "Tbilisi",
     "reads": 17169359,
-    "ribofrac": "-1"
+    "ribofrac": "0.0024"
   },
   "ERR1725975": {
     "country": "Georgia",
     "date": "2016-01-25",
     "location": "Tbilisi",
     "reads": 7159377,
-    "ribofrac": "-1"
+    "ribofrac": "0.0045"
   },
   "ERR1725976": {
     "country": "Croatia",
     "date": "2016-02-01",
     "location": "Zagreb",
     "reads": 7578206,
-    "ribofrac": "-1"
+    "ribofrac": "0.0082"
   },
   "ERR1725977": {
     "country": "Croatia",
     "date": "2016-02-01",
     "location": "Zagreb",
     "reads": 3118505,
-    "ribofrac": "-1"
+    "ribofrac": "0.0064"
   },
   "ERR1725978": {
     "country": "India",
     "date": "2016-01-27",
     "location": "Kochi",
     "reads": 9575197,
-    "ribofrac": "-1"
+    "ribofrac": "0.0061"
   },
   "ERR1725979": {
     "country": "Ireland",
     "date": "2016-02-10",
     "location": "Galway",
     "reads": 22378398,
-    "ribofrac": "-1"
+    "ribofrac": "0.0052"
   },
   "ERR1725980": {
     "country": "Ireland",
     "date": "2016-02-10",
     "location": "Galway",
     "reads": 8604302,
-    "ribofrac": "-1"
+    "ribofrac": "0.0055"
   },
   "ERR1725981": {
     "country": "Iran",
     "date": "2016-02-02",
     "location": "Tehran",
     "reads": 11033167,
-    "ribofrac": "-1"
+    "ribofrac": "0.0038"
   },
   "ERR1725982": {
     "country": "Iceland",
     "date": "2016-02-02",
     "location": "Reykjavik",
     "reads": 5782614,
-    "ribofrac": "-1"
+    "ribofrac": "0.0122"
   },
   "ERR1725983": {
     "country": "Israel",
     "date": "2016-01-31",
     "location": "Jerusalem",
     "reads": 9264634,
-    "ribofrac": "-1"
+    "ribofrac": "0.0031"
   },
   "ERR1725984": {
     "country": "Israel",
     "date": "2016-01-31",
     "location": "Jerusalem",
     "reads": 7816877,
-    "ribofrac": "-1"
+    "ribofrac": "0.0032"
   },
   "ERR1725985": {
     "country": "Kenya",
     "date": "2016-02-08",
     "location": "Nairobi",
     "reads": 16801205,
-    "ribofrac": "-1"
+    "ribofrac": "0.0059"
   },
   "ERR1725986": {
     "country": "Kenya",
     "date": "2016-02-08",
     "location": "Nairobi",
     "reads": 7030233,
-    "ribofrac": "-1"
+    "ribofrac": "0.0071"
   },
   "ERR1725987": {
     "country": "Latvia",
     "date": "2016-02-01",
     "location": "Riga",
     "reads": 990989,
-    "ribofrac": "-1"
+    "ribofrac": "0.0149"
   },
   "ERR1725988": {
     "country": "Moldova",
     "date": "",
     "location": "",
     "reads": 25162742,
-    "ribofrac": "-1"
+    "ribofrac": "0.0111"
   },
   "ERR1725989": {
     "country": "Moldova",
     "date": "",
     "location": "",
     "reads": 10489288,
-    "ribofrac": "-1"
+    "ribofrac": "0.0129"
   },
   "ERR1725990": {
     "country": "North Macedonia",
     "date": "2016-02-02",
     "location": "Skopje",
     "reads": 15136389,
-    "ribofrac": "-1"
+    "ribofrac": "0.0049"
   },
   "ERR1725991": {
     "country": "North Macedonia",
     "date": "2016-02-02",
     "location": "Skopje",
     "reads": 6394542,
-    "ribofrac": "-1"
+    "ribofrac": "0.0059"
   },
   "ERR1725992": {
     "country": "Malta",
     "date": "2016-02-01",
     "location": "Xghajra",
     "reads": 25261050,
-    "ribofrac": "-1"
+    "ribofrac": "0.0069"
   },
   "ERR1725993": {
     "country": "Malta",
     "date": "2016-02-01",
     "location": "Xghajra",
     "reads": 10581190,
-    "ribofrac": "-1"
+    "ribofrac": "0.0069"
   },
   "ERR1725994": {
     "country": "Malaysia",
     "date": "2016-02-04",
     "location": "Kuala Lumpur",
     "reads": 7736676,
-    "ribofrac": "-1"
+    "ribofrac": "0.0051"
   },
   "ERR1725995": {
     "country": "Malaysia",
     "date": "2016-02-04",
     "location": "Kuala Lumpur",
     "reads": 3207607,
-    "ribofrac": "-1"
+    "ribofrac": "0.0031"
   },
   "ERR1725996": {
     "country": "Nigeria",
     "date": "2016-02-02",
     "location": "Lagos",
     "reads": 6981824,
-    "ribofrac": "-1"
+    "ribofrac": "0.0038"
   },
   "ERR1725997": {
     "country": "Netherlands",
     "date": "2016-01-27",
     "location": "Amsterdam",
     "reads": 24901396,
-    "ribofrac": "-1"
+    "ribofrac": "0.002"
   },
   "ERR1725998": {
     "country": "Netherlands",
     "date": "2016-01-27",
     "location": "Amsterdam",
     "reads": 24759244,
-    "ribofrac": "-1"
+    "ribofrac": "0.0014"
   },
   "ERR1725999": {
     "country": "Norway",
     "date": "2016-02-03",
     "location": "Oslo",
     "reads": 10937666,
-    "ribofrac": "-1"
+    "ribofrac": "0.009"
   },
   "ERR1726000": {
     "country": "Poland",
     "date": "2016-02-02",
     "location": "Pulawy",
     "reads": 3021602,
-    "ribofrac": "-1"
+    "ribofrac": "0.0031"
   },
   "ERR1726001": {
     "country": "Singapore",
     "date": "2016-02-03",
     "location": "Singapore, Clementi",
     "reads": 3663133,
-    "ribofrac": "-1"
+    "ribofrac": "0.0026"
   },
   "ERR1726002": {
     "country": "Serbia",
     "date": "2016-01-27",
     "location": "Belgrade",
     "reads": 5176878,
-    "ribofrac": "-1"
+    "ribofrac": "0.0078"
   },
   "ERR1726003": {
     "country": "Slovakia",
     "date": "2016-02-02",
     "location": "in Bratislava",
     "reads": 11252267,
-    "ribofrac": "-1"
+    "ribofrac": "0.0021"
   },
   "ERR1726004": {
     "country": "Slovenia",
     "date": "2016-01-25",
     "location": "Ljubljana",
     "reads": 4991154,
-    "ribofrac": "-1"
+    "ribofrac": "0.0003"
   },
   "ERR1726005": {
     "country": "Sweden",
     "date": "2016-02-11",
     "location": "Gothenburg",
     "reads": 22022194,
-    "ribofrac": "-1"
+    "ribofrac": "0.0134"
   },
   "ERR1726006": {
     "country": "Sweden",
     "date": "2016-02-11",
     "location": "Gothenburg",
     "reads": 9539145,
-    "ribofrac": "-1"
+    "ribofrac": "0.005"
   },
   "ERR1726007": {
     "country": "Chad",
     "date": "2016-01-26",
     "location": "N'Djamena",
     "reads": 2802156,
-    "ribofrac": "-1"
+    "ribofrac": "0.0099"
   },
   "ERR1726008": {
     "country": "Chad",
     "date": "2016-01-26",
     "location": "N'Djamena",
     "reads": 2094894,
-    "ribofrac": "-1"
+    "ribofrac": "0.0146"
   },
   "ERR1726009": {
     "country": "Turkey",
     "date": "2016-02-03",
     "location": "Ankara",
     "reads": 12356727,
-    "ribofrac": "-1"
+    "ribofrac": "0.0052"
   },
   "ERR1726010": {
     "country": "USA",
     "date": "2016-02-01",
     "location": "Seattle, WA",
     "reads": 7564569,
-    "ribofrac": "-1"
+    "ribofrac": "0.0024"
   },
   "ERR1726011": {
     "country": "USA",
     "date": "2016-02-01",
     "location": "Seattle, WA",
     "reads": 3124307,
-    "ribofrac": "-1"
+    "ribofrac": "0.0068"
   },
   "ERR1726012": {
     "country": "USA",
     "date": "2016-02-24",
     "location": "Chicago, IL",
     "reads": 15044426,
-    "ribofrac": "-1"
+    "ribofrac": "0.0023"
   },
   "ERR1726013": {
     "country": "USA",
     "date": "2016-02-24",
     "location": "Chicago, IL",
     "reads": 16823671,
-    "ribofrac": "-1"
+    "ribofrac": "0.0081"
   },
   "ERR1726014": {
     "country": "USA",
     "date": "2016-02-24",
     "location": "Chicago, IL",
     "reads": 6325928,
-    "ribofrac": "-1"
+    "ribofrac": "0.0051"
   },
   "ERR1726015": {
     "country": "USA",
     "date": "2016-02-24",
     "location": "Chicago, IL",
     "reads": 6955859,
-    "ribofrac": "-1"
+    "ribofrac": "0.0029"
   },
   "ERR1726016": {
     "country": "USA",
     "date": "2016-02-10",
     "location": "Portland, OR",
     "reads": 16889994,
-    "ribofrac": "-1"
+    "ribofrac": "0.0065"
   },
   "ERR1726017": {
     "country": "USA",
     "date": "2016-02-10",
     "location": "Portland, OR",
     "reads": 6929129,
-    "ribofrac": "-1"
+    "ribofrac": "0.0055"
   },
   "ERR1726018": {
     "country": "USA",
     "date": "2016-02-22",
     "location": "El Paso, TX",
     "reads": 14966484,
-    "ribofrac": "-1"
+    "ribofrac": "0.0048"
   },
   "ERR1726019": {
     "country": "USA",
     "date": "2016-02-22",
     "location": "El Paso, TX",
     "reads": 6222608,
-    "ribofrac": "-1"
+    "ribofrac": "0.0071"
   },
   "ERR1726020": {
     "country": "USA",
     "date": "2016-02-22",
     "location": "El Paso, TX",
     "reads": 5853535,
-    "ribofrac": "-1"
+    "ribofrac": "0.0075"
   },
   "ERR1726021": {
     "country": "USA",
     "date": "2016-02-22",
     "location": "El Paso, TX",
     "reads": 3285391,
-    "ribofrac": "-1"
+    "ribofrac": "0.0025"
   },
   "ERR1726022": {
     "country": "USA",
     "date": "2016-02-22",
     "location": "El Paso, TX",
     "reads": 2369991,
-    "ribofrac": "-1"
+    "ribofrac": "0.0041"
   },
   "ERR1726023": {
     "country": "USA",
     "date": "2016-02-22",
     "location": "El Paso, TX",
     "reads": 1408088,
-    "ribofrac": "-1"
+    "ribofrac": "0.002"
   },
   "ERR1726024": {
     "country": "USA",
     "date": "2016-02-23",
     "location": "El Paso, TX",
     "reads": 2051543,
-    "ribofrac": "-1"
+    "ribofrac": "0.0072"
   },
   "ERR1726025": {
     "country": "USA",
     "date": "2016-02-23",
     "location": "El Paso, TX",
     "reads": 2987564,
-    "ribofrac": "-1"
+    "ribofrac": "0.007"
   },
   "ERR1726026": {
     "country": "USA",
     "date": "2016-02-23",
     "location": "El Paso, TX",
     "reads": 1556000,
-    "ribofrac": "-1"
+    "ribofrac": "0.006"
   },
   "ERR1726027": {
     "country": "USA",
     "date": "2016-02-23",
     "location": "El Paso, TX",
     "reads": 852085,
-    "ribofrac": "-1"
+    "ribofrac": "0.0049"
   },
   "ERR1726028": {
     "country": "USA",
     "date": "2016-02-23",
     "location": "El Paso, TX",
     "reads": 1226771,
-    "ribofrac": "-1"
+    "ribofrac": "0.003"
   },
   "ERR1726029": {
     "country": "USA",
     "date": "2016-02-23",
     "location": "El Paso, TX",
     "reads": 644515,
-    "ribofrac": "-1"
+    "ribofrac": "0.0068"
   },
   "ERR1726030": {
     "country": "South Africa",
     "date": "2016-02-04",
     "location": "Pretoria",
     "reads": 1873566,
-    "ribofrac": "-1"
+    "ribofrac": "0.0087"
   },
   "ERR1726031": {
     "country": "Zambia",
     "date": "2016-01-25",
     "location": "Lusaka",
     "reads": 3919046,
-    "ribofrac": "-1"
+    "ribofrac": "0.0043"
   },
   "ERR1726032": {
     "country": "Zambia",
     "date": "2016-01-12",
     "location": "Kitwe",
     "reads": 15288191,
-    "ribofrac": "-1"
+    "ribofrac": "0.0076"
   },
   "ERR1726033": {
     "country": "Zambia",
     "date": "2016-01-12",
     "location": "Kitwe",
     "reads": 38069060,
-    "ribofrac": "-1"
+    "ribofrac": "0.0077"
   },
   "ERR1726034": {
     "country": "Zambia",
     "date": "2016-01-12",
     "location": "Kitwe",
     "reads": 6416235,
-    "ribofrac": "-1"
+    "ribofrac": "0.0051"
   },
   "ERR1726035": {
     "country": "Zambia",
     "date": "2016-01-12",
     "location": "Kitwe",
     "reads": 15847330,
-    "ribofrac": "-1"
+    "ribofrac": "0.006"
   },
   "ERR2592244": {
     "country": "Albania",
     "date": "2016-02-01",
     "location": "Tirana",
     "reads": 24564881,
-    "ribofrac": "-1"
+    "ribofrac": "0.0052"
   },
   "ERR2592245": {
     "country": "Australia",
     "date": "2016-02-04",
     "location": "Canberra",
     "reads": 19120438,
-    "ribofrac": "-1"
+    "ribofrac": "0.0046"
   },
   "ERR2592247": {
     "country": "Bulgaria",
     "date": "2016-02-04",
     "location": "Sofia",
     "reads": 22723288,
-    "ribofrac": "-1"
+    "ribofrac": "0.0061"
   },
   "ERR2592248": {
     "country": "Brazil",
     "date": "2016-02-16",
     "location": "Belo Horizonte",
     "reads": 18188397,
-    "ribofrac": "-1"
+    "ribofrac": "0.006"
   },
   "ERR2592249": {
     "country": "Botswana",
     "date": "2016-01-25",
     "location": "Gaborone",
     "reads": 21230332,
-    "ribofrac": "-1"
+    "ribofrac": "0.0045"
   },
   "ERR2592250": {
     "country": "Canada",
     "date": "2016-02-01",
     "location": "Toronto",
     "reads": 94575863,
-    "ribofrac": "-1"
+    "ribofrac": "0.0052"
   },
   "ERR2592251": {
     "country": "Switzerland",
     "date": "2016-01-27",
     "location": "Bern",
     "reads": 12529016,
-    "ribofrac": "-1"
+    "ribofrac": "0.0034"
   },
   "ERR2592252": {
     "country": "Cote d'Ivoire",
     "date": "2016-01-25",
     "location": "Abidjan",
     "reads": 27890662,
-    "ribofrac": "-1"
+    "ribofrac": "0.0037"
   },
   "ERR2592253": {
     "country": "Czech Republic",
     "date": "2016-02-01",
     "location": "Prague",
     "reads": 25346024,
-    "ribofrac": "-1"
+    "ribofrac": "0.0042"
   },
   "ERR2592254": {
     "country": "Germany",
     "date": "2016-02-08",
     "location": "Berlin",
     "reads": 7349579,
-    "ribofrac": "-1"
+    "ribofrac": "0.0035"
   },
   "ERR2592255": {
     "country": "Finland",
     "date": "2016-01-26",
     "location": "Helsinki",
     "reads": 22311941,
-    "ribofrac": "-1"
+    "ribofrac": "0.0058"
   },
   "ERR2592256": {
     "country": "Georgia",
     "date": "2016-01-25",
     "location": "Tbilisi",
     "reads": 21454838,
-    "ribofrac": "-1"
+    "ribofrac": "0.01"
   },
   "ERR2592257": {
     "country": "Croatia",
     "date": "2016-02-01",
     "location": "Zagreb",
     "reads": 8122584,
-    "ribofrac": "-1"
+    "ribofrac": "0.004"
   },
   "ERR2592258": {
     "country": "India",
     "date": "2016-01-27",
     "location": "Kochi",
     "reads": 25339665,
-    "ribofrac": "-1"
+    "ribofrac": "0.0027"
   },
   "ERR2592259": {
     "country": "Iran",
     "date": "2016-02-02",
     "location": "Tehran",
     "reads": 25128013,
-    "ribofrac": "-1"
+    "ribofrac": "0.0047"
   },
   "ERR2592260": {
     "country": "Iceland",
     "date": "2016-02-02",
     "location": "Reykjavik",
     "reads": 23860535,
-    "ribofrac": "-1"
+    "ribofrac": "0.0044"
   },
   "ERR2592261": {
     "country": "Kenya",
     "date": "2016-02-08",
     "location": "Nairobi",
     "reads": 1081187,
-    "ribofrac": "-1"
+    "ribofrac": "0.004"
   },
   "ERR2592262": {
     "country": "Latvia",
     "date": "2016-02-01",
     "location": "Riga",
     "reads": 5003006,
-    "ribofrac": "-1"
+    "ribofrac": "0.0079"
   },
   "ERR2592263": {
     "country": "North Macedonia",
     "date": "2016-02-02",
     "location": "Skopje",
     "reads": 23731286,
-    "ribofrac": "-1"
+    "ribofrac": "0.006"
   },
   "ERR2592264": {
     "country": "Malaysia",
     "date": "2016-02-04",
     "location": "Kuala Lumpur",
     "reads": 23211510,
-    "ribofrac": "-1"
+    "ribofrac": "0.002"
   },
   "ERR2592265": {
     "country": "Nigeria",
     "date": "2016-02-02",
     "location": "Lagos",
     "reads": 16657117,
-    "ribofrac": "-1"
+    "ribofrac": "0.0054"
   },
   "ERR2592266": {
     "country": "Netherlands",
     "date": "2016-01-27",
     "location": "Amsterdam",
     "reads": 30634826,
-    "ribofrac": "-1"
+    "ribofrac": "0.0026"
   },
   "ERR2592267": {
     "country": "Norway",
     "date": "2016-02-03",
     "location": "Oslo",
     "reads": 25067367,
-    "ribofrac": "-1"
+    "ribofrac": "0.0073"
   },
   "ERR2592268": {
     "country": "Poland",
     "date": "2016-02-02",
     "location": "Pulawy",
     "reads": 21263953,
-    "ribofrac": "-1"
+    "ribofrac": "0.0049"
   },
   "ERR2592269": {
     "country": "Singapore",
     "date": "2016-02-03",
     "location": "Singapore, Clementi",
     "reads": 17767345,
-    "ribofrac": "-1"
+    "ribofrac": "0.003"
   },
   "ERR2592270": {
     "country": "Serbia",
     "date": "2016-01-27",
     "location": "Belgrade",
     "reads": 11422300,
-    "ribofrac": "-1"
+    "ribofrac": "0.0023"
   },
   "ERR2592271": {
     "country": "Slovenia",
     "date": "2016-01-25",
     "location": "Ljubljana",
     "reads": 14936934,
-    "ribofrac": "-1"
+    "ribofrac": "0.0054"
   },
   "ERR2592272": {
     "country": "Chad",
     "date": "2016-01-26",
     "location": "N'Djamena",
     "reads": 77910,
-    "ribofrac": "-1"
+    "ribofrac": "0.0018"
   },
   "ERR2592273": {
     "country": "Turkey",
     "date": "2016-02-03",
     "location": "Ankara",
     "reads": 17145206,
-    "ribofrac": "-1"
+    "ribofrac": "0.004"
   },
   "ERR2592274": {
     "country": "USA",
     "date": "2016-02-01",
     "location": "Seattle, WA",
     "reads": 20279021,
-    "ribofrac": "-1"
+    "ribofrac": "0.0028"
   },
   "ERR2592275": {
     "country": "USA",
     "date": "2016-02-24",
     "location": "Chicago, IL",
     "reads": 13231972,
-    "ribofrac": "-1"
+    "ribofrac": "0.006"
   },
   "ERR2592276": {
     "country": "USA",
     "date": "2016-02-23",
     "location": "El Paso, TX",
     "reads": 15664821,
-    "ribofrac": "-1"
+    "ribofrac": "0.006"
   },
   "ERR2592277": {
     "country": "USA",
     "date": "2016-02-10",
     "location": "Portland, OR",
     "reads": 20753083,
-    "ribofrac": "-1"
+    "ribofrac": "0.002"
   },
   "ERR2592278": {
     "country": "USA",
     "date": "2016-02-22",
     "location": "El Paso, TX",
     "reads": 23812415,
-    "ribofrac": "-1"
+    "ribofrac": "0.0031"
   },
   "ERR2592279": {
     "country": "USA",
     "date": "2016-02-22",
     "location": "El Paso, TX",
     "reads": 21299911,
-    "ribofrac": "-1"
+    "ribofrac": "0.0025"
   },
   "ERR2592280": {
     "country": "USA",
     "date": "2016-02-23",
     "location": "El Paso, TX",
     "reads": 26754489,
-    "ribofrac": "-1"
+    "ribofrac": "0.0039"
   },
   "ERR2592281": {
     "country": "South Africa",
     "date": "2016-02-04",
     "location": "Pretoria",
     "reads": 2883485,
-    "ribofrac": "-1"
+    "ribofrac": "0.0025"
   },
   "ERR2592282": {
     "country": "Zambia",
     "date": "2016-01-25",
     "location": "Lusaka",
     "reads": 19303711,
-    "ribofrac": "-1"
+    "ribofrac": "0.003"
   },
   "ERR2592283": {
     "country": "Zambia",
     "date": "2016-01-12",
     "location": "Kitwe",
     "reads": 61054560,
-    "ribofrac": "-1"
+    "ribofrac": "0.0015"
   },
   "ERR2592328": {
     "country": "Australia",
     "date": "2016-02-04",
     "location": "Canberra",
     "reads": 20195870,
-    "ribofrac": "-1"
+    "ribofrac": "0.005"
   },
   "ERR2592329": {
     "country": "Canada",
     "date": "2016-01-26",
     "location": "Regina",
     "reads": 49839811,
-    "ribofrac": "-1"
+    "ribofrac": "0.006"
   },
   "ERR2592331": {
     "country": "Switzerland",
     "date": "2016-01-27",
     "location": "Bern",
     "reads": 11691161,
-    "ribofrac": "-1"
+    "ribofrac": "0.0085"
   },
   "ERR2592332": {
     "country": "Germany",
     "date": "2016-02-08",
     "location": "Berlin",
     "reads": 24363180,
-    "ribofrac": "-1"
+    "ribofrac": "0.0034"
   },
   "ERR2592333": {
     "country": "Ecuador",
     "date": "2016-02-06",
     "location": "San Cristobal Island, Gal?pagos",
     "reads": 10743370,
-    "ribofrac": "-1"
+    "ribofrac": "0.004"
   },
   "ERR2592334": {
     "country": "Spain",
     "date": "2016-02-10",
     "location": "Barcelona",
     "reads": 30722347,
-    "ribofrac": "-1"
+    "ribofrac": "0.0024"
   },
   "ERR2592335": {
     "country": "Croatia",
     "date": "2016-02-01",
     "location": "Zagreb",
     "reads": 8351383,
-    "ribofrac": "-1"
+    "ribofrac": "0.0051"
   },
   "ERR2592336": {
     "country": "Latvia",
     "date": "2016-02-01",
     "location": "Riga",
     "reads": 12840934,
-    "ribofrac": "-1"
+    "ribofrac": "0.0082"
   },
   "ERR2592337": {
     "country": "Malaysia",
     "date": "2016-02-04",
     "location": "Kuala Lumpur",
     "reads": 18453326,
-    "ribofrac": "-1"
+    "ribofrac": "0.0058"
   },
   "ERR2592338": {
     "country": "Netherlands",
     "date": "2016-01-27",
     "location": "Amsterdam",
     "reads": 47922742,
-    "ribofrac": "-1"
+    "ribofrac": "0.0016"
   },
   "ERR2592339": {
     "country": "Chad",
     "date": "2016-01-26",
     "location": "N'Djamena",
     "reads": 6513768,
-    "ribofrac": "-1"
+    "ribofrac": "0.0081"
   },
   "ERR2592340": {
     "country": "USA",
     "date": "2016-02-24",
     "location": "Chicago, IL",
     "reads": 29411025,
-    "ribofrac": "-1"
+    "ribofrac": "0.0027"
   },
   "ERR2592341": {
     "country": "USA",
     "date": "2016-02-22",
     "location": "El Paso, TX",
     "reads": 13428227,
-    "ribofrac": "-1"
+    "ribofrac": "0.0047"
   },
   "ERR2592342": {
     "country": "USA",
     "date": "2016-02-23",
     "location": "El Paso, TX",
     "reads": 36940568,
-    "ribofrac": "-1"
+    "ribofrac": "0.0057"
   },
   "ERR2592343": {
     "country": "Zambia",
     "date": "2016-01-12",
     "location": "Kitwe",
     "reads": 43018798,
-    "ribofrac": "-1"
+    "ribofrac": "0.0068"
   },
   "ERR2607371": {
     "country": "Albania",
     "date": "2016-01-02",
     "location": "Tirana",
     "reads": 15278564,
-    "ribofrac": "-1"
+    "ribofrac": "0.0098"
   },
   "ERR2607372": {
     "country": "Albania",
     "date": "2016-01-02",
     "location": "Tirana",
     "reads": 24564881,
-    "ribofrac": "-1"
+    "ribofrac": "0.0052"
   },
   "ERR2607373": {
     "country": "Albania",
     "date": "2016-01-02",
     "location": "Tirana",
     "reads": 40665370,
-    "ribofrac": "-1"
+    "ribofrac": "0.0046"
   },
   "ERR2607374": {
     "country": "Australia",
     "date": "2016-04-02",
     "location": "Woden",
     "reads": 4382730,
-    "ribofrac": "-1"
+    "ribofrac": "0.0033"
   },
   "ERR2607375": {
     "country": "Australia",
     "date": "2016-04-02",
     "location": "Woden",
     "reads": 3286173,
-    "ribofrac": "-1"
+    "ribofrac": "0.0051"
   },
   "ERR2607376": {
     "country": "Australia",
     "date": "2016-04-02",
     "location": "Woden",
     "reads": 20195870,
-    "ribofrac": "-1"
+    "ribofrac": "0.005"
   },
   "ERR2607377": {
     "country": "Australia",
     "date": "2016-04-02",
     "location": "Woden",
     "reads": 19120438,
-    "ribofrac": "-1"
+    "ribofrac": "0.0046"
   },
   "ERR2607378": {
     "country": "Australia",
     "date": "2016-08-02",
     "location": "Melbourne",
     "reads": 3709282,
-    "ribofrac": "-1"
+    "ribofrac": "0.0086"
   },
   "ERR2607379": {
     "country": "Australia",
     "date": "2016-08-02",
     "location": "Melbourne",
     "reads": 35792579,
-    "ribofrac": "-1"
+    "ribofrac": "0.0081"
   },
   "ERR2607380": {
     "country": "Australia",
     "date": "2016-08-02",
     "location": "Melbourne",
     "reads": 1567699,
-    "ribofrac": "-1"
+    "ribofrac": "0.0095"
   },
   "ERR2607381": {
     "country": "Australia",
     "date": "2016-08-02",
     "location": "Melbourne",
     "reads": 15372948,
-    "ribofrac": "-1"
+    "ribofrac": "0.0031"
   },
   "ERR2607382": {
     "country": "Australia",
     "date": "2016-08-02",
     "location": "Melbourne",
     "reads": 6314000,
-    "ribofrac": "-1"
+    "ribofrac": "0.0045"
   },
   "ERR2607383": {
     "country": "Australia",
     "date": "2016-04-02",
     "location": "Woden",
     "reads": 16351575,
-    "ribofrac": "-1"
+    "ribofrac": "0.003"
   },
   "ERR2607384": {
     "country": "Austria",
     "date": "2016-02-16",
     "location": "Vienna",
     "reads": 13706226,
-    "ribofrac": "-1"
+    "ribofrac": "0.0049"
   },
   "ERR2607385": {
     "country": "Austria",
     "date": "2016-02-16",
     "location": "Vienna",
     "reads": 5793953,
-    "ribofrac": "-1"
+    "ribofrac": "0.0062"
   },
   "ERR2607386": {
     "country": "Austria",
     "date": "2016-02-16",
     "location": "Vienna",
     "reads": 20043705,
-    "ribofrac": "-1"
+    "ribofrac": "0.0036"
   },
   "ERR2607387": {
     "country": "Austria",
     "date": "2016-02-16",
     "location": "Vienna",
     "reads": 21758852,
-    "ribofrac": "-1"
+    "ribofrac": "0.007"
   },
   "ERR2607388": {
     "country": "Bulgaria",
     "date": "2016-02-15",
     "location": "Sofia",
     "reads": 16825916,
-    "ribofrac": "-1"
+    "ribofrac": "0.006"
   },
   "ERR2607389": {
     "country": "Bulgaria",
     "date": "2016-02-15",
     "location": "Sofia",
     "reads": 7221452,
-    "ribofrac": "-1"
+    "ribofrac": "0.0024"
   },
   "ERR2607390": {
     "country": "Bulgaria",
     "date": "2016-02-15",
     "location": "Sofia",
     "reads": 22723288,
-    "ribofrac": "-1"
+    "ribofrac": "0.0061"
   },
   "ERR2607391": {
     "country": "Bulgaria",
     "date": "2016-02-15",
     "location": "Sofia",
     "reads": 25427575,
-    "ribofrac": "-1"
+    "ribofrac": "0.0081"
   },
   "ERR2607392": {
     "country": "Brazil",
     "date": "2016-02-16",
     "location": "Belem",
     "reads": 2249696,
-    "ribofrac": "-1"
+    "ribofrac": "0.0054"
   },
   "ERR2607393": {
     "country": "Brazil",
     "date": "2016-02-16",
     "location": "Belem",
     "reads": 18188397,
-    "ribofrac": "-1"
+    "ribofrac": "0.006"
   },
   "ERR2607394": {
     "country": "Brazil",
     "date": "2016-02-15",
     "location": "Belem",
     "reads": 35546559,
-    "ribofrac": "-1"
+    "ribofrac": "0.0014"
   },
   "ERR2607395": {
     "country": "Brazil",
     "date": "2016-02-15",
     "location": "Belem",
     "reads": 14887247,
-    "ribofrac": "-1"
+    "ribofrac": "0.0019"
   },
   "ERR2607396": {
     "country": "Brazil",
     "date": "2016-02-15",
     "location": "Belem",
     "reads": 40505951,
-    "ribofrac": "-1"
+    "ribofrac": "0.0007"
   },
   "ERR2607397": {
     "country": "Brazil",
     "date": "2016-02-16",
     "location": "Belem",
     "reads": 23160101,
-    "ribofrac": "-1"
+    "ribofrac": "0.0041"
   },
   "ERR2607398": {
     "country": "Botswana",
     "date": "2016-01-25",
     "location": "Palapye",
     "reads": 1313980,
-    "ribofrac": "-1"
+    "ribofrac": "0.0029"
   },
   "ERR2607399": {
     "country": "Botswana",
     "date": "2016-01-25",
     "location": "Palapye",
     "reads": 5479108,
-    "ribofrac": "-1"
+    "ribofrac": "0.0015"
   },
   "ERR2607400": {
     "country": "Botswana",
     "date": "2016-01-25",
     "location": "Palapye",
     "reads": 21230332,
-    "ribofrac": "-1"
+    "ribofrac": "0.0049"
   },
   "ERR2607401": {
     "country": "Botswana",
     "date": "2016-01-25",
     "location": "Palapye",
     "reads": 20624198,
-    "ribofrac": "-1"
+    "ribofrac": "0.0015"
   },
   "ERR2607402": {
     "country": "Canada",
     "date": "2016-01-26",
     "location": "Regina",
     "reads": 894454,
-    "ribofrac": "-1"
+    "ribofrac": "0.0077"
   },
   "ERR2607403": {
     "country": "Canada",
     "date": "2016-01-26",
     "location": "Regina",
     "reads": 49839811,
-    "ribofrac": "-1"
+    "ribofrac": "0.006"
   },
   "ERR2607404": {
     "country": "Canada",
     "date": "2016-01-02",
     "location": "Calgary",
     "reads": 2303939,
-    "ribofrac": "-1"
+    "ribofrac": "0.0003"
   },
   "ERR2607405": {
     "country": "Canada",
     "date": "2016-01-02",
     "location": "Calgary",
     "reads": 11178165,
-    "ribofrac": "-1"
+    "ribofrac": "0.0027"
   },
   "ERR2607406": {
     "country": "Canada",
     "date": "2016-01-02",
     "location": "Calgary",
     "reads": 986032,
-    "ribofrac": "-1"
+    "ribofrac": "0.0048"
   },
   "ERR2607407": {
     "country": "Canada",
     "date": "2016-01-02",
     "location": "Calgary",
     "reads": 4663154,
-    "ribofrac": "-1"
+    "ribofrac": "0.0006"
   },
   "ERR2607408": {
     "country": "Canada",
     "date": "2016-01-02",
     "location": "Calgary",
     "reads": 2085059,
-    "ribofrac": "-1"
+    "ribofrac": "0.0067"
   },
   "ERR2607409": {
     "country": "Canada",
     "date": "2016-01-02",
     "location": "Toronto",
     "reads": 10178053,
-    "ribofrac": "-1"
+    "ribofrac": "0.0087"
   },
   "ERR2607410": {
     "country": "Canada",
     "date": "2016-01-02",
     "location": "Toronto",
     "reads": 4220432,
-    "ribofrac": "-1"
+    "ribofrac": "0.0025"
   },
   "ERR2607411": {
     "country": "Canada",
     "date": "2016-01-02",
     "location": "Toronto",
     "reads": 26592316,
-    "ribofrac": "-1"
+    "ribofrac": "0.0086"
   },
   "ERR2607412": {
     "country": "Canada",
     "date": "2016-01-02",
     "location": "Toronto",
     "reads": 94575863,
-    "ribofrac": "-1"
+    "ribofrac": "0.0052"
   },
   "ERR2607413": {
     "country": "Canada",
     "date": "2016-01-02",
     "location": "Toronto",
     "reads": 17756406,
-    "ribofrac": "-1"
+    "ribofrac": "0.0075"
   },
   "ERR2607414": {
     "country": "Canada",
     "date": "2016-01-26",
     "location": "Ottawa",
     "reads": 45115966,
-    "ribofrac": "-1"
+    "ribofrac": "0.0045"
   },
   "ERR2607415": {
     "country": "Canada",
     "date": "2016-01-26",
     "location": "Regina",
     "reads": 3124062,
-    "ribofrac": "-1"
+    "ribofrac": "0.0065"
   },
   "ERR2607416": {
     "country": "Switzerland",
     "date": "2016-01-27",
     "location": "Liebefeld",
     "reads": 10786042,
-    "ribofrac": "-1"
+    "ribofrac": "0.0046"
   },
   "ERR2607417": {
     "country": "Switzerland",
     "date": "2016-01-27",
     "location": "Liebefeld",
     "reads": 7276325,
-    "ribofrac": "-1"
+    "ribofrac": "0.0025"
   },
   "ERR2607418": {
     "country": "Switzerland",
     "date": "2016-01-27",
     "location": "Liebefeld",
     "reads": 4559297,
-    "ribofrac": "-1"
+    "ribofrac": "0.004"
   },
   "ERR2607419": {
     "country": "Switzerland",
     "date": "2016-01-27",
     "location": "Liebefeld",
     "reads": 2970086,
-    "ribofrac": "-1"
+    "ribofrac": "0.0006"
   },
   "ERR2607420": {
     "country": "Switzerland",
     "date": "2016-01-27",
     "location": "Liebefeld",
     "reads": 11691161,
-    "ribofrac": "-1"
+    "ribofrac": "0.0085"
   },
   "ERR2607421": {
     "country": "Switzerland",
     "date": "2016-01-27",
     "location": "Liebefeld",
     "reads": 12529016,
-    "ribofrac": "-1"
+    "ribofrac": "0.0034"
   },
   "ERR2607422": {
     "country": "Switzerland",
     "date": "2016-01-27",
     "location": "Liebefeld",
     "reads": 11427835,
-    "ribofrac": "-1"
+    "ribofrac": "0.0046"
   },
   "ERR2607423": {
     "country": "China",
     "date": "2016-01-28",
     "location": "Guangzhou",
     "reads": 52347010,
-    "ribofrac": "-1"
+    "ribofrac": "0.0006"
   },
   "ERR2607424": {
     "country": "Cote d'Ivoire",
     "date": "2016-01-25",
     "location": "Abidjan",
     "reads": 4678127,
-    "ribofrac": "-1"
+    "ribofrac": "0.0083"
   },
   "ERR2607425": {
     "country": "Cote d'Ivoire",
     "date": "2016-01-25",
     "location": "Abidjan",
     "reads": 27890662,
-    "ribofrac": "-1"
+    "ribofrac": "0.0037"
   },
   "ERR2607426": {
     "country": "Cote d'Ivoire",
     "date": "2016-01-25",
     "location": "Abidjan",
     "reads": 30361118,
-    "ribofrac": "-1"
+    "ribofrac": "0.0079"
   },
   "ERR2607427": {
     "country": "Colombia",
     "date": "2016-01-27",
     "location": "Bogota",
     "reads": 28203493,
-    "ribofrac": "-1"
+    "ribofrac": "0.0025"
   },
   "ERR2607428": {
     "country": "Czech Republic",
     "date": "2016-01-02",
     "location": "Brno",
     "reads": 10182422,
-    "ribofrac": "-1"
+    "ribofrac": "0.0106"
   },
   "ERR2607429": {
     "country": "Czech Republic",
     "date": "2016-01-02",
     "location": "Brno",
     "reads": 25346024,
-    "ribofrac": "-1"
+    "ribofrac": "0.0042"
   },
   "ERR2607430": {
     "country": "Czech Republic",
     "date": "2016-01-02",
     "location": "Brno",
     "reads": 37963411,
-    "ribofrac": "-1"
+    "ribofrac": "0.0045"
   },
   "ERR2607431": {
     "country": "Germany",
     "date": "2016-08-02",
     "location": "Berlin",
     "reads": 7254238,
-    "ribofrac": "-1"
+    "ribofrac": "0.0065"
   },
   "ERR2607432": {
     "country": "Germany",
     "date": "2016-02-08",
     "location": "Berlin",
     "reads": 3766034,
-    "ribofrac": "-1"
+    "ribofrac": "0.0045"
   },
   "ERR2607433": {
     "country": "Germany",
     "date": "2016-08-02",
     "location": "Berlin",
     "reads": 24363180,
-    "ribofrac": "-1"
+    "ribofrac": "0.0034"
   },
   "ERR2607434": {
     "country": "Germany",
     "date": "2016-08-02",
     "location": "Berlin",
     "reads": 7349579,
-    "ribofrac": "-1"
+    "ribofrac": "0.0035"
   },
   "ERR2607435": {
     "country": "Germany",
     "date": "2016-08-02",
     "location": "Berlin",
     "reads": 10891254,
-    "ribofrac": "-1"
+    "ribofrac": "0.0046"
   },
   "ERR2607436": {
     "country": "Denmark",
     "date": "2016-02-03",
     "location": "Avedore",
     "reads": 52815208,
-    "ribofrac": "-1"
+    "ribofrac": "0.0044"
   },
   "ERR2607437": {
     "country": "Denmark",
     "date": "2016-02-03",
     "location": "Damhusaaen",
     "reads": 59652694,
-    "ribofrac": "-1"
+    "ribofrac": "0.0074"
   },
   "ERR2607438": {
     "country": "Denmark",
     "date": "2016-02-03",
     "location": "Lynetten",
     "reads": 27683297,
-    "ribofrac": "-1"
+    "ribofrac": "0.0051"
   },
   "ERR2607439": {
     "country": "Ecuador",
     "date": "2016-06-02",
     "location": "Galapagos",
     "reads": 10743370,
-    "ribofrac": "-1"
+    "ribofrac": "0.0034"
   },
   "ERR2607440": {
     "country": "Ecuador",
     "date": "2016-06-02",
     "location": "Galapagos",
     "reads": 16614157,
-    "ribofrac": "-1"
+    "ribofrac": "0.0094"
   },
   "ERR2607441": {
     "country": "Ecuador",
     "date": "2016-01-02",
     "location": "Quito",
     "reads": 68267705,
-    "ribofrac": "-1"
+    "ribofrac": "0.0063"
   },
   "ERR2607442": {
     "country": "Spain",
     "date": "2016-10-02",
     "location": "Barcelona",
     "reads": 33098151,
-    "ribofrac": "-1"
+    "ribofrac": "0.0021"
   },
   "ERR2607443": {
     "country": "Spain",
     "date": "2016-10-02",
     "location": "Barcelona",
     "reads": 30743133,
-    "ribofrac": "-1"
+    "ribofrac": "0.0013"
   },
   "ERR2607444": {
     "country": "Spain",
     "date": "2016-10-02",
     "location": "Barcelona",
     "reads": 13866163,
-    "ribofrac": "-1"
+    "ribofrac": "0.0012"
   },
   "ERR2607445": {
     "country": "Spain",
     "date": "2016-10-02",
     "location": "Barcelona",
     "reads": 13019304,
-    "ribofrac": "-1"
+    "ribofrac": "0.0031"
   },
   "ERR2607446": {
     "country": "Spain",
     "date": "2016-10-02",
     "location": "Barcelona",
     "reads": 30722347,
-    "ribofrac": "-1"
+    "ribofrac": "0.0024"
   },
   "ERR2607447": {
     "country": "Spain",
     "date": "2016-10-02",
     "location": "Barcelona",
     "reads": 17250731,
-    "ribofrac": "-1"
+    "ribofrac": "0.0046"
   },
   "ERR2607448": {
     "country": "Ethiopia",
     "date": "2016-01-02",
     "location": "Addis Ababa",
     "reads": 53768554,
-    "ribofrac": "-1"
+    "ribofrac": "0.0035"
   },
   "ERR2607449": {
     "country": "Finland",
     "date": "2016-01-26",
     "location": "Helsinki",
     "reads": 3714752,
-    "ribofrac": "-1"
+    "ribofrac": "0.0097"
   },
   "ERR2607450": {
     "country": "Finland",
     "date": "2016-01-26",
     "location": "Helsinki",
     "reads": 22311941,
-    "ribofrac": "-1"
+    "ribofrac": "0.0058"
   },
   "ERR2607451": {
     "country": "Finland",
     "date": "2016-01-26",
     "location": "Helsinki",
     "reads": 22665651,
-    "ribofrac": "-1"
+    "ribofrac": "0.0065"
   },
   "ERR2607452": {
     "country": "Georgia",
     "date": "2016-01-25",
     "location": "Tbilisi",
     "reads": 17249737,
-    "ribofrac": "-1"
+    "ribofrac": "0.0024"
   },
   "ERR2607453": {
     "country": "Georgia",
     "date": "2016-01-25",
     "location": "Tbilisi",
     "reads": 7190863,
-    "ribofrac": "-1"
+    "ribofrac": "0.0045"
   },
   "ERR2607454": {
     "country": "Georgia",
     "date": "2016-01-25",
     "location": "Tbilisi",
     "reads": 21454838,
-    "ribofrac": "-1"
+    "ribofrac": "0.01"
   },
   "ERR2607455": {
     "country": "Georgia",
     "date": "2016-01-25",
     "location": "Tbilisi",
     "reads": 25131421,
-    "ribofrac": "-1"
+    "ribofrac": "0.009"
   },
   "ERR2607456": {
     "country": "Ghana",
     "date": "2016-01-30",
     "location": "Tamale",
     "reads": 49868511,
-    "ribofrac": "-1"
+    "ribofrac": "0.0036"
   },
   "ERR2607457": {
     "country": "Gambia",
     "date": "2016-01-28",
     "location": "Banjul",
     "reads": 45826697,
-    "ribofrac": "-1"
+    "ribofrac": "0.0077"
   },
   "ERR2607458": {
     "country": "Croatia",
     "date": "2016-01-02",
     "location": "Zagreb",
     "reads": 7581106,
-    "ribofrac": "-1"
+    "ribofrac": "0.0082"
   },
   "ERR2607459": {
     "country": "Croatia",
     "date": "2016-01-02",
     "location": "Zagreb",
     "reads": 3119627,
-    "ribofrac": "-1"
+    "ribofrac": "0.0064"
   },
   "ERR2607460": {
     "country": "Croatia",
     "date": "2016-01-02",
     "location": "Zagreb",
     "reads": 8351383,
-    "ribofrac": "-1"
+    "ribofrac": "0.0051"
   },
   "ERR2607461": {
     "country": "Croatia",
     "date": "2016-01-02",
     "location": "Zagreb",
     "reads": 8122584,
-    "ribofrac": "-1"
+    "ribofrac": "0.004"
   },
   "ERR2607462": {
     "country": "Croatia",
     "date": "2016-01-02",
     "location": "Zagreb",
     "reads": 16306167,
-    "ribofrac": "-1"
+    "ribofrac": "0.0101"
   },
   "ERR2607463": {
     "country": "Hungary",
     "date": "2016-02-02",
     "location": "Budapest",
     "reads": 4184402,
-    "ribofrac": "-1"
+    "ribofrac": "0.0051"
   },
   "ERR2607464": {
     "country": "India",
     "date": "2016-01-27",
     "location": "Kochi",
     "reads": 9576606,
-    "ribofrac": "-1"
+    "ribofrac": "0.0061"
   },
   "ERR2607465": {
     "country": "India",
     "date": "2016-01-27",
     "location": "Cochin",
     "reads": 25339665,
-    "ribofrac": "-1"
+    "ribofrac": "0.0027"
   },
   "ERR2607466": {
     "country": "India",
     "date": "2016-01-27",
     "location": "Cochin",
     "reads": 40022199,
-    "ribofrac": "-1"
+    "ribofrac": "0.0073"
   },
   "ERR2607467": {
     "country": "Ireland",
     "date": "2016-10-02",
     "location": "Dublin",
     "reads": 22400157,
-    "ribofrac": "-1"
+    "ribofrac": "0.0052"
   },
   "ERR2607468": {
     "country": "Ireland",
     "date": "2016-10-02",
     "location": "Dublin",
     "reads": 8612511,
-    "ribofrac": "-1"
+    "ribofrac": "0.0055"
   },
   "ERR2607469": {
     "country": "Ireland",
     "date": "2016-10-02",
     "location": "Dublin",
     "reads": 36596929,
-    "ribofrac": "-1"
+    "ribofrac": "0.0039"
   },
   "ERR2607470": {
     "country": "Iran",
     "date": "2016-02-02",
     "location": "Tehran",
     "reads": 11052850,
-    "ribofrac": "-1"
+    "ribofrac": "0.0038"
   },
   "ERR2607471": {
     "country": "Iran",
     "date": "2016-02-02",
     "location": "Tehran",
     "reads": 25128013,
-    "ribofrac": "-1"
+    "ribofrac": "0.005"
   },
   "ERR2607472": {
     "country": "Iran",
     "date": "2016-02-02",
     "location": "Tehran",
     "reads": 24308260,
-    "ribofrac": "-1"
+    "ribofrac": "0.0021"
   },
   "ERR2607473": {
     "country": "Iceland",
     "date": "2016-02-02",
     "location": "Reykjavik",
     "reads": 5783149,
-    "ribofrac": "-1"
+    "ribofrac": "0.0122"
   },
   "ERR2607474": {
     "country": "Iceland",
     "date": "2016-02-02",
     "location": "Reykjavik",
     "reads": 23860535,
-    "ribofrac": "-1"
+    "ribofrac": "0.0044"
   },
   "ERR2607475": {
     "country": "Iceland",
     "date": "2016-02-02",
     "location": "Reykjavik",
     "reads": 22541267,
-    "ribofrac": "-1"
+    "ribofrac": "0.0065"
   },
   "ERR2607476": {
     "country": "Israel",
     "date": "2016-01-31",
     "location": "Jerusalem",
     "reads": 9266023,
-    "ribofrac": "-1"
+    "ribofrac": "0.0031"
   },
   "ERR2607477": {
     "country": "Israel",
     "date": "2016-01-31",
     "location": "Jerusalem",
     "reads": 7877781,
-    "ribofrac": "-1"
+    "ribofrac": "0.0032"
   },
   "ERR2607478": {
     "country": "Israel",
     "date": "2016-01-31",
     "location": "Jerusalem",
     "reads": 4328530,
-    "ribofrac": "-1"
+    "ribofrac": "0.0037"
   },
   "ERR2607479": {
     "country": "Italy",
@@ -5645,7 +5645,7 @@
     "fine_location": "Cluster 9",
     "location": "Kibera",
     "reads": 11991676,
-    "ribofrac": "-1"
+    "ribofrac": "0.0019"
   },
   "ERR3503276": {
     "country": "Kenya",
@@ -5653,7 +5653,7 @@
     "fine_location": "Cluster 9",
     "location": "Kibera",
     "reads": 28499329,
-    "ribofrac": "-1"
+    "ribofrac": "0.0045"
   },
   "ERR3503277": {
     "country": "Kenya",
@@ -5661,7 +5661,7 @@
     "fine_location": "Cluster 9",
     "location": "Kibera",
     "reads": 18698838,
-    "ribofrac": "-1"
+    "ribofrac": "0.0023"
   },
   "ERR3503278": {
     "country": "Kenya",
@@ -5669,7 +5669,7 @@
     "fine_location": "Cluster 9",
     "location": "Kibera",
     "reads": 41539882,
-    "ribofrac": "-1"
+    "ribofrac": "0.0041"
   },
   "ERR3503279": {
     "country": "Kenya",
@@ -5677,7 +5677,7 @@
     "fine_location": "Cluster 9",
     "location": "Kibera",
     "reads": 31107732,
-    "ribofrac": "-1"
+    "ribofrac": "0.0039"
   },
   "ERR3503280": {
     "country": "Kenya",
@@ -5685,7 +5685,7 @@
     "fine_location": "Cluster 9",
     "location": "Kibera",
     "reads": 56002246,
-    "ribofrac": "-1"
+    "ribofrac": "0.0065"
   },
   "ERR3503281": {
     "country": "Kenya",
@@ -5693,7 +5693,7 @@
     "fine_location": "Cluster 9",
     "location": "Kibera",
     "reads": 28677586,
-    "ribofrac": "-1"
+    "ribofrac": "0.0069"
   },
   "ERR3503282": {
     "country": "Kenya",
@@ -5701,7 +5701,7 @@
     "fine_location": "Cluster 9",
     "location": "Kibera",
     "reads": 24712091,
-    "ribofrac": "-1"
+    "ribofrac": "0.0025"
   },
   "ERR3503283": {
     "country": "Kenya",
@@ -5709,7 +5709,7 @@
     "fine_location": "Cluster 9",
     "location": "Kibera",
     "reads": 43834564,
-    "ribofrac": "-1"
+    "ribofrac": "0.0069"
   },
   "ERR3503284": {
     "country": "Kenya",
@@ -5717,7 +5717,7 @@
     "fine_location": "Cluster 9",
     "location": "Kibera",
     "reads": 7848475,
-    "ribofrac": "-1"
+    "ribofrac": "0.0038"
   },
   "ERR3503285": {
     "country": "Kenya",
@@ -5725,7 +5725,7 @@
     "fine_location": "Cluster 9",
     "location": "Kibera",
     "reads": 33963206,
-    "ribofrac": "-1"
+    "ribofrac": "0.0081"
   },
   "ERR3503286": {
     "country": "Kenya",
@@ -5733,7 +5733,7 @@
     "fine_location": "Cluster 9",
     "location": "Kibera",
     "reads": 19278306,
-    "ribofrac": "-1"
+    "ribofrac": "0.0047"
   },
   "ERR3503287": {
     "country": "Kenya",
@@ -5741,7 +5741,7 @@
     "fine_location": "Cluster 9",
     "location": "Kibera",
     "reads": 34810903,
-    "ribofrac": "-1"
+    "ribofrac": "0.0068"
   },
   "ERR3503288": {
     "country": "Kenya",
@@ -5749,7 +5749,7 @@
     "fine_location": "Cluster 9",
     "location": "Kibera",
     "reads": 12951673,
-    "ribofrac": "-1"
+    "ribofrac": "0.004"
   },
   "ERR3503289": {
     "country": "Kenya",
@@ -5757,7 +5757,7 @@
     "fine_location": "Cluster 9",
     "location": "Kibera",
     "reads": 49396163,
-    "ribofrac": "-1"
+    "ribofrac": "0.0038"
   },
   "ERR3503290": {
     "country": "Kenya",
@@ -5765,7 +5765,7 @@
     "fine_location": "Cluster 9",
     "location": "Kibera",
     "reads": 76550285,
-    "ribofrac": "-1"
+    "ribofrac": "0.0037"
   },
   "ERR3503291": {
     "country": "Kenya",
@@ -5773,7 +5773,7 @@
     "fine_location": "Cluster 9",
     "location": "Kibera",
     "reads": 46019726,
-    "ribofrac": "-1"
+    "ribofrac": "0.0011"
   },
   "ERR3503292": {
     "country": "Kenya",
@@ -5781,7 +5781,7 @@
     "fine_location": "Cluster 9",
     "location": "Kibera",
     "reads": 28771589,
-    "ribofrac": "-1"
+    "ribofrac": "0.006"
   },
   "ERR3503293": {
     "country": "Kenya",
@@ -5789,7 +5789,7 @@
     "fine_location": "Cluster 9",
     "location": "Kibera",
     "reads": 76580778,
-    "ribofrac": "-1"
+    "ribofrac": "0.0031"
   },
   "ERR3503294": {
     "country": "Kenya",
@@ -5797,7 +5797,7 @@
     "fine_location": "Cluster 9",
     "location": "Kibera",
     "reads": 11216689,
-    "ribofrac": "-1"
+    "ribofrac": "0.005"
   },
   "ERR3503296": {
     "country": "Kenya",
@@ -5805,7 +5805,7 @@
     "fine_location": "Cluster 10",
     "location": "Kibera",
     "reads": 56923491,
-    "ribofrac": "-1"
+    "ribofrac": "0.0043"
   },
   "ERR3503297": {
     "country": "Kenya",
@@ -5813,7 +5813,7 @@
     "fine_location": "Cluster 10",
     "location": "Kibera",
     "reads": 18040530,
-    "ribofrac": "-1"
+    "ribofrac": "0.007"
   },
   "ERR3503298": {
     "country": "Kenya",
@@ -5821,7 +5821,7 @@
     "fine_location": "Cluster 10",
     "location": "Kibera",
     "reads": 22686552,
-    "ribofrac": "-1"
+    "ribofrac": "0.0064"
   },
   "ERR3503299": {
     "country": "Kenya",
@@ -5829,7 +5829,7 @@
     "fine_location": "Cluster 10",
     "location": "Kibera",
     "reads": 12049858,
-    "ribofrac": "-1"
+    "ribofrac": "0.005"
   },
   "ERR3503300": {
     "country": "Kenya",
@@ -5837,7 +5837,7 @@
     "fine_location": "Cluster 10",
     "location": "Kibera",
     "reads": 52659757,
-    "ribofrac": "-1"
+    "ribofrac": "0.0036"
   },
   "ERR3503301": {
     "country": "Kenya",
@@ -5845,7 +5845,7 @@
     "fine_location": "Cluster 10",
     "location": "Kibera",
     "reads": 46885908,
-    "ribofrac": "-1"
+    "ribofrac": "0.0066"
   },
   "ERR3503302": {
     "country": "Kenya",
@@ -5853,7 +5853,7 @@
     "fine_location": "Cluster 10",
     "location": "Kibera",
     "reads": 12638154,
-    "ribofrac": "-1"
+    "ribofrac": "0.0051"
   },
   "ERR3503303": {
     "country": "Kenya",
@@ -5861,7 +5861,7 @@
     "fine_location": "Cluster 10",
     "location": "Kibera",
     "reads": 49392616,
-    "ribofrac": "-1"
+    "ribofrac": "0.0052"
   },
   "ERR3503304": {
     "country": "Kenya",
@@ -5869,7 +5869,7 @@
     "fine_location": "Cluster 10",
     "location": "Kibera",
     "reads": 16468942,
-    "ribofrac": "-1"
+    "ribofrac": "0.0081"
   },
   "ERR3503305": {
     "country": "Kenya",
@@ -5877,7 +5877,7 @@
     "fine_location": "Cluster 10",
     "location": "Kibera",
     "reads": 20943947,
-    "ribofrac": "-1"
+    "ribofrac": "0.0065"
   },
   "ERR3503306": {
     "country": "Kenya",
@@ -5885,7 +5885,7 @@
     "fine_location": "Cluster 10",
     "location": "Kibera",
     "reads": 56072874,
-    "ribofrac": "-1"
+    "ribofrac": "0.0048"
   },
   "ERR3503307": {
     "country": "Kenya",
@@ -5893,7 +5893,7 @@
     "fine_location": "Cluster 10",
     "location": "Kibera",
     "reads": 22317522,
-    "ribofrac": "-1"
+    "ribofrac": "0.0098"
   },
   "ERR3503308": {
     "country": "Kenya",
@@ -5901,7 +5901,7 @@
     "fine_location": "Cluster 10",
     "location": "Kibera",
     "reads": 65697006,
-    "ribofrac": "-1"
+    "ribofrac": "0.0052"
   },
   "ERR3503309": {
     "country": "Kenya",
@@ -5909,7 +5909,7 @@
     "fine_location": "Cluster 10",
     "location": "Kibera",
     "reads": 31753844,
-    "ribofrac": "-1"
+    "ribofrac": "0.0091"
   },
   "ERR3503310": {
     "country": "Kenya",
@@ -5917,7 +5917,7 @@
     "fine_location": "Cluster 10",
     "location": "Kibera",
     "reads": 26085590,
-    "ribofrac": "-1"
+    "ribofrac": "0.0089"
   },
   "ERR3503311": {
     "country": "Kenya",
@@ -5925,7 +5925,7 @@
     "fine_location": "Cluster 10",
     "location": "Kibera",
     "reads": 54463997,
-    "ribofrac": "-1"
+    "ribofrac": "0.0097"
   },
   "ERR3503312": {
     "country": "Kenya",
@@ -5933,7 +5933,7 @@
     "fine_location": "Cluster 10",
     "location": "Kibera",
     "reads": 21350110,
-    "ribofrac": "-1"
+    "ribofrac": "0.0044"
   },
   "ERR3503313": {
     "country": "Kenya",
@@ -5941,7 +5941,7 @@
     "fine_location": "Cluster 10",
     "location": "Kibera",
     "reads": 45055014,
-    "ribofrac": "-1"
+    "ribofrac": "0.005"
   },
   "ERR3503314": {
     "country": "Kenya",
@@ -5949,7 +5949,7 @@
     "fine_location": "Cluster 10",
     "location": "Kibera",
     "reads": 39250671,
-    "ribofrac": "-1"
+    "ribofrac": "0.0061"
   },
   "ERR3503315": {
     "country": "Kenya",
@@ -5957,7 +5957,7 @@
     "fine_location": "Cluster 10",
     "location": "Kibera",
     "reads": 37055620,
-    "ribofrac": "-1"
+    "ribofrac": "0.006"
   },
   "ERR3503316": {
     "country": "Kenya",
@@ -5965,7 +5965,7 @@
     "fine_location": "Cluster 10",
     "location": "Kibera",
     "reads": 42137687,
-    "ribofrac": "-1"
+    "ribofrac": "0.006"
   },
   "ERR3503317": {
     "country": "Kenya",
@@ -5973,7 +5973,7 @@
     "fine_location": "Cluster 10",
     "location": "Kibera",
     "reads": 18597996,
-    "ribofrac": "-1"
+    "ribofrac": "0.0074"
   },
   "ERR3503318": {
     "country": "Kenya",
@@ -5981,7 +5981,7 @@
     "fine_location": "Cluster 10",
     "location": "Kibera",
     "reads": 53495495,
-    "ribofrac": "-1"
+    "ribofrac": "0.0059"
   },
   "ERR3503319": {
     "country": "Kenya",
@@ -5989,7 +5989,7 @@
     "fine_location": "Cluster 10",
     "location": "Kibera",
     "reads": 22865140,
-    "ribofrac": "-1"
+    "ribofrac": "0.0027"
   },
   "ERR3503320": {
     "country": "Kenya",
@@ -5997,7 +5997,7 @@
     "fine_location": "Cluster 10",
     "location": "Kibera",
     "reads": 33386161,
-    "ribofrac": "-1"
+    "ribofrac": "0.0008"
   },
   "ERR3562836": {
     "country": "Denmark",
@@ -12525,112 +12525,112 @@
     "date": "2016-02-02",
     "location": "Guangzhou",
     "reads": 27110995,
-    "ribofrac": "-1"
+    "ribofrac": "0.0037"
   },
   "ERR9855085": {
     "country": "Malaysia",
     "date": "2016-02-05",
     "location": "Kuala Lumpur",
     "reads": 29359353,
-    "ribofrac": "-1"
+    "ribofrac": "0.0015"
   },
   "ERR9855086": {
     "country": "Australia",
     "date": "2016-08-02",
     "location": "Melbourne",
     "reads": 33171084,
-    "ribofrac": "-1"
+    "ribofrac": "0.0074"
   },
   "ERR9855087": {
     "country": "Canada",
     "date": "2016-01-26",
     "location": "Regina",
     "reads": 35279450,
-    "ribofrac": "-1"
+    "ribofrac": "0.0063"
   },
   "ERR9855088": {
     "country": "Canada",
     "date": "2016-01-26",
     "location": "Regina",
     "reads": 29000473,
-    "ribofrac": "-1"
+    "ribofrac": "0.007"
   },
   "ERR9855089": {
     "country": "Germany",
     "date": "2016-02-09",
     "location": "Berlin",
     "reads": 30402211,
-    "ribofrac": "-1"
+    "ribofrac": "0.0016"
   },
   "ERR9855090": {
     "country": "Tanzania",
     "date": "2016-02-04",
     "location": "Moshi",
     "reads": 29478622,
-    "ribofrac": "-1"
+    "ribofrac": "0.0079"
   },
   "ERR9855091": {
     "country": "Brazil",
     "date": "2016-02-17",
     "location": "Belem",
     "reads": 28095559,
-    "ribofrac": "-1"
+    "ribofrac": "0.0076"
   },
   "ERR9855092": {
     "country": "Germany",
     "date": "2016-02-09",
     "location": "Berlin",
     "reads": 30528659,
-    "ribofrac": "-1"
+    "ribofrac": "0.0064"
   },
   "ERR9855093": {
     "country": "Iran",
     "date": "2016-02-03",
     "location": "Tehran",
     "reads": 32314450,
-    "ribofrac": "-1"
+    "ribofrac": "0.0024"
   },
   "ERR9855094": {
     "country": "Australia",
     "date": "2016-08-02",
     "location": "Melbourne",
     "reads": 27336083,
-    "ribofrac": "-1"
+    "ribofrac": "0.0044"
   },
   "ERR9855095": {
     "country": "Iran",
     "date": "2016-02-03",
     "location": "Tehran",
     "reads": 29335333,
-    "ribofrac": "-1"
+    "ribofrac": "0.0055"
   },
   "ERR9855096": {
     "country": "Tanzania",
     "date": "2016-02-04",
     "location": "Moshi",
     "reads": 31688227,
-    "ribofrac": "-1"
+    "ribofrac": "0.0057"
   },
   "ERR9855097": {
     "country": "Brazil",
     "date": "2016-02-17",
     "location": "Belem",
     "reads": 31468514,
-    "ribofrac": "-1"
+    "ribofrac": "0.0055"
   },
   "ERR9855098": {
     "country": "Malaysia",
     "date": "2016-02-05",
     "location": "Kuala Lumpur",
     "reads": 32692807,
-    "ribofrac": "-1"
+    "ribofrac": "0.0025"
   },
   "ERR9855099": {
     "country": "China",
     "date": "2016-02-02",
     "location": "Guangzhou",
     "reads": 37572746,
-    "ribofrac": "-1"
+    "ribofrac": "0.0007"
   },
   "SRR10059214": {
     "country": "Sweden",
