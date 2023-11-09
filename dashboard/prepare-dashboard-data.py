@@ -217,7 +217,11 @@ def count_dups(hvr_fname):
 
     kraken_info_counts = Counter() # kraken_info -> non-duplicate count
     for (start, end), read_ids in sorted(by_start_end.items()):
-        first_kraken_info = hvr[read_ids[0]][0]
+        read_info = hvr[read_ids[0]]
+        if type(read_info[0]) == int:
+            _, first_kraken_info, *_ = read_info
+        else:
+            first_kraken_info, *_ = read_info
         kraken_info_counts[first_kraken_info] += 1
     return kraken_info_counts
 
