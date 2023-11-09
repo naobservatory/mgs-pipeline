@@ -133,7 +133,6 @@ Available files, and their formats:
     * Read ID
 
 * `readlengths`: Output, distribution of read lengths by taxonomic category
-  * Not implemented yet!
   * ex: `SRR14530724.rl.json.gz`
   * JSON
   * category -> length -> count
