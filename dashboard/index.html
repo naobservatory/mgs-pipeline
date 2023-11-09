@@ -914,7 +914,8 @@ function redisplay() {
         let total_samples = 0;
         let total_ribofrac = 0;
         for (const sample of samples) {
-          if (sample_metadata[sample].hasOwnProperty("ribofrac")) {
+          if (sample_metadata[sample].hasOwnProperty("ribofrac") &&
+              sample_metadata[sample].ribofrac != -1) {
             total_samples++;
             total_ribofrac += Number(sample_metadata[sample].ribofrac);
           }
