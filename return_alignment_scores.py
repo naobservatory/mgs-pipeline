@@ -9,10 +9,8 @@ hvsams_dir, alignment_scores_out = sys.argv[1:]
 
 
 def sam_records():
-    print("hello")
     with open(alignment_scores_out, "w") as out_f:
         out_f = csv.writer(out_f, delimiter="\t")
-        print("is this working")
         headers = [
             "read_id",
             "sequence",
@@ -30,7 +28,6 @@ def sam_records():
 
         for filename in os.listdir(hvsams_dir):
             sam_file = pysam.AlignmentFile(hvsams_dir + "/" + filename, "r")
-            print(sam_file)
             for read in sam_file.fetch():
                 read_id = read.query_name
                 sequence = read.query_sequence
@@ -70,8 +67,6 @@ def sam_records():
                     str(read_type),
                     int(read_length),
                 ]
-                print("test")
-                print(row)
                 out_f.writerow(row)
 
 
