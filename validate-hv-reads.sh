@@ -6,7 +6,6 @@ ROOT_DIR="$PWD"
 DATA_DIR="$ROOT_DIR/validation-test"
 BOWTIE_DIR="$ROOT_DIR/.." #or just add bowtie2 to your path
 
-#assumes that hv_reads files are present 
 
 if [ ! -d $DATA_DIR/hvfastqs ]; then
     mkdir $DATA_DIR/hvfastqs
@@ -15,6 +14,12 @@ if [ ! -d $DATA_DIR/hvfastqs ]; then
 	$ROOT_DIR/json_to_fasta.py $DATA_DIR/hvreads $DATA_DIR/hvfastqs {}
 fi
 
+if [ ! -e observed-human-virus-taxids.txt ]; then
+    $ROOT_DIR/determine_hv_taxids.py \
+        $DATA_DIR/hvreads/ \
+        $ROOT_DIR/human-viruses.tsv \
+        $ROOT_DIR/observed-human-virus-taxids.txt
+fi
 
 $ROOT_DIR/get_genomes.py
 
@@ -25,8 +30,8 @@ if [ ! -d $ROOT_DIR/raw-genomes ]; then
     done
 fi
 
-if [ ! -e $DATA_DIR/all_references.fna ]; then
-    find raw-genomes | grep .fna$ | xargs cat > $DATA_DIR/all_references.fna
+if [ ! -e $ROOT_DIR/all_references.fna ]; then
+    find raw-genomes | grep .fna$ | xargs cat > $ROOT_DIR/all_references.fna
 fi
 
 
@@ -35,7 +40,7 @@ if [ ! -e $ROOT_DIR/human-viruses.1.bt2 ]; then
 	-f \
         --threads 32 \
         --verbose \
-        $DATA_DIR/all_references.fna \
+        $ROOT_DIR/all_references.fna \
 	$ROOT_DIR/human-viruses
 fi
 
@@ -48,7 +53,7 @@ fi
 
 if [ ! -e alignment_scores.tsv ]; then
     $ROOT_DIR/return_alignment_scores.py \
-	$ROOT_DIR/hvsams \
+	$DATA_DIR/hvsams \
 	alignment_scores.tsv
 fi
 
