@@ -3,7 +3,7 @@
 set -e # exit on error 
 
 ROOT_DIR="$PWD"
-DATA_DIR="$ROOT_DIR/validation-test"
+DATA_DIR="$ROOT_DIR/dashboard"
 BOWTIE_DIR="$ROOT_DIR/.." #or just add bowtie2 to your path
 
 
