@@ -23,13 +23,11 @@ hv_taxid_to_detailed_fname = "hv_taxid_to_detailed.json"
 hv_taxid_to_detailed = defaultdict(list)
 
 if not os.path.exists(detailed_taxids_fname):
-    print("detailed-taxids.txt not found. Processing...")
     fetch = []
     for hv_taxid in hv_taxids:
         fetch.append(hv_taxid)
         hv_taxid_to_detailed[hv_taxid].append(hv_taxid)
 
-        print(f"Fetching taxonomic data for taxid {hv_taxid}...")
         for line in (
             subprocess.check_output(["gimme_taxa.py", str(hv_taxid)])
             .decode("utf-8")
@@ -42,13 +40,10 @@ if not os.path.exists(detailed_taxids_fname):
             descendent_taxid = int(descendent_taxid)
             fetch.append(descendent_taxid)
             hv_taxid_to_detailed[hv_taxid].append(descendent_taxid)
-
-    print("Writing to detailed-taxids.txt...")
     with open(detailed_taxids_fname, "w") as outf:
         for detailed_taxid in fetch:
             outf.write("%s\n" % detailed_taxid)
 
-    print("Writing to hv_taxid_to_detailed.json...")
     with open(hv_taxid_to_detailed_fname, "w") as outf:
         json.dump(hv_taxid_to_detailed, outf)
 
@@ -71,4 +66,3 @@ if not os.path.exists(metadata_fname):
             "viral",
         ]
     )
-print("Script execution complete.")
