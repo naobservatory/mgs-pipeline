@@ -23,8 +23,7 @@ def sam_records():
             "flag",
             "read_type",
             "read_length",
-            "log_read_length",
-            "sqrt_read_length",
+            "reference_id"
         ]
         out_f.writerow((headers))
 
@@ -35,6 +34,7 @@ def sam_records():
             sequence = read.query_sequence
             cigar = read.cigarstring
             reference_start = read.reference_start
+            reference_id = sam_file.get_reference_name(read.reference_id)
             flag = (
                 read.flag
             )  # https://bowtie-bio.sourceforge.net/bowtie2/manual.shtml#:~:text=all%20applicable%20flags.-,Flags,-relevant%20to%20Bowtie
@@ -61,6 +61,7 @@ def sam_records():
                 int(alignment_score),
                 str(cigar),
                 int(reference_start),
+                str(reference_id), 
                 float(sqrt_length_adj_score),
                 float(log_length_adj_score),
                 str(flag),
