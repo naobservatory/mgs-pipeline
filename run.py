@@ -549,9 +549,6 @@ def interpret(args):
                "aws", "s3", "cp", compressed_output, "%s/%s/processed/" % (
                   S3_BUCKET, args.bioproject)])
 
-
-
-
 def cladecounts(args):
    available_inputs = get_files(args, "processed")
    existing_outputs = get_files(args, "cladecounts", min_size=100,
@@ -908,96 +905,7 @@ def hvreads(args):
             "aws", "s3", "cp", output, "%s/%s/hvreads/%s" % (
                S3_BUCKET, args.bioproject, output)])
 
-
-def bowtie_db(args):
-    human_viruses = {}
-    with open(os.path.join(THISDIR, "human-viruses.tsv")) as inf:
-      for line in inf:
-         taxid, name = line.strip().split("\t")
-         human_viruses[int(taxid)] = nam
-
-    detailed_taxids_fname = "detailed-taxids.txt"
-    hv_taxid_to_detailed_fname = "hv_taxid_to_detailed.json"
-    if not os.path.exists(detailed_taxids_fname):
-        fetch= []
-        for hv_taxid in hv_taxids:
-            fetch.append(hv_taxid)
-            hv_taxid_to_detailed[hv_taxid].append(hv_taxid)
-
-            for line in (
-                subprocess.check_output(["gimme_taxa.py", str(hv_taxid)])
-                .decode("utf-8")
-                .split("\n")
-            ):
-                line = line.strip()
-                if line.startswith("parent_taxid") or not line:
-                    continue
-                _, descendent_taxid, descendent_name = line.split("\t")
-                descendent_taxid = int(descendent_taxid)
-                fetch.append(descendent_taxid)
-                hv_taxid_to_detailed[hv_taxid].append(descendent_taxid)
-        with open(detailed_taxids_fname, "w") as outf:
-            for detailed_taxid in fetch:
-                outf.write("%s\n" % detailed_taxid)
-
-        with open(hv_taxid_to_detailed_fname, "w") as outf:
-            json.dump(hv_taxid_to_detailed, outf)    for line in inf:
-            taxid = line.split("\t")[0]
-            hv_taxids.add(int(taxid))
-
-    metadata_fname = "ncbi-fetch-metadata.txt"
-    try:
-        if not os.path.exists(metadata_fname):
-            print("Fetching viral refseq genomes...")
-            subprocess.check_call(
-                [
-                    "ncbi-genome-download",
-                    "--section",
-                    "genbank",
-                    "--taxids",
-                    detailed_taxids_fname,
-                    "--formats",
-                    "fasta",
-                    "--metadata-table",
-                    metadata_fname,
-                    "viral",
-                ]
-            )
-    except subprocess.CalledProcessError as e:
-        print("The subprocess failed with exit code {}".format(e.returncode))
-        print(
-            "Maybe ncbi-genome-download is not installed. If so, please download it from: \nhttps://github.com/kblin/ncbi-genome-download"
-        )
-        raise
-
-         
-def validate(args):
-    available_inputs = get_files(args, "hvreads",
-                                 min_size=100)
-
-    for file in 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-phred_to_q(phred_score):
+def phred_to_q(phred_score):
    return ord(phred_score) - ord('!')
 
 def average_quality(phred_counts):
