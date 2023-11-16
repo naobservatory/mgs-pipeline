@@ -15,7 +15,7 @@ def bowtie_db():
         os.mkdir(bowtie_dir)
     os.chdir(bowtie_dir)
     human_viruses = {}
-    with open(os.path.join(THISDIR, "first-then-human-viruses.tsv")) as inf:
+    with open(os.path.join(THISDIR, "human-viruses.tsv")) as inf:
         for line in inf:
             taxid, name = line.strip().split("\t")
             human_viruses[int(taxid)] = name
