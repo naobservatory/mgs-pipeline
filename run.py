@@ -905,7 +905,84 @@ def hvreads(args):
             "aws", "s3", "cp", output, "%s/%s/hvreads/%s" % (
                S3_BUCKET, args.bioproject, output)])
 
+<<<<<<< Updated upstream
 def phred_to_q(phred_score):
+=======
+def hvfastqs(args):
+    available_inputs = get_files(args, "hvreads",
+                                 min_size=100)
+
+    existing_outputs = get_files(args, "hvfastq",
+                                 # date we added hvfastqs
+                                 min_date=`2023-11-16`)
+
+    for sample in get_samples(args):
+        output = "%s.fastq" % sample #FIX ME
+        if output in existing_outputs: continue
+
+        input_fname = "%s.hvreads"
+        if input_fname not in available_inputs: continue
+        pair1 = []
+        pair2 = []
+        combined = []
+        with open(os.path(input_fname, "rt") as inf:
+            for seq_id, details in sorted(json.load(inf).items()):
+                kraken_assignment, kraken_info, *reads = details
+                assert len(reads) in [1, 2]
+                if len(reads) == 1:
+                    (read,) = reads
+                    combined.append((seq_id, read))
+                else:
+                    read1, read2 = reads
+                    pair1.append((seq_id, read1))
+                    pair2.append((seq_id, read2))
+        for label, reads in [
+            ("pair1", pair1),
+            ("pair2", pair2),
+            ("combined", combined),
+        ]:
+            with open(os.path(sample + "." + label + ".fastq"), "w" as outf:
+                for seq_id, read in reads:
+                    seq, quality = read
+                    outf.write("@%s\n%s\n+\n%s\n" % (seq_id, seq, quality))
+
+def validate(args):
+    available_inputs = get_files(args, "hvreads",
+                                 min_size=100)
+
+    existing_outputs = get_files(args, "hvsams",
+                                 # date we added validate
+                                 min_date=`2023-11-16`)
+
+    for sample in get_samples(args):
+        output = "%s.sam" % sample
+        if output in existing_outputs: continue
+
+        input_fname = "%s.fastq"
+        if input_fname not in available_inputs: continue
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+phred_to_q(phred_score):
+>>>>>>> Stashed changes
    return ord(phred_score) - ord('!')
 
 def average_quality(phred_counts):
