@@ -905,9 +905,6 @@ def hvreads(args):
             "aws", "s3", "cp", output, "%s/%s/hvreads/%s" % (
                S3_BUCKET, args.bioproject, output)])
 
-<<<<<<< Updated upstream
-def phred_to_q(phred_score):
-=======
 def hvfastqs(args):
     available_inputs = get_files(args, "hvreads",
                                  min_size=100)
@@ -960,29 +957,8 @@ def validate(args):
 
         input_fname = "%s.fastq"
         if input_fname not in available_inputs: continue
-        
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-phred_to_q(phred_score):
->>>>>>> Stashed changes
+def phred_to_q(phred_score):
    return ord(phred_score) - ord('!')
 
 def average_quality(phred_counts):
