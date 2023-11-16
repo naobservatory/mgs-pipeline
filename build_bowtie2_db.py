@@ -3,6 +3,8 @@ import subprocess
 import os
 import json
 from collections import defaultdict
+import glob
+import gzip
 
 THISDIR = os.path.abspath(os.path.dirname(__file__))
 
@@ -24,7 +26,7 @@ def bowtie_db():
         hv_taxid_to_detailed = defaultdict(list)
         fetch = []
         for hv_taxid in human_viruses:
-            print(hv_taxid, human_viruses[hv_taxid])
+            print("Fetching descendants of", hv_taxid, human_viruses[hv_taxid])
             fetch.append(hv_taxid)
             hv_taxid_to_detailed[hv_taxid].append(hv_taxid)
 
@@ -71,22 +73,23 @@ def bowtie_db():
             "Maybe ncbi-genome-download is not installed. If so, please download it from: \nhttps://github.com/kblin/ncbi-genome-download"
         )
         raise
+
     combined_genomes_fname = "combined_genomes.fna"
     if not os.path.exists(combined_genomes_fname):
         with open(combined_genomes_fname, "w") as outf:
             for fname in glob.glob("genbank/**/*.fna.gz", recursive=True):
-                with gzip.open(fname) as inf:
+                with gzip.open(fname, "rt") as inf:
                     outf.writelines(inf.readlines())
 
     bowtie_db_prefix = "human-viruses"
     if not os.path.exists(bowtie_db_prefix + ".1.bt2"):
-        subprocess.check.call(
+        subprocess.check_call(
             [
-                "~/bowtie2-2.5.2-linux-x86_64/bowtie2-build",
+                "/home/ec2-user/bowtie2-2.5.2-linux-x86_64/bowtie2-build",
                 "-f",
                 "--threads",
                 "32",
-                "verbose",
+                "--verbose",
                 combined_genomes_fname,
                 bowtie_db_prefix,
             ]
