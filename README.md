@@ -266,6 +266,7 @@ tar xvzf adapterremoval-2.3.3.tar.gz
 cd adapterremoval-2.3.3
 make
 sudo make install
+
 ```
 
 The adapter removal step downloads the fastq files one sample at a time from S3 to the local machine.
@@ -329,6 +330,28 @@ Don't update the version of Kraken's DB without talking to everyone: we would
 need to reprocess all older data to handle taxonomy changes and to keep
 everything consistent.  Also keep this in sync with the version of the taxonomy
 in prepare-dashboard-data.sh.
+
+### BowTie2
+
+#### Install
+
+```
+wget -O bowtie2.zip "https://sourceforge.net/projects/bowtie-bio/files/bowtie2/2.5.2/bowtie2-2.5.2-linux-x86_64.zip/download" 
+unzip bowtie2.zip 
+rm bowtie2.zip
+```
+
+#### Set up Bowtie2 database
+
+To create a Bowtie2 database, we need to download genomes from NCBI, using ncbi-genome-download. To run the affiliated script `gimme_taxa.py`, you will also need to install the dependencies `ete3` and `six`. 
+
+```
+pip install ncbi-genome-download
+python -m pip install ete3 six ncbi-genome-download
+```
+
+Now you can run `build_bowtie_db.py`, which will create the bowtie2 database. This will take quite some time so it's best to run this command within a `screen` session to not inadvertantly end the script when closing your terminal.
+
 
 ## Operations
 
