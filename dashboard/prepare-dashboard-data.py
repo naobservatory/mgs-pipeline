@@ -360,3 +360,25 @@ for name, val in [
     with open(DASHBOARD_DIR + name + ".json", "w") as outf:
         json.dump(val, outf, sort_keys=True,
                   indent=None if val is human_virus_tree else 2)
+
+# To make the dashboard load faster, divide counts by bioproject and don't load
+# them by default.
+for bioproject in bioprojects:
+    samples = set(bioprojects[bioproject])
+
+    for full_dict, name in [
+            (virus_sample_counts,
+             "human_virus_sample_counts.%s" % bioproject),
+            (comparison_sample_counts,
+             "comparison_sample_counts.%s" % bioproject),
+    ]:
+        bioproject_sample_counts = {}
+        for taxid, sample_counts in full_dict.items():
+            counts = {sample: sample_counts[sample]
+                      for sample in samples & sample_counts.keys()}
+            if counts:
+                bioproject_sample_counts[taxid] = counts
+        with open(DASHBOARD_DIR + name + ".json", "w") as outf:
+            json.dump(bioproject_sample_counts,
+                      outf, sort_keys=True, indent=2)
+    
