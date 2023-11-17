@@ -51,6 +51,7 @@ def interpret(project, papers, bits):
         return sample, dict(
             date=date,
             country="United States",
+            state="Maryland",
             location="Maryland",
             fine_location="Manhole",
             na_type=na_type)
@@ -123,6 +124,7 @@ def interpret(project, papers, bits):
         sample = bits[0]
         return sample, dict(
             country="United States",
+            state="New York",
             location="New York City",
             # Paper has "17 raw sewage samples collected from 14 DEP
             # wastewater treatment plants from the five NYC boroughs in
@@ -132,6 +134,8 @@ def interpret(project, papers, bits):
         sample = bits[0]
         return sample, dict(
             country="United States",
+            city="Boulder",
+            state="Colorado",
             location="Boulder, CO",
             # I can't find metadata on which samples are from which
             # days or which spots on campus.
@@ -207,6 +211,7 @@ def interpret(project, papers, bits):
         return sample, dict(
             country="United States",
             state="Texas",
+            city="Houston",
             county="Harris County",
             location="Houston",
             fine_location=fine_location,
@@ -236,7 +241,7 @@ def interpret(project, papers, bits):
             date=date,
             # secondary effluent | raw influent
             source=source,
-            country="USA",
+            country="United States",
             state="Michigan",
             county="Washtenaw County",
             city="Ann Arbor",
@@ -250,5 +255,14 @@ def interpret(project, papers, bits):
                 # Patient samples collected between March 2019 and October 2020
                 date="2020",
                 collection="blood serum")
+    elif project in papers["Tisza 2023"]["projects"]:
+        sample, _, loc, city_state, date, flow = bits
+        city, state = city_state.split(", ")
+        return sample, dict(
+                country="United States",
+                city=city,
+                state="Texas",
+                location=loc,
+                date=date)
     else:
         raise Exception("Metadata format for %s unknown" % project)

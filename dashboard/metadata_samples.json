@@ -5532,112 +5532,128 @@
     "date": "2014-11",
     "location": "New York City",
     "reads": 10064892,
-    "ribofrac": "0.0021"
+    "ribofrac": "0.0021",
+    "state": "New York"
   },
   "ERR2729797": {
     "country": "United States",
     "date": "2014-11",
     "location": "New York City",
     "reads": 18312129,
-    "ribofrac": "0.0083"
+    "ribofrac": "0.0083",
+    "state": "New York"
   },
   "ERR2729798": {
     "country": "United States",
     "date": "2014-11",
     "location": "New York City",
     "reads": 10672665,
-    "ribofrac": "0.0045"
+    "ribofrac": "0.0045",
+    "state": "New York"
   },
   "ERR2729799": {
     "country": "United States",
     "date": "2014-11",
     "location": "New York City",
     "reads": 11083621,
-    "ribofrac": "0.0032"
+    "ribofrac": "0.0032",
+    "state": "New York"
   },
   "ERR2729800": {
     "country": "United States",
     "date": "2014-11",
     "location": "New York City",
     "reads": 9893187,
-    "ribofrac": "0.0027"
+    "ribofrac": "0.0027",
+    "state": "New York"
   },
   "ERR2729801": {
     "country": "United States",
     "date": "2014-11",
     "location": "New York City",
     "reads": 10078843,
-    "ribofrac": "0.0057"
+    "ribofrac": "0.0057",
+    "state": "New York"
   },
   "ERR2729802": {
     "country": "United States",
     "date": "2014-11",
     "location": "New York City",
     "reads": 10987694,
-    "ribofrac": "0.0049"
+    "ribofrac": "0.0049",
+    "state": "New York"
   },
   "ERR2729803": {
     "country": "United States",
     "date": "2014-11",
     "location": "New York City",
     "reads": 10071277,
-    "ribofrac": "0.0001"
+    "ribofrac": "0.0001",
+    "state": "New York"
   },
   "ERR2729804": {
     "country": "United States",
     "date": "2014-11",
     "location": "New York City",
     "reads": 9892664,
-    "ribofrac": "0.0035"
+    "ribofrac": "0.0035",
+    "state": "New York"
   },
   "ERR2729805": {
     "country": "United States",
     "date": "2014-11",
     "location": "New York City",
     "reads": 11094487,
-    "ribofrac": "0.0053"
+    "ribofrac": "0.0053",
+    "state": "New York"
   },
   "ERR2729806": {
     "country": "United States",
     "date": "2014-11",
     "location": "New York City",
     "reads": 9667579,
-    "ribofrac": "0.0046"
+    "ribofrac": "0.0046",
+    "state": "New York"
   },
   "ERR2729807": {
     "country": "United States",
     "date": "2014-11",
     "location": "New York City",
     "reads": 10959117,
-    "ribofrac": "0.007"
+    "ribofrac": "0.007",
+    "state": "New York"
   },
   "ERR2729808": {
     "country": "United States",
     "date": "2014-11",
     "location": "New York City",
     "reads": 10393448,
-    "ribofrac": "0.0032"
+    "ribofrac": "0.0032",
+    "state": "New York"
   },
   "ERR2729809": {
     "country": "United States",
     "date": "2014-11",
     "location": "New York City",
     "reads": 9914397,
-    "ribofrac": "0.0069"
+    "ribofrac": "0.0069",
+    "state": "New York"
   },
   "ERR2729810": {
     "country": "United States",
     "date": "2014-11",
     "location": "New York City",
     "reads": 10294024,
-    "ribofrac": "0.0076"
+    "ribofrac": "0.0076",
+    "state": "New York"
   },
   "ERR2729811": {
     "country": "United States",
     "date": "2014-11",
     "location": "New York City",
     "reads": 8646908,
-    "ribofrac": "0.0046"
+    "ribofrac": "0.0046",
+    "state": "New York"
   },
   "ERR3503275": {
     "country": "Kenya",
@@ -17606,7 +17622,8 @@
     "location": "Maryland",
     "na_type": "RNA",
     "reads": 63950779,
-    "ribofrac": "0.4291"
+    "ribofrac": "0.4291",
+    "state": "Maryland"
   },
   "SRR18218718": {
     "country": "United States",
@@ -17615,7 +17632,8 @@
     "location": "Maryland",
     "na_type": "RNA",
     "reads": 55603482,
-    "ribofrac": "0.9424"
+    "ribofrac": "0.9424",
+    "state": "Maryland"
   },
   "SRR18218719": {
     "country": "United States",
@@ -17624,7 +17642,8 @@
     "location": "Maryland",
     "na_type": "RNA",
     "reads": 55184533,
-    "ribofrac": "0.3733"
+    "ribofrac": "0.3733",
+    "state": "Maryland"
   },
   "SRR18218720": {
     "country": "United States",
@@ -17633,7 +17652,8 @@
     "location": "Maryland",
     "na_type": "RNA",
     "reads": 38416197,
-    "ribofrac": "0.8077"
+    "ribofrac": "0.8077",
+    "state": "Maryland"
   },
   "SRR18218721": {
     "country": "United States",
@@ -17642,7 +17662,8 @@
     "location": "Maryland",
     "na_type": "DNA",
     "reads": 44649676,
-    "ribofrac": "0.0116"
+    "ribofrac": "0.0116",
+    "state": "Maryland"
   },
   "SRR18218722": {
     "country": "United States",
@@ -17651,7 +17672,8 @@
     "location": "Maryland",
     "na_type": "DNA",
     "reads": 29397305,
-    "ribofrac": "0.0076"
+    "ribofrac": "0.0076",
+    "state": "Maryland"
   },
   "SRR18218723": {
     "country": "United States",
@@ -17660,7 +17682,8 @@
     "location": "Maryland",
     "na_type": "DNA",
     "reads": 23992996,
-    "ribofrac": "0.0076"
+    "ribofrac": "0.0076",
+    "state": "Maryland"
   },
   "SRR18218724": {
     "country": "United States",
@@ -17669,7 +17692,8 @@
     "location": "Maryland",
     "na_type": "DNA",
     "reads": 27866082,
-    "ribofrac": "0.0116"
+    "ribofrac": "0.0116",
+    "state": "Maryland"
   },
   "SRR18218730": {
     "country": "United States",
@@ -17678,7 +17702,8 @@
     "location": "Maryland",
     "na_type": "RNA",
     "reads": 28942881,
-    "ribofrac": "0.6924"
+    "ribofrac": "0.6924",
+    "state": "Maryland"
   },
   "SRR18218731": {
     "country": "United States",
@@ -17687,7 +17712,8 @@
     "location": "Maryland",
     "na_type": "RNA",
     "reads": 34344443,
-    "ribofrac": "0.3911"
+    "ribofrac": "0.3911",
+    "state": "Maryland"
   },
   "SRR18218732": {
     "country": "United States",
@@ -17696,7 +17722,8 @@
     "location": "Maryland",
     "na_type": "DNA",
     "reads": 28371759,
-    "ribofrac": "0.0084"
+    "ribofrac": "0.0084",
+    "state": "Maryland"
   },
   "SRR18218733": {
     "country": "United States",
@@ -17705,7 +17732,8 @@
     "location": "Maryland",
     "na_type": "DNA",
     "reads": 41788792,
-    "ribofrac": "0.0047"
+    "ribofrac": "0.0047",
+    "state": "Maryland"
   },
   "SRR18340958": {
     "country": "United States",
@@ -19689,7 +19717,7 @@
   },
   "SRR20000426": {
     "city": "Ann Arbor",
-    "country": "USA",
+    "country": "United States",
     "county": "Washtenaw County",
     "date": "2020-12-24",
     "reads": 84300049,
@@ -19699,7 +19727,7 @@
   },
   "SRR20000427": {
     "city": "Ann Arbor",
-    "country": "USA",
+    "country": "United States",
     "county": "Washtenaw County",
     "date": "2020-12-23",
     "reads": 103215741,
@@ -19709,7 +19737,7 @@
   },
   "SRR20000428": {
     "city": "Ann Arbor",
-    "country": "USA",
+    "country": "United States",
     "county": "Washtenaw County",
     "date": "2020-12-22",
     "reads": 109423341,
@@ -19719,7 +19747,7 @@
   },
   "SRR20000429": {
     "city": "Ann Arbor",
-    "country": "USA",
+    "country": "United States",
     "county": "Washtenaw County",
     "date": "2020-12-22",
     "reads": 90911592,
@@ -19729,7 +19757,7 @@
   },
   "SRR20000430": {
     "city": "Ann Arbor",
-    "country": "USA",
+    "country": "United States",
     "county": "Washtenaw County",
     "date": "2020-12-22",
     "reads": 95032202,
@@ -19739,7 +19767,7 @@
   },
   "SRR20000431": {
     "city": "Ann Arbor",
-    "country": "USA",
+    "country": "United States",
     "county": "Washtenaw County",
     "date": "2020-12-21",
     "reads": 71927822,
@@ -19749,7 +19777,7 @@
   },
   "SRR20000432": {
     "city": "Ann Arbor",
-    "country": "USA",
+    "country": "United States",
     "county": "Washtenaw County",
     "date": "2020-12-21",
     "reads": 66877516,
@@ -19759,7 +19787,7 @@
   },
   "SRR20000433": {
     "city": "Ann Arbor",
-    "country": "USA",
+    "country": "United States",
     "county": "Washtenaw County",
     "date": "2020-12-21",
     "reads": 56671801,
@@ -19769,7 +19797,7 @@
   },
   "SRR20000440": {
     "city": "Ann Arbor",
-    "country": "USA",
+    "country": "United States",
     "county": "Washtenaw County",
     "date": "2020-12-20",
     "reads": 95514193,
@@ -19779,7 +19807,7 @@
   },
   "SRR20000441": {
     "city": "Ann Arbor",
-    "country": "USA",
+    "country": "United States",
     "county": "Washtenaw County",
     "date": "2020-12-19",
     "reads": 98828383,
@@ -19788,1320 +19816,1696 @@
     "state": "Michigan"
   },
   "SRR21374446": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 5237383,
-    "ribofrac": "0.0067"
+    "ribofrac": "0.0067",
+    "state": "Colorado"
   },
   "SRR21374447": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 5132252,
-    "ribofrac": "0.0034"
+    "ribofrac": "0.0034",
+    "state": "Colorado"
   },
   "SRR21374448": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 2753702,
-    "ribofrac": "0.0033"
+    "ribofrac": "0.0033",
+    "state": "Colorado"
   },
   "SRR21374449": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 4775711,
-    "ribofrac": "0.0084"
+    "ribofrac": "0.0084",
+    "state": "Colorado"
   },
   "SRR21374450": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 5578758,
-    "ribofrac": "0.0054"
+    "ribofrac": "0.0054",
+    "state": "Colorado"
   },
   "SRR21374451": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 6171405,
-    "ribofrac": "0.0066"
+    "ribofrac": "0.0066",
+    "state": "Colorado"
   },
   "SRR21374452": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 6111742,
-    "ribofrac": "0.0065"
+    "ribofrac": "0.0065",
+    "state": "Colorado"
   },
   "SRR21374453": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 5422779,
-    "ribofrac": "0.0055"
+    "ribofrac": "0.0055",
+    "state": "Colorado"
   },
   "SRR21374454": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 6658763,
-    "ribofrac": "0.0052"
+    "ribofrac": "0.0052",
+    "state": "Colorado"
   },
   "SRR21374455": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 10014138,
-    "ribofrac": "0.0056"
+    "ribofrac": "0.0056",
+    "state": "Colorado"
   },
   "SRR21374456": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 4617469,
-    "ribofrac": "0.0044"
+    "ribofrac": "0.0044",
+    "state": "Colorado"
   },
   "SRR21374457": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 9794140,
-    "ribofrac": "0.002"
+    "ribofrac": "0.002",
+    "state": "Colorado"
   },
   "SRR21374458": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 6418840,
-    "ribofrac": "0.0063"
+    "ribofrac": "0.0063",
+    "state": "Colorado"
   },
   "SRR21374459": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 5452417,
-    "ribofrac": "0.0037"
+    "ribofrac": "0.0037",
+    "state": "Colorado"
   },
   "SRR21374460": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 6970225,
-    "ribofrac": "0.0033"
+    "ribofrac": "0.0033",
+    "state": "Colorado"
   },
   "SRR21374461": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 10133763,
-    "ribofrac": "0.007"
+    "ribofrac": "0.007",
+    "state": "Colorado"
   },
   "SRR21374462": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 5563161,
-    "ribofrac": "0.0035"
+    "ribofrac": "0.0035",
+    "state": "Colorado"
   },
   "SRR21374463": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 6023704,
-    "ribofrac": "0.0098"
+    "ribofrac": "0.0098",
+    "state": "Colorado"
   },
   "SRR21374464": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 7007573,
-    "ribofrac": "0.0056"
+    "ribofrac": "0.0056",
+    "state": "Colorado"
   },
   "SRR21374465": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 6211155,
-    "ribofrac": "0.0055"
+    "ribofrac": "0.0055",
+    "state": "Colorado"
   },
   "SRR21374466": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 7162566,
-    "ribofrac": "0.0062"
+    "ribofrac": "0.0062",
+    "state": "Colorado"
   },
   "SRR21374467": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 2083383,
-    "ribofrac": "0.004"
+    "ribofrac": "0.004",
+    "state": "Colorado"
   },
   "SRR21374468": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 3758480,
-    "ribofrac": "0.0054"
+    "ribofrac": "0.0054",
+    "state": "Colorado"
   },
   "SRR21374469": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 5798112,
-    "ribofrac": "0.0044"
+    "ribofrac": "0.0044",
+    "state": "Colorado"
   },
   "SRR21374470": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 4559194,
-    "ribofrac": "0.0064"
+    "ribofrac": "0.0064",
+    "state": "Colorado"
   },
   "SRR21374471": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 6045872,
-    "ribofrac": "0.0036"
+    "ribofrac": "0.0036",
+    "state": "Colorado"
   },
   "SRR21374472": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 4195758,
-    "ribofrac": "0.0102"
+    "ribofrac": "0.0102",
+    "state": "Colorado"
   },
   "SRR21374473": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 3744278,
-    "ribofrac": "0.006"
+    "ribofrac": "0.006",
+    "state": "Colorado"
   },
   "SRR21374474": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 4152132,
-    "ribofrac": "0.005"
+    "ribofrac": "0.005",
+    "state": "Colorado"
   },
   "SRR21374475": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 8132396,
-    "ribofrac": "0.0046"
+    "ribofrac": "0.0046",
+    "state": "Colorado"
   },
   "SRR21374476": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 6823487,
-    "ribofrac": "0.0086"
+    "ribofrac": "0.0086",
+    "state": "Colorado"
   },
   "SRR21374477": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 4898155,
-    "ribofrac": "0.0076"
+    "ribofrac": "0.0076",
+    "state": "Colorado"
   },
   "SRR21374478": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 5063085,
-    "ribofrac": "0.0087"
+    "ribofrac": "0.0087",
+    "state": "Colorado"
   },
   "SRR21374479": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 1710515,
-    "ribofrac": "0.0055"
+    "ribofrac": "0.0055",
+    "state": "Colorado"
   },
   "SRR21374480": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 2470071,
-    "ribofrac": "0.0058"
+    "ribofrac": "0.0058",
+    "state": "Colorado"
   },
   "SRR21374481": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 3545584,
-    "ribofrac": "0.0047"
+    "ribofrac": "0.0047",
+    "state": "Colorado"
   },
   "SRR21374482": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 8032369,
-    "ribofrac": "0.0068"
+    "ribofrac": "0.0068",
+    "state": "Colorado"
   },
   "SRR21374483": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 4610426,
-    "ribofrac": "0.0074"
+    "ribofrac": "0.0074",
+    "state": "Colorado"
   },
   "SRR21374484": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 1812177,
-    "ribofrac": "0.0055"
+    "ribofrac": "0.0055",
+    "state": "Colorado"
   },
   "SRR21374485": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 3977803,
-    "ribofrac": "0.0045"
+    "ribofrac": "0.0045",
+    "state": "Colorado"
   },
   "SRR21374486": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 3775959,
-    "ribofrac": "0.01"
+    "ribofrac": "0.01",
+    "state": "Colorado"
   },
   "SRR21374487": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 2854362,
-    "ribofrac": "0.006"
+    "ribofrac": "0.006",
+    "state": "Colorado"
   },
   "SRR21374488": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 3990643,
-    "ribofrac": "0.0059"
+    "ribofrac": "0.0059",
+    "state": "Colorado"
   },
   "SRR21374489": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 3777950,
-    "ribofrac": "0.008"
+    "ribofrac": "0.008",
+    "state": "Colorado"
   },
   "SRR21374490": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 3931455,
-    "ribofrac": "0.0045"
+    "ribofrac": "0.0045",
+    "state": "Colorado"
   },
   "SRR21374491": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 6101481,
-    "ribofrac": "0.0045"
+    "ribofrac": "0.0045",
+    "state": "Colorado"
   },
   "SRR21374492": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 7556878,
-    "ribofrac": "0.0039"
+    "ribofrac": "0.0039",
+    "state": "Colorado"
   },
   "SRR21374493": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 5636863,
-    "ribofrac": "0.006"
+    "ribofrac": "0.006",
+    "state": "Colorado"
   },
   "SRR21374494": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 6527434,
-    "ribofrac": "0.0065"
+    "ribofrac": "0.0065",
+    "state": "Colorado"
   },
   "SRR21374495": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 6328706,
-    "ribofrac": "0.0065"
+    "ribofrac": "0.0065",
+    "state": "Colorado"
   },
   "SRR21374496": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 6547245,
-    "ribofrac": "0.0055"
+    "ribofrac": "0.0055",
+    "state": "Colorado"
   },
   "SRR21374497": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 6615352,
-    "ribofrac": "0.0077"
+    "ribofrac": "0.0077",
+    "state": "Colorado"
   },
   "SRR21374498": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 3753838,
-    "ribofrac": "0.0082"
+    "ribofrac": "0.0082",
+    "state": "Colorado"
   },
   "SRR21374499": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 6948507,
-    "ribofrac": "0.0073"
+    "ribofrac": "0.0073",
+    "state": "Colorado"
   },
   "SRR21374500": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 3700711,
-    "ribofrac": "0.0053"
+    "ribofrac": "0.0053",
+    "state": "Colorado"
   },
   "SRR21374501": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 4005750,
-    "ribofrac": "0.0058"
+    "ribofrac": "0.0058",
+    "state": "Colorado"
   },
   "SRR21374502": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 2846662,
-    "ribofrac": "0.005"
+    "ribofrac": "0.005",
+    "state": "Colorado"
   },
   "SRR21374503": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 5363499,
-    "ribofrac": "0.005"
+    "ribofrac": "0.005",
+    "state": "Colorado"
   },
   "SRR21374504": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 3689657,
-    "ribofrac": "0.0026"
+    "ribofrac": "0.0026",
+    "state": "Colorado"
   },
   "SRR21374505": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 7346454,
-    "ribofrac": "0.0066"
+    "ribofrac": "0.0066",
+    "state": "Colorado"
   },
   "SRR21374506": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 6243176,
-    "ribofrac": "0.007"
+    "ribofrac": "0.007",
+    "state": "Colorado"
   },
   "SRR21374507": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 4272534,
-    "ribofrac": "0.0062"
+    "ribofrac": "0.0062",
+    "state": "Colorado"
   },
   "SRR21374508": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 5165052,
-    "ribofrac": "0.0075"
+    "ribofrac": "0.0075",
+    "state": "Colorado"
   },
   "SRR21374509": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 6362062,
-    "ribofrac": "0.0043"
+    "ribofrac": "0.0043",
+    "state": "Colorado"
   },
   "SRR21374510": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 6930982,
-    "ribofrac": "0.0045"
+    "ribofrac": "0.0045",
+    "state": "Colorado"
   },
   "SRR21374511": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 4404836,
-    "ribofrac": "0.0072"
+    "ribofrac": "0.0072",
+    "state": "Colorado"
   },
   "SRR21374512": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 5007438,
-    "ribofrac": "0.0043"
+    "ribofrac": "0.0043",
+    "state": "Colorado"
   },
   "SRR21374513": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 5946239,
-    "ribofrac": "0.0057"
+    "ribofrac": "0.0057",
+    "state": "Colorado"
   },
   "SRR21374514": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 5727229,
-    "ribofrac": "0.008"
+    "ribofrac": "0.008",
+    "state": "Colorado"
   },
   "SRR21374515": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 5591340,
-    "ribofrac": "0.0061"
+    "ribofrac": "0.0061",
+    "state": "Colorado"
   },
   "SRR21374516": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 2853113,
-    "ribofrac": "0.0074"
+    "ribofrac": "0.0074",
+    "state": "Colorado"
   },
   "SRR21374517": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 2966652,
-    "ribofrac": "0.0021"
+    "ribofrac": "0.0021",
+    "state": "Colorado"
   },
   "SRR21374518": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 3237022,
-    "ribofrac": "0.0061"
+    "ribofrac": "0.0061",
+    "state": "Colorado"
   },
   "SRR21374519": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 3256759,
-    "ribofrac": "0.0033"
+    "ribofrac": "0.0033",
+    "state": "Colorado"
   },
   "SRR21374520": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 3962010,
-    "ribofrac": "0.0058"
+    "ribofrac": "0.0058",
+    "state": "Colorado"
   },
   "SRR21374521": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 1853631,
-    "ribofrac": "0.0065"
+    "ribofrac": "0.0065",
+    "state": "Colorado"
   },
   "SRR21374522": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 2607643,
-    "ribofrac": "0.002"
+    "ribofrac": "0.002",
+    "state": "Colorado"
   },
   "SRR21374523": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 4679078,
-    "ribofrac": "0.0064"
+    "ribofrac": "0.0064",
+    "state": "Colorado"
   },
   "SRR21374524": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 5720907,
-    "ribofrac": "0.0046"
+    "ribofrac": "0.0046",
+    "state": "Colorado"
   },
   "SRR21374525": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 5858975,
-    "ribofrac": "0.0046"
+    "ribofrac": "0.0046",
+    "state": "Colorado"
   },
   "SRR21374526": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 6564923,
-    "ribofrac": "0.0036"
+    "ribofrac": "0.0036",
+    "state": "Colorado"
   },
   "SRR21374527": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 6777934,
-    "ribofrac": "0.0032"
+    "ribofrac": "0.0032",
+    "state": "Colorado"
   },
   "SRR21374528": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 5166363,
-    "ribofrac": "0.0037"
+    "ribofrac": "0.0037",
+    "state": "Colorado"
   },
   "SRR21374529": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 3382274,
-    "ribofrac": "0.0123"
+    "ribofrac": "0.0123",
+    "state": "Colorado"
   },
   "SRR21374530": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 2818476,
-    "ribofrac": "0.0059"
+    "ribofrac": "0.0059",
+    "state": "Colorado"
   },
   "SRR21374531": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 3705802,
-    "ribofrac": "0.0049"
+    "ribofrac": "0.0049",
+    "state": "Colorado"
   },
   "SRR21374532": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 5532540,
-    "ribofrac": "0.0053"
+    "ribofrac": "0.0053",
+    "state": "Colorado"
   },
   "SRR21374533": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 4588439,
-    "ribofrac": "0.0056"
+    "ribofrac": "0.0056",
+    "state": "Colorado"
   },
   "SRR21374534": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 7230116,
-    "ribofrac": "0.0024"
+    "ribofrac": "0.0024",
+    "state": "Colorado"
   },
   "SRR21374535": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 5438592,
-    "ribofrac": "0.0061"
+    "ribofrac": "0.0061",
+    "state": "Colorado"
   },
   "SRR21374536": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 5665458,
-    "ribofrac": "0.0049"
+    "ribofrac": "0.0049",
+    "state": "Colorado"
   },
   "SRR21374537": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 6215541,
-    "ribofrac": "0.0046"
+    "ribofrac": "0.0046",
+    "state": "Colorado"
   },
   "SRR21374538": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 5956655,
-    "ribofrac": "0.0083"
+    "ribofrac": "0.0083",
+    "state": "Colorado"
   },
   "SRR21374539": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 7137180,
-    "ribofrac": "0.0073"
+    "ribofrac": "0.0073",
+    "state": "Colorado"
   },
   "SRR21374540": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 4580199,
-    "ribofrac": "0.0113"
+    "ribofrac": "0.0113",
+    "state": "Colorado"
   },
   "SRR21374541": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 5390114,
-    "ribofrac": "0.0077"
+    "ribofrac": "0.0077",
+    "state": "Colorado"
   },
   "SRR21374542": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 9691794,
-    "ribofrac": "0.0081"
+    "ribofrac": "0.0081",
+    "state": "Colorado"
   },
   "SRR21374543": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 5750510,
-    "ribofrac": "0.0051"
+    "ribofrac": "0.0051",
+    "state": "Colorado"
   },
   "SRR21374544": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 1933858,
-    "ribofrac": "0.0045"
+    "ribofrac": "0.0045",
+    "state": "Colorado"
   },
   "SRR21374545": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 4632338,
-    "ribofrac": "0.0044"
+    "ribofrac": "0.0044",
+    "state": "Colorado"
   },
   "SRR21374546": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 1975571,
-    "ribofrac": "0.0059"
+    "ribofrac": "0.0059",
+    "state": "Colorado"
   },
   "SRR21374547": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 5559585,
-    "ribofrac": "0.0054"
+    "ribofrac": "0.0054",
+    "state": "Colorado"
   },
   "SRR21374548": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 9158137,
-    "ribofrac": "0.0067"
+    "ribofrac": "0.0067",
+    "state": "Colorado"
   },
   "SRR21374549": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 4492476,
-    "ribofrac": "0.0044"
+    "ribofrac": "0.0044",
+    "state": "Colorado"
   },
   "SRR21374550": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 5787733,
-    "ribofrac": "0.0054"
+    "ribofrac": "0.0054",
+    "state": "Colorado"
   },
   "SRR21374551": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 12058020,
-    "ribofrac": "0.0067"
+    "ribofrac": "0.0067",
+    "state": "Colorado"
   },
   "SRR21374552": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 8830740,
-    "ribofrac": "0.0055"
+    "ribofrac": "0.0055",
+    "state": "Colorado"
   },
   "SRR21374553": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 5623146,
-    "ribofrac": "0.0091"
+    "ribofrac": "0.0091",
+    "state": "Colorado"
   },
   "SRR21374554": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 6195382,
-    "ribofrac": "0.0059"
+    "ribofrac": "0.0059",
+    "state": "Colorado"
   },
   "SRR21374555": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 8985126,
-    "ribofrac": "0.0071"
+    "ribofrac": "0.0071",
+    "state": "Colorado"
   },
   "SRR21374556": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 5076438,
-    "ribofrac": "0.005"
+    "ribofrac": "0.005",
+    "state": "Colorado"
   },
   "SRR21374557": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 2127428,
-    "ribofrac": "0.007"
+    "ribofrac": "0.007",
+    "state": "Colorado"
   },
   "SRR21374558": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 7210112,
-    "ribofrac": "0.0034"
+    "ribofrac": "0.0034",
+    "state": "Colorado"
   },
   "SRR21374559": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 2500468,
-    "ribofrac": "0.0064"
+    "ribofrac": "0.0064",
+    "state": "Colorado"
   },
   "SRR21374560": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 5640925,
-    "ribofrac": "0.0055"
+    "ribofrac": "0.0055",
+    "state": "Colorado"
   },
   "SRR21374561": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 6031121,
-    "ribofrac": "0.0055"
+    "ribofrac": "0.0055",
+    "state": "Colorado"
   },
   "SRR21374562": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 5259403,
-    "ribofrac": "0.005"
+    "ribofrac": "0.005",
+    "state": "Colorado"
   },
   "SRR21374563": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 7487762,
-    "ribofrac": "0.0042"
+    "ribofrac": "0.0042",
+    "state": "Colorado"
   },
   "SRR21374564": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 7206636,
-    "ribofrac": "0.0069"
+    "ribofrac": "0.0069",
+    "state": "Colorado"
   },
   "SRR21374565": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 7888242,
-    "ribofrac": "0.0064"
+    "ribofrac": "0.0064",
+    "state": "Colorado"
   },
   "SRR21374566": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 4708695,
-    "ribofrac": "0.0058"
+    "ribofrac": "0.0058",
+    "state": "Colorado"
   },
   "SRR21374567": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 7040158,
-    "ribofrac": "0.006"
+    "ribofrac": "0.006",
+    "state": "Colorado"
   },
   "SRR21374568": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 5717824,
-    "ribofrac": "0.0077"
+    "ribofrac": "0.0077",
+    "state": "Colorado"
   },
   "SRR21374569": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 3667747,
-    "ribofrac": "0.0039"
+    "ribofrac": "0.0039",
+    "state": "Colorado"
   },
   "SRR21374570": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 5457100,
-    "ribofrac": "0.0061"
+    "ribofrac": "0.0061",
+    "state": "Colorado"
   },
   "SRR21374571": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 4844702,
-    "ribofrac": "0.0044"
+    "ribofrac": "0.0044",
+    "state": "Colorado"
   },
   "SRR21374572": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 2003833,
-    "ribofrac": "0.004"
+    "ribofrac": "0.004",
+    "state": "Colorado"
   },
   "SRR21374573": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 4131438,
-    "ribofrac": "0.0066"
+    "ribofrac": "0.0066",
+    "state": "Colorado"
   },
   "SRR21374574": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 9549757,
-    "ribofrac": "0.0086"
+    "ribofrac": "0.0086",
+    "state": "Colorado"
   },
   "SRR21374575": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 8144897,
-    "ribofrac": "0.0058"
+    "ribofrac": "0.0058",
+    "state": "Colorado"
   },
   "SRR21374576": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 7376494,
-    "ribofrac": "0.0067"
+    "ribofrac": "0.0067",
+    "state": "Colorado"
   },
   "SRR21374577": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 7267354,
-    "ribofrac": "0.0058"
+    "ribofrac": "0.0058",
+    "state": "Colorado"
   },
   "SRR21374578": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 7255427,
-    "ribofrac": "0.0038"
+    "ribofrac": "0.0038",
+    "state": "Colorado"
   },
   "SRR21374579": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 7388122,
-    "ribofrac": "0.0053"
+    "ribofrac": "0.0053",
+    "state": "Colorado"
   },
   "SRR21374580": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 5796224,
-    "ribofrac": "0.0059"
+    "ribofrac": "0.0059",
+    "state": "Colorado"
   },
   "SRR21374581": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 5505112,
-    "ribofrac": "0.0077"
+    "ribofrac": "0.0077",
+    "state": "Colorado"
   },
   "SRR21374582": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 2335683,
-    "ribofrac": "0.0026"
+    "ribofrac": "0.0026",
+    "state": "Colorado"
   },
   "SRR21374583": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 4909890,
-    "ribofrac": "0.0045"
+    "ribofrac": "0.0045",
+    "state": "Colorado"
   },
   "SRR21374584": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 7274228,
-    "ribofrac": "0.0095"
+    "ribofrac": "0.0095",
+    "state": "Colorado"
   },
   "SRR21374585": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 5070304,
-    "ribofrac": "0.0055"
+    "ribofrac": "0.0055",
+    "state": "Colorado"
   },
   "SRR21374586": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 5307620,
-    "ribofrac": "0.0065"
+    "ribofrac": "0.0065",
+    "state": "Colorado"
   },
   "SRR21374587": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 6208441,
-    "ribofrac": "0.0044"
+    "ribofrac": "0.0044",
+    "state": "Colorado"
   },
   "SRR21374588": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 4764518,
-    "ribofrac": "0.0056"
+    "ribofrac": "0.0056",
+    "state": "Colorado"
   },
   "SRR21374589": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 4124948,
-    "ribofrac": "0.0064"
+    "ribofrac": "0.0064",
+    "state": "Colorado"
   },
   "SRR21374590": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 6705083,
-    "ribofrac": "0.0076"
+    "ribofrac": "0.0076",
+    "state": "Colorado"
   },
   "SRR21374591": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 3695849,
-    "ribofrac": "0.0041"
+    "ribofrac": "0.0041",
+    "state": "Colorado"
   },
   "SRR21374592": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 2548874,
-    "ribofrac": "0.0058"
+    "ribofrac": "0.0058",
+    "state": "Colorado"
   },
   "SRR21374593": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 4624655,
-    "ribofrac": "0.0035"
+    "ribofrac": "0.0035",
+    "state": "Colorado"
   },
   "SRR21374594": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 6340957,
-    "ribofrac": "0.0053"
+    "ribofrac": "0.0053",
+    "state": "Colorado"
   },
   "SRR21374595": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 5387017,
-    "ribofrac": "0.0047"
+    "ribofrac": "0.0047",
+    "state": "Colorado"
   },
   "SRR21374596": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 5898399,
-    "ribofrac": "0.0081"
+    "ribofrac": "0.0081",
+    "state": "Colorado"
   },
   "SRR21374597": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 5114135,
-    "ribofrac": "0.0092"
+    "ribofrac": "0.0092",
+    "state": "Colorado"
   },
   "SRR21374598": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 6288537,
-    "ribofrac": "0.0062"
+    "ribofrac": "0.0062",
+    "state": "Colorado"
   },
   "SRR21374599": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 6660425,
-    "ribofrac": "0.0116"
+    "ribofrac": "0.0116",
+    "state": "Colorado"
   },
   "SRR21374600": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 3875340,
-    "ribofrac": "0.005"
+    "ribofrac": "0.005",
+    "state": "Colorado"
   },
   "SRR21374601": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 2707674,
-    "ribofrac": "0.0095"
+    "ribofrac": "0.0095",
+    "state": "Colorado"
   },
   "SRR21374602": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 6372485,
-    "ribofrac": "0.0085"
+    "ribofrac": "0.0085",
+    "state": "Colorado"
   },
   "SRR21374603": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 3235377,
-    "ribofrac": "0.0079"
+    "ribofrac": "0.0079",
+    "state": "Colorado"
   },
   "SRR21374604": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 2941369,
-    "ribofrac": "0.0077"
+    "ribofrac": "0.0077",
+    "state": "Colorado"
   },
   "SRR21374605": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 5679690,
-    "ribofrac": "0.008"
+    "ribofrac": "0.008",
+    "state": "Colorado"
   },
   "SRR21374606": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 5570607,
-    "ribofrac": "0.0072"
+    "ribofrac": "0.0072",
+    "state": "Colorado"
   },
   "SRR21374607": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 8486150,
-    "ribofrac": "0.0078"
+    "ribofrac": "0.0078",
+    "state": "Colorado"
   },
   "SRR21374608": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 7020279,
-    "ribofrac": "0.0047"
+    "ribofrac": "0.0047",
+    "state": "Colorado"
   },
   "SRR21374609": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 5977284,
-    "ribofrac": "0.0023"
+    "ribofrac": "0.0023",
+    "state": "Colorado"
   },
   "SRR21374610": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 8677561,
-    "ribofrac": "0.0065"
+    "ribofrac": "0.0065",
+    "state": "Colorado"
   },
   "SRR21374611": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 6041489,
-    "ribofrac": "0.0042"
+    "ribofrac": "0.0042",
+    "state": "Colorado"
   },
   "SRR21374612": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 2134327,
-    "ribofrac": "0.0048"
+    "ribofrac": "0.0048",
+    "state": "Colorado"
   },
   "SRR21374613": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 2359528,
-    "ribofrac": "0.0053"
+    "ribofrac": "0.0053",
+    "state": "Colorado"
   },
   "SRR21374614": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 3290844,
-    "ribofrac": "0.0092"
+    "ribofrac": "0.0092",
+    "state": "Colorado"
   },
   "SRR21374615": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 4354468,
-    "ribofrac": "0.0075"
+    "ribofrac": "0.0075",
+    "state": "Colorado"
   },
   "SRR21374616": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 2571571,
-    "ribofrac": "0.0041"
+    "ribofrac": "0.0041",
+    "state": "Colorado"
   },
   "SRR21374617": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 5905571,
-    "ribofrac": "0.0036"
+    "ribofrac": "0.0036",
+    "state": "Colorado"
   },
   "SRR21374618": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 8587722,
-    "ribofrac": "0.008"
+    "ribofrac": "0.008",
+    "state": "Colorado"
   },
   "SRR21374619": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 6559276,
-    "ribofrac": "0.0059"
+    "ribofrac": "0.0059",
+    "state": "Colorado"
   },
   "SRR21374620": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 7759599,
-    "ribofrac": "0.004"
+    "ribofrac": "0.004",
+    "state": "Colorado"
   },
   "SRR21374621": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 4003644,
-    "ribofrac": "0.0037"
+    "ribofrac": "0.0037",
+    "state": "Colorado"
   },
   "SRR21374622": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 4070620,
-    "ribofrac": "0.0031"
+    "ribofrac": "0.0031",
+    "state": "Colorado"
   },
   "SRR21374623": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 4456922,
-    "ribofrac": "0.0048"
+    "ribofrac": "0.0048",
+    "state": "Colorado"
   },
   "SRR21374624": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 1958105,
-    "ribofrac": "0.0085"
+    "ribofrac": "0.0085",
+    "state": "Colorado"
   },
   "SRR21374625": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 5112349,
-    "ribofrac": "0.0085"
+    "ribofrac": "0.0085",
+    "state": "Colorado"
   },
   "SRR21374626": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 3588190,
-    "ribofrac": "0.004"
+    "ribofrac": "0.004",
+    "state": "Colorado"
   },
   "SRR21374627": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 3373146,
-    "ribofrac": "0.0033"
+    "ribofrac": "0.0033",
+    "state": "Colorado"
   },
   "SRR21374628": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 5169733,
-    "ribofrac": "0.0068"
+    "ribofrac": "0.0068",
+    "state": "Colorado"
   },
   "SRR21374629": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 5650834,
-    "ribofrac": "0.0028"
+    "ribofrac": "0.0028",
+    "state": "Colorado"
   },
   "SRR21374630": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 5350854,
-    "ribofrac": "0.0042"
+    "ribofrac": "0.0042",
+    "state": "Colorado"
   },
   "SRR21374631": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 6025876,
-    "ribofrac": "0.0101"
+    "ribofrac": "0.0101",
+    "state": "Colorado"
   },
   "SRR21374632": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 8904530,
-    "ribofrac": "0.006"
+    "ribofrac": "0.006",
+    "state": "Colorado"
   },
   "SRR21374633": {
+    "city": "Boulder",
     "country": "United States",
     "date": "2020-09",
     "location": "Boulder, CO",
     "reads": 4340749,
-    "ribofrac": "0.004"
+    "ribofrac": "0.004",
+    "state": "Colorado"
   },
   "SRR21452135": {
     "country": "United States",
@@ -21797,6 +22201,7 @@
     "state": "Ohio"
   },
   "SRR23800641": {
+    "city": "Houston",
     "country": "United States",
     "county": "Harris County",
     "date": "2022",
@@ -21808,6 +22213,7 @@
     "state": "Texas"
   },
   "SRR23800642": {
+    "city": "Houston",
     "country": "United States",
     "county": "Harris County",
     "date": "2022",
@@ -21819,6 +22225,7 @@
     "state": "Texas"
   },
   "SRR23800643": {
+    "city": "Houston",
     "country": "United States",
     "county": "Harris County",
     "date": "2022",
@@ -21830,6 +22237,7 @@
     "state": "Texas"
   },
   "SRR23800644": {
+    "city": "Houston",
     "country": "United States",
     "county": "Harris County",
     "date": "2022",
@@ -21841,6 +22249,7 @@
     "state": "Texas"
   },
   "SRR23800645": {
+    "city": "Houston",
     "country": "United States",
     "county": "Harris County",
     "date": "2022",
@@ -21852,6 +22261,7 @@
     "state": "Texas"
   },
   "SRR23800646": {
+    "city": "Houston",
     "country": "United States",
     "county": "Harris County",
     "date": "2022",
@@ -21863,6 +22273,7 @@
     "state": "Texas"
   },
   "SRR23800647": {
+    "city": "Houston",
     "country": "United States",
     "county": "Harris County",
     "date": "2022",
@@ -21874,6 +22285,7 @@
     "state": "Texas"
   },
   "SRR23800648": {
+    "city": "Houston",
     "country": "United States",
     "county": "Harris County",
     "date": "2022",
@@ -21885,6 +22297,7 @@
     "state": "Texas"
   },
   "SRR23800649": {
+    "city": "Houston",
     "country": "United States",
     "county": "Harris County",
     "date": "2022",
@@ -21896,6 +22309,7 @@
     "state": "Texas"
   },
   "SRR23800650": {
+    "city": "Houston",
     "country": "United States",
     "county": "Harris County",
     "date": "2022",
@@ -21907,6 +22321,7 @@
     "state": "Texas"
   },
   "SRR23800651": {
+    "city": "Houston",
     "country": "United States",
     "county": "Harris County",
     "date": "2022",
@@ -21918,6 +22333,7 @@
     "state": "Texas"
   },
   "SRR23800652": {
+    "city": "Houston",
     "country": "United States",
     "county": "Harris County",
     "date": "2022",
@@ -21929,6 +22345,7 @@
     "state": "Texas"
   },
   "SRR23800653": {
+    "city": "Houston",
     "country": "United States",
     "county": "Harris County",
     "date": "2022",
@@ -21940,6 +22357,7 @@
     "state": "Texas"
   },
   "SRR23800654": {
+    "city": "Houston",
     "country": "United States",
     "county": "Harris County",
     "date": "2022",
@@ -21951,6 +22369,7 @@
     "state": "Texas"
   },
   "SRR23800655": {
+    "city": "Houston",
     "country": "United States",
     "county": "Harris County",
     "date": "2022",
@@ -21962,6 +22381,7 @@
     "state": "Texas"
   },
   "SRR23800656": {
+    "city": "Houston",
     "country": "United States",
     "county": "Harris County",
     "date": "2022",
@@ -21973,6 +22393,7 @@
     "state": "Texas"
   },
   "SRR23800657": {
+    "city": "Houston",
     "country": "United States",
     "county": "Harris County",
     "date": "2022",
@@ -21984,6 +22405,7 @@
     "state": "Texas"
   },
   "SRR23800658": {
+    "city": "Houston",
     "country": "United States",
     "county": "Harris County",
     "date": "2022",
@@ -21995,6 +22417,7 @@
     "state": "Texas"
   },
   "SRR23800659": {
+    "city": "Houston",
     "country": "United States",
     "county": "Harris County",
     "date": "2022",
@@ -22088,6 +22511,2910 @@
     "reads": 36420649,
     "ribofrac": "0.0077",
     "state": "California"
+  },
+  "SRR24403399": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-08-11",
+    "location": "EPS K6",
+    "reads": 7391537,
+    "state": "Texas"
+  },
+  "SRR24403400": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-11-22",
+    "location": "HOU C1",
+    "reads": 16313284,
+    "state": "Texas"
+  },
+  "SRR24403401": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-12-28",
+    "location": "HOU C1",
+    "reads": 13510086,
+    "state": "Texas"
+  },
+  "SRR24403402": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2023-01-19",
+    "location": "HOU C1",
+    "reads": 19547757,
+    "state": "Texas"
+  },
+  "SRR24403403": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-07-06",
+    "location": "HOU C1",
+    "reads": 8023615,
+    "state": "Texas"
+  },
+  "SRR24403404": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-06-29",
+    "location": "HOU C1",
+    "reads": 8268793,
+    "state": "Texas"
+  },
+  "SRR24403405": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-10-18",
+    "location": "HOU C1",
+    "reads": 7965567,
+    "state": "Texas"
+  },
+  "SRR24403406": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-10-11",
+    "location": "HOU C1",
+    "reads": 9554953,
+    "state": "Texas"
+  },
+  "SRR24403407": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-10-04",
+    "location": "HOU C1",
+    "reads": 6706772,
+    "state": "Texas"
+  },
+  "SRR24403408": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-09-28",
+    "location": "HOU C1",
+    "reads": 10386283,
+    "state": "Texas"
+  },
+  "SRR24403409": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-09-19",
+    "location": "HOU C1",
+    "reads": 7684988,
+    "state": "Texas"
+  },
+  "SRR24403410": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2023-02-02",
+    "location": "HOU Z9",
+    "reads": 30218486,
+    "state": "Texas"
+  },
+  "SRR24403411": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-09-13",
+    "location": "HOU C1",
+    "reads": 7133515,
+    "state": "Texas"
+  },
+  "SRR24403412": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-09-06",
+    "location": "HOU C1",
+    "reads": 6110684,
+    "state": "Texas"
+  },
+  "SRR24403413": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-08-30",
+    "location": "HOU C1",
+    "reads": 7017603,
+    "state": "Texas"
+  },
+  "SRR24403414": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-08-25",
+    "location": "HOU C1",
+    "reads": 9365245,
+    "state": "Texas"
+  },
+  "SRR24403415": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-08-16",
+    "location": "HOU C1",
+    "reads": 9533162,
+    "state": "Texas"
+  },
+  "SRR24403416": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-12-28",
+    "location": "HOU Z9",
+    "reads": 14893828,
+    "state": "Texas"
+  },
+  "SRR24403417": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-11-01",
+    "location": "HOU C1",
+    "reads": 19064654,
+    "state": "Texas"
+  },
+  "SRR24403418": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2023-01-30",
+    "location": "EPS Q9",
+    "reads": 19110408,
+    "state": "Texas"
+  },
+  "SRR24403419": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-12-12",
+    "location": "EPS Q9",
+    "reads": 12572686,
+    "state": "Texas"
+  },
+  "SRR24403420": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-12-19",
+    "location": "EPS Q9",
+    "reads": 11529851,
+    "state": "Texas"
+  },
+  "SRR24403421": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-09-20",
+    "location": "EPS Q9",
+    "reads": 6595210,
+    "state": "Texas"
+  },
+  "SRR24403422": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-09-12",
+    "location": "EPS Q9",
+    "reads": 7238354,
+    "state": "Texas"
+  },
+  "SRR24403423": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-09-06",
+    "location": "EPS Q9",
+    "reads": 8088039,
+    "state": "Texas"
+  },
+  "SRR24403424": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-08-29",
+    "location": "EPS Q9",
+    "reads": 8061398,
+    "state": "Texas"
+  },
+  "SRR24403425": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-08-22",
+    "location": "EPS Q9",
+    "reads": 9627317,
+    "state": "Texas"
+  },
+  "SRR24403426": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-08-15",
+    "location": "EPS Q9",
+    "reads": 15090999,
+    "state": "Texas"
+  },
+  "SRR24403427": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2023-01-10",
+    "location": "HOU Z9",
+    "reads": 23026573,
+    "state": "Texas"
+  },
+  "SRR24403428": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-08-08",
+    "location": "EPS Q9",
+    "reads": 8169799,
+    "state": "Texas"
+  },
+  "SRR24403429": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-08-01",
+    "location": "EPS Q9",
+    "reads": 7855706,
+    "state": "Texas"
+  },
+  "SRR24403430": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-07-25",
+    "location": "EPS Q9",
+    "reads": 7405533,
+    "state": "Texas"
+  },
+  "SRR24403431": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-07-18",
+    "location": "EPS Q9",
+    "reads": 7059933,
+    "state": "Texas"
+  },
+  "SRR24403432": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-08-30",
+    "location": "HOU S3",
+    "reads": 7728034,
+    "state": "Texas"
+  },
+  "SRR24403433": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-08-25",
+    "location": "HOU S3",
+    "reads": 11556489,
+    "state": "Texas"
+  },
+  "SRR24403434": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-08-16",
+    "location": "HOU S3",
+    "reads": 8988615,
+    "state": "Texas"
+  },
+  "SRR24403435": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-08-10",
+    "location": "HOU S3",
+    "reads": 10157659,
+    "state": "Texas"
+  },
+  "SRR24403436": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-11-22",
+    "location": "HOU Z9",
+    "reads": 8991413,
+    "state": "Texas"
+  },
+  "SRR24403437": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-08-03",
+    "location": "HOU S3",
+    "reads": 7902404,
+    "state": "Texas"
+  },
+  "SRR24403438": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-07-26",
+    "location": "HOU S3",
+    "reads": 9601283,
+    "state": "Texas"
+  },
+  "SRR24403439": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-07-19",
+    "location": "HOU S3",
+    "reads": 8884207,
+    "state": "Texas"
+  },
+  "SRR24403440": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-07-12",
+    "location": "HOU S3",
+    "reads": 7111767,
+    "state": "Texas"
+  },
+  "SRR24403441": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-07-06",
+    "location": "HOU S3",
+    "reads": 11223539,
+    "state": "Texas"
+  },
+  "SRR24403442": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-06-29",
+    "location": "HOU S3",
+    "reads": 8491184,
+    "state": "Texas"
+  },
+  "SRR24403443": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-06-22",
+    "location": "HOU S3",
+    "reads": 10201573,
+    "state": "Texas"
+  },
+  "SRR24403444": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-06-15",
+    "location": "HOU S3",
+    "reads": 4270609,
+    "state": "Texas"
+  },
+  "SRR24403445": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-06-08",
+    "location": "HOU S3",
+    "reads": 10627003,
+    "state": "Texas"
+  },
+  "SRR24403446": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-11-01",
+    "location": "HOU S3",
+    "reads": 18158134,
+    "state": "Texas"
+  },
+  "SRR24403447": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-10-25",
+    "location": "HOU Z9",
+    "reads": 9592958,
+    "state": "Texas"
+  },
+  "SRR24403448": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-10-31",
+    "location": "EPS J3",
+    "reads": 9259816,
+    "state": "Texas"
+  },
+  "SRR24403449": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-11-28",
+    "location": "EPS J3",
+    "reads": 13796385,
+    "state": "Texas"
+  },
+  "SRR24403450": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-09-20",
+    "location": "EPS J3",
+    "reads": 6118805,
+    "state": "Texas"
+  },
+  "SRR24403451": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-09-12",
+    "location": "EPS J3",
+    "reads": 8343309,
+    "state": "Texas"
+  },
+  "SRR24403452": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-09-06",
+    "location": "EPS J3",
+    "reads": 9030048,
+    "state": "Texas"
+  },
+  "SRR24403453": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-10-11",
+    "location": "HOU Z9",
+    "reads": 7117445,
+    "state": "Texas"
+  },
+  "SRR24403454": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-08-29",
+    "location": "EPS J3",
+    "reads": 6746771,
+    "state": "Texas"
+  },
+  "SRR24403455": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-08-22",
+    "location": "EPS J3",
+    "reads": 5724575,
+    "state": "Texas"
+  },
+  "SRR24403456": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-08-15",
+    "location": "EPS J3",
+    "reads": 9390719,
+    "state": "Texas"
+  },
+  "SRR24403457": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-08-08",
+    "location": "EPS J3",
+    "reads": 5306251,
+    "state": "Texas"
+  },
+  "SRR24403458": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-08-01",
+    "location": "EPS J3",
+    "reads": 6922926,
+    "state": "Texas"
+  },
+  "SRR24403459": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-07-25",
+    "location": "EPS J3",
+    "reads": 7013085,
+    "state": "Texas"
+  },
+  "SRR24403460": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-07-18",
+    "location": "EPS J3",
+    "reads": 4194173,
+    "state": "Texas"
+  },
+  "SRR24403461": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-07-11",
+    "location": "EPS J3",
+    "reads": 3441018,
+    "state": "Texas"
+  },
+  "SRR24403462": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-07-05",
+    "location": "EPS J3",
+    "reads": 8751406,
+    "state": "Texas"
+  },
+  "SRR24403463": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-06-29",
+    "location": "EPS J3",
+    "reads": 10698266,
+    "state": "Texas"
+  },
+  "SRR24403464": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2023-01-25",
+    "location": "HOU R5",
+    "reads": 19543879,
+    "state": "Texas"
+  },
+  "SRR24403465": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-12-13",
+    "location": "HOU R5",
+    "reads": 12714448,
+    "state": "Texas"
+  },
+  "SRR24403466": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-09-13",
+    "location": "HOU Z9",
+    "reads": 6606250,
+    "state": "Texas"
+  },
+  "SRR24403467": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-12-20",
+    "location": "HOU R5",
+    "reads": 17957909,
+    "state": "Texas"
+  },
+  "SRR24403468": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-12-08",
+    "location": "HOU R5",
+    "reads": 11947773,
+    "state": "Texas"
+  },
+  "SRR24403469": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-11-29",
+    "location": "HOU R5",
+    "reads": 11958776,
+    "state": "Texas"
+  },
+  "SRR24403470": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-11-16",
+    "location": "HOU R5",
+    "reads": 20496048,
+    "state": "Texas"
+  },
+  "SRR24403471": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-10-25",
+    "location": "HOU R5",
+    "reads": 9433147,
+    "state": "Texas"
+  },
+  "SRR24403472": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-10-18",
+    "location": "HOU R5",
+    "reads": 9670830,
+    "state": "Texas"
+  },
+  "SRR24403473": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-10-11",
+    "location": "HOU R5",
+    "reads": 11459814,
+    "state": "Texas"
+  },
+  "SRR24403474": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-10-04",
+    "location": "HOU R5",
+    "reads": 10903902,
+    "state": "Texas"
+  },
+  "SRR24403475": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-09-28",
+    "location": "HOU R5",
+    "reads": 10175758,
+    "state": "Texas"
+  },
+  "SRR24403476": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-09-19",
+    "location": "HOU R5",
+    "reads": 8409956,
+    "state": "Texas"
+  },
+  "SRR24403477": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-09-06",
+    "location": "HOU Z9",
+    "reads": 8227139,
+    "state": "Texas"
+  },
+  "SRR24403478": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-09-13",
+    "location": "HOU R5",
+    "reads": 8370013,
+    "state": "Texas"
+  },
+  "SRR24403479": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-09-06",
+    "location": "HOU R5",
+    "reads": 10397141,
+    "state": "Texas"
+  },
+  "SRR24403480": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-11-01",
+    "location": "HOU J6",
+    "reads": 17938600,
+    "state": "Texas"
+  },
+  "SRR24403481": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-11-08",
+    "location": "HOU J6",
+    "reads": 35075413,
+    "state": "Texas"
+  },
+  "SRR24403482": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-11-29",
+    "location": "HOU J6",
+    "reads": 14982849,
+    "state": "Texas"
+  },
+  "SRR24403483": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2023-01-19",
+    "location": "HOU J6",
+    "reads": 22884668,
+    "state": "Texas"
+  },
+  "SRR24403484": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-08-03",
+    "location": "HOU Z9",
+    "reads": 9052896,
+    "state": "Texas"
+  },
+  "SRR24403485": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2023-01-30",
+    "location": "EPS T4",
+    "reads": 15317064,
+    "state": "Texas"
+  },
+  "SRR24403486": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2023-01-09",
+    "location": "EPS T4",
+    "reads": 16103637,
+    "state": "Texas"
+  },
+  "SRR24403487": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2023-01-18",
+    "location": "EPS T4",
+    "reads": 22610295,
+    "state": "Texas"
+  },
+  "SRR24403488": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-11-15",
+    "location": "EPS T4",
+    "reads": 10308482,
+    "state": "Texas"
+  },
+  "SRR24403489": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2023-01-23",
+    "location": "EPS T4",
+    "reads": 16744603,
+    "state": "Texas"
+  },
+  "SRR24403490": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2023-01-04",
+    "location": "EPS T4",
+    "reads": 12350966,
+    "state": "Texas"
+  },
+  "SRR24403491": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-09-20",
+    "location": "EPS T4",
+    "reads": 6610817,
+    "state": "Texas"
+  },
+  "SRR24403492": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-09-12",
+    "location": "EPS T4",
+    "reads": 8588168,
+    "state": "Texas"
+  },
+  "SRR24403493": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-08-29",
+    "location": "EPS T4",
+    "reads": 6821650,
+    "state": "Texas"
+  },
+  "SRR24403494": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-08-22",
+    "location": "EPS T4",
+    "reads": 6040394,
+    "state": "Texas"
+  },
+  "SRR24403495": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-07-26",
+    "location": "HOU Z9",
+    "reads": 7810735,
+    "state": "Texas"
+  },
+  "SRR24403496": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-08-30",
+    "location": "HOU R5",
+    "reads": 8104988,
+    "state": "Texas"
+  },
+  "SRR24403497": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-08-25",
+    "location": "HOU R5",
+    "reads": 12409310,
+    "state": "Texas"
+  },
+  "SRR24403498": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-08-16",
+    "location": "HOU R5",
+    "reads": 12642443,
+    "state": "Texas"
+  },
+  "SRR24403499": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-08-10",
+    "location": "HOU R5",
+    "reads": 8237208,
+    "state": "Texas"
+  },
+  "SRR24403500": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-08-03",
+    "location": "HOU R5",
+    "reads": 7649061,
+    "state": "Texas"
+  },
+  "SRR24403501": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-07-26",
+    "location": "HOU R5",
+    "reads": 7114495,
+    "state": "Texas"
+  },
+  "SRR24403502": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-07-19",
+    "location": "HOU R5",
+    "reads": 8071973,
+    "state": "Texas"
+  },
+  "SRR24403503": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-07-12",
+    "location": "HOU R5",
+    "reads": 7656108,
+    "state": "Texas"
+  },
+  "SRR24403504": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-08-30",
+    "location": "HOU Z9",
+    "reads": 9409709,
+    "state": "Texas"
+  },
+  "SRR24403505": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-07-06",
+    "location": "HOU R5",
+    "reads": 8616700,
+    "state": "Texas"
+  },
+  "SRR24403506": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-06-29",
+    "location": "HOU R5",
+    "reads": 9574686,
+    "state": "Texas"
+  },
+  "SRR24403507": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-06-22",
+    "location": "HOU R5",
+    "reads": 9043015,
+    "state": "Texas"
+  },
+  "SRR24403508": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-06-15",
+    "location": "HOU R5",
+    "reads": 9198164,
+    "state": "Texas"
+  },
+  "SRR24403509": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-06-08",
+    "location": "HOU R5",
+    "reads": 10406000,
+    "state": "Texas"
+  },
+  "SRR24403510": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-12-28",
+    "location": "HOU R5",
+    "reads": 6331314,
+    "state": "Texas"
+  },
+  "SRR24403511": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2023-01-05",
+    "location": "HOU R5",
+    "reads": 11435297,
+    "state": "Texas"
+  },
+  "SRR24403512": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-09-28",
+    "location": "HOU J6",
+    "reads": 10712228,
+    "state": "Texas"
+  },
+  "SRR24403513": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-09-19",
+    "location": "HOU J6",
+    "reads": 8295400,
+    "state": "Texas"
+  },
+  "SRR24403514": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-09-06",
+    "location": "HOU J6",
+    "reads": 13472834,
+    "state": "Texas"
+  },
+  "SRR24403515": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-08-30",
+    "location": "HOU J6",
+    "reads": 7617823,
+    "state": "Texas"
+  },
+  "SRR24403516": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-08-25",
+    "location": "HOU J6",
+    "reads": 9338563,
+    "state": "Texas"
+  },
+  "SRR24403517": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-08-16",
+    "location": "HOU J6",
+    "reads": 12527622,
+    "state": "Texas"
+  },
+  "SRR24403518": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-08-10",
+    "location": "HOU J6",
+    "reads": 6398193,
+    "state": "Texas"
+  },
+  "SRR24403519": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-08-03",
+    "location": "HOU J6",
+    "reads": 7888633,
+    "state": "Texas"
+  },
+  "SRR24403520": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-07-26",
+    "location": "HOU J6",
+    "reads": 9504951,
+    "state": "Texas"
+  },
+  "SRR24403521": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-08-10",
+    "location": "HOU Z9",
+    "reads": 6511033,
+    "state": "Texas"
+  },
+  "SRR24403522": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-07-19",
+    "location": "HOU J6",
+    "reads": 9053068,
+    "state": "Texas"
+  },
+  "SRR24403523": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-07-12",
+    "location": "HOU J6",
+    "reads": 8709054,
+    "state": "Texas"
+  },
+  "SRR24403524": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-07-06",
+    "location": "HOU J6",
+    "reads": 8600885,
+    "state": "Texas"
+  },
+  "SRR24403525": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-06-29",
+    "location": "HOU J6",
+    "reads": 12849385,
+    "state": "Texas"
+  },
+  "SRR24403526": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-06-22",
+    "location": "HOU J6",
+    "reads": 9789267,
+    "state": "Texas"
+  },
+  "SRR24403527": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2023-01-10",
+    "location": "HOU J6",
+    "reads": 29902062,
+    "state": "Texas"
+  },
+  "SRR24403528": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-08-15",
+    "location": "EPS T4",
+    "reads": 5305536,
+    "state": "Texas"
+  },
+  "SRR24403529": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-07-25",
+    "location": "EPS T4",
+    "reads": 6159280,
+    "state": "Texas"
+  },
+  "SRR24403530": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-08-08",
+    "location": "EPS T4",
+    "reads": 4889375,
+    "state": "Texas"
+  },
+  "SRR24403531": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-08-01",
+    "location": "EPS T4",
+    "reads": 4527839,
+    "state": "Texas"
+  },
+  "SRR24403532": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-07-18",
+    "location": "EPS T4",
+    "reads": 3222679,
+    "state": "Texas"
+  },
+  "SRR24403533": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-07-11",
+    "location": "EPS T4",
+    "reads": 4003076,
+    "state": "Texas"
+  },
+  "SRR24403534": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-06-29",
+    "location": "EPS T4",
+    "reads": 2559001,
+    "state": "Texas"
+  },
+  "SRR24403535": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-06-22",
+    "location": "EPS T4",
+    "reads": 6630282,
+    "state": "Texas"
+  },
+  "SRR24403536": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-06-15",
+    "location": "EPS T4",
+    "reads": 8324330,
+    "state": "Texas"
+  },
+  "SRR24403537": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-07-11",
+    "location": "EPS Q9",
+    "reads": 6673344,
+    "state": "Texas"
+  },
+  "SRR24403538": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-07-05",
+    "location": "EPS Q9",
+    "reads": 6709188,
+    "state": "Texas"
+  },
+  "SRR24403539": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-06-29",
+    "location": "EPS Q9",
+    "reads": 4875132,
+    "state": "Texas"
+  },
+  "SRR24403540": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-06-22",
+    "location": "EPS Q9",
+    "reads": 7431144,
+    "state": "Texas"
+  },
+  "SRR24403541": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-06-15",
+    "location": "EPS Q9",
+    "reads": 6457432,
+    "state": "Texas"
+  },
+  "SRR24403542": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-06-15",
+    "location": "EPS Q9",
+    "reads": 4090220,
+    "state": "Texas"
+  },
+  "SRR24403543": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-11-16",
+    "location": "HOU Z9",
+    "reads": 21783969,
+    "state": "Texas"
+  },
+  "SRR24403544": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-08-11",
+    "location": "EPS Q9",
+    "reads": 8613819,
+    "state": "Texas"
+  },
+  "SRR24403545": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-08-04",
+    "location": "EPS Q9",
+    "reads": 8927567,
+    "state": "Texas"
+  },
+  "SRR24403546": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2023-01-09",
+    "location": "EPS Q9",
+    "reads": 16942530,
+    "state": "Texas"
+  },
+  "SRR24403547": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2023-01-23",
+    "location": "EPS Q9",
+    "reads": 23418608,
+    "state": "Texas"
+  },
+  "SRR24403548": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-12-28",
+    "location": "EPS Q9",
+    "reads": 13481095,
+    "state": "Texas"
+  },
+  "SRR24403549": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-11-15",
+    "location": "EPS Q9",
+    "reads": 14657454,
+    "state": "Texas"
+  },
+  "SRR24403550": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2023-01-18",
+    "location": "EPS Q9",
+    "reads": 14737571,
+    "state": "Texas"
+  },
+  "SRR24403551": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-12-05",
+    "location": "EPS Q9",
+    "reads": 12407238,
+    "state": "Texas"
+  },
+  "SRR24403552": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2023-01-04",
+    "location": "EPS Q9",
+    "reads": 13496430,
+    "state": "Texas"
+  },
+  "SRR24403553": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-10-04",
+    "location": "HOU Z9",
+    "reads": 8339149,
+    "state": "Texas"
+  },
+  "SRR24403554": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-05-18",
+    "location": "HOU Z9",
+    "reads": 6383294,
+    "state": "Texas"
+  },
+  "SRR24403555": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-06-22",
+    "location": "EPS J3",
+    "reads": 7982358,
+    "state": "Texas"
+  },
+  "SRR24403556": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-06-15",
+    "location": "EPS J3",
+    "reads": 5260199,
+    "state": "Texas"
+  },
+  "SRR24403557": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-06-15",
+    "location": "EPS J3",
+    "reads": 4658255,
+    "state": "Texas"
+  },
+  "SRR24403558": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-06-01",
+    "location": "EPS J3",
+    "reads": 8375544,
+    "state": "Texas"
+  },
+  "SRR24403559": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-05-25",
+    "location": "EPS J3",
+    "reads": 5338168,
+    "state": "Texas"
+  },
+  "SRR24403560": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-05-18",
+    "location": "EPS J3",
+    "reads": 5286451,
+    "state": "Texas"
+  },
+  "SRR24403561": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-05-11",
+    "location": "EPS J3",
+    "reads": 7279788,
+    "state": "Texas"
+  },
+  "SRR24403562": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-05-04",
+    "location": "EPS J3",
+    "reads": 8204509,
+    "state": "Texas"
+  },
+  "SRR24403563": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-08-11",
+    "location": "EPS J3",
+    "reads": 8531325,
+    "state": "Texas"
+  },
+  "SRR24403564": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-08-04",
+    "location": "EPS J3",
+    "reads": 6989957,
+    "state": "Texas"
+  },
+  "SRR24403565": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-09-28",
+    "location": "HOU Z9",
+    "reads": 11181752,
+    "state": "Texas"
+  },
+  "SRR24403566": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2023-01-23",
+    "location": "EPS J3",
+    "reads": 23705858,
+    "state": "Texas"
+  },
+  "SRR24403567": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-11-15",
+    "location": "EPS J3",
+    "reads": 11136437,
+    "state": "Texas"
+  },
+  "SRR24403568": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2023-01-09",
+    "location": "EPS J3",
+    "reads": 15292021,
+    "state": "Texas"
+  },
+  "SRR24403569": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-11-29",
+    "location": "HOU Z9",
+    "reads": 11562685,
+    "state": "Texas"
+  },
+  "SRR24403570": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-10-31",
+    "location": "EPS K6",
+    "reads": 10817455,
+    "state": "Texas"
+  },
+  "SRR24403571": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-10-03",
+    "location": "EPS T4",
+    "reads": 8485493,
+    "state": "Texas"
+  },
+  "SRR24403572": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-09-26",
+    "location": "EPS T4",
+    "reads": 13925316,
+    "state": "Texas"
+  },
+  "SRR24403573": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2023-01-30",
+    "location": "EPS K6",
+    "reads": 20711189,
+    "state": "Texas"
+  },
+  "SRR24403574": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-12-19",
+    "location": "EPS K6",
+    "reads": 13128359,
+    "state": "Texas"
+  },
+  "SRR24403575": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2023-01-05",
+    "location": "HOU Z9",
+    "reads": 19358974,
+    "state": "Texas"
+  },
+  "SRR24403576": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-12-05",
+    "location": "EPS K6",
+    "reads": 10590534,
+    "state": "Texas"
+  },
+  "SRR24403577": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-11-15",
+    "location": "EPS K6",
+    "reads": 13379891,
+    "state": "Texas"
+  },
+  "SRR24403578": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-06-29",
+    "location": "HOU Z9",
+    "reads": 6859002,
+    "state": "Texas"
+  },
+  "SRR24403579": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-12-28",
+    "location": "EPS K6",
+    "reads": 11423315,
+    "state": "Texas"
+  },
+  "SRR24403580": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-11-07",
+    "location": "EPS K6",
+    "reads": 29592213,
+    "state": "Texas"
+  },
+  "SRR24403581": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2023-01-09",
+    "location": "EPS K6",
+    "reads": 21864212,
+    "state": "Texas"
+  },
+  "SRR24403582": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-11-28",
+    "location": "EPS K6",
+    "reads": 5872099,
+    "state": "Texas"
+  },
+  "SRR24403583": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-10-31",
+    "location": "EPS K6",
+    "reads": 4394669,
+    "state": "Texas"
+  },
+  "SRR24403584": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-09-20",
+    "location": "EPS K6",
+    "reads": 7351921,
+    "state": "Texas"
+  },
+  "SRR24403585": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-09-12",
+    "location": "EPS K6",
+    "reads": 6364724,
+    "state": "Texas"
+  },
+  "SRR24403586": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-09-06",
+    "location": "EPS K6",
+    "reads": 6952591,
+    "state": "Texas"
+  },
+  "SRR24403587": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-08-04",
+    "location": "EPS K6",
+    "reads": 5318294,
+    "state": "Texas"
+  },
+  "SRR24403588": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2023-01-23",
+    "location": "EPS K6",
+    "reads": 22425454,
+    "state": "Texas"
+  },
+  "SRR24403589": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-10-31",
+    "location": "EPS K6",
+    "reads": 16954605,
+    "state": "Texas"
+  },
+  "SRR24403590": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2023-01-18",
+    "location": "EPS K6",
+    "reads": 16751149,
+    "state": "Texas"
+  },
+  "SRR24403591": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-12-12",
+    "location": "EPS K6",
+    "reads": 14827968,
+    "state": "Texas"
+  },
+  "SRR24403592": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-11-21",
+    "location": "EPS K6",
+    "reads": 30644906,
+    "state": "Texas"
+  },
+  "SRR24403593": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2023-01-04",
+    "location": "EPS K6",
+    "reads": 13744813,
+    "state": "Texas"
+  },
+  "SRR24403594": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-10-24",
+    "location": "EPS K6",
+    "reads": 8840035,
+    "state": "Texas"
+  },
+  "SRR24403595": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-06-08",
+    "location": "HOU Z9",
+    "reads": 6764499,
+    "state": "Texas"
+  },
+  "SRR24403596": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-10-17",
+    "location": "EPS K6",
+    "reads": 9212899,
+    "state": "Texas"
+  },
+  "SRR24403597": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-10-10",
+    "location": "EPS K6",
+    "reads": 10357678,
+    "state": "Texas"
+  },
+  "SRR24403598": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-10-03",
+    "location": "EPS K6",
+    "reads": 9228558,
+    "state": "Texas"
+  },
+  "SRR24403599": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2023-02-02",
+    "location": "HOU C1",
+    "reads": 34733528,
+    "state": "Texas"
+  },
+  "SRR24403600": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-11-08",
+    "location": "HOU C1",
+    "reads": 8770728,
+    "state": "Texas"
+  },
+  "SRR24403601": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-12-13",
+    "location": "HOU C1",
+    "reads": 13457756,
+    "state": "Texas"
+  },
+  "SRR24403602": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-09-26",
+    "location": "EPS K6",
+    "reads": 9782800,
+    "state": "Texas"
+  },
+  "SRR24403603": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-08-10",
+    "location": "HOU C1",
+    "reads": 6448759,
+    "state": "Texas"
+  },
+  "SRR24403604": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-08-03",
+    "location": "HOU C1",
+    "reads": 7871830,
+    "state": "Texas"
+  },
+  "SRR24403605": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-07-26",
+    "location": "HOU C1",
+    "reads": 7597230,
+    "state": "Texas"
+  },
+  "SRR24403606": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-07-19",
+    "location": "HOU C1",
+    "reads": 8904332,
+    "state": "Texas"
+  },
+  "SRR24403607": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-07-12",
+    "location": "HOU C1",
+    "reads": 6624181,
+    "state": "Texas"
+  },
+  "SRR24403608": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2023-01-25",
+    "location": "HOU Z9",
+    "reads": 31078389,
+    "state": "Texas"
+  },
+  "SRR24403609": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-06-22",
+    "location": "HOU C1",
+    "reads": 8887275,
+    "state": "Texas"
+  },
+  "SRR24403610": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-06-15",
+    "location": "HOU C1",
+    "reads": 9067430,
+    "state": "Texas"
+  },
+  "SRR24403611": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-06-08",
+    "location": "HOU C1",
+    "reads": 7978841,
+    "state": "Texas"
+  },
+  "SRR24403612": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-12-20",
+    "location": "HOU C1",
+    "reads": 14040739,
+    "state": "Texas"
+  },
+  "SRR24403613": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2023-01-10",
+    "location": "HOU C1",
+    "reads": 20781875,
+    "state": "Texas"
+  },
+  "SRR24403614": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-12-08",
+    "location": "HOU C1",
+    "reads": 11147416,
+    "state": "Texas"
+  },
+  "SRR24403615": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2023-01-25",
+    "location": "HOU C1",
+    "reads": 20874374,
+    "state": "Texas"
+  },
+  "SRR24403616": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2023-01-05",
+    "location": "HOU C1",
+    "reads": 15836812,
+    "state": "Texas"
+  },
+  "SRR24403617": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-11-16",
+    "location": "HOU C1",
+    "reads": 25263625,
+    "state": "Texas"
+  },
+  "SRR24403618": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-11-29",
+    "location": "HOU C1",
+    "reads": 13043841,
+    "state": "Texas"
+  },
+  "SRR24403619": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-11-07",
+    "location": "EPS Q9",
+    "reads": 11074336,
+    "state": "Texas"
+  },
+  "SRR24403620": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-12-20",
+    "location": "HOU Z9",
+    "reads": 13986218,
+    "state": "Texas"
+  },
+  "SRR24403621": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-06-07",
+    "location": "HOU Z9",
+    "reads": 7118145,
+    "state": "Texas"
+  },
+  "SRR24403622": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-10-31",
+    "location": "EPS Q9",
+    "reads": 10964136,
+    "state": "Texas"
+  },
+  "SRR24403623": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-11-21",
+    "location": "EPS Q9",
+    "reads": 5855823,
+    "state": "Texas"
+  },
+  "SRR24403624": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-11-28",
+    "location": "EPS Q9",
+    "reads": 10977843,
+    "state": "Texas"
+  },
+  "SRR24403625": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-10-24",
+    "location": "EPS Q9",
+    "reads": 9218554,
+    "state": "Texas"
+  },
+  "SRR24403626": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-10-17",
+    "location": "EPS Q9",
+    "reads": 13071203,
+    "state": "Texas"
+  },
+  "SRR24403627": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-10-10",
+    "location": "EPS Q9",
+    "reads": 9230883,
+    "state": "Texas"
+  },
+  "SRR24403628": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-10-03",
+    "location": "EPS Q9",
+    "reads": 8428790,
+    "state": "Texas"
+  },
+  "SRR24403629": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-09-28",
+    "location": "EPS Q9",
+    "reads": 10184908,
+    "state": "Texas"
+  },
+  "SRR24403630": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2023-02-02",
+    "location": "HOU B9",
+    "reads": 28442432,
+    "state": "Texas"
+  },
+  "SRR24403631": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-11-16",
+    "location": "HOU B9",
+    "reads": 14282014,
+    "state": "Texas"
+  },
+  "SRR24403632": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-11-08",
+    "location": "HOU Z9",
+    "reads": 11198169,
+    "state": "Texas"
+  },
+  "SRR24403633": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-11-01",
+    "location": "HOU B9",
+    "reads": 23495151,
+    "state": "Texas"
+  },
+  "SRR24403634": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2023-01-19",
+    "location": "HOU B9",
+    "reads": 23074147,
+    "state": "Texas"
+  },
+  "SRR24403635": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-10-25",
+    "location": "HOU B9",
+    "reads": 10985018,
+    "state": "Texas"
+  },
+  "SRR24403636": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-10-18",
+    "location": "HOU B9",
+    "reads": 9517566,
+    "state": "Texas"
+  },
+  "SRR24403637": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-10-11",
+    "location": "HOU B9",
+    "reads": 9510542,
+    "state": "Texas"
+  },
+  "SRR24403638": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-10-04",
+    "location": "HOU B9",
+    "reads": 12313744,
+    "state": "Texas"
+  },
+  "SRR24403639": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-09-28",
+    "location": "HOU B9",
+    "reads": 12470020,
+    "state": "Texas"
+  },
+  "SRR24403640": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-09-19",
+    "location": "HOU B9",
+    "reads": 8263355,
+    "state": "Texas"
+  },
+  "SRR24403641": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-09-06",
+    "location": "HOU B9",
+    "reads": 9169331,
+    "state": "Texas"
+  },
+  "SRR24403642": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-08-30",
+    "location": "HOU B9",
+    "reads": 7624124,
+    "state": "Texas"
+  },
+  "SRR24403643": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-11-01",
+    "location": "HOU Z9",
+    "reads": 16479594,
+    "state": "Texas"
+  },
+  "SRR24403644": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-08-25",
+    "location": "HOU B9",
+    "reads": 8514981,
+    "state": "Texas"
+  },
+  "SRR24403645": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-08-16",
+    "location": "HOU B9",
+    "reads": 12264983,
+    "state": "Texas"
+  },
+  "SRR24403646": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-08-10",
+    "location": "HOU B9",
+    "reads": 7665126,
+    "state": "Texas"
+  },
+  "SRR24403647": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-08-03",
+    "location": "HOU B9",
+    "reads": 6814062,
+    "state": "Texas"
+  },
+  "SRR24403648": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-07-26",
+    "location": "HOU B9",
+    "reads": 9708584,
+    "state": "Texas"
+  },
+  "SRR24403649": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-07-19",
+    "location": "HOU B9",
+    "reads": 7577609,
+    "state": "Texas"
+  },
+  "SRR24403650": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-07-12",
+    "location": "HOU B9",
+    "reads": 8947770,
+    "state": "Texas"
+  },
+  "SRR24403651": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-07-06",
+    "location": "HOU B9",
+    "reads": 9548723,
+    "state": "Texas"
+  },
+  "SRR24403652": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-06-29",
+    "location": "HOU B9",
+    "reads": 10331059,
+    "state": "Texas"
+  },
+  "SRR24403653": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-06-22",
+    "location": "HOU B9",
+    "reads": 10135178,
+    "state": "Texas"
+  },
+  "SRR24403654": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2023-01-19",
+    "location": "HOU Z9",
+    "reads": 27670045,
+    "state": "Texas"
+  },
+  "SRR24403655": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-06-15",
+    "location": "HOU B9",
+    "reads": 7559815,
+    "state": "Texas"
+  },
+  "SRR24403656": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-06-08",
+    "location": "HOU B9",
+    "reads": 11134429,
+    "state": "Texas"
+  },
+  "SRR24403657": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-11-29",
+    "location": "HOU B9",
+    "reads": 15773923,
+    "state": "Texas"
+  },
+  "SRR24403658": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-11-22",
+    "location": "HOU B9",
+    "reads": 37240564,
+    "state": "Texas"
+  },
+  "SRR24403659": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-12-08",
+    "location": "HOU B9",
+    "reads": 17054366,
+    "state": "Texas"
+  },
+  "SRR24403660": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-11-08",
+    "location": "HOU B9",
+    "reads": 27912470,
+    "state": "Texas"
+  },
+  "SRR24403661": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2023-01-25",
+    "location": "HOU B9",
+    "reads": 19275450,
+    "state": "Texas"
+  },
+  "SRR24403662": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2023-01-10",
+    "location": "HOU B9",
+    "reads": 22339289,
+    "state": "Texas"
+  },
+  "SRR24403663": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-12-28",
+    "location": "HOU B9",
+    "reads": 15117593,
+    "state": "Texas"
+  },
+  "SRR24403664": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-12-20",
+    "location": "HOU B9",
+    "reads": 16664714,
+    "state": "Texas"
+  },
+  "SRR24403665": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-12-13",
+    "location": "HOU Z9",
+    "reads": 14146094,
+    "state": "Texas"
+  },
+  "SRR24403666": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-12-13",
+    "location": "HOU B9",
+    "reads": 14710723,
+    "state": "Texas"
+  },
+  "SRR24403667": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2023-02-02",
+    "location": "HOU S3",
+    "reads": 34063065,
+    "state": "Texas"
+  },
+  "SRR24403668": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-11-22",
+    "location": "HOU S3",
+    "reads": 21585704,
+    "state": "Texas"
+  },
+  "SRR24403669": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2023-01-10",
+    "location": "HOU S3",
+    "reads": 15429650,
+    "state": "Texas"
+  },
+  "SRR24403670": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-12-13",
+    "location": "HOU S3",
+    "reads": 14204188,
+    "state": "Texas"
+  },
+  "SRR24403671": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-12-20",
+    "location": "HOU S3",
+    "reads": 12468469,
+    "state": "Texas"
+  },
+  "SRR24403672": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-12-28",
+    "location": "HOU S3",
+    "reads": 12268939,
+    "state": "Texas"
+  },
+  "SRR24403673": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-11-08",
+    "location": "HOU S3",
+    "reads": 16839386,
+    "state": "Texas"
+  },
+  "SRR24403674": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-10-25",
+    "location": "HOU S3",
+    "reads": 8445366,
+    "state": "Texas"
+  },
+  "SRR24403675": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-10-18",
+    "location": "HOU S3",
+    "reads": 9772552,
+    "state": "Texas"
+  },
+  "SRR24403676": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-12-08",
+    "location": "HOU Z9",
+    "reads": 12160717,
+    "state": "Texas"
+  },
+  "SRR24403677": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-10-11",
+    "location": "HOU S3",
+    "reads": 9989798,
+    "state": "Texas"
+  },
+  "SRR24403678": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-10-04",
+    "location": "HOU S3",
+    "reads": 9241827,
+    "state": "Texas"
+  },
+  "SRR24403679": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-09-28",
+    "location": "HOU S3",
+    "reads": 8621941,
+    "state": "Texas"
+  },
+  "SRR24403680": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-09-19",
+    "location": "HOU S3",
+    "reads": 7786676,
+    "state": "Texas"
+  },
+  "SRR24403681": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-09-13",
+    "location": "HOU S3",
+    "reads": 8935195,
+    "state": "Texas"
+  },
+  "SRR24403682": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-09-06",
+    "location": "HOU S3",
+    "reads": 7163993,
+    "state": "Texas"
+  },
+  "SRR24403683": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-11-21",
+    "location": "EPS J3",
+    "reads": 16317544,
+    "state": "Texas"
+  },
+  "SRR24403684": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2023-01-04",
+    "location": "EPS J3",
+    "reads": 11935034,
+    "state": "Texas"
+  },
+  "SRR24403685": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-12-13",
+    "location": "EPS J3",
+    "reads": 9940622,
+    "state": "Texas"
+  },
+  "SRR24403686": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-10-31",
+    "location": "EPS J3",
+    "reads": 3162825,
+    "state": "Texas"
+  },
+  "SRR24403687": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-10-31",
+    "location": "EPS J3",
+    "reads": 15024279,
+    "state": "Texas"
+  },
+  "SRR24403688": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-11-15",
+    "location": "EPS J3",
+    "reads": 15098000,
+    "state": "Texas"
+  },
+  "SRR24403689": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-10-24",
+    "location": "EPS J3",
+    "reads": 7594231,
+    "state": "Texas"
+  },
+  "SRR24403690": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-09-19",
+    "location": "HOU Z9",
+    "reads": 6996113,
+    "state": "Texas"
+  },
+  "SRR24403691": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-10-17",
+    "location": "EPS J3",
+    "reads": 9608257,
+    "state": "Texas"
+  },
+  "SRR24403692": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-10-10",
+    "location": "EPS J3",
+    "reads": 9112622,
+    "state": "Texas"
+  },
+  "SRR24403693": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-10-03",
+    "location": "EPS J3",
+    "reads": 10838353,
+    "state": "Texas"
+  },
+  "SRR24403694": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-09-26",
+    "location": "EPS J3",
+    "reads": 13219256,
+    "state": "Texas"
+  },
+  "SRR24403695": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2023-02-02",
+    "location": "HOU R5",
+    "reads": 18993962,
+    "state": "Texas"
+  },
+  "SRR24403696": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-11-22",
+    "location": "HOU R5",
+    "reads": 24400465,
+    "state": "Texas"
+  },
+  "SRR24403697": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2023-01-10",
+    "location": "HOU R5",
+    "reads": 22827827,
+    "state": "Texas"
+  },
+  "SRR24403698": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2023-01-19",
+    "location": "HOU R5",
+    "reads": 21834465,
+    "state": "Texas"
+  },
+  "SRR24403699": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-12-08",
+    "location": "HOU S3",
+    "reads": 13394026,
+    "state": "Texas"
+  },
+  "SRR24403700": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2023-01-19",
+    "location": "HOU S3",
+    "reads": 17207997,
+    "state": "Texas"
+  },
+  "SRR24403701": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2023-01-05",
+    "location": "HOU S3",
+    "reads": 15582302,
+    "state": "Texas"
+  },
+  "SRR24403702": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2023-01-25",
+    "location": "HOU S3",
+    "reads": 20494021,
+    "state": "Texas"
+  },
+  "SRR24403703": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-11-16",
+    "location": "HOU S3",
+    "reads": 34677064,
+    "state": "Texas"
+  },
+  "SRR24403704": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-11-29",
+    "location": "HOU S3",
+    "reads": 23057774,
+    "state": "Texas"
+  },
+  "SRR24403705": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2023-01-30",
+    "location": "EPS J3",
+    "reads": 21791581,
+    "state": "Texas"
+  },
+  "SRR24403706": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-11-15",
+    "location": "EPS J3",
+    "reads": 8815479,
+    "state": "Texas"
+  },
+  "SRR24403707": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-11-28",
+    "location": "EPS J3",
+    "reads": 8654961,
+    "state": "Texas"
+  },
+  "SRR24403708": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-12-12",
+    "location": "EPS J3",
+    "reads": 7832251,
+    "state": "Texas"
+  },
+  "SRR24403709": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-10-18",
+    "location": "HOU Z9",
+    "reads": 9918569,
+    "state": "Texas"
+  },
+  "SRR24403710": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-11-07",
+    "location": "EPS J3",
+    "reads": 9052701,
+    "state": "Texas"
+  },
+  "SRR24403711": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-12-19",
+    "location": "EPS J3",
+    "reads": 13734505,
+    "state": "Texas"
+  },
+  "SRR24403712": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-12-28",
+    "location": "EPS J3",
+    "reads": 9637609,
+    "state": "Texas"
+  },
+  "SRR24403713": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2023-01-18",
+    "location": "EPS J3",
+    "reads": 17476879,
+    "state": "Texas"
+  },
+  "SRR24403714": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-12-05",
+    "location": "EPS J3",
+    "reads": 13295408,
+    "state": "Texas"
+  },
+  "SRR24403715": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-11-08",
+    "location": "HOU R5",
+    "reads": 22001939,
+    "state": "Texas"
+  },
+  "SRR24403716": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-11-01",
+    "location": "HOU R5",
+    "reads": 69975697,
+    "state": "Texas"
+  },
+  "SRR24403717": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2023-02-02",
+    "location": "HOU J6",
+    "reads": 38792347,
+    "state": "Texas"
+  },
+  "SRR24403718": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-08-25",
+    "location": "HOU Z9",
+    "reads": 8414133,
+    "state": "Texas"
+  },
+  "SRR24403719": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-12-08",
+    "location": "HOU J6",
+    "reads": 14316462,
+    "state": "Texas"
+  },
+  "SRR24403720": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2023-01-25",
+    "location": "HOU J6",
+    "reads": 24491924,
+    "state": "Texas"
+  },
+  "SRR24403721": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-11-16",
+    "location": "HOU J6",
+    "reads": 18988773,
+    "state": "Texas"
+  },
+  "SRR24403722": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2023-01-05",
+    "location": "HOU J6",
+    "reads": 15712598,
+    "state": "Texas"
+  },
+  "SRR24403723": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-12-20",
+    "location": "HOU J6",
+    "reads": 18304542,
+    "state": "Texas"
+  },
+  "SRR24403724": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-12-13",
+    "location": "HOU J6",
+    "reads": 10097600,
+    "state": "Texas"
+  },
+  "SRR24403725": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-11-22",
+    "location": "HOU J6",
+    "reads": 37704590,
+    "state": "Texas"
+  },
+  "SRR24403726": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-12-28",
+    "location": "HOU J6",
+    "reads": 15852988,
+    "state": "Texas"
+  },
+  "SRR24403727": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-10-25",
+    "location": "HOU J6",
+    "reads": 13624415,
+    "state": "Texas"
+  },
+  "SRR24403728": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-10-18",
+    "location": "HOU J6",
+    "reads": 12704704,
+    "state": "Texas"
+  },
+  "SRR24403729": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-08-16",
+    "location": "HOU Z9",
+    "reads": 12528569,
+    "state": "Texas"
+  },
+  "SRR24403730": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-10-11",
+    "location": "HOU J6",
+    "reads": 10745626,
+    "state": "Texas"
+  },
+  "SRR24403731": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-06-15",
+    "location": "EPS T4",
+    "reads": 2864273,
+    "state": "Texas"
+  },
+  "SRR24403732": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-07-19",
+    "location": "HOU Z9",
+    "reads": 11422640,
+    "state": "Texas"
+  },
+  "SRR24403733": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-08-11",
+    "location": "EPS T4",
+    "reads": 10161457,
+    "state": "Texas"
+  },
+  "SRR24403734": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-08-04",
+    "location": "EPS T4",
+    "reads": 9324890,
+    "state": "Texas"
+  },
+  "SRR24403735": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-11-28",
+    "location": "EPS T4",
+    "reads": 10260424,
+    "state": "Texas"
+  },
+  "SRR24403736": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-12-28",
+    "location": "EPS T4",
+    "reads": 10944322,
+    "state": "Texas"
+  },
+  "SRR24403737": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-11-07",
+    "location": "EPS T4",
+    "reads": 9909827,
+    "state": "Texas"
+  },
+  "SRR24403738": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-12-05",
+    "location": "EPS T4",
+    "reads": 11784829,
+    "state": "Texas"
+  },
+  "SRR24403739": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-11-21",
+    "location": "EPS T4",
+    "reads": 13106985,
+    "state": "Texas"
+  },
+  "SRR24403740": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-10-31",
+    "location": "EPS T4",
+    "reads": 15371894,
+    "state": "Texas"
+  },
+  "SRR24403741": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-12-19",
+    "location": "EPS T4",
+    "reads": 11490213,
+    "state": "Texas"
+  },
+  "SRR24403742": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-12-12",
+    "location": "EPS T4",
+    "reads": 12415107,
+    "state": "Texas"
+  },
+  "SRR24403743": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-07-06",
+    "location": "HOU Z9",
+    "reads": 6958114,
+    "state": "Texas"
+  },
+  "SRR24403744": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-10-24",
+    "location": "EPS T4",
+    "reads": 6731295,
+    "state": "Texas"
+  },
+  "SRR24403745": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-10-17",
+    "location": "EPS T4",
+    "reads": 10093828,
+    "state": "Texas"
+  },
+  "SRR24403746": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-10-10",
+    "location": "EPS T4",
+    "reads": 9964783,
+    "state": "Texas"
+  },
+  "SRR24403747": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-08-29",
+    "location": "EPS K6",
+    "reads": 6822457,
+    "state": "Texas"
+  },
+  "SRR24403748": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-08-22",
+    "location": "EPS K6",
+    "reads": 7951976,
+    "state": "Texas"
+  },
+  "SRR24403749": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-06-22",
+    "location": "HOU Z9",
+    "reads": 7923273,
+    "state": "Texas"
+  },
+  "SRR24403750": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-08-15",
+    "location": "EPS K6",
+    "reads": 10503805,
+    "state": "Texas"
+  },
+  "SRR24403751": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-08-08",
+    "location": "EPS K6",
+    "reads": 8324256,
+    "state": "Texas"
+  },
+  "SRR24403752": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-08-01",
+    "location": "EPS K6",
+    "reads": 6794888,
+    "state": "Texas"
+  },
+  "SRR24403753": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-07-25",
+    "location": "EPS K6",
+    "reads": 7712836,
+    "state": "Texas"
+  },
+  "SRR24403754": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-07-18",
+    "location": "EPS K6",
+    "reads": 7891561,
+    "state": "Texas"
+  },
+  "SRR24403755": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-07-11",
+    "location": "EPS K6",
+    "reads": 5302454,
+    "state": "Texas"
+  },
+  "SRR24403756": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-07-05",
+    "location": "EPS K6",
+    "reads": 6704869,
+    "state": "Texas"
+  },
+  "SRR24403757": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-06-29",
+    "location": "EPS K6",
+    "reads": 4201289,
+    "state": "Texas"
+  },
+  "SRR24403758": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-06-22",
+    "location": "EPS K6",
+    "reads": 6933180,
+    "state": "Texas"
+  },
+  "SRR24403759": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-06-15",
+    "location": "EPS K6",
+    "reads": 7332067,
+    "state": "Texas"
+  },
+  "SRR24403760": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-06-15",
+    "location": "HOU Z9",
+    "reads": 4474086,
+    "state": "Texas"
+  },
+  "SRR24403761": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-06-15",
+    "location": "EPS K6",
+    "reads": 5762586,
+    "state": "Texas"
   },
   "SRR6837549": {
     "country": "Singapore",
