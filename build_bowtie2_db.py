@@ -26,7 +26,7 @@ def load_human_viruses():
     return human_viruses
 
 
-def build_detailed_taxids(detailed_taxids_fname):
+def build_detailed_taxids(detailed_taxids_fname, human_viruses):
     hv_taxid_to_detailed_fname = "hv_taxid_to_detailed.json"
     if os.path.exists(detailed_taxids_fname):
         return
@@ -129,7 +129,7 @@ def bowtie_db():
     cd_bowtie_dir()
     human_viruses = load_human_viruses()
     detailed_taxids_fname = "detailed-taxids.txt"
-    build_detailed_taxids(detailed_taxids_fname)
+    build_detailed_taxids(detailed_taxids_fname, human_viruses)
     metadata_fname = "ncbi-fetch-metadata.txt"
     fetch_genomes(detailed_taxids_fname, metadata_fname)
     create_genome_taxid_map(metadata_fname)
