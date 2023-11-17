@@ -7,6 +7,7 @@ import glob
 import gzip
 import json
 import time
+import pysam
 import atexit
 import argparse
 import tempfile
@@ -247,7 +248,7 @@ def ribofrac(args, subset_size=1000):
         if not os.path.exists(filename):
             warnings.warn(f"File {filename} does not exist!")
             return False
-        
+
         with gzip.open(filename, 'rt') as f:
             try:
                 # Check for the first read using the iterator
@@ -294,7 +295,7 @@ def ribofrac(args, subset_size=1000):
                     subprocess.check_call([
                         "aws", "s3", "cp", "%s/%s/cleaned/%s" % (
                             S3_BUCKET, args.bioproject, input_fname), input_fname])
-                    
+
                     # Check file integrity
                     file_valid = file_integrity_check(input_fname)
                     if not file_valid:
@@ -905,6 +906,99 @@ def hvreads(args):
             "aws", "s3", "cp", output, "%s/%s/hvreads/%s" % (
                S3_BUCKET, args.bioproject, output)])
 
+def alignments(args):
+   available_inputs = get_files(args, "hvreads")
+   existing_outputs = get_files(args, "alignments")
+
+   for sample in get_samples(args):
+      output = "%s.alignments.tsv" % sample
+      if output in existing_outputs: continue
+
+      input_fname = "%s.hvreads.json" % sample
+      if input_fname not in available_inputs: continue
+
+      with tempdir("alignments", input_fname) as workdir:
+         subprocess.check_call([
+            "aws", "s3", "cp", "%s/%s/hvreads/%s" % (
+               S3_BUCKET, args.bioproject, input_fname), input_fname])
+
+         pair1 = []
+         pair2 = []
+         combined = []
+         with open(input_fname) as inf:
+            for seq_id, details in sorted(json.load(inf).items()):
+               if type(details[0]) == type(1):
+                  assignment = details.pop(0)
+               kraken_info, *reads = details
+               assert len(reads) in [1, 2]
+               if len(reads) == 1:
+                  read, = reads
+                  combined.append((seq_id, read))
+               else:
+                  read1, read2 = reads
+                  pair1.append((seq_id, read1))
+                  pair2.append((seq_id, read2))
+
+         for label, reads in [
+               ("pair1", pair1),
+               ("pair2", pair2),
+               ("combined", combined),
+         ]:
+            if reads:
+               with open("%s.fastq" % label, "w") as outf:
+                  for seq_id, read in reads:
+                     seq, quality = read
+                     outf.write("@%s\n%s\n+\n%s\n" % (seq_id, seq, quality))
+
+         sam_out = "out.sam"
+         cmd = [
+            "/home/ec2-user/bowtie2-2.5.2-linux-x86_64/bowtie2",
+            "--local",
+            "-x", "/home/ec2-user/bowtie/human-viruses",
+            "--very-sensitive-local",
+            "--score-min", "G,1,0",
+            "--mp", "2,0",
+            "--no-unal",
+            "--threads", "24",
+            # Including an @SQ line makes the .sam files really big, and we
+            # don't actually need to know the lengths of all the genomes we
+            # considered aligning against. When we have a small number of reads
+            # per sample this can bloat the files 100x.  We'd like to do
+            # "--no-sq" bur pysam chokes on SAM files that are missing the @SQ
+            # header lines.
+            "-S", sam_out,
+         ]
+
+         assert bool(pair1) == bool(pair2)
+         if pair1:
+            cmd.extend(["-1", "pair1.fastq", "-2", "pair2.fastq"])
+         if combined:
+            cmd.extend(["-U", "combined.fastq"])
+
+         subprocess.check_call(cmd)
+
+         with open("/home/ec2-user/bowtie/genomeid-to-taxid.json") as inf:
+            genomeid_to_taxid = json.load(inf)
+
+         with pysam.AlignmentFile(sam_out, "r")  as sam:
+            with open(output, "w") as outf:
+               for record in sam:
+                  genomeid = sam.get_reference_name(record.reference_id)
+                  taxid, genome_name = genomeid_to_taxid[genomeid]
+                  outf.write(
+                     "%s\t%s\t%s\t%s\t%s\t%s\t%s\n" % (
+                        record.query_name,
+                        genomeid,
+                        taxid,
+                        record.cigarstring,
+                        record.reference_start,
+                        record.get_tag("AS"),
+                        len(record.query_sequence)))
+
+         subprocess.check_call([
+            "aws", "s3", "cp", output, "%s/%s/alignments/%s" % (
+               S3_BUCKET, args.bioproject, output)])
+
 def phred_to_q(phred_score):
    return ord(phred_score) - ord('!')
 
@@ -928,10 +1022,11 @@ def print_status(args):
 
    running_processes = subprocess.check_output(["ps", "aux"]).decode("utf-8")
 
-   stages = ["raw", "cleaned", "ribofrac", "riboreads", "processed", "cladecounts", "humanviruses",
-             "allmatches", "hvreads", "samplereads", "readlengths"]
+   stages = ["raw", "cleaned", "ribofrac", "riboreads", "processed",
+             "cladecounts", "humanviruses", "allmatches", "hvreads",
+             "samplereads", "readlengths", "alignments"]
    short_stages = ["raw", "clean", "rf", "rr", "kraken", "cc", "hv", "am",
-                   "hvr", "sr", "rl"]
+                   "hvr", "sr", "rl", "al"]
 
    papers_to_projects = defaultdict(list) # paper -> [project]
    for bioproject in bioprojects:
@@ -1012,6 +1107,7 @@ for stage_name, stage_fn in [("clean", clean),
                              ("hvreads", hvreads),
                              ("samplereads", samplereads),
                              ("readlengths", readlengths),
+                             ("alignments", alignments),
                              ]:
    STAGES_ORDERED.append(stage_name)
    STAGE_FNS[stage_name] = stage_fn

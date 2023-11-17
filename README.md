@@ -109,7 +109,7 @@ Available files, and their formats:
 * `riboreads/`: Intermediate, read IDs of `RiboDetector` output
     * ex: SRR13167436.riboreads.txt.gz
     * txt
-    * Stores rRNA read IDs 
+    * Stores rRNA read IDs
 
 * `processed/`: Intermediate, output of `Kraken2`
    * ex: `SRR14530724.collapsed.kraken2.tsv.gz`
@@ -160,6 +160,18 @@ Available files, and their formats:
    * Ex: `SRR14530724.hvreads.json`
    * JSON
    * Read ID to Kraken output and cleaned read
+
+* `alignments/`: Output, data that will later back the dashboard.
+   * Ex: SRR21452137.alignments.tsv
+   * TSV
+   * Columns:
+     * Read ID
+     * Best-match genome
+     * Best-match taxid
+     * CIGAR string
+     * Genome start position
+     * Alignment score
+     * Trimmed read length
 
 * `humanviruses/`: Output, data that backs the
   [dashboard](https://www.jefftk.com/mgs-counts/).
@@ -415,4 +427,3 @@ Normally the flow is:
    `min_date='2023-09-18'`.
 
 4. Follow the instructions above to rerun across all bioprojects.
-   
