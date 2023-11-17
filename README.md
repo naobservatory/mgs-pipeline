@@ -347,10 +347,10 @@ To create a Bowtie2 database, we need to download genomes from NCBI, using ncbi-
 
 ```
 pip install ncbi-genome-download
-python -m pip install ete3 six
+python -m pip install ete3 six ncbi-genome-download
 ```
 
-Now you can run `build_bowtie_db.py`, which will create the bowtie2 data base. This will take quite some time, so it's best to run this command within a `screen` session to not inadvertantly ending the script when closing your terminal.
+Now you can run `build_bowtie_db.py`, which will create the bowtie2 database. This will take quite some time so it's best to run this command within a `screen` session to not inadvertantly end the script when closing your terminal.
 
 
 ## Operations
