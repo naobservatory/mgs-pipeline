@@ -339,31 +339,33 @@ We normally run this pipeline on EC2 instances, generally c6a.8xlarge ones.
 The pipeline runs serially within each bioproject. It would be possible to
 extend it to be much more parallel, but we haven't felt the need yet.
 
-When we parallize it we usually do it over bioprojects.  For example:
+When we parallize it we usually do it over bioprojects, by running
+./reprocess-bioprojects.py and specifying a maximum number of parallel jobs.
+For example:
 
 ```
-mgs-pipeline $ for bioproject in $(ls bioprojects/) ; do
-    screen -d -m ./run.py --bioproject $bioproject --arguments-here
-done
-mgs-pipeline $ for bioproject in $(ls ../mgs-restricted/bioprojects/) ; do
-    screen -d -m ./run.py --bioproject $bioproject --restricted --arguments-here
-done
+mgs-pipeline $ ./reprocess-bioprojects.py 12 prefix --run-arguments-here
 ```
 
-This will run the pipeline once for each bioproject, each in its own screen
-session.  If the stages you're running require a lot of memory or disk,
-however, you should do it serially instead:
+This will run the pipeline once for each bioproject, including restricted
+bioprojects if available in ../mgs-restricted.  If the stages you're running
+require a lot of memory or disk, use a number lower than 12, potentially 1.
+
+Job output is under log/ in files named by the date and the prefix you supply.
+So if I ran the above on 2023-01-01 I'd expect to see files like:
 
 ```
-mgs-pipeline $ for bioproject in $(ls bioprojects/) ; do
-    ./run.py --bioproject $bioproject --arguments-here
-done ; for bioproject in $(ls ../mgs-restricted/bioprojects/) ; do
-    ./run.py --bioproject $bioproject --restricted --arguments-here
-done
-
+...
+log/2023-01-01.prefix.PRJNA924011
+log/2023-01-01.prefix.PRJNA943189
+log/2023-01-01.prefix.PRJNA966185
+...
 ```
 
-### Parallelization Oversight
+If the job fails, the last line in the log file will start with "ERROR:" and
+then have the exit code.
+
+### Screen Oversight
 
 You can check in on parallelized jobs under screen with:
 
