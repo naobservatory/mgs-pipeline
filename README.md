@@ -158,12 +158,18 @@ Available files, and their formats:
 * `hvreads/`: Output, data that backs the [read
   viewer](https://www.jefftk.com/mgs-counts/reads)
    * Ex: `SRR14530724.hvreads.json`
+   * One record for each record in allmatches, joined back to the cleaned
+     sequence and quality data.
    * JSON
    * Read ID to Kraken output and cleaned read
 
-* `alignments/`: Output, data that will later back the dashboard.
+* `alignments/`: Output, alignment data that will later back the dashboard.
    * Ex: SRR21452137.alignments.tsv
    * TSV
+   * One record for each record in the hvreads that Bowtie2 was able to map
+     back to a known human-infecting virus.  Note that we've set the quality
+     score very low here, and you likely want to filter some of these out based
+     on a combination of alignment score and trimmed read length.
    * Columns:
      * Read ID
      * Best-match genome
