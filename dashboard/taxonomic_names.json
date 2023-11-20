@@ -5888,6 +5888,10 @@
     "Enterobacteriales",
     "gamma-3 proteobacteria"
   ],
+  "91753": [
+    "Cucurbit aphid-borne yellows virus",
+    "CABYV"
+  ],
   "93678": [
     "TTV-like mini virus",
     "TLMV",
@@ -5916,6 +5920,10 @@
   "95342": [
     "Sapporo virus",
     "Human calicivirus SLV"
+  ],
+  "97344": [
+    "Periplaneta fuliginosa densovirus",
+    "Periplaneta fuliginosa parvovirus"
   ],
   "98383": [
     "Plutella xylostella granulovirus"
@@ -8014,6 +8022,10 @@
     "Sebaldella termitidis strain ATCC 33386",
     "Sebaldella termitidis str. ATCC 33386"
   ],
+  "532076": [
+    "Escherichia phage 13a",
+    "Enterobacteria phage 13a"
+  ],
   "535712": [
     "Candidatus Rhodoluna planktonica",
     "actinobacterium MWH-Dar1",
@@ -9744,6 +9756,9 @@
   ],
   "1330491": [
     "Cosavirus A"
+  ],
+  "1330521": [
+    "Enterovirus J"
   ],
   "1330524": [
     "Salivirus A"
@@ -12135,6 +12150,10 @@
   ],
   "2283297": [
     "Mycobacterium phage Mantra"
+  ],
+  "2283388": [
+    "Faba bean polerovirus 1",
+    "Faba bean Breeza virus"
   ],
   "2301548": [
     "Mycobacterium phage Cane17"
