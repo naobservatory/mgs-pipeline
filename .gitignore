@@ -13,3 +13,7 @@ dashboard/allmatches/
 dashboard/riboreads/
 dashboard/ribocounts/
 dashboard/ribofrac/
+dashboard/alignments/
+log/
+bowtie/
+
