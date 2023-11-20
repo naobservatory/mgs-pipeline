@@ -249,20 +249,21 @@ def interpret(project, papers, bits):
     elif project in papers["Bohl 2022"]["projects"]:
         sample, = bits
         return sample, dict(
-                country="Cambodia",
-                city="Chbar Mon",
-                state="Kampong Speu",
-                # Patient samples collected between March 2019 and October 2020
-                date="2020",
-                collection="blood serum")
+            country="Cambodia",
+            city="Chbar Mon",
+            state="Kampong Speu",
+            # Patient samples collected between March 2019 and October 2020
+            date="2020",
+            collection="blood serum")
     elif project in papers["Tisza 2023"]["projects"]:
         sample, _, loc, city_state, date, flow = bits
         city, state = city_state.split(", ")
         return sample, dict(
-                country="United States",
-                city=city,
-                state="Texas",
-                location=loc,
-                date=date)
+            country="United States",
+            city=city,
+            state="Texas",
+            location=loc,
+            date=date,
+            enrichment="panel")
     else:
         raise Exception("Metadata format for %s unknown" % project)

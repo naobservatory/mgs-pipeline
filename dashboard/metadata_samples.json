@@ -22516,6 +22516,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-08-11",
+    "enrichment": "panel",
     "location": "EPS K6",
     "reads": 7391537,
     "state": "Texas"
@@ -22524,6 +22525,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-11-22",
+    "enrichment": "panel",
     "location": "HOU C1",
     "reads": 16313284,
     "state": "Texas"
@@ -22532,6 +22534,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-12-28",
+    "enrichment": "panel",
     "location": "HOU C1",
     "reads": 13510086,
     "state": "Texas"
@@ -22540,6 +22543,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2023-01-19",
+    "enrichment": "panel",
     "location": "HOU C1",
     "reads": 19547757,
     "state": "Texas"
@@ -22548,6 +22552,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-07-06",
+    "enrichment": "panel",
     "location": "HOU C1",
     "reads": 8023615,
     "state": "Texas"
@@ -22556,6 +22561,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-06-29",
+    "enrichment": "panel",
     "location": "HOU C1",
     "reads": 8268793,
     "state": "Texas"
@@ -22564,6 +22570,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-10-18",
+    "enrichment": "panel",
     "location": "HOU C1",
     "reads": 7965567,
     "state": "Texas"
@@ -22572,6 +22579,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-10-11",
+    "enrichment": "panel",
     "location": "HOU C1",
     "reads": 9554953,
     "state": "Texas"
@@ -22580,6 +22588,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-10-04",
+    "enrichment": "panel",
     "location": "HOU C1",
     "reads": 6706772,
     "state": "Texas"
@@ -22588,6 +22597,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-09-28",
+    "enrichment": "panel",
     "location": "HOU C1",
     "reads": 10386283,
     "state": "Texas"
@@ -22596,6 +22606,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-09-19",
+    "enrichment": "panel",
     "location": "HOU C1",
     "reads": 7684988,
     "state": "Texas"
@@ -22604,6 +22615,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2023-02-02",
+    "enrichment": "panel",
     "location": "HOU Z9",
     "reads": 30218486,
     "state": "Texas"
@@ -22612,6 +22624,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-09-13",
+    "enrichment": "panel",
     "location": "HOU C1",
     "reads": 7133515,
     "state": "Texas"
@@ -22620,6 +22633,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-09-06",
+    "enrichment": "panel",
     "location": "HOU C1",
     "reads": 6110684,
     "state": "Texas"
@@ -22628,6 +22642,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-08-30",
+    "enrichment": "panel",
     "location": "HOU C1",
     "reads": 7017603,
     "state": "Texas"
@@ -22636,6 +22651,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-08-25",
+    "enrichment": "panel",
     "location": "HOU C1",
     "reads": 9365245,
     "state": "Texas"
@@ -22644,6 +22660,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-08-16",
+    "enrichment": "panel",
     "location": "HOU C1",
     "reads": 9533162,
     "state": "Texas"
@@ -22652,6 +22669,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-12-28",
+    "enrichment": "panel",
     "location": "HOU Z9",
     "reads": 14893828,
     "state": "Texas"
@@ -22660,6 +22678,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-11-01",
+    "enrichment": "panel",
     "location": "HOU C1",
     "reads": 19064654,
     "state": "Texas"
@@ -22668,6 +22687,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2023-01-30",
+    "enrichment": "panel",
     "location": "EPS Q9",
     "reads": 19110408,
     "state": "Texas"
@@ -22676,6 +22696,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-12-12",
+    "enrichment": "panel",
     "location": "EPS Q9",
     "reads": 12572686,
     "state": "Texas"
@@ -22684,6 +22705,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-12-19",
+    "enrichment": "panel",
     "location": "EPS Q9",
     "reads": 11529851,
     "state": "Texas"
@@ -22692,6 +22714,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-09-20",
+    "enrichment": "panel",
     "location": "EPS Q9",
     "reads": 6595210,
     "state": "Texas"
@@ -22700,6 +22723,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-09-12",
+    "enrichment": "panel",
     "location": "EPS Q9",
     "reads": 7238354,
     "state": "Texas"
@@ -22708,6 +22732,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-09-06",
+    "enrichment": "panel",
     "location": "EPS Q9",
     "reads": 8088039,
     "state": "Texas"
@@ -22716,6 +22741,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-08-29",
+    "enrichment": "panel",
     "location": "EPS Q9",
     "reads": 8061398,
     "state": "Texas"
@@ -22724,6 +22750,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-08-22",
+    "enrichment": "panel",
     "location": "EPS Q9",
     "reads": 9627317,
     "state": "Texas"
@@ -22732,6 +22759,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-08-15",
+    "enrichment": "panel",
     "location": "EPS Q9",
     "reads": 15090999,
     "state": "Texas"
@@ -22740,6 +22768,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2023-01-10",
+    "enrichment": "panel",
     "location": "HOU Z9",
     "reads": 23026573,
     "state": "Texas"
@@ -22748,6 +22777,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-08-08",
+    "enrichment": "panel",
     "location": "EPS Q9",
     "reads": 8169799,
     "state": "Texas"
@@ -22756,6 +22786,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-08-01",
+    "enrichment": "panel",
     "location": "EPS Q9",
     "reads": 7855706,
     "state": "Texas"
@@ -22764,6 +22795,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-07-25",
+    "enrichment": "panel",
     "location": "EPS Q9",
     "reads": 7405533,
     "state": "Texas"
@@ -22772,6 +22804,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-07-18",
+    "enrichment": "panel",
     "location": "EPS Q9",
     "reads": 7059933,
     "state": "Texas"
@@ -22780,6 +22813,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-08-30",
+    "enrichment": "panel",
     "location": "HOU S3",
     "reads": 7728034,
     "state": "Texas"
@@ -22788,6 +22822,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-08-25",
+    "enrichment": "panel",
     "location": "HOU S3",
     "reads": 11556489,
     "state": "Texas"
@@ -22796,6 +22831,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-08-16",
+    "enrichment": "panel",
     "location": "HOU S3",
     "reads": 8988615,
     "state": "Texas"
@@ -22804,6 +22840,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-08-10",
+    "enrichment": "panel",
     "location": "HOU S3",
     "reads": 10157659,
     "state": "Texas"
@@ -22812,6 +22849,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-11-22",
+    "enrichment": "panel",
     "location": "HOU Z9",
     "reads": 8991413,
     "state": "Texas"
@@ -22820,6 +22858,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-08-03",
+    "enrichment": "panel",
     "location": "HOU S3",
     "reads": 7902404,
     "state": "Texas"
@@ -22828,6 +22867,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-07-26",
+    "enrichment": "panel",
     "location": "HOU S3",
     "reads": 9601283,
     "state": "Texas"
@@ -22836,6 +22876,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-07-19",
+    "enrichment": "panel",
     "location": "HOU S3",
     "reads": 8884207,
     "state": "Texas"
@@ -22844,6 +22885,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-07-12",
+    "enrichment": "panel",
     "location": "HOU S3",
     "reads": 7111767,
     "state": "Texas"
@@ -22852,6 +22894,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-07-06",
+    "enrichment": "panel",
     "location": "HOU S3",
     "reads": 11223539,
     "state": "Texas"
@@ -22860,6 +22903,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-06-29",
+    "enrichment": "panel",
     "location": "HOU S3",
     "reads": 8491184,
     "state": "Texas"
@@ -22868,6 +22912,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-06-22",
+    "enrichment": "panel",
     "location": "HOU S3",
     "reads": 10201573,
     "state": "Texas"
@@ -22876,6 +22921,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-06-15",
+    "enrichment": "panel",
     "location": "HOU S3",
     "reads": 4270609,
     "state": "Texas"
@@ -22884,6 +22930,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-06-08",
+    "enrichment": "panel",
     "location": "HOU S3",
     "reads": 10627003,
     "state": "Texas"
@@ -22892,6 +22939,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-11-01",
+    "enrichment": "panel",
     "location": "HOU S3",
     "reads": 18158134,
     "state": "Texas"
@@ -22900,6 +22948,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-10-25",
+    "enrichment": "panel",
     "location": "HOU Z9",
     "reads": 9592958,
     "state": "Texas"
@@ -22908,6 +22957,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-10-31",
+    "enrichment": "panel",
     "location": "EPS J3",
     "reads": 9259816,
     "state": "Texas"
@@ -22916,6 +22966,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-11-28",
+    "enrichment": "panel",
     "location": "EPS J3",
     "reads": 13796385,
     "state": "Texas"
@@ -22924,6 +22975,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-09-20",
+    "enrichment": "panel",
     "location": "EPS J3",
     "reads": 6118805,
     "state": "Texas"
@@ -22932,6 +22984,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-09-12",
+    "enrichment": "panel",
     "location": "EPS J3",
     "reads": 8343309,
     "state": "Texas"
@@ -22940,6 +22993,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-09-06",
+    "enrichment": "panel",
     "location": "EPS J3",
     "reads": 9030048,
     "state": "Texas"
@@ -22948,6 +23002,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-10-11",
+    "enrichment": "panel",
     "location": "HOU Z9",
     "reads": 7117445,
     "state": "Texas"
@@ -22956,6 +23011,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-08-29",
+    "enrichment": "panel",
     "location": "EPS J3",
     "reads": 6746771,
     "state": "Texas"
@@ -22964,6 +23020,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-08-22",
+    "enrichment": "panel",
     "location": "EPS J3",
     "reads": 5724575,
     "state": "Texas"
@@ -22972,6 +23029,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-08-15",
+    "enrichment": "panel",
     "location": "EPS J3",
     "reads": 9390719,
     "state": "Texas"
@@ -22980,6 +23038,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-08-08",
+    "enrichment": "panel",
     "location": "EPS J3",
     "reads": 5306251,
     "state": "Texas"
@@ -22988,6 +23047,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-08-01",
+    "enrichment": "panel",
     "location": "EPS J3",
     "reads": 6922926,
     "state": "Texas"
@@ -22996,6 +23056,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-07-25",
+    "enrichment": "panel",
     "location": "EPS J3",
     "reads": 7013085,
     "state": "Texas"
@@ -23004,6 +23065,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-07-18",
+    "enrichment": "panel",
     "location": "EPS J3",
     "reads": 4194173,
     "state": "Texas"
@@ -23012,6 +23074,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-07-11",
+    "enrichment": "panel",
     "location": "EPS J3",
     "reads": 3441018,
     "state": "Texas"
@@ -23020,6 +23083,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-07-05",
+    "enrichment": "panel",
     "location": "EPS J3",
     "reads": 8751406,
     "state": "Texas"
@@ -23028,6 +23092,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-06-29",
+    "enrichment": "panel",
     "location": "EPS J3",
     "reads": 10698266,
     "state": "Texas"
@@ -23036,6 +23101,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2023-01-25",
+    "enrichment": "panel",
     "location": "HOU R5",
     "reads": 19543879,
     "state": "Texas"
@@ -23044,6 +23110,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-12-13",
+    "enrichment": "panel",
     "location": "HOU R5",
     "reads": 12714448,
     "state": "Texas"
@@ -23052,6 +23119,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-09-13",
+    "enrichment": "panel",
     "location": "HOU Z9",
     "reads": 6606250,
     "state": "Texas"
@@ -23060,6 +23128,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-12-20",
+    "enrichment": "panel",
     "location": "HOU R5",
     "reads": 17957909,
     "state": "Texas"
@@ -23068,6 +23137,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-12-08",
+    "enrichment": "panel",
     "location": "HOU R5",
     "reads": 11947773,
     "state": "Texas"
@@ -23076,6 +23146,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-11-29",
+    "enrichment": "panel",
     "location": "HOU R5",
     "reads": 11958776,
     "state": "Texas"
@@ -23084,6 +23155,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-11-16",
+    "enrichment": "panel",
     "location": "HOU R5",
     "reads": 20496048,
     "state": "Texas"
@@ -23092,6 +23164,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-10-25",
+    "enrichment": "panel",
     "location": "HOU R5",
     "reads": 9433147,
     "state": "Texas"
@@ -23100,6 +23173,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-10-18",
+    "enrichment": "panel",
     "location": "HOU R5",
     "reads": 9670830,
     "state": "Texas"
@@ -23108,6 +23182,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-10-11",
+    "enrichment": "panel",
     "location": "HOU R5",
     "reads": 11459814,
     "state": "Texas"
@@ -23116,6 +23191,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-10-04",
+    "enrichment": "panel",
     "location": "HOU R5",
     "reads": 10903902,
     "state": "Texas"
@@ -23124,6 +23200,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-09-28",
+    "enrichment": "panel",
     "location": "HOU R5",
     "reads": 10175758,
     "state": "Texas"
@@ -23132,6 +23209,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-09-19",
+    "enrichment": "panel",
     "location": "HOU R5",
     "reads": 8409956,
     "state": "Texas"
@@ -23140,6 +23218,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-09-06",
+    "enrichment": "panel",
     "location": "HOU Z9",
     "reads": 8227139,
     "state": "Texas"
@@ -23148,6 +23227,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-09-13",
+    "enrichment": "panel",
     "location": "HOU R5",
     "reads": 8370013,
     "state": "Texas"
@@ -23156,6 +23236,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-09-06",
+    "enrichment": "panel",
     "location": "HOU R5",
     "reads": 10397141,
     "state": "Texas"
@@ -23164,6 +23245,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-11-01",
+    "enrichment": "panel",
     "location": "HOU J6",
     "reads": 17938600,
     "state": "Texas"
@@ -23172,6 +23254,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-11-08",
+    "enrichment": "panel",
     "location": "HOU J6",
     "reads": 35075413,
     "state": "Texas"
@@ -23180,6 +23263,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-11-29",
+    "enrichment": "panel",
     "location": "HOU J6",
     "reads": 14982849,
     "state": "Texas"
@@ -23188,6 +23272,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2023-01-19",
+    "enrichment": "panel",
     "location": "HOU J6",
     "reads": 22884668,
     "state": "Texas"
@@ -23196,6 +23281,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-08-03",
+    "enrichment": "panel",
     "location": "HOU Z9",
     "reads": 9052896,
     "state": "Texas"
@@ -23204,6 +23290,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2023-01-30",
+    "enrichment": "panel",
     "location": "EPS T4",
     "reads": 15317064,
     "state": "Texas"
@@ -23212,6 +23299,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2023-01-09",
+    "enrichment": "panel",
     "location": "EPS T4",
     "reads": 16103637,
     "state": "Texas"
@@ -23220,6 +23308,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2023-01-18",
+    "enrichment": "panel",
     "location": "EPS T4",
     "reads": 22610295,
     "state": "Texas"
@@ -23228,6 +23317,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-11-15",
+    "enrichment": "panel",
     "location": "EPS T4",
     "reads": 10308482,
     "state": "Texas"
@@ -23236,6 +23326,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2023-01-23",
+    "enrichment": "panel",
     "location": "EPS T4",
     "reads": 16744603,
     "state": "Texas"
@@ -23244,6 +23335,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2023-01-04",
+    "enrichment": "panel",
     "location": "EPS T4",
     "reads": 12350966,
     "state": "Texas"
@@ -23252,6 +23344,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-09-20",
+    "enrichment": "panel",
     "location": "EPS T4",
     "reads": 6610817,
     "state": "Texas"
@@ -23260,6 +23353,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-09-12",
+    "enrichment": "panel",
     "location": "EPS T4",
     "reads": 8588168,
     "state": "Texas"
@@ -23268,6 +23362,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-08-29",
+    "enrichment": "panel",
     "location": "EPS T4",
     "reads": 6821650,
     "state": "Texas"
@@ -23276,6 +23371,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-08-22",
+    "enrichment": "panel",
     "location": "EPS T4",
     "reads": 6040394,
     "state": "Texas"
@@ -23284,6 +23380,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-07-26",
+    "enrichment": "panel",
     "location": "HOU Z9",
     "reads": 7810735,
     "state": "Texas"
@@ -23292,6 +23389,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-08-30",
+    "enrichment": "panel",
     "location": "HOU R5",
     "reads": 8104988,
     "state": "Texas"
@@ -23300,6 +23398,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-08-25",
+    "enrichment": "panel",
     "location": "HOU R5",
     "reads": 12409310,
     "state": "Texas"
@@ -23308,6 +23407,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-08-16",
+    "enrichment": "panel",
     "location": "HOU R5",
     "reads": 12642443,
     "state": "Texas"
@@ -23316,6 +23416,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-08-10",
+    "enrichment": "panel",
     "location": "HOU R5",
     "reads": 8237208,
     "state": "Texas"
@@ -23324,6 +23425,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-08-03",
+    "enrichment": "panel",
     "location": "HOU R5",
     "reads": 7649061,
     "state": "Texas"
@@ -23332,6 +23434,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-07-26",
+    "enrichment": "panel",
     "location": "HOU R5",
     "reads": 7114495,
     "state": "Texas"
@@ -23340,6 +23443,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-07-19",
+    "enrichment": "panel",
     "location": "HOU R5",
     "reads": 8071973,
     "state": "Texas"
@@ -23348,6 +23452,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-07-12",
+    "enrichment": "panel",
     "location": "HOU R5",
     "reads": 7656108,
     "state": "Texas"
@@ -23356,6 +23461,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-08-30",
+    "enrichment": "panel",
     "location": "HOU Z9",
     "reads": 9409709,
     "state": "Texas"
@@ -23364,6 +23470,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-07-06",
+    "enrichment": "panel",
     "location": "HOU R5",
     "reads": 8616700,
     "state": "Texas"
@@ -23372,6 +23479,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-06-29",
+    "enrichment": "panel",
     "location": "HOU R5",
     "reads": 9574686,
     "state": "Texas"
@@ -23380,6 +23488,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-06-22",
+    "enrichment": "panel",
     "location": "HOU R5",
     "reads": 9043015,
     "state": "Texas"
@@ -23388,6 +23497,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-06-15",
+    "enrichment": "panel",
     "location": "HOU R5",
     "reads": 9198164,
     "state": "Texas"
@@ -23396,6 +23506,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-06-08",
+    "enrichment": "panel",
     "location": "HOU R5",
     "reads": 10406000,
     "state": "Texas"
@@ -23404,6 +23515,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-12-28",
+    "enrichment": "panel",
     "location": "HOU R5",
     "reads": 6331314,
     "state": "Texas"
@@ -23412,6 +23524,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2023-01-05",
+    "enrichment": "panel",
     "location": "HOU R5",
     "reads": 11435297,
     "state": "Texas"
@@ -23420,6 +23533,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-09-28",
+    "enrichment": "panel",
     "location": "HOU J6",
     "reads": 10712228,
     "state": "Texas"
@@ -23428,6 +23542,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-09-19",
+    "enrichment": "panel",
     "location": "HOU J6",
     "reads": 8295400,
     "state": "Texas"
@@ -23436,6 +23551,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-09-06",
+    "enrichment": "panel",
     "location": "HOU J6",
     "reads": 13472834,
     "state": "Texas"
@@ -23444,6 +23560,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-08-30",
+    "enrichment": "panel",
     "location": "HOU J6",
     "reads": 7617823,
     "state": "Texas"
@@ -23452,6 +23569,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-08-25",
+    "enrichment": "panel",
     "location": "HOU J6",
     "reads": 9338563,
     "state": "Texas"
@@ -23460,6 +23578,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-08-16",
+    "enrichment": "panel",
     "location": "HOU J6",
     "reads": 12527622,
     "state": "Texas"
@@ -23468,6 +23587,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-08-10",
+    "enrichment": "panel",
     "location": "HOU J6",
     "reads": 6398193,
     "state": "Texas"
@@ -23476,6 +23596,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-08-03",
+    "enrichment": "panel",
     "location": "HOU J6",
     "reads": 7888633,
     "state": "Texas"
@@ -23484,6 +23605,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-07-26",
+    "enrichment": "panel",
     "location": "HOU J6",
     "reads": 9504951,
     "state": "Texas"
@@ -23492,6 +23614,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-08-10",
+    "enrichment": "panel",
     "location": "HOU Z9",
     "reads": 6511033,
     "state": "Texas"
@@ -23500,6 +23623,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-07-19",
+    "enrichment": "panel",
     "location": "HOU J6",
     "reads": 9053068,
     "state": "Texas"
@@ -23508,6 +23632,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-07-12",
+    "enrichment": "panel",
     "location": "HOU J6",
     "reads": 8709054,
     "state": "Texas"
@@ -23516,6 +23641,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-07-06",
+    "enrichment": "panel",
     "location": "HOU J6",
     "reads": 8600885,
     "state": "Texas"
@@ -23524,6 +23650,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-06-29",
+    "enrichment": "panel",
     "location": "HOU J6",
     "reads": 12849385,
     "state": "Texas"
@@ -23532,6 +23659,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-06-22",
+    "enrichment": "panel",
     "location": "HOU J6",
     "reads": 9789267,
     "state": "Texas"
@@ -23540,6 +23668,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2023-01-10",
+    "enrichment": "panel",
     "location": "HOU J6",
     "reads": 29902062,
     "state": "Texas"
@@ -23548,6 +23677,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-08-15",
+    "enrichment": "panel",
     "location": "EPS T4",
     "reads": 5305536,
     "state": "Texas"
@@ -23556,6 +23686,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-07-25",
+    "enrichment": "panel",
     "location": "EPS T4",
     "reads": 6159280,
     "state": "Texas"
@@ -23564,6 +23695,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-08-08",
+    "enrichment": "panel",
     "location": "EPS T4",
     "reads": 4889375,
     "state": "Texas"
@@ -23572,6 +23704,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-08-01",
+    "enrichment": "panel",
     "location": "EPS T4",
     "reads": 4527839,
     "state": "Texas"
@@ -23580,6 +23713,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-07-18",
+    "enrichment": "panel",
     "location": "EPS T4",
     "reads": 3222679,
     "state": "Texas"
@@ -23588,6 +23722,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-07-11",
+    "enrichment": "panel",
     "location": "EPS T4",
     "reads": 4003076,
     "state": "Texas"
@@ -23596,6 +23731,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-06-29",
+    "enrichment": "panel",
     "location": "EPS T4",
     "reads": 2559001,
     "state": "Texas"
@@ -23604,6 +23740,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-06-22",
+    "enrichment": "panel",
     "location": "EPS T4",
     "reads": 6630282,
     "state": "Texas"
@@ -23612,6 +23749,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-06-15",
+    "enrichment": "panel",
     "location": "EPS T4",
     "reads": 8324330,
     "state": "Texas"
@@ -23620,6 +23758,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-07-11",
+    "enrichment": "panel",
     "location": "EPS Q9",
     "reads": 6673344,
     "state": "Texas"
@@ -23628,6 +23767,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-07-05",
+    "enrichment": "panel",
     "location": "EPS Q9",
     "reads": 6709188,
     "state": "Texas"
@@ -23636,6 +23776,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-06-29",
+    "enrichment": "panel",
     "location": "EPS Q9",
     "reads": 4875132,
     "state": "Texas"
@@ -23644,6 +23785,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-06-22",
+    "enrichment": "panel",
     "location": "EPS Q9",
     "reads": 7431144,
     "state": "Texas"
@@ -23652,6 +23794,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-06-15",
+    "enrichment": "panel",
     "location": "EPS Q9",
     "reads": 6457432,
     "state": "Texas"
@@ -23660,6 +23803,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-06-15",
+    "enrichment": "panel",
     "location": "EPS Q9",
     "reads": 4090220,
     "state": "Texas"
@@ -23668,6 +23812,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-11-16",
+    "enrichment": "panel",
     "location": "HOU Z9",
     "reads": 21783969,
     "state": "Texas"
@@ -23676,6 +23821,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-08-11",
+    "enrichment": "panel",
     "location": "EPS Q9",
     "reads": 8613819,
     "state": "Texas"
@@ -23684,6 +23830,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-08-04",
+    "enrichment": "panel",
     "location": "EPS Q9",
     "reads": 8927567,
     "state": "Texas"
@@ -23692,6 +23839,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2023-01-09",
+    "enrichment": "panel",
     "location": "EPS Q9",
     "reads": 16942530,
     "state": "Texas"
@@ -23700,6 +23848,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2023-01-23",
+    "enrichment": "panel",
     "location": "EPS Q9",
     "reads": 23418608,
     "state": "Texas"
@@ -23708,6 +23857,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-12-28",
+    "enrichment": "panel",
     "location": "EPS Q9",
     "reads": 13481095,
     "state": "Texas"
@@ -23716,6 +23866,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-11-15",
+    "enrichment": "panel",
     "location": "EPS Q9",
     "reads": 14657454,
     "state": "Texas"
@@ -23724,6 +23875,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2023-01-18",
+    "enrichment": "panel",
     "location": "EPS Q9",
     "reads": 14737571,
     "state": "Texas"
@@ -23732,6 +23884,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-12-05",
+    "enrichment": "panel",
     "location": "EPS Q9",
     "reads": 12407238,
     "state": "Texas"
@@ -23740,6 +23893,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2023-01-04",
+    "enrichment": "panel",
     "location": "EPS Q9",
     "reads": 13496430,
     "state": "Texas"
@@ -23748,6 +23902,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-10-04",
+    "enrichment": "panel",
     "location": "HOU Z9",
     "reads": 8339149,
     "state": "Texas"
@@ -23756,6 +23911,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-05-18",
+    "enrichment": "panel",
     "location": "HOU Z9",
     "reads": 6383294,
     "state": "Texas"
@@ -23764,6 +23920,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-06-22",
+    "enrichment": "panel",
     "location": "EPS J3",
     "reads": 7982358,
     "state": "Texas"
@@ -23772,6 +23929,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-06-15",
+    "enrichment": "panel",
     "location": "EPS J3",
     "reads": 5260199,
     "state": "Texas"
@@ -23780,6 +23938,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-06-15",
+    "enrichment": "panel",
     "location": "EPS J3",
     "reads": 4658255,
     "state": "Texas"
@@ -23788,6 +23947,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-06-01",
+    "enrichment": "panel",
     "location": "EPS J3",
     "reads": 8375544,
     "state": "Texas"
@@ -23796,6 +23956,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-05-25",
+    "enrichment": "panel",
     "location": "EPS J3",
     "reads": 5338168,
     "state": "Texas"
@@ -23804,6 +23965,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-05-18",
+    "enrichment": "panel",
     "location": "EPS J3",
     "reads": 5286451,
     "state": "Texas"
@@ -23812,6 +23974,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-05-11",
+    "enrichment": "panel",
     "location": "EPS J3",
     "reads": 7279788,
     "state": "Texas"
@@ -23820,6 +23983,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-05-04",
+    "enrichment": "panel",
     "location": "EPS J3",
     "reads": 8204509,
     "state": "Texas"
@@ -23828,6 +23992,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-08-11",
+    "enrichment": "panel",
     "location": "EPS J3",
     "reads": 8531325,
     "state": "Texas"
@@ -23836,6 +24001,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-08-04",
+    "enrichment": "panel",
     "location": "EPS J3",
     "reads": 6989957,
     "state": "Texas"
@@ -23844,6 +24010,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-09-28",
+    "enrichment": "panel",
     "location": "HOU Z9",
     "reads": 11181752,
     "state": "Texas"
@@ -23852,6 +24019,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2023-01-23",
+    "enrichment": "panel",
     "location": "EPS J3",
     "reads": 23705858,
     "state": "Texas"
@@ -23860,6 +24028,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-11-15",
+    "enrichment": "panel",
     "location": "EPS J3",
     "reads": 11136437,
     "state": "Texas"
@@ -23868,6 +24037,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2023-01-09",
+    "enrichment": "panel",
     "location": "EPS J3",
     "reads": 15292021,
     "state": "Texas"
@@ -23876,6 +24046,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-11-29",
+    "enrichment": "panel",
     "location": "HOU Z9",
     "reads": 11562685,
     "state": "Texas"
@@ -23884,6 +24055,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-10-31",
+    "enrichment": "panel",
     "location": "EPS K6",
     "reads": 10817455,
     "state": "Texas"
@@ -23892,6 +24064,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-10-03",
+    "enrichment": "panel",
     "location": "EPS T4",
     "reads": 8485493,
     "state": "Texas"
@@ -23900,6 +24073,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-09-26",
+    "enrichment": "panel",
     "location": "EPS T4",
     "reads": 13925316,
     "state": "Texas"
@@ -23908,6 +24082,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2023-01-30",
+    "enrichment": "panel",
     "location": "EPS K6",
     "reads": 20711189,
     "state": "Texas"
@@ -23916,6 +24091,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-12-19",
+    "enrichment": "panel",
     "location": "EPS K6",
     "reads": 13128359,
     "state": "Texas"
@@ -23924,6 +24100,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2023-01-05",
+    "enrichment": "panel",
     "location": "HOU Z9",
     "reads": 19358974,
     "state": "Texas"
@@ -23932,6 +24109,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-12-05",
+    "enrichment": "panel",
     "location": "EPS K6",
     "reads": 10590534,
     "state": "Texas"
@@ -23940,6 +24118,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-11-15",
+    "enrichment": "panel",
     "location": "EPS K6",
     "reads": 13379891,
     "state": "Texas"
@@ -23948,6 +24127,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-06-29",
+    "enrichment": "panel",
     "location": "HOU Z9",
     "reads": 6859002,
     "state": "Texas"
@@ -23956,6 +24136,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-12-28",
+    "enrichment": "panel",
     "location": "EPS K6",
     "reads": 11423315,
     "state": "Texas"
@@ -23964,6 +24145,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-11-07",
+    "enrichment": "panel",
     "location": "EPS K6",
     "reads": 29592213,
     "state": "Texas"
@@ -23972,6 +24154,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2023-01-09",
+    "enrichment": "panel",
     "location": "EPS K6",
     "reads": 21864212,
     "state": "Texas"
@@ -23980,6 +24163,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-11-28",
+    "enrichment": "panel",
     "location": "EPS K6",
     "reads": 5872099,
     "state": "Texas"
@@ -23988,6 +24172,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-10-31",
+    "enrichment": "panel",
     "location": "EPS K6",
     "reads": 4394669,
     "state": "Texas"
@@ -23996,6 +24181,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-09-20",
+    "enrichment": "panel",
     "location": "EPS K6",
     "reads": 7351921,
     "state": "Texas"
@@ -24004,6 +24190,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-09-12",
+    "enrichment": "panel",
     "location": "EPS K6",
     "reads": 6364724,
     "state": "Texas"
@@ -24012,6 +24199,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-09-06",
+    "enrichment": "panel",
     "location": "EPS K6",
     "reads": 6952591,
     "state": "Texas"
@@ -24020,6 +24208,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-08-04",
+    "enrichment": "panel",
     "location": "EPS K6",
     "reads": 5318294,
     "state": "Texas"
@@ -24028,6 +24217,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2023-01-23",
+    "enrichment": "panel",
     "location": "EPS K6",
     "reads": 22425454,
     "state": "Texas"
@@ -24036,6 +24226,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-10-31",
+    "enrichment": "panel",
     "location": "EPS K6",
     "reads": 16954605,
     "state": "Texas"
@@ -24044,6 +24235,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2023-01-18",
+    "enrichment": "panel",
     "location": "EPS K6",
     "reads": 16751149,
     "state": "Texas"
@@ -24052,6 +24244,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-12-12",
+    "enrichment": "panel",
     "location": "EPS K6",
     "reads": 14827968,
     "state": "Texas"
@@ -24060,6 +24253,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-11-21",
+    "enrichment": "panel",
     "location": "EPS K6",
     "reads": 30644906,
     "state": "Texas"
@@ -24068,6 +24262,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2023-01-04",
+    "enrichment": "panel",
     "location": "EPS K6",
     "reads": 13744813,
     "state": "Texas"
@@ -24076,6 +24271,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-10-24",
+    "enrichment": "panel",
     "location": "EPS K6",
     "reads": 8840035,
     "state": "Texas"
@@ -24084,6 +24280,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-06-08",
+    "enrichment": "panel",
     "location": "HOU Z9",
     "reads": 6764499,
     "state": "Texas"
@@ -24092,6 +24289,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-10-17",
+    "enrichment": "panel",
     "location": "EPS K6",
     "reads": 9212899,
     "state": "Texas"
@@ -24100,6 +24298,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-10-10",
+    "enrichment": "panel",
     "location": "EPS K6",
     "reads": 10357678,
     "state": "Texas"
@@ -24108,6 +24307,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-10-03",
+    "enrichment": "panel",
     "location": "EPS K6",
     "reads": 9228558,
     "state": "Texas"
@@ -24116,6 +24316,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2023-02-02",
+    "enrichment": "panel",
     "location": "HOU C1",
     "reads": 34733528,
     "state": "Texas"
@@ -24124,6 +24325,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-11-08",
+    "enrichment": "panel",
     "location": "HOU C1",
     "reads": 8770728,
     "state": "Texas"
@@ -24132,6 +24334,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-12-13",
+    "enrichment": "panel",
     "location": "HOU C1",
     "reads": 13457756,
     "state": "Texas"
@@ -24140,6 +24343,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-09-26",
+    "enrichment": "panel",
     "location": "EPS K6",
     "reads": 9782800,
     "state": "Texas"
@@ -24148,6 +24352,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-08-10",
+    "enrichment": "panel",
     "location": "HOU C1",
     "reads": 6448759,
     "state": "Texas"
@@ -24156,6 +24361,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-08-03",
+    "enrichment": "panel",
     "location": "HOU C1",
     "reads": 7871830,
     "state": "Texas"
@@ -24164,6 +24370,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-07-26",
+    "enrichment": "panel",
     "location": "HOU C1",
     "reads": 7597230,
     "state": "Texas"
@@ -24172,6 +24379,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-07-19",
+    "enrichment": "panel",
     "location": "HOU C1",
     "reads": 8904332,
     "state": "Texas"
@@ -24180,6 +24388,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-07-12",
+    "enrichment": "panel",
     "location": "HOU C1",
     "reads": 6624181,
     "state": "Texas"
@@ -24188,6 +24397,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2023-01-25",
+    "enrichment": "panel",
     "location": "HOU Z9",
     "reads": 31078389,
     "state": "Texas"
@@ -24196,6 +24406,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-06-22",
+    "enrichment": "panel",
     "location": "HOU C1",
     "reads": 8887275,
     "state": "Texas"
@@ -24204,6 +24415,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-06-15",
+    "enrichment": "panel",
     "location": "HOU C1",
     "reads": 9067430,
     "state": "Texas"
@@ -24212,6 +24424,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-06-08",
+    "enrichment": "panel",
     "location": "HOU C1",
     "reads": 7978841,
     "state": "Texas"
@@ -24220,6 +24433,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-12-20",
+    "enrichment": "panel",
     "location": "HOU C1",
     "reads": 14040739,
     "state": "Texas"
@@ -24228,6 +24442,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2023-01-10",
+    "enrichment": "panel",
     "location": "HOU C1",
     "reads": 20781875,
     "state": "Texas"
@@ -24236,6 +24451,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-12-08",
+    "enrichment": "panel",
     "location": "HOU C1",
     "reads": 11147416,
     "state": "Texas"
@@ -24244,6 +24460,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2023-01-25",
+    "enrichment": "panel",
     "location": "HOU C1",
     "reads": 20874374,
     "state": "Texas"
@@ -24252,6 +24469,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2023-01-05",
+    "enrichment": "panel",
     "location": "HOU C1",
     "reads": 15836812,
     "state": "Texas"
@@ -24260,6 +24478,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-11-16",
+    "enrichment": "panel",
     "location": "HOU C1",
     "reads": 25263625,
     "state": "Texas"
@@ -24268,6 +24487,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-11-29",
+    "enrichment": "panel",
     "location": "HOU C1",
     "reads": 13043841,
     "state": "Texas"
@@ -24276,6 +24496,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-11-07",
+    "enrichment": "panel",
     "location": "EPS Q9",
     "reads": 11074336,
     "state": "Texas"
@@ -24284,6 +24505,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-12-20",
+    "enrichment": "panel",
     "location": "HOU Z9",
     "reads": 13986218,
     "state": "Texas"
@@ -24292,6 +24514,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-06-07",
+    "enrichment": "panel",
     "location": "HOU Z9",
     "reads": 7118145,
     "state": "Texas"
@@ -24300,6 +24523,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-10-31",
+    "enrichment": "panel",
     "location": "EPS Q9",
     "reads": 10964136,
     "state": "Texas"
@@ -24308,6 +24532,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-11-21",
+    "enrichment": "panel",
     "location": "EPS Q9",
     "reads": 5855823,
     "state": "Texas"
@@ -24316,6 +24541,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-11-28",
+    "enrichment": "panel",
     "location": "EPS Q9",
     "reads": 10977843,
     "state": "Texas"
@@ -24324,6 +24550,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-10-24",
+    "enrichment": "panel",
     "location": "EPS Q9",
     "reads": 9218554,
     "state": "Texas"
@@ -24332,6 +24559,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-10-17",
+    "enrichment": "panel",
     "location": "EPS Q9",
     "reads": 13071203,
     "state": "Texas"
@@ -24340,6 +24568,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-10-10",
+    "enrichment": "panel",
     "location": "EPS Q9",
     "reads": 9230883,
     "state": "Texas"
@@ -24348,6 +24577,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-10-03",
+    "enrichment": "panel",
     "location": "EPS Q9",
     "reads": 8428790,
     "state": "Texas"
@@ -24356,6 +24586,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-09-28",
+    "enrichment": "panel",
     "location": "EPS Q9",
     "reads": 10184908,
     "state": "Texas"
@@ -24364,6 +24595,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2023-02-02",
+    "enrichment": "panel",
     "location": "HOU B9",
     "reads": 28442432,
     "state": "Texas"
@@ -24372,6 +24604,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-11-16",
+    "enrichment": "panel",
     "location": "HOU B9",
     "reads": 14282014,
     "state": "Texas"
@@ -24380,6 +24613,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-11-08",
+    "enrichment": "panel",
     "location": "HOU Z9",
     "reads": 11198169,
     "state": "Texas"
@@ -24388,6 +24622,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-11-01",
+    "enrichment": "panel",
     "location": "HOU B9",
     "reads": 23495151,
     "state": "Texas"
@@ -24396,6 +24631,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2023-01-19",
+    "enrichment": "panel",
     "location": "HOU B9",
     "reads": 23074147,
     "state": "Texas"
@@ -24404,6 +24640,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-10-25",
+    "enrichment": "panel",
     "location": "HOU B9",
     "reads": 10985018,
     "state": "Texas"
@@ -24412,6 +24649,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-10-18",
+    "enrichment": "panel",
     "location": "HOU B9",
     "reads": 9517566,
     "state": "Texas"
@@ -24420,6 +24658,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-10-11",
+    "enrichment": "panel",
     "location": "HOU B9",
     "reads": 9510542,
     "state": "Texas"
@@ -24428,6 +24667,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-10-04",
+    "enrichment": "panel",
     "location": "HOU B9",
     "reads": 12313744,
     "state": "Texas"
@@ -24436,6 +24676,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-09-28",
+    "enrichment": "panel",
     "location": "HOU B9",
     "reads": 12470020,
     "state": "Texas"
@@ -24444,6 +24685,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-09-19",
+    "enrichment": "panel",
     "location": "HOU B9",
     "reads": 8263355,
     "state": "Texas"
@@ -24452,6 +24694,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-09-06",
+    "enrichment": "panel",
     "location": "HOU B9",
     "reads": 9169331,
     "state": "Texas"
@@ -24460,6 +24703,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-08-30",
+    "enrichment": "panel",
     "location": "HOU B9",
     "reads": 7624124,
     "state": "Texas"
@@ -24468,6 +24712,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-11-01",
+    "enrichment": "panel",
     "location": "HOU Z9",
     "reads": 16479594,
     "state": "Texas"
@@ -24476,6 +24721,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-08-25",
+    "enrichment": "panel",
     "location": "HOU B9",
     "reads": 8514981,
     "state": "Texas"
@@ -24484,6 +24730,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-08-16",
+    "enrichment": "panel",
     "location": "HOU B9",
     "reads": 12264983,
     "state": "Texas"
@@ -24492,6 +24739,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-08-10",
+    "enrichment": "panel",
     "location": "HOU B9",
     "reads": 7665126,
     "state": "Texas"
@@ -24500,6 +24748,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-08-03",
+    "enrichment": "panel",
     "location": "HOU B9",
     "reads": 6814062,
     "state": "Texas"
@@ -24508,6 +24757,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-07-26",
+    "enrichment": "panel",
     "location": "HOU B9",
     "reads": 9708584,
     "state": "Texas"
@@ -24516,6 +24766,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-07-19",
+    "enrichment": "panel",
     "location": "HOU B9",
     "reads": 7577609,
     "state": "Texas"
@@ -24524,6 +24775,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-07-12",
+    "enrichment": "panel",
     "location": "HOU B9",
     "reads": 8947770,
     "state": "Texas"
@@ -24532,6 +24784,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-07-06",
+    "enrichment": "panel",
     "location": "HOU B9",
     "reads": 9548723,
     "state": "Texas"
@@ -24540,6 +24793,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-06-29",
+    "enrichment": "panel",
     "location": "HOU B9",
     "reads": 10331059,
     "state": "Texas"
@@ -24548,6 +24802,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-06-22",
+    "enrichment": "panel",
     "location": "HOU B9",
     "reads": 10135178,
     "state": "Texas"
@@ -24556,6 +24811,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2023-01-19",
+    "enrichment": "panel",
     "location": "HOU Z9",
     "reads": 27670045,
     "state": "Texas"
@@ -24564,6 +24820,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-06-15",
+    "enrichment": "panel",
     "location": "HOU B9",
     "reads": 7559815,
     "state": "Texas"
@@ -24572,6 +24829,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-06-08",
+    "enrichment": "panel",
     "location": "HOU B9",
     "reads": 11134429,
     "state": "Texas"
@@ -24580,6 +24838,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-11-29",
+    "enrichment": "panel",
     "location": "HOU B9",
     "reads": 15773923,
     "state": "Texas"
@@ -24588,6 +24847,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-11-22",
+    "enrichment": "panel",
     "location": "HOU B9",
     "reads": 37240564,
     "state": "Texas"
@@ -24596,6 +24856,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-12-08",
+    "enrichment": "panel",
     "location": "HOU B9",
     "reads": 17054366,
     "state": "Texas"
@@ -24604,6 +24865,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-11-08",
+    "enrichment": "panel",
     "location": "HOU B9",
     "reads": 27912470,
     "state": "Texas"
@@ -24612,6 +24874,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2023-01-25",
+    "enrichment": "panel",
     "location": "HOU B9",
     "reads": 19275450,
     "state": "Texas"
@@ -24620,6 +24883,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2023-01-10",
+    "enrichment": "panel",
     "location": "HOU B9",
     "reads": 22339289,
     "state": "Texas"
@@ -24628,6 +24892,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-12-28",
+    "enrichment": "panel",
     "location": "HOU B9",
     "reads": 15117593,
     "state": "Texas"
@@ -24636,6 +24901,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-12-20",
+    "enrichment": "panel",
     "location": "HOU B9",
     "reads": 16664714,
     "state": "Texas"
@@ -24644,6 +24910,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-12-13",
+    "enrichment": "panel",
     "location": "HOU Z9",
     "reads": 14146094,
     "state": "Texas"
@@ -24652,6 +24919,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-12-13",
+    "enrichment": "panel",
     "location": "HOU B9",
     "reads": 14710723,
     "state": "Texas"
@@ -24660,6 +24928,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2023-02-02",
+    "enrichment": "panel",
     "location": "HOU S3",
     "reads": 34063065,
     "state": "Texas"
@@ -24668,6 +24937,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-11-22",
+    "enrichment": "panel",
     "location": "HOU S3",
     "reads": 21585704,
     "state": "Texas"
@@ -24676,6 +24946,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2023-01-10",
+    "enrichment": "panel",
     "location": "HOU S3",
     "reads": 15429650,
     "state": "Texas"
@@ -24684,6 +24955,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-12-13",
+    "enrichment": "panel",
     "location": "HOU S3",
     "reads": 14204188,
     "state": "Texas"
@@ -24692,6 +24964,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-12-20",
+    "enrichment": "panel",
     "location": "HOU S3",
     "reads": 12468469,
     "state": "Texas"
@@ -24700,6 +24973,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-12-28",
+    "enrichment": "panel",
     "location": "HOU S3",
     "reads": 12268939,
     "state": "Texas"
@@ -24708,6 +24982,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-11-08",
+    "enrichment": "panel",
     "location": "HOU S3",
     "reads": 16839386,
     "state": "Texas"
@@ -24716,6 +24991,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-10-25",
+    "enrichment": "panel",
     "location": "HOU S3",
     "reads": 8445366,
     "state": "Texas"
@@ -24724,6 +25000,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-10-18",
+    "enrichment": "panel",
     "location": "HOU S3",
     "reads": 9772552,
     "state": "Texas"
@@ -24732,6 +25009,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-12-08",
+    "enrichment": "panel",
     "location": "HOU Z9",
     "reads": 12160717,
     "state": "Texas"
@@ -24740,6 +25018,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-10-11",
+    "enrichment": "panel",
     "location": "HOU S3",
     "reads": 9989798,
     "state": "Texas"
@@ -24748,6 +25027,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-10-04",
+    "enrichment": "panel",
     "location": "HOU S3",
     "reads": 9241827,
     "state": "Texas"
@@ -24756,6 +25036,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-09-28",
+    "enrichment": "panel",
     "location": "HOU S3",
     "reads": 8621941,
     "state": "Texas"
@@ -24764,6 +25045,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-09-19",
+    "enrichment": "panel",
     "location": "HOU S3",
     "reads": 7786676,
     "state": "Texas"
@@ -24772,6 +25054,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-09-13",
+    "enrichment": "panel",
     "location": "HOU S3",
     "reads": 8935195,
     "state": "Texas"
@@ -24780,6 +25063,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-09-06",
+    "enrichment": "panel",
     "location": "HOU S3",
     "reads": 7163993,
     "state": "Texas"
@@ -24788,6 +25072,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-11-21",
+    "enrichment": "panel",
     "location": "EPS J3",
     "reads": 16317544,
     "state": "Texas"
@@ -24796,6 +25081,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2023-01-04",
+    "enrichment": "panel",
     "location": "EPS J3",
     "reads": 11935034,
     "state": "Texas"
@@ -24804,6 +25090,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-12-13",
+    "enrichment": "panel",
     "location": "EPS J3",
     "reads": 9940622,
     "state": "Texas"
@@ -24812,6 +25099,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-10-31",
+    "enrichment": "panel",
     "location": "EPS J3",
     "reads": 3162825,
     "state": "Texas"
@@ -24820,6 +25108,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-10-31",
+    "enrichment": "panel",
     "location": "EPS J3",
     "reads": 15024279,
     "state": "Texas"
@@ -24828,6 +25117,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-11-15",
+    "enrichment": "panel",
     "location": "EPS J3",
     "reads": 15098000,
     "state": "Texas"
@@ -24836,6 +25126,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-10-24",
+    "enrichment": "panel",
     "location": "EPS J3",
     "reads": 7594231,
     "state": "Texas"
@@ -24844,6 +25135,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-09-19",
+    "enrichment": "panel",
     "location": "HOU Z9",
     "reads": 6996113,
     "state": "Texas"
@@ -24852,6 +25144,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-10-17",
+    "enrichment": "panel",
     "location": "EPS J3",
     "reads": 9608257,
     "state": "Texas"
@@ -24860,6 +25153,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-10-10",
+    "enrichment": "panel",
     "location": "EPS J3",
     "reads": 9112622,
     "state": "Texas"
@@ -24868,6 +25162,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-10-03",
+    "enrichment": "panel",
     "location": "EPS J3",
     "reads": 10838353,
     "state": "Texas"
@@ -24876,6 +25171,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-09-26",
+    "enrichment": "panel",
     "location": "EPS J3",
     "reads": 13219256,
     "state": "Texas"
@@ -24884,6 +25180,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2023-02-02",
+    "enrichment": "panel",
     "location": "HOU R5",
     "reads": 18993962,
     "state": "Texas"
@@ -24892,6 +25189,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-11-22",
+    "enrichment": "panel",
     "location": "HOU R5",
     "reads": 24400465,
     "state": "Texas"
@@ -24900,6 +25198,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2023-01-10",
+    "enrichment": "panel",
     "location": "HOU R5",
     "reads": 22827827,
     "state": "Texas"
@@ -24908,6 +25207,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2023-01-19",
+    "enrichment": "panel",
     "location": "HOU R5",
     "reads": 21834465,
     "state": "Texas"
@@ -24916,6 +25216,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-12-08",
+    "enrichment": "panel",
     "location": "HOU S3",
     "reads": 13394026,
     "state": "Texas"
@@ -24924,6 +25225,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2023-01-19",
+    "enrichment": "panel",
     "location": "HOU S3",
     "reads": 17207997,
     "state": "Texas"
@@ -24932,6 +25234,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2023-01-05",
+    "enrichment": "panel",
     "location": "HOU S3",
     "reads": 15582302,
     "state": "Texas"
@@ -24940,6 +25243,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2023-01-25",
+    "enrichment": "panel",
     "location": "HOU S3",
     "reads": 20494021,
     "state": "Texas"
@@ -24948,6 +25252,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-11-16",
+    "enrichment": "panel",
     "location": "HOU S3",
     "reads": 34677064,
     "state": "Texas"
@@ -24956,6 +25261,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-11-29",
+    "enrichment": "panel",
     "location": "HOU S3",
     "reads": 23057774,
     "state": "Texas"
@@ -24964,6 +25270,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2023-01-30",
+    "enrichment": "panel",
     "location": "EPS J3",
     "reads": 21791581,
     "state": "Texas"
@@ -24972,6 +25279,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-11-15",
+    "enrichment": "panel",
     "location": "EPS J3",
     "reads": 8815479,
     "state": "Texas"
@@ -24980,6 +25288,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-11-28",
+    "enrichment": "panel",
     "location": "EPS J3",
     "reads": 8654961,
     "state": "Texas"
@@ -24988,6 +25297,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-12-12",
+    "enrichment": "panel",
     "location": "EPS J3",
     "reads": 7832251,
     "state": "Texas"
@@ -24996,6 +25306,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-10-18",
+    "enrichment": "panel",
     "location": "HOU Z9",
     "reads": 9918569,
     "state": "Texas"
@@ -25004,6 +25315,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-11-07",
+    "enrichment": "panel",
     "location": "EPS J3",
     "reads": 9052701,
     "state": "Texas"
@@ -25012,6 +25324,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-12-19",
+    "enrichment": "panel",
     "location": "EPS J3",
     "reads": 13734505,
     "state": "Texas"
@@ -25020,6 +25333,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-12-28",
+    "enrichment": "panel",
     "location": "EPS J3",
     "reads": 9637609,
     "state": "Texas"
@@ -25028,6 +25342,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2023-01-18",
+    "enrichment": "panel",
     "location": "EPS J3",
     "reads": 17476879,
     "state": "Texas"
@@ -25036,6 +25351,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-12-05",
+    "enrichment": "panel",
     "location": "EPS J3",
     "reads": 13295408,
     "state": "Texas"
@@ -25044,6 +25360,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-11-08",
+    "enrichment": "panel",
     "location": "HOU R5",
     "reads": 22001939,
     "state": "Texas"
@@ -25052,6 +25369,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-11-01",
+    "enrichment": "panel",
     "location": "HOU R5",
     "reads": 69975697,
     "state": "Texas"
@@ -25060,6 +25378,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2023-02-02",
+    "enrichment": "panel",
     "location": "HOU J6",
     "reads": 38792347,
     "state": "Texas"
@@ -25068,6 +25387,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-08-25",
+    "enrichment": "panel",
     "location": "HOU Z9",
     "reads": 8414133,
     "state": "Texas"
@@ -25076,6 +25396,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-12-08",
+    "enrichment": "panel",
     "location": "HOU J6",
     "reads": 14316462,
     "state": "Texas"
@@ -25084,6 +25405,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2023-01-25",
+    "enrichment": "panel",
     "location": "HOU J6",
     "reads": 24491924,
     "state": "Texas"
@@ -25092,6 +25414,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-11-16",
+    "enrichment": "panel",
     "location": "HOU J6",
     "reads": 18988773,
     "state": "Texas"
@@ -25100,6 +25423,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2023-01-05",
+    "enrichment": "panel",
     "location": "HOU J6",
     "reads": 15712598,
     "state": "Texas"
@@ -25108,6 +25432,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-12-20",
+    "enrichment": "panel",
     "location": "HOU J6",
     "reads": 18304542,
     "state": "Texas"
@@ -25116,6 +25441,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-12-13",
+    "enrichment": "panel",
     "location": "HOU J6",
     "reads": 10097600,
     "state": "Texas"
@@ -25124,6 +25450,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-11-22",
+    "enrichment": "panel",
     "location": "HOU J6",
     "reads": 37704590,
     "state": "Texas"
@@ -25132,6 +25459,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-12-28",
+    "enrichment": "panel",
     "location": "HOU J6",
     "reads": 15852988,
     "state": "Texas"
@@ -25140,6 +25468,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-10-25",
+    "enrichment": "panel",
     "location": "HOU J6",
     "reads": 13624415,
     "state": "Texas"
@@ -25148,6 +25477,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-10-18",
+    "enrichment": "panel",
     "location": "HOU J6",
     "reads": 12704704,
     "state": "Texas"
@@ -25156,6 +25486,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-08-16",
+    "enrichment": "panel",
     "location": "HOU Z9",
     "reads": 12528569,
     "state": "Texas"
@@ -25164,6 +25495,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-10-11",
+    "enrichment": "panel",
     "location": "HOU J6",
     "reads": 10745626,
     "state": "Texas"
@@ -25172,6 +25504,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-06-15",
+    "enrichment": "panel",
     "location": "EPS T4",
     "reads": 2864273,
     "state": "Texas"
@@ -25180,6 +25513,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-07-19",
+    "enrichment": "panel",
     "location": "HOU Z9",
     "reads": 11422640,
     "state": "Texas"
@@ -25188,6 +25522,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-08-11",
+    "enrichment": "panel",
     "location": "EPS T4",
     "reads": 10161457,
     "state": "Texas"
@@ -25196,6 +25531,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-08-04",
+    "enrichment": "panel",
     "location": "EPS T4",
     "reads": 9324890,
     "state": "Texas"
@@ -25204,6 +25540,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-11-28",
+    "enrichment": "panel",
     "location": "EPS T4",
     "reads": 10260424,
     "state": "Texas"
@@ -25212,6 +25549,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-12-28",
+    "enrichment": "panel",
     "location": "EPS T4",
     "reads": 10944322,
     "state": "Texas"
@@ -25220,6 +25558,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-11-07",
+    "enrichment": "panel",
     "location": "EPS T4",
     "reads": 9909827,
     "state": "Texas"
@@ -25228,6 +25567,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-12-05",
+    "enrichment": "panel",
     "location": "EPS T4",
     "reads": 11784829,
     "state": "Texas"
@@ -25236,6 +25576,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-11-21",
+    "enrichment": "panel",
     "location": "EPS T4",
     "reads": 13106985,
     "state": "Texas"
@@ -25244,6 +25585,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-10-31",
+    "enrichment": "panel",
     "location": "EPS T4",
     "reads": 15371894,
     "state": "Texas"
@@ -25252,6 +25594,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-12-19",
+    "enrichment": "panel",
     "location": "EPS T4",
     "reads": 11490213,
     "state": "Texas"
@@ -25260,6 +25603,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-12-12",
+    "enrichment": "panel",
     "location": "EPS T4",
     "reads": 12415107,
     "state": "Texas"
@@ -25268,6 +25612,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-07-06",
+    "enrichment": "panel",
     "location": "HOU Z9",
     "reads": 6958114,
     "state": "Texas"
@@ -25276,6 +25621,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-10-24",
+    "enrichment": "panel",
     "location": "EPS T4",
     "reads": 6731295,
     "state": "Texas"
@@ -25284,6 +25630,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-10-17",
+    "enrichment": "panel",
     "location": "EPS T4",
     "reads": 10093828,
     "state": "Texas"
@@ -25292,6 +25639,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-10-10",
+    "enrichment": "panel",
     "location": "EPS T4",
     "reads": 9964783,
     "state": "Texas"
@@ -25300,6 +25648,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-08-29",
+    "enrichment": "panel",
     "location": "EPS K6",
     "reads": 6822457,
     "state": "Texas"
@@ -25308,6 +25657,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-08-22",
+    "enrichment": "panel",
     "location": "EPS K6",
     "reads": 7951976,
     "state": "Texas"
@@ -25316,6 +25666,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-06-22",
+    "enrichment": "panel",
     "location": "HOU Z9",
     "reads": 7923273,
     "state": "Texas"
@@ -25324,6 +25675,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-08-15",
+    "enrichment": "panel",
     "location": "EPS K6",
     "reads": 10503805,
     "state": "Texas"
@@ -25332,6 +25684,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-08-08",
+    "enrichment": "panel",
     "location": "EPS K6",
     "reads": 8324256,
     "state": "Texas"
@@ -25340,6 +25693,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-08-01",
+    "enrichment": "panel",
     "location": "EPS K6",
     "reads": 6794888,
     "state": "Texas"
@@ -25348,6 +25702,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-07-25",
+    "enrichment": "panel",
     "location": "EPS K6",
     "reads": 7712836,
     "state": "Texas"
@@ -25356,6 +25711,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-07-18",
+    "enrichment": "panel",
     "location": "EPS K6",
     "reads": 7891561,
     "state": "Texas"
@@ -25364,6 +25720,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-07-11",
+    "enrichment": "panel",
     "location": "EPS K6",
     "reads": 5302454,
     "state": "Texas"
@@ -25372,6 +25729,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-07-05",
+    "enrichment": "panel",
     "location": "EPS K6",
     "reads": 6704869,
     "state": "Texas"
@@ -25380,6 +25738,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-06-29",
+    "enrichment": "panel",
     "location": "EPS K6",
     "reads": 4201289,
     "state": "Texas"
@@ -25388,6 +25747,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-06-22",
+    "enrichment": "panel",
     "location": "EPS K6",
     "reads": 6933180,
     "state": "Texas"
@@ -25396,6 +25756,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-06-15",
+    "enrichment": "panel",
     "location": "EPS K6",
     "reads": 7332067,
     "state": "Texas"
@@ -25404,6 +25765,7 @@
     "city": "Houston",
     "country": "United States",
     "date": "2022-06-15",
+    "enrichment": "panel",
     "location": "HOU Z9",
     "reads": 4474086,
     "state": "Texas"
@@ -25412,6 +25774,7 @@
     "city": "El Paso",
     "country": "United States",
     "date": "2022-06-15",
+    "enrichment": "panel",
     "location": "EPS K6",
     "reads": 5762586,
     "state": "Texas"
