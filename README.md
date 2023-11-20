@@ -109,7 +109,7 @@ Available files, and their formats:
 * `riboreads/`: Intermediate, read IDs of `RiboDetector` output
     * ex: SRR13167436.riboreads.txt.gz
     * txt
-    * Stores rRNA read IDs 
+    * Stores rRNA read IDs
 
 * `processed/`: Intermediate, output of `Kraken2`
    * ex: `SRR14530724.collapsed.kraken2.tsv.gz`
@@ -158,8 +158,26 @@ Available files, and their formats:
 * `hvreads/`: Output, data that backs the [read
   viewer](https://www.jefftk.com/mgs-counts/reads)
    * Ex: `SRR14530724.hvreads.json`
+   * One record for each record in allmatches, joined back to the cleaned
+     sequence and quality data.
    * JSON
    * Read ID to Kraken output and cleaned read
+
+* `alignments/`: Output, alignment data that will later back the dashboard.
+   * Ex: SRR21452137.alignments.tsv
+   * TSV
+   * One record for each record in the hvreads that Bowtie2 was able to map
+     back to a known human-infecting virus.  Note that we've set the quality
+     score very low here, and you likely want to filter some of these out based
+     on a combination of alignment score and trimmed read length.
+   * Columns:
+     * Read ID
+     * Best-match genome
+     * Best-match taxid
+     * CIGAR string
+     * Genome start position
+     * Alignment score
+     * Trimmed read length
 
 * `humanviruses/`: Output, data that backs the
   [dashboard](https://www.jefftk.com/mgs-counts/).
@@ -438,4 +456,3 @@ Normally the flow is:
    `min_date='2023-09-18'`.
 
 4. Follow the instructions above to rerun across all bioprojects.
-   
