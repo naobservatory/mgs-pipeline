@@ -332,21 +332,6 @@ for taxid in observed_taxids:
 for bioproject in bioprojects:
     bioprojects[bioproject] = list(sorted(bioprojects[bioproject]))
 
-with open(DASHBOARD_DIR + "data.js", "w") as outf:
-    for name, val in [
-            ("virus_sample_counts", virus_sample_counts),
-            ("comparison_sample_counts", comparison_sample_counts),
-            ("comparison_taxid_classifications",
-             comparison_taxid_classifications),
-            ("sample_metadata", sample_metadata),
-            ("bioprojects", bioprojects),
-            ("papers", papers),
-            ("names", taxonomic_names),
-            ("tree", human_virus_tree),
-    ]:
-        outf.write("%s=%s;\n" % (name, json.dumps(
-            val, sort_keys=True, indent=None if val is human_virus_tree else 2)))
-
 for name, val in [
         ("human_virus_sample_counts", virus_sample_counts),
         ("taxonomic_names", taxonomic_names),
