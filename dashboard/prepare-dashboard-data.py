@@ -336,7 +336,6 @@ for name, val in [
         ("human_virus_sample_counts", virus_sample_counts),
         ("taxonomic_names", taxonomic_names),
         ("human_virus_tree", human_virus_tree),
-        ("comparison_sample_counts", comparison_sample_counts),
         ("comparison_taxid_classifications", comparison_taxid_classifications),
         ("metadata_samples", sample_metadata),
         ("metadata_bioprojects", bioprojects),
