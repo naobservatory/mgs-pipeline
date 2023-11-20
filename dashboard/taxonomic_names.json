@@ -1866,6 +1866,12 @@
     "VKM B-510",
     "VKM:B:510"
   ],
+  "1485": [
+    "Clostridium",
+    "Anaerobacter Duda et al. 1996",
+    "Anaerobacter",
+    "Clostridium Prazmowski 1880 (Approved Lists 1980) emend. Lawson and Rainey 2016"
+  ],
   "1491": [
     "Clostridium botulinum",
     "ATCC 25763",
@@ -2949,6 +2955,10 @@
     "calf diarrheal coronavirus",
     "neonatal calf diarrhea virus"
   ],
+  "11135": [
+    "Feline infectious peritonitis virus",
+    "FIPV"
+  ],
   "11137": [
     "Human coronavirus 229E",
     "Coronavirus 229E",
@@ -2956,6 +2966,15 @@
     "Human coronavirus serogroup 229E",
     "Human coronavirus strain 229E",
     "Human coronavirus (STRAIN 229E)"
+  ],
+  "11149": [
+    "Transmissible gastroenteritis virus",
+    "Porcine transmissable gastroenteritis coronavirus",
+    "Porcine transmissible gastroenteritis coronavirus",
+    "porcine transmissible gastroenteritis virus",
+    "TGEV",
+    "transmissible gastroenteritis coronavirus",
+    "transmissible gastroenteritis virus TGEV"
   ],
   "11157": [
     "Mononegavirales",
@@ -3271,6 +3290,11 @@
     "Bacteriophage GA",
     "phage GA"
   ],
+  "12042": [
+    "Beet western yellows virus",
+    "Beet western yellow virus",
+    "BWYV"
+  ],
   "12058": [
     "Picornaviridae",
     "Picornavirus"
@@ -3354,6 +3378,12 @@
   ],
   "12253": [
     "Tomato mosaic virus"
+  ],
+  "12263": [
+    "Squash mosaic virus"
+  ],
+  "12270": [
+    "Nepovirus"
   ],
   "12282": [
     "Tobacco ringspot virus"
@@ -6001,6 +6031,12 @@
     "Methylobacteriaceae Garrity et al. 2006",
     "Methylobacterium group"
   ],
+  "119164": [
+    "Polerovirus",
+    "Betaluteovirus",
+    "luteovirus subgroup II",
+    "Potleavirus"
+  ],
   "119210": [
     "H3N2 subtype",
     "H3N2"
@@ -6144,6 +6180,9 @@
   "130760": [
     "Influenza A virus (A/Hong Kong/1073/99(H9N2))"
   ],
+  "131083": [
+    "Turnip yellows virus"
+  ],
   "131567": [
     "cellular organisms",
     "biota"
@@ -6151,6 +6190,16 @@
   "132475": [
     "Yaba-like disease virus",
     "Tanapox virus strain Davis"
+  ],
+  "134623": [
+    "Opitutaceae",
+    "Opitutaceae Choo et al. 2007 emend. Tegtmeier et al. 2018",
+    "subdivision 4"
+  ],
+  "135619": [
+    "Oceanospirillales",
+    "Oceanospirillales Garrity et al. 2005",
+    "Oceanospirillum/Halomonas group"
   ],
   "135621": [
     "Pseudomonadaceae",
@@ -6211,6 +6260,10 @@
   ],
   "138954": [
     "Parechovirus"
+  ],
+  "141948": [
+    "Thermomonas",
+    "Thermomonas Busse et al. 2002 emend. Mergaert et al. 2003"
   ],
   "142786": [
     "Norovirus",
@@ -6276,6 +6329,10 @@
     "Chroococcidiopsis sp. CCMEE '029 N6904'",
     "Chroococcidiopsis sp. N6904"
   ],
+  "156690": [
+    "Beet mild yellowing virus",
+    "BMYV"
+  ],
   "158836": [
     "Enterobacter hormaechei",
     "ATCC 49162",
@@ -6340,6 +6397,15 @@
   "168238": [
     "Porcine endogenous retrovirus E",
     "Porcine endogenous retrovirus class E"
+  ],
+  "168471": [
+    "Laribacter hongkongensis",
+    "CCUG 45813",
+    "DSM 14985",
+    "Laribacter hongkongensis Yuen et al. 2002",
+    "LMG 21516",
+    "LMG:21516",
+    "strain HKU1"
   ],
   "171549": [
     "Bacteroidales",
@@ -6618,6 +6684,11 @@
     "Thermodesulfobacteria Garrity and Holt 2002",
     "Thermodesulfobacteriota"
   ],
+  "202746": [
+    "Sulfurimonas",
+    "Sulfurimonas Inagaki et al. 2003 emend. Labrenz et al. 2013",
+    "Sulfurimonas Inagaki et al. 2003 emend. Takai et al. 2006"
+  ],
   "202812": [
     "Adeno-associated virus - 7",
     "Adeno-associated virus 7"
@@ -6760,6 +6831,10 @@
     "Faecalibacterium",
     "Faecalibacterium Duncan et al. 2002"
   ],
+  "220638": [
+    "Blattella germanica densovirus 1",
+    "Blattella germanica densovirus"
+  ],
   "225991": [
     "Comamonas aquatica",
     "Aquaspirillum aquaticum Hylemon et al. 1973 (Approved Lists 1980)",
@@ -6786,6 +6861,9 @@
     "LMG:3475",
     "strain AF61"
   ],
+  "227290": [
+    "Rhizobium/Agrobacterium group"
+  ],
   "227307": [
     "Gyrovirus"
   ],
@@ -6805,6 +6883,9 @@
     "genogroup 1 isolates",
     "Norovirus G1 unidentified subgroup",
     "Norovirus genogroup G1 unidentified subgroup"
+  ],
+  "237020": [
+    "Porcine torovirus"
   ],
   "237258": [
     "Cloacibacterium normanense",
@@ -6906,6 +6987,9 @@
   ],
   "256548": [
     "Bovine adeno-associated virus"
+  ],
+  "257464": [
+    "Potato black ringspot virus"
   ],
   "257708": [
     "Roseomonas gilardii",
@@ -7037,6 +7121,10 @@
     "Escherichia phage JS98",
     "Enterobacteria phage JS98"
   ],
+  "294369": [
+    "Solenopsis invicta virus 1",
+    "Solenopsis invicta virus-1"
+  ],
   "297352": [
     "Lactococcus piscium MKFS47",
     "Lactococcus piscium strain MKFS47",
@@ -7055,6 +7143,11 @@
     "Enterobacter sp. GN02730",
     "Pantoea sp. RCE-5",
     "strain EN-119"
+  ],
+  "310540": [
+    "Simian adenovirus 1",
+    "SAdV-1",
+    "Simian adenovirus SV-1"
   ],
   "310907": [
     "Enterovirus H",
@@ -7128,6 +7221,12 @@
   "325455": [
     "Gammapapillomavirus"
   ],
+  "326298": [
+    "Sulfurimonas denitrificans DSM 1251",
+    "Sulfurimonas denitrificans strain DSM 1251",
+    "Sulfurimonas denitrificans str. DSM 1251",
+    "Thiomicrospira denitrificans ATCC 33889"
+  ],
   "327045": [
     "Orthoretrovirinae"
   ],
@@ -7144,6 +7243,11 @@
     "Pseudotevenvirus RB16",
     "Enterobacteria phage RB16",
     "Escherichia virus RB16"
+  ],
+  "329639": [
+    "Canine minute virus",
+    "Canine parvovirus-1",
+    "Minute virus of canines"
   ],
   "329641": [
     "Human bocavirus"
@@ -7714,6 +7818,9 @@
     "strain alga05",
     "VKM B-2406"
   ],
+  "442302": [
+    "Porcine picobirnavirus"
+  ],
   "444473": [
     "Human bocavirus WLL-3"
   ],
@@ -7795,6 +7902,10 @@
     "LMG 22485",
     "LMG:22485",
     "strain 383"
+  ],
+  "487311": [
+    "Anopheles gambiae densovirus",
+    "Anopheles gambiae densonucleosis virus"
   ],
   "487316": [
     "Acinetobacter soli",
@@ -7920,6 +8031,13 @@
     "Prevotella copri strain DSM 18205",
     "Prevotella copri str. DSM 18205"
   ],
+  "538123": [
+    "Mammalian orthoreovirus 3",
+    "Mammalian orthoreovirus type 3",
+    "MRV-3",
+    "Reovirus 3",
+    "Reovirus type 3"
+  ],
   "543153": [
     "Mycobacterium phage Predator",
     "Mycobacteriophage Predator"
@@ -7998,6 +8116,9 @@
     "Bundibugyo virus",
     "Ebolavirus bundibugyo"
   ],
+  "566308": [
+    "Astrovirus dogfaeces/Italy/2005"
+  ],
   "568715": [
     "Astrovirus MLB1",
     "Human astrovirus MLB1"
@@ -8062,6 +8183,9 @@
     "Aminomonas paucivorans strain DSM 12260",
     "Aminomonas paucivorans str. DSM 12260"
   ],
+  "585059": [
+    "Simian adenovirus 20"
+  ],
   "585893": [
     "Picobirnaviridae"
   ],
@@ -8104,6 +8228,9 @@
     "DSM 23858",
     "KCTC 22631",
     "strain BIO-TAS2-2"
+  ],
+  "590745": [
+    "Mus musculus mobilized endogenous polytropic provirus"
   ],
   "593750": [
     "Methanoregula formicica SMSP",
@@ -8779,6 +8906,10 @@
     "Desulfobacter postgatei str. 2ac9",
     "Desulfobacter postgatei strain 2ac9"
   ],
+  "909210": [
+    "Simian adenovirus 18",
+    "SAdV-18"
+  ],
   "909328": [
     "Human papillomavirus 149",
     "Human papillomavirus 10-18",
@@ -8907,6 +9038,9 @@
     "Marseillevirus Senegal",
     "Senegalvirus"
   ],
+  "945962": [
+    "Mosquito densovirus BR/07"
+  ],
   "981323": [
     "Gordonia phage GTE2",
     "Bacteriophage GTE2"
@@ -8942,6 +9076,9 @@
   ],
   "994672": [
     "Titi monkey adenovirus ECC-2011"
+  ],
+  "994994": [
+    "Rotavirus F chicken/03V0568/DEU/2003"
   ],
   "1000646": [
     "Echarate virus",
@@ -9002,6 +9139,9 @@
   "1046251": [
     "Maraba virus",
     "MARAV"
+  ],
+  "1046403": [
+    "Brassica yellows virus"
   ],
   "1046624": [
     "Lactococcus lactis subsp. lactis IO-1",
@@ -9143,6 +9283,11 @@
     "Nocardia phage NBR1",
     "Nocardia bacteriophage NBR1"
   ],
+  "1110502": [
+    "Tistrella mobilis KA081020-065",
+    "Tistrella mobilis strain KA081020-065",
+    "Tistrella mobilis str. KA081020-065"
+  ],
   "1110710": [
     "human papillomavirus 153",
     "Human papillomavirus type 153"
@@ -9192,6 +9337,9 @@
   "1147094": [
     "Klebsiella phage vB_KleM_RaK2",
     "Enterobacteria phage vB_KleM-RaK2"
+  ],
+  "1157338": [
+    "Canine astrovirus"
   ],
   "1160947": [
     "Norovirus GIV.1",
@@ -9382,6 +9530,9 @@
   ],
   "1224522": [
     "Kobuvirus sewage Kathmandu"
+  ],
+  "1228012": [
+    "Spodoptera exigua iflavirus 2"
   ],
   "1231709": [
     "MX polyomavirus"
@@ -9620,6 +9771,9 @@
   "1337936": [
     "Calothrix sp. 336/3"
   ],
+  "1340801": [
+    "Bat rotavirus"
+  ],
   "1341019": [
     "Parvovirus NIH-CQV"
   ],
@@ -9655,6 +9809,9 @@
   ],
   "1349410": [
     "Pandoravirus salinus"
+  ],
+  "1389204": [
+    "Feline astrovirus 2"
   ],
   "1391667": [
     "Bufavirus-3"
@@ -9715,6 +9872,10 @@
   ],
   "1416631": [
     "Marine RNA virus SF-2"
+  ],
+  "1417756": [
+    "Feline bocaparvovirus 2",
+    "Feline bocavirus 2"
   ],
   "1420545": [
     "Human papillomavirus 167",
@@ -9951,6 +10112,9 @@
   "1511883": [
     "Human bocavirus 4 NI",
     "HBoV4-NI"
+  ],
+  "1511885": [
+    "Canine bocavirus 1"
   ],
   "1511891": [
     "Adeno-associated dependoparvovirus A"
@@ -10281,6 +10445,11 @@
     "Sk1virus",
     "Skunalikevirus"
   ],
+  "1623306": [
+    "Timquatrovirus",
+    "Tm4likevirus",
+    "Tm4virus"
+  ],
   "1623310": [
     "Tataguine virus"
   ],
@@ -10299,6 +10468,9 @@
   ],
   "1636573": [
     "Lactococcus phage 936 group phage PhiB1127"
+  ],
+  "1637496": [
+    "Rotavirus I"
   ],
   "1639814": [
     "Pseudomonas phage vB_PaeP_MAG4",
@@ -10628,8 +10800,34 @@
   "1827300": [
     "Pseudomonas sp. MYb193"
   ],
+  "1836608": [
+    "Canine kobuvirus"
+  ],
   "1838075": [
     "Gordonia phage Orchid"
+  ],
+  "1838286": [
+    "Lacunisphaera limnophila",
+    "DSM 26815",
+    "\"Lacunisphaera limnophila\" Rast et al. 2017",
+    "LMG 29469",
+    "LMG:29469",
+    "Opitutaceae bacterium IG16b",
+    "strain IG16b"
+  ],
+  "1839785": [
+    "Acinetobacter portensis",
+    "Acinetobacter portensis Carvalheira et al. 2020",
+    "\"Acinetobacter pullorum\" Elnar et al. 2020",
+    "Acinetobacter pullorum",
+    "Acinetobacter sp. Ac_877",
+    "Acinetobacter sp. B301",
+    "CCM 8789",
+    "CCUG 68672",
+    "JCM 33942 [[Acinetobacter pullorum]]",
+    "KACC 21653 [[Acinetobacter pullorum]]",
+    "strain AC 877",
+    "strain B301 [[Acinetobacter pullorum]]"
   ],
   "1844477": [
     "Pseudomonas phage NP1"
@@ -11023,6 +11221,9 @@
   "1962300": [
     "Simian mastadenovirus C",
     "Simian adenovirus C"
+  ],
+  "1962503": [
+    "Aeonium ringspot virus"
   ],
   "1965344": [
     "LI polyomavirus"
@@ -11592,6 +11793,15 @@
   "2065055": [
     "Torque teno midi virus 14"
   ],
+  "2066483": [
+    "Candidatus Chromulinivorax destructor",
+    "\"Candidatus Chromulinavorax destructans\" Deeg et al. 2019",
+    "Candidatus Chromulinavorax destructans",
+    "\"Candidatus Chromulinivorax destructor\" corrig. Deeg et al. 2019",
+    "Candidatus Dependentiae bacterium (ex Spumella elongata CCAP 955/1)",
+    "strain SeV-1",
+    "strain SeV1"
+  ],
   "2067065": [
     "Aquella oligotrophica",
     "Aquella oligotrophica Chan et al. 2019",
@@ -11960,6 +12170,12 @@
     "\"Aliiarcobacter\" Perez-Cataluna et al. 2018",
     "Aliiarcobacter"
   ],
+  "2321114": [
+    "Malaciobacter",
+    "Malaciobacter corrig. Perez-Cataluna et al. 2019",
+    "\"Malacobacter\" Perez-Cataluna et al. 2018",
+    "Malacobacter"
+  ],
   "2419618": [
     "Bacillus phage vB_BboS-125"
   ],
@@ -11986,6 +12202,12 @@
   ],
   "2488571": [
     "Lactococcus phage phiQ1"
+  ],
+  "2490452": [
+    "Serpentinimonas",
+    "Serpentinimonas Bird et al. 2021",
+    "\"Serpentinomonas\" Suzuki et al. 2014",
+    "Serpentinomonas"
   ],
   "2493633": [
     "Pseudomonas hydrolytica",
@@ -12284,6 +12506,9 @@
   "2562635": [
     "Pseudomonas phage R12"
   ],
+  "2563897": [
+    "Acinetobacter sp. 10FS3-1"
+  ],
   "2564349": [
     "Salmonella enterica subsp. enterica serovar Dessau"
   ],
@@ -12384,6 +12609,9 @@
   "2593268": [
     "Erwinia phage pEp_SNUABM_08",
     "Erwinia pyrifoliae phage pEp_SNUABM_08"
+  ],
+  "2593672": [
+    "Arcobacter sp. FWKO B"
   ],
   "2593676": [
     "unclassified Streptomyces"
@@ -12576,6 +12804,9 @@
   ],
   "2719575": [
     "Pseudomonas phage Epa5"
+  ],
+  "2725684": [
+    "Acinetobacter sp. NEB149"
   ],
   "2726954": [
     "Sarcina sp. JB2"
@@ -12934,6 +13165,11 @@
     "Huaiyangshan banyangvirus",
     "SFTSV"
   ],
+  "2748961": [
+    "Dipteran brevihamaparvovirus 1",
+    "AgDV",
+    "Dipteran brevidensovirus 1"
+  ],
   "2749426": [
     "Pseudomonas phage vB_PsyP_3MF5"
   ],
@@ -12991,6 +13227,9 @@
     "Lachnospiraceae bacterium NSJ-8",
     "\"Simiaoa sunii\" Liu et al. 2021_b",
     "strain NSJ-8"
+  ],
+  "2764720": [
+    "Olivibacter sp. SDN3"
   ],
   "2767188": [
     "Amniculibacterium sp. G2-70"
@@ -13387,6 +13626,9 @@
   ],
   "2871493": [
     "Pseudomonas sp. SC3(2021)"
+  ],
+  "2872754": [
+    "Endozoicomonas sp. 4G"
   ],
   "2876790": [
     "unclassified Adeno-associated dependoparvovirus A"
