@@ -1163,8 +1163,8 @@ def start():
 
    if not os.path.isdir(work_fname("bioprojects", args.bioproject)):
       raise Exception(
-         "Bioproject %s not found in %s/bioprojects/" % (
-            WORK_ROOT, args.bioproject))
+         "Bioproject %s not found in %s/bioprojects" % (
+            args.bioproject, WORK_ROOT))
 
    selected_stages = args.stages.split(",")
    skipped_stages = args.skip_stages.split(",")
