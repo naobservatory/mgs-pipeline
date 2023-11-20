@@ -5,6 +5,7 @@ import json
 from collections import defaultdict
 import glob
 import gzip
+from Bio.SeqIO.FastaIO import SimpleFastaParser
 
 THISDIR = os.path.abspath(os.path.dirname(__file__))
 
@@ -25,7 +26,7 @@ def load_human_viruses():
     return human_viruses
 
 
-def build_detailed_taxids(detailed_taxids_fname):
+def build_detailed_taxids(detailed_taxids_fname, human_viruses):
     hv_taxid_to_detailed_fname = "hv_taxid_to_detailed.json"
     if os.path.exists(detailed_taxids_fname):
         return
@@ -56,8 +57,7 @@ def build_detailed_taxids(detailed_taxids_fname):
         json.dump(hv_taxid_to_detailed, outf)
 
 
-def fetch_genomes(detailed_taxids_fname):
-    metadata_fname = "ncbi-fetch-metadata.txt"
+def fetch_genomes(detailed_taxids_fname, metadata_fname):
     if os.path.exists(metadata_fname):
         return
     print("Fetching viral GenBank genomes...")
@@ -76,6 +76,28 @@ def fetch_genomes(detailed_taxids_fname):
         ]
     )
 
+def create_genome_taxid_map(metadata_fname):
+    genome_taxid_map_fname = "genomeid-to-taxid.json"
+    if os.path.exists(genome_taxid_map_fname):
+        return
+
+    genome_to_taxid = {}
+    with open(metadata_fname) as inf:
+        cols = None
+        for line in inf:
+            bits = line.rstrip("\n").split("\t")
+            if not cols:
+                cols = bits
+                continue
+
+            with gzip.open(bits[cols.index("local_filename")], "rt") as inf:
+                for title, sequence in SimpleFastaParser(inf):
+                    genome_id, name = title.split(" ", 1)
+                    taxid = int(bits[cols.index("taxid")])
+                    genome_to_taxid[genome_id] = taxid, name
+
+    with open(genome_taxid_map_fname, "w") as outf:
+        json.dump(genome_to_taxid, outf)
 
 def combine_genomes(combined_genomes_fname):
     if os.path.exists(combined_genomes_fname):
@@ -107,8 +129,10 @@ def bowtie_db():
     cd_bowtie_dir()
     human_viruses = load_human_viruses()
     detailed_taxids_fname = "detailed-taxids.txt"
-    build_detailed_taxids(detailed_taxids_fname)
-    fetch_genomes(detailed_taxids_fname)
+    build_detailed_taxids(detailed_taxids_fname, human_viruses)
+    metadata_fname = "ncbi-fetch-metadata.txt"
+    fetch_genomes(detailed_taxids_fname, metadata_fname)
+    create_genome_taxid_map(metadata_fname)
     combined_genomes_fname = "combined_genomes.fna"
     combine_genomes(combined_genomes_fname)
     bowtie_db_prefix = "human-viruses"
