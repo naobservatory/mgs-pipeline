@@ -40,11 +40,13 @@ Limit Papers:
 
 
 <table id=table_papers cellpadding=5 rules=rows>
-  <tr><th><input type=checkbox checked id=checkbox_all_papers><th>Name<th>Reads<th>Acid<th>Samples<th>Subset<th>Location<th>Date<th>Bioprojects
+  <tr><th><input type=checkbox id=checkbox_all_papers><th>Name<th>Reads<th>Acid<th>Samples<th>Subset<th>Collection<th>Location<th>Date<th>Bioprojects
 </table>
 
 <p>
 
+<details>
+<summary>search...</summary>
 <div class=search_box>
 
 Search human-infecting viruses: <input id=taxonomic_search type=text size=34></input>
@@ -59,11 +61,11 @@ Comparison clades:
   <tr><td>Search<td><input
           id=comparison_search type=text size=34></input>
   <tr><td>Common<td>
-     <input type=checkbox checked id=comparison_viruses>
+     <input type=checkbox id=comparison_viruses>
      <label for=comparison_viruses>Viruses</label><br>
-     <input type=checkbox checked id=comparison_bacteria>
+     <input type=checkbox id=comparison_bacteria>
      <label for=comparison_bacteria>Bacteria</label><br>
-     <input type=checkbox checked id=comparison_other>
+     <input type=checkbox id=comparison_other>
      <label for=comparison_other>Other</label>
   </table>
 
@@ -115,6 +117,8 @@ Limit Samples:
      <input size=15 id=date_end_search type=text></input>
 </table>
 </div>
+</details>
+
 
 <p>
 Rows are clades, columns are samples, cells are relative abundances and counts.
@@ -169,16 +173,6 @@ Rows are clades, columns are samples, cells are relative abundances and counts.
 
 <script>
 
-// imports:
-//   virus_sample_counts: human virus taxid -> sample -> direct assignments
-//   comparison_sample_counts: other taxid -> sample -> clade assignments
-//   comparison_taxid_classifications: bacteria/virus -> taxids
-//   sample_metadata: sample -> {country, date, location, reads}
-//   bioprojects: project -> [samples]
-//   papers: paper -> {link, na_type, [projects]}
-//   names: taxid -> name
-//   tree: taxid with children
-
 window.onerror = function () {
   document.body.style.border = "5px solid red";
   document.body.style.borderRadius = "1em";
@@ -187,6 +181,7 @@ window.onerror = function () {
 const paper_countries = {};
 const paper_locations = {};
 const paper_fine_locations = {};
+const paper_collections = {};
 const paper_dates = {};
 
 const VIRUS = 10239;
@@ -220,6 +215,7 @@ function setup() {
     paper_countries[paper_name] = new Set();
     paper_locations[paper_name] = new Set();
     paper_fine_locations[paper_name] = new Set();
+    paper_collections[paper_name] = new Set();
     paper_dates[paper_name] = new Set();
 
     for (const bioproject of metadata_papers[paper_name].projects) {
@@ -227,6 +223,7 @@ function setup() {
       for (const sample of metadata_bioprojects[bioproject]) {
         paper_countries[paper_name].add(metadata_samples[sample].country);
         paper_locations[paper_name].add(metadata_samples[sample].location);
+        paper_collections[paper_name].add(metadata_samples[sample].collection);
         if (metadata_samples[sample].fine_location) {
           paper_fine_locations[paper_name].add(
             metadata_samples[sample].fine_location);
@@ -237,6 +234,8 @@ function setup() {
         if (!metadata_samples[sample].na_type) {
           metadata_samples[sample].na_type = metadata_papers[paper_name].na_type;
         }
+        metadata_samples[sample].bioproject = bioproject;
+        metadata_samples[sample].paper_name = paper_name;
       }
     }
   }
@@ -271,6 +270,17 @@ function summarize_location(paper_name) {
   if (paper_countries[paper_name].size == 1) {
     const [country] = paper_countries[paper_name];
     return country;
+  }
+  return "Multiple";
+}
+
+function summarize_collection(paper_name) {
+  if (paper_collections[paper_name].size == 0) {
+    return "";
+  }
+  if (paper_collections[paper_name].size == 1) {
+    const [collection] = paper_collections[paper_name];
+    return collection;
   }
   return "Multiple";
 }
@@ -359,6 +369,51 @@ function update_paper_visibility() {
   }
 }
 
+function merge_sample_counts(counts) {
+  const result = {};
+  for (let i = 0; i < counts.length; i++) {
+    for (const taxid in counts[i]) {
+      result[taxid] ||= {};
+      for (const sample in counts[i][taxid]) {
+        result[taxid][sample] = counts[i][taxid][sample];
+      }
+    }
+  }
+  return result;
+}
+
+// paper -> comparison_sample_counts
+paper_comparison_sample_counts = {};
+// paper -> human_virus_sample_counts
+paper_human_virus_sample_counts = {};
+
+function fetch_papers_and_redisplay(...paper_names) {
+  update_hash();
+  
+  const fetch_promises = [];
+
+  for (const paper_name of paper_names) {
+    if (!paper_comparison_sample_counts[paper_name]) {
+      fetch_promises.push(Promise.all(metadata_papers[paper_name].projects.map(
+        bioproject => fetchJSON("comparison_sample_counts." + bioproject)))
+          .then(multiple_sample_counts => {
+            paper_comparison_sample_counts[paper_name] = merge_sample_counts(
+              multiple_sample_counts);
+          }));
+    }
+
+    if (!paper_human_virus_sample_counts[paper_name]) {
+      fetch_promises.push(Promise.all(metadata_papers[paper_name].projects.map(
+        bioproject => fetchJSON("human_virus_sample_counts." + bioproject)))
+          .then(multiple_sample_counts => {
+            paper_human_virus_sample_counts[paper_name] = merge_sample_counts(
+              multiple_sample_counts);
+          }));
+    }
+  }
+  Promise.all(fetch_promises).then(redisplay);
+}
+
 function create_paper_table() {
   for (const paper_name of paper_names) {
     const tr = e("tr");
@@ -366,8 +421,10 @@ function create_paper_table() {
     const td_include = e("td");
     const input_include = e("input");
     input_include.type = "checkbox";
-    input_include.checked = true;
-    input_include.onchange = redisplay;
+    input_include.checked = false;
+    input_include.onchange = function() {
+      fetch_papers_and_redisplay(paper_name);
+    }
     td_include.appendChild(input_include);
     tr.appendChild(td_include);
 
@@ -405,6 +462,7 @@ function create_paper_table() {
     tr.appendChild(td_na_type);
     tr.appendChild(e("td", total_samples));
     tr.appendChild(e("td", metadata_papers[paper_name].subset || ""));
+    tr.appendChild(e("td", summarize_collection(paper_name)));    
     tr.appendChild(e("td", summarize_location(paper_name)));
     tr.appendChild(e("td", summarize_date(paper_name)));
 
@@ -585,7 +643,7 @@ checkbox_all_papers.onchange = function() {
       paper_trs[paper_name].checkbox.checked = checkbox_all_papers.checked;
     }
   }
-  redisplay();
+  fetch_papers_and_redisplay(...paper_names);
 }
 
 const expansion_levels = ["collapsed", "country", "location", "fine", "sample"];
@@ -769,6 +827,11 @@ function sort_samples(samples) {
   });
 }
 
+function paper_is_active(paper_name) {
+  return paper_trs[paper_name]?.checkbox.checked &&
+    !paper_trs[paper_name]?.hidden;
+}
+
 // The general design here is that every time something changes we
 // throw away the whole table and make a new one based on the current state.
 function redisplay() {
@@ -779,6 +842,26 @@ function redisplay() {
     tbl.removeChild(tbl.firstChild);
   }
 
+  let comparison_sample_counts = {};
+
+  if (comparison_viruses.checked ||
+      comparison_bacteria.checked ||
+      comparison_other.checked ||
+      pinned_comparisons.size) {
+    // We need comparison_sample_counts; generate it.
+  
+    const multiple_comparison_sample_counts = [];
+    for (const paper_name of paper_names) {
+      if (paper_is_active(paper_name)) {
+        multiple_comparison_sample_counts.push(
+          paper_comparison_sample_counts[paper_name]);
+      }
+    }
+
+    comparison_sample_counts = merge_sample_counts(
+      multiple_comparison_sample_counts);
+  }
+  
   active_comparisons.clear();
   if (comparison_search.value) {
     for (const taxid in comparison_sample_counts) {
@@ -809,8 +892,7 @@ function redisplay() {
   tr_header.appendChild(e("td"));  // taxonomic node names
 
   for (const paper_name of paper_names) {
-    if (!paper_trs[paper_name]?.checkbox.checked ||
-        paper_trs[paper_name]?.hidden) continue;
+    if (!paper_is_active(paper_name)) continue;
 
     const th_paper = e("th");
     const a_paper = e("a", paper_name.replaceAll(" ", "\u00a0"));
@@ -1039,7 +1121,8 @@ function redisplay() {
     const matching_samples = new Set();
     for (const species of all_species) {
       for (const sample of samples) {
-        const n = human_virus_sample_counts?.[species]?.[sample];
+        const n = paper_human_virus_sample_counts[
+          metadata_samples[sample].paper_name]?.[species]?.[sample];
         if (n) {
           total += n;
           matching_samples.add(sample);
@@ -1210,7 +1293,6 @@ function redisplay() {
   for (let i = 0; i < 15 && i < taxid_relab.length; i++) {
     active_comparisons.add(taxid_relab[i][1]);
   }
-  console.log(active_comparisons);
 
   function render_comparison_nodes() {
     let added_divider = false;
@@ -1367,7 +1449,14 @@ function interpret_hash() {
         params.get(param_name) == "1";
     }
     for (const pinned_taxid of (params.get("pinned") || "").split(".")) {
-      pinned_comparisons.add(Number(pinned_taxid));
+      if (pinned_taxid.length) {
+        pinned_comparisons.add(Number(pinned_taxid));
+      }
+    }
+    for (const paper_name of (params.get("papers") || "").split("~")) {
+      if (paper_name.length) {
+        paper_trs[paper_name].checkbox.checked = true;
+      }
     }
   }
 }
@@ -1384,7 +1473,18 @@ function update_hash() {
       params.set(param_name, "1");
     }
   }
-  params.set("pinned", [...pinned_comparisons].join("."));
+  if (pinned_comparisons.size) {
+    params.set("pinned", [...pinned_comparisons].join("."));
+  }
+  const active_papers = [];
+  for (const paper_name of paper_names) {
+    if (paper_is_active(paper_name)) {
+      active_papers.push(paper_name);
+    }
+  }
+  if (active_papers.length) {
+    params.set("papers", active_papers.join("~"));
+  }
   window.location.hash = params.toString();
 }
 
@@ -1397,11 +1497,10 @@ function fetchJSON(fname_base) {
   });
 }
 
+human_virus_sample_counts = {};
 function load_data() {
   const json_names = [
-    "comparison_sample_counts",
     "comparison_taxid_classifications",
-    "human_virus_sample_counts",
     "human_virus_tree",
     "metadata_bioprojects",
     "metadata_papers",
@@ -1423,7 +1522,13 @@ function begin() {
   setup();
   create_paper_table();
   interpret_hash();
-  redisplay();
+  const active_papers = [];
+  for (const paper_name of paper_names) {
+    if (paper_is_active(paper_name)) {
+      active_papers.push(paper_name);
+    }
+  }
+  fetch_papers_and_redisplay(...active_papers);
 }
 
 load_data();
