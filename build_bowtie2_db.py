@@ -31,10 +31,10 @@ def build_detailed_taxids(detailed_taxids_fname, human_viruses):
     if os.path.exists(detailed_taxids_fname):
         return
     hv_taxid_to_detailed = defaultdict(list)
-    fetch = []
+    fetch = set()
     for hv_taxid in human_viruses:
         print("Fetching descendants of", hv_taxid, human_viruses[hv_taxid])
-        fetch.append(hv_taxid)
+        fetch.add(hv_taxid)
         hv_taxid_to_detailed[hv_taxid].append(hv_taxid)
 
         for line in (
@@ -47,10 +47,10 @@ def build_detailed_taxids(detailed_taxids_fname, human_viruses):
                 continue
             _, descendent_taxid, descendent_name = line.split("\t")
             descendent_taxid = int(descendent_taxid)
-            fetch.append(descendent_taxid)
+            fetch.add(descendent_taxid)
             hv_taxid_to_detailed[hv_taxid].append(descendent_taxid)
     with open(detailed_taxids_fname, "w") as outf:
-        for detailed_taxid in fetch:
+        for detailed_taxid in sorted(fetch):
             outf.write("%s\n" % detailed_taxid)
 
     with open(hv_taxid_to_detailed_fname, "w") as outf:
