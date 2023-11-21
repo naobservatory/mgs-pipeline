@@ -906,6 +906,7 @@ def hvreads(args):
             "aws", "s3", "cp", output, "%s/%s/hvreads/%s" % (
                S3_BUCKET, args.bioproject, output)])
 
+MIN_READ_LENGTH_FOR_ALIGNMENT=20
 def alignments(args):
    available_inputs = get_files(args, "hvreads")
    existing_outputs = get_files(args, "alignments")
@@ -930,14 +931,28 @@ def alignments(args):
                if type(details[0]) == type(1):
                   assignment = details.pop(0)
                kraken_info, *reads = details
+               if not reads:
+                  continue
                assert len(reads) in [1, 2]
                if len(reads) == 1:
                   read, = reads
-                  combined.append((seq_id, read))
+                  if len(read[0]) > MIN_READ_LENGTH_FOR_ALIGNMENT:
+                     combined.append((seq_id, read))
                else:
                   read1, read2 = reads
-                  pair1.append((seq_id, read1))
-                  pair2.append((seq_id, read2))
+
+                  read1_long_enough = len(
+                     read1[0]) > MIN_READ_LENGTH_FOR_ALIGNMENT
+                  read2_long_enough = len(
+                     read2[0]) > MIN_READ_LENGTH_FOR_ALIGNMENT
+
+                  if read1_long_enough and read2_long_enough:
+                     pair1.append((seq_id, read1))
+                     pair2.append((seq_id, read2))
+                  elif read1_long_enough:
+                     combined.append((seq_id, read1))
+                  elif read2_long_enough:
+                     combined.append((seq_id, read2))
 
          for label, reads in [
                ("pair1", pair1),
@@ -950,11 +965,16 @@ def alignments(args):
                      seq, quality = read
                      outf.write("@%s\n%s\n+\n%s\n" % (seq_id, seq, quality))
 
+         assert len(pair1) == len(pair2)
+
+         if not pair1 and not combined:
+            continue
+
          sam_out = "out.sam"
          cmd = [
             "/home/ec2-user/bowtie2-2.5.2-linux-x86_64/bowtie2",
             "--local",
-            "-x", "/home/ec2-user/bowtie/human-viruses",
+            "-x", os.path.join(THISDIR, "bowtie", "human-viruses"),
             "--very-sensitive-local",
             "--score-min", "G,1,0",
             "--mp", "2,0",
@@ -977,7 +997,8 @@ def alignments(args):
 
          subprocess.check_call(cmd)
 
-         with open("/home/ec2-user/bowtie/genomeid-to-taxid.json") as inf:
+         with open(os.path.join(
+               THISDIR, "bowtie", "genomeid-to-taxid.json")) as inf:
             genomeid_to_taxid = json.load(inf)
 
          with pysam.AlignmentFile(sam_out, "r")  as sam:
