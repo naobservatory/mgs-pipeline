@@ -30,6 +30,8 @@ def build_detailed_taxids(detailed_taxids_fname, human_viruses):
     hv_taxid_to_detailed_fname = "hv_taxid_to_detailed.json"
     if os.path.exists(detailed_taxids_fname):
         return
+    print("Downloading all child taxids for each human virus...")
+
     hv_taxid_to_detailed = defaultdict(list)
     fetch = set()
     for hv_taxid in human_viruses:
@@ -61,6 +63,7 @@ def fetch_genomes(detailed_taxids_fname, metadata_fname):
     if os.path.exists(metadata_fname):
         return
     print("Fetching viral GenBank genomes...")
+
     subprocess.check_call(
         [
             "ncbi-genome-download",
@@ -80,6 +83,7 @@ def create_genome_taxid_map(metadata_fname):
     genome_taxid_map_fname = "genomeid-to-taxid.json"
     if os.path.exists(genome_taxid_map_fname):
         return
+    print("Creating map from genome to taxid...")
 
     genome_to_taxid = {}
     with open(metadata_fname) as inf:
@@ -102,15 +106,51 @@ def create_genome_taxid_map(metadata_fname):
 def combine_genomes(combined_genomes_fname):
     if os.path.exists(combined_genomes_fname):
         return
+    print("Combining genomes into one large FASTA file...")
+
     with open(combined_genomes_fname, "w") as outf:
         for fname in glob.glob("genbank/**/*.fna.gz", recursive=True):
             with gzip.open(fname, "rt") as inf:
                 outf.writelines(inf.readlines())
 
+def mask_low_complexity_sequences(
+        combined_genomes_fname, masked_genomes_fname):
+    if os.path.exists(masked_genomes_fname):
+        return
+    print("Masking low complexity sequences...")
 
-def build_db(bowtie_db_prefix, combined_genomes_fname):
+    # If some input genome has a sequence like GGGGGG...GGGGGG then anytime we
+    # evaluate a read with that we'll decide it came from the input genome.
+    # But that's not actually helpful: low-complexity sequences are a mixture
+    # of artifacts (two-color sequencers emit a lot of G when they get no
+    # signal) and non-informative sections of genomes.
+    #
+    # Kraken handles this when building its DB with mask_low_complexity.sh
+    # which uses NCBI dustmasker to mask regions of the input genomes that the
+    # DUST algorithm identifies as low-complexity.  Do that here too.
+
+    subprocess.check_call([
+        "dustmasker",
+        "-in", combined_genomes_fname,
+        "-out", masked_genomes_fname,
+        "-outfmt", "fasta"])
+
+    # Dustmasker lowercases bases to mask them, but Bowtie needs them to be an
+    # unknown character.  It doesn't matter which one, so copy Kraken and use
+    # x.
+    #
+    # This regexp replaces all lowercase letters that aren't on lines beginning
+    # with '>', which in FASTA means everywhere except in the sequence IDs.
+    subprocess.check_call([
+        "sed",
+        "/^>/!s/[a-z]/x/g",
+        "-i",
+        masked_genomes_fname])
+
+def build_db(bowtie_db_prefix, genomes_fname):
     if os.path.exists(bowtie_db_prefix + ".1.bt2"):
         return
+    print("Building BowtieDB...")
 
     subprocess.check_call(
         [
@@ -119,7 +159,7 @@ def build_db(bowtie_db_prefix, combined_genomes_fname):
             "--threads",
             "32",
             "--verbose",
-            combined_genomes_fname,
+            genomes_fname,
             bowtie_db_prefix,
         ]
     )
@@ -135,8 +175,10 @@ def bowtie_db():
     create_genome_taxid_map(metadata_fname)
     combined_genomes_fname = "combined_genomes.fna"
     combine_genomes(combined_genomes_fname)
+    masked_genomes_fname = "masked_genomes.fna"
+    mask_low_complexity_sequences(combined_genomes_fname, masked_genomes_fname)
     bowtie_db_prefix = "human-viruses"
-    build_db(bowtie_db_prefix, combined_genomes_fname)
+    build_db(bowtie_db_prefix, masked_genomes_fname)
 
 
 if __name__ == "__main__":
