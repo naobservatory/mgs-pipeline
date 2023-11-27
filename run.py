@@ -7,7 +7,6 @@ import glob
 import gzip
 import json
 import time
-import pysam
 import atexit
 import argparse
 import tempfile
@@ -906,119 +905,93 @@ def hvreads(args):
             "aws", "s3", "cp", output, "%s/%s/hvreads/%s" % (
                S3_BUCKET, args.bioproject, output)])
 
-MIN_READ_LENGTH_FOR_ALIGNMENT=20
 def alignments(args):
-   available_inputs = get_files(args, "hvreads")
-   existing_outputs = get_files(args, "alignments")
+   available_inputs = get_files(
+      args, "cleaned",
+      # tiny files are empty; ignore them
+      min_size=100)
+
+   existing_outputs = get_files(args, "alignments",
+                                min_date="2023-11-28")
+
+   with open(os.path.join(
+         THISDIR, "bowtie", "genomeid-to-taxid.json")) as inf:
+      genomeid_to_taxid = json.load(inf)
 
    for sample in get_samples(args):
-      output = "%s.alignments.tsv" % sample
-      if output in existing_outputs: continue
+      combined_output_compressed = sample + ".alignments.tsv.gz"
+      if combined_output_compressed in existing_outputs:
+         continue
 
-      input_fname = "%s.hvreads.json" % sample
-      if input_fname not in available_inputs: continue
+      with tempdir("alignments", sample) as workdir:
+         outputs = []
+         for potential_input in available_inputs:
+            if not potential_input.startswith(sample): continue
+            if ".settings" in potential_input: continue
+            if "discarded" in potential_input: continue
 
-      with tempdir("alignments", input_fname) as workdir:
-         subprocess.check_call([
-            "aws", "s3", "cp", "%s/%s/hvreads/%s" % (
-               S3_BUCKET, args.bioproject, input_fname), input_fname])
+            output = potential_input.replace(".gz", ".alignments.tsv")
+            inputs = [potential_input]
+            if ".pair1." in output:
+               output = output.replace(".pair1.", ".")
+               inputs.append(potential_input.replace(".pair1.", ".pair2."))
+            elif ".pair2" in output:
+               # We handle pair1 and pair2 together.
+               continue
 
-         pair1 = []
-         pair2 = []
-         combined = []
-         with open(input_fname) as inf:
-            for seq_id, details in sorted(json.load(inf).items()):
-               if type(details[0]) == type(1):
-                  assignment = details.pop(0)
-               kraken_info, *reads = details
-               if not reads:
-                  continue
-               assert len(reads) in [1, 2]
-               if len(reads) == 1:
-                  read, = reads
-                  if len(read[0]) > MIN_READ_LENGTH_FOR_ALIGNMENT:
-                     combined.append((seq_id, read))
-               else:
-                  read1, read2 = reads
+            outputs.append(output)
 
-                  read1_long_enough = len(
-                     read1[0]) > MIN_READ_LENGTH_FOR_ALIGNMENT
-                  read2_long_enough = len(
-                     read2[0]) > MIN_READ_LENGTH_FOR_ALIGNMENT
+            # TODO(jefftk): do we have a problem when read1 or read2 is too
+            # short?  I remember Bowtie choking on these before.
 
-                  if read1_long_enough and read2_long_enough:
-                     pair1.append((seq_id, read1))
-                     pair2.append((seq_id, read2))
-                  elif read1_long_enough:
-                     combined.append((seq_id, read1))
-                  elif read2_long_enough:
-                     combined.append((seq_id, read2))
+            full_inputs = [
+               "%s/%s/cleaned/%s" % (S3_BUCKET, args.bioproject, input_fname)
+               for input_fname in inputs]
 
-         for label, reads in [
-               ("pair1", pair1),
-               ("pair2", pair2),
-               ("combined", combined),
-         ]:
-            if reads:
-               with open("%s.fastq" % label, "w") as outf:
-                  for seq_id, read in reads:
-                     seq, quality = read
-                     outf.write("@%s\n%s\n+\n%s\n" % (seq_id, seq, quality))
+            subprocess.check_call([
+               os.path.join(THISDIR, "compute-alignments.sh"),
+               output,
+               *full_inputs,
+            ])
 
-         assert len(pair1) == len(pair2)
+         with gzip.open(combined_output_compressed, "wt") as outf:
+            for output in outputs:
+               with open(output) as inf:
+                  for line in inf:
+                     if line.startswith("@"): continue
+                     bits = line.rstrip("\n").split("\t")
 
-         if not pair1 and not combined:
-            continue
+                     query_name = bits[0]
+                     genomeid = bits[2]
+                     ref_start = bits[3]
+                     cigarstring = bits[5]
+                     query_len = len(bits[9])
 
-         sam_out = "out.sam"
-         cmd = [
-            "/home/ec2-user/bowtie2-2.5.2-linux-x86_64/bowtie2",
-            "--local",
-            "-x", os.path.join(THISDIR, "bowtie", "human-viruses"),
-            "--very-sensitive-local",
-            "--score-min", "G,1,0",
-            "--mp", "2,0",
-            "--no-unal",
-            "--threads", "24",
-            # Including an @SQ line makes the .sam files really big, and we
-            # don't actually need to know the lengths of all the genomes we
-            # considered aligning against. When we have a small number of reads
-            # per sample this can bloat the files 100x.  We'd like to do
-            # "--no-sq" bur pysam chokes on SAM files that are missing the @SQ
-            # header lines.
-            "-S", sam_out,
-         ]
+                     as_val = None
+                     for token in bits[11:]:
+                        if token.startswith("AS:i:"):
+                           as_val = token.replace("AS:i:", "")
+                     assert as_val
 
-         assert bool(pair1) == bool(pair2)
-         if pair1:
-            cmd.extend(["-1", "pair1.fastq", "-2", "pair2.fastq"])
-         if combined:
-            cmd.extend(["-U", "combined.fastq"])
+                     # The AS value is 1-indexed, but we use 0-indexing.
+                     query_pos = int(as_val) - 1
 
-         subprocess.check_call(cmd)
-
-         with open(os.path.join(
-               THISDIR, "bowtie", "genomeid-to-taxid.json")) as inf:
-            genomeid_to_taxid = json.load(inf)
-
-         with pysam.AlignmentFile(sam_out, "r")  as sam:
-            with open(output, "w") as outf:
-               for record in sam:
-                  genomeid = sam.get_reference_name(record.reference_id)
-                  taxid, genome_name = genomeid_to_taxid[genomeid]
-                  outf.write(
-                     "%s\t%s\t%s\t%s\t%s\t%s\t%s\n" % (
-                        record.query_name,
-                        genomeid,
-                        taxid,
-                        record.cigarstring,
-                        record.reference_start,
-                        record.get_tag("AS"),
-                        len(record.query_sequence)))
+                     taxid, genome_name = genomeid_to_taxid[genomeid]
+                     outf.write(
+                        "%s\t%s\t%s\t%s\t%s\t%s\t%s\n" % (
+                           query_name,
+                           genomeid,
+                           taxid,
+                           cigarstring,
+                           ref_start,
+                           query_pos,
+                           query_len))
 
          subprocess.check_call([
-            "aws", "s3", "cp", output, "%s/%s/alignments/%s" % (
-               S3_BUCKET, args.bioproject, output)])
+            "aws", "s3", "cp",
+            combined_output_compressed,
+            "%s/%s/alignments/%s" % (
+               S3_BUCKET, args.bioproject, combined_output_compressed)])
 
 def phred_to_q(phred_score):
    return ord(phred_score) - ord('!')
