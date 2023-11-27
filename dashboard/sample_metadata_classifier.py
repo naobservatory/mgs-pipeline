@@ -256,14 +256,17 @@ def interpret(project, papers, bits):
             date="2020",
             collection="blood serum")
     elif project in papers["Tisza 2023"]["projects"]:
-        sample, _, loc, city_state, date, flow = bits
+        sample, _, enrichment, loc, city_state, date, flow = bits
         city, state = city_state.split(", ")
-        return sample, dict(
+        record = dict(
             country="United States",
             city=city,
             state="Texas",
             location=loc,
-            date=date,
-            enrichment="panel")
+            date=date)
+        if enrichment == "1":
+            record["enrichment"] = "panel"
+        
+        return sample, record
     else:
         raise Exception("Metadata format for %s unknown" % project)
