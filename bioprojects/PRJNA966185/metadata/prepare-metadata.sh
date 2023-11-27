@@ -12,8 +12,8 @@ fi
 
 if  [ ! -e metadata-raw.tsv ]; then
   curl -sS \
-  'https://www.ebi.ac.uk/ena/portal/api/filereport?accession=PRJNA966185&result=read_run&fields=run_accession,sample_alias&format=tsv&download=true&limit=0' \
-  > metadata-raw.tsv
+  'https://www.ebi.ac.uk/ena/portal/api/filereport?accession=PRJNA966185&result=read_run&fields=run_accession,run_alias,sample_alias&format=tsv&download=true&limit=0' \
+  | sort > metadata-raw.tsv
 fi
 
 ./prepare-metadata.py

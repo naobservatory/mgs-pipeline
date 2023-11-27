@@ -15,8 +15,10 @@ with open("metadata-raw.tsv") as inf:
             line = line.rstrip("\n")
             if line.startswith("run_accession"):
                 continue
-            run_accession, _, sample_id = line.split("\t")
+            run_accession, run_alias, _, sample_id = line.split("\t")
 
-            record = [run_accession, sample_id]
+            record = [run_accession,
+                      sample_id,
+                      "0" if "unenriched" in run_alias else "1"]
             record.extend(sample_info[sample_id])
             outf.write("\t".join(record) + "\n")
