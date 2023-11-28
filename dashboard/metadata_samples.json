@@ -25779,6 +25779,150 @@
     "reads": 5762586,
     "state": "Texas"
   },
+  "SRR26892001": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-10-03",
+    "location": "EPS J3",
+    "reads": 7900652,
+    "state": "Texas"
+  },
+  "SRR26892002": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-09-28",
+    "location": "HOU J6",
+    "reads": 8068641,
+    "state": "Texas"
+  },
+  "SRR26892003": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-09-26",
+    "location": "EPS T4",
+    "reads": 11033668,
+    "state": "Texas"
+  },
+  "SRR26892004": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-09-28",
+    "location": "HOU S3",
+    "reads": 6956895,
+    "state": "Texas"
+  },
+  "SRR26892005": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-09-26",
+    "location": "EPS K6",
+    "reads": 7595693,
+    "state": "Texas"
+  },
+  "SRR26892006": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-10-03",
+    "location": "EPS K6",
+    "reads": 7971035,
+    "state": "Texas"
+  },
+  "SRR26892007": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-09-28",
+    "location": "HOU Z9",
+    "reads": 8344690,
+    "state": "Texas"
+  },
+  "SRR26892008": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-09-28",
+    "location": "HOU R5",
+    "reads": 7199608,
+    "state": "Texas"
+  },
+  "SRR26892009": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-10-10",
+    "location": "EPS T4",
+    "reads": 6034057,
+    "state": "Texas"
+  },
+  "SRR26892010": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-10-10",
+    "location": "EPS K6",
+    "reads": 7915503,
+    "state": "Texas"
+  },
+  "SRR26892011": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-09-28",
+    "location": "HOU C1",
+    "reads": 7903017,
+    "state": "Texas"
+  },
+  "SRR26892012": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-10-03",
+    "location": "EPS Q9",
+    "reads": 8158468,
+    "state": "Texas"
+  },
+  "SRR26892013": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-09-26",
+    "location": "EPS J3",
+    "reads": 9201588,
+    "state": "Texas"
+  },
+  "SRR26892014": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-09-28",
+    "location": "EPS Q9",
+    "reads": 7039340,
+    "state": "Texas"
+  },
+  "SRR26892015": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-09-28",
+    "location": "HOU B9",
+    "reads": 8184916,
+    "state": "Texas"
+  },
+  "SRR26892016": {
+    "city": "El Paso",
+    "country": "United States",
+    "date": "2022-10-03",
+    "location": "EPS T4",
+    "reads": 7454093,
+    "state": "Texas"
+  },
+  "SRR26892017": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-10-04",
+    "location": "HOU C1",
+    "reads": 6126781,
+    "state": "Texas"
+  },
+  "SRR26892018": {
+    "city": "Houston",
+    "country": "United States",
+    "date": "2022-10-04",
+    "location": "HOU Z9",
+    "reads": 6683307,
+    "state": "Texas"
+  },
   "SRR6837549": {
     "country": "Singapore",
     "date": "2016-10",
