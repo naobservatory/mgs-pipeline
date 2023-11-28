@@ -222,17 +222,9 @@ Available files, and their formats:
    have to finish before you get to step #5, it just needs a small head start.
    * If some files hit errors it's fine to re-run; it skips any files that are
      already complete.
-3. Make a directory `bioprojects/[accession]/metadata` and:
+3. Navigate to `bioprojects/[accession]/metadata` and:
    b. Create `bioprojects/[accession]/metadata/name.txt` with the short name of
       the associated paper.  For example, `Rothman 2021`.
-   c. Create `bioprojects/[accession]/metadata/metadata.tsv` with a list of the
-      sample accessions in the first column and anything else you want to record about the sample in the later
-      columns.  If you don't have the rest of the metadata sorted out yet and
-      just want to unblock the pipeline you can put the accessions only with:
-
-          curl -sS 'https://www.ebi.ac.uk/ena/portal/api/filereport?accession=PRJNA648796&result=read_run&limit=0' | \
-            grep -v ^run_accession | \
-            awk '{print $1}' > metadata.tsv
 
 4. Make a directory `papers/AuthorYear/` (matching `name.txt` but without the
    space) and:
@@ -271,6 +263,15 @@ When we do want to build our own database kraken2-build has good [documentation
 here](https://github.com/DerrickWood/kraken2/blob/master/docs/MANUAL.markdown#custom-databases).
 
 ## Dependencies
+
+### E-utilities (for working with NCBI)
+See the NCBI [documentation](https://www.ncbi.nlm.nih.gov/books/NBK179288/). 
+```
+sh -c "$(curl -fsSL https://ftp.ncbi.nlm.nih.gov/entrez/entrezdirect/install-edirect.sh)"
+export PATH=${HOME}/edirect:${PATH}
+sudo yum install perl-Time-HiRes
+
+```
 
 ### AdapterRemoval2
 
