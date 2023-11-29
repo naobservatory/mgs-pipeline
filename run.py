@@ -964,6 +964,8 @@ def alignments(args):
                      query_name = bits[0]
                      genomeid = bits[2]
                      ref_start = bits[3]
+                     # The start position is 1-indexed, but we use 0-indexing.
+                     ref_start = int(ref_start) - 1
                      cigarstring = bits[5]
                      query_len = len(bits[9])
 
@@ -972,9 +974,7 @@ def alignments(args):
                         if token.startswith("AS:i:"):
                            as_val = token.replace("AS:i:", "")
                      assert as_val
-
-                     # The AS value is 1-indexed, but we use 0-indexing.
-                     query_pos = int(as_val) - 1
+                     as_val = int(as_val)
 
                      taxid, genome_name = genomeid_to_taxid[genomeid]
                      outf.write(
@@ -984,7 +984,7 @@ def alignments(args):
                            taxid,
                            cigarstring,
                            ref_start,
-                           query_pos,
+                           as_val,
                            query_len))
 
          subprocess.check_call([
