@@ -10,7 +10,7 @@ set +x
 CMD="/home/ec2-user/bowtie2-2.5.2-linux-x86_64/bowtie2"
 CMD+=" --local"
 CMD+=" -x /home/ec2-user/mgs-pipeline/bowtie/human-viruses"
-CMD+=" --threads 8"
+CMD+=" --threads 28"
 CMD+=" --very-sensitive-local"
 CMD+=" --score-min G,1,0"
 CMD+=" --mp 4,1"
