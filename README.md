@@ -164,12 +164,14 @@ Available files, and their formats:
    * Read ID to Kraken output and cleaned read
 
 * `alignments/`: Output, alignment data that will later back the dashboard.
-   * Ex: SRR21452137.alignments.tsv
-   * TSV
-   * One record for each record in the hvreads that Bowtie2 was able to map
-     back to a known human-infecting virus.  Note that we've set the quality
-     score very low here, and you likely want to filter some of these out based
-     on a combination of alignment score and trimmed read length.
+   * Ex: `SRR21452137.alignments.tsv.gz`,
+   * Compressed TSV
+   * One record for each read that Bowtie2 was able to map back
+     to a known human-infecting virus.  Note that we've set the quality score
+     to the minimum and you likely want to filter some of these out based on a
+     combination of alignment score and trimmed read length.
+   * Non-collapsed reads will appear twice, one for the forward read and then
+     one for the reverse.
    * Columns:
      * Read ID
      * Best-match genome
