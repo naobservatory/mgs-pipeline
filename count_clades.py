@@ -10,23 +10,23 @@ from collections import Counter
 parents = {}  # child_taxid -> parent_taxid
 with open("dashboard/nodes.dmp") as inf:
     for line in inf:
-        child_taxid, parent_taxid, rank, *_ = \
-            line.replace("\t|\n", "").split("\t|\t")
+        child_taxid, parent_taxid, rank, *_ = line.replace("\t|\n", "").split("\t|\t")
         child_taxid = int(child_taxid)
         parent_taxid = int(parent_taxid)
         parents[child_taxid] = parent_taxid
 
-direct_assignments = Counter() # taxid -> direct assignments
-direct_hits = Counter()        # taxid -> direct hits
+direct_assignments = Counter()  # taxid -> direct assignments
+direct_hits = Counter()  # taxid -> direct hits
 clade_assignments = Counter()  # taxid -> clade assignments
-clade_hits = Counter()         # taxid -> clade hits
+clade_hits = Counter()  # taxid -> clade hits
 
 for line in sys.stdin:
     line = line.strip()
-    if not line: continue
+    if not line:
+        continue
     _, _, name_and_taxid, _, encoded_hits = line.split("\t")
 
-    taxid, = re.findall("^.*[(]taxid ([0-9]+)[)]$", name_and_taxid)
+    (taxid,) = re.findall("^.*[(]taxid ([0-9]+)[)]$", name_and_taxid)
     taxid = int(taxid)
     direct_assignments[taxid] += 1
     while True:
@@ -52,9 +52,13 @@ for line in sys.stdin:
             hit = parents[hit]
 
 for taxid in sorted(clade_hits):
-    print("%s\t%s\t%s\t%s\t%s" % (
-        taxid,
-        direct_assignments[taxid], direct_hits[taxid],
-        clade_assignments[taxid], clade_hits[taxid]))
-
-    
+    print(
+        "%s\t%s\t%s\t%s\t%s"
+        % (
+            taxid,
+            direct_assignments[taxid],
+            direct_hits[taxid],
+            clade_assignments[taxid],
+            clade_hits[taxid],
+        )
+    )

@@ -4,6 +4,7 @@
 
 import sys
 
+
 def start(raw_metadata_in, parsed_metadata_out):
     data = []
     with open(raw_metadata_in) as inf:
@@ -13,7 +14,7 @@ def start(raw_metadata_in, parsed_metadata_out):
             _, _, fastq_ftps, alias = line.split("\t")
 
             if fastq_ftps == "fastq_ftp":
-                continue # skip header line
+                continue  # skip header line
 
             enriched = not alias.endswith("_unenriched")
             alias = alias.removesuffix("_unenriched")
@@ -23,12 +24,13 @@ def start(raw_metadata_in, parsed_metadata_out):
             plant, month, day, year = alias.split("_")
 
             if len(year) == 2:
-                year = '20%s' % year
+                year = "20%s" % year
 
             date = "%s-%s-%s" % (year, month.zfill(2), day.zfill(2))
 
             for fastq_ftp in fastq_ftps.split(";"):
-                if not fastq_ftp: continue
+                if not fastq_ftp:
+                    continue
 
                 filename = fastq_ftp.split("/")[-1]
 
@@ -40,6 +42,7 @@ def start(raw_metadata_in, parsed_metadata_out):
         outf.write("\t".join(["filename", "date", "plant", "is_enriched"]) + "\n")
         for plant, date, filename, is_enriched in data:
             outf.write("\t".join([filename, date, plant, is_enriched]) + "\n")
+
 
 if __name__ == "__main__":
     start(*sys.argv[1:])
