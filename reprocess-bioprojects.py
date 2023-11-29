@@ -28,7 +28,9 @@ regular_bioprojects = os.listdir("bioprojects")
 restricted_bioprojects = []
 restricted_dir = os.path.join("..", "mgs-restricted")
 if os.path.exists(restricted_dir):
-    restricted_bioprojects = os.listdir(os.path.join(restricted_dir, "bioprojects"))
+    restricted_bioprojects = os.listdir(
+        os.path.join(restricted_dir, "bioprojects")
+    )
 
 
 def prepare_job(bioproject, log_prefix, run_args):
@@ -85,7 +87,8 @@ def start():
         help="Log prefix, for storing this run under log/",
     )
     parser.add_argument(
-        "--bioprojects", help="The IDs of the bioproject to process, comma separated"
+        "--bioprojects",
+        help="The IDs of the bioproject to process, comma separated",
     )
     args = parser.parse_args(our_args)
 

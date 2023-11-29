@@ -115,7 +115,9 @@ with open("Hendriksen2019-metadata1.tsv") as inf:
 
 bioproject_dir = os.path.join(root, "bioprojects")
 for bioproject in os.listdir(bioproject_dir):
-    with open(os.path.join(bioproject_dir, bioproject, "metadata", "name.txt")) as inf:
+    with open(
+        os.path.join(bioproject_dir, bioproject, "metadata", "name.txt")
+    ) as inf:
         if inf.read().strip() != "Munk 2022":
             continue
 

@@ -10,7 +10,9 @@ from collections import Counter
 parents = {}  # child_taxid -> parent_taxid
 with open("dashboard/nodes.dmp") as inf:
     for line in inf:
-        child_taxid, parent_taxid, rank, *_ = line.replace("\t|\n", "").split("\t|\t")
+        child_taxid, parent_taxid, rank, *_ = line.replace("\t|\n", "").split(
+            "\t|\t"
+        )
         child_taxid = int(child_taxid)
         parent_taxid = int(parent_taxid)
         parents[child_taxid] = parent_taxid
