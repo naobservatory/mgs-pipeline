@@ -164,12 +164,16 @@ Available files, and their formats:
    * Read ID to Kraken output and cleaned read
 
 * `alignments/`: Output, alignment data that will later back the dashboard.
-   * Ex: `SRR21452137.alignments.tsv.gz`,
+   * Ex: `SRR21452137.hv.alignments.tsv.gz`,
+         `SRR21452137.human.alignments.tsv.gz`
    * Compressed TSV
-   * One record for each read that Bowtie2 was able to map back
-     to a known human-infecting virus.  Note that we've set the quality score
-     to the minimum and you likely want to filter some of these out based on a
-     combination of alignment score and trimmed read length.
+   * One record for each read that Bowtie2 was able to map back to a genome in
+     its DB.
+   * We run this twice: once with a standard human genome DB ("human"), and
+     again with a custom DB of human-infecting viruses ("hv").
+   * Note that for the HV DB we've set the quality score to the minimum and you
+     likely want to filter some of these out based on a combination of
+     alignment score and trimmed read length.
    * Non-collapsed reads will appear twice, one for the forward read and then
      one for the reverse.
    * Columns:
@@ -362,16 +366,35 @@ unzip bowtie2.zip
 rm bowtie2.zip
 ```
 
-#### Set up Bowtie2 database
+#### Download pre-built human genome database
 
-To create a Bowtie2 database, we need to download genomes from NCBI, using ncbi-genome-download. To run the affiliated script `gimme_taxa.py`, you will also need to install the dependencies `ete3` and `six`. 
+For detecting human reads we use the standard pre-built "Human / GRCh38 no-alt
+analysis set" database from https://benlangmead.github.io/aws-indexes/bowtie
+
+```
+cd mgs-pipeline/bowtie
+aws s3 cp s3://genome-idx/bt/GRCh38_noalt_as.zip .
+unzip GRCh38_noalt_as.zip
+mv GRCh38_noalt_as/* .
+rmdir GRCh38_noalt_as
+rm GRCh38_noalt_as.zip
+```
+
+#### Build custom human viral database
+
+To create a Bowtie2 database, we need to download genomes from NCBI, using
+ncbi-genome-download. To run the affiliated script `gimme_taxa.py`, you will
+also need to install the dependencies `ete3` and `six`.
 
 ```
 pip install ncbi-genome-download
 python -m pip install ete3 six ncbi-genome-download
 ```
 
-Now you can run `build_bowtie_db.py`, which will create the bowtie2 database. This will take quite some time so it's best to run this command within a `screen` session to not inadvertantly end the script when closing your terminal.
+Now you can run `build_bowtie_db.py`, which will create the bowtie2
+database. This will take quite some time so it's best to run this command
+within a `screen` session to not inadvertantly end the script when closing your
+terminal.
 
 
 ## Operations
