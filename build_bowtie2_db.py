@@ -79,6 +79,7 @@ def fetch_genomes(detailed_taxids_fname, metadata_fname):
         ]
     )
 
+
 def create_genome_taxid_map(metadata_fname):
     genome_taxid_map_fname = "genomeid-to-taxid.json"
     if os.path.exists(genome_taxid_map_fname):
@@ -103,6 +104,7 @@ def create_genome_taxid_map(metadata_fname):
     with open(genome_taxid_map_fname, "w") as outf:
         json.dump(genome_to_taxid, outf)
 
+
 def combine_genomes(combined_genomes_fname):
     if os.path.exists(combined_genomes_fname):
         return
@@ -113,8 +115,8 @@ def combine_genomes(combined_genomes_fname):
             with gzip.open(fname, "rt") as inf:
                 outf.writelines(inf.readlines())
 
-def mask_low_complexity_sequences(
-        combined_genomes_fname, masked_genomes_fname):
+
+def mask_low_complexity_sequences(combined_genomes_fname, masked_genomes_fname):
     if os.path.exists(masked_genomes_fname):
         return
     print("Masking low complexity sequences...")
@@ -129,11 +131,17 @@ def mask_low_complexity_sequences(
     # which uses NCBI dustmasker to mask regions of the input genomes that the
     # DUST algorithm identifies as low-complexity.  Do that here too.
 
-    subprocess.check_call([
-        "dustmasker",
-        "-in", combined_genomes_fname,
-        "-out", masked_genomes_fname,
-        "-outfmt", "fasta"])
+    subprocess.check_call(
+        [
+            "dustmasker",
+            "-in",
+            combined_genomes_fname,
+            "-out",
+            masked_genomes_fname,
+            "-outfmt",
+            "fasta",
+        ]
+    )
 
     # Dustmasker lowercases bases to mask them, but Bowtie needs them to be an
     # unknown character.  It doesn't matter which one, so copy Kraken and use
@@ -141,11 +149,8 @@ def mask_low_complexity_sequences(
     #
     # This regexp replaces all lowercase letters that aren't on lines beginning
     # with '>', which in FASTA means everywhere except in the sequence IDs.
-    subprocess.check_call([
-        "sed",
-        "/^>/!s/[a-z]/x/g",
-        "-i",
-        masked_genomes_fname])
+    subprocess.check_call(["sed", "/^>/!s/[a-z]/x/g", "-i", masked_genomes_fname])
+
 
 def build_db(bowtie_db_prefix, genomes_fname):
     if os.path.exists(bowtie_db_prefix + ".1.bt2"):
