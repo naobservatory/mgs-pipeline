@@ -39,7 +39,9 @@ def start(raw_metadata_in, parsed_metadata_out):
     data.sort()
 
     with open(parsed_metadata_out, "w") as outf:
-        outf.write("\t".join(["filename", "date", "plant", "is_enriched"]) + "\n")
+        outf.write(
+            "\t".join(["filename", "date", "plant", "is_enriched"]) + "\n"
+        )
         for plant, date, filename, is_enriched in data:
             outf.write("\t".join([filename, date, plant, is_enriched]) + "\n")
 

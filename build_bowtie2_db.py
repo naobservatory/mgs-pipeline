@@ -116,7 +116,9 @@ def combine_genomes(combined_genomes_fname):
                 outf.writelines(inf.readlines())
 
 
-def mask_low_complexity_sequences(combined_genomes_fname, masked_genomes_fname):
+def mask_low_complexity_sequences(
+    combined_genomes_fname, masked_genomes_fname
+):
     if os.path.exists(masked_genomes_fname):
         return
     print("Masking low complexity sequences...")
@@ -149,7 +151,9 @@ def mask_low_complexity_sequences(combined_genomes_fname, masked_genomes_fname):
     #
     # This regexp replaces all lowercase letters that aren't on lines beginning
     # with '>', which in FASTA means everywhere except in the sequence IDs.
-    subprocess.check_call(["sed", "/^>/!s/[a-z]/x/g", "-i", masked_genomes_fname])
+    subprocess.check_call(
+        ["sed", "/^>/!s/[a-z]/x/g", "-i", masked_genomes_fname]
+    )
 
 
 def build_db(bowtie_db_prefix, genomes_fname):

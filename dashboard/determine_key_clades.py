@@ -10,7 +10,9 @@ VIRUS = 10239
 children = defaultdict(set)  # parent_taxid -> [children]
 with open("nodes.dmp") as inf:
     for line in inf:
-        child_taxid, parent_taxid, rank, *_ = line.replace("\t|\n", "").split("\t|\t")
+        child_taxid, parent_taxid, rank, *_ = line.replace("\t|\n", "").split(
+            "\t|\t"
+        )
         child_taxid = int(child_taxid)
         parent_taxid = int(parent_taxid)
         if child_taxid != parent_taxid:

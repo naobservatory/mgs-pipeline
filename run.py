@@ -40,7 +40,9 @@ def check_call_shell(cmd):
 def check_output_shell(cmd):
     # Unlike subprocess.check_output, if any member of the pipeline fails then
     # this fails too.
-    return subprocess.check_output(["bash", "-c", "set -o  pipefail; %s" % cmd])
+    return subprocess.check_output(
+        ["bash", "-c", "set -o  pipefail; %s" % cmd]
+    )
 
 
 def work_fname(*fnames):
@@ -71,7 +73,9 @@ def tempdir(stage, msg):
 
 def exists_s3_prefix(s3_path):
     try:
-        subprocess.check_call(["aws", "s3", "ls", s3_path], stdout=subprocess.DEVNULL)
+        subprocess.check_call(
+            ["aws", "s3", "ls", s3_path], stdout=subprocess.DEVNULL
+        )
         return True  # exit code 0 if present
     except subprocess.CalledProcessError as e:
         if e.returncode == 1:
@@ -129,10 +133,15 @@ def get_adapters(in1, in2, adapter1_fname, adapter2_fname):
         elif "--adapter2:" in line:
             adapter2 = line.replace("--adapter2:", "").strip()
 
-    for adapter, fname in [[adapter1, adapter1_fname], [adapter2, adapter2_fname]]:
+    for adapter, fname in [
+        [adapter1, adapter1_fname],
+        [adapter2, adapter2_fname],
+    ]:
         if not all(x in "ACTGN" for x in adapter) or len(adapter) < 20:
             print(output)
-            raise Exception("Invalid adapter %r for %r and %r" % (adapter, in1, in2))
+            raise Exception(
+                "Invalid adapter %r for %r and %r" % (adapter, in1, in2)
+            )
         with open(fname, "w") as outf:
             outf.write(adapter)
 
@@ -189,7 +198,9 @@ def adapter_removal(args, dirname, trim_quality, collapse):
             adapter1_fname = os.path.join(adapter_dir, "%s.fwd" % sample)
             adapter2_fname = os.path.join(adapter_dir, "%s.rev" % sample)
 
-            if not os.path.exists(adapter1_fname) or not os.path.exists(adapter2_fname):
+            if not os.path.exists(adapter1_fname) or not os.path.exists(
+                adapter2_fname
+            ):
                 get_adapters(in1, in2, adapter1_fname, adapter2_fname)
 
             with open(adapter1_fname) as inf:
@@ -266,7 +277,9 @@ def ribofrac(args, subset_size=1000):
 
     def first_subset_fastq(file_paths, subset_size):
         """Selects the first subset of reads from gzipped fastq files"""
-        print(f"Counting reads in input and selecting the first {subset_size}...")
+        print(
+            f"Counting reads in input and selecting the first {subset_size}..."
+        )
         output_files = []
         total_reads = 0
         # Count the total number of reads only for the first input file
@@ -281,11 +294,15 @@ def ribofrac(args, subset_size=1000):
                 # Create an output file handle
                 output_file = fp.replace(".fq.gz", ".subset.fq")
                 with open(output_file, "w") as out_handle:
-                    for index, (title, seq, qual) in enumerate(FastqGeneralIterator(f)):
+                    for index, (title, seq, qual) in enumerate(
+                        FastqGeneralIterator(f)
+                    ):
                         if index >= subset_size:
                             break
                         actual_subset_size += 1
-                        out_handle.write("@%s\n%s\n+\n%s\n" % (title, seq, qual))
+                        out_handle.write(
+                            "@%s\n%s\n+\n%s\n" % (title, seq, qual)
+                        )
 
                 output_files.append(output_file)
 
@@ -333,12 +350,16 @@ def ribofrac(args, subset_size=1000):
             total_files_in_sample += 1
 
             # Number of output and input files must match
-            tmp_fq_output = potential_input.replace(".gz", ".subset.nonrrna.fq")
+            tmp_fq_output = potential_input.replace(
+                ".gz", ".subset.nonrrna.fq"
+            )
             tmp_fq_outputs = [tmp_fq_output]
             inputs = [potential_input]
 
             if ".pair1." in potential_input:
-                tmp_fq_outputs.append(tmp_fq_output.replace(".pair1.", ".pair2."))
+                tmp_fq_outputs.append(
+                    tmp_fq_output.replace(".pair1.", ".pair2.")
+                )
                 inputs.append(potential_input.replace(".pair1.", ".pair2."))
             elif ".pair2." in potential_input:
                 # Ribodetector handles pair1 and pair2 together.
@@ -363,7 +384,9 @@ def ribofrac(args, subset_size=1000):
                         empty_files_in_sample += 1
 
                     # Ribodetector gets angry if the .fq extension isn't in the filename
-                    os.rename(input_fname, input_fname.replace(".gz", ".fq.gz"))
+                    os.rename(
+                        input_fname, input_fname.replace(".gz", ".fq.gz")
+                    )
 
                 if total_files_in_sample == empty_files_for_sample:
                     print(f"Skipping {sample}... all files are empty.")
@@ -387,7 +410,9 @@ def ribofrac(args, subset_size=1000):
                     total_len = 0
                     total_reads = 0
                     with open(file_path, "rt") as inf:
-                        for title, sequence, quality in FastqGeneralIterator(inf):
+                        for title, sequence, quality in FastqGeneralIterator(
+                            inf
+                        ):
                             total_len += len(sequence)
                             total_reads += 1
                     return round(total_len / total_reads)
@@ -416,7 +441,10 @@ def ribofrac(args, subset_size=1000):
 
                 # Count number of rRNA reads in subset
                 non_rrna_count = sum(
-                    1 for _ in FastqGeneralIterator(open(tmp_fq_outputs[0], "rt"))
+                    1
+                    for _ in FastqGeneralIterator(
+                        open(tmp_fq_outputs[0], "rt")
+                    )
                 )
                 rrna_reads_dict[inputs[0]] = subset_reads - non_rrna_count
 
@@ -429,7 +457,9 @@ def ribofrac(args, subset_size=1000):
 
         # Use the total number of reads for each input as weights
         weights = list(total_reads_dict.values())
-        weighted_rrna_fraction = np.average(fractions_rrna_in_subset, weights=weights)
+        weighted_rrna_fraction = np.average(
+            fractions_rrna_in_subset, weights=weights
+        )
         fraction_rrna = round(weighted_rrna_fraction, 4)
 
         print(
@@ -488,7 +518,9 @@ def riboreads(args):
             inputs = [potential_input]
 
             if ".pair1." in potential_input:
-                tmp_fq_outputs.append(tmp_fq_output.replace(".pair1.", ".pair2."))
+                tmp_fq_outputs.append(
+                    tmp_fq_output.replace(".pair1.", ".pair2.")
+                )
                 inputs.append(potential_input.replace(".pair1.", ".pair2."))
             elif ".pair2." in potential_input:
                 # Ribodetector handles pair1 and pair2 together.
@@ -508,7 +540,9 @@ def riboreads(args):
                     )
 
                     # Ribodetector gets angry if the .fq extension isn't in the filename
-                    os.rename(input_fname, input_fname.replace(".gz", ".fq.gz"))
+                    os.rename(
+                        input_fname, input_fname.replace(".gz", ".fq.gz")
+                    )
 
                 # Add .fq extensions to input files
                 inputs = [i.replace(".gz", ".fq.gz") for i in inputs]
@@ -521,7 +555,9 @@ def riboreads(args):
                     total_len = 0
                     total_reads = 0
                     with gzip.open(file_path, "rt") as inf:
-                        for title, sequence, quality in FastqGeneralIterator(inf):
+                        for title, sequence, quality in FastqGeneralIterator(
+                            inf
+                        ):
                             total_len += len(sequence)
                             total_reads += 1
                     return round(total_len / total_reads)
@@ -565,7 +601,9 @@ def riboreads(args):
                         mode = "r"
 
                     with open_func(file_path, mode) as inf:
-                        for title, sequence, quality in FastqGeneralIterator(inf):
+                        for title, sequence, quality in FastqGeneralIterator(
+                            inf
+                        ):
                             seq_titles.append(title)
                     return seq_titles
 
@@ -692,7 +730,9 @@ def cladecounts(args):
         if not any(x.startswith(sample) for x in available_inputs):
             continue
 
-        subprocess.check_call(["./count_clades.sh", S3_BUCKET, args.bioproject, sample])
+        subprocess.check_call(
+            ["./count_clades.sh", S3_BUCKET, args.bioproject, sample]
+        )
 
 
 SAMPLE_READS_TARGET_LEN = 100_000
@@ -708,7 +748,9 @@ def samplereads(args):
     parents = {}
     with open(os.path.join(THISDIR, "dashboard", "nodes.dmp")) as inf:
         for line in inf:
-            child_taxid, parent_taxid, *_ = line.replace("\t|\n", "").split("\t|\t")
+            child_taxid, parent_taxid, *_ = line.replace("\t|\n", "").split(
+                "\t|\t"
+            )
             parents[int(child_taxid)] = int(parent_taxid)
 
     def taxid_under(clade, taxid):
@@ -799,13 +841,17 @@ def samplereads(args):
                         // full_count
                     )
 
-                    subsetted_ids[category].extend(read_ids[fname][category][:target])
+                    subsetted_ids[category].extend(
+                        read_ids[fname][category][:target]
+                    )
 
         with tempdir("samplereads", sample) as workdir:
             with gzip.open(output, "wt") as outf:
                 for category in sorted(subsetted_ids):
                     for selected_read_id in sorted(subsetted_ids[category]):
-                        outf.write("%s\t%s\n" % (category[0], selected_read_id))
+                        outf.write(
+                            "%s\t%s\n" % (category[0], selected_read_id)
+                        )
 
             subprocess.check_call(
                 [
@@ -828,7 +874,9 @@ def readlengths(args):
         if output in existing_outputs:
             continue
 
-        inputs = [x for x in available_samplereads_inputs if x.startswith(sample)]
+        inputs = [
+            x for x in available_samplereads_inputs if x.startswith(sample)
+        ]
         if not any(inputs):
             continue
         (fname,) = inputs
@@ -968,7 +1016,9 @@ def humanviruses(args):
         with tempdir("humanviruses", sample) as workdir:
             with open(output, "w") as outf:
                 for taxid, count in sorted(counts.items()):
-                    outf.write("%s\t%s\t%s\n" % (taxid, count, human_viruses[taxid]))
+                    outf.write(
+                        "%s\t%s\t%s\n" % (taxid, count, human_viruses[taxid])
+                    )
 
             subprocess.check_call(
                 [
@@ -976,7 +1026,8 @@ def humanviruses(args):
                     "s3",
                     "cp",
                     output,
-                    "%s/%s/humanviruses/%s" % (S3_BUCKET, args.bioproject, output),
+                    "%s/%s/humanviruses/%s"
+                    % (S3_BUCKET, args.bioproject, output),
                 ]
             )
 
@@ -1048,7 +1099,8 @@ def allmatches(args):
                     "s3",
                     "cp",
                     output,
-                    "%s/%s/allmatches/%s" % (S3_BUCKET, args.bioproject, output),
+                    "%s/%s/allmatches/%s"
+                    % (S3_BUCKET, args.bioproject, output),
                 ]
             )
 
@@ -1085,7 +1137,8 @@ def hvreads(args):
                     "aws",
                     "s3",
                     "cp",
-                    "%s/%s/allmatches/%s" % (S3_BUCKET, args.bioproject, input_fname),
+                    "%s/%s/allmatches/%s"
+                    % (S3_BUCKET, args.bioproject, input_fname),
                     "-",
                 ]
             )
@@ -1149,7 +1202,9 @@ def alignments(args):
 
     existing_outputs = get_files(args, "alignments", min_date="2023-11-28")
 
-    with open(os.path.join(THISDIR, "bowtie", "genomeid-to-taxid.json")) as inf:
+    with open(
+        os.path.join(THISDIR, "bowtie", "genomeid-to-taxid.json")
+    ) as inf:
         genomeid_to_taxid = json.load(inf)
 
     for sample in get_samples(args):
@@ -1171,7 +1226,9 @@ def alignments(args):
                 inputs = [potential_input]
                 if ".pair1." in output:
                     output = output.replace(".pair1.", ".")
-                    inputs.append(potential_input.replace(".pair1.", ".pair2."))
+                    inputs.append(
+                        potential_input.replace(".pair1.", ".pair2.")
+                    )
                 elif ".pair2" in output:
                     # We handle pair1 and pair2 together.
                     continue
@@ -1182,7 +1239,8 @@ def alignments(args):
                 # short?  I remember Bowtie choking on these before.
 
                 full_inputs = [
-                    "%s/%s/cleaned/%s" % (S3_BUCKET, args.bioproject, input_fname)
+                    "%s/%s/cleaned/%s"
+                    % (S3_BUCKET, args.bioproject, input_fname)
                     for input_fname in inputs
                 ]
 
@@ -1263,7 +1321,8 @@ def print_status(args):
         bioprojects = [args.bioproject]
     else:
         bioprojects = [
-            os.path.basename(x) for x in glob.glob(work_fname("bioprojects", "*"))
+            os.path.basename(x)
+            for x in glob.glob(work_fname("bioprojects", "*"))
         ]
 
     running_processes = subprocess.check_output(["ps", "aux"]).decode("utf-8")
@@ -1396,10 +1455,14 @@ def start():
     )
 
     parser.add_argument(
-        "--restricted", action="store_true", help="Whether to work on private data"
+        "--restricted",
+        action="store_true",
+        help="Whether to work on private data",
     )
 
-    parser.add_argument("--bioproject", help="The ID of the bioproject to process")
+    parser.add_argument(
+        "--bioproject", help="The ID of the bioproject to process"
+    )
     parser.add_argument(
         "--sample",
         default="",
@@ -1421,7 +1484,9 @@ def start():
     )
 
     parser.add_argument(
-        "--skip-stages", default="", help="Comma-separated list of stages not to run."
+        "--skip-stages",
+        default="",
+        help="Comma-separated list of stages not to run.",
     )
 
     args = parser.parse_args()
@@ -1445,7 +1510,8 @@ def start():
 
     if not os.path.isdir(work_fname("bioprojects", args.bioproject)):
         raise Exception(
-            "Bioproject %s not found in %s/bioprojects" % (args.bioproject, WORK_ROOT)
+            "Bioproject %s not found in %s/bioprojects"
+            % (args.bioproject, WORK_ROOT)
         )
 
     selected_stages = args.stages.split(",")

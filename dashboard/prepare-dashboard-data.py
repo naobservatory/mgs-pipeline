@@ -39,7 +39,9 @@ with open("%s/human-viruses.tsv" % MGS_PIPELINE_DIR) as inf:
 parents = {}  # child_taxid -> parent_taxid
 with open("%s/nodes.dmp" % DASHBOARD_DIR) as inf:
     for line in inf:
-        child_taxid, parent_taxid, rank, *_ = line.replace("\t|\n", "").split("\t|\t")
+        child_taxid, parent_taxid, rank, *_ = line.replace("\t|\n", "").split(
+            "\t|\t"
+        )
         child_taxid = int(child_taxid)
         parent_taxid = int(parent_taxid)
         parents[child_taxid] = parent_taxid
@@ -51,7 +53,9 @@ for taxid in all_human_viruses:
 
 # project -> sample -> n_reads
 project_sample_reads = defaultdict(dict)
-for metadata_fname in glob.glob("%s/bioprojects/*/metadata/metadata.tsv" % ROOT_DIR):
+for metadata_fname in glob.glob(
+    "%s/bioprojects/*/metadata/metadata.tsv" % ROOT_DIR
+):
     project = metadata_fname.split("/")[-3]
     if project in ["PRJEB30546", "PRJNA691135"]:
         # didn't finish importing this one, and the dashboard chokes on papers
@@ -137,7 +141,9 @@ human_virus_tree = human_virus_nodes[1]
 # paper -> {link, samples, projects, na_type, subset}
 papers = {}
 for project in projects:
-    with open("%s/bioprojects/%s/metadata/name.txt" % (ROOT_DIR, project)) as inf:
+    with open(
+        "%s/bioprojects/%s/metadata/name.txt" % (ROOT_DIR, project)
+    ) as inf:
         paper_name = inf.read().strip()
         if paper_name not in papers:
             papers[paper_name] = {}
@@ -169,7 +175,8 @@ bioprojects = defaultdict(set)
 
 def rc(s):
     return "".join(
-        {"T": "A", "G": "C", "A": "T", "C": "G", "N": "N"}[x] for x in reversed(s)
+        {"T": "A", "G": "C", "A": "T", "C": "G", "N": "N"}[x]
+        for x in reversed(s)
     )
 
 
@@ -289,7 +296,9 @@ for taxid in sorted(comparison_sample_counts):
 taxonomic_names = defaultdict(list)
 with open("%s/names.dmp" % DASHBOARD_DIR) as inf:
     for line in inf:
-        taxid, name, unique_name, name_class = line.replace("\t|\n", "").split("\t|\t")
+        taxid, name, unique_name, name_class = line.replace("\t|\n", "").split(
+            "\t|\t"
+        )
         taxid = int(taxid)
 
         if taxid in mentioned_taxids or taxid in comparison_sample_counts:
@@ -305,19 +314,26 @@ virus_sample_counts = defaultdict(Counter)
 sample_metadata = defaultdict(dict)
 
 for project in projects:
-    with open("%s/bioprojects/%s/metadata/metadata.tsv" % (ROOT_DIR, project)) as inf:
+    with open(
+        "%s/bioprojects/%s/metadata/metadata.tsv" % (ROOT_DIR, project)
+    ) as inf:
         for line in inf:
             if not line.strip():
                 continue
             line = line[:-1]  # drop trailing newline
 
-            sample, sample_metadata_dict = sample_metadata_classifier.interpret(
+            (
+                sample,
+                sample_metadata_dict,
+            ) = sample_metadata_classifier.interpret(
                 project, papers, line.split("\t")
             )
             sample_metadata[sample] = sample_metadata_dict
 
     for sample in project_sample_reads[project]:
-        sample_metadata[sample]["reads"] = project_sample_reads[project][sample]
+        sample_metadata[sample]["reads"] = project_sample_reads[project][
+            sample
+        ]
 
         rf_fname = "ribofrac/%s.ribofrac.txt" % sample
         try:
@@ -349,7 +365,10 @@ for name, val in [
 ]:
     with open(DASHBOARD_DIR + name + ".json", "w") as outf:
         json.dump(
-            val, outf, sort_keys=True, indent=None if val is human_virus_tree else 2
+            val,
+            outf,
+            sort_keys=True,
+            indent=None if val is human_virus_tree else 2,
         )
 
 # To make the dashboard load faster, divide counts by bioproject and don't load

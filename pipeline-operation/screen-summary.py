@@ -41,7 +41,9 @@ def start():
         with tempfile.TemporaryDirectory() as workdir:
             tmpfname = os.path.join(workdir, "tmp.txt")
 
-            subprocess.check_call(["screen", "-S", screen, "-X", "hardcopy", tmpfname])
+            subprocess.check_call(
+                ["screen", "-S", screen, "-X", "hardcopy", tmpfname]
+            )
 
             # wait for screen to dump like we asked
             while not os.path.exists(tmpfname):

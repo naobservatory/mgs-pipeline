@@ -26,4 +26,6 @@ with open("raw_metadata.tsv") as inf:
             dd = date[2:4]
             yy = date[4:6]
 
-            outf.write("%s\t20%s-%s-%s\t%s\n" % (run_accession, yy, mm, dd, location))
+            outf.write(
+                "%s\t20%s-%s-%s\t%s\n" % (run_accession, yy, mm, dd, location)
+            )
