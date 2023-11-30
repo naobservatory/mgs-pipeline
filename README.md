@@ -368,16 +368,19 @@ rm bowtie2.zip
 
 #### Download pre-built human genome database
 
-For detecting human reads we use the standard pre-built "Human / GRCh38 no-alt
-analysis set" database from https://benlangmead.github.io/aws-indexes/bowtie
+For detecting human reads we use the standard pre-built telomere-to-telomere
+"Human / CHM13plusY" database from
+https://benlangmead.github.io/aws-indexes/bowtie.  See
+https://www.science.org/doi/10.1126/science.abj6987 for the construction of
+this genome.
 
 ```
 cd mgs-pipeline/bowtie
-aws s3 cp s3://genome-idx/bt/GRCh38_noalt_as.zip .
-unzip GRCh38_noalt_as.zip
-mv GRCh38_noalt_as/* .
-rmdir GRCh38_noalt_as
-rm GRCh38_noalt_as.zip
+aws s3 cp s3://genome-idx/bt/chm13.draft_v1.0_plusY.zip .
+unzip chm13.draft_v1.0_plusY.zip
+mv chm13.draft_v1.0_plusY/* .
+rmdir chm13.draft_v1.0_plusY
+rm chm13.draft_v1.0_plusY.zip
 ```
 
 #### Build custom human viral database

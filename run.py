@@ -920,7 +920,7 @@ def alignments(args):
 
    for sample in get_samples(args):
       for db in ["human", "hv"]:
-         combined_output_compressed = "%s.%.alignments.tsv.gz" % (
+         combined_output_compressed = "%s.%s.alignments.tsv.gz" % (
             sample, db)
          if combined_output_compressed in existing_outputs:
             continue

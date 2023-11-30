@@ -27,7 +27,7 @@ CMD+=" -S $OUT"
 
 if [ "$DB" = "human" ]; then
     # Pre-built human DB
-    CMD+=" -x /home/ec2-user/mgs-pipeline/bowtie/GRCh38_noalt_as"
+    CMD+=" -x /home/ec2-user/mgs-pipeline/bowtie/chm13.draft_v1.0_plusY"
     # When identifying human reads use default tuning settings.
 elif [ "$DB" = "hv" ]; then
     # Custom-built HV DB
