@@ -439,6 +439,17 @@ log/2023-01-01.prefix.PRJNA966185
 If the job fails, the last line in the log file will start with "ERROR:" and
 then have the exit code.
 
+Usually it's fine to run one process per bioproject, but sometimes it can be
+faster to run one process per sample.  In that case, give
+`./reprocess-bioprojects.py` a `--sample-level` argument.
+
+TODO(jefftk): if we stick with this pipeline system long term then I think we
+want it to have a structure where there's one quick stage that determines what
+work needs doing and how heavy each task is, and then another that actually
+parallelizes it.  Right now the human running the pipline has to know too much
+about what this specific invocation is going to do if they want ideal
+performance.
+
 ### Screen Oversight
 
 You can check in on parallelized jobs under screen with:

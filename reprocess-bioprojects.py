@@ -4,12 +4,24 @@
 # when there's a new stage, or a stage needs to be re-run.
 #
 # Usage: ./reprocess-bioprojects.sh \
-#    --max-jobs <N> --log-prefix <LP> -- arguments-for-run
+#    --max-jobs <N> --log-prefix <LP> [--sample-level] -- arguments-for-run
 #
-# Example: ./reprocess-bioprojects.sh \
-#    --max-jobs 12 --log-prefix rl -- --stages readlengths
+# Examples:
+#    ./reprocess-bioprojects.sh \
+#        --max-jobs 12 --log-prefix rl -- --stages readlengths
 #
 # You can pass --bioprojects A,B,C to run on only a subset of projects.
+#
+#    ./reprocess-bioprojects.sh \
+#        --bioprojects PRJNA729801 --max-jobs 12 --log-prefix rl \
+#        -- --stages readlengths
+#
+# And if you run --sample-level it will invoke run.py for each sample instead
+# of for each bioproject, allowing more parallelism but also more overhead.
+#
+#    ./reprocess-bioprojects.sh \
+#        --bioprojects PRJNA729801 --sample-level --max-jobs 12 \
+#        --log-prefix rl -- --stages readlengths
 
 import os
 import sys
@@ -33,7 +45,7 @@ if os.path.exists(restricted_dir):
     )
 
 
-def prepare_job(bioproject, log_prefix, run_args):
+def prepare_job(bioproject, log_prefix, *run_args):
     logfile = "%s/%s.%s.%s" % (log_dir, log_date, log_prefix, bioproject)
     return logfile, ["./run.py", "--bioproject", bioproject, *run_args]
 
@@ -46,21 +58,32 @@ def run_job(job):
             outf.write("ERROR: %s\n" % (result.returncode))
 
 
-def parallelize(max_jobs, log_prefix, bioprojects, run_args):
+def parallelize(config, bioprojects, run_args):
     job_queue = []
 
     for bioproject in bioprojects:
         args = run_args[:]
         if bioproject in restricted_bioprojects:
             args.append("--restricted")
+            root_dir = restricted_dir
         elif bioproject in regular_bioprojects:
-            pass
+            root_dir = "."
         else:
             raise Exception("Unknown bioproject %r" % bioproject)
 
-        job_queue.append(prepare_job(bioproject, log_prefix, args))
+        if config.sample_level:
+            with open(os.path.join(root_dir, "bioprojects", bioproject,
+                                   "metadata", "metadata.tsv")) as inf:
+                for line in inf:
+                    sample = line.strip().split()[0]
+                    job_queue.append(prepare_job(
+                        bioproject, config.log_prefix,
+                        "--sample", sample,
+                        *args))
+        else:
+            job_queue.append(prepare_job(bioproject, config.log_prefix, *args))
 
-    with ThreadPoolExecutor(max_workers=max_jobs) as executor:
+    with ThreadPoolExecutor(max_workers=config.max_jobs) as executor:
         for job in job_queue:
             executor.submit(run_job, job)
 
@@ -90,14 +113,18 @@ def start():
         "--bioprojects",
         help="The IDs of the bioproject to process, comma separated",
     )
-    args = parser.parse_args(our_args)
+    parser.add_argument(
+        "--sample-level",
+        action="store_true",
+        help="Parallelize at the sample level instead of the bioproject level")
+    config = parser.parse_args(our_args)
 
-    if args.bioprojects:
-        bioprojects = args.bioprojects.split(",")
+    if config.bioprojects:
+        bioprojects = config.bioprojects.split(",")
     else:
         bioprojects = regular_bioprojects + restricted_bioprojects
 
-    parallelize(args.max_jobs, args.log_prefix, bioprojects, run_args)
+    parallelize(config, bioprojects, run_args)
 
 
 if __name__ == "__main__":
