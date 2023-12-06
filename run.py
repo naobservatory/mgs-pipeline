@@ -1241,7 +1241,7 @@ def alignments(args):
 
                     tmp_outputs.append(tmp_output)
 
-                    # TODO(jefftk): do we have a problem when read1 or read2 is too
+                    # have a problem when read1 or read2 is too
                     # short?  I remember Bowtie choking on these before.
 
                     full_inputs = [
@@ -1270,7 +1270,8 @@ def alignments(args):
                                 query_name = bits[0]
                                 genomeid = bits[2]
                                 ref_start = bits[3]
-                                # The start position is 1-indexed, but we use 0-indexing.
+                                # The start position is 1-indexed, but we use
+                                # 0-indexing.
                                 ref_start = int(ref_start) - 1
                                 cigarstring = bits[5]
                                 query_len = len(bits[9])
@@ -1316,7 +1317,6 @@ def alignments(args):
                         ),
                     ]
                 )
-
 
 def phred_to_q(phred_score):
     return ord(phred_score) - ord("!")

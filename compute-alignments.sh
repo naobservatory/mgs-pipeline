@@ -19,7 +19,7 @@ OUT="$1"
 shift
 
 CMD="/home/ec2-user/bowtie2-2.5.2-linux-x86_64/bowtie2"
-CMD+=" --threads 28"
+CMD+=" --threads 8"
 CMD+=" --no-unal"
 CMD+=" --no-sq"
 CMD+=" -S $OUT"
