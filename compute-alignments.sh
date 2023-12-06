@@ -19,7 +19,6 @@ OUT="$1"
 shift
 
 CMD="/home/ec2-user/bowtie2-2.5.2-linux-x86_64/bowtie2"
-CMD+=" --local"
 CMD+=" --threads 28"
 CMD+=" --no-unal"
 CMD+=" --no-sq"
@@ -33,6 +32,7 @@ elif [ "$DB" = "hv" ]; then
     # Custom-built HV DB
     CMD+=" -x /home/ec2-user/mgs-pipeline/bowtie/human-viruses"
     # When identifying HV reads use looser settings and filter more later.
+    CMD+=" --local"
     CMD+=" --very-sensitive-local"
     CMD+=" --score-min G,1,0"
     CMD+=" --mp 4,1"

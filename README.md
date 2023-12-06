@@ -171,9 +171,13 @@ Available files, and their formats:
      its DB.
    * We run this twice: once with a standard human genome DB ("human"), and
      again with a custom DB of human-infecting viruses ("hv").
-   * Note that for the HV DB we've set the quality score to the minimum and you
-     likely want to filter some of these out based on a combination of
-     alignment score and trimmed read length.
+     * For Human reads it runs with default setting, and the score is zero for
+       perfect matches and increasingly negative for worse matches.
+     * For HV reads we're running with custom settings, and the score is
+       positive, higher for better matches.  Some reads with positive scores
+       are quite low quality matches: you likely want to filter with a
+       combination of alignment score and trimmed read length (ex:
+       Simon's been doing `score/ln(length) > 22`).
    * Non-collapsed reads will appear twice, one for the forward read and then
      one for the reverse.
    * Columns:
