@@ -45,8 +45,12 @@ if os.path.exists(restricted_dir):
     )
 
 
-def prepare_job(bioproject, log_prefix, *run_args):
+def prepare_job(bioproject, log_prefix, sample, run_args):
     logfile = "%s/%s.%s.%s" % (log_dir, log_date, log_prefix, bioproject)
+    if sample:
+        logfile = "%s.%s" % (logfile, sample)
+        run_args = list(run_args) + ["--sample", sample]
+
     return logfile, ["./run.py", "--bioproject", bioproject, *run_args]
 
 
@@ -77,11 +81,10 @@ def parallelize(config, bioprojects, run_args):
                 for line in inf:
                     sample = line.strip().split()[0]
                     job_queue.append(prepare_job(
-                        bioproject, config.log_prefix,
-                        "--sample", sample,
-                        *args))
+                        bioproject, config.log_prefix, sample, args))
         else:
-            job_queue.append(prepare_job(bioproject, config.log_prefix, *args))
+            job_queue.append(prepare_job(
+                bioproject, config.log_prefix, None, args))
 
     with ThreadPoolExecutor(max_workers=config.max_jobs) as executor:
         for job in job_queue:
