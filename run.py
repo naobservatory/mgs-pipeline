@@ -1241,8 +1241,8 @@ def alignments(args):
 
                     tmp_outputs.append(tmp_output)
 
-                    # have a problem when read1 or read2 is too
-                    # short?  I remember Bowtie choking on these before.
+                    # TODO(jefftk): do we have a problem when read1 or read2 is
+                    # too short?  I remember Bowtie choking on these before.
 
                     full_inputs = [
                         "%s/%s/cleaned/%s"
