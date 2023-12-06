@@ -1208,98 +1208,115 @@ def alignments(args):
         genomeid_to_taxid = json.load(inf)
 
     for sample in get_samples(args):
-        combined_output_compressed = sample + ".alignments.tsv.gz"
-        if combined_output_compressed in existing_outputs:
-            continue
+        for db in ["human", "hv"]:
+            combined_output_compressed = "%s.%s.alignments.tsv.gz" % (
+                sample,
+                db,
+            )
+            if combined_output_compressed in existing_outputs:
+                continue
 
-        with tempdir("alignments", sample) as workdir:
-            outputs = []
-            for potential_input in available_inputs:
-                if not potential_input.startswith(sample):
-                    continue
-                if ".settings" in potential_input:
-                    continue
-                if "discarded" in potential_input:
-                    continue
+            with tempdir("%s alignments" % db, sample) as workdir:
+                tmp_outputs = []
+                for potential_input in available_inputs:
+                    if not potential_input.startswith(sample):
+                        continue
+                    if ".settings" in potential_input:
+                        continue
+                    if "discarded" in potential_input:
+                        continue
 
-                output = potential_input.replace(".gz", ".alignments.tsv")
-                inputs = [potential_input]
-                if ".pair1." in output:
-                    output = output.replace(".pair1.", ".")
-                    inputs.append(
-                        potential_input.replace(".pair1.", ".pair2.")
+                    tmp_output = potential_input.replace(
+                        ".gz", ".alignments.tsv"
                     )
-                elif ".pair2" in output:
-                    # We handle pair1 and pair2 together.
-                    continue
+                    inputs = [potential_input]
+                    if ".pair1." in tmp_output:
+                        tmp_output = tmp_output.replace(".pair1.", ".")
+                        inputs.append(
+                            potential_input.replace(".pair1.", ".pair2.")
+                        )
+                    elif ".pair2" in tmp_output:
+                        # We handle pair1 and pair2 together.
+                        continue
 
-                outputs.append(output)
+                    tmp_outputs.append(tmp_output)
 
-                # TODO(jefftk): do we have a problem when read1 or read2 is too
-                # short?  I remember Bowtie choking on these before.
+                    # TODO(jefftk): do we have a problem when read1 or read2 is
+                    # too short?  I remember Bowtie choking on these before.
 
-                full_inputs = [
-                    "%s/%s/cleaned/%s"
-                    % (S3_BUCKET, args.bioproject, input_fname)
-                    for input_fname in inputs
-                ]
+                    full_inputs = [
+                        "%s/%s/cleaned/%s"
+                        % (S3_BUCKET, args.bioproject, input_fname)
+                        for input_fname in inputs
+                    ]
+
+                    subprocess.check_call(
+                        [
+                            os.path.join(THISDIR, "compute-alignments.sh"),
+                            db,
+                            tmp_output,
+                            *full_inputs,
+                        ]
+                    )
+
+                with gzip.open(combined_output_compressed, "wt") as outf:
+                    for tmp_output in tmp_outputs:
+                        with open(tmp_output) as inf:
+                            for line in inf:
+                                if line.startswith("@"):
+                                    continue
+                                bits = line.rstrip("\n").split("\t")
+
+                                query_name = bits[0]
+                                genomeid = bits[2]
+                                ref_start = bits[3]
+                                # The start position is 1-indexed, but we use
+                                # 0-indexing.
+                                ref_start = int(ref_start) - 1
+                                cigarstring = bits[5]
+                                query_len = len(bits[9])
+
+                                as_val = None
+                                for token in bits[11:]:
+                                    if token.startswith("AS:i:"):
+                                        as_val = token.replace("AS:i:", "")
+                                assert as_val
+                                as_val = int(as_val)
+
+                                if db == "human":
+                                    taxid = 9606
+                                    genome_name = genomeid
+                                else:
+                                    taxid, genome_name = genomeid_to_taxid[
+                                        genomeid
+                                    ]
+                                outf.write(
+                                    "%s\t%s\t%s\t%s\t%s\t%s\t%s\n"
+                                    % (
+                                        query_name,
+                                        genomeid,
+                                        taxid,
+                                        cigarstring,
+                                        ref_start,
+                                        as_val,
+                                        query_len,
+                                    )
+                                )
 
                 subprocess.check_call(
                     [
-                        os.path.join(THISDIR, "compute-alignments.sh"),
-                        output,
-                        *full_inputs,
+                        "aws",
+                        "s3",
+                        "cp",
+                        combined_output_compressed,
+                        "%s/%s/alignments/%s"
+                        % (
+                            S3_BUCKET,
+                            args.bioproject,
+                            combined_output_compressed,
+                        ),
                     ]
                 )
-
-            with gzip.open(combined_output_compressed, "wt") as outf:
-                for output in outputs:
-                    with open(output) as inf:
-                        for line in inf:
-                            if line.startswith("@"):
-                                continue
-                            bits = line.rstrip("\n").split("\t")
-
-                            query_name = bits[0]
-                            genomeid = bits[2]
-                            ref_start = bits[3]
-                            # The start position is 1-indexed, but we use 0-indexing.
-                            ref_start = int(ref_start) - 1
-                            cigarstring = bits[5]
-                            query_len = len(bits[9])
-
-                            as_val = None
-                            for token in bits[11:]:
-                                if token.startswith("AS:i:"):
-                                    as_val = token.replace("AS:i:", "")
-                            assert as_val
-                            as_val = int(as_val)
-
-                            taxid, genome_name = genomeid_to_taxid[genomeid]
-                            outf.write(
-                                "%s\t%s\t%s\t%s\t%s\t%s\t%s\n"
-                                % (
-                                    query_name,
-                                    genomeid,
-                                    taxid,
-                                    cigarstring,
-                                    ref_start,
-                                    as_val,
-                                    query_len,
-                                )
-                            )
-
-            subprocess.check_call(
-                [
-                    "aws",
-                    "s3",
-                    "cp",
-                    combined_output_compressed,
-                    "%s/%s/alignments/%s"
-                    % (S3_BUCKET, args.bioproject, combined_output_compressed),
-                ]
-            )
-
 
 def phred_to_q(phred_score):
     return ord(phred_score) - ord("!")
