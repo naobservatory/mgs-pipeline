@@ -4,7 +4,8 @@ rows = []
 with open("run_aliases.txt") as inf:
     for line in inf:
         run_accession, run_alias = line.strip().split("\t")
-        if run_accession == "run_accession": continue
+        if run_accession == "run_accession":
+            continue
 
         location = run_alias.split("_")[-3]
 
@@ -21,7 +22,7 @@ with open("run_aliases.txt") as inf:
             "Toronto": ("Canada", "Toronto"),
             "Washington": ("USA", "Washington DC"),
         }[location]
-        
+
         # I don't see how to get sample dates from the paper.  Supplementary
         # table 7 seems like it should have this information, but I don't see
         # any mapping from sample IDs ("Thailand 2") to rows in the table.

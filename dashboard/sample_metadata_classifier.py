@@ -29,7 +29,8 @@ def interpret(project, papers, bits):
                 "ESC": "San Diego County",
             }[wtp],
             fine_location=wtp,
-            enrichment="panel" if is_enriched == "1" else "viral")
+            enrichment="panel" if is_enriched == "1" else "viral",
+        )
     elif project in papers["Crits-Christoph 2021"]["projects"]:
         sample, municipality, date, method, sequencing = bits
         return sample, dict(
@@ -45,7 +46,8 @@ def interpret(project, papers, bits):
             }[municipality],
             fine_location=municipality,
             method=method,
-            enrichment="panel" if sequencing == "enriched" else "viral")
+            enrichment="panel" if sequencing == "enriched" else "viral",
+        )
     elif project in papers["Brumfield 2022"]["projects"]:
         sample, na_type, date = bits
         return sample, dict(
@@ -54,21 +56,24 @@ def interpret(project, papers, bits):
             state="Maryland",
             location="Maryland",
             fine_location="Manhole",
-            na_type=na_type)
+            na_type=na_type,
+        )
     elif project in papers["Bengtsson-Palme 2016"]["projects"]:
         sample, location, site = bits
         return sample, dict(
             date="2012-09",
             country="Sweden",
             location=location,
-            fine_location=site)
+            fine_location=site,
+        )
     elif project in papers["Brinch 2020"]["projects"]:
         sample, loc, date = bits
         return sample, dict(
             date=date,
             country="Denmark",
             location="Copenhagen",
-            fine_location=loc)
+            fine_location=loc,
+        )
     elif project in papers["Spurbeck 2023"]["projects"]:
         sample, loc, date = bits
         return sample, dict(
@@ -102,14 +107,12 @@ def interpret(project, papers, bits):
                 "H": "EFGH",
                 "I": "IJ",
                 "J": "IJ",
-            }[loc])
+            }[loc],
+        )
 
     elif project in papers["Munk 2022"]["projects"]:
         sample, country, location, date = bits
-        return sample, dict(
-            date=date,
-            country=country,
-            location=location)
+        return sample, dict(date=date, country=country, location=location)
     elif project in papers["Petersen 2015"]["projects"]:
         sample, country, city = bits
         return sample, dict(
@@ -119,7 +122,8 @@ def interpret(project, papers, bits):
             # 27-06-2013, 29-08-2013, 24-08-2013.  But the mapping
             # between samples and dates doesn't seem to be in the
             # paper.
-            date="Summer 2013")
+            date="Summer 2013",
+        )
     elif project in papers["Maritz 2019"]["projects"]:
         sample = bits[0]
         return sample, dict(
@@ -129,7 +133,8 @@ def interpret(project, papers, bits):
             # Paper has "17 raw sewage samples collected from 14 DEP
             # wastewater treatment plants from the five NYC boroughs in
             # November 2014".
-            date="2014-11")
+            date="2014-11",
+        )
     elif project in papers["Fierer 2022"]["projects"]:
         sample = bits[0]
         return sample, dict(
@@ -139,7 +144,8 @@ def interpret(project, papers, bits):
             location="Boulder, CO",
             # I can't find metadata on which samples are from which
             # days or which spots on campus.
-            date="2020-09")
+            date="2020-09",
+        )
     elif project in papers["Ng 2019"]["projects"]:
         sample, stage, date = bits
         return sample, dict(
@@ -153,36 +159,38 @@ def interpret(project, papers, bits):
                 "Effluent from Wet Well (WW)": "WW",
                 "Influent": "Influent",
                 "Sludge (SLUDGE)": "Sludge",
-            }[stage])
+            }[stage],
+        )
     elif project in papers["Hendriksen 2019"]["projects"]:
         sample, date, cluster = bits
         return sample, dict(
             country="Kenya",
             location="Kibera",
             fine_location=cluster,
-            date=date)
+            date=date,
+        )
     elif project in papers["Yang 2020"]["projects"]:
         sample, city = bits
         return sample, dict(
-            country="China",
-            location=city,
-            date="2018",
-            enrichment="viral")
+            country="China", location=city, date="2018", enrichment="viral"
+        )
     elif project in papers["Wang 2022"]["projects"]:
         sample, date, hospital = bits
         return sample, dict(
             country="Saudi Arabia",
             location="Jeddah",
             date=date,
-            fine_location=hospital)
+            fine_location=hospital,
+        )
     elif project in papers["Cui 2023"]["projects"]:
-        sample, = bits
+        (sample,) = bits
         return sample, dict(
             country="China",
             # Also possible this was Changchun
             location="Harbin",
             # Also possible this was 2020-10-15
-            date="2022-10-19")
+            date="2022-10-19",
+        )
     elif project in papers["McCall 2023"]["projects"]:
         sample, reads, method, designation = bits
         designation = designation.replace("Rice_ViroCap_", "")
@@ -191,14 +199,18 @@ def interpret(project, papers, bits):
         targeted_DE = sample_letter.endswith("_targetedDE")
         sample_letter = sample_letter.split("_")[0]
 
-        fine_location = {
-            "ECC": "Child Care",
-            "HS": "High School",
-            "Jail": "Jail",
-            "Shel": "Shelter",
-            "NH": "Nursing Home",
-            "WWTP": "WTP",
-        }[fine_location] + "-" + sample_letter
+        fine_location = (
+            {
+                "ECC": "Child Care",
+                "HS": "High School",
+                "Jail": "Jail",
+                "Shel": "Shelter",
+                "NH": "Nursing Home",
+                "WWTP": "WTP",
+            }[fine_location]
+            + "-"
+            + sample_letter
+        )
 
         if targeted_DE:
             fine_location += "-DE"
@@ -218,9 +230,10 @@ def interpret(project, papers, bits):
             # Paper doesn't seem to list a date.  Guess 2022 while we find out.
             # https://twist.com/a/197793/ch/619193/t/4469435/
             date="2022",
-            enrichment=enrichment)
+            enrichment=enrichment,
+        )
     elif project in papers["Wu 2020"]["projects"]:
-        sample, = bits
+        (sample,) = bits
         return sample, dict(
             country="China",
             city="Wuhan",
@@ -228,13 +241,11 @@ def interpret(project, papers, bits):
             # Patient admitted 2019-12-26. Transferred 6 days after
             #  admission.
             date="2020-01",
-            collection="bronchoalveolar lavage fluid")
+            collection="bronchoalveolar lavage fluid",
+        )
     elif project in papers["Riquelme 2022"]["projects"]:
         sample, wtp, country, date = bits
-        return sample, dict(
-            date=date,
-            country=country,
-            location=wtp)
+        return sample, dict(date=date, country=country, location=wtp)
     elif project in papers["Langenfeld 2022"]["projects"]:
         sample, date, source = bits
         return sample, dict(
@@ -247,14 +258,15 @@ def interpret(project, papers, bits):
             city="Ann Arbor",
         )
     elif project in papers["Bohl 2022"]["projects"]:
-        sample, = bits
+        (sample,) = bits
         return sample, dict(
             country="Cambodia",
             city="Chbar Mon",
             state="Kampong Speu",
             # Patient samples collected between March 2019 and October 2020
             date="2020",
-            collection="blood serum")
+            collection="blood serum",
+        )
     elif project in papers["Tisza 2023"]["projects"]:
         sample, _, enrichment, loc, city_state, date, flow = bits
         city, state = city_state.split(", ")
@@ -263,10 +275,11 @@ def interpret(project, papers, bits):
             city=city,
             state="Texas",
             location=loc,
-            date=date)
+            date=date,
+        )
         if enrichment == "1":
             record["enrichment"] = "panel"
-        
+
         return sample, record
     else:
         raise Exception("Metadata format for %s unknown" % project)
