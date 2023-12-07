@@ -61,12 +61,18 @@ def interpret(project, papers, bits):
     elif project in papers["Bengtsson-Palme 2016"]["projects"]:
         sample, location, site = bits
         return sample, dict(
-            date="2012-09", country="Sweden", location=location, fine_location=site
+            date="2012-09",
+            country="Sweden",
+            location=location,
+            fine_location=site,
         )
     elif project in papers["Brinch 2020"]["projects"]:
         sample, loc, date = bits
         return sample, dict(
-            date=date, country="Denmark", location="Copenhagen", fine_location=loc
+            date=date,
+            country="Denmark",
+            location="Copenhagen",
+            fine_location=loc,
         )
     elif project in papers["Spurbeck 2023"]["projects"]:
         sample, loc, date = bits
@@ -158,7 +164,10 @@ def interpret(project, papers, bits):
     elif project in papers["Hendriksen 2019"]["projects"]:
         sample, date, cluster = bits
         return sample, dict(
-            country="Kenya", location="Kibera", fine_location=cluster, date=date
+            country="Kenya",
+            location="Kibera",
+            fine_location=cluster,
+            date=date,
         )
     elif project in papers["Yang 2020"]["projects"]:
         sample, city = bits
@@ -168,7 +177,10 @@ def interpret(project, papers, bits):
     elif project in papers["Wang 2022"]["projects"]:
         sample, date, hospital = bits
         return sample, dict(
-            country="Saudi Arabia", location="Jeddah", date=date, fine_location=hospital
+            country="Saudi Arabia",
+            location="Jeddah",
+            date=date,
+            fine_location=hospital,
         )
     elif project in papers["Cui 2023"]["projects"]:
         (sample,) = bits
@@ -261,7 +273,11 @@ def interpret(project, papers, bits):
         sample, _, enrichment, loc, city_state, date, flow = bits
         city, state = city_state.split(", ")
         record = dict(
-            country="United States", city=city, state="Texas", location=loc, date=date
+            country="United States",
+            city=city,
+            state="Texas",
+            location=loc,
+            date=date,
         )
         if enrichment == "1":
             record["enrichment"] = "panel"
