@@ -48,12 +48,15 @@ def load_data(sample):
     }
     cdata["processed"] = {}
 
+    all_reads = set()
+
     with open(os.path.join(cdata["dashboard_dir"],
                            "hvreads",
                            "%s.hvreads.json" % sample)) as inf:
         hvr = json.load(inf)
         for read_id in hvr:
             cdata["hvreads"][read_id] = hvr[read_id]
+            all_reads.add(read_id)
 
     for bowtie_db in cdata["alignments"]:
         with gzip.open(os.path.join(cdata["dashboard_dir"],
@@ -64,6 +67,7 @@ def load_data(sample):
             for line in inf:
                 bits = line.removesuffix("\n").split("\t")
                 read_id = bits[0]
+                all_reads.add(read_id)
                 cdata["alignments"][bowtie_db][read_id].append(bits)
 
     # This one is so big we process it streaming.
@@ -74,6 +78,11 @@ def load_data(sample):
             for line in inf:
                 bits = line.removesuffix("\n").split("\t")
                 read_id = bits[1]
+                if read_id not in all_reads:
+                    # All of the classifiers need at least an HVR or alignment
+                    # hit, so we can speed things up a lot by ignoring any
+                    # reads that don't have one of these.
+                    continue
                 cdata["processed"] = bits
                 yield read_id, cdata
 
