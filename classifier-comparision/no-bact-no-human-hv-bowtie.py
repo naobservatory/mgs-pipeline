@@ -7,15 +7,14 @@ def classify(sample, read_id, cdata):
     if human_al:
         return False
 
-    kraken_result = cdata["processed"].get(read_id, None)
-    if kraken_result:
-        taxid, = re.findall(".*taxid ([0-9]+).*", kraken_result[2])
-        taxid = int(taxid)
+    kraken_result = cdata["processed"]
+    taxid, = re.findall(".*taxid ([0-9]+).*", kraken_result[2])
+    taxid = int(taxid)
 
-        if taxid == 9606:  # Kraken assigned human
-            return False
-        if cdata["is_bacterial"](taxid):
-            return False
+    if taxid == 9606:  # Kraken assigned human
+        return False
+    if cdata["is_bacterial"](taxid):
+        return False
     
     hv_al = cdata["alignments"]["hv"].get(read_id, None)
     if not hv_al:
