@@ -29,11 +29,14 @@ restricted_bioprojects = []
 restricted_dir = os.path.join("..", "mgs-restricted")
 if os.path.exists(restricted_dir):
     restricted_bioprojects = os.listdir(
-        os.path.join(restricted_dir, "bioprojects"))
+        os.path.join(restricted_dir, "bioprojects")
+    )
+
 
 def prepare_job(bioproject, log_prefix, run_args):
     logfile = "%s/%s.%s.%s" % (log_dir, log_date, log_prefix, bioproject)
     return logfile, ["./run.py", "--bioproject", bioproject, *run_args]
+
 
 def run_job(job):
     logfile, cmd = job
@@ -41,6 +44,7 @@ def run_job(job):
         result = subprocess.run(cmd, stdout=outf, stderr=subprocess.STDOUT)
         if result.returncode != 0:
             outf.write("ERROR: %s\n" % (result.returncode))
+
 
 def parallelize(max_jobs, log_prefix, bioprojects, run_args):
     job_queue = []
@@ -60,24 +64,32 @@ def parallelize(max_jobs, log_prefix, bioprojects, run_args):
         for job in job_queue:
             executor.submit(run_job, job)
 
+
 def start():
     argv = sys.argv[1:]
     if "--" not in argv:
         raise Exception("Use -- to separate arguments to ./run.py.")
 
-    our_args = argv[:argv.index("--")]
-    run_args = argv[argv.index("--") + 1:]
+    our_args = argv[: argv.index("--")]
+    run_args = argv[argv.index("--") + 1 :]
 
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        '--max-jobs', metavar='N', type=int, required=True,
-        help='maximum number of jobs to run at once',)
+        "--max-jobs",
+        metavar="N",
+        type=int,
+        required=True,
+        help="maximum number of jobs to run at once",
+    )
     parser.add_argument(
-        '--log-prefix', required=True,
-        help='Log prefix, for storing this run under log/')
+        "--log-prefix",
+        required=True,
+        help="Log prefix, for storing this run under log/",
+    )
     parser.add_argument(
-        '--bioprojects',
-        help='The IDs of the bioproject to process, comma separated')
+        "--bioprojects",
+        help="The IDs of the bioproject to process, comma separated",
+    )
     args = parser.parse_args(our_args)
 
     if args.bioprojects:
@@ -87,5 +99,6 @@ def start():
 
     parallelize(args.max_jobs, args.log_prefix, bioprojects, run_args)
 
+
 if __name__ == "__main__":
-   start()
+    start()

@@ -3,9 +3,14 @@
 with open("raw_metadata.tsv") as inf:
     with open("metadata.tsv", "w") as outf:
         for line in inf:
-            run_accession, sample_accession, read_counts, sample_alias = \
-                line.strip().split("\t")
-            if run_accession == "run_accession": continue
+            (
+                run_accession,
+                sample_accession,
+                read_counts,
+                sample_alias,
+            ) = line.strip().split("\t")
+            if run_accession == "run_accession":
+                continue
 
             location_id, date = sample_alias.rsplit("_", 1)
 
@@ -20,7 +25,7 @@ with open("raw_metadata.tsv") as inf:
             mm = date[0:2]
             dd = date[2:4]
             yy = date[4:6]
-            
-            outf.write("%s\t20%s-%s-%s\t%s\n" % (
-                run_accession, yy, mm, dd, location
-            ))
+
+            outf.write(
+                "%s\t20%s-%s-%s\t%s\n" % (run_accession, yy, mm, dd, location)
+            )
