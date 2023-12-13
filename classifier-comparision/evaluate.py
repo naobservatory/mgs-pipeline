@@ -8,7 +8,8 @@ import json
 import importlib
 from collections import Counter, defaultdict
 
-MGS_PIPELINE_DIR = os.path.join(os.path.dirname(__file__), "..")
+THIS_DIR = os.path.dirname(__file__)
+MGS_PIPELINE_DIR = os.path.join(THIS_DIR, "..")
 DASHBOARD_DIR = os.path.join(MGS_PIPELINE_DIR, "dashboard")
 
 parents = {}
@@ -105,12 +106,25 @@ def start(*classifier_names):
     metric_names = [
         "totpos", "truepos", "trueneg", "falsepos", "falseneg"]
 
+    all_notes = {}
     for sample in sorted(samples):
         #if sample != "SRR14530891":
         #    continue
+        sample_notes = {}
         for read_id, cdata in load_data(sample):
-            for classifier, metric in zip(classifiers, metrics):
-                result = classifier.classify(sample, read_id, cdata)
+            read_notes = {}
+            if read_id in gt_read_ids:
+                read_notes["hv"] = read_id in ground_truth["yes"]
+
+            for classifier_name, classifier, metric in zip(
+                    classifier_names, classifiers, metrics):
+                out = classifier.classify(sample, read_id, cdata)
+                if type(out) == type(True):
+                    result = out
+                    classifier_notes = None
+                else:
+                    result, classifier_notes = out
+
                 if read_id in gt_read_ids:
                     is_hv = read_id in ground_truth["yes"]
 
@@ -122,8 +136,17 @@ def start(*classifier_names):
                     }[is_hv, result]
                     metric[status] += 1
 
+                    if classifier_notes:
+                        read_notes[classifier_name] = classifier_notes
+
                 if result:
                     metric["totpos"] += 1
+            if read_notes:
+                sample_notes[read_id] = read_notes
+        all_notes[sample] = sample_notes
+
+    with open(os.path.join(THIS_DIR, "evaluation_notes.json"), "w") as outf:
+        json.dump(all_notes, outf)
 
     classifier_column_width = max(
         len(classifier_name)
