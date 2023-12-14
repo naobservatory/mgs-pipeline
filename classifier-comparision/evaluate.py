@@ -121,9 +121,11 @@ def start(*classifier_names):
                 out = classifier.classify(sample, read_id, cdata)
                 if type(out) == type(True):
                     result = out
-                    classifier_notes = None
+                    classifier_notes = {}
                 else:
                     result, classifier_notes = out
+
+                classifier_notes["hv"] = result
 
                 if read_id in gt_read_ids:
                     is_hv = read_id in ground_truth["yes"]
@@ -136,12 +138,20 @@ def start(*classifier_names):
                     }[is_hv, result]
                     metric[status] += 1
 
-                    if classifier_notes:
-                        read_notes[classifier_name] = classifier_notes
-
                 if result:
                     metric["totpos"] += 1
-            if read_notes:
+
+                read_notes[classifier_name] = classifier_notes
+
+            log_notes = False
+            if read_id in gt_read_ids:
+                log_notes = True
+            elif (read_notes.get("kraken-hits", {}).get("hv") !=
+                  read_notes.get(
+                      "bowtie-on-kraken-unclassified", {}).get("hv")):
+                log_notes = True
+
+            if read_notes and log_notes:
                 sample_notes[read_id] = read_notes
         all_notes[sample] = sample_notes
 
