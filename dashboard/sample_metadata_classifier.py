@@ -278,8 +278,24 @@ def interpret(project, papers, bits):
             date=date,
         )
         if enrichment == "1":
-            record["enrichment"] = "panel"
-
+            record["enrichment"] = "panel" 
         return sample, record
+    elif project in papers["Blauwkamp 2019"]["projects"]:
+        sample, = bits
+        return sample, dict(
+                country="United States",
+                collection="plasma")
+    elif project in papers["Grumaz 2016"]["projects"]:
+        sample, = bits
+        return sample, dict(
+                country="Germany",
+                city="Heidelberg",
+                collection="plasma")
+    elif project in papers["Cebria-Mendoza 2021"]["projects"]:
+        sample, = bits
+        return sample, dict(
+                country="Spain",
+                city="Valencia",
+                collection="plasma")
     else:
         raise Exception("Metadata format for %s unknown" % project)
