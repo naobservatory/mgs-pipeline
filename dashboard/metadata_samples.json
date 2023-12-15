@@ -12709,6 +12709,7 @@
     "collection": "bronchoalveolar lavage fluid",
     "country": "China",
     "date": "2020-01",
+    "location": "Wuhan",
     "reads": 28282964,
     "ribofrac": "0.6106",
     "state": "Hubei"
@@ -12906,6 +12907,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 2132,
     "ribofrac": "0.2007",
     "state": "Kampong Speu"
@@ -12915,6 +12917,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 1662,
     "ribofrac": "0.1563",
     "state": "Kampong Speu"
@@ -12924,6 +12927,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 3600,
     "ribofrac": "0.1779",
     "state": "Kampong Speu"
@@ -12933,6 +12937,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 148,
     "ribofrac": "0.1149",
     "state": "Kampong Speu"
@@ -12942,6 +12947,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 149,
     "ribofrac": "0.1477",
     "state": "Kampong Speu"
@@ -12951,6 +12957,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 319,
     "ribofrac": "0.1097",
     "state": "Kampong Speu"
@@ -12960,6 +12967,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 611,
     "ribofrac": "0.0917",
     "state": "Kampong Speu"
@@ -12969,6 +12977,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 216,
     "ribofrac": "0.1296",
     "state": "Kampong Speu"
@@ -12978,6 +12987,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 29,
     "ribofrac": "0.069",
     "state": "Kampong Speu"
@@ -12987,6 +12997,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 891,
     "ribofrac": "0.1347",
     "state": "Kampong Speu"
@@ -12996,6 +13007,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 1582,
     "ribofrac": "0.2178",
     "state": "Kampong Speu"
@@ -13005,6 +13017,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 12348,
     "ribofrac": "0.0124",
     "state": "Kampong Speu"
@@ -13014,6 +13027,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 25,
     "ribofrac": "0.36",
     "state": "Kampong Speu"
@@ -13023,6 +13037,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 18323,
     "ribofrac": "0.1679",
     "state": "Kampong Speu"
@@ -13032,6 +13047,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 66,
     "ribofrac": "0.0455",
     "state": "Kampong Speu"
@@ -13041,6 +13057,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 9490,
     "ribofrac": "0.1564",
     "state": "Kampong Speu"
@@ -13050,6 +13067,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 19,
     "ribofrac": "0.1579",
     "state": "Kampong Speu"
@@ -13059,6 +13077,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 175,
     "ribofrac": "0.1771",
     "state": "Kampong Speu"
@@ -13068,6 +13087,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 247,
     "ribofrac": "0.1134",
     "state": "Kampong Speu"
@@ -13077,6 +13097,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 65,
     "ribofrac": "0.1538",
     "state": "Kampong Speu"
@@ -13086,6 +13107,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 8194,
     "ribofrac": "0.1827",
     "state": "Kampong Speu"
@@ -13095,6 +13117,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 183,
     "ribofrac": "0.0984",
     "state": "Kampong Speu"
@@ -13104,6 +13127,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 381,
     "ribofrac": "0.0656",
     "state": "Kampong Speu"
@@ -13113,6 +13137,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 60,
     "ribofrac": "0.0667",
     "state": "Kampong Speu"
@@ -13122,6 +13147,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 50,
     "ribofrac": "0.06",
     "state": "Kampong Speu"
@@ -13131,6 +13157,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 64,
     "ribofrac": "0.2031",
     "state": "Kampong Speu"
@@ -13140,6 +13167,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 3664,
     "ribofrac": "0.2676",
     "state": "Kampong Speu"
@@ -13149,6 +13177,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 493,
     "ribofrac": "0.0345",
     "state": "Kampong Speu"
@@ -13158,6 +13187,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 109,
     "ribofrac": "0.156",
     "state": "Kampong Speu"
@@ -13167,6 +13197,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 80,
     "ribofrac": "0.1",
     "state": "Kampong Speu"
@@ -13176,6 +13207,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 85,
     "ribofrac": "0.2",
     "state": "Kampong Speu"
@@ -13185,6 +13217,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 61,
     "ribofrac": "0.2623",
     "state": "Kampong Speu"
@@ -13194,6 +13227,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 77,
     "ribofrac": "0.0779",
     "state": "Kampong Speu"
@@ -13203,6 +13237,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 215,
     "ribofrac": "0.2744",
     "state": "Kampong Speu"
@@ -13212,6 +13247,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 13,
     "ribofrac": "0.0769",
     "state": "Kampong Speu"
@@ -13221,6 +13257,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 1612,
     "ribofrac": "0.1855",
     "state": "Kampong Speu"
@@ -13230,6 +13267,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 428,
     "ribofrac": "0.1449",
     "state": "Kampong Speu"
@@ -13239,6 +13277,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 722,
     "ribofrac": "0.0651",
     "state": "Kampong Speu"
@@ -13248,6 +13287,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 11597,
     "ribofrac": "0.1078",
     "state": "Kampong Speu"
@@ -13257,6 +13297,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 13845,
     "ribofrac": "0.2638",
     "state": "Kampong Speu"
@@ -13266,6 +13307,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 7478,
     "ribofrac": "0.2678",
     "state": "Kampong Speu"
@@ -13275,6 +13317,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 8514,
     "ribofrac": "0.2202",
     "state": "Kampong Speu"
@@ -13284,6 +13327,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 6538,
     "ribofrac": "0.1525",
     "state": "Kampong Speu"
@@ -13293,6 +13337,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 1330,
     "ribofrac": "0.1749",
     "state": "Kampong Speu"
@@ -13302,6 +13347,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 6087,
     "ribofrac": "0.232",
     "state": "Kampong Speu"
@@ -13311,6 +13357,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 8733,
     "ribofrac": "0.1808",
     "state": "Kampong Speu"
@@ -13320,6 +13367,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 14943,
     "ribofrac": "0.0046",
     "state": "Kampong Speu"
@@ -13329,6 +13377,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 8770,
     "ribofrac": "0.0221",
     "state": "Kampong Speu"
@@ -13338,6 +13387,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 85,
     "ribofrac": "0.1176",
     "state": "Kampong Speu"
@@ -13347,6 +13397,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 8431,
     "ribofrac": "0.1946",
     "state": "Kampong Speu"
@@ -13356,6 +13407,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 4,
     "ribofrac": "0.5",
     "state": "Kampong Speu"
@@ -13365,6 +13417,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 1174,
     "ribofrac": "0.1584",
     "state": "Kampong Speu"
@@ -13374,6 +13427,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 1011,
     "ribofrac": "0.2047",
     "state": "Kampong Speu"
@@ -13383,6 +13437,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 1670,
     "ribofrac": "0.2402",
     "state": "Kampong Speu"
@@ -13392,6 +13447,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 1414,
     "ribofrac": "0.1963",
     "state": "Kampong Speu"
@@ -13401,6 +13457,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 10784,
     "ribofrac": "0.0048",
     "state": "Kampong Speu"
@@ -13410,6 +13467,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 3370,
     "ribofrac": "0.2075",
     "state": "Kampong Speu"
@@ -13419,6 +13477,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 20384,
     "ribofrac": "0.2126",
     "state": "Kampong Speu"
@@ -13428,6 +13487,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 1437,
     "ribofrac": "0.2246",
     "state": "Kampong Speu"
@@ -13437,6 +13497,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 897,
     "ribofrac": "0.2609",
     "state": "Kampong Speu"
@@ -13446,6 +13507,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 937,
     "ribofrac": "0.4888",
     "state": "Kampong Speu"
@@ -13455,6 +13517,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 2886,
     "ribofrac": "0.2876",
     "state": "Kampong Speu"
@@ -13464,6 +13527,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 1841,
     "ribofrac": "0.566",
     "state": "Kampong Speu"
@@ -13473,6 +13537,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 4281,
     "ribofrac": "0.3596",
     "state": "Kampong Speu"
@@ -13482,6 +13547,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 2458,
     "ribofrac": "0.5306",
     "state": "Kampong Speu"
@@ -13491,6 +13557,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 594,
     "ribofrac": "0.468",
     "state": "Kampong Speu"
@@ -13500,6 +13567,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 3310,
     "ribofrac": "0.3459",
     "state": "Kampong Speu"
@@ -13509,6 +13577,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 7600,
     "ribofrac": "0.2638",
     "state": "Kampong Speu"
@@ -13518,6 +13587,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 8096,
     "ribofrac": "0.2199",
     "state": "Kampong Speu"
@@ -13527,6 +13597,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 7941,
     "ribofrac": "0.4917",
     "state": "Kampong Speu"
@@ -13536,6 +13607,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 5161,
     "ribofrac": "0.4129",
     "state": "Kampong Speu"
@@ -13545,6 +13617,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 2999,
     "ribofrac": "0.2901",
     "state": "Kampong Speu"
@@ -13554,6 +13627,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 832,
     "ribofrac": "0.2837",
     "state": "Kampong Speu"
@@ -13563,6 +13637,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 1896,
     "ribofrac": "0.3792",
     "state": "Kampong Speu"
@@ -13572,6 +13647,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 6426,
     "ribofrac": "0.2433",
     "state": "Kampong Speu"
@@ -13581,6 +13657,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 3377,
     "ribofrac": "0.4133",
     "state": "Kampong Speu"
@@ -13590,6 +13667,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 1298,
     "ribofrac": "0.3683",
     "state": "Kampong Speu"
@@ -13599,6 +13677,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 6597,
     "ribofrac": "0.2681",
     "state": "Kampong Speu"
@@ -13608,6 +13687,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 2560,
     "ribofrac": "0.5209",
     "state": "Kampong Speu"
@@ -13617,6 +13697,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 66902,
     "ribofrac": "0.0014",
     "state": "Kampong Speu"
@@ -13626,6 +13707,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 14753,
     "ribofrac": "0.4068",
     "state": "Kampong Speu"
@@ -13635,6 +13717,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 22089,
     "ribofrac": "0.3799",
     "state": "Kampong Speu"
@@ -13644,6 +13727,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 15243,
     "ribofrac": "0.2531",
     "state": "Kampong Speu"
@@ -13653,6 +13737,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 9555,
     "ribofrac": "0.2198",
     "state": "Kampong Speu"
@@ -13662,6 +13747,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 6461,
     "ribofrac": "0.4158",
     "state": "Kampong Speu"
@@ -13671,6 +13757,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 11848,
     "ribofrac": "0.3458",
     "state": "Kampong Speu"
@@ -13680,6 +13767,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 9383,
     "ribofrac": "0.4109",
     "state": "Kampong Speu"
@@ -13689,6 +13777,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 7967,
     "ribofrac": "0.2738",
     "state": "Kampong Speu"
@@ -13698,6 +13787,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 1799,
     "ribofrac": "0.352",
     "state": "Kampong Speu"
@@ -13707,6 +13797,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 16949,
     "ribofrac": "0.3341",
     "state": "Kampong Speu"
@@ -13716,6 +13807,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 11018,
     "ribofrac": "0.3226",
     "state": "Kampong Speu"
@@ -13725,6 +13817,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 3015,
     "ribofrac": "0.3597",
     "state": "Kampong Speu"
@@ -13734,6 +13827,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 765,
     "ribofrac": "0.1556",
     "state": "Kampong Speu"
@@ -13743,6 +13837,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 1122,
     "ribofrac": "0.2003",
     "state": "Kampong Speu"
@@ -13752,6 +13847,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 4817,
     "ribofrac": "0.3987",
     "state": "Kampong Speu"
@@ -13761,6 +13857,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 14302,
     "ribofrac": "0.131",
     "state": "Kampong Speu"
@@ -13770,6 +13867,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 2710,
     "ribofrac": "0.3978",
     "state": "Kampong Speu"
@@ -13779,6 +13877,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 1792,
     "ribofrac": "0.3766",
     "state": "Kampong Speu"
@@ -13788,6 +13887,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 5055,
     "ribofrac": "0.1973",
     "state": "Kampong Speu"
@@ -13797,6 +13897,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 35499,
     "ribofrac": "0.0048",
     "state": "Kampong Speu"
@@ -13806,6 +13907,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 33637,
     "ribofrac": "0.2204",
     "state": "Kampong Speu"
@@ -13815,6 +13917,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 6188,
     "ribofrac": "0.1616",
     "state": "Kampong Speu"
@@ -13824,6 +13927,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 3196,
     "ribofrac": "0.1485",
     "state": "Kampong Speu"
@@ -13833,6 +13937,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 1709,
     "ribofrac": "0.1963",
     "state": "Kampong Speu"
@@ -13842,6 +13947,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 11402,
     "ribofrac": "0.2813",
     "state": "Kampong Speu"
@@ -13851,6 +13957,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 3883,
     "ribofrac": "0.2758",
     "state": "Kampong Speu"
@@ -13860,6 +13967,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 14231,
     "ribofrac": "0.2751",
     "state": "Kampong Speu"
@@ -13869,6 +13977,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 7,
     "ribofrac": "0.1429",
     "state": "Kampong Speu"
@@ -13878,6 +13987,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 9681,
     "ribofrac": "0.4581",
     "state": "Kampong Speu"
@@ -13887,6 +13997,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 19,
     "ribofrac": "0.2632",
     "state": "Kampong Speu"
@@ -13896,6 +14007,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 3193,
     "ribofrac": "0.1632",
     "state": "Kampong Speu"
@@ -13905,6 +14017,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 92,
     "ribofrac": "0.0109",
     "state": "Kampong Speu"
@@ -13914,6 +14027,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 159,
     "ribofrac": "0.3333",
     "state": "Kampong Speu"
@@ -13923,6 +14037,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 5479,
     "ribofrac": "0.0185",
     "state": "Kampong Speu"
@@ -13932,6 +14047,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 111,
     "ribofrac": "0.3333",
     "state": "Kampong Speu"
@@ -13941,6 +14057,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 49,
     "ribofrac": "0.1633",
     "state": "Kampong Speu"
@@ -13950,6 +14067,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 427,
     "ribofrac": "0.2693",
     "state": "Kampong Speu"
@@ -13959,6 +14077,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 532,
     "ribofrac": "0.1842",
     "state": "Kampong Speu"
@@ -13968,6 +14087,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 271,
     "ribofrac": "0.3579",
     "state": "Kampong Speu"
@@ -13977,6 +14097,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 137,
     "ribofrac": "0.1971",
     "state": "Kampong Speu"
@@ -13986,6 +14107,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 3172,
     "ribofrac": "0.1864",
     "state": "Kampong Speu"
@@ -13995,6 +14117,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 17596,
     "ribofrac": "0.0289",
     "state": "Kampong Speu"
@@ -14004,6 +14127,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 1432,
     "ribofrac": "0.1952",
     "state": "Kampong Speu"
@@ -14013,6 +14137,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 414,
     "ribofrac": "0.2512",
     "state": "Kampong Speu"
@@ -14022,6 +14147,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 861,
     "ribofrac": "0.2311",
     "state": "Kampong Speu"
@@ -14031,6 +14157,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 15662,
     "ribofrac": "0.2269",
     "state": "Kampong Speu"
@@ -14040,6 +14167,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 17812,
     "ribofrac": "0.1997",
     "state": "Kampong Speu"
@@ -14049,6 +14177,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 3538,
     "ribofrac": "0.0172",
     "state": "Kampong Speu"
@@ -14058,6 +14187,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 116,
     "ribofrac": "0.25",
     "state": "Kampong Speu"
@@ -14067,6 +14197,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 24462,
     "ribofrac": "0.0054",
     "state": "Kampong Speu"
@@ -14076,6 +14207,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 615,
     "ribofrac": "0.1772",
     "state": "Kampong Speu"
@@ -14085,6 +14217,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 97306,
     "ribofrac": "0.0012",
     "state": "Kampong Speu"
@@ -14094,6 +14227,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 10360,
     "ribofrac": "0.1862",
     "state": "Kampong Speu"
@@ -14103,6 +14237,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 457,
     "ribofrac": "0.1641",
     "state": "Kampong Speu"
@@ -14112,6 +14247,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 400,
     "ribofrac": "0.1625",
     "state": "Kampong Speu"
@@ -14121,6 +14257,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 2286,
     "ribofrac": "0.1485",
     "state": "Kampong Speu"
@@ -14130,6 +14267,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 396,
     "ribofrac": "0.2121",
     "state": "Kampong Speu"
@@ -14139,6 +14277,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 2936,
     "ribofrac": "0.2572",
     "state": "Kampong Speu"
@@ -14148,6 +14287,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 9665,
     "ribofrac": "0.2682",
     "state": "Kampong Speu"
@@ -14157,6 +14297,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 3937,
     "ribofrac": "0.2085",
     "state": "Kampong Speu"
@@ -14166,6 +14307,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 1036,
     "ribofrac": "0.2625",
     "state": "Kampong Speu"
@@ -14175,6 +14317,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 451,
     "ribofrac": "0.3104",
     "state": "Kampong Speu"
@@ -14184,6 +14327,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 236,
     "ribofrac": "0.3136",
     "state": "Kampong Speu"
@@ -14193,6 +14337,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 3861,
     "ribofrac": "0.1501",
     "state": "Kampong Speu"
@@ -14202,6 +14347,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 10904,
     "ribofrac": "0.8277",
     "state": "Kampong Speu"
@@ -14211,6 +14357,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 451,
     "ribofrac": "0.1951",
     "state": "Kampong Speu"
@@ -14220,6 +14367,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 890,
     "ribofrac": "0.1798",
     "state": "Kampong Speu"
@@ -14229,6 +14377,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 34,
     "ribofrac": "0.2647",
     "state": "Kampong Speu"
@@ -14238,6 +14387,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 1375,
     "ribofrac": "0.0736",
     "state": "Kampong Speu"
@@ -14247,6 +14397,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 68450,
     "ribofrac": "0.0",
     "state": "Kampong Speu"
@@ -14256,6 +14407,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 87,
     "ribofrac": "0.5172",
     "state": "Kampong Speu"
@@ -14265,6 +14417,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 1163,
     "ribofrac": "0.5916",
     "state": "Kampong Speu"
@@ -14274,6 +14427,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 925,
     "ribofrac": "0.1751",
     "state": "Kampong Speu"
@@ -14283,6 +14437,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 2504,
     "ribofrac": "0.0132",
     "state": "Kampong Speu"
@@ -14292,6 +14447,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 1443,
     "ribofrac": "0.0249",
     "state": "Kampong Speu"
@@ -14301,6 +14457,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 168067,
     "ribofrac": "0.0031",
     "state": "Kampong Speu"
@@ -14310,6 +14467,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 59,
     "ribofrac": "0.4407",
     "state": "Kampong Speu"
@@ -14319,6 +14477,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 34,
     "ribofrac": "0.4706",
     "state": "Kampong Speu"
@@ -14328,6 +14487,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 162,
     "ribofrac": "0.4815",
     "state": "Kampong Speu"
@@ -14337,6 +14497,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 95,
     "ribofrac": "0.1684",
     "state": "Kampong Speu"
@@ -14346,6 +14507,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 80,
     "ribofrac": "0.2",
     "state": "Kampong Speu"
@@ -14355,6 +14517,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 22655,
     "ribofrac": "0.1853",
     "state": "Kampong Speu"
@@ -14364,6 +14527,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 737,
     "ribofrac": "0.2062",
     "state": "Kampong Speu"
@@ -14373,6 +14537,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 992,
     "ribofrac": "0.2077",
     "state": "Kampong Speu"
@@ -14382,6 +14547,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 6563,
     "ribofrac": "0.2097",
     "state": "Kampong Speu"
@@ -14391,6 +14557,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 3963,
     "ribofrac": "0.4965",
     "state": "Kampong Speu"
@@ -14400,6 +14567,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 5076,
     "ribofrac": "0.4942",
     "state": "Kampong Speu"
@@ -14409,6 +14577,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 126253,
     "ribofrac": "0.0015",
     "state": "Kampong Speu"
@@ -14418,6 +14587,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 6970,
     "ribofrac": "0.576",
     "state": "Kampong Speu"
@@ -14427,6 +14597,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 9562,
     "ribofrac": "0.2659",
     "state": "Kampong Speu"
@@ -14436,6 +14607,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 2452,
     "ribofrac": "0.4954",
     "state": "Kampong Speu"
@@ -14445,6 +14617,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 1595,
     "ribofrac": "0.5524",
     "state": "Kampong Speu"
@@ -14454,6 +14627,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 10185,
     "ribofrac": "0.3752",
     "state": "Kampong Speu"
@@ -14463,6 +14637,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 71133,
     "ribofrac": "0.011",
     "state": "Kampong Speu"
@@ -14472,6 +14647,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 9279,
     "ribofrac": "0.2275",
     "state": "Kampong Speu"
@@ -14481,6 +14657,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 413,
     "ribofrac": "0.293",
     "state": "Kampong Speu"
@@ -14490,6 +14667,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 130,
     "ribofrac": "0.2154",
     "state": "Kampong Speu"
@@ -14499,6 +14677,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 4907,
     "ribofrac": "0.1878",
     "state": "Kampong Speu"
@@ -14508,6 +14687,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 132,
     "ribofrac": "0.303",
     "state": "Kampong Speu"
@@ -14517,6 +14697,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 440,
     "ribofrac": "0.4114",
     "state": "Kampong Speu"
@@ -14526,6 +14707,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 586,
     "ribofrac": "0.1826",
     "state": "Kampong Speu"
@@ -14535,6 +14717,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 598,
     "ribofrac": "0.2993",
     "state": "Kampong Speu"
@@ -14544,6 +14727,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 675,
     "ribofrac": "0.2593",
     "state": "Kampong Speu"
@@ -14553,6 +14737,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 1717,
     "ribofrac": "0.2352",
     "state": "Kampong Speu"
@@ -14562,6 +14747,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 578,
     "ribofrac": "0.3062",
     "state": "Kampong Speu"
@@ -14571,6 +14757,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 2803,
     "ribofrac": "0.3589",
     "state": "Kampong Speu"
@@ -14580,6 +14767,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 517,
     "ribofrac": "0.7389",
     "state": "Kampong Speu"
@@ -14589,6 +14777,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 699,
     "ribofrac": "0.4106",
     "state": "Kampong Speu"
@@ -14598,6 +14787,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 1993,
     "ribofrac": "0.3068",
     "state": "Kampong Speu"
@@ -14607,6 +14797,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 9632,
     "ribofrac": "0.1631",
     "state": "Kampong Speu"
@@ -14616,6 +14807,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 998,
     "ribofrac": "0.004",
     "state": "Kampong Speu"
@@ -14625,6 +14817,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 300,
     "ribofrac": "0.0033",
     "state": "Kampong Speu"
@@ -14634,6 +14827,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 1977,
     "ribofrac": "0.0039",
     "state": "Kampong Speu"
@@ -14643,6 +14837,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 1212,
     "ribofrac": "0.0017",
     "state": "Kampong Speu"
@@ -14652,6 +14847,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 479,
     "ribofrac": "0.0042",
     "state": "Kampong Speu"
@@ -14661,6 +14857,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 1865,
     "ribofrac": "0.0025",
     "state": "Kampong Speu"
@@ -14670,6 +14867,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 24,
     "ribofrac": "0.0",
     "state": "Kampong Speu"
@@ -14679,6 +14877,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 22285,
     "ribofrac": "0.001",
     "state": "Kampong Speu"
@@ -14688,6 +14887,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 413,
     "ribofrac": "0.4116",
     "state": "Kampong Speu"
@@ -14697,6 +14897,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 348,
     "ribofrac": "0.1667",
     "state": "Kampong Speu"
@@ -14706,6 +14907,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 547,
     "ribofrac": "0.2559",
     "state": "Kampong Speu"
@@ -14715,6 +14917,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 21775,
     "ribofrac": "0.0047",
     "state": "Kampong Speu"
@@ -14724,6 +14927,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 37305,
     "ribofrac": "0.0258",
     "state": "Kampong Speu"
@@ -14733,6 +14937,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 2169,
     "ribofrac": "0.6877",
     "state": "Kampong Speu"
@@ -14742,6 +14947,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 2310,
     "ribofrac": "0.6817",
     "state": "Kampong Speu"
@@ -14751,6 +14957,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 7730,
     "ribofrac": "0.1251",
     "state": "Kampong Speu"
@@ -14760,6 +14967,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 415,
     "ribofrac": "0.6554",
     "state": "Kampong Speu"
@@ -14769,6 +14977,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 642,
     "ribofrac": "0.6864",
     "state": "Kampong Speu"
@@ -14778,6 +14987,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 13410,
     "ribofrac": "0.0655",
     "state": "Kampong Speu"
@@ -14787,6 +14997,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 4405,
     "ribofrac": "0.732",
     "state": "Kampong Speu"
@@ -14796,6 +15007,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 884,
     "ribofrac": "0.7115",
     "state": "Kampong Speu"
@@ -14805,6 +15017,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 159,
     "ribofrac": "0.6164",
     "state": "Kampong Speu"
@@ -14814,6 +15027,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 223,
     "ribofrac": "0.7354",
     "state": "Kampong Speu"
@@ -14823,6 +15037,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 1349,
     "ribofrac": "0.8792",
     "state": "Kampong Speu"
@@ -14832,6 +15047,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 8590,
     "ribofrac": "0.8653",
     "state": "Kampong Speu"
@@ -14841,6 +15057,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 4466,
     "ribofrac": "0.8572",
     "state": "Kampong Speu"
@@ -14850,6 +15067,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 265,
     "ribofrac": "0.283",
     "state": "Kampong Speu"
@@ -14859,6 +15077,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 8680,
     "ribofrac": "0.8948",
     "state": "Kampong Speu"
@@ -14868,6 +15087,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 7964,
     "ribofrac": "0.1628",
     "state": "Kampong Speu"
@@ -14877,6 +15097,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 863,
     "ribofrac": "0.5574",
     "state": "Kampong Speu"
@@ -14886,6 +15107,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 2132,
     "ribofrac": "0.8547",
     "state": "Kampong Speu"
@@ -14895,6 +15117,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 135,
     "ribofrac": "0.437",
     "state": "Kampong Speu"
@@ -14904,6 +15127,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 14945,
     "ribofrac": "0.7867",
     "state": "Kampong Speu"
@@ -14913,6 +15137,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 3140,
     "ribofrac": "0.9038",
     "state": "Kampong Speu"
@@ -14922,6 +15147,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 13465,
     "ribofrac": "0.758",
     "state": "Kampong Speu"
@@ -14931,6 +15157,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 11230,
     "ribofrac": "0.9027",
     "state": "Kampong Speu"
@@ -14940,6 +15167,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 1349,
     "ribofrac": "0.0852",
     "state": "Kampong Speu"
@@ -14949,6 +15177,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 8488,
     "ribofrac": "0.1215",
     "state": "Kampong Speu"
@@ -14958,6 +15187,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 1356,
     "ribofrac": "0.2743",
     "state": "Kampong Speu"
@@ -14967,6 +15197,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 805,
     "ribofrac": "0.1602",
     "state": "Kampong Speu"
@@ -14976,6 +15207,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 4096,
     "ribofrac": "0.0967",
     "state": "Kampong Speu"
@@ -14985,6 +15217,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 410,
     "ribofrac": "0.1317",
     "state": "Kampong Speu"
@@ -14994,6 +15227,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 2642,
     "ribofrac": "0.1513",
     "state": "Kampong Speu"
@@ -15003,6 +15237,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 474,
     "ribofrac": "0.1414",
     "state": "Kampong Speu"
@@ -15012,6 +15247,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 506,
     "ribofrac": "0.2846",
     "state": "Kampong Speu"
@@ -15021,6 +15257,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 1017,
     "ribofrac": "0.179",
     "state": "Kampong Speu"
@@ -15030,6 +15267,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 543,
     "ribofrac": "0.151",
     "state": "Kampong Speu"
@@ -15039,6 +15277,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 2437,
     "ribofrac": "0.149",
     "state": "Kampong Speu"
@@ -15048,6 +15287,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 1476,
     "ribofrac": "0.1382",
     "state": "Kampong Speu"
@@ -15057,6 +15297,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 1192,
     "ribofrac": "0.1443",
     "state": "Kampong Speu"
@@ -15066,6 +15307,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 50052,
     "ribofrac": "0.002",
     "state": "Kampong Speu"
@@ -15075,6 +15317,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 503,
     "ribofrac": "0.175",
     "state": "Kampong Speu"
@@ -15084,6 +15327,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 160,
     "ribofrac": "0.15",
     "state": "Kampong Speu"
@@ -15093,6 +15337,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 484,
     "ribofrac": "0.2459",
     "state": "Kampong Speu"
@@ -15102,6 +15347,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 858,
     "ribofrac": "0.4138",
     "state": "Kampong Speu"
@@ -15111,6 +15357,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 32966,
     "ribofrac": "0.0067",
     "state": "Kampong Speu"
@@ -15120,6 +15367,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 199,
     "ribofrac": "0.2323",
     "state": "Kampong Speu"
@@ -15129,6 +15377,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 101,
     "ribofrac": "0.0891",
     "state": "Kampong Speu"
@@ -15138,6 +15387,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 2078,
     "ribofrac": "0.199",
     "state": "Kampong Speu"
@@ -15147,6 +15397,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 220,
     "ribofrac": "0.2045",
     "state": "Kampong Speu"
@@ -15156,6 +15407,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 441,
     "ribofrac": "0.1655",
     "state": "Kampong Speu"
@@ -15165,6 +15417,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 1058,
     "ribofrac": "0.121",
     "state": "Kampong Speu"
@@ -15174,6 +15427,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 11915,
     "ribofrac": "0.0605",
     "state": "Kampong Speu"
@@ -15183,6 +15437,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 35561,
     "ribofrac": "0.0019",
     "state": "Kampong Speu"
@@ -15192,6 +15447,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 147,
     "ribofrac": "0.2517",
     "state": "Kampong Speu"
@@ -15201,6 +15457,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 251,
     "ribofrac": "0.1952",
     "state": "Kampong Speu"
@@ -15210,6 +15467,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 221,
     "ribofrac": "0.1312",
     "state": "Kampong Speu"
@@ -15219,6 +15477,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 28155,
     "ribofrac": "0.01",
     "state": "Kampong Speu"
@@ -15228,6 +15487,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 1293,
     "ribofrac": "0.1415",
     "state": "Kampong Speu"
@@ -15237,6 +15497,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 310,
     "ribofrac": "0.6968",
     "state": "Kampong Speu"
@@ -15246,6 +15507,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 240,
     "ribofrac": "0.425",
     "state": "Kampong Speu"
@@ -15255,6 +15517,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 28,
     "ribofrac": "0.2857",
     "state": "Kampong Speu"
@@ -15264,6 +15527,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 274,
     "ribofrac": "0.2664",
     "state": "Kampong Speu"
@@ -15273,6 +15537,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 380,
     "ribofrac": "0.2632",
     "state": "Kampong Speu"
@@ -15282,6 +15547,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 12968,
     "ribofrac": "0.0011",
     "state": "Kampong Speu"
@@ -15291,6 +15557,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 22010,
     "ribofrac": "0.0087",
     "state": "Kampong Speu"
@@ -15300,6 +15567,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 938,
     "ribofrac": "0.0426",
     "state": "Kampong Speu"
@@ -15309,6 +15577,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 449,
     "ribofrac": "0.1269",
     "state": "Kampong Speu"
@@ -15318,6 +15587,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 320,
     "ribofrac": "0.2406",
     "state": "Kampong Speu"
@@ -15327,6 +15597,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 586,
     "ribofrac": "0.3498",
     "state": "Kampong Speu"
@@ -15336,6 +15607,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 98602,
     "ribofrac": "0.0081",
     "state": "Kampong Speu"
@@ -15345,6 +15617,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 1028,
     "ribofrac": "0.321",
     "state": "Kampong Speu"
@@ -15354,6 +15627,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 1472,
     "ribofrac": "0.3444",
     "state": "Kampong Speu"
@@ -15363,6 +15637,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 195,
     "ribofrac": "0.2",
     "state": "Kampong Speu"
@@ -15372,6 +15647,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 58359,
     "ribofrac": "0.0033",
     "state": "Kampong Speu"
@@ -15381,6 +15657,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 1884,
     "ribofrac": "0.091",
     "state": "Kampong Speu"
@@ -15390,6 +15667,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 2458,
     "ribofrac": "0.1013",
     "state": "Kampong Speu"
@@ -15399,6 +15677,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 1991,
     "ribofrac": "0.1474",
     "state": "Kampong Speu"
@@ -15408,6 +15687,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 70762,
     "ribofrac": "0.008",
     "state": "Kampong Speu"
@@ -15417,6 +15697,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 597,
     "ribofrac": "0.0821",
     "state": "Kampong Speu"
@@ -15426,6 +15707,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 389,
     "ribofrac": "0.3136",
     "state": "Kampong Speu"
@@ -15435,6 +15717,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 886,
     "ribofrac": "0.2223",
     "state": "Kampong Speu"
@@ -15444,6 +15727,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 252,
     "ribofrac": "0.131",
     "state": "Kampong Speu"
@@ -15453,6 +15737,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 879,
     "ribofrac": "0.2002",
     "state": "Kampong Speu"
@@ -15462,6 +15747,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 212,
     "ribofrac": "0.25",
     "state": "Kampong Speu"
@@ -15471,6 +15757,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 118,
     "ribofrac": "0.3729",
     "state": "Kampong Speu"
@@ -15480,6 +15767,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 4323,
     "ribofrac": "0.0039",
     "state": "Kampong Speu"
@@ -15489,6 +15777,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 209,
     "ribofrac": "0.2632",
     "state": "Kampong Speu"
@@ -15498,6 +15787,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 12825,
     "ribofrac": "0.0052",
     "state": "Kampong Speu"
@@ -15507,6 +15797,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 192,
     "ribofrac": "0.2396",
     "state": "Kampong Speu"
@@ -15516,6 +15807,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 7563,
     "ribofrac": "0.0104",
     "state": "Kampong Speu"
@@ -15525,6 +15817,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 364,
     "ribofrac": "0.2665",
     "state": "Kampong Speu"
@@ -15534,6 +15827,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 149,
     "ribofrac": "0.2819",
     "state": "Kampong Speu"
@@ -15543,6 +15837,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 772,
     "ribofrac": "0.2085",
     "state": "Kampong Speu"
@@ -15552,6 +15847,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 3,
     "ribofrac": "0.0",
     "state": "Kampong Speu"
@@ -15561,6 +15857,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 15,
     "ribofrac": "0.0",
     "state": "Kampong Speu"
@@ -15570,6 +15867,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 123,
     "ribofrac": "0.7073",
     "state": "Kampong Speu"
@@ -15579,6 +15877,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 342,
     "ribofrac": "0.307",
     "state": "Kampong Speu"
@@ -15588,6 +15887,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 5802,
     "ribofrac": "0.6748",
     "state": "Kampong Speu"
@@ -15597,6 +15897,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 9945,
     "ribofrac": "0.5952",
     "state": "Kampong Speu"
@@ -15606,6 +15907,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 22013,
     "ribofrac": "0.7271",
     "state": "Kampong Speu"
@@ -15615,6 +15917,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 44985,
     "ribofrac": "0.5831",
     "state": "Kampong Speu"
@@ -15624,6 +15927,7 @@
     "collection": "blood serum",
     "country": "Cambodia",
     "date": "2020",
+    "location": "Cambodia",
     "reads": 164761,
     "ribofrac": "0.6723",
     "state": "Kampong Speu"
