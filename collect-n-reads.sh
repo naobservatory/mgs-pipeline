@@ -12,6 +12,9 @@ else
 fi
 
 for bioproject in $(aws s3 ls $S3_DIR | awk '{print $NF}'); do
+    if [ ! -d ${bioproject}metadata/ ] ; then
+        continue
+    fi
     raw_dir=$S3_DIR${bioproject}raw/
     n_1=$(aws s3 ls $S3_DIR${bioproject}raw/ | grep "_1.fastq" | wc -l)
     if [ $n_1 == 0 ]; then

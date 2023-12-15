@@ -164,12 +164,22 @@ Available files, and their formats:
    * Read ID to Kraken output and cleaned read
 
 * `alignments/`: Output, alignment data that will later back the dashboard.
-   * Ex: SRR21452137.alignments.tsv
-   * TSV
-   * One record for each record in the hvreads that Bowtie2 was able to map
-     back to a known human-infecting virus.  Note that we've set the quality
-     score very low here, and you likely want to filter some of these out based
-     on a combination of alignment score and trimmed read length.
+   * Ex: `SRR21452137.hv.alignments.tsv.gz`,
+         `SRR21452137.human.alignments.tsv.gz`
+   * Compressed TSV
+   * One record for each read that Bowtie2 was able to map back to a genome in
+     its DB.
+   * We run this twice: once with a standard human genome DB ("human"), and
+     again with a custom DB of human-infecting viruses ("hv").
+     * For Human reads it runs with default setting, and the score is zero for
+       perfect matches and increasingly negative for worse matches.
+     * For HV reads we're running with custom settings, and the score is
+       positive, higher for better matches.  Some reads with positive scores
+       are quite low quality matches: you likely want to filter with a
+       combination of alignment score and trimmed read length (ex:
+       Simon's been doing `score/ln(length) > 22`).
+   * Non-collapsed reads will appear twice, one for the forward read and then
+     one for the reverse.
    * Columns:
      * Read ID
      * Best-match genome
@@ -360,16 +370,38 @@ unzip bowtie2.zip
 rm bowtie2.zip
 ```
 
-#### Set up Bowtie2 database
+#### Download pre-built human genome database
 
-To create a Bowtie2 database, we need to download genomes from NCBI, using ncbi-genome-download. To run the affiliated script `gimme_taxa.py`, you will also need to install the dependencies `ete3` and `six`. 
+For detecting human reads we use the standard pre-built telomere-to-telomere
+"Human / CHM13plusY" database from
+https://benlangmead.github.io/aws-indexes/bowtie.  See
+https://www.science.org/doi/10.1126/science.abj6987 for the construction of
+this genome.
+
+```
+cd mgs-pipeline/bowtie
+aws s3 cp s3://genome-idx/bt/chm13.draft_v1.0_plusY.zip .
+unzip chm13.draft_v1.0_plusY.zip
+mv chm13.draft_v1.0_plusY/* .
+rmdir chm13.draft_v1.0_plusY
+rm chm13.draft_v1.0_plusY.zip
+```
+
+#### Build custom human viral database
+
+To create a Bowtie2 database, we need to download genomes from NCBI, using
+ncbi-genome-download. To run the affiliated script `gimme_taxa.py`, you will
+also need to install the dependencies `ete3` and `six`.
 
 ```
 pip install ncbi-genome-download
 python -m pip install ete3 six ncbi-genome-download
 ```
 
-Now you can run `build_bowtie_db.py`, which will create the bowtie2 database. This will take quite some time so it's best to run this command within a `screen` session to not inadvertantly end the script when closing your terminal.
+Now you can run `build_bowtie_db.py`, which will create the bowtie2
+database. This will take quite some time so it's best to run this command
+within a `screen` session to not inadvertantly end the script when closing your
+terminal.
 
 
 ## Operations
@@ -406,6 +438,17 @@ log/2023-01-01.prefix.PRJNA966185
 
 If the job fails, the last line in the log file will start with "ERROR:" and
 then have the exit code.
+
+Usually it's fine to run one process per bioproject, but sometimes it can be
+faster to run one process per sample.  In that case, give
+`./reprocess-bioprojects.py` a `--sample-level` argument.
+
+TODO(jefftk): if we stick with this pipeline system long term then I think we
+want it to have a structure where there's one quick stage that determines what
+work needs doing and how heavy each task is, and then another that actually
+parallelizes it.  Right now the human running the pipline has to know too much
+about what this specific invocation is going to do if they want ideal
+performance.
 
 ### Screen Oversight
 
