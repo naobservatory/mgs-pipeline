@@ -695,7 +695,7 @@ def interpret(args):
                     "/home/ec2-user/kraken-db/",
                     "--use-names",
                     "--threads",
-                    "24",
+                    "8",
                     "--output",
                     output,
                 ]
