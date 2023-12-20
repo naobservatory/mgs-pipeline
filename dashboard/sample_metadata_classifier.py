@@ -238,6 +238,7 @@ def interpret(project, papers, bits):
             country="China",
             city="Wuhan",
             state="Hubei",
+            location="Wuhan",
             # Patient admitted 2019-12-26. Transferred 6 days after
             #  admission.
             date="2020-01",
@@ -263,6 +264,7 @@ def interpret(project, papers, bits):
             country="Cambodia",
             city="Chbar Mon",
             state="Kampong Speu",
+            location="Cambodia",
             # Patient samples collected between March 2019 and October 2020
             date="2020",
             collection="blood serum",
