@@ -388,7 +388,7 @@ def ribofrac(args, subset_size=1000):
                         input_fname, input_fname.replace(".gz", ".fq.gz")
                     )
 
-                if total_files_in_sample == empty_files_for_sample:
+                if total_files_in_sample == empty_files_in_sample:
                     print(f"Skipping {sample}... all files are empty.")
                     continue
 
