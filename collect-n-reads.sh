@@ -12,7 +12,7 @@ else
 fi
 
 for bioproject in $(aws s3 ls $S3_DIR | awk '{print $NF}'); do
-    if [ ! -d ${bioproject}metadata/ ] ; then
+    if [ ! -d bioprojects/${bioproject}metadata/ ] ; then
         continue
     fi
     raw_dir=$S3_DIR${bioproject}raw/
