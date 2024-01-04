@@ -6,6 +6,16 @@ UNASSIGNED = 0
 ROOT = 1
 BACTERIA = 2
 VIRUS = 10239
+# Per https://wwwnc.cdc.gov/travel/yellowbook/2024/posttravel-evaluation/respiratory-infections
+RESPIRATORY_BACTERIA = [
+    32008, # Burkholderia
+    517, # Bordetella
+    83558, # Chlamydia pneumoniae
+    1717, #Corynebacterium diphtheriae
+    727, #Haemophilus influenzae
+    2104, # Mycoplasmoides pneumoniaea
+    1313, #Streptococcus pneumoniae
+]
 
 children = defaultdict(set)  # parent_taxid -> [children]
 with open("nodes.dmp") as inf:
@@ -18,7 +28,8 @@ with open("nodes.dmp") as inf:
         if child_taxid != parent_taxid:
             children[parent_taxid].add(child_taxid)
 
-key_clades = set([UNASSIGNED, ROOT, BACTERIA, VIRUS])
+key_clades = set([UNASSIGNED, ROOT, BACTERIA, VIRUS,
+                  *RESPIRATORY_BACTERIA])
 
 key_clades |= children[ROOT]
 key_clades |= children[BACTERIA]
