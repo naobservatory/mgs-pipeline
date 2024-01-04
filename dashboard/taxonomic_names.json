@@ -548,6 +548,10 @@
     "NCTC 11953",
     "VKM B-1518"
   ],
+  "517": [
+    "Bordetella",
+    "Bordetella Moreno-Lopez 1952 (Approved Lists 1980) emend. Von Wintzingerode et al. 2001"
+  ],
   "543": [
     "Enterobacteriaceae",
     "Enterobacteraceae (ex Lapage 1979) Lapage 1982",
@@ -1085,6 +1089,25 @@
   "712": [
     "Pasteurellaceae",
     "Pasteurellaceae Pohl 1981"
+  ],
+  "727": [
+    "Haemophilus influenzae",
+    "ATCC 33391",
+    "\"Bacterium influenzae\" Lehmann and Neumann 1896",
+    "Bacterium influenzae",
+    "CCUG 23945",
+    "CIP 102514",
+    "\"Coccobacillus pfeifferi\" Neveu-Lemaire 1921",
+    "Coccobacillus pfeifferi",
+    "DSM 4690",
+    "Haemophilus influenzae (Lehmann and Neumann 1896) Winslow et al. 1917",
+    "\"Haemophilus meningitidis\" (Martins) Hauduroy et al. 1937",
+    "Haemophilus meningitidis",
+    "\"Influenza-bacillus\" Pfeiffer 1892",
+    "Influenza-bacillus",
+    "\"Mycobacterium influenzae\" (Lehmann and Neumann 1896) Chester 1901",
+    "Mycobacterium influenzae",
+    "NCTC 8143"
   ],
   "730": [
     "[Haemophilus] ducreyi",
@@ -1691,6 +1714,22 @@
     "Streptococcus salivarius thermophilus",
     "Streptococcus thermophilus (Orla-Jensen 1919) Schleifer et al. 1995"
   ],
+  "1313": [
+    "Streptococcus pneumoniae",
+    "ATCC 33400",
+    "CCUG 28588",
+    "CIP 102911",
+    "\"Diplococcus pneumoniae\" (Klein 1884) Weichselbaum 1886",
+    "Diplococcus pneumoniae",
+    "DSM 20566",
+    "LMG 14545",
+    "LMG:14545",
+    "\"Micrococcus pneumoniae\" Klein 1884",
+    "Micrococcus pneumoniae",
+    "NBRC 102642",
+    "NCTC 7465",
+    "Streptococcus pneumoniae (Klein 1884) Chester 1901"
+  ],
   "1357": [
     "Lactococcus",
     "lactic streptococci",
@@ -2092,6 +2131,27 @@
     "Turicella Funke et al. 1994",
     "Turicella"
   ],
+  "1717": [
+    "Corynebacterium diphtheriae",
+    "ATCC 27010",
+    "\"Bacillus diphtheriae\" Kruse in Flugge 1886",
+    "Bacillus diphtheriae",
+    "\"Bacterium diphtheriae\" (Kruse 1886) Migula 1900",
+    "Bacterium diphtheriae",
+    "CIP 100721",
+    "Corynebacterium diphtheriae (Kruse 1886) Lehmann and Neumann 1896",
+    "Corynebacterium diphtheriae (Kruse 1886) Lehmann and Neumann 1896 emend. Nouioui et al. 2018",
+    "DSM 44123",
+    "\"Microsporon diphthericum\" (sic) Klebs 1875",
+    "Microsporon diphthericum",
+    "\"Microsporon diphtheriticum\" Klebs 1883",
+    "Microsporon diphtheriticum",
+    "\"Mycobacterium diphtheriae\" (Kruse 1886) Krasil'nikov 1941",
+    "Mycobacterium diphtheriae",
+    "NCTC 11397",
+    "Pacinia loeffleri",
+    "\"Pacinia loeffleri\" Trevisan 1889"
+  ],
   "1747": [
     "Cutibacterium acnes",
     "ATCC 6919",
@@ -2174,6 +2234,23 @@
     "Streptomyces Waksman and Henrici 1943 (Approved Lists 1980) emend. Wellington et al. 1992",
     "Streptomyces Waksman and Henrici 1943 (Approved Lists 1980) emend. Witt and Stackebrandt 1991",
     "Streptoverticillium Baldacci 1958"
+  ],
+  "2104": [
+    "Mycoplasmoides pneumoniae",
+    "ATCC 15531",
+    "CIP 103766",
+    "DSM 22911",
+    "Filterable agent of primary atypical pneumonia",
+    "\"Filterable agent of primary atypical pneumonia\" Eaton et al. 1944",
+    "IFO 14401",
+    "Mycoplasmoides pneumoniae (Somerson et al. 1963) Gupta et al. 2018",
+    "NBRC 14401",
+    "NCTC 10119",
+    "\"Schizoplasma pneumoniae\" (Somerson et al. 1963) Furness et al. 1968",
+    "Schizoplasma pneumoniae",
+    "strain Eaton",
+    "strain FH-LIU",
+    "strain FH"
   ],
   "2162": [
     "Methanobacterium formicicum",
@@ -4128,6 +4205,14 @@
     "Rhodobacter clade",
     "Rhodobacter group"
   ],
+  "32008": [
+    "Burkholderia",
+    "Burkholderia Yabuuchi et al. 1993",
+    "Burkholderia Yabuuchi et al. 1993 emend. Dobritsa and Samadpour 2019",
+    "Burkholderia Yabuuchi et al. 1993 emend. Gillis et al. 1995",
+    "Burkholderia Yabuuchi et al. 1993 emend. Sawana et al. 2014",
+    "Pseudomonas RNA homology group II"
+  ],
   "32033": [
     "Xanthomonadaceae",
     "Lysobacteraceae Christensen and Cook 1978 (Approved Lists 1980) emend. Naushad et al. 2015",
@@ -5690,6 +5775,17 @@
   "82300": [
     "adeno-associated virus 5",
     "Adeno-associated virus - 5"
+  ],
+  "83558": [
+    "Chlamydia pneumoniae",
+    "ATCC VR-2282",
+    "Chlamydia pneumoniae Grayston et al. 1989 (Approved Lists 1980)",
+    "Chlamydophila pneumoniae (Grayston et al. 1989) Everett et al. 1999",
+    "Chlamydophila pneumoniae",
+    "culture-collection:ATCC:VR:2282",
+    "DSM 19748",
+    "strain TW-183",
+    "strain TWAR"
   ],
   "83655": [
     "Leclercia adecarboxylata",
