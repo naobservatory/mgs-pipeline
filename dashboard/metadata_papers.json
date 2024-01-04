@@ -6,6 +6,13 @@
       "PRJEB14051"
     ]
   },
+  "Blauwkamp 2019": {
+    "link": "https://doi.org/10.1038/s41564-018-0349-6",
+    "na_type": "DNA",
+    "projects": [
+      "PRJNA507824"
+    ]
+  },
   "Bohl 2022": {
     "link": "https://doi.org/10.1073/pnas.2115285119",
     "na_type": "RNA",
@@ -49,6 +56,13 @@
     "na_type": "DNA",
     "projects": [
       "PRJNA875025"
+    ]
+  },
+  "Grumaz 2016": {
+    "link": "https://doi.org/10.1186/s13073-016-0326-8",
+    "na_type": "DNA",
+    "projects": [
+      "PRJEB13247"
     ]
   },
   "Hendriksen 2019": {

@@ -125,6 +125,432 @@
     "reads": 88006830,
     "ribofrac": "0.0086"
   },
+  "ERR1346031": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 13458
+  },
+  "ERR1346032": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 16046
+  },
+  "ERR1346033": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 15351
+  },
+  "ERR1346034": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 19723
+  },
+  "ERR1346035": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 8050
+  },
+  "ERR1346036": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 7895
+  },
+  "ERR1346037": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 19734
+  },
+  "ERR1346038": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 12957
+  },
+  "ERR1346039": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 7373
+  },
+  "ERR1346040": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 3870
+  },
+  "ERR1346041": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 14649
+  },
+  "ERR1346042": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 3189
+  },
+  "ERR1346043": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 62829
+  },
+  "ERR1346044": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 6448
+  },
+  "ERR1346045": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 15871
+  },
+  "ERR1346046": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 11154
+  },
+  "ERR1346047": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 9591
+  },
+  "ERR1346048": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 14736
+  },
+  "ERR1346049": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 11927
+  },
+  "ERR1346050": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 6862
+  },
+  "ERR1346051": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 6531
+  },
+  "ERR1346052": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 13269
+  },
+  "ERR1346053": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 6390
+  },
+  "ERR1346054": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 9070
+  },
+  "ERR1346055": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 64141
+  },
+  "ERR1346056": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 14521
+  },
+  "ERR1346057": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 9644
+  },
+  "ERR1346058": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 45883
+  },
+  "ERR1346059": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 9499
+  },
+  "ERR1346060": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 26090
+  },
+  "ERR1346061": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 9077
+  },
+  "ERR1346062": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 8106
+  },
+  "ERR1346063": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 11152
+  },
+  "ERR1346064": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 8284
+  },
+  "ERR1346065": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 11345
+  },
+  "ERR1346066": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 4557
+  },
+  "ERR1346067": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 5621
+  },
+  "ERR1346068": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 2442
+  },
+  "ERR1346069": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 5306
+  },
+  "ERR1346070": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 76419
+  },
+  "ERR1346071": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 14205
+  },
+  "ERR1346072": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 6760
+  },
+  "ERR1346073": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 10190
+  },
+  "ERR1346074": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 6805
+  },
+  "ERR1346075": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 6346
+  },
+  "ERR1346076": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 14548
+  },
+  "ERR1346077": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 16632
+  },
+  "ERR1346078": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 10620
+  },
+  "ERR1346079": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 2567
+  },
+  "ERR1346080": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 6927
+  },
+  "ERR1346081": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 7783
+  },
+  "ERR1346082": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 6996
+  },
+  "ERR1346083": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 12857
+  },
+  "ERR1346084": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 12757
+  },
+  "ERR1346085": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 14305
+  },
+  "ERR1346086": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 15011
+  },
+  "ERR1346087": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 7727
+  },
+  "ERR1346088": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 15075
+  },
+  "ERR1346089": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 8261
+  },
+  "ERR1346090": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 11895
+  },
+  "ERR1346091": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 6676
+  },
+  "ERR1346092": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 5575
+  },
+  "ERR1346093": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 7047
+  },
+  "ERR1346094": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 6539
+  },
+  "ERR1346095": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 54237
+  },
+  "ERR1346096": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 149487
+  },
+  "ERR1346097": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 4855
+  },
+  "ERR1346098": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 12281
+  },
+  "ERR1346099": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 25137
+  },
+  "ERR1346100": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 5564
+  },
+  "ERR1346101": {
+    "city": "Heidelberg",
+    "collection": "plasma",
+    "country": "Germany",
+    "reads": 17108
+  },
   "ERR1414209": {
     "country": "Sweden",
     "date": "2012-09",
@@ -26512,6 +26938,4820 @@
     "location": "Singapore",
     "reads": 56985946,
     "ribofrac": "0.004"
+  },
+  "SRR8288572": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 2635064
+  },
+  "SRR8288573": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1002511
+  },
+  "SRR8288574": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 895195
+  },
+  "SRR8288575": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 584599
+  },
+  "SRR8288576": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 269690
+  },
+  "SRR8288577": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 366299
+  },
+  "SRR8288578": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 557824
+  },
+  "SRR8288579": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 418213
+  },
+  "SRR8288580": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 437027
+  },
+  "SRR8288581": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 288120
+  },
+  "SRR8288582": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 390193
+  },
+  "SRR8288583": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 294086
+  },
+  "SRR8288584": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 592854
+  },
+  "SRR8288585": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 711248
+  },
+  "SRR8288586": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 255539
+  },
+  "SRR8288587": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 773724
+  },
+  "SRR8288588": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 537745
+  },
+  "SRR8288589": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 406256
+  },
+  "SRR8288590": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 864648
+  },
+  "SRR8288591": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 875006
+  },
+  "SRR8288592": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 942269
+  },
+  "SRR8288593": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 698326
+  },
+  "SRR8288594": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 810079
+  },
+  "SRR8288595": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 314377
+  },
+  "SRR8288596": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1213877
+  },
+  "SRR8288597": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 711451
+  },
+  "SRR8288598": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 658791
+  },
+  "SRR8288599": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 162265
+  },
+  "SRR8288600": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 992176
+  },
+  "SRR8288601": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 396851
+  },
+  "SRR8288602": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 393515
+  },
+  "SRR8288603": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 638972
+  },
+  "SRR8288604": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 992194
+  },
+  "SRR8288605": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1639495
+  },
+  "SRR8288606": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1131805
+  },
+  "SRR8288607": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1296180
+  },
+  "SRR8288608": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1878226
+  },
+  "SRR8288609": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1067016
+  },
+  "SRR8288610": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1103621
+  },
+  "SRR8288611": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 956842
+  },
+  "SRR8288612": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 2159945
+  },
+  "SRR8288613": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1156307
+  },
+  "SRR8288614": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1125349
+  },
+  "SRR8288615": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1130710
+  },
+  "SRR8288616": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 883811
+  },
+  "SRR8288617": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 6475
+  },
+  "SRR8288618": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1233872
+  },
+  "SRR8288619": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 80413
+  },
+  "SRR8288620": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 78819
+  },
+  "SRR8288621": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 991798
+  },
+  "SRR8288622": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 916406
+  },
+  "SRR8288623": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 2220299
+  },
+  "SRR8288624": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 770834
+  },
+  "SRR8288625": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 193268
+  },
+  "SRR8288626": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 918758
+  },
+  "SRR8288627": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1827625
+  },
+  "SRR8288628": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 2100315
+  },
+  "SRR8288629": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1408454
+  },
+  "SRR8288630": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1525981
+  },
+  "SRR8288631": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 2333957
+  },
+  "SRR8288632": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 2217791
+  },
+  "SRR8288633": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1926958
+  },
+  "SRR8288634": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 840767
+  },
+  "SRR8288635": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 250032
+  },
+  "SRR8288636": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 547494
+  },
+  "SRR8288637": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1049861
+  },
+  "SRR8288638": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 489118
+  },
+  "SRR8288639": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 785250
+  },
+  "SRR8288640": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 213195
+  },
+  "SRR8288641": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 2988752
+  },
+  "SRR8288642": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1489194
+  },
+  "SRR8288643": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 638280
+  },
+  "SRR8288644": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1443417
+  },
+  "SRR8288645": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 947181
+  },
+  "SRR8288646": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 857096
+  },
+  "SRR8288647": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1277978
+  },
+  "SRR8288648": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1868757
+  },
+  "SRR8288649": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1353528
+  },
+  "SRR8288650": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 2081211
+  },
+  "SRR8288651": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1843816
+  },
+  "SRR8288652": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1426022
+  },
+  "SRR8288653": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1968217
+  },
+  "SRR8288654": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 4208908
+  },
+  "SRR8288655": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 2228574
+  },
+  "SRR8288656": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1532589
+  },
+  "SRR8288657": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1608620
+  },
+  "SRR8288658": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1733852
+  },
+  "SRR8288659": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 2800766
+  },
+  "SRR8288660": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 608855
+  },
+  "SRR8288661": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 685623
+  },
+  "SRR8288662": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 389146
+  },
+  "SRR8288663": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 225831
+  },
+  "SRR8288664": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 699541
+  },
+  "SRR8288665": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1069657
+  },
+  "SRR8288666": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 688897
+  },
+  "SRR8288667": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 544757
+  },
+  "SRR8288668": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1055764
+  },
+  "SRR8288669": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 240174
+  },
+  "SRR8288670": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1910894
+  },
+  "SRR8288671": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1760179
+  },
+  "SRR8288672": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1348817
+  },
+  "SRR8288673": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1776625
+  },
+  "SRR8288674": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 2652028
+  },
+  "SRR8288675": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1950378
+  },
+  "SRR8288676": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 3316367
+  },
+  "SRR8288677": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1693001
+  },
+  "SRR8288678": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1136742
+  },
+  "SRR8288679": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 687776
+  },
+  "SRR8288680": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 824367
+  },
+  "SRR8288681": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 756229
+  },
+  "SRR8288682": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 288101
+  },
+  "SRR8288683": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 2065808
+  },
+  "SRR8288684": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1554066
+  },
+  "SRR8288685": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 296046
+  },
+  "SRR8288686": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 152216
+  },
+  "SRR8288687": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 856428
+  },
+  "SRR8288688": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1645591
+  },
+  "SRR8288689": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 563939
+  },
+  "SRR8288690": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 363951
+  },
+  "SRR8288691": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 380291
+  },
+  "SRR8288692": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 889055
+  },
+  "SRR8288693": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 487015
+  },
+  "SRR8288694": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 367542
+  },
+  "SRR8288695": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 944860
+  },
+  "SRR8288696": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1343002
+  },
+  "SRR8288697": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 299469
+  },
+  "SRR8288698": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 2471574
+  },
+  "SRR8288699": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 382714
+  },
+  "SRR8288700": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 634260
+  },
+  "SRR8288701": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 520913
+  },
+  "SRR8288702": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 756624
+  },
+  "SRR8288703": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 578082
+  },
+  "SRR8288704": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1972334
+  },
+  "SRR8288705": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 270904
+  },
+  "SRR8288706": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1430628
+  },
+  "SRR8288707": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 901988
+  },
+  "SRR8288708": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 898199
+  },
+  "SRR8288709": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 869445
+  },
+  "SRR8288710": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1083609
+  },
+  "SRR8288711": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 539043
+  },
+  "SRR8288712": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1022180
+  },
+  "SRR8288713": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 363481
+  },
+  "SRR8288714": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1205799
+  },
+  "SRR8288715": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 295146
+  },
+  "SRR8288716": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 271106
+  },
+  "SRR8288717": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 845921
+  },
+  "SRR8288718": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 997989
+  },
+  "SRR8288719": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1336102
+  },
+  "SRR8288720": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 50539
+  },
+  "SRR8288721": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 734547
+  },
+  "SRR8288722": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1446780
+  },
+  "SRR8288723": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1030149
+  },
+  "SRR8288724": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 483954
+  },
+  "SRR8288725": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 640170
+  },
+  "SRR8288726": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 765539
+  },
+  "SRR8288727": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 417693
+  },
+  "SRR8288728": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 704550
+  },
+  "SRR8288729": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 285266
+  },
+  "SRR8288730": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 484766
+  },
+  "SRR8288731": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 810499
+  },
+  "SRR8288732": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 481470
+  },
+  "SRR8288733": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 811460
+  },
+  "SRR8288734": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 658732
+  },
+  "SRR8288735": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 862160
+  },
+  "SRR8288736": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 2069384
+  },
+  "SRR8288737": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 2889292
+  },
+  "SRR8288738": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1691728
+  },
+  "SRR8288739": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1567963
+  },
+  "SRR8288740": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 713614
+  },
+  "SRR8288741": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1218013
+  },
+  "SRR8288742": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1079260
+  },
+  "SRR8288743": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 835983
+  },
+  "SRR8288744": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 300567
+  },
+  "SRR8288745": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 723825
+  },
+  "SRR8288746": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 714379
+  },
+  "SRR8288747": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 261837
+  },
+  "SRR8288748": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 668169
+  },
+  "SRR8288749": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 581198
+  },
+  "SRR8288750": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 307660
+  },
+  "SRR8288751": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 395724
+  },
+  "SRR8288752": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 956974
+  },
+  "SRR8288753": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1264339
+  },
+  "SRR8288754": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 647726
+  },
+  "SRR8288755": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 494237
+  },
+  "SRR8288756": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 408815
+  },
+  "SRR8288757": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 374475
+  },
+  "SRR8288758": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1443471
+  },
+  "SRR8288759": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1180454
+  },
+  "SRR8288760": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1263942
+  },
+  "SRR8288761": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 224395
+  },
+  "SRR8288762": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 459921
+  },
+  "SRR8288763": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 593409
+  },
+  "SRR8288764": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 326108
+  },
+  "SRR8288765": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 643493
+  },
+  "SRR8288766": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 798844
+  },
+  "SRR8288767": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1005018
+  },
+  "SRR8288768": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1616379
+  },
+  "SRR8288769": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 790324
+  },
+  "SRR8288770": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 939008
+  },
+  "SRR8288771": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1247682
+  },
+  "SRR8288772": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 464633
+  },
+  "SRR8288773": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 896394
+  },
+  "SRR8288774": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 2133640
+  },
+  "SRR8288775": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 2173695
+  },
+  "SRR8288776": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 606180
+  },
+  "SRR8288777": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1656818
+  },
+  "SRR8288778": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1452430
+  },
+  "SRR8288779": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1018860
+  },
+  "SRR8288780": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 2300379
+  },
+  "SRR8288781": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 2780019
+  },
+  "SRR8288782": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1272170
+  },
+  "SRR8288783": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1471866
+  },
+  "SRR8288784": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 218553
+  },
+  "SRR8288785": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 417133
+  },
+  "SRR8288786": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 196793
+  },
+  "SRR8288787": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 230907
+  },
+  "SRR8288788": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 117942
+  },
+  "SRR8288789": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 101077
+  },
+  "SRR8288790": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 229516
+  },
+  "SRR8288791": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 755195
+  },
+  "SRR8288792": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 891749
+  },
+  "SRR8288793": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 310034
+  },
+  "SRR8288794": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 262925
+  },
+  "SRR8288795": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 393558
+  },
+  "SRR8288796": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 374430
+  },
+  "SRR8288797": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1221803
+  },
+  "SRR8288798": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 520538
+  },
+  "SRR8288799": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 762898
+  },
+  "SRR8288800": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 377032
+  },
+  "SRR8288801": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 316624
+  },
+  "SRR8288802": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 745538
+  },
+  "SRR8288803": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 244684
+  },
+  "SRR8288804": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 363532
+  },
+  "SRR8288805": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 866340
+  },
+  "SRR8288806": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 461572
+  },
+  "SRR8288807": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 2411049
+  },
+  "SRR8288808": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1597176
+  },
+  "SRR8288809": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 35611
+  },
+  "SRR8288810": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 799155
+  },
+  "SRR8288811": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 269624
+  },
+  "SRR8288812": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 635083
+  },
+  "SRR8288813": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1538264
+  },
+  "SRR8288814": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1027902
+  },
+  "SRR8288815": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1421888
+  },
+  "SRR8288816": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 735599
+  },
+  "SRR8288817": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 2181326
+  },
+  "SRR8288818": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1564007
+  },
+  "SRR8288819": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1380630
+  },
+  "SRR8288820": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 943211
+  },
+  "SRR8288821": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1425100
+  },
+  "SRR8288822": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 833809
+  },
+  "SRR8288823": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1337463
+  },
+  "SRR8288824": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 2134252
+  },
+  "SRR8288825": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1070867
+  },
+  "SRR8288826": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 440533
+  },
+  "SRR8288827": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1061103
+  },
+  "SRR8288828": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 336210
+  },
+  "SRR8288829": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 975506
+  },
+  "SRR8288830": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 336959
+  },
+  "SRR8288831": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 206026
+  },
+  "SRR8288832": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 812689
+  },
+  "SRR8288833": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 858393
+  },
+  "SRR8288834": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 756731
+  },
+  "SRR8288835": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 316229
+  },
+  "SRR8288836": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 255740
+  },
+  "SRR8288837": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 267305
+  },
+  "SRR8288838": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1323180
+  },
+  "SRR8288839": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 959572
+  },
+  "SRR8288840": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 908338
+  },
+  "SRR8288841": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 247474
+  },
+  "SRR8288842": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 418318
+  },
+  "SRR8288843": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1426042
+  },
+  "SRR8288844": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 738853
+  },
+  "SRR8288845": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1223788
+  },
+  "SRR8288846": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 646685
+  },
+  "SRR8288847": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 584599
+  },
+  "SRR8288848": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 666498
+  },
+  "SRR8288849": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 554493
+  },
+  "SRR8288850": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 443592
+  },
+  "SRR8288851": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 872289
+  },
+  "SRR8288852": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 736739
+  },
+  "SRR8288853": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 884367
+  },
+  "SRR8288854": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 618345
+  },
+  "SRR8288855": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 875018
+  },
+  "SRR8288856": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 865161
+  },
+  "SRR8288857": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1249691
+  },
+  "SRR8288858": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 515299
+  },
+  "SRR8288859": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1409454
+  },
+  "SRR8288860": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 817310
+  },
+  "SRR8288861": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 690590
+  },
+  "SRR8288862": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1566213
+  },
+  "SRR8288863": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1095484
+  },
+  "SRR8288864": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 2007063
+  },
+  "SRR8288865": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1075497
+  },
+  "SRR8288866": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 251335
+  },
+  "SRR8288867": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1925674
+  },
+  "SRR8288868": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 280021
+  },
+  "SRR8288869": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 602905
+  },
+  "SRR8288870": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1023753
+  },
+  "SRR8288871": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 604226
+  },
+  "SRR8288872": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 624572
+  },
+  "SRR8288873": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 478631
+  },
+  "SRR8288874": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 304727
+  },
+  "SRR8288875": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 448271
+  },
+  "SRR8288876": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 243131
+  },
+  "SRR8288877": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 296785
+  },
+  "SRR8288878": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 157213
+  },
+  "SRR8288879": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 90356
+  },
+  "SRR8288880": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 497261
+  },
+  "SRR8288881": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 442050
+  },
+  "SRR8288882": {
+    "collection": "plasma",
+    "country": "United States"
+  },
+  "SRR8288883": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 432116
+  },
+  "SRR8288884": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 908338
+  },
+  "SRR8288885": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1642896
+  },
+  "SRR8288886": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1017740
+  },
+  "SRR8288887": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 845109
+  },
+  "SRR8288888": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 662683
+  },
+  "SRR8288889": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 770785
+  },
+  "SRR8288890": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 677308
+  },
+  "SRR8288891": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 963329
+  },
+  "SRR8288892": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 795832
+  },
+  "SRR8288893": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 635503
+  },
+  "SRR8288894": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 668314
+  },
+  "SRR8288895": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 418756
+  },
+  "SRR8288896": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 666139
+  },
+  "SRR8288897": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 286767
+  },
+  "SRR8288898": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1877937
+  },
+  "SRR8288899": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 2060020
+  },
+  "SRR8288900": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 543575
+  },
+  "SRR8288901": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 533935
+  },
+  "SRR8288902": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 414893
+  },
+  "SRR8288903": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1590144
+  },
+  "SRR8288904": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 365841
+  },
+  "SRR8288905": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 2253484
+  },
+  "SRR8288906": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1915427
+  },
+  "SRR8288907": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 966876
+  },
+  "SRR8288908": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1913652
+  },
+  "SRR8288909": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 2569641
+  },
+  "SRR8288910": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1913278
+  },
+  "SRR8288911": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1708749
+  },
+  "SRR8288912": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1070582
+  },
+  "SRR8288913": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 2838231
+  },
+  "SRR8288914": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1329427
+  },
+  "SRR8288915": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 506243
+  },
+  "SRR8288916": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 540622
+  },
+  "SRR8288917": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 728005
+  },
+  "SRR8288918": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 804369
+  },
+  "SRR8288919": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 998741
+  },
+  "SRR8288920": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 664317
+  },
+  "SRR8288921": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 244075
+  },
+  "SRR8288922": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 168517
+  },
+  "SRR8288923": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1976501
+  },
+  "SRR8288924": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 395872
+  },
+  "SRR8288925": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 464186
+  },
+  "SRR8288926": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 806032
+  },
+  "SRR8288927": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1006896
+  },
+  "SRR8288928": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 345269
+  },
+  "SRR8288929": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 836491
+  },
+  "SRR8288930": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 911990
+  },
+  "SRR8288931": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 410374
+  },
+  "SRR8288932": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 802833
+  },
+  "SRR8288933": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 393163
+  },
+  "SRR8288934": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 363037
+  },
+  "SRR8288935": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 555433
+  },
+  "SRR8288936": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 208975
+  },
+  "SRR8288937": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 464295
+  },
+  "SRR8288938": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 449214
+  },
+  "SRR8288939": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 501647
+  },
+  "SRR8288940": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 440636
+  },
+  "SRR8288941": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 430103
+  },
+  "SRR8288942": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 858604
+  },
+  "SRR8288943": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 642542
+  },
+  "SRR8288944": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 601728
+  },
+  "SRR8288945": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 472313
+  },
+  "SRR8288946": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 136387
+  },
+  "SRR8288947": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 822734
+  },
+  "SRR8288948": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 441498
+  },
+  "SRR8288949": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 765283
+  },
+  "SRR8288950": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 558293
+  },
+  "SRR8288951": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 544301
+  },
+  "SRR8288952": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 548518
+  },
+  "SRR8288953": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1081233
+  },
+  "SRR8288954": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 572417
+  },
+  "SRR8288955": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 627785
+  },
+  "SRR8288956": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 544725
+  },
+  "SRR8288957": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 206056
+  },
+  "SRR8288958": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 622487
+  },
+  "SRR8288959": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 444341
+  },
+  "SRR8288960": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 84879
+  },
+  "SRR8288961": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1036216
+  },
+  "SRR8288962": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 975310
+  },
+  "SRR8288963": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 666261
+  },
+  "SRR8288964": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 607744
+  },
+  "SRR8288965": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 33
+  },
+  "SRR8288966": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1958979
+  },
+  "SRR8288967": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1070659
+  },
+  "SRR8288968": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 601876
+  },
+  "SRR8288969": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1262010
+  },
+  "SRR8288970": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1705480
+  },
+  "SRR8288971": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 879010
+  },
+  "SRR8288972": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1993628
+  },
+  "SRR8288973": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1503953
+  },
+  "SRR8288974": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 972727
+  },
+  "SRR8288975": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1449592
+  },
+  "SRR8288976": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1237561
+  },
+  "SRR8288977": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 608280
+  },
+  "SRR8288978": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1446903
+  },
+  "SRR8288979": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 3441689
+  },
+  "SRR8288980": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1349010
+  },
+  "SRR8288981": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1326021
+  },
+  "SRR8288982": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1002511
+  },
+  "SRR8288983": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 540560
+  },
+  "SRR8288984": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1083609
+  },
+  "SRR8288985": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 335614
+  },
+  "SRR8288986": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1409731
+  },
+  "SRR8288987": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 286515
+  },
+  "SRR8288988": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 2564244
+  },
+  "SRR8288989": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1381123
+  },
+  "SRR8288990": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 523482
+  },
+  "SRR8288991": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1791894
+  },
+  "SRR8288992": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 311919
+  },
+  "SRR8288993": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1786258
+  },
+  "SRR8288994": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1016394
+  },
+  "SRR8288995": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 499252
+  },
+  "SRR8288996": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 3324520
+  },
+  "SRR8288997": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 538940
+  },
+  "SRR8288998": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 736264
+  },
+  "SRR8288999": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 553860
+  },
+  "SRR8289000": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1287258
+  },
+  "SRR8289001": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 778999
+  },
+  "SRR8289002": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 558353
+  },
+  "SRR8289003": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1485494
+  },
+  "SRR8289004": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 268620
+  },
+  "SRR8289005": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 449153
+  },
+  "SRR8289006": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 745064
+  },
+  "SRR8289007": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 330478
+  },
+  "SRR8289008": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1074646
+  },
+  "SRR8289009": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 547097
+  },
+  "SRR8289010": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1190746
+  },
+  "SRR8289011": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 348465
+  },
+  "SRR8289012": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 641342
+  },
+  "SRR8289013": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 543465
+  },
+  "SRR8289014": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 203625
+  },
+  "SRR8289015": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 676522
+  },
+  "SRR8289016": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1768288
+  },
+  "SRR8289017": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 568521
+  },
+  "SRR8289018": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1089181
+  },
+  "SRR8289019": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 633368
+  },
+  "SRR8289020": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 750957
+  },
+  "SRR8289021": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 621457
+  },
+  "SRR8289022": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 724720
+  },
+  "SRR8289023": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 323927
+  },
+  "SRR8289024": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 594054
+  },
+  "SRR8289025": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 290350
+  },
+  "SRR8289026": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 299778
+  },
+  "SRR8289027": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 738294
+  },
+  "SRR8289028": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 356432
+  },
+  "SRR8289029": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 595400
+  },
+  "SRR8289030": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1957296
+  },
+  "SRR8289031": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 921930
+  },
+  "SRR8289032": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1240959
+  },
+  "SRR8289033": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 367593
+  },
+  "SRR8289034": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1187376
+  },
+  "SRR8289035": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 717559
+  },
+  "SRR8289036": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 419825
+  },
+  "SRR8289037": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 613151
+  },
+  "SRR8289038": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 509484
+  },
+  "SRR8289039": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 548208
+  },
+  "SRR8289040": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 860534
+  },
+  "SRR8289041": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 128073
+  },
+  "SRR8289042": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 662900
+  },
+  "SRR8289043": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 555559
+  },
+  "SRR8289044": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1141425
+  },
+  "SRR8289045": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 2169313
+  },
+  "SRR8289046": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 261870
+  },
+  "SRR8289047": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 269207
+  },
+  "SRR8289048": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 417589
+  },
+  "SRR8289049": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1396102
+  },
+  "SRR8289050": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 523449
+  },
+  "SRR8289051": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 283533
+  },
+  "SRR8289052": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1121222
+  },
+  "SRR8289053": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 575570
+  },
+  "SRR8289054": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 180637
+  },
+  "SRR8289055": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 305334
+  },
+  "SRR8289056": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 261226
+  },
+  "SRR8289057": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 43433
+  },
+  "SRR8289058": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 667190
+  },
+  "SRR8289059": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1555362
+  },
+  "SRR8289060": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 3009106
+  },
+  "SRR8289061": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1831259
+  },
+  "SRR8289062": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 3174185
+  },
+  "SRR8289063": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1334977
+  },
+  "SRR8289064": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1374609
+  },
+  "SRR8289065": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 482302
+  },
+  "SRR8289066": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1126178
+  },
+  "SRR8289067": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 794589
+  },
+  "SRR8289068": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 2678902
+  },
+  "SRR8289069": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 57648
+  },
+  "SRR8289070": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 626259
+  },
+  "SRR8289071": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 736919
+  },
+  "SRR8289072": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 433450
+  },
+  "SRR8289073": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1387928
+  },
+  "SRR8289074": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 621412
+  },
+  "SRR8289075": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 974625
+  },
+  "SRR8289076": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 769789
+  },
+  "SRR8289077": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1228289
+  },
+  "SRR8289078": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1273211
+  },
+  "SRR8289079": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 250878
+  },
+  "SRR8289080": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 807739
+  },
+  "SRR8289081": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1411922
+  },
+  "SRR8289082": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1337252
+  },
+  "SRR8289083": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 2934359
+  },
+  "SRR8289084": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 2292539
+  },
+  "SRR8289085": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 221973
+  },
+  "SRR8289086": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 753763
+  },
+  "SRR8289087": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 281714
+  },
+  "SRR8289088": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1032051
+  },
+  "SRR8289089": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1474952
+  },
+  "SRR8289090": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 2611032
+  },
+  "SRR8289091": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 3233725
+  },
+  "SRR8289092": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 2233660
+  },
+  "SRR8289093": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 2307595
+  },
+  "SRR8289094": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 2201354
+  },
+  "SRR8289095": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1082872
+  },
+  "SRR8289096": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 339809
+  },
+  "SRR8289097": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 805234
+  },
+  "SRR8289098": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1014977
+  },
+  "SRR8289099": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 2233447
+  },
+  "SRR8289100": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 311152
+  },
+  "SRR8289101": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1143541
+  },
+  "SRR8289102": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 284387
+  },
+  "SRR8289103": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 279129
+  },
+  "SRR8289104": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 452857
+  },
+  "SRR8289105": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 2157085
+  },
+  "SRR8289106": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 334599
+  },
+  "SRR8289107": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 328493
+  },
+  "SRR8289108": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 795445
+  },
+  "SRR8289109": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 946800
+  },
+  "SRR8289110": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1223817
+  },
+  "SRR8289111": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1125136
+  },
+  "SRR8289112": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 238326
+  },
+  "SRR8289113": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 586520
+  },
+  "SRR8289114": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 872672
+  },
+  "SRR8289115": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 515645
+  },
+  "SRR8289116": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 574352
+  },
+  "SRR8289117": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 544705
+  },
+  "SRR8289118": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1767044
+  },
+  "SRR8289119": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 386894
+  },
+  "SRR8289120": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 932983
+  },
+  "SRR8289121": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 211220
+  },
+  "SRR8289122": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 538477
+  },
+  "SRR8289123": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 992405
+  },
+  "SRR8289124": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1730653
+  },
+  "SRR8289125": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 969454
+  },
+  "SRR8289126": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1361635
+  },
+  "SRR8289127": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1257302
+  },
+  "SRR8289128": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 2255595
+  },
+  "SRR8289129": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 3045567
+  },
+  "SRR8289130": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1929784
+  },
+  "SRR8289131": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1892497
+  },
+  "SRR8289132": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 2538862
+  },
+  "SRR8289133": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 437272
+  },
+  "SRR8289134": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 852010
+  },
+  "SRR8289135": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1583009
+  },
+  "SRR8289136": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 563825
+  },
+  "SRR8289137": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1679157
+  },
+  "SRR8289138": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 2411049
+  },
+  "SRR8289139": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 738294
+  },
+  "SRR8289140": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 762590
+  },
+  "SRR8289141": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 778375
+  },
+  "SRR8289142": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 685355
+  },
+  "SRR8289143": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 678845
+  },
+  "SRR8289144": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 880962
+  },
+  "SRR8289145": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 706850
+  },
+  "SRR8289146": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 707330
+  },
+  "SRR8289147": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 251381
+  },
+  "SRR8289148": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 731659
+  },
+  "SRR8289149": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 2297757
+  },
+  "SRR8289150": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 856976
+  },
+  "SRR8289151": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1163764
+  },
+  "SRR8289152": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 442435
+  },
+  "SRR8289153": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 543130
+  },
+  "SRR8289154": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 685231
+  },
+  "SRR8289155": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 294660
+  },
+  "SRR8289156": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 672419
+  },
+  "SRR8289157": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1681004
+  },
+  "SRR8289158": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1795905
+  },
+  "SRR8289159": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 323623
+  },
+  "SRR8289160": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 678468
+  },
+  "SRR8289161": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1005005
+  },
+  "SRR8289162": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 609085
+  },
+  "SRR8289163": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1189574
+  },
+  "SRR8289164": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 830120
+  },
+  "SRR8289165": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 489223
+  },
+  "SRR8289166": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 132915
+  },
+  "SRR8289167": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 491284
+  },
+  "SRR8289168": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 177425
+  },
+  "SRR8289169": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1665812
+  },
+  "SRR8289170": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 764188
+  },
+  "SRR8289171": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 720061
+  },
+  "SRR8289172": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 917932
+  },
+  "SRR8289173": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 887292
+  },
+  "SRR8289174": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 123301
+  },
+  "SRR8289175": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1155042
+  },
+  "SRR8289176": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 844635
+  },
+  "SRR8289177": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 595636
+  },
+  "SRR8289178": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 429542
+  },
+  "SRR8289179": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 2110218
+  },
+  "SRR8289180": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 387205
+  },
+  "SRR8289181": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 235035
+  },
+  "SRR8289182": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 728735
+  },
+  "SRR8289183": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1055995
+  },
+  "SRR8289184": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 637055
+  },
+  "SRR8289185": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 465631
+  },
+  "SRR8289186": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 786306
+  },
+  "SRR8289187": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 414932
+  },
+  "SRR8289188": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 434589
+  },
+  "SRR8289189": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 808433
+  },
+  "SRR8289190": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 818151
+  },
+  "SRR8289191": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1312206
+  },
+  "SRR8289192": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1286338
+  },
+  "SRR8289193": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1171655
+  },
+  "SRR8289194": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1142949
+  },
+  "SRR8289195": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 544836
+  },
+  "SRR8289196": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 966255
+  },
+  "SRR8289197": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 631941
+  },
+  "SRR8289198": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 346971
+  },
+  "SRR8289199": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 511051
+  },
+  "SRR8289200": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 434875
+  },
+  "SRR8289201": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 299841
+  },
+  "SRR8289202": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 722875
+  },
+  "SRR8289203": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 724735
+  },
+  "SRR8289204": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 319154
+  },
+  "SRR8289205": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 630166
+  },
+  "SRR8289206": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 970992
+  },
+  "SRR8289207": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1212050
+  },
+  "SRR8289208": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1827029
+  },
+  "SRR8289209": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 594031
+  },
+  "SRR8289210": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 930216
+  },
+  "SRR8289211": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1330440
+  },
+  "SRR8289212": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1568668
+  },
+  "SRR8289213": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1888436
+  },
+  "SRR8289214": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1358312
+  },
+  "SRR8289215": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 2215344
+  },
+  "SRR8289216": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1659062
+  },
+  "SRR8289217": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1412521
+  },
+  "SRR8289218": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 812382
+  },
+  "SRR8289219": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 457622
+  },
+  "SRR8289220": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 745887
+  },
+  "SRR8289221": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 583941
+  },
+  "SRR8289222": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 267993
+  },
+  "SRR8289223": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 952572
+  },
+  "SRR8289224": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1510938
+  },
+  "SRR8289225": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 174361
+  },
+  "SRR8289226": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 900140
+  },
+  "SRR8289227": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 484465
+  },
+  "SRR8289228": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 431753
+  },
+  "SRR8289229": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 935497
+  },
+  "SRR8289230": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 461505
+  },
+  "SRR8289231": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 774839
+  },
+  "SRR8289232": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 555858
+  },
+  "SRR8289233": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 357789
+  },
+  "SRR8289234": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 524819
+  },
+  "SRR8289235": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 381794
+  },
+  "SRR8289236": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 502066
+  },
+  "SRR8289237": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 3019525
+  },
+  "SRR8289238": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 2260637
+  },
+  "SRR8289239": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1287442
+  },
+  "SRR8289240": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1977182
+  },
+  "SRR8289241": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1331981
+  },
+  "SRR8289242": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 2618389
+  },
+  "SRR8289243": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 2398011
+  },
+  "SRR8289244": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1975520
+  },
+  "SRR8289245": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1737347
+  },
+  "SRR8289246": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 462622
+  },
+  "SRR8289247": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 307942
+  },
+  "SRR8289248": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 594697
+  },
+  "SRR8289249": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 939048
+  },
+  "SRR8289250": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1262848
+  },
+  "SRR8289251": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1309209
+  },
+  "SRR8289252": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1004230
+  },
+  "SRR8289253": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 586470
+  },
+  "SRR8289254": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 641006
+  },
+  "SRR8289255": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1286590
+  },
+  "SRR8289256": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1179542
+  },
+  "SRR8289257": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 405537
+  },
+  "SRR8289258": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1381419
+  },
+  "SRR8289259": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 986531
+  },
+  "SRR8289260": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1030783
+  },
+  "SRR8289261": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1172332
+  },
+  "SRR8289262": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 996363
+  },
+  "SRR8289263": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 953297
+  },
+  "SRR8289264": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 544227
+  },
+  "SRR8289265": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1098083
+  },
+  "SRR8289266": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1313607
+  },
+  "SRR8289267": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 281360
+  },
+  "SRR8289268": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 557858
+  },
+  "SRR8289269": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 730483
+  },
+  "SRR8289270": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 912011
+  },
+  "SRR8289271": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1000708
+  },
+  "SRR8289272": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1541644
+  },
+  "SRR8289273": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 481237
+  },
+  "SRR8289274": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 405272
+  },
+  "SRR8289275": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 413678
+  },
+  "SRR8289276": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 409898
+  },
+  "SRR8289277": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1580452
+  },
+  "SRR8289278": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 2017715
+  },
+  "SRR8289279": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 2188805
+  },
+  "SRR8289280": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 667689
+  },
+  "SRR8289281": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 897234
+  },
+  "SRR8289282": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1034441
+  },
+  "SRR8289283": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1649164
+  },
+  "SRR8289284": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1109140
+  },
+  "SRR8289285": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1568398
+  },
+  "SRR8289286": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1462959
+  },
+  "SRR8289287": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 2519884
+  },
+  "SRR8289288": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 939197
+  },
+  "SRR8289289": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1264840
+  },
+  "SRR8289290": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 865130
+  },
+  "SRR8289291": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 270514
+  },
+  "SRR8289292": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 613433
+  },
+  "SRR8289293": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 770834
+  },
+  "SRR8289294": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 642483
+  },
+  "SRR8289295": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 527073
+  },
+  "SRR8289296": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1117301
+  },
+  "SRR8289297": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 806032
+  },
+  "SRR8289298": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1720953
+  },
+  "SRR8289299": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 641185
+  },
+  "SRR8289300": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 452710
+  },
+  "SRR8289301": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 872289
+  },
+  "SRR8289302": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 860534
+  },
+  "SRR8289303": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 620696
+  },
+  "SRR8289304": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 962420
+  },
+  "SRR8289305": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 199564
+  },
+  "SRR8289306": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 416249
+  },
+  "SRR8289307": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1312757
+  },
+  "SRR8289308": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 616321
+  },
+  "SRR8289309": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 613591
+  },
+  "SRR8289310": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 590775
+  },
+  "SRR8289311": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 513939
+  },
+  "SRR8289312": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 543122
+  },
+  "SRR8289313": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 206575
+  },
+  "SRR8289314": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 229871
+  },
+  "SRR8289315": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1058379
+  },
+  "SRR8289316": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 283667
+  },
+  "SRR8289317": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 428273
+  },
+  "SRR8289318": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 756548
+  },
+  "SRR8289319": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 399134
+  },
+  "SRR8289320": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 762927
+  },
+  "SRR8289321": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1567237
+  },
+  "SRR8289322": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 661214
+  },
+  "SRR8289323": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 225638
+  },
+  "SRR8289324": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 174607
+  },
+  "SRR8289325": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 178001
+  },
+  "SRR8289326": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 566191
+  },
+  "SRR8289327": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1003944
+  },
+  "SRR8289328": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 835164
+  },
+  "SRR8289329": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 180461
+  },
+  "SRR8289330": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 637898
+  },
+  "SRR8289331": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 193748
+  },
+  "SRR8289332": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 872989
+  },
+  "SRR8289333": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 822320
+  },
+  "SRR8289334": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 254188
+  },
+  "SRR8289335": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 804793
+  },
+  "SRR8289336": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 611291
+  },
+  "SRR8289337": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 464368
+  },
+  "SRR8289338": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1759925
+  },
+  "SRR8289339": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 715188
+  },
+  "SRR8289340": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 602661
+  },
+  "SRR8289341": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 914720
+  },
+  "SRR8289342": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 716956
+  },
+  "SRR8289343": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1288751
+  },
+  "SRR8289344": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 263799
+  },
+  "SRR8289345": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 840971
+  },
+  "SRR8289346": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 802483
+  },
+  "SRR8289347": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 281153
+  },
+  "SRR8289348": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 634623
+  },
+  "SRR8289349": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 800657
+  },
+  "SRR8289350": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 336059
+  },
+  "SRR8289351": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 761236
+  },
+  "SRR8289352": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 381641
+  },
+  "SRR8289353": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 471255
+  },
+  "SRR8289354": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 299060
+  },
+  "SRR8289355": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 2065697
+  },
+  "SRR8289356": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 750995
+  },
+  "SRR8289357": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 970540
+  },
+  "SRR8289358": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 527073
+  },
+  "SRR8289359": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1656187
+  },
+  "SRR8289360": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1557307
+  },
+  "SRR8289361": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 217022
+  },
+  "SRR8289362": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 478611
+  },
+  "SRR8289363": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 512561
+  },
+  "SRR8289364": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 644868
+  },
+  "SRR8289365": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1779374
+  },
+  "SRR8289366": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 880751
+  },
+  "SRR8289367": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1474242
+  },
+  "SRR8289368": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 79246
+  },
+  "SRR8289369": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1238466
+  },
+  "SRR8289370": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 578079
+  },
+  "SRR8289371": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 753638
+  },
+  "SRR8289372": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 418318
+  },
+  "SRR8289373": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 754842
+  },
+  "SRR8289374": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 205329
+  },
+  "SRR8289375": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 504787
+  },
+  "SRR8289376": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1475860
+  },
+  "SRR8289377": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 2200451
+  },
+  "SRR8289378": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1240776
+  },
+  "SRR8289379": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 2062643
+  },
+  "SRR8289380": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 2052365
+  },
+  "SRR8289381": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1514941
+  },
+  "SRR8289382": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 2361662
+  },
+  "SRR8289383": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1112912
+  },
+  "SRR8289384": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1846691
+  },
+  "SRR8289385": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 2036243
+  },
+  "SRR8289386": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 2579740
+  },
+  "SRR8289387": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 3180948
+  },
+  "SRR8289388": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1243847
+  },
+  "SRR8289389": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1510540
+  },
+  "SRR8289390": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1220522
+  },
+  "SRR8289391": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 312602
+  },
+  "SRR8289392": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1507186
+  },
+  "SRR8289393": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 395424
+  },
+  "SRR8289394": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 507195
+  },
+  "SRR8289395": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 741754
+  },
+  "SRR8289396": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 964439
+  },
+  "SRR8289397": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 761934
+  },
+  "SRR8289398": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 452730
+  },
+  "SRR8289399": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 288904
+  },
+  "SRR8289400": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 843212
+  },
+  "SRR8289401": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1059982
+  },
+  "SRR8289402": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 811200
+  },
+  "SRR8289403": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1382904
+  },
+  "SRR8289404": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 2327159
+  },
+  "SRR8289405": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1214235
+  },
+  "SRR8289406": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 786044
+  },
+  "SRR8289407": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 776501
+  },
+  "SRR8289408": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 958477
+  },
+  "SRR8289409": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1059467
+  },
+  "SRR8289410": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 775091
+  },
+  "SRR8289411": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 785281
+  },
+  "SRR8289412": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 2247173
+  },
+  "SRR8289413": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1386953
+  },
+  "SRR8289414": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1162348
+  },
+  "SRR8289415": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 454706
+  },
+  "SRR8289416": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 539699
+  },
+  "SRR8289417": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 520111
+  },
+  "SRR8289418": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1634565
+  },
+  "SRR8289419": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 953911
+  },
+  "SRR8289420": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1021277
+  },
+  "SRR8289421": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1589200
+  },
+  "SRR8289422": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 827666
+  },
+  "SRR8289423": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 616938
+  },
+  "SRR8289424": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 338803
+  },
+  "SRR8289425": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 347382
+  },
+  "SRR8289426": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 454641
+  },
+  "SRR8289427": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1415893
+  },
+  "SRR8289428": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1147285
+  },
+  "SRR8289429": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 887612
+  },
+  "SRR8289430": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1061103
+  },
+  "SRR8289431": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 449153
+  },
+  "SRR8289432": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1161975
+  },
+  "SRR8289433": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 837614
+  },
+  "SRR8289434": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1660659
+  },
+  "SRR8289435": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1571533
+  },
+  "SRR8289436": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 143327
+  },
+  "SRR8289437": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 366701
+  },
+  "SRR8289438": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 684838
+  },
+  "SRR8289439": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 775091
+  },
+  "SRR8289440": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 501694
+  },
+  "SRR8289441": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 794006
+  },
+  "SRR8289442": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 837915
+  },
+  "SRR8289443": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 239244
+  },
+  "SRR8289444": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 501272
+  },
+  "SRR8289445": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 306941
+  },
+  "SRR8289446": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 670275
+  },
+  "SRR8289447": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 225834
+  },
+  "SRR8289448": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 865130
+  },
+  "SRR8289449": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 362615
+  },
+  "SRR8289450": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 740973
+  },
+  "SRR8289451": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 336394
+  },
+  "SRR8289452": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1171300
+  },
+  "SRR8289453": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 727794
+  },
+  "SRR8289454": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 329410
+  },
+  "SRR8289455": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 605189
+  },
+  "SRR8289456": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1124634
+  },
+  "SRR8289457": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 698345
+  },
+  "SRR8289458": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1055233
+  },
+  "SRR8289459": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1113774
+  },
+  "SRR8289460": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 308616
+  },
+  "SRR8289461": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 803293
+  },
+  "SRR8289462": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1200702
+  },
+  "SRR8289463": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 817351
+  },
+  "SRR8289464": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 640835
+  },
+  "SRR8289465": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 8
+  },
+  "SRR8289466": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 27
+  },
+  "SRR8289467": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 255740
+  },
+  "SRR8289468": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 790740
+  },
+  "SRR8289469": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 233697
+  },
+  "SRR8289470": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 484367
+  },
+  "SRR8289471": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 186006
+  },
+  "SRR8289472": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 830127
+  },
+  "SRR8289473": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1048982
+  },
+  "SRR8289474": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 381698
+  },
+  "SRR8289475": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 213105
+  },
+  "SRR8289476": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 549412
+  },
+  "SRR8289477": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 866812
+  },
+  "SRR8289478": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 685531
+  },
+  "SRR8289479": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 227385
+  },
+  "SRR8289480": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 817905
+  },
+  "SRR8289481": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 635866
+  },
+  "SRR8289482": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 51113
+  },
+  "SRR8289483": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 738853
+  },
+  "SRR8289484": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 739834
+  },
+  "SRR8289485": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1323180
+  },
+  "SRR8289486": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 543004
+  },
+  "SRR8289487": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 641185
+  },
+  "SRR8289488": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 343161
+  },
+  "SRR8289489": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 419409
+  },
+  "SRR8289490": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 431974
+  },
+  "SRR8289491": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1133526
+  },
+  "SRR8289492": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 2613360
+  },
+  "SRR8289493": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1613979
+  },
+  "SRR8289494": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1618635
+  },
+  "SRR8289495": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 3159033
+  },
+  "SRR8289496": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1394402
+  },
+  "SRR8289497": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1727326
+  },
+  "SRR8289498": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 3304955
+  },
+  "SRR8289499": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1379193
+  },
+  "SRR8289500": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 2867288
+  },
+  "SRR8289501": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1152749
+  },
+  "SRR8289502": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1511032
+  },
+  "SRR8289503": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 809415
+  },
+  "SRR8289504": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 2767730
+  },
+  "SRR8289505": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1611572
+  },
+  "SRR8289506": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1829606
+  },
+  "SRR8289507": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 984540
+  },
+  "SRR8289508": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1402886
+  },
+  "SRR8289509": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 829577
+  },
+  "SRR8289510": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 563037
+  },
+  "SRR8289511": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1270629
+  },
+  "SRR8289512": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 490231
+  },
+  "SRR8289513": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 659062
+  },
+  "SRR8289514": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 400023
+  },
+  "SRR8289515": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 3832189
+  },
+  "SRR8289516": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 2297942
+  },
+  "SRR8289517": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 568369
+  },
+  "SRR8289518": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 445416
+  },
+  "SRR8289519": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 3427380
+  },
+  "SRR8289520": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 581061
+  },
+  "SRR8289521": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 951514
+  },
+  "SRR8289522": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1636184
+  },
+  "SRR8289523": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1281602
+  },
+  "SRR8289524": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1661164
+  },
+  "SRR8289525": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1861374
+  },
+  "SRR8289526": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1754981
+  },
+  "SRR8289527": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1352690
+  },
+  "SRR8289528": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1047560
+  },
+  "SRR8289529": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 2760121
+  },
+  "SRR8289530": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1679906
+  },
+  "SRR8289531": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 684287
+  },
+  "SRR8289532": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 1066028
+  },
+  "SRR8289533": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 862006
+  },
+  "SRR8289534": {
+    "collection": "plasma",
+    "country": "United States",
+    "reads": 974867
   },
   "SRR8749020": {
     "country": "Philippines",
