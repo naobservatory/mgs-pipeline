@@ -29,10 +29,10 @@ for ACCESSION in "$@"; do
         mkdir -p "$metadata_dir"
 
         # Download SRA data
-        echo "$SRA_FILES" | awk '{print $NF}' | tr ';' '\n' | xargs -P 4 -I {} ./import-accession-single.sh $ACCESSION {}
+        echo "$SRA_FILES" | awk '{print $(NF-1)}' | tr ';' '\n' | xargs -P 4 -I {} ./import-accession-single.sh $ACCESSION {}
 
         # Create metadata.tsv with SRA run names
-        echo "$SRA_FILES" | awk -F'[/.]' '{print $(NF-2)}' > "${metadata_dir}/metadata.tsv"
+        echo "$SRA_FILES" | awk -F'[/.]' '{print $(NF-3)}' > "${metadata_dir}/metadata.tsv"
 
         if check_eutilities; then
             # Fetch metadata from NCBI
