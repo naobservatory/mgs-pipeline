@@ -6,15 +6,18 @@ UNASSIGNED = 0
 ROOT = 1
 BACTERIA = 2
 VIRUS = 10239
-# Per https://wwwnc.cdc.gov/travel/yellowbook/2024/posttravel-evaluation/respiratory-infections
+# Per
+# https://wwwnc.cdc.gov/travel/yellowbook/2024/posttravel-evaluation/respiratory-infections,
+# plus TB
 RESPIRATORY_BACTERIA = [
-    32008, # Burkholderia
-    517, # Bordetella
+    28450, # Burkholderia pseudomallei
+    520,   # Bordetella pertussis
     83558, # Chlamydia pneumoniae
-    1717, #Corynebacterium diphtheriae
-    727, #Haemophilus influenzae
-    2104, # Mycoplasmoides pneumoniaea
-    1313, #Streptococcus pneumoniae
+    1717,  # Corynebacterium diphtheriae
+    727,   # Haemophilus influenzae
+    2104,  # Mycoplasmoides pneumoniaea
+    1313,  # Streptococcus pneumoniae
+    1773,  # Mycobacterium tuberculosis
 ]
 
 children = defaultdict(set)  # parent_taxid -> [children]
