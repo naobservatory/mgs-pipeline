@@ -299,5 +299,12 @@ def interpret(project, papers, bits):
                 country="Spain",
                 city="Valencia",
                 collection="plasma")
+    elif project in papers["Belstrøm 2017"]["projects"]:
+        sample, disease_state, na_type = bits
+        return sample, dict(
+                country="Denmark",
+                city="Copenhagen",
+                date="2015-04",
+                collection="saliva")
     else:
         raise Exception("Metadata format for %s unknown" % project)
