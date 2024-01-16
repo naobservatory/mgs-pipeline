@@ -300,10 +300,11 @@ def interpret(project, papers, bits):
                 city="Valencia",
                 collection="plasma")
     elif project in papers["Belstrøm 2017"]["projects"]:
-        sample, disease_state, na_type = bits
+        sample, na_type, disease_state = bits
         return sample, dict(
                 country="Denmark",
                 city="Copenhagen",
+                location="Copenhagen",
                 date="2015-04",
                 collection="saliva")
     else:
