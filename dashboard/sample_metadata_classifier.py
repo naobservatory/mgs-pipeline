@@ -1,4 +1,5 @@
 def interpret(project, papers, bits):
+    print(papers) 
     if project in papers["Rothman 2021"]["projects"]:
         sample, date, wtp, is_enriched = bits
         if wtp == "JW":
@@ -293,12 +294,12 @@ def interpret(project, papers, bits):
                 country="Germany",
                 city="Heidelberg",
                 collection="plasma")
-    elif project in papers["Cebria-Mendoza 2021"]["projects"]:
-        sample, = bits
-        return sample, dict(
-                country="Spain",
-                city="Valencia",
-                collection="plasma")
+    #elif project in papers["Cebria-Mendoza 2021"]["projects"]:
+    #    sample, = bits
+    #    return sample, dict(
+    #            country="Spain",
+    #            city="Valencia",
+    #            collection="plasma")
     elif project in papers["Belstrøm 2017"]["projects"]:
         sample, na_type, disease_state = bits
         return sample, dict(
