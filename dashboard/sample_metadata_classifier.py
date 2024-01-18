@@ -294,13 +294,7 @@ def interpret(project, papers, bits):
                 country="Germany",
                 city="Heidelberg",
                 collection="plasma")
-    #elif project in papers["Cebria-Mendoza 2021"]["projects"]:
-    #    sample, = bits
-    #    return sample, dict(
-    #            country="Spain",
-    #            city="Valencia",
-    #            collection="plasma")
-    elif project in papers["Belstrøm 2017"]["projects"]:
+    elif project in papers["Belstrom 2017"]["projects"]:
         sample, na_type, disease_state = bits
         return sample, dict(
                 country="Denmark",
