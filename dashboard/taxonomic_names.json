@@ -566,9 +566,26 @@
     "NCTC 11953",
     "VKM B-1518"
   ],
-  "517": [
-    "Bordetella",
-    "Bordetella Moreno-Lopez 1952 (Approved Lists 1980) emend. Von Wintzingerode et al. 2001"
+  "520": [
+    "Bordetella pertussis",
+    "ATCC 9797",
+    "ATCC:9797D-5",
+    "\"Bacterium tussis-convulsivae\" Lehmann and Neumann 1927",
+    "Bacterium tussis-convulsivae",
+    "Bordetella pertussis (Bergey et al. 1923) Moreno-Lopez 1952",
+    "CCUG 30873",
+    "CIP 63.1",
+    "DSM 5571",
+    "\"Haemophilus pertussis\" (Bergey et al. 1923) Pribram 1933",
+    "Haemophilus pertussis",
+    "\"Hemophilus pertussis\" Bergey et al. 1923",
+    "Hemophilus pertussis",
+    "LMG 14455",
+    "LMG:14455",
+    "\"Microbe de la coqueluche\" Bordet and Gengou 1906",
+    "Microbe de la coqueluche",
+    "NCTC 10739",
+    "strain 18323"
   ],
   "543": [
     "Enterobacteriaceae",
@@ -2343,6 +2360,31 @@
     "NBRC 13159",
     "NCTC 10394"
   ],
+  "1773": [
+    "Mycobacterium tuberculosis",
+    "ATCC 25618",
+    "ATCC 27294",
+    "ATCC 9360",
+    "Bacillus tuberculosis",
+    "\"Bacillus tuberculosis\" (Zopf 1883) Klein 1884",
+    "Bacterium tuberculosis",
+    "\"Bacterium tuberculosis\" Zopf 1883",
+    "CCUG 37357",
+    "CCUG 38148",
+    "CIP 104475",
+    "CIP 64.31",
+    "CNCTC 7301",
+    "\"Mycobacterium tuberculosis typus humanus\" Lehmann and Neumann 1907",
+    "Mycobacterium tuberculosis typus humanus",
+    "\"Mycobacterium tuberculosis var. hominis\" Bergey et al. 1934",
+    "Mycobacterium tuberculosis var. hominis",
+    "Mycobacterium tuberculosis variant tuberculosis",
+    "Mycobacterium tuberculosis (Zopf 1883) Lehmann and Neumann 1896 (Approved Lists 1980) emend. Riojas et al. 2018",
+    "NCTC 13144",
+    "NCTC 7416",
+    "strain H37 Rv",
+    "strain H37Rv"
+  ],
   "1827": [
     "Rhodococcus",
     "Rhodococcus Zopf 1891"
@@ -4035,6 +4077,29 @@
     "other sequences",
     "other sequences"
   ],
+  "28450": [
+    "Burkholderia pseudomallei",
+    "ATCC 23343",
+    "Bacillus pseudomallei",
+    "\"Bacillus pseudomallei\" Whitmore 1913",
+    "\"Bacterium whitmori\" Stanton and Fletcher 1921",
+    "Bacterium whitmori",
+    "Burkholderia pseudomallei (Whitmore 1913) Yabuuchi et al. 1993",
+    "Burkholderia sp. BGJ",
+    "Burkholderia sp. BGK",
+    "Burkholderia sp. MSHR4009",
+    "Burkholderia sp. MSHR4018",
+    "Burkholderia sp. MSHR44",
+    "Burkholderia sp. TSV202",
+    "\"Loefflerella pseudomallei\" Brindle and Cowan 1951",
+    "Loefflerella pseudomallei",
+    "\"Malleomyces pseudomallei\" Breed 1939",
+    "Malleomyces pseudomallei",
+    "NCTC 12939",
+    "Pseudomonas pseudomallei",
+    "Pseudomonas pseudomallei (Whitmore 1913) Haynes 1957 (Approved Lists 1980)",
+    "strain WRAIR 286"
+  ],
   "28875": [
     "Rotavirus A",
     "group A rotavirus",
@@ -4389,14 +4454,6 @@
     "Rhodobacteraceae Garrity et al. 2006 emend. Liang et al. 2021",
     "Rhodobacter clade",
     "Rhodobacter group"
-  ],
-  "32008": [
-    "Burkholderia",
-    "Burkholderia Yabuuchi et al. 1993",
-    "Burkholderia Yabuuchi et al. 1993 emend. Dobritsa and Samadpour 2019",
-    "Burkholderia Yabuuchi et al. 1993 emend. Gillis et al. 1995",
-    "Burkholderia Yabuuchi et al. 1993 emend. Sawana et al. 2014",
-    "Pseudomonas RNA homology group II"
   ],
   "32033": [
     "Xanthomonadaceae",
