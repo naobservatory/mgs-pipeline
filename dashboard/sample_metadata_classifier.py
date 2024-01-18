@@ -1,5 +1,4 @@
 def interpret(project, papers, bits):
-    print(papers) 
     if project in papers["Rothman 2021"]["projects"]:
         sample, date, wtp, is_enriched = bits
         if wtp == "JW":
