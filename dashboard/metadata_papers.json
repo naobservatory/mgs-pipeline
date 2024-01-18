@@ -1,4 +1,11 @@
 {
+  "Belstrom 2017": {
+    "link": "https://www.nature.com/articles/s41522-017-0031-4",
+    "na_type": "DNA+RNA",
+    "projects": [
+      "PRJNA396840"
+    ]
+  },
   "Bengtsson-Palme 2016": {
     "link": "https://pubmed.ncbi.nlm.nih.gov/27542633/",
     "na_type": "DNA",

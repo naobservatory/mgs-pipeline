@@ -26653,6 +26653,546 @@
     "reads": 6683307,
     "state": "Texas"
   },
+  "SRR5892181": {
+    "city": "Copenhagen",
+    "collection": "saliva",
+    "country": "Denmark",
+    "date": "2015-04",
+    "location": "Copenhagen",
+    "reads": 1915414,
+    "ribofrac": "0.0207"
+  },
+  "SRR5892182": {
+    "city": "Copenhagen",
+    "collection": "saliva",
+    "country": "Denmark",
+    "date": "2015-04",
+    "location": "Copenhagen",
+    "reads": 2107416,
+    "ribofrac": "0.0491"
+  },
+  "SRR5892183": {
+    "city": "Copenhagen",
+    "collection": "saliva",
+    "country": "Denmark",
+    "date": "2015-04",
+    "location": "Copenhagen",
+    "reads": 1813507,
+    "ribofrac": "0.0289"
+  },
+  "SRR5892184": {
+    "city": "Copenhagen",
+    "collection": "saliva",
+    "country": "Denmark",
+    "date": "2015-04",
+    "location": "Copenhagen",
+    "reads": 2077234,
+    "ribofrac": "0.0367"
+  },
+  "SRR5892185": {
+    "city": "Copenhagen",
+    "collection": "saliva",
+    "country": "Denmark",
+    "date": "2015-04",
+    "location": "Copenhagen",
+    "reads": 2577324,
+    "ribofrac": "0.0347"
+  },
+  "SRR5892186": {
+    "city": "Copenhagen",
+    "collection": "saliva",
+    "country": "Denmark",
+    "date": "2015-04",
+    "location": "Copenhagen",
+    "reads": 1931666,
+    "ribofrac": "0.0435"
+  },
+  "SRR5892187": {
+    "city": "Copenhagen",
+    "collection": "saliva",
+    "country": "Denmark",
+    "date": "2015-04",
+    "location": "Copenhagen",
+    "reads": 2489726,
+    "ribofrac": "0.0302"
+  },
+  "SRR5892188": {
+    "city": "Copenhagen",
+    "collection": "saliva",
+    "country": "Denmark",
+    "date": "2015-04",
+    "location": "Copenhagen",
+    "reads": 2558398,
+    "ribofrac": "0.0325"
+  },
+  "SRR5892189": {
+    "city": "Copenhagen",
+    "collection": "saliva",
+    "country": "Denmark",
+    "date": "2015-04",
+    "location": "Copenhagen",
+    "reads": 2541395,
+    "ribofrac": "0.0467"
+  },
+  "SRR5892190": {
+    "city": "Copenhagen",
+    "collection": "saliva",
+    "country": "Denmark",
+    "date": "2015-04",
+    "location": "Copenhagen",
+    "reads": 2340921,
+    "ribofrac": "0.034"
+  },
+  "SRR5892191": {
+    "city": "Copenhagen",
+    "collection": "saliva",
+    "country": "Denmark",
+    "date": "2015-04",
+    "location": "Copenhagen",
+    "reads": 2297802,
+    "ribofrac": "0.0311"
+  },
+  "SRR5892192": {
+    "city": "Copenhagen",
+    "collection": "saliva",
+    "country": "Denmark",
+    "date": "2015-04",
+    "location": "Copenhagen",
+    "reads": 1442884,
+    "ribofrac": "0.0409"
+  },
+  "SRR5892193": {
+    "city": "Copenhagen",
+    "collection": "saliva",
+    "country": "Denmark",
+    "date": "2015-04",
+    "location": "Copenhagen",
+    "reads": 5323647,
+    "ribofrac": "0.0043"
+  },
+  "SRR5892194": {
+    "city": "Copenhagen",
+    "collection": "saliva",
+    "country": "Denmark",
+    "date": "2015-04",
+    "location": "Copenhagen",
+    "reads": 3129015,
+    "ribofrac": "0.0074"
+  },
+  "SRR5892195": {
+    "city": "Copenhagen",
+    "collection": "saliva",
+    "country": "Denmark",
+    "date": "2015-04",
+    "location": "Copenhagen",
+    "reads": 2278942,
+    "ribofrac": "0.0321"
+  },
+  "SRR5892196": {
+    "city": "Copenhagen",
+    "collection": "saliva",
+    "country": "Denmark",
+    "date": "2015-04",
+    "location": "Copenhagen",
+    "reads": 3893664,
+    "ribofrac": "0.0117"
+  },
+  "SRR5892197": {
+    "city": "Copenhagen",
+    "collection": "saliva",
+    "country": "Denmark",
+    "date": "2015-04",
+    "location": "Copenhagen",
+    "reads": 1470288,
+    "ribofrac": "0.0078"
+  },
+  "SRR5892198": {
+    "city": "Copenhagen",
+    "collection": "saliva",
+    "country": "Denmark",
+    "date": "2015-04",
+    "location": "Copenhagen",
+    "reads": 4906958,
+    "ribofrac": "0.0068"
+  },
+  "SRR5892199": {
+    "city": "Copenhagen",
+    "collection": "saliva",
+    "country": "Denmark",
+    "date": "2015-04",
+    "location": "Copenhagen",
+    "reads": 2449980,
+    "ribofrac": "0.0077"
+  },
+  "SRR5892200": {
+    "city": "Copenhagen",
+    "collection": "saliva",
+    "country": "Denmark",
+    "date": "2015-04",
+    "location": "Copenhagen",
+    "reads": 3362275,
+    "ribofrac": "0.0308"
+  },
+  "SRR5892201": {
+    "city": "Copenhagen",
+    "collection": "saliva",
+    "country": "Denmark",
+    "date": "2015-04",
+    "location": "Copenhagen",
+    "reads": 2441105,
+    "ribofrac": "0.008"
+  },
+  "SRR5892202": {
+    "city": "Copenhagen",
+    "collection": "saliva",
+    "country": "Denmark",
+    "date": "2015-04",
+    "location": "Copenhagen",
+    "reads": 2475467,
+    "ribofrac": "0.0137"
+  },
+  "SRR5892203": {
+    "city": "Copenhagen",
+    "collection": "saliva",
+    "country": "Denmark",
+    "date": "2015-04",
+    "location": "Copenhagen",
+    "reads": 1565345,
+    "ribofrac": "0.0117"
+  },
+  "SRR5892204": {
+    "city": "Copenhagen",
+    "collection": "saliva",
+    "country": "Denmark",
+    "date": "2015-04",
+    "location": "Copenhagen",
+    "reads": 2735832,
+    "ribofrac": "0.0223"
+  },
+  "SRR5892205": {
+    "city": "Copenhagen",
+    "collection": "saliva",
+    "country": "Denmark",
+    "date": "2015-04",
+    "location": "Copenhagen",
+    "reads": 2833849,
+    "ribofrac": "0.0249"
+  },
+  "SRR5892206": {
+    "city": "Copenhagen",
+    "collection": "saliva",
+    "country": "Denmark",
+    "date": "2015-04",
+    "location": "Copenhagen",
+    "reads": 1828921,
+    "ribofrac": "0.0067"
+  },
+  "SRR5892207": {
+    "city": "Copenhagen",
+    "collection": "saliva",
+    "country": "Denmark",
+    "date": "2015-04",
+    "location": "Copenhagen",
+    "reads": 3703950,
+    "ribofrac": "0.0267"
+  },
+  "SRR5892208": {
+    "city": "Copenhagen",
+    "collection": "saliva",
+    "country": "Denmark",
+    "date": "2015-04",
+    "location": "Copenhagen",
+    "reads": 1685393,
+    "ribofrac": "0.0048"
+  },
+  "SRR5892209": {
+    "city": "Copenhagen",
+    "collection": "saliva",
+    "country": "Denmark",
+    "date": "2015-04",
+    "location": "Copenhagen",
+    "reads": 4487908,
+    "ribofrac": "0.0077"
+  },
+  "SRR5892210": {
+    "city": "Copenhagen",
+    "collection": "saliva",
+    "country": "Denmark",
+    "date": "2015-04",
+    "location": "Copenhagen",
+    "reads": 6018951,
+    "ribofrac": "0.0056"
+  },
+  "SRR5892211": {
+    "city": "Copenhagen",
+    "collection": "saliva",
+    "country": "Denmark",
+    "date": "2015-04",
+    "location": "Copenhagen",
+    "reads": 3879747,
+    "ribofrac": "0.0089"
+  },
+  "SRR5892212": {
+    "city": "Copenhagen",
+    "collection": "saliva",
+    "country": "Denmark",
+    "date": "2015-04",
+    "location": "Copenhagen",
+    "reads": 1661546,
+    "ribofrac": "0.0051"
+  },
+  "SRR5892213": {
+    "city": "Copenhagen",
+    "collection": "saliva",
+    "country": "Denmark",
+    "date": "2015-04",
+    "location": "Copenhagen",
+    "reads": 4275127,
+    "ribofrac": "0.008"
+  },
+  "SRR5892214": {
+    "city": "Copenhagen",
+    "collection": "saliva",
+    "country": "Denmark",
+    "date": "2015-04",
+    "location": "Copenhagen",
+    "reads": 4628901,
+    "ribofrac": "0.0113"
+  },
+  "SRR5892215": {
+    "city": "Copenhagen",
+    "collection": "saliva",
+    "country": "Denmark",
+    "date": "2015-04",
+    "location": "Copenhagen",
+    "reads": 6212959,
+    "ribofrac": "0.0046"
+  },
+  "SRR5892216": {
+    "city": "Copenhagen",
+    "collection": "saliva",
+    "country": "Denmark",
+    "date": "2015-04",
+    "location": "Copenhagen",
+    "reads": 7217309,
+    "ribofrac": "0.0088"
+  },
+  "SRR5892217": {
+    "city": "Copenhagen",
+    "collection": "saliva",
+    "country": "Denmark",
+    "date": "2015-04",
+    "location": "Copenhagen",
+    "reads": 3048341,
+    "ribofrac": "0.0083"
+  },
+  "SRR5892218": {
+    "city": "Copenhagen",
+    "collection": "saliva",
+    "country": "Denmark",
+    "date": "2015-04",
+    "location": "Copenhagen",
+    "reads": 737216,
+    "ribofrac": "0.0511"
+  },
+  "SRR5892219": {
+    "city": "Copenhagen",
+    "collection": "saliva",
+    "country": "Denmark",
+    "date": "2015-04",
+    "location": "Copenhagen",
+    "reads": 2785975,
+    "ribofrac": "0.0305"
+  },
+  "SRR5892220": {
+    "city": "Copenhagen",
+    "collection": "saliva",
+    "country": "Denmark",
+    "date": "2015-04",
+    "location": "Copenhagen",
+    "reads": 1756322,
+    "ribofrac": "0.0496"
+  },
+  "SRR5892221": {
+    "city": "Copenhagen",
+    "collection": "saliva",
+    "country": "Denmark",
+    "date": "2015-04",
+    "location": "Copenhagen",
+    "reads": 2598479,
+    "ribofrac": "0.0373"
+  },
+  "SRR5892222": {
+    "city": "Copenhagen",
+    "collection": "saliva",
+    "country": "Denmark",
+    "date": "2015-04",
+    "location": "Copenhagen",
+    "reads": 2562592,
+    "ribofrac": "0.0313"
+  },
+  "SRR5892223": {
+    "city": "Copenhagen",
+    "collection": "saliva",
+    "country": "Denmark",
+    "date": "2015-04",
+    "location": "Copenhagen",
+    "reads": 2548851,
+    "ribofrac": "0.0376"
+  },
+  "SRR5892224": {
+    "city": "Copenhagen",
+    "collection": "saliva",
+    "country": "Denmark",
+    "date": "2015-04",
+    "location": "Copenhagen",
+    "reads": 4478369,
+    "ribofrac": "0.0242"
+  },
+  "SRR5892225": {
+    "city": "Copenhagen",
+    "collection": "saliva",
+    "country": "Denmark",
+    "date": "2015-04",
+    "location": "Copenhagen",
+    "reads": 2008891,
+    "ribofrac": "0.0401"
+  },
+  "SRR5892226": {
+    "city": "Copenhagen",
+    "collection": "saliva",
+    "country": "Denmark",
+    "date": "2015-04",
+    "location": "Copenhagen",
+    "reads": 2292093,
+    "ribofrac": "0.0425"
+  },
+  "SRR5892227": {
+    "city": "Copenhagen",
+    "collection": "saliva",
+    "country": "Denmark",
+    "date": "2015-04",
+    "location": "Copenhagen",
+    "reads": 2488097,
+    "ribofrac": "0.0356"
+  },
+  "SRR5892228": {
+    "city": "Copenhagen",
+    "collection": "saliva",
+    "country": "Denmark",
+    "date": "2015-04",
+    "location": "Copenhagen",
+    "reads": 2002253,
+    "ribofrac": "0.0352"
+  },
+  "SRR5892229": {
+    "city": "Copenhagen",
+    "collection": "saliva",
+    "country": "Denmark",
+    "date": "2015-04",
+    "location": "Copenhagen",
+    "reads": 1882796,
+    "ribofrac": "0.0263"
+  },
+  "SRR5892230": {
+    "city": "Copenhagen",
+    "collection": "saliva",
+    "country": "Denmark",
+    "date": "2015-04",
+    "location": "Copenhagen",
+    "reads": 2206709,
+    "ribofrac": "0.0445"
+  },
+  "SRR5892231": {
+    "city": "Copenhagen",
+    "collection": "saliva",
+    "country": "Denmark",
+    "date": "2015-04",
+    "location": "Copenhagen",
+    "reads": 4117806,
+    "ribofrac": "0.0073"
+  },
+  "SRR5892232": {
+    "city": "Copenhagen",
+    "collection": "saliva",
+    "country": "Denmark",
+    "date": "2015-04",
+    "location": "Copenhagen",
+    "reads": 3841515,
+    "ribofrac": "0.0122"
+  },
+  "SRR5892233": {
+    "city": "Copenhagen",
+    "collection": "saliva",
+    "country": "Denmark",
+    "date": "2015-04",
+    "location": "Copenhagen",
+    "reads": 737842,
+    "ribofrac": "0.0068"
+  },
+  "SRR5892234": {
+    "city": "Copenhagen",
+    "collection": "saliva",
+    "country": "Denmark",
+    "date": "2015-04",
+    "location": "Copenhagen",
+    "reads": 1949958,
+    "ribofrac": "0.0065"
+  },
+  "SRR5892235": {
+    "city": "Copenhagen",
+    "collection": "saliva",
+    "country": "Denmark",
+    "date": "2015-04",
+    "location": "Copenhagen",
+    "reads": 2134186,
+    "ribofrac": "0.0127"
+  },
+  "SRR5892236": {
+    "city": "Copenhagen",
+    "collection": "saliva",
+    "country": "Denmark",
+    "date": "2015-04",
+    "location": "Copenhagen",
+    "reads": 1688399,
+    "ribofrac": "0.007"
+  },
+  "SRR5892237": {
+    "city": "Copenhagen",
+    "collection": "saliva",
+    "country": "Denmark",
+    "date": "2015-04",
+    "location": "Copenhagen",
+    "reads": 2221667,
+    "ribofrac": "0.0052"
+  },
+  "SRR5892238": {
+    "city": "Copenhagen",
+    "collection": "saliva",
+    "country": "Denmark",
+    "date": "2015-04",
+    "location": "Copenhagen",
+    "reads": 3142987,
+    "ribofrac": "0.0116"
+  },
+  "SRR5892239": {
+    "city": "Copenhagen",
+    "collection": "saliva",
+    "country": "Denmark",
+    "date": "2015-04",
+    "location": "Copenhagen",
+    "reads": 1829782,
+    "ribofrac": "0.0096"
+  },
+  "SRR5892240": {
+    "city": "Copenhagen",
+    "collection": "saliva",
+    "country": "Denmark",
+    "date": "2015-04",
+    "location": "Copenhagen",
+    "reads": 3855165,
+    "ribofrac": "0.0063"
+  },
   "SRR6837549": {
     "country": "Singapore",
     "date": "2016-10",

@@ -518,6 +518,24 @@
     "Vitreoscillaceae Pringsheim 1949 (Approved Lists 1980)",
     "Vitreoscillaceae"
   ],
+  "482": [
+    "Neisseria",
+    "\"Gonococcus\" Lindau 1898",
+    "Gonococcus",
+    "\"Merismopedia\" Zopf 1885",
+    "Neisseria Trevisan 1885"
+  ],
+  "488": [
+    "Neisseria mucosa",
+    "ATCC 19696",
+    "CCUG 26877",
+    "CIP 59.51",
+    "DSM 17611",
+    "JCM 12992",
+    "NCTC 12978",
+    "Neisseria mucosa Veron et al. 1959 (Approved Lists 1980)",
+    "Neisseria mucosa (von Lingelsheim 1906) Veron et al. 1959"
+  ],
   "497": [
     "Psychrobacter",
     "Psychrobacter Juni and Heym 1986"
@@ -1126,6 +1144,15 @@
     "Mycobacterium influenzae",
     "NCTC 8143"
   ],
+  "729": [
+    "Haemophilus parainfluenzae",
+    "ATCC 33392",
+    "CCUG 12836",
+    "CIP 102513",
+    "DSM 8978",
+    "Haemophilus parainfluenzae Rivers 1922",
+    "NCTC 7857"
+  ],
   "730": [
     "[Haemophilus] ducreyi",
     "ATCC 33940",
@@ -1299,6 +1326,20 @@
     "\"Ristella distasonis\" (Eggerth and Gagnon 1933) Prevot 1938",
     "Ristella distasonis"
   ],
+  "837": [
+    "Porphyromonas gingivalis",
+    "ATCC 33277",
+    "Bacteroides gingivalis Coykendall et al. 1980",
+    "Bacteroides gingivalis",
+    "CCUG 25893",
+    "CCUG 25928",
+    "CIP 103683",
+    "DSM 20709",
+    "JCM 12257",
+    "NCTC 11834",
+    "Porphyromonas gingivalis (Coykendall et al. 1980) Shah and Collins 1988 emend. Hahnke et al. 2016",
+    "strain 2561"
+  ],
   "838": [
     "Prevotella",
     "Prevotella Shah and Collins 1990 emend. Sakamoto and Ohkuma 2012",
@@ -1306,6 +1347,11 @@
     "Xylanibacter",
     "Xylanibacter Ueki et al. 2006",
     "Xylanibacter Ueki et al. 2006 emend. Hitch et al."
+  ],
+  "848": [
+    "Fusobacterium",
+    "Fusibacterium",
+    "Fusobacterium Knorr 1922"
   ],
   "853": [
     "Faecalibacterium prausnitzii",
@@ -1701,6 +1747,60 @@
     "Streptococcus",
     "Streptococcus Rosenbach 1884"
   ],
+  "1303": [
+    "Streptococcus oralis",
+    "ATCC 35037",
+    "CCUG 13229",
+    "CCUG 24891",
+    "CIP 102922",
+    "DSM 20627",
+    "JCM 12997",
+    "LMG 14532",
+    "LMG:14532",
+    "NCTC 11427",
+    "strain LVG 1",
+    "strain PB 182",
+    "strain SK23",
+    "Streptococcus oralis Bridge and Sneath 1982 emend. Jensen et al. 2016",
+    "Streptococcus oralis Bridge and Sneath 1982 emend. Kilian et al. 1989",
+    "Streptococcus oralis Bridge and Sneath 1982 emend. Kilpper-Balz et al. 1985"
+  ],
+  "1304": [
+    "Streptococcus salivarius",
+    "ATCC 7073",
+    "CCUG 11878",
+    "CCUG 17825",
+    "CCUG 50207",
+    "CIP 102503",
+    "DSM 20560",
+    "HAMBI 1716",
+    "JCM 5707",
+    "LMG 11489",
+    "LMG:11489",
+    "NCDO 1779",
+    "NCFB 1779",
+    "NCIMB 701779",
+    "NCTC 8618",
+    "Streptococcus salivarius Andrewes and Horder 1906",
+    "Streptococcus salivarius subsp. salivarius Andrewes and Horder 1906",
+    "Streptococcus salivarius subsp. salivarius",
+    "Streptococcus sp. FStet12",
+    "Streptococcus sp. HSISS4"
+  ],
+  "1305": [
+    "Streptococcus sanguinis",
+    "ATCC 10556",
+    "CCUG 17826",
+    "CCUG 35770",
+    "CIP 55.128",
+    "DSM 20567",
+    "JCM 5708",
+    "LMG 14702",
+    "LMG:14702",
+    "NCTC 7863",
+    "strain SK1",
+    "Streptococcus sanguinis corrig. White and Niven 1946 (Approved Lists 1980) emend. Kilian et al. 1989"
+  ],
   "1307": [
     "Streptococcus suis",
     "ATCC 43765",
@@ -1746,6 +1846,21 @@
     "NBRC 102642",
     "NCTC 7465",
     "Streptococcus pneumoniae (Klein 1884) Chester 1901"
+  ],
+  "1318": [
+    "Streptococcus parasanguinis",
+    "ATCC 15912",
+    "CCUG 30417",
+    "CIP 13046",
+    "DSM 6778",
+    "KCTC 15406",
+    "LMG 14537",
+    "LMG:14537",
+    "NCTC 12854",
+    "strain 55898",
+    "Streptococcus parasanguinis corrig. Whiley et al. 1990",
+    "Streptococcus parasanguis",
+    "Streptococcus parasanguis Whiley et al. 1990"
   ],
   "1357": [
     "Lactococcus",
@@ -2073,6 +2188,20 @@
     "NCIMB 11840",
     "NRRL B-1840 [[Lactobacillus cellobiosus Rogosa et al. 1953 (Approved Lists 1980)]]",
     "NRRL B-4524"
+  ],
+  "1660": [
+    "Schaalia odontolytica",
+    "ATCC 17929",
+    "BCCM/LMG:18080",
+    "CCUG 20536",
+    "CIP 101124",
+    "DSM 19120",
+    "DSM 43760",
+    "JCM 14871",
+    "LMG 18080",
+    "LMG:18080",
+    "NCTC 9935",
+    "Schaalia odontolytica (Batty 1958) Nouioui et al. 2018"
   ],
   "1678": [
     "Bifidobacterium",
@@ -2844,6 +2973,17 @@
     "T4 phage group",
     "T4virus"
   ],
+  "10747": [
+    "Streptococcus phage Cp1",
+    "Bacteriophage CP-1",
+    "phage CP-1",
+    "Streptococcus phage Cp-1"
+  ],
+  "10748": [
+    "Streptococcus phage CP-7",
+    "Bacteriophage CP-7",
+    "phage CP-7"
+  ],
   "10760": [
     "Escherichia phage T7",
     "Bacteriophage T7",
@@ -3519,6 +3659,18 @@
     "unclassified phage",
     "unclassified phages"
   ],
+  "12402": [
+    "Streptococcus phage EJ-1",
+    "Bacteriophage EJ-1",
+    "phage EJ-1"
+  ],
+  "12417": [
+    "Lactobacillus phage phiadh",
+    "Bacteriophage adh",
+    "bacteriophage phi adh",
+    "Lactobacillus bacteriophage phi adh",
+    "Lactobacillus phage phi-adh"
+  ],
   "12429": [
     "unclassified viruses",
     "unassigned viruses",
@@ -3661,6 +3813,21 @@
     "Sphingomonas yanoikuyae",
     "Sphingomonas yanoikuyae Yabuuchi et al. 1990"
   ],
+  "28037": [
+    "Streptococcus mitis",
+    "ATCC 49456",
+    "CCUG 31611",
+    "CCUG 35790",
+    "CIP 103335",
+    "DSM 12643",
+    "JCM 12971",
+    "LMG 14557",
+    "LMG:14557",
+    "NCTC 12261",
+    "strain NS 51",
+    "Streptococcus mitis Andrewes and Horder 1906 (Approved Lists 1980) emend. Kilian et al. 1989",
+    "Streptococcus mitis Andrewes and Horder 1906 emend. Judicial Commission 1993"
+  ],
   "28038": [
     "Latilactobacillus curvatus",
     "ATCC 25601",
@@ -3712,6 +3879,24 @@
     "NCCB 73001",
     "NCTC 5866",
     "strain GC2 [[Acinetobacter mesopotamicus]]"
+  ],
+  "28131": [
+    "Prevotella intermedia",
+    "ATCC 25611",
+    "Bacteroides intermedius (Holdeman and Moore 1970) Johnson and Holdeman 1983",
+    "Bacteroides intermedius",
+    "Bacteroides melaninogenicus subsp. intermedius Holdeman and Moore 1970 (Approved Lists 1980)",
+    "Bacteroides melaninogenicus subsp. intermedius",
+    "CCUG 24041",
+    "CIP 101222",
+    "CIP 103682",
+    "DSM 20706",
+    "JCM 11150",
+    "JCM 12248",
+    "NCTC 13070",
+    "Prevotella intermedia (Holdeman and Moore 1970) Shah and Collins 1990 emend. Hahnke et al. 2016",
+    "strain Finegold B422",
+    "VPI 4197"
   ],
   "28132": [
     "Prevotella melaninogenica",
@@ -4583,6 +4768,11 @@
     "CIP 104251",
     "Ideonella dechloratans Malmqvist et al. 1994"
   ],
+  "37105": [
+    "Lactobacillus phage JCL1032",
+    "Bacteriophage JCL1032",
+    "Lactobacillus delbrueckii bacteriophage JCL1032"
+  ],
   "37111": [
     "Human papillomavirus 28",
     "Human papillomavirus - 28",
@@ -4794,6 +4984,26 @@
   ],
   "39759": [
     "Deltavirus"
+  ],
+  "39777": [
+    "Veillonella atypica",
+    "ATCC 17744",
+    "DSM 20739",
+    "NCTC 11830",
+    "strain Kon",
+    "strain KON",
+    "Veillonella atypica (Rogosa 1965) Mays et al. 1982",
+    "Veillonella parvula subsp. atypica Rogosa 1965 (Approved Lists 1980)",
+    "Veillonella parvula subsp. atypica"
+  ],
+  "39778": [
+    "Veillonella dispar",
+    "ATCC 17748",
+    "DSM 20735",
+    "NCTC 11831",
+    "Veillonella alcalescens subsp. dispar Rogosa 1965 (Approved Lists 1980)",
+    "Veillonella alcalescens subsp. dispar",
+    "Veillonella dispar (Rogosa 1965) Mays et al. 1982"
   ],
   "39948": [
     "Dialister",
@@ -5020,6 +5230,24 @@
     "NCTC 10367",
     "Pseudomonas alcaligenes Monias 1928",
     "VKM B-2171"
+  ],
+  "43675": [
+    "Rothia mucilaginosa",
+    "ATCC 25296",
+    "CCM 2417",
+    "CCUG 20962",
+    "CIP 71.14",
+    "DSM 20746",
+    "IFO 15673",
+    "JCM 10910",
+    "\"Micrococcus mucilaginosus\" Migula 1900",
+    "Micrococcus mucilaginosus",
+    "NBRC 15673",
+    "NCTC 10663",
+    "Rothia mucilaginosa (Bergan and Kocur 1982) Collins et al. 2000",
+    "Rothia mucilaginosa (Bergan and Kocur 1982) Collins et al. 2000 emend. Nouioui et al. 2018",
+    "Stomatococcus mucilaginosus (ex Migula 1900) Bergan and Kocur 1982",
+    "Stomatococcus mucilaginosus"
   ],
   "44008": [
     "Enterococcus cecorum",
@@ -5394,6 +5622,12 @@
     "Salmonella enterica subsp. Subsp. I",
     "Salmonella enterica subsp. Subsp. Ixxx"
   ],
+  "59241": [
+    "Streptococcus phage Dp-1",
+    "Bacteriophage Dp-1",
+    "Pneumococcus phage Dp-1",
+    "Streptococcus bacteriophage Dp-1"
+  ],
   "59300": [
     "Getah virus",
     "GETV"
@@ -5652,6 +5886,10 @@
   "72197": [
     "Human erythrovirus V9"
   ],
+  "73422": [
+    "Streptococcus phage TP-J34",
+    "Streptococcus thermophilus bacteriophage TP-J34"
+  ],
   "74152": [
     "Elusimicrobia",
     "candidate division Termite Group 1",
@@ -5860,6 +6098,17 @@
     "LMG:2803",
     "NBRC 102595",
     "NCTC 13032"
+  ],
+  "84135": [
+    "Gemella sanguinis",
+    "ATCC 700632",
+    "CCUG 37820",
+    "CIP 105929",
+    "Gemella sanguinis Collins et al. 1999",
+    "Gemella sp. 2045-94",
+    "LMG 18986",
+    "LMG:18986",
+    "strain 2045-94"
   ],
   "85006": [
     "Micrococcales",
@@ -6489,6 +6738,16 @@
   "156690": [
     "Beet mild yellowing virus",
     "BMYV"
+  ],
+  "157687": [
+    "Leptotrichia wadei",
+    "CCUG 47505",
+    "CIP 107918",
+    "DSM 19758",
+    "JCM 16777",
+    "Leptotrichia sp. LB16",
+    "Leptotrichia wadei Eribe et al. 2004",
+    "strain LB 16"
   ],
   "158836": [
     "Enterobacter hormaechei",
@@ -7663,6 +7922,11 @@
     "human papillomavirus 106",
     "Human papillomavirus type 106"
   ],
+  "338473": [
+    "Dybvigvirus Av1",
+    "Actinomyces virus Av1",
+    "Bacteriophage Av-1"
+  ],
   "338478": [
     "Macaque simian foamy virus",
     "SFV-1",
@@ -7730,6 +7994,10 @@
   ],
   "354276": [
     "Enterobacter cloacae complex"
+  ],
+  "354328": [
+    "Bell pepper alphaendornavirus",
+    "Bell pepper endornavirus"
   ],
   "356114": [
     "Hepatitis C virus genotype 3",
@@ -7846,6 +8114,10 @@
     "JCM 15633",
     "strain XB1A"
   ],
+  "372457": [
+    "Streptococcus phage M102",
+    "Streptococcus mutans phage M102"
+  ],
   "373193": [
     "Xenotropic MuLV-related virus VP62",
     "XMRV-VP62"
@@ -7903,6 +8175,10 @@
     "Paramecium bursaria Chlorella virus FR483",
     "Chlorella virus FR483"
   ],
+  "403905": [
+    "Streptococcus phage P9",
+    "Streptococcus bacteriophage P9"
+  ],
   "404135": [
     "Bovine coronavirus isolate Alpaca"
   ],
@@ -7922,6 +8198,20 @@
     "archaeal virus",
     "bacterial viruses",
     "prokaryotic virus"
+  ],
+  "423477": [
+    "Veillonella rogosae",
+    "CCUG 54233",
+    "DSM 18960",
+    "JCM 15642",
+    "strain CF100",
+    "Veillonella rogosae Arif et al. 2008",
+    "Veillonella sp. NVG 05cf",
+    "Veillonella sp. NVG 100cf",
+    "Veillonella sp. NVG 24cf",
+    "Veillonella sp. NVG 30cf",
+    "Veillonella sp. NVG 84cf",
+    "Veillonella sp. NVG 88cf"
   ],
   "425279": [
     "Rehmannia mosaic virus"
@@ -8042,6 +8332,15 @@
   ],
   "464095": [
     "Picornavirales"
+  ],
+  "470565": [
+    "Prevotella histicola",
+    "CCUG 55407",
+    "DSM 19854",
+    "JCM 15637",
+    "Prevotella genomosp. T10",
+    "Prevotella histicola Downes et al. 2008 emend. Hahnke et al. 2016",
+    "strain T05-04"
   ],
   "472759": [
     "Nitrosococcus halophilus Nc 4",
@@ -8169,6 +8468,14 @@
     "Influenza B virus (B/Lee/40)",
     "Influenza B virus (STRAIN B/LEE/40)"
   ],
+  "521095": [
+    "Lancefieldella parvulum DSM 20469",
+    "Atopobium parvulum ATCC 33793",
+    "Atopobium parvulum DSM 20469",
+    "Atopobium parvulum JCM 10300",
+    "Atopobium parvulum strain DSM 20469",
+    "Atopobium parvulum str. DSM 20469"
+  ],
   "526119": [
     "unclassified Mamastrovirus"
   ],
@@ -8199,6 +8506,9 @@
     "Prevotella copri strain DSM 18205",
     "Prevotella copri str. DSM 18205"
   ],
+  "537874": [
+    "Streptococcus phage PH15"
+  ],
   "538123": [
     "Mammalian orthoreovirus 3",
     "Mammalian orthoreovirus type 3",
@@ -8226,6 +8536,13 @@
     "Hafnia sp. Z11",
     "LMG 24706",
     "LMG:24706"
+  ],
+  "547045": [
+    "Neisseria sicca ATCC 29256",
+    "Neisseria sicca LMG 5290",
+    "Neisseria sicca NRL 30016",
+    "Neisseria sicca strain ATCC 29256",
+    "Neisseria sicca str. ATCC 29256"
   ],
   "547228": [
     "Bacillus phage PM1",
@@ -8490,6 +8807,10 @@
     "Astrovirus VA1",
     "Human astrovirus VA1"
   ],
+  "646413": [
+    "Streptococcus phage 5093",
+    "Streptococcus thermophilus phage 5093"
+  ],
   "649188": [
     "Lujo mammarenavirus",
     "Lujo virus"
@@ -8599,6 +8920,11 @@
     "Phieco32-like viruses",
     "Phieco32virus"
   ],
+  "680646": [
+    "Rothia mucilaginosa DY-18",
+    "Rothia mucilaginosa strain DY-18",
+    "Rothia mucilaginosa str. DY-18"
+  ],
   "682382": [
     "HMO Astrovirus A",
     "Human-Mink-Ovine like astrovirus A"
@@ -8608,6 +8934,9 @@
   ],
   "683174": [
     "Astrovirus VA3"
+  ],
+  "683735": [
+    "Aggregatibacter phage S1249"
   ],
   "687329": [
     "Anelloviridae",
@@ -8848,6 +9177,15 @@
   "711470": [
     "Mycobacterium phage RedRock",
     "Mycobacteriophage RedRock"
+  ],
+  "712122": [
+    "Actinomyces sp. oral taxon 414"
+  ],
+  "712623": [
+    "Streptococcus sp. oral taxon 061"
+  ],
+  "712633": [
+    "Streptococcus sp. oral taxon 431"
   ],
   "720708": [
     "Human papillomavirus 117",
@@ -9324,6 +9662,9 @@
     "Xenotropic MuLV-related virus RKO",
     "Xenotropic MuLV-related virus XCL4"
   ],
+  "1051631": [
+    "Streptococcus phage YMC-2011"
+  ],
   "1054033": [
     "Arcobacter venerupis",
     "Arcobacter sp. F67-11",
@@ -9649,6 +9990,12 @@
   "1204542": [
     "Pseudomonas phage PA26"
   ],
+  "1206110": [
+    "Lactobacillus phage phiAQ113",
+    "Lactobacillus bacteriophage phage AQ113",
+    "Lactobacillus helveticus phage AQ113",
+    "Lactobacillus phage AQ113"
+  ],
   "1206300": [
     "Enterobacteria phage Hgal1",
     "bacteriophage Hgal1"
@@ -9724,6 +10071,12 @@
   ],
   "1233383": [
     "Human cosavirus"
+  ],
+  "1236518": [
+    "Prevotella scopos JCM 17725",
+    "Prevotella scopos CCUG 57945",
+    "Prevotella scopos DSM 22613",
+    "Prevotella scopos W2052"
   ],
   "1237159": [
     "Escherichia phage NJ01",
@@ -9821,6 +10174,9 @@
   "1288116": [
     "Human papillomavirus type XS2"
   ],
+  "1289467": [
+    "Lactococcus phage CaseusJM1"
+  ],
   "1296669": [
     "Aquabacterium olei",
     "Aquabacterium olei Pham et al. 2015",
@@ -9883,6 +10239,12 @@
   "1315264": [
     "Human papillomavirus type 161",
     "Human papillomavirus 161"
+  ],
+  "1316408": [
+    "Streptococcus sp. HSISM1"
+  ],
+  "1316411": [
+    "Streptococcus sp. HSISS2"
   ],
   "1324352": [
     "Chryseobacterium gallinarum",
@@ -9980,6 +10342,9 @@
   ],
   "1349410": [
     "Pandoravirus salinus"
+  ],
+  "1385385": [
+    "Streptococcus phage TP-778L"
   ],
   "1389204": [
     "Feline astrovirus 2"
@@ -10106,6 +10471,12 @@
   "1445859": [
     "Shewanella phage Spp001",
     "Shewanella putrefaciens bacteriophage Spp001"
+  ],
+  "1448274": [
+    "Streptococcus phage K13"
+  ],
+  "1448276": [
+    "Streptococcus phage IC1"
   ],
   "1450749": [
     "IAS virus"
@@ -10462,9 +10833,15 @@
   "1563661": [
     "Delftia phage RG-2014"
   ],
+  "1566990": [
+    "Streptococcus phage SpSL1"
+  ],
   "1566995": [
     "Pseudomonas phage YH6",
     "Pseudomonas aeruginosa phage YH6"
+  ],
+  "1567012": [
+    "Clostridium phage phiCT453A"
   ],
   "1567027": [
     "Escherichia phage vB_EcoM_VR20",
@@ -10510,6 +10887,10 @@
   ],
   "1586713": [
     "Yellowstone lake phycodnavirus 1"
+  ],
+  "1587907": [
+    "Streptococcus phage M102AD",
+    "Streptococcus mutans phage M102AD"
   ],
   "1589270": [
     "Streptococcus phage Str-PAP-1"
@@ -10606,6 +10987,11 @@
     "Che8likevirus",
     "Che8virus"
   ],
+  "1623303": [
+    "Brussowvirus",
+    "Sfi11virus",
+    "Sfi1unalikevirus"
+  ],
   "1623304": [
     "Moineauvirus",
     "Sfi21dt1virus",
@@ -10655,6 +11041,11 @@
   ],
   "1647282": [
     "Paracoccus phage Shpa"
+  ],
+  "1647391": [
+    "Streptococcus phage APCM01",
+    "Streptotoccus mutans phage M103",
+    "Streptotoccus phage M103"
   ],
   "1647924": [
     "Human papillomavirus KC5"
@@ -10756,6 +11147,27 @@
   ],
   "1701810": [
     "Citrobacter phage Margaery"
+  ],
+  "1701811": [
+    "Streptococcus phage phiARI0004"
+  ],
+  "1701813": [
+    "Streptococcus phage phiARI0131-1"
+  ],
+  "1701814": [
+    "Streptococcus phage phiARI0131-2"
+  ],
+  "1701824": [
+    "Streptococcus phage phiARI0460-1"
+  ],
+  "1701826": [
+    "Streptococcus phage phiARI0462"
+  ],
+  "1701828": [
+    "Streptococcus phage phiARI0468-2"
+  ],
+  "1701830": [
+    "Streptococcus phage phiARI0468-4"
   ],
   "1704090": [
     "Human hepegivirus"
@@ -10939,6 +11351,9 @@
     "LMG:30172",
     "strain EN-117"
   ],
+  "1814960": [
+    "Streptococcus virus 9874"
+  ],
   "1815522": [
     "Synechococcus phage S-WAM2",
     "Synechococcus cyanophage S-WAM2"
@@ -10973,6 +11388,9 @@
   ],
   "1836608": [
     "Canine kobuvirus"
+  ],
+  "1838074": [
+    "Gordonia phage OneUp"
   ],
   "1838075": [
     "Gordonia phage Orchid"
@@ -11274,6 +11692,9 @@
   "1923451": [
     "Shahe picorna-like virus 8"
   ],
+  "1923631": [
+    "Wenzhou picorna-like virus 44"
+  ],
   "1923634": [
     "Wenzhou picorna-like virus 47"
   ],
@@ -11544,6 +11965,10 @@
   "1982562": [
     "Soupsvirus"
   ],
+  "1982583": [
+    "Cepunavirus",
+    "Cp1virus"
+  ],
   "1982876": [
     "Bclasvirinae"
   ],
@@ -11800,6 +12225,9 @@
   ],
   "2029663": [
     "Lactococcus phage 38507"
+  ],
+  "2029664": [
+    "Lactococcus phage 51701"
   ],
   "2029666": [
     "Lactococcus phage 56301"
@@ -12304,6 +12732,9 @@
   "2283031": [
     "Dickeya phage vB_DsoM_JA29"
   ],
+  "2283270": [
+    "Caulobacter phage CcrBL9"
+  ],
   "2283297": [
     "Mycobacterium phage Mantra"
   ],
@@ -12313,6 +12744,9 @@
   ],
   "2301548": [
     "Mycobacterium phage Cane17"
+  ],
+  "2301556": [
+    "Mycobacterium phage Rando14"
   ],
   "2301558": [
     "Gordonia phage Marietta"
@@ -12365,6 +12799,10 @@
   ],
   "2484206": [
     "Microbacterium phage Goodman"
+  ],
+  "2484217": [
+    "Arthrobacter phage Anjali",
+    "Arthobacter phage Anjali"
   ],
   "2487072": [
     "Epilithonimonas vandammei",
@@ -12498,6 +12936,9 @@
   ],
   "2530023": [
     "Pseudomonas phage Psa21"
+  ],
+  "2530024": [
+    "Fusobacterium phage Fnu1"
   ],
   "2530172": [
     "Pseudomonas phage Lana"
@@ -12838,8 +13279,14 @@
   "2608321": [
     "Aeromonas phage vB_AhyS-A18P4"
   ],
+  "2608887": [
+    "unclassified Streptococcus"
+  ],
   "2610881": [
     "unclassified Janthinobacterium"
+  ],
+  "2610896": [
+    "Streptococcus sp. LPB0220"
   ],
   "2618290": [
     "unclassified Sulfurospirillum"
@@ -12887,6 +13334,14 @@
   "2662298": [
     "Lactococcus phage P656"
   ],
+  "2663009": [
+    "Fusobacterium pseudoperiodonticum",
+    "\"Fusobacterium pseudoperiodonticum\" Park et al. 2019",
+    "JCM 33009",
+    "KCOM 1259",
+    "KCTC 5677",
+    "strain ChDC F213"
+  ],
   "2664899": [
     "Pseudomonas sp. CFSAN084952"
   ],
@@ -12901,6 +13356,18 @@
   ],
   "2681552": [
     "Variovorax sp. RKNM96"
+  ],
+  "2682455": [
+    "Veillonella sp. S12025-13"
+  ],
+  "2682456": [
+    "Veillonella nakazawae",
+    "CCUG 74597",
+    "JCM 33966",
+    "strain T1-7",
+    "Veillonella nakazawae Mishima et al. 2021",
+    "Veillonella sp. S6-16",
+    "Veillonella sp. T1-7"
   ],
   "2682610": [
     "Zambian malbrouck virus 1"
@@ -13363,6 +13830,9 @@
   ],
   "2759464": [
     "Klebsiella virus KpV2811"
+  ],
+  "2759692": [
+    "Streptococcus sp. Marseille-Q3533"
   ],
   "2760308": [
     "Propioniciclava sp. MC1595",
@@ -13841,6 +14311,10 @@
     "Lactococcus phage CB13",
     "Lactococcus lactis phage CB13"
   ],
+  "2899133": [
+    "Candidatus Nanosynbacter sp. HMT-352",
+    "Candidatus Nanosynbacter sp. HMT352"
+  ],
   "2901380": [
     "Pseudomonas sp. NIBR-H-19"
   ],
@@ -13858,6 +14332,16 @@
     "Streptococcus phage Sfi19",
     "Streptococcus thermophilus bacteriophage Sfi19",
     "Streptococcus thermophilus phage Sfi19"
+  ],
+  "2905688": [
+    "Streptococcus phage Sfi21",
+    "Bacteriophage SFi21",
+    "Streptococcus thermophilus bacteriophage Sfi21",
+    "Streptococcus thermophilus phage Sfi21"
+  ],
+  "2905727": [
+    "Streptococcus phage 7201",
+    "Streptococcus thermophilus bacteriophage 7201"
   ],
   "2905917": [
     "Pichinde virus",
@@ -13900,6 +14384,10 @@
     "Mycobacterium phage Pukovnik",
     "Mycobacteriophage Pukovnik"
   ],
+  "2919544": [
+    "Streptococcus phage Abc2",
+    "Streptococcus thermophilus phage Abc2"
+  ],
   "2919549": [
     "Aeromonas phage 65",
     "Bacteriophage 65"
@@ -13920,8 +14408,15 @@
   "2930198": [
     "Acinetobacter sp. PK01"
   ],
+  "2932879": [
+    "Streptococcus phage DT1",
+    "Streptococcus thermophilus bacteriophage DT1"
+  ],
   "2942966": [
     "Suoliviridae"
+  ],
+  "2942975": [
+    "Oafivirinae"
   ],
   "2942989": [
     "Afonbuvirus"
@@ -13980,6 +14475,9 @@
   ],
   "2946820": [
     "Beograduvirus"
+  ],
+  "2948643": [
+    "Buhlduvirus"
   ],
   "2948645": [
     "Burzaovirus"
@@ -14079,6 +14577,9 @@
   ],
   "2986402": [
     "uncultured phage cr49_1"
+  ],
+  "2986403": [
+    "uncultured phage cr91_1"
   ],
   "2986404": [
     "uncultured phage cr17_1"
