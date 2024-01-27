@@ -15,7 +15,6 @@ with open(disease_tsv_path, mode='r') as infile:
         if 'BioSample:' in line:
             current_biosample = line.split('BioSample:')[1].split(';')[0].strip()
         if 'season' in line:
-            print(line)
             
             season = re.search(r'/season="(.*?)"',line).group(1).strip()
         if 'type_of_nucleic_acid' in line:
@@ -32,7 +31,6 @@ with open(disease_tsv_path, mode='r') as infile:
                 description])
 
 
-print(biosample_metadata)
 with open(sra_run_path, mode='r', newline='') as infile, open(metadata_file_path, mode='w', newline='') as outfile:
     reader = csv.reader(infile)
     writer = csv.writer(outfile, delimiter='\t')
@@ -43,8 +41,6 @@ with open(sra_run_path, mode='r', newline='') as infile, open(metadata_file_path
         run = line[0]
         biosample = line[6]
         date = line[10]
-        print(date)
-        print(biosample)
         season, na_type, description = biosample_metadata[biosample]
 
         writer.writerow([run, na_type, date, description, season])
