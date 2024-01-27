@@ -306,6 +306,8 @@ def interpret(project, papers, bits):
                 city="Copenhagen",
                 location="Copenhagen",
                 date="2015-04",
-                collection="saliva")
+                collection="saliva",
+                na_type=na_type,
+                disease_state=disease_state)
     else:
         raise Exception("Metadata format for %s unknown" % project)
