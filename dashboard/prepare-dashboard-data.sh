@@ -71,5 +71,11 @@ done | xargs -I {} -P 32 aws s3 cp {} alignments/
 
 $MGS_PIPELINE_DIR/dashboard/prepare-dashboard-data.py $ROOT_DIR $MGS_PIPELINE_DIR
 
-echo "Now check in data.js and the json files and check out on prod"
-echo "Then run copy-down-hvreads.sh and send the result to prod out of band"
+echo
+echo "Now check in your changes and send for review."
+echo
+echo "After review is complete and the changes are merged, you'll need to"
+echo "ssh into data.securebio.org and run:"
+echo "    cd $(basename $ROOT_DIR)/"
+echo "    git pull"
+echo "To update the dashboard."
