@@ -456,13 +456,14 @@ def ribofrac(args, subset_size=1000):
         ]
         # Use the total number of reads for each input as weights
         weights = list(total_reads_dict.values())
-        try:
-            weighted_rrna_fraction = np.average(
-                fractions_rrna_in_subset, weights=weights
-            )
-        except ZeroDivisionError:
-            weighted_rrna_fraction = 0
-            print("Sample doesn't contain ribosomal reads.")
+        #try:
+        print(sample, fractions_rrna_in_subset, weights) # DEBUG
+        weighted_rrna_fraction = np.average(
+            fractions_rrna_in_subset, weights=weights
+        )
+        #except ZeroDivisionError:
+        #    weighted_rrna_fraction = 0
+        #    print("Sample doesn't contain ribosomal reads.")
         fraction_rrna = round(weighted_rrna_fraction, 4)
 
         print(
