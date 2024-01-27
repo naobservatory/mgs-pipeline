@@ -1,0 +1,1083 @@
+1: metatranscriptome
+Identifiers: BioSample: SAMN07440178; Sample name: X4132RNA; SRA: SRS2403905
+Organism: human metagenome
+Attributes:
+    /collection date="2015-04-10"
+    /broad-scale environmental context="saliva"
+    /local-scale environmental context="bodily secretion"
+    /environmental medium="organism substance"
+    /geographic location="Denmark: Copenhagen"
+    /host="Homo sapiens"
+    /latitude and longitude="missing"
+    /host subject id="S_32"
+    /replicate="biological_replicate_RNA_10"
+Description:
+Caries
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN07440178	ID: 7440178
+
+2: metatranscriptome
+Identifiers: BioSample: SAMN07440177; Sample name: X4128RNA; SRA: SRS2403907
+Organism: human metagenome
+Attributes:
+    /collection date="2015-04-10"
+    /broad-scale environmental context="saliva"
+    /local-scale environmental context="bodily secretion"
+    /environmental medium="organism substance"
+    /geographic location="Denmark: Copenhagen"
+    /host="Homo sapiens"
+    /latitude and longitude="missing"
+    /host subject id="S_31"
+    /replicate="biological_replicate_RNA_9"
+Description:
+Caries
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN07440177	ID: 7440177
+
+3: metatranscriptome
+Identifiers: BioSample: SAMN07440176; Sample name: X4124RNA; SRA: SRS2403872
+Organism: human metagenome
+Attributes:
+    /collection date="2015-04-10"
+    /broad-scale environmental context="saliva"
+    /local-scale environmental context="bodily secretion"
+    /environmental medium="organism substance"
+    /geographic location="Denmark: Copenhagen"
+    /host="Homo sapiens"
+    /latitude and longitude="missing"
+    /host subject id="S_30"
+    /replicate="biological_replicate_RNA_8"
+Description:
+Caries
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN07440176	ID: 7440176
+
+4: metatranscriptome
+Identifiers: BioSample: SAMN07440175; Sample name: X4120RNA; SRA: SRS2403875
+Organism: human metagenome
+Attributes:
+    /collection date="2015-04-10"
+    /broad-scale environmental context="saliva"
+    /local-scale environmental context="bodily secretion"
+    /environmental medium="organism substance"
+    /geographic location="Denmark: Copenhagen"
+    /host="Homo sapiens"
+    /latitude and longitude="missing"
+    /host subject id="S_29"
+    /replicate="biological_replicate_RNA_7"
+Description:
+Caries
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN07440175	ID: 7440175
+
+5: metatranscriptome
+Identifiers: BioSample: SAMN07440174; Sample name: X4116RNA; SRA: SRS2403906
+Organism: human metagenome
+Attributes:
+    /collection date="2015-04-10"
+    /broad-scale environmental context="saliva"
+    /local-scale environmental context="bodily secretion"
+    /environmental medium="organism substance"
+    /geographic location="Denmark: Copenhagen"
+    /host="Homo sapiens"
+    /latitude and longitude="missing"
+    /host subject id="S_28"
+    /replicate="biological_replicate_RNA_6"
+Description:
+Caries
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN07440174	ID: 7440174
+
+6: metatranscriptome
+Identifiers: BioSample: SAMN07440173; Sample name: X4108RNA; SRA: SRS2403869
+Organism: human metagenome
+Attributes:
+    /collection date="2015-04-10"
+    /broad-scale environmental context="saliva"
+    /local-scale environmental context="bodily secretion"
+    /environmental medium="organism substance"
+    /geographic location="Denmark: Copenhagen"
+    /host="Homo sapiens"
+    /latitude and longitude="missing"
+    /host subject id="S_27"
+    /replicate="biological_replicate_RNA_5"
+Description:
+Caries
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN07440173	ID: 7440173
+
+7: metatranscriptome
+Identifiers: BioSample: SAMN07440172; Sample name: X4104RNA; SRA: SRS2403886
+Organism: human metagenome
+Attributes:
+    /collection date="2015-04-10"
+    /broad-scale environmental context="saliva"
+    /local-scale environmental context="bodily secretion"
+    /environmental medium="organism substance"
+    /geographic location="Denmark: Copenhagen"
+    /host="Homo sapiens"
+    /latitude and longitude="missing"
+    /host subject id="S_26"
+    /replicate="biological_replicate_RNA_4"
+Description:
+Caries
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN07440172	ID: 7440172
+
+8: metatranscriptome
+Identifiers: BioSample: SAMN07440171; Sample name: X4100RNA; SRA: SRS2403887
+Organism: human metagenome
+Attributes:
+    /collection date="2015-04-10"
+    /broad-scale environmental context="saliva"
+    /local-scale environmental context="bodily secretion"
+    /environmental medium="organism substance"
+    /geographic location="Denmark: Copenhagen"
+    /host="Homo sapiens"
+    /latitude and longitude="missing"
+    /host subject id="S_25"
+    /replicate="biological_replicate_RNA_3"
+Description:
+Caries
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN07440171	ID: 7440171
+
+9: metatranscriptome
+Identifiers: BioSample: SAMN07440170; Sample name: X4096RNA; SRA: SRS2403880
+Organism: human metagenome
+Attributes:
+    /collection date="2015-04-10"
+    /broad-scale environmental context="saliva"
+    /local-scale environmental context="bodily secretion"
+    /environmental medium="organism substance"
+    /geographic location="Denmark: Copenhagen"
+    /host="Homo sapiens"
+    /latitude and longitude="missing"
+    /host subject id="S_24"
+    /replicate="biological_replicate_RNA_2"
+Description:
+Caries
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN07440170	ID: 7440170
+
+10: metatranscriptome
+Identifiers: BioSample: SAMN07440169; Sample name: X4092RNA; SRA: SRS2403884
+Organism: human metagenome
+Attributes:
+    /collection date="2015-04-10"
+    /broad-scale environmental context="saliva"
+    /local-scale environmental context="bodily secretion"
+    /environmental medium="organism substance"
+    /geographic location="Denmark: Copenhagen"
+    /host="Homo sapiens"
+    /latitude and longitude="missing"
+    /host subject id="S_23"
+    /replicate="biological_replicate_RNA_1"
+Description:
+Caries
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN07440169	ID: 7440169
+
+11: metatranscriptome
+Identifiers: BioSample: SAMN07440168; Sample name: X4088RNA; SRA: SRS2403870
+Organism: human metagenome
+Attributes:
+    /collection date="2015-04-10"
+    /broad-scale environmental context="saliva"
+    /local-scale environmental context="bodily secretion"
+    /environmental medium="organism substance"
+    /geographic location="Denmark: Copenhagen"
+    /host="Homo sapiens"
+    /latitude and longitude="missing"
+    /host subject id="S_22"
+    /replicate="biological_replicate_RNA_10"
+Description:
+Healthy control
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN07440168	ID: 7440168
+
+12: metatranscriptome
+Identifiers: BioSample: SAMN07440167; Sample name: X4082RNA; SRA: SRS2403871
+Organism: human metagenome
+Attributes:
+    /collection date="2015-04-10"
+    /broad-scale environmental context="saliva"
+    /local-scale environmental context="bodily secretion"
+    /environmental medium="organism substance"
+    /geographic location="Denmark: Copenhagen"
+    /host="Homo sapiens"
+    /latitude and longitude="missing"
+    /host subject id="S_21"
+    /replicate="biological_replicate_RNA_9"
+Description:
+Healthy control
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN07440167	ID: 7440167
+
+13: metatranscriptome
+Identifiers: BioSample: SAMN07440166; Sample name: X4080RNA; SRA: SRS2403862
+Organism: human metagenome
+Attributes:
+    /collection date="2015-04-10"
+    /broad-scale environmental context="saliva"
+    /local-scale environmental context="bodily secretion"
+    /environmental medium="organism substance"
+    /geographic location="Denmark: Copenhagen"
+    /host="Homo sapiens"
+    /latitude and longitude="missing"
+    /host subject id="S_20"
+    /replicate="biological_replicate_RNA_8"
+Description:
+Healthy control
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN07440166	ID: 7440166
+
+14: metatranscriptome
+Identifiers: BioSample: SAMN07440165; Sample name: X4074RNA; SRA: SRS2403861
+Organism: human metagenome
+Attributes:
+    /collection date="2015-04-10"
+    /broad-scale environmental context="saliva"
+    /local-scale environmental context="bodily secretion"
+    /environmental medium="organism substance"
+    /geographic location="Denmark: Copenhagen"
+    /host="Homo sapiens"
+    /latitude and longitude="missing"
+    /host subject id="S_19"
+    /replicate="biological_replicate_RNA_7"
+Description:
+Healthy control
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN07440165	ID: 7440165
+
+15: metatranscriptome
+Identifiers: BioSample: SAMN07440164; Sample name: X4072RNA; SRA: SRS2403865
+Organism: human metagenome
+Attributes:
+    /collection date="2015-04-10"
+    /broad-scale environmental context="saliva"
+    /local-scale environmental context="bodily secretion"
+    /environmental medium="organism substance"
+    /geographic location="Denmark: Copenhagen"
+    /host="Homo sapiens"
+    /latitude and longitude="missing"
+    /host subject id="S_18"
+    /replicate="biological_replicate_RNA_6"
+Description:
+Healthy control
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN07440164	ID: 7440164
+
+16: metatranscriptome
+Identifiers: BioSample: SAMN07440163; Sample name: X4068RNA; SRA: SRS2403863
+Organism: human metagenome
+Attributes:
+    /collection date="2015-04-10"
+    /broad-scale environmental context="saliva"
+    /local-scale environmental context="bodily secretion"
+    /environmental medium="organism substance"
+    /geographic location="Denmark: Copenhagen"
+    /host="Homo sapiens"
+    /latitude and longitude="missing"
+    /host subject id="S_17"
+    /replicate="biological_replicate_RNA_5"
+Description:
+Healthy control
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN07440163	ID: 7440163
+
+17: metatranscriptome
+Identifiers: BioSample: SAMN07440162; Sample name: X4064RNA; SRA: SRS2403867
+Organism: human metagenome
+Attributes:
+    /collection date="2015-04-10"
+    /broad-scale environmental context="saliva"
+    /local-scale environmental context="bodily secretion"
+    /environmental medium="organism substance"
+    /geographic location="Denmark: Copenhagen"
+    /host="Homo sapiens"
+    /latitude and longitude="missing"
+    /host subject id="S_16"
+    /replicate="biological_replicate_RNA_4"
+Description:
+Healthy control
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN07440162	ID: 7440162
+
+18: metatranscriptome
+Identifiers: BioSample: SAMN07440161; Sample name: X4060RNA; SRA: SRS2403864
+Organism: human metagenome
+Attributes:
+    /collection date="2015-04-10"
+    /broad-scale environmental context="saliva"
+    /local-scale environmental context="bodily secretion"
+    /environmental medium="organism substance"
+    /geographic location="Denmark: Copenhagen"
+    /host="Homo sapiens"
+    /latitude and longitude="missing"
+    /host subject id="S_15"
+    /replicate="biological_replicate_RNA_3"
+Description:
+Healthy control
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN07440161	ID: 7440161
+
+19: metatranscriptome
+Identifiers: BioSample: SAMN07440160; Sample name: X4056RNA; SRA: SRS2403868
+Organism: human metagenome
+Attributes:
+    /collection date="2015-04-10"
+    /broad-scale environmental context="saliva"
+    /local-scale environmental context="bodily secretion"
+    /environmental medium="organism substance"
+    /geographic location="Denmark: Copenhagen"
+    /host="Homo sapiens"
+    /latitude and longitude="missing"
+    /host subject id="S_14"
+    /replicate="biological_replicate_RNA_2"
+Description:
+Healthy control
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN07440160	ID: 7440160
+
+20: metatranscriptome
+Identifiers: BioSample: SAMN07440159; Sample name: X4050RNA; SRA: SRS2403866
+Organism: human metagenome
+Attributes:
+    /collection date="2015-04-10"
+    /broad-scale environmental context="saliva"
+    /local-scale environmental context="bodily secretion"
+    /environmental medium="organism substance"
+    /geographic location="Denmark: Copenhagen"
+    /host="Homo sapiens"
+    /latitude and longitude="missing"
+    /host subject id="S_13"
+    /replicate="biological_replicate_RNA_1"
+Description:
+Healthy control
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN07440159	ID: 7440159
+
+21: metatranscriptome
+Identifiers: BioSample: SAMN07440158; Sample name: X4048RNA; SRA: SRS2403903
+Organism: human metagenome
+Attributes:
+    /collection date="2015-04-10"
+    /broad-scale environmental context="saliva"
+    /local-scale environmental context="bodily secretion"
+    /environmental medium="organism substance"
+    /geographic location="Denmark: Copenhagen"
+    /host="Homo sapiens"
+    /latitude and longitude="missing"
+    /host subject id="S_12"
+    /replicate="biological_replicate_RNA_10"
+Description:
+Periodontitis
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN07440158	ID: 7440158
+
+22: metatranscriptome
+Identifiers: BioSample: SAMN07440157; Sample name: X4044RNA; SRA: SRS2403904
+Organism: human metagenome
+Attributes:
+    /collection date="2015-04-10"
+    /broad-scale environmental context="saliva"
+    /local-scale environmental context="bodily secretion"
+    /environmental medium="organism substance"
+    /geographic location="Denmark: Copenhagen"
+    /host="Homo sapiens"
+    /latitude and longitude="missing"
+    /host subject id="S_11"
+    /replicate="biological_replicate_RNA_9"
+Description:
+Periodontitis
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN07440157	ID: 7440157
+
+23: metatranscriptome
+Identifiers: BioSample: SAMN07440156; Sample name: X4040RNA; SRA: SRS2403901
+Organism: human metagenome
+Attributes:
+    /collection date="2015-04-10"
+    /broad-scale environmental context="saliva"
+    /local-scale environmental context="bodily secretion"
+    /environmental medium="organism substance"
+    /geographic location="Denmark: Copenhagen"
+    /host="Homo sapiens"
+    /latitude and longitude="missing"
+    /host subject id="S_10"
+    /replicate="biological_replicate_RNA_8"
+Description:
+Periodontitis
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN07440156	ID: 7440156
+
+24: metatranscriptome
+Identifiers: BioSample: SAMN07440155; Sample name: X4036RNA; SRA: SRS2403899
+Organism: human metagenome
+Attributes:
+    /collection date="2015-04-10"
+    /broad-scale environmental context="saliva"
+    /local-scale environmental context="bodily secretion"
+    /environmental medium="organism substance"
+    /geographic location="Denmark: Copenhagen"
+    /host="Homo sapiens"
+    /latitude and longitude="missing"
+    /host subject id="S_09"
+    /replicate="biological_replicate_RNA_7"
+Description:
+Periodontitis
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN07440155	ID: 7440155
+
+25: metatranscriptome
+Identifiers: BioSample: SAMN07440154; Sample name: X4032RNA; SRA: SRS2403900
+Organism: human metagenome
+Attributes:
+    /collection date="2015-04-10"
+    /broad-scale environmental context="saliva"
+    /local-scale environmental context="bodily secretion"
+    /environmental medium="organism substance"
+    /geographic location="Denmark: Copenhagen"
+    /host="Homo sapiens"
+    /latitude and longitude="missing"
+    /host subject id="S_08"
+    /replicate="biological_replicate_RNA_6"
+Description:
+Periodontitis
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN07440154	ID: 7440154
+
+26: metatranscriptome
+Identifiers: BioSample: SAMN07440153; Sample name: X4028RNA; SRA: SRS2403902
+Organism: human metagenome
+Attributes:
+    /collection date="2015-04-10"
+    /broad-scale environmental context="saliva"
+    /local-scale environmental context="bodily secretion"
+    /environmental medium="organism substance"
+    /geographic location="Denmark: Copenhagen"
+    /host="Homo sapiens"
+    /latitude and longitude="missing"
+    /host subject id="S_07"
+    /replicate="biological_replicate_RNA_5"
+Description:
+Periodontitis
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN07440153	ID: 7440153
+
+27: metatranscriptome
+Identifiers: BioSample: SAMN07440152; Sample name: X4024RNA; SRA: SRS2403895
+Organism: human metagenome
+Attributes:
+    /collection date="2015-04-10"
+    /broad-scale environmental context="saliva"
+    /local-scale environmental context="bodily secretion"
+    /environmental medium="organism substance"
+    /geographic location="Denmark: Copenhagen"
+    /host="Homo sapiens"
+    /latitude and longitude="missing"
+    /host subject id="S_06"
+    /replicate="biological_replicate_RNA_4"
+Description:
+Periodontitis
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN07440152	ID: 7440152
+
+28: metatranscriptome
+Identifiers: BioSample: SAMN07440151; Sample name: X4020RNA; SRA: SRS2403896
+Organism: human metagenome
+Attributes:
+    /collection date="2015-04-10"
+    /broad-scale environmental context="saliva"
+    /local-scale environmental context="bodily secretion"
+    /environmental medium="organism substance"
+    /geographic location="Denmark: Copenhagen"
+    /host="Homo sapiens"
+    /latitude and longitude="missing"
+    /host subject id="S_05"
+    /replicate="biological_replicate_RNA_3"
+Description:
+Periodontitis
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN07440151	ID: 7440151
+
+29: metatranscriptome
+Identifiers: BioSample: SAMN07440150; Sample name: X4014RNA; SRA: SRS2403897
+Organism: human metagenome
+Attributes:
+    /collection date="2015-04-10"
+    /broad-scale environmental context="saliva"
+    /local-scale environmental context="bodily secretion"
+    /environmental medium="organism substance"
+    /geographic location="Denmark: Copenhagen"
+    /host="Homo sapiens"
+    /latitude and longitude="missing"
+    /host subject id="S_04"
+    /replicate="biological_replicate_RNA_2"
+Description:
+Periodontitis
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN07440150	ID: 7440150
+
+30: metatranscriptome
+Identifiers: BioSample: SAMN07440149; Sample name: X4012RNA; SRA: SRS2403898
+Organism: human metagenome
+Attributes:
+    /collection date="2015-04-10"
+    /broad-scale environmental context="saliva"
+    /local-scale environmental context="bodily secretion"
+    /environmental medium="organism substance"
+    /geographic location="Denmark: Copenhagen"
+    /host="Homo sapiens"
+    /latitude and longitude="missing"
+    /host subject id="S_03"
+    /replicate="biological_replicate_RNA_1"
+Description:
+Periodontitis
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN07440149	ID: 7440149
+
+31: metagenome
+Identifiers: BioSample: SAMN07440148; Sample name: X4132DNA; SRA: SRS2403909
+Organism: human metagenome
+Attributes:
+    /collection date="2015-04-10"
+    /broad-scale environmental context="saliva"
+    /local-scale environmental context="bodily secretion"
+    /environmental medium="organism substance"
+    /geographic location="Denmark: Copenhagen"
+    /host="Homo sapiens"
+    /latitude and longitude="missing"
+    /host subject id="S_32"
+    /replicate="biological_replicate_DNA_10"
+Description:
+Caries
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN07440148	ID: 7440148
+
+32: metagenome
+Identifiers: BioSample: SAMN07440147; Sample name: X4128DNA; SRA: SRS2403908
+Organism: human metagenome
+Attributes:
+    /collection date="2015-04-10"
+    /broad-scale environmental context="saliva"
+    /local-scale environmental context="bodily secretion"
+    /environmental medium="organism substance"
+    /geographic location="Denmark: Copenhagen"
+    /host="Homo sapiens"
+    /latitude and longitude="missing"
+    /host subject id="S_31"
+    /replicate="biological_replicate_DNA_9"
+Description:
+Caries
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN07440147	ID: 7440147
+
+33: metagenome
+Identifiers: BioSample: SAMN07440146; Sample name: X4124DNA; SRA: SRS2403913
+Organism: human metagenome
+Attributes:
+    /collection date="2015-04-10"
+    /broad-scale environmental context="saliva"
+    /local-scale environmental context="bodily secretion"
+    /environmental medium="organism substance"
+    /geographic location="Denmark: Copenhagen"
+    /host="Homo sapiens"
+    /latitude and longitude="missing"
+    /host subject id="S_30"
+    /replicate="biological_replicate_DNA_8"
+Description:
+Caries
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN07440146	ID: 7440146
+
+34: metagenome
+Identifiers: BioSample: SAMN07440145; Sample name: X4120DNA; SRA: SRS2403912
+Organism: human metagenome
+Attributes:
+    /collection date="2015-04-10"
+    /broad-scale environmental context="saliva"
+    /local-scale environmental context="bodily secretion"
+    /environmental medium="organism substance"
+    /geographic location="Denmark: Copenhagen"
+    /host="Homo sapiens"
+    /latitude and longitude="missing"
+    /host subject id="S_29"
+    /replicate="biological_replicate_DNA_7"
+Description:
+Caries
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN07440145	ID: 7440145
+
+35: metagenome
+Identifiers: BioSample: SAMN07440144; Sample name: X4116DNA; SRA: SRS2403911
+Organism: human metagenome
+Attributes:
+    /collection date="2015-04-10"
+    /broad-scale environmental context="saliva"
+    /local-scale environmental context="bodily secretion"
+    /environmental medium="organism substance"
+    /geographic location="Denmark: Copenhagen"
+    /host="Homo sapiens"
+    /latitude and longitude="missing"
+    /host subject id="S_28"
+    /replicate="biological_replicate_DNA_6"
+Description:
+Caries
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN07440144	ID: 7440144
+
+36: metagenome
+Identifiers: BioSample: SAMN07440143; Sample name: X4108DNA; SRA: SRS2403910
+Organism: human metagenome
+Attributes:
+    /collection date="2015-04-10"
+    /broad-scale environmental context="saliva"
+    /local-scale environmental context="bodily secretion"
+    /environmental medium="organism substance"
+    /geographic location="Denmark: Copenhagen"
+    /host="Homo sapiens"
+    /latitude and longitude="missing"
+    /host subject id="S_27"
+    /replicate="biological_replicate_DNA_5"
+Description:
+Caries
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN07440143	ID: 7440143
+
+37: metagenome
+Identifiers: BioSample: SAMN07440142; Sample name: X4104DNA; SRA: SRS2403916
+Organism: human metagenome
+Attributes:
+    /collection date="2015-04-10"
+    /broad-scale environmental context="saliva"
+    /local-scale environmental context="bodily secretion"
+    /environmental medium="organism substance"
+    /geographic location="Denmark: Copenhagen"
+    /host="Homo sapiens"
+    /latitude and longitude="missing"
+    /host subject id="S_26"
+    /replicate="biological_replicate_DNA_4"
+Description:
+Caries
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN07440142	ID: 7440142
+
+38: metagenome
+Identifiers: BioSample: SAMN07440141; Sample name: X4100DNA; SRA: SRS2403917
+Organism: human metagenome
+Attributes:
+    /collection date="2015-04-10"
+    /broad-scale environmental context="saliva"
+    /local-scale environmental context="bodily secretion"
+    /environmental medium="organism substance"
+    /geographic location="Denmark: Copenhagen"
+    /host="Homo sapiens"
+    /latitude and longitude="missing"
+    /host subject id="S_25"
+    /replicate="biological_replicate_DNA_3"
+Description:
+Caries
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN07440141	ID: 7440141
+
+39: metagenome
+Identifiers: BioSample: SAMN07440140; Sample name: X4096DNA; SRA: SRS2403915
+Organism: human metagenome
+Attributes:
+    /collection date="2015-04-10"
+    /broad-scale environmental context="saliva"
+    /local-scale environmental context="bodily secretion"
+    /environmental medium="organism substance"
+    /geographic location="Denmark: Copenhagen"
+    /host="Homo sapiens"
+    /latitude and longitude="missing"
+    /host subject id="S_24"
+    /replicate="biological_replicate_DNA_2"
+Description:
+Caries
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN07440140	ID: 7440140
+
+40: metagenome
+Identifiers: BioSample: SAMN07440139; Sample name: X4092DNA; SRA: SRS2403914
+Organism: human metagenome
+Attributes:
+    /collection date="2015-04-10"
+    /broad-scale environmental context="saliva"
+    /local-scale environmental context="bodily secretion"
+    /environmental medium="organism substance"
+    /geographic location="Denmark: Copenhagen"
+    /host="Homo sapiens"
+    /latitude and longitude="missing"
+    /host subject id="S_23"
+    /replicate="biological_replicate_DNA_1"
+Description:
+Caries
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN07440139	ID: 7440139
+
+41: metagenome
+Identifiers: BioSample: SAMN07440138; Sample name: X4088DNA; SRA: SRS2403851
+Organism: human metagenome
+Attributes:
+    /collection date="2015-04-10"
+    /broad-scale environmental context="saliva"
+    /local-scale environmental context="bodily secretion"
+    /environmental medium="organism substance"
+    /geographic location="Denmark: Copenhagen"
+    /host="Homo sapiens"
+    /latitude and longitude="missing"
+    /host subject id="S_22"
+    /replicate="biological_replicate_DNA_10"
+Description:
+Healthy control
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN07440138	ID: 7440138
+
+42: metagenome
+Identifiers: BioSample: SAMN07440137; Sample name: X4082DNA; SRA: SRS2403850
+Organism: human metagenome
+Attributes:
+    /collection date="2015-04-10"
+    /broad-scale environmental context="saliva"
+    /local-scale environmental context="bodily secretion"
+    /environmental medium="organism substance"
+    /geographic location="Denmark: Copenhagen"
+    /host="Homo sapiens"
+    /latitude and longitude="missing"
+    /host subject id="S_21"
+    /replicate="biological_replicate_DNA_9"
+Description:
+Healthy control
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN07440137	ID: 7440137
+
+43: metagenome
+Identifiers: BioSample: SAMN07440136; Sample name: X4080DNA; SRA: SRS2403891
+Organism: human metagenome
+Attributes:
+    /collection date="2015-04-10"
+    /broad-scale environmental context="saliva"
+    /local-scale environmental context="bodily secretion"
+    /environmental medium="organism substance"
+    /geographic location="Denmark: Copenhagen"
+    /host="Homo sapiens"
+    /latitude and longitude="missing"
+    /host subject id="S_20"
+    /replicate="biological_replicate_DNA_8"
+Description:
+Healthy control
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN07440136	ID: 7440136
+
+44: metagenome
+Identifiers: BioSample: SAMN07440135; Sample name: X4074DNA; SRA: SRS2403894
+Organism: human metagenome
+Attributes:
+    /collection date="2015-04-10"
+    /broad-scale environmental context="saliva"
+    /local-scale environmental context="bodily secretion"
+    /environmental medium="organism substance"
+    /geographic location="Denmark: Copenhagen"
+    /host="Homo sapiens"
+    /latitude and longitude="missing"
+    /host subject id="S_19"
+    /replicate="biological_replicate_DNA_7"
+Description:
+Healthy control
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN07440135	ID: 7440135
+
+45: metagenome
+Identifiers: BioSample: SAMN07440134; Sample name: X4072DNA; SRA: SRS2403852
+Organism: human metagenome
+Attributes:
+    /collection date="2015-04-10"
+    /broad-scale environmental context="saliva"
+    /local-scale environmental context="bodily secretion"
+    /environmental medium="organism substance"
+    /geographic location="Denmark: Copenhagen"
+    /host="Homo sapiens"
+    /latitude and longitude="missing"
+    /host subject id="S_18"
+    /replicate="biological_replicate_DNA_6"
+Description:
+Healthy control
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN07440134	ID: 7440134
+
+46: metagenome
+Identifiers: BioSample: SAMN07440133; Sample name: X4068DNA; SRA: SRS2403893
+Organism: human metagenome
+Attributes:
+    /collection date="2015-04-10"
+    /broad-scale environmental context="saliva"
+    /local-scale environmental context="bodily secretion"
+    /environmental medium="organism substance"
+    /geographic location="Denmark: Copenhagen"
+    /host="Homo sapiens"
+    /latitude and longitude="missing"
+    /host subject id="S_17"
+    /replicate="biological_replicate_DNA_5"
+Description:
+Healthy control
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN07440133	ID: 7440133
+
+47: metagenome
+Identifiers: BioSample: SAMN07440132; Sample name: X4064DNA; SRA: SRS2403890
+Organism: human metagenome
+Attributes:
+    /collection date="2015-04-10"
+    /broad-scale environmental context="saliva"
+    /local-scale environmental context="bodily secretion"
+    /environmental medium="organism substance"
+    /geographic location="Denmark: Copenhagen"
+    /host="Homo sapiens"
+    /latitude and longitude="missing"
+    /host subject id="S_16"
+    /replicate="biological_replicate_DNA_4"
+Description:
+Healthy control
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN07440132	ID: 7440132
+
+48: metagenome
+Identifiers: BioSample: SAMN07440131; Sample name: X4060DNA; SRA: SRS2403892
+Organism: human metagenome
+Attributes:
+    /collection date="2015-04-10"
+    /broad-scale environmental context="saliva"
+    /local-scale environmental context="bodily secretion"
+    /environmental medium="organism substance"
+    /geographic location="Denmark: Copenhagen"
+    /host="Homo sapiens"
+    /latitude and longitude="missing"
+    /host subject id="S_15"
+    /replicate="biological_replicate_DNA_3"
+Description:
+Healthy control
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN07440131	ID: 7440131
+
+49: metagenome
+Identifiers: BioSample: SAMN07440130; Sample name: X4056DNA; SRA: SRS2403888
+Organism: human metagenome
+Attributes:
+    /collection date="2015-04-10"
+    /broad-scale environmental context="saliva"
+    /local-scale environmental context="bodily secretion"
+    /environmental medium="organism substance"
+    /geographic location="Denmark: Copenhagen"
+    /host="Homo sapiens"
+    /latitude and longitude="missing"
+    /host subject id="S_14"
+    /replicate="biological_replicate_DNA_2"
+Description:
+Healthy control
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN07440130	ID: 7440130
+
+50: metagenome
+Identifiers: BioSample: SAMN07440129; Sample name: X4050DNA; SRA: SRS2403889
+Organism: human metagenome
+Attributes:
+    /collection date="2015-04-10"
+    /broad-scale environmental context="saliva"
+    /local-scale environmental context="bodily secretion"
+    /environmental medium="organism substance"
+    /geographic location="Denmark: Copenhagen"
+    /host="Homo sapiens"
+    /latitude and longitude="missing"
+    /host subject id="S_13"
+    /replicate="biological_replicate_DNA_1"
+Description:
+Healthy control
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN07440129	ID: 7440129
+
+
+51: metagenome
+Identifiers: BioSample: SAMN07440128; Sample name: X4048DNA; SRA: SRS2403873
+Organism: human metagenome
+Attributes:
+    /collection date="2015-04-10"
+    /broad-scale environmental context="saliva"
+    /local-scale environmental context="bodily secretion"
+    /environmental medium="organism substance"
+    /geographic location="Denmark: Copenhagen"
+    /host="Homo sapiens"
+    /latitude and longitude="missing"
+    /host subject id="S_12"
+    /replicate="biological_replicate_DNA_10"
+Description:
+Periodontitis
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN07440128	ID: 7440128
+
+52: metagenome
+Identifiers: BioSample: SAMN07440127; Sample name: X4044DNA; SRA: SRS2403874
+Organism: human metagenome
+Attributes:
+    /collection date="2015-04-10"
+    /broad-scale environmental context="saliva"
+    /local-scale environmental context="bodily secretion"
+    /environmental medium="organism substance"
+    /geographic location="Denmark: Copenhagen"
+    /host="Homo sapiens"
+    /latitude and longitude="missing"
+    /host subject id="S_11"
+    /replicate="biological_replicate_DNA_9"
+Description:
+Periodontitis
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN07440127	ID: 7440127
+
+53: metagenome
+Identifiers: BioSample: SAMN07440126; Sample name: X4040DNA; SRA: SRS2403885
+Organism: human metagenome
+Attributes:
+    /collection date="2015-04-10"
+    /broad-scale environmental context="saliva"
+    /local-scale environmental context="bodily secretion"
+    /environmental medium="organism substance"
+    /geographic location="Denmark: Copenhagen"
+    /host="Homo sapiens"
+    /latitude and longitude="missing"
+    /host subject id="S_10"
+    /replicate="biological_replicate_DNA_8"
+Description:
+Periodontitis
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN07440126	ID: 7440126
+
+54: metagenome
+Identifiers: BioSample: SAMN07440125; Sample name: X4036DNA; SRA: SRS2403882
+Organism: human metagenome
+Attributes:
+    /collection date="2015-04-10"
+    /broad-scale environmental context="saliva"
+    /local-scale environmental context="bodily secretion"
+    /environmental medium="organism substance"
+    /geographic location="Denmark: Copenhagen"
+    /host="Homo sapiens"
+    /latitude and longitude="missing"
+    /host subject id="S_09"
+    /replicate="biological_replicate_DNA_7"
+Description:
+Periodontitis
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN07440125	ID: 7440125
+
+55: metagenome
+Identifiers: BioSample: SAMN07440124; Sample name: X4032DNA; SRA: SRS2403881
+Organism: human metagenome
+Attributes:
+    /collection date="2015-04-10"
+    /broad-scale environmental context="saliva"
+    /local-scale environmental context="bodily secretion"
+    /environmental medium="organism substance"
+    /geographic location="Denmark: Copenhagen"
+    /host="Homo sapiens"
+    /latitude and longitude="missing"
+    /host subject id="S_08"
+    /replicate="biological_replicate_DNA_6"
+Description:
+Periodontitis
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN07440124	ID: 7440124
+
+56: metagenome
+Identifiers: BioSample: SAMN07440123; Sample name: X4028DNA; SRA: SRS2403883
+Organism: human metagenome
+Attributes:
+    /collection date="2015-04-10"
+    /broad-scale environmental context="saliva"
+    /local-scale environmental context="bodily secretion"
+    /environmental medium="organism substance"
+    /geographic location="Denmark: Copenhagen"
+    /host="Homo sapiens"
+    /latitude and longitude="missing"
+    /host subject id="S_07"
+    /replicate="biological_replicate_DNA_5"
+Description:
+Periodontitis
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN07440123	ID: 7440123
+
+57: metagenome
+Identifiers: BioSample: SAMN07440122; Sample name: X4024DNA; SRA: SRS2403876
+Organism: human metagenome
+Attributes:
+    /collection date="2015-04-10"
+    /broad-scale environmental context="saliva"
+    /local-scale environmental context="bodily secretion"
+    /environmental medium="organism substance"
+    /geographic location="Denmark: Copenhagen"
+    /host="Homo sapiens"
+    /latitude and longitude="missing"
+    /host subject id="S_06"
+    /replicate="biological_replicate_DNA_4"
+Description:
+Periodontitis
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN07440122	ID: 7440122
+
+58: metagenome
+Identifiers: BioSample: SAMN07440121; Sample name: X4020DNA; SRA: SRS2403877
+Organism: human metagenome
+Attributes:
+    /collection date="2015-04-10"
+    /broad-scale environmental context="saliva"
+    /local-scale environmental context="bodily secretion"
+    /environmental medium="organism substance"
+    /geographic location="Denmark: Copenhagen"
+    /host="Homo sapiens"
+    /latitude and longitude="missing"
+    /host subject id="S_05"
+    /replicate="biological_replicate_DNA_3"
+Description:
+Periodontitis
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN07440121	ID: 7440121
+
+59: metagenome
+Identifiers: BioSample: SAMN07440120; Sample name: X4014DNA; SRA: SRS2403878
+Organism: human metagenome
+Attributes:
+    /collection date="2015-04-10"
+    /broad-scale environmental context="saliva"
+    /local-scale environmental context="bodily secretion"
+    /environmental medium="organism substance"
+    /geographic location="Denmark: Copenhagen"
+    /host="Homo sapiens"
+    /latitude and longitude="missing"
+    /host subject id="S_04"
+    /replicate="biological_replicate_DNA_2"
+Description:
+Periodontitis
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN07440120	ID: 7440120
+
+60: metagenome
+Identifiers: BioSample: SAMN07440119; Sample name: X4012DNA; SRA: SRS2403879
+Organism: human metagenome
+Attributes:
+    /collection date="2015-04-10"
+    /broad-scale environmental context="saliva"
+    /local-scale environmental context="bodily secretion"
+    /environmental medium="organism substance"
+    /geographic location="Denmark: Copenhagen"
+    /host="Homo sapiens"
+    /latitude and longitude="missing"
+    /host subject id="S_03"
+    /replicate="biological_replicate_DNA_1"
+Description:
+Periodontitis
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN07440119	ID: 7440119
+
+
+
