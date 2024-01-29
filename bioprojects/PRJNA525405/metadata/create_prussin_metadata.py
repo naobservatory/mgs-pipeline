@@ -10,25 +10,24 @@ with open(disease_tsv_path, mode='r') as infile:
     lines = infile.readlines()
     biosample_metadata = defaultdict(list)
     current_bio_sample = None
-    next_line_is_description = None
+    next_line_is_sampling_range = None
     for line in lines:
         if 'BioSample:' in line:
             current_biosample = line.split('BioSample:')[1].split(';')[0].strip()
         if 'season' in line:
-            
             season = re.search(r'/season="(.*?)"',line).group(1).strip()
         if 'type_of_nucleic_acid' in line:
             na_type = re.search(r'/type_of_nucleic_acid="AP-(DNA|RNA)', line).group(1).strip()
-        if next_line_is_description:
-            description = line.strip()
-            next_line_is_description = False
+        if next_line_is_sampling_range:
+            sampling_range = line.strip()
+            next_line_is_sampling_range = False
         if 'Description' in line:
-            next_line_is_description = True
+            next_line_is_sampling_range = True
         if 'Accession' in line:
             biosample_metadata[current_biosample].extend([
                 season,
                 na_type,
-                description])
+                sampling_range])
 
 
 with open(sra_run_path, mode='r', newline='') as infile, open(metadata_file_path, mode='w', newline='') as outfile:
@@ -41,6 +40,6 @@ with open(sra_run_path, mode='r', newline='') as infile, open(metadata_file_path
         run = line[0]
         biosample = line[6]
         date = line[10]
-        season, na_type, description = biosample_metadata[biosample]
+        season, na_type, sampling_range = biosample_metadata[biosample]
 
-        writer.writerow([run, na_type, date, description, season])
+        writer.writerow([run, na_type, date, sampling_range, season])
