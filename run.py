@@ -330,10 +330,8 @@ def ribofrac(args, subset_size=1000):
     for sample in get_samples(args):
         # Check for name of output file
         sample_output_file = sample + ".ribofrac.txt"
-        if sample != "SRR5853126":
+        if sample_output_file in existing_outputs:
             continue
-        # if sample_output_file in existing_outputs: #DEBUG, FIX.
-        #    continue
 
         # Track for error handling
         total_files_in_sample = 0
@@ -342,7 +340,6 @@ def ribofrac(args, subset_size=1000):
         total_reads_dict = {}
         subset_reads_dict = {}
         rrna_reads_dict = {}
-        passed_file_check = False 
         for potential_input in available_inputs:
             if not potential_input.startswith(sample):
                 continue
@@ -350,7 +347,6 @@ def ribofrac(args, subset_size=1000):
                 continue
             if "discarded" in potential_input:
                 continue
-            passed_file_check = True 
             total_files_in_sample += 1
 
             # Number of output and input files must match
@@ -369,7 +365,6 @@ def ribofrac(args, subset_size=1000):
                 # Ribodetector handles pair1 and pair2 together.
                 continue
 
-            print(inputs) 
             with tempdir("ribofrac", sample + " inputs") as workdir:
                 for input_fname in inputs:
                     subprocess.check_call(
@@ -386,7 +381,6 @@ def ribofrac(args, subset_size=1000):
                     # Check file integrity
                     file_valid = file_integrity_check(input_fname)
                     if not file_valid:
-                        print(f"file is not valid{input_fname}") 
                         empty_files_in_sample += 1
 
                     # Ribodetector gets angry if the .fq extension isn't in the filename
@@ -394,7 +388,6 @@ def ribofrac(args, subset_size=1000):
                         input_fname, input_fname.replace(".gz", ".fq.gz")
                     )
 
-                print(total_files_in_sample, empty_files_in_sample)
                 if total_files_in_sample == empty_files_in_sample:
                     print(f"Skipping {sample}... all files are empty.")
                     continue
@@ -455,8 +448,6 @@ def ribofrac(args, subset_size=1000):
                 )
                 rrna_reads_dict[inputs[0]] = subset_reads - non_rrna_count
 
-        if not passed_file_check:
-            print(f"sample wasn't processed because it's not present in /cleaned")
         # Calculate the weighted average fraction of rRNA reads across all inputs in sample using numpy
         # Extract the fractions of rRNA reads for each input
         fractions_rrna_in_subset = [
