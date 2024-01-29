@@ -1,0 +1,607 @@
+: AP-RNA-16
+Identifiers: BioSample: SAMN11050331; Sample name: AP-RNA-16; SRA: SRS4434194
+Organism: air metagenome
+Attributes:
+    /altitude="161"
+    /collection date="2014-12-23"
+    /broad-scale environmental context="[ENVO:00000428]"
+    /local-scale environmental context="air"
+    /environmental medium="air"
+    /geographic location="USA: Virginia"
+    /latitude and longitude="37.2284 N 80.4234 W"
+    /sample collection device or method="HVAC filter"
+    /season="not applicable"
+    /type_of_nucleic_acid="AP-RNA-16"
+Description:
+RNANegative_Control
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN11050331	ID: 11050331
+
+2: AP-RNA-15
+Identifiers: BioSample: SAMN11050330; Sample name: AP-RNA-15; SRA: SRS4434195
+Organism: air metagenome
+Attributes:
+    /altitude="161"
+    /collection date="2014-12-23"
+    /broad-scale environmental context="[ENVO:00000428]"
+    /local-scale environmental context="air"
+    /environmental medium="air"
+    /geographic location="USA: Virginia"
+    /latitude and longitude="37.2284 N 80.4234 W"
+    /sample collection device or method="HVAC filter"
+    /season="not applicable"
+    /type_of_nucleic_acid="AP-RNA-15"
+Description:
+RNAUnexposed_Filter
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN11050330	ID: 11050330
+
+3: AP-RNA-14
+Identifiers: BioSample: SAMN11050329; Sample name: AP-RNA-14; SRA: SRS4434174
+Organism: air metagenome
+Attributes:
+    /altitude="161"
+    /collection date="2014-12-23"
+    /broad-scale environmental context="[ENVO:00000428]"
+    /local-scale environmental context="air"
+    /environmental medium="air"
+    /geographic location="USA: Virginia"
+    /latitude and longitude="37.2284 N 80.4234 W"
+    /sample collection device or method="HVAC filter"
+    /season="Closed"
+    /type_of_nucleic_acid="AP-RNA-14"
+Description:
+23_December_2014_05_January_2015
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN11050329	ID: 11050329
+
+4: AP-RNA-13
+Identifiers: BioSample: SAMN11050328; Sample name: AP-RNA-13; SRA: SRS4434175
+Organism: air metagenome
+Attributes:
+    /altitude="161"
+    /collection date="2015-01-05"
+    /broad-scale environmental context="[ENVO:00000428]"
+    /local-scale environmental context="air"
+    /environmental medium="air"
+    /geographic location="USA: Virginia"
+    /latitude and longitude="37.2284 N 80.4234 W"
+    /sample collection device or method="HVAC filter"
+    /season="Winter"
+    /type_of_nucleic_acid="AP-RNA-13"
+Description:
+05_Janurary_2015_02_February_2015
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN11050328	ID: 11050328
+
+5: AP-RNA-12
+Identifiers: BioSample: SAMN11050327; Sample name: AP-RNA-12; SRA: SRS4434176
+Organism: air metagenome
+Attributes:
+    /altitude="161"
+    /collection date="2014-11-24"
+    /broad-scale environmental context="[ENVO:00000428]"
+    /local-scale environmental context="air"
+    /environmental medium="air"
+    /geographic location="USA: Virginia"
+    /latitude and longitude="37.2284 N 80.4234 W"
+    /sample collection device or method="HVAC filter"
+    /season="Winter"
+    /type_of_nucleic_acid="AP-RNA-12"
+Description:
+24_November_2014_23_December_2014
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN11050327	ID: 11050327
+
+6: AP-RNA-11
+Identifiers: BioSample: SAMN11050326; Sample name: AP-RNA-11; SRA: SRS4434177
+Organism: air metagenome
+Attributes:
+    /altitude="161"
+    /collection date="2014-10-27"
+    /broad-scale environmental context="[ENVO:00000428]"
+    /local-scale environmental context="air"
+    /environmental medium="air"
+    /geographic location="USA: Virginia"
+    /latitude and longitude="37.2284 N 80.4234 W"
+    /sample collection device or method="HVAC filter"
+    /season="Fall"
+    /type_of_nucleic_acid="AP-RNA-11"
+Description:
+27_October_2014_24_November_2014
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN11050326	ID: 11050326
+
+7: AP-RNA-10
+Identifiers: BioSample: SAMN11050325; Sample name: AP-RNA-10; SRA: SRS4434178
+Organism: air metagenome
+Attributes:
+    /altitude="161"
+    /collection date="2014-09-29"
+    /broad-scale environmental context="[ENVO:00000428]"
+    /local-scale environmental context="air"
+    /environmental medium="air"
+    /geographic location="USA: Virginia"
+    /latitude and longitude="37.2284 N 80.4234 W"
+    /sample collection device or method="HVAC filter"
+    /season="Fall"
+    /type_of_nucleic_acid="AP-RNA-10"
+Description:
+29_September_2014_27_October_2014
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN11050325	ID: 11050325
+
+8: AP-RNA-9
+Identifiers: BioSample: SAMN11050324; Sample name: AP-RNA-9; SRA: SRS4434179
+Organism: air metagenome
+Attributes:
+    /altitude="161"
+    /collection date="2014-09-02"
+    /broad-scale environmental context="[ENVO:00000428]"
+    /local-scale environmental context="air"
+    /environmental medium="air"
+    /geographic location="USA: Virginia"
+    /latitude and longitude="37.2284 N 80.4234 W"
+    /sample collection device or method="HVAC filter"
+    /season="Fall"
+    /type_of_nucleic_acid="AP-RNA-9"
+Description:
+02_September_2014_29_September_2014
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN11050324	ID: 11050324
+
+9: AP-RNA-8
+Identifiers: BioSample: SAMN11050323; Sample name: AP-RNA-8; SRA: SRS4434180
+Organism: air metagenome
+Attributes:
+    /altitude="161"
+    /collection date="2014-08-04"
+    /broad-scale environmental context="[ENVO:00000428]"
+    /local-scale environmental context="air"
+    /environmental medium="air"
+    /geographic location="USA: Virginia"
+    /latitude and longitude="37.2284 N 80.4234 W"
+    /sample collection device or method="HVAC filter"
+    /season="Summer"
+    /type_of_nucleic_acid="AP-RNA-8"
+Description:
+04_August_2014_02_September_2014
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN11050323	ID: 11050323
+
+10: AP-RNA-7
+Identifiers: BioSample: SAMN11050322; Sample name: AP-RNA-7; SRA: SRS4434181
+Organism: air metagenome
+Attributes:
+    /altitude="161"
+    /collection date="2014-07-07"
+    /broad-scale environmental context="[ENVO:00000428]"
+    /local-scale environmental context="air"
+    /environmental medium="air"
+    /geographic location="USA: Virginia"
+    /latitude and longitude="37.2284 N 80.4234 W"
+    /sample collection device or method="HVAC filter"
+    /season="Summer"
+    /type_of_nucleic_acid="AP-RNA-7"
+Description:
+07_July_2014_04_August_2014
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN11050322	ID: 11050322
+
+11: AP-RNA-6
+Identifiers: BioSample: SAMN11050321; Sample name: AP-RNA-6; SRA: SRS4434182
+Organism: air metagenome
+Attributes:
+    /altitude="161"
+    /collection date="2014-06-09"
+    /broad-scale environmental context="[ENVO:00000428]"
+    /local-scale environmental context="air"
+    /environmental medium="air"
+    /geographic location="USA: Virginia"
+    /latitude and longitude="37.2284 N 80.4234 W"
+    /sample collection device or method="HVAC filter"
+    /season="Summer"
+    /type_of_nucleic_acid="AP-RNA-6"
+Description:
+09_June_2014_07_July_2014
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN11050321	ID: 11050321
+
+12: AP-RNA-5
+Identifiers: BioSample: SAMN11050320; Sample name: AP-RNA-5; SRA: SRS4434183
+Organism: air metagenome
+Attributes:
+    /altitude="161"
+    /collection date="2014-05-12"
+    /broad-scale environmental context="[ENVO:00000428]"
+    /local-scale environmental context="air"
+    /environmental medium="air"
+    /geographic location="USA: Virginia"
+    /latitude and longitude="37.2284 N 80.4234 W"
+    /sample collection device or method="HVAC filter"
+    /season="Spring"
+    /type_of_nucleic_acid="AP-RNA-5"
+Description:
+12_May_2014_09_June_2014
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN11050320	ID: 11050320
+
+13: AP-RNA-4
+Identifiers: BioSample: SAMN11050319; Sample name: AP-RNA-4; SRA: SRS4434204
+Organism: air metagenome
+Attributes:
+    /altitude="161"
+    /collection date="2014-04-14"
+    /broad-scale environmental context="[ENVO:00000428]"
+    /local-scale environmental context="air"
+    /environmental medium="air"
+    /geographic location="USA: Virginia"
+    /latitude and longitude="37.2284 N 80.4234 W"
+    /sample collection device or method="HVAC filter"
+    /season="Spring"
+    /type_of_nucleic_acid="AP-RNA-4"
+Description:
+14_April_2014_12_May_2014
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN11050319	ID: 11050319
+
+14: AP-RNA-3
+Identifiers: BioSample: SAMN11050318; Sample name: AP-RNA-3; SRA: SRS4434205
+Organism: air metagenome
+Attributes:
+    /altitude="161"
+    /collection date="2014-03-17"
+    /broad-scale environmental context="[ENVO:00000428]"
+    /local-scale environmental context="air"
+    /environmental medium="air"
+    /geographic location="USA: Virginia"
+    /latitude and longitude="37.2284 N 80.4234 W"
+    /sample collection device or method="HVAC filter"
+    /season="Spring"
+    /type_of_nucleic_acid="AP-RNA-3"
+Description:
+17_March_2014_14_April_2014
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN11050318	ID: 11050318
+
+15: AP-RNA-2
+Identifiers: BioSample: SAMN11050317; Sample name: AP-RNA-2; SRA: SRS4434201
+Organism: air metagenome
+Attributes:
+    /altitude="161"
+    /collection date="2014-02-17"
+    /broad-scale environmental context="[ENVO:00000428]"
+    /local-scale environmental context="air"
+    /environmental medium="air"
+    /geographic location="USA: Virginia"
+    /latitude and longitude="37.2284 N 80.4234 W"
+    /sample collection device or method="HVAC filter"
+    /season="Winter"
+    /type_of_nucleic_acid="AP-RNA-2"
+Description:
+17_February_2014_17_March_2014
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN11050317	ID: 11050317
+
+16: AP-RNA-1
+Identifiers: BioSample: SAMN11050316; Sample name: AP-RNA-1; SRA: SRS4434200
+Organism: air metagenome
+Attributes:
+    /altitude="161"
+    /collection date="2014-01-20"
+    /broad-scale environmental context="[ENVO:00000428]"
+    /local-scale environmental context="air"
+    /environmental medium="air"
+    /geographic location="USA: Virginia"
+    /latitude and longitude="37.2284 N 80.4234 W"
+    /sample collection device or method="HVAC filter"
+    /season="Winter"
+    /type_of_nucleic_acid="AP-RNA-1"
+Description:
+20_January_2014_17_February_2014
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN11050316	ID: 11050316
+
+17: AP-DNA-16
+Identifiers: BioSample: SAMN11050315; Sample name: AP-DNA-16; SRA: SRS4434203
+Organism: air metagenome
+Attributes:
+    /altitude="161"
+    /collection date="2014-12-23"
+    /broad-scale environmental context="[ENVO:00000428]"
+    /local-scale environmental context="air"
+    /environmental medium="air"
+    /geographic location="USA: Virginia"
+    /latitude and longitude="37.2284 N 80.4234 W"
+    /sample collection device or method="HVAC filter"
+    /season="not applicable"
+    /type_of_nucleic_acid="AP-DNA-16"
+Description:
+DNANegative_Control
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN11050315	ID: 11050315
+
+18: AP-DNA-15
+Identifiers: BioSample: SAMN11050314; Sample name: AP-DNA-15; SRA: SRS4434202
+Organism: air metagenome
+Attributes:
+    /altitude="161"
+    /collection date="2014-12-23"
+    /broad-scale environmental context="[ENVO:00000428]"
+    /local-scale environmental context="air"
+    /environmental medium="air"
+    /geographic location="USA: Virginia"
+    /latitude and longitude="37.2284 N 80.4234 W"
+    /sample collection device or method="HVAC filter"
+    /season="not applicable"
+    /type_of_nucleic_acid="AP-DNA-15"
+Description:
+DNAUnexposed_Filter
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN11050314	ID: 11050314
+
+19: AP-DNA-14
+Identifiers: BioSample: SAMN11050313; Sample name: AP-DNA-14; SRA: SRS4434197
+Organism: air metagenome
+Attributes:
+    /altitude="161"
+    /collection date="2014-12-23"
+    /broad-scale environmental context="[ENVO:00000428]"
+    /local-scale environmental context="air"
+    /environmental medium="air"
+    /geographic location="USA: Virginia"
+    /latitude and longitude="37.2284 N 80.4234 W"
+    /sample collection device or method="HVAC filter"
+    /season="Closed"
+    /type_of_nucleic_acid="AP-DNA-14"
+Description:
+23_December_2014_05_January_2015
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN11050313	ID: 11050313
+
+20: AP-DNA-13
+Identifiers: BioSample: SAMN11050312; Sample name: AP-DNA-13; SRA: SRS4434196
+Organism: air metagenome
+Attributes:
+    /altitude="161"
+    /collection date="2015-01-05"
+    /broad-scale environmental context="[ENVO:00000428]"
+    /local-scale environmental context="air"
+    /environmental medium="air"
+    /geographic location="USA: Virginia"
+    /latitude and longitude="37.2284 N 80.4234 W"
+    /sample collection device or method="HVAC filter"
+    /season="Winter"
+    /type_of_nucleic_acid="AP-DNA-13"
+Description:
+05_Janurary_2015_02_February_2015
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN11050312	ID: 11050312
+
+21: AP-DNA-12
+Identifiers: BioSample: SAMN11050311; Sample name: AP-DNA-12; SRA: SRS4434199
+Organism: air metagenome
+Attributes:
+    /altitude="161"
+    /collection date="2014-11-24"
+    /broad-scale environmental context="[ENVO:00000428]"
+    /local-scale environmental context="air"
+    /environmental medium="air"
+    /geographic location="USA: Virginia"
+    /latitude and longitude="37.2284 N 80.4234 W"
+    /sample collection device or method="HVAC filter"
+    /season="Winter"
+    /type_of_nucleic_acid="AP-DNA-12"
+Description:
+24_November_2014_23_December_2014
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN11050311	ID: 11050311
+
+22: AP-DNA-11
+Identifiers: BioSample: SAMN11050310; Sample name: AP-DNA-11; SRA: SRS4434198
+Organism: air metagenome
+Attributes:
+    /altitude="161"
+    /collection date="2014-10-27"
+    /broad-scale environmental context="[ENVO:00000428]"
+    /local-scale environmental context="air"
+    /environmental medium="air"
+    /geographic location="USA: Virginia"
+    /latitude and longitude="37.2284 N 80.4234 W"
+    /sample collection device or method="HVAC filter"
+    /season="Fall"
+    /type_of_nucleic_acid="AP-DNA-11"
+Description:
+27_October_2014_24_November_2014
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN11050310	ID: 11050310
+
+23: AP-DNA-10
+Identifiers: BioSample: SAMN11050309; Sample name: AP-DNA-10; SRA: SRS4434185
+Organism: air metagenome
+Attributes:
+    /altitude="161"
+    /collection date="2014-09-29"
+    /broad-scale environmental context="[ENVO:00000428]"
+    /local-scale environmental context="air"
+    /environmental medium="air"
+    /geographic location="USA: Virginia"
+    /latitude and longitude="37.2284 N 80.4234 W"
+    /sample collection device or method="HVAC filter"
+    /season="Fall"
+    /type_of_nucleic_acid="AP-DNA-10"
+Description:
+29_September_2014_27_October_2014
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN11050309	ID: 11050309
+
+24: AP-DNA-9
+Identifiers: BioSample: SAMN11050308; Sample name: AP-DNA-9; SRA: SRS4434184
+Organism: air metagenome
+Attributes:
+    /altitude="161"
+    /collection date="2014-09-02"
+    /broad-scale environmental context="[ENVO:00000428]"
+    /local-scale environmental context="air"
+    /environmental medium="air"
+    /geographic location="USA: Virginia"
+    /latitude and longitude="37.2284 N 80.4234 W"
+    /sample collection device or method="HVAC filter"
+    /season="Fall"
+    /type_of_nucleic_acid="AP-DNA-9"
+Description:
+02_September_2014_29_September_2014
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN11050308	ID: 11050308
+
+25: AP-DNA-8
+Identifiers: BioSample: SAMN11050307; Sample name: AP-DNA-8; SRA: SRS4434193
+Organism: air metagenome
+Attributes:
+    /altitude="161"
+    /collection date="2014-08-04"
+    /broad-scale environmental context="[ENVO:00000428]"
+    /local-scale environmental context="air"
+    /environmental medium="air"
+    /geographic location="USA: Virginia"
+    /latitude and longitude="37.2284 N 80.4234 W"
+    /sample collection device or method="HVAC filter"
+    /season="Summer"
+    /type_of_nucleic_acid="AP-DNA-8"
+Description:
+04_August_2014_02_September_2014
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN11050307	ID: 11050307
+
+26: AP-DNA-7
+Identifiers: BioSample: SAMN11050306; Sample name: AP-DNA-7; SRA: SRS4434192
+Organism: air metagenome
+Attributes:
+    /altitude="161"
+    /collection date="2014-07-07"
+    /broad-scale environmental context="[ENVO:00000428]"
+    /local-scale environmental context="air"
+    /environmental medium="air"
+    /geographic location="USA: Virginia"
+    /latitude and longitude="37.2284 N 80.4234 W"
+    /sample collection device or method="HVAC filter"
+    /season="Summer"
+    /type_of_nucleic_acid="AP-DNA-7"
+Description:
+07_July_2014_04_August_2014
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN11050306	ID: 11050306
+
+27: AP-DNA-6
+Identifiers: BioSample: SAMN11050305; Sample name: AP-DNA-6; SRA: SRS4434191
+Organism: air metagenome
+Attributes:
+    /altitude="161"
+    /collection date="2014-06-09"
+    /broad-scale environmental context="[ENVO:00000428]"
+    /local-scale environmental context="air"
+    /environmental medium="air"
+    /geographic location="USA: Virginia"
+    /latitude and longitude="37.2284 N 80.4234 W"
+    /sample collection device or method="HVAC filter"
+    /season="Summer"
+    /type_of_nucleic_acid="AP-DNA-6"
+Description:
+09_June_2014_07_July_2014
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN11050305	ID: 11050305
+
+28: AP-DNA-5
+Identifiers: BioSample: SAMN11050304; Sample name: AP-DNA-5; SRA: SRS4434190
+Organism: air metagenome
+Attributes:
+    /altitude="161"
+    /collection date="2014-05-12"
+    /broad-scale environmental context="[ENVO:00000428]"
+    /local-scale environmental context="air"
+    /environmental medium="air"
+    /geographic location="USA: Virginia"
+    /latitude and longitude="37.2284 N 80.4234 W"
+    /sample collection device or method="HVAC filter"
+    /season="Spring"
+    /type_of_nucleic_acid="AP-DNA-5"
+Description:
+12_May_2014_09_June_2014
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN11050304	ID: 11050304
+
+29: AP-DNA-4
+Identifiers: BioSample: SAMN11050303; Sample name: AP-DNA-4; SRA: SRS4434189
+Organism: air metagenome
+Attributes:
+    /altitude="161"
+    /collection date="2014-04-14"
+    /broad-scale environmental context="[ENVO:00000428]"
+    /local-scale environmental context="air"
+    /environmental medium="air"
+    /geographic location="USA: Virginia"
+    /latitude and longitude="37.2284 N 80.4234 W"
+    /sample collection device or method="HVAC filter"
+    /season="Spring"
+    /type_of_nucleic_acid="AP-DNA-4"
+Description:
+14_April_2014_12_May_2014
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN11050303	ID: 11050303
+
+30: AP-DNA-3
+Identifiers: BioSample: SAMN11050302; Sample name: AP-DNA-3; SRA: SRS4434188
+Organism: air metagenome
+Attributes:
+    /altitude="161"
+    /collection date="2014-03-17"
+    /broad-scale environmental context="[ENVO:00000428]"
+    /local-scale environmental context="air"
+    /environmental medium="air"
+    /geographic location="USA: Virginia"
+    /latitude and longitude="37.2284 N 80.4234 W"
+    /sample collection device or method="HVAC filter"
+    /season="Spring"
+    /type_of_nucleic_acid="AP-DNA-3"
+Description:
+17_March_2014_14_April_2014
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN11050302	ID: 11050302
+
+31: AP DNA 1
+Identifiers: BioSample: SAMN11050301; Sample name: AP DNA 2; SRA: SRS4434187
+Organism: air metagenome
+Attributes:
+    /altitude="161"
+    /collection date="2014-02-17"
+    /broad-scale environmental context="[ENVO:00000428]"
+    /local-scale environmental context="air"
+    /environmental medium="air"
+    /geographic location="USA: Virginia"
+    /latitude and longitude="37.2284 N 80.4234 W"
+    /sample collection device or method="HVAC filter"
+    /season="Winter"
+    /type_of_nucleic_acid="AP-DNA-2"
+Description:
+17_February_2014_17_March_2014
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN11050301	ID: 11050301
+
+32: AP-DNA 1
+Identifiers: BioSample: SAMN11050300; Sample name: AP-DNA 1; SRA: SRS4434186
+Organism: air metagenome
+Attributes:
+    /altitude="161"
+    /collection date="2014-01-20"
+    /broad-scale environmental context="[ENVO:00000428]"
+    /local-scale environmental context="air"
+    /environmental medium="air"
+    /geographic location="USA: Virginia"
+    /latitude and longitude="37.2284 N 80.4234 W"
+    /sample collection device or method="HVAC filter"
+    /season="Winter"
+    /type_of_nucleic_acid="AP-DNA-1"
+Description:
+20_January_2014_17_February_2014
+Keywords: GSC:MIxS;MIMS:6.0
+Accession: SAMN11050300	ID: 11050300
