@@ -2,8 +2,13 @@ import re
 import csv
 from collections import defaultdict
 sra_run_path = "sraruninfo.csv"
+# Download from here: https://www.ncbi.nlm.nih.gov/Traces/study/?query_key=4&WebEnv=MCID_65b7f332bd5d126b3ce13457&o=acc_s%3Aa#:~:text=Bases-,Download,-Cloud%20Data%20Delivery 
+# Click on Download > "Metadata"
 disease_tsv_path = "biosample.txt" 
-
+# Download from here: https://www.ncbi.nlm.nih.gov/biosample?Db=biosample&DbFrom=bioproject&Cmd=Link&LinkName=bioproject_biosample&LinkReadableName=BioSample&ordinalpos=1&IdsFromResult=525405
+# First, show all samples on one page. Then, next to the "{n} per page" button, 
+# click on "Summary" and check "Full(txt)". Copy paste that data into new file 
+# with name "biosample.txt".
 metadata_file_path = "metadata.tsv"
 
 with open(disease_tsv_path, mode='r') as infile:
