@@ -456,6 +456,87 @@
     "Rhizobiales Kuykendall 2006",
     "Rhizobiales"
   ],
+  "358": [
+    "Agrobacterium tumefaciens",
+    "\"Achromobacter radiobacter\" (Beijerinck and van Delden 1902) Bergey et al. 1934",
+    "Achromobacter radiobacter",
+    "Agrobacterium genomic group 4",
+    "Agrobacterium genomosp. 4",
+    "Agrobacterium genomovar 4",
+    "Agrobacterium genomovar G4",
+    "Agrobacterium radiobacter (Beijerinck and van Delden 1902) Conn 1942 (Approved Lists 1980)",
+    "Agrobacterium radiobacter (Beijerinck and van Delden 1902) Conn 1942 (Approved Lists 1980) emend. Sawada et al. 1993",
+    "Agrobacterium radiobacter (Beijerinck and van Delden 1902) Conn 1942 (Approved Lists 1980) emend. Zhang et al. 2014",
+    "Agrobacterium radiobacter",
+    "Agrobacterium sp. ISSDS-827",
+    "Agrobacterium sp. UQM 1685",
+    "Agrobacterium tumefaciens (Smith and Townsend 1907) Conn 1942 (Approved Lists 1980)",
+    "Agrobacterium tumefaciens (TI PLASMID PTI15955)",
+    "Agrobacterium tumefaciens (TI PLASMID PTIA6NC)",
+    "Agrobacterium tumefaciens (TI PLASMID PTIACH5)",
+    "Agrobacterium tumefaciens (Ti plasmid pTib6s3)",
+    "Agrobacterium tumefaciens (TI PLASMID PTIBO542)",
+    "Agrobacterium tumefaciens (TI PLASMID PTIC58)",
+    "Agrobacterium tumefaciens (TI PLASMID PTIT37)",
+    "Agrobacterium tumefaciens (TI PLASMID PTITM-4)",
+    "\"Alcaligenes radiobacter\" (Beijerinck and van Delden 1902) Conn 1939",
+    "Alcaligenes radiobacter",
+    "ATCC 19358 [[Agrobacterium radiobacter]]",
+    "ATCC 19358 [[Rhizobium radiobacter]]",
+    "ATCC 23308",
+    "\"Bacillus radiobacter\" Beijerinck and van Delden 1902",
+    "Bacillus radiobacter",
+    "\"Bacterium radiobacter\" (Beijerinck and van Delden 1902) Lohnis 1905",
+    "Bacterium radiobacter",
+    "\"Bacterium tumefaciens\" Smith and Townsend 1907",
+    "Bacterium tumefaciens",
+    "Beijerinckia fluminensis Dobereiner and Ruschel 1958",
+    "Beijerinckia fluminensis",
+    "CCUG 3354 [[Agrobacterium radiobacter]]",
+    "CFBP 2413",
+    "CIP 104325 [[Rhizobium radiobacter]]",
+    "CIP 106281 [[Beijerinckia fluminensis]]",
+    "DSM 30147 [[Agrobacterium radiobacter]]",
+    "DSM 30147 [[Rhizobium radiobacter]]",
+    "DSM 30205",
+    "HAMBI 1811",
+    "HAMBI 1814 [[Rhizobium radiobacter]]",
+    "IAM 12048 [[Agrobacterium radiobacter]]",
+    "IAM 12048",
+    "ICMP 5785 [[Rhizobium radiobacter]]",
+    "ICMP 5856",
+    "IFO 13532 [[Agrobacterium radiobacter]]",
+    "IFO 13532 [[Rhizobium radiobacter]]",
+    "JCM 20371 [[Rhizobium radiobacter]]",
+    "LMG 140 [[Rhizobium radiobacter]]",
+    "LMG:140 [[Rhizobium radiobacter]]",
+    "LMG 187",
+    "LMG:187",
+    "NBRC 13532 [[Agrobacterium radiobacter]]",
+    "NBRC 13532 [[Rhizobium radiobacter]]",
+    "NCCB 27005 [[Rhizobium radiobacter]]",
+    "NCIB 9042 [[Agrobacterium radiobacter]]",
+    "NCIB:9042 [[Agrobacterium radiobacter]]",
+    "NCIB 9042 [[Rhizobium radiobacter]]",
+    "NCIB:9042 [[Rhizobium radiobacter]]",
+    "NCIMB 9042 [[Rhizobium radiobacter]]",
+    "NCPPB 2437",
+    "NCPPB 3001 [[Rhizobium radiobacter]]",
+    "\"Phytomonas tumefaciens\" (Smith and Townsend 1907) Bergey et al. 1923",
+    "Phytomonas tumefaciens",
+    "\"Polymonas tumefaciens\" (Smith and Townsend 1907) Lieske 1928",
+    "Polymonas tumefaciens",
+    "\"Pseudomonas radiobacter\" (Beijerinck and van Delden 1902) Krasil'nikov 1949",
+    "Pseudomonas radiobacter",
+    "\"Pseudomonas tumefaciens\" (Smith and Townsend 1907) Duggar 1909",
+    "Pseudomonas tumefaciens",
+    "\"Rhizobium radiobacter\" (Beijerinck and van Delden 1902) Pribram 1933",
+    "Rhizobium radiobacter (Beijerinck and van Delden 1902) Young et al. 2001",
+    "Rhizobium radiobacter",
+    "Rhizobium sp. ISSDS-758",
+    "strain B6",
+    "UQM 1685 [[Beijerinckia fluminensis]]"
+  ],
   "374": [
     "Bradyrhizobium",
     "Agromonas Ohta and Hattori 1985",
@@ -823,6 +904,30 @@
     "NBRC 14940",
     "NCTC 9633"
   ],
+  "575": [
+    "Raoultella planticola",
+    "ATCC 33531",
+    "ATCC 33558 [[Klebsiella trevisanii Ferragut et al. 1983]]",
+    "CCUG 15718",
+    "CDC 4245-72",
+    "CIP 100751",
+    "CIP 81-36 [[Klebsiella trevisanii Ferragut et al. 1983]]",
+    "CUETM 78-120 [[Klebsiella trevisanii Ferragut et al. 1983]]",
+    "DSM 2688 [[Klebsiella trevisanii Ferragut et al. 1983]]",
+    "DSM 3069",
+    "IAM 14202",
+    "IFO 14939",
+    "JCM 7251",
+    "Klebsiella planticola Bagley et al. 1982",
+    "Klebsiella planticola",
+    "Klebsiella trevisanii Ferragut et al. 1983",
+    "Klebsiella trevisanii",
+    "NBRC 14939",
+    "NCTC 12998",
+    "Raoultella planticola (Bagley et al. 1982) Drancourt et al. 2001",
+    "strain Gavini K70 [[Klebsiella trevisanii Ferragut et al. 1983]]",
+    "strain V-236"
+  ],
   "577": [
     "Raoultella terrigena",
     "ATCC 33257",
@@ -877,6 +982,21 @@
   "613": [
     "Serratia",
     "Serratia Bizio 1823"
+  ],
+  "614": [
+    "Serratia liquefaciens",
+    "\"Aerobacter liquefaciens\" Grimes and Hennerty 1931",
+    "Aerobacter liquefaciens",
+    "ATCC 27592",
+    "CCUG 9285",
+    "CIP 103238",
+    "DSM 4487",
+    "JCM 1245",
+    "LMG 7884",
+    "LMG:7884",
+    "NCTC 12962",
+    "Serratia liquefaciens (Grimes and Hennerty 1931) Bascomb et al. 1971",
+    "Serratia liquefaciens (Grimes and Hennerty 1961(sic)) Bascomb et al. 1971"
   ],
   "642": [
     "Aeromonas",
@@ -2737,6 +2857,15 @@
     "Human hepatitis B virus",
     "human hepatitis B virus HBV"
   ],
+  "10455": [
+    "Spodoptera frugiperda multiple nucleopolyhedrovirus",
+    "SfMNPV",
+    "SfNPV",
+    "Spodoptera frugiperda MNPV",
+    "Spodoptera frugiperda multicapsid nucleopolyhedrovirus",
+    "Spodoptera frugiperda nuclear polyhedrosis virus",
+    "Spodoptera frugiperda nucleopolyhedrovirus"
+  ],
   "10472": [
     "Plasmaviridae",
     "bacterial virus",
@@ -3482,6 +3611,29 @@
   "11837": [
     "Xenotropic murine leukemia virus"
   ],
+  "11864": [
+    "Avian leukosis virus",
+    "ALV",
+    "Avian leukosis viruses"
+  ],
+  "11866": [
+    "Avian myeloblastosis virus",
+    "AMV",
+    "avian myeloblastosis virus AMV"
+  ],
+  "11884": [
+    "Y73 sarcoma virus",
+    "Avian sarcoma virus (STRAIN Y73)",
+    "Avian sarcoma virus Y73",
+    "Y73SV"
+  ],
+  "11885": [
+    "Fujinami sarcoma virus"
+  ],
+  "11886": [
+    "Rous sarcoma virus",
+    "Rous sarcoma virus RSV"
+  ],
   "11908": [
     "Human T-cell leukemia virus type I",
     "HTLV-1",
@@ -3523,6 +3675,9 @@
     "human T-cell lymphotropic virus type II HTLV-II",
     "Human T-lymphotropic virus Type II",
     "human T lymphotropic virus type II HTLV-II"
+  ],
+  "11946": [
+    "Avian leukemia virus"
   ],
   "11963": [
     "Human spumaretrovirus",
@@ -3609,6 +3764,11 @@
     "SBMV",
     "southern bean mosaic virus, SBMV"
   ],
+  "12177": [
+    "Clover yellow mosaic virus",
+    "Clover yellow mosaic potexvirus",
+    "CYMV"
+  ],
   "12188": [
     "White clover mosaic virus",
     "WClMV"
@@ -3649,6 +3809,19 @@
   ],
   "12286": [
     "Boolarra virus"
+  ],
+  "12302": [
+    "Brome mosaic virus",
+    "BMV"
+  ],
+  "12313": [
+    "Peanut stunt virus",
+    "peanut stunt cucumovirus",
+    "peanut stunt virus PSV"
+  ],
+  "12317": [
+    "Tobacco streak virus",
+    "TSV"
   ],
   "12333": [
     "unclassified bacterial viruses",
@@ -4454,6 +4627,14 @@
     "Rhodobacteraceae Garrity et al. 2006 emend. Liang et al. 2021",
     "Rhodobacter clade",
     "Rhodobacter group"
+  ],
+  "32008": [
+    "Burkholderia",
+    "Burkholderia Yabuuchi et al. 1993",
+    "Burkholderia Yabuuchi et al. 1993 emend. Dobritsa and Samadpour 2019",
+    "Burkholderia Yabuuchi et al. 1993 emend. Gillis et al. 1995",
+    "Burkholderia Yabuuchi et al. 1993 emend. Sawana et al. 2014",
+    "Pseudomonas RNA homology group II"
   ],
   "32033": [
     "Xanthomonadaceae",
@@ -5664,6 +5845,20 @@
     "Paracoccus marcusii Harker et al. 1998",
     "strain MH1"
   ],
+  "60550": [
+    "Burkholderia pyrrocinia",
+    "ATCC 15958",
+    "Burkholderia pyrrocinia (Imanaka et al. 1965) Vandamme et al. 1997 emend. Storms et al. 2004",
+    "Burkholderia pyrrocinia (Imanaka et al. 1965) Viallard et al. 1998",
+    "CCUG 41877",
+    "CFBP 4794",
+    "CIP 105874",
+    "DSM 10685",
+    "LMG 14191",
+    "LMG:14191",
+    "Pseudomonas pyrrocinia Imanaka et al. 1965 (Approved Lists 1980)",
+    "Pseudomonas pyrrocinia"
+  ],
   "60877": [
     "Tonate virus",
     "VEEV-IIIB",
@@ -6323,6 +6518,20 @@
     "Sapporo virus",
     "Human calicivirus SLV"
   ],
+  "95486": [
+    "Burkholderia cenocepacia",
+    "ATCC BAA-245",
+    "ATCC:BAA:245",
+    "Burkholderia cenocepacia Vandamme et al. 2003",
+    "Burkholderia cepacia genomovar IIIb",
+    "Burkholderia cepacia genomovar III",
+    "CCM 4899",
+    "CCUG 48434",
+    "DSM 16553",
+    "LMG 16656",
+    "LMG:16656",
+    "NCTC 13227"
+  ],
   "97344": [
     "Periplaneta fuliginosa densovirus",
     "Periplaneta fuliginosa parvovirus"
@@ -6714,6 +6923,13 @@
   "152219": [
     "Menangle virus"
   ],
+  "153057": [
+    "Alpharetrovirus",
+    "ALV-related viruses",
+    "Avian type C oncoviruses",
+    "Avian type C retroviruses",
+    "Avian type C retrovirus group"
+  ],
   "153135": [
     "Gammaretrovirus",
     "mammalian type C oncoviruses",
@@ -6883,6 +7099,13 @@
     "Xylanimonas",
     "Xylanimonas Rivas et al. 2003",
     "Xylanimonas Rivas et al. 2003 emend. Lam et al."
+  ],
+  "186532": [
+    "Ceduovirus",
+    "C2likevirus",
+    "\"c2-like viruses\"",
+    "c2-like viruses",
+    "C2virus"
   ],
   "186536": [
     "Ebolavirus",
@@ -7992,6 +8215,16 @@
   "353769": [
     "unclassified Gammaretrovirus"
   ],
+  "354090": [
+    "UR2 sarcoma virus",
+    "Avian sarcoma virus (STRAIN UR2)",
+    "Avian sarcoma virus UR2"
+  ],
+  "354260": [
+    "Lactococcus phage P335",
+    "Lactococcus phage P335 sensu lato",
+    "P335"
+  ],
   "354276": [
     "Enterobacter cloacae complex"
   ],
@@ -8034,6 +8267,9 @@
     "Pseudomonas sp. 2E",
     "strain 14-3",
     "strain CT14-3"
+  ],
+  "359919": [
+    "Spodoptera litura granulovirus"
   ],
   "360911": [
     "Exiguobacterium sp. AT1b"
@@ -8384,6 +8620,16 @@
     "Influenza A virus (A/Korea/426/68(H2N2))",
     "Influenza A virus (STRAIN A/KOREA/426/68)"
   ],
+  "488447": [
+    "Burkholderia contaminans",
+    "Burkholderia contaminans Vanlaere et al. 2009",
+    "Burkholderia contaminans Vanlaere et al. 2009 emend. Depoorter et al. 2020",
+    "Burkholderia sp. LMG 23255",
+    "CCUG 55526",
+    "LMG 23361",
+    "LMG:23361",
+    "strain J2956"
+  ],
   "489632": [
     "Pseudomonas chengduensis",
     "CGMCC 2318",
@@ -8582,6 +8828,12 @@
     "Polynucleobacter sp. MWH-PoolGreenA3",
     "strain MWH-PoolGreenA3"
   ],
+  "558017": [
+    "Betabaculovirus",
+    "Granulosis viruses",
+    "Granulovirus",
+    "GV"
+  ],
   "558537": [
     "Delftia lacustris",
     "Delftia lacustris Jorgensen et al. 2009",
@@ -8603,6 +8855,10 @@
   ],
   "566308": [
     "Astrovirus dogfaeces/Italy/2005"
+  ],
+  "568209": [
+    "Felis domesticus papillomavirus 2",
+    "Feline papillomavirus type 2"
   ],
   "568715": [
     "Astrovirus MLB1",
@@ -8713,6 +8969,9 @@
     "DSM 23858",
     "KCTC 22631",
     "strain BIO-TAS2-2"
+  ],
+  "590403": [
+    "Red clover vein mosaic virus"
   ],
   "590745": [
     "Mus musculus mobilized endogenous polytropic provirus"
@@ -8848,6 +9107,9 @@
     "Ruminococcus torques L2-14",
     "Ruminococcus torques strain L2-14",
     "Ruminococcus torques str. L2-14"
+  ],
+  "658630": [
+    "Pseudomonas sp. CMR5c"
   ],
   "660470": [
     "Mesotoga prima MesG1.Ag.4.2",
@@ -9246,6 +9508,10 @@
     "HPV-151",
     "Human papillomavirus SIBX2",
     "Human papillomavirus type 151"
+  ],
+  "745088": [
+    "Leuconostoc phage 1-A4",
+    "Leuconostoc mesenteroides phage 1-A4"
   ],
   "746830": [
     "Human polyomavirus 6",
@@ -9905,6 +10171,9 @@
   "1175659": [
     "Pseudomonas phage PaMx28"
   ],
+  "1175662": [
+    "Pseudomonas phage PaMx42"
+  ],
   "1175663": [
     "Pseudomonas phage PaMx74"
   ],
@@ -10394,6 +10663,10 @@
     "Xylella phage Prado",
     "Phage Prado"
   ],
+  "1415148": [
+    "Xylella phage Sano",
+    "Phage Sano"
+  ],
   "1415627": [
     "Gyrovirus Tu243"
   ],
@@ -10431,6 +10704,9 @@
   ],
   "1429759": [
     "Mycobacterium phage EagleEye"
+  ],
+  "1434319": [
+    "Staphylococcus phage vB_SepS_SEP9"
   ],
   "1434720": [
     "Beluga whale alphaherpesvirus 1",
@@ -10577,6 +10853,10 @@
     "Escherichia phage ECBP5",
     "coliphage ECBP5",
     "Escherichia coli phage ECBP5"
+  ],
+  "1500386": [
+    "Staphylococcus phage 6ec",
+    "Staphylococcus epidermidis phage 6ec"
   ],
   "1501662": [
     "Streptococcus parasuis",
@@ -11057,6 +11337,10 @@
   "1653394": [
     "Mammarenavirus"
   ],
+  "1655019": [
+    "Propionibacterium phage Procrass1",
+    "Propionibacterium acnes bacteriophage Procrass1"
+  ],
   "1655645": [
     "Parabacteroides phage YZ-2015b",
     "Parabacteroides merdae prophage YZ-2015b"
@@ -11241,6 +11525,9 @@
   "1765049": [
     "Azospira sp. I09",
     "Dechlorosoma sp. I09"
+  ],
+  "1772332": [
+    "Pseudomonas phage SM1"
   ],
   "1775250": [
     "Xanthomonas phage XAJ24"
@@ -11454,6 +11741,9 @@
   "1855880": [
     "Polynucleobacter sp. MWH-Aus1W21"
   ],
+  "1857843": [
+    "Kayvirus"
+  ],
   "1858609": [
     "Acidovorax sp. T1"
   ],
@@ -11496,6 +11786,9 @@
   ],
   "1883365": [
     "Synechococcus phage S-CAM22"
+  ],
+  "1883369": [
+    "Synechococcus phage S-CAM9"
   ],
   "1883371": [
     "Erwinia phage vB_EamM_ChrisDB"
@@ -11575,6 +11868,9 @@
   ],
   "1904876": [
     "Human DNA virus"
+  ],
+  "1904944": [
+    "Stenotrophomonas sp. LM091"
   ],
   "1910928": [
     "Genomoviridae"
@@ -12041,6 +12337,9 @@
     "Anaerolineaceae bacterium CAMBI-1",
     "\"Brevefilum fermentans\" McIlroy et al. 2017"
   ],
+  "1986479": [
+    "Bemisia-associated genomovirus NfO"
+  ],
   "1986491": [
     "unclassified Orthohantavirus"
   ],
@@ -12456,6 +12755,9 @@
   "2107709": [
     "Pandoravirus quercus"
   ],
+  "2108116": [
+    "Xanthomonas phage RiverRider"
+  ],
   "2108137": [
     "Enterobacter phage myPSH1140"
   ],
@@ -12550,6 +12852,10 @@
   ],
   "2169595": [
     "Firstpapillomavirinae"
+  ],
+  "2169622": [
+    "Unaquatrovirus",
+    "Una4virus"
   ],
   "2169662": [
     "Huchismacovirus"
@@ -12669,6 +12975,9 @@
   "2204151": [
     "unclassified DNA viruses"
   ],
+  "2217913": [
+    "Burkholderia sp. JP2-270"
+  ],
   "2219049": [
     "Husavirus",
     "human stool-associated RNA viruses",
@@ -12734,6 +13043,9 @@
   ],
   "2283270": [
     "Caulobacter phage CcrBL9"
+  ],
+  "2283271": [
+    "Caulobacter phage CcrPW"
   ],
   "2283297": [
     "Mycobacterium phage Mantra"
@@ -12948,6 +13260,9 @@
     "Shigella phage_Buco",
     "Shigella_phage_Buco",
     "Shigella phage HRP29"
+  ],
+  "2557553": [
+    "Serratia phage MTx"
   ],
   "2557554": [
     "Serratia phage Parlo"
@@ -13235,6 +13550,9 @@
   "2596672": [
     "Proteus phage Saba"
   ],
+  "2596673": [
+    "Serratia phage MyoSmar"
+  ],
   "2596674": [
     "Stenotrophomonas phage Pokken"
   ],
@@ -13278,6 +13596,9 @@
   ],
   "2608321": [
     "Aeromonas phage vB_AhyS-A18P4"
+  ],
+  "2608369": [
+    "Lactococcus phage vB_LacS_15"
   ],
   "2608887": [
     "unclassified Streptococcus"
@@ -14146,6 +14467,9 @@
   "2843466": [
     "Teubervirus"
   ],
+  "2843470": [
+    "Vedamuthuvirus"
+  ],
   "2843478": [
     "Yonseivirus"
   ],
@@ -14268,6 +14592,9 @@
   ],
   "2869555": [
     "Erwinia phage pEa_SNUABM_32"
+  ],
+  "2869556": [
+    "Erwinia phage pEa_SNUABM_33"
   ],
   "2871493": [
     "Pseudomonas sp. SC3(2021)"
@@ -14399,6 +14726,14 @@
     "Mycobacterium phage Larva",
     "Mycobacteriophage Larva"
   ],
+  "2928686": [
+    "Pseudomonas phage phi6",
+    "bacteriophage phi-6",
+    "phage phi-6",
+    "Phage Phi6",
+    "Pseudomonas bacteriophage phi6",
+    "Pseudomonas phage phi-6"
+  ],
   "2929491": [
     "Faecalibacterium sp. HTFF"
   ],
@@ -14429,6 +14764,9 @@
   ],
   "2942994": [
     "Buchavirus"
+  ],
+  "2943016": [
+    "Salvovirus"
   ],
   "2946160": [
     "Kyanoviridae"

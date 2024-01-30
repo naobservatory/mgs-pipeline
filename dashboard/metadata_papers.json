@@ -129,6 +129,13 @@
       "PRJEB12466"
     ]
   },
+  "Prussin 2019": {
+    "link": "https://doi.org/10.1186/s40168-019-0672-z",
+    "na_type": "DNA+RNA",
+    "projects": [
+      "PRJNA525405"
+    ]
+  },
   "Riquelme 2022": {
     "link": "https://doi.org/10.1021/acs.est.1c08673",
     "na_type": "DNA",
