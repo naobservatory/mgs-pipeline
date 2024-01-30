@@ -311,7 +311,6 @@ def interpret(project, papers, bits):
             na_type=na_type,
             sampling_range=sampling_range,
             season=season)
-
     elif project in papers["Rosario 2018"]["projects"]:
         sample, sample_type, na_type = bits
         return sample, dict(
