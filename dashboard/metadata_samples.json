@@ -26653,6 +26653,286 @@
     "reads": 6683307,
     "state": "Texas"
   },
+  "SRR5853122": {
+    "city": "Boulder",
+    "country": "United States",
+    "date": "2015-06",
+    "na_type": "DNA",
+    "reads": 587623,
+    "ribofrac": "0.0049",
+    "sample_type": "Female room 3",
+    "state": "Colorado"
+  },
+  "SRR5853123": {
+    "city": "Boulder",
+    "country": "United States",
+    "date": "2015-06",
+    "na_type": "DNA",
+    "reads": 486838,
+    "ribofrac": "0.0029",
+    "sample_type": "Female room 4",
+    "state": "Colorado"
+  },
+  "SRR5853124": {
+    "city": "Boulder",
+    "country": "United States",
+    "date": "2015-06",
+    "na_type": "DNA",
+    "reads": 789167,
+    "ribofrac": "0.0069",
+    "sample_type": "Male room 4",
+    "state": "Colorado"
+  },
+  "SRR5853125": {
+    "city": "Boulder",
+    "country": "United States",
+    "date": "2015-06",
+    "na_type": "DNA",
+    "reads": 681082,
+    "ribofrac": "0.002",
+    "sample_type": "Male room 3",
+    "state": "Colorado"
+  },
+  "SRR5853126": {
+    "city": "Boulder",
+    "country": "United States",
+    "date": "2015-06",
+    "na_type": "DNA",
+    "reads": 0,
+    "ribofrac": "0",
+    "sample_type": "Female room 2",
+    "state": "Colorado"
+  },
+  "SRR5853127": {
+    "city": "Boulder",
+    "country": "United States",
+    "date": "2015-06",
+    "na_type": "DNA",
+    "reads": 476257,
+    "ribofrac": "0.0096",
+    "sample_type": "Male room 2",
+    "state": "Colorado"
+  },
+  "SRR5853128": {
+    "city": "Boulder",
+    "country": "United States",
+    "date": "2015-06",
+    "na_type": "DNA",
+    "reads": 721372,
+    "ribofrac": "0.0059",
+    "sample_type": "Male room 5",
+    "state": "Colorado"
+  },
+  "SRR5853129": {
+    "city": "Boulder",
+    "country": "United States",
+    "date": "2015-06",
+    "na_type": "DNA",
+    "reads": 625241,
+    "ribofrac": "0.002",
+    "sample_type": "Female room 1",
+    "state": "Colorado"
+  },
+  "SRR5853130": {
+    "city": "Boulder",
+    "country": "United States",
+    "date": "2015-06",
+    "na_type": "DNA",
+    "reads": 727049,
+    "ribofrac": "0.0049",
+    "sample_type": "Male room 1",
+    "state": "Colorado"
+  },
+  "SRR5853131": {
+    "city": "Boulder",
+    "country": "United States",
+    "date": "2015-06",
+    "na_type": "DNA",
+    "reads": 442961,
+    "ribofrac": "0.0049",
+    "sample_type": "Negative Control",
+    "state": "Colorado"
+  },
+  "SRR5853132": {
+    "city": "Boulder",
+    "country": "United States",
+    "date": "2015-06",
+    "na_type": "RNA",
+    "reads": 629459,
+    "ribofrac": "0.0291",
+    "sample_type": "Male room 6",
+    "state": "Colorado"
+  },
+  "SRR5853133": {
+    "city": "Boulder",
+    "country": "United States",
+    "date": "2015-06",
+    "na_type": "RNA",
+    "reads": 697325,
+    "ribofrac": "0.0386",
+    "sample_type": "Female room 6",
+    "state": "Colorado"
+  },
+  "SRR5853134": {
+    "city": "Boulder",
+    "country": "United States",
+    "date": "2015-06",
+    "na_type": "RNA",
+    "reads": 573280,
+    "ribofrac": "0.0322",
+    "sample_type": "Male room 1",
+    "state": "Colorado"
+  },
+  "SRR5853135": {
+    "city": "Boulder",
+    "country": "United States",
+    "date": "2015-06",
+    "na_type": "RNA",
+    "reads": 631931,
+    "ribofrac": "0.0407",
+    "sample_type": "NegativeControl",
+    "state": "Colorado"
+  },
+  "SRR5853136": {
+    "city": "Boulder",
+    "country": "United States",
+    "date": "2015-06",
+    "na_type": "DNA",
+    "reads": 841980,
+    "ribofrac": "0.0068",
+    "sample_type": "Female room 6",
+    "state": "Colorado"
+  },
+  "SRR5853137": {
+    "city": "Boulder",
+    "country": "United States",
+    "date": "2015-06",
+    "na_type": "DNA",
+    "reads": 684650,
+    "ribofrac": "0.0039",
+    "sample_type": "Pool",
+    "state": "Colorado"
+  },
+  "SRR5853138": {
+    "city": "Boulder",
+    "country": "United States",
+    "date": "2015-06",
+    "na_type": "DNA",
+    "reads": 684759,
+    "ribofrac": "0.0127",
+    "sample_type": "Female room 5",
+    "state": "Colorado"
+  },
+  "SRR5853139": {
+    "city": "Boulder",
+    "country": "United States",
+    "date": "2015-06",
+    "na_type": "DNA",
+    "reads": 734212,
+    "ribofrac": "0.0058",
+    "sample_type": "Male room 6",
+    "state": "Colorado"
+  },
+  "SRR5853140": {
+    "city": "Boulder",
+    "country": "United States",
+    "date": "2015-06",
+    "na_type": "RNA",
+    "reads": 645454,
+    "ribofrac": "0.0338",
+    "sample_type": "Pool",
+    "state": "Colorado"
+  },
+  "SRR5853141": {
+    "city": "Boulder",
+    "country": "United States",
+    "date": "2015-06",
+    "na_type": "RNA",
+    "reads": 602937,
+    "ribofrac": "0.0316",
+    "sample_type": "Male room 2",
+    "state": "Colorado"
+  },
+  "SRR5853142": {
+    "city": "Boulder",
+    "country": "United States",
+    "date": "2015-06",
+    "na_type": "RNA",
+    "reads": 585029,
+    "ribofrac": "0.0464",
+    "sample_type": "Female room 5",
+    "state": "Colorado"
+  },
+  "SRR5853143": {
+    "city": "Boulder",
+    "country": "United States",
+    "date": "2015-06",
+    "na_type": "RNA",
+    "reads": 601458,
+    "ribofrac": "0.0634",
+    "sample_type": "Female room 4",
+    "state": "Colorado"
+  },
+  "SRR5853144": {
+    "city": "Boulder",
+    "country": "United States",
+    "date": "2015-06",
+    "na_type": "RNA",
+    "reads": 653675,
+    "ribofrac": "0.0411",
+    "sample_type": "Female room 3",
+    "state": "Colorado"
+  },
+  "SRR5853145": {
+    "city": "Boulder",
+    "country": "United States",
+    "date": "2015-06",
+    "na_type": "RNA",
+    "reads": 713366,
+    "ribofrac": "0.4072",
+    "sample_type": "Male room 5",
+    "state": "Colorado"
+  },
+  "SRR5853146": {
+    "city": "Boulder",
+    "country": "United States",
+    "date": "2015-06",
+    "na_type": "RNA",
+    "reads": 743903,
+    "ribofrac": "0.0901",
+    "sample_type": "Male room 4",
+    "state": "Colorado"
+  },
+  "SRR5853147": {
+    "city": "Boulder",
+    "country": "United States",
+    "date": "2015-06",
+    "na_type": "RNA",
+    "reads": 742287,
+    "ribofrac": "0.1646",
+    "sample_type": "Female room 2",
+    "state": "Colorado"
+  },
+  "SRR5853148": {
+    "city": "Boulder",
+    "country": "United States",
+    "date": "2015-06",
+    "na_type": "RNA",
+    "reads": 651689,
+    "ribofrac": "0.0589",
+    "sample_type": "Male room 3",
+    "state": "Colorado"
+  },
+  "SRR5853149": {
+    "city": "Boulder",
+    "country": "United States",
+    "date": "2015-06",
+    "na_type": "RNA",
+    "reads": 736633,
+    "ribofrac": "0.004",
+    "sample_type": "Female room 1",
+    "state": "Colorado"
+  },
   "SRR5892181": {
     "city": "Copenhagen",
     "collection": "saliva",
