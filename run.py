@@ -332,7 +332,6 @@ def ribofrac(args, subset_size=1000):
         sample_output_file = sample + ".ribofrac.txt"
         if sample_output_file in existing_outputs:
             continue
-
         # Track for error handling
         total_files_in_sample = 0
         empty_files_in_sample = 0
@@ -447,6 +446,10 @@ def ribofrac(args, subset_size=1000):
                     )
                 )
                 rrna_reads_dict[inputs[0]] = subset_reads - non_rrna_count
+        if not total_files_in_sample:
+            print("%s wasn't processed by ribofrac because it's not present in %s/%s/cleaned" % (sample, S3_BUCKET, args.bioproject))
+            continue
+
 
         # Calculate the weighted average fraction of rRNA reads across all inputs in sample using numpy
         # Extract the fractions of rRNA reads for each input
