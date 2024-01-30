@@ -339,7 +339,6 @@ def ribofrac(args, subset_size=1000):
         total_reads_dict = {}
         subset_reads_dict = {}
         rrna_reads_dict = {}
-        file_present = None 
         for potential_input in available_inputs:
             if not potential_input.startswith(sample):
                 continue
@@ -347,7 +346,6 @@ def ribofrac(args, subset_size=1000):
                 continue
             if "discarded" in potential_input:
                 continue
-            file_present = True 
             total_files_in_sample += 1
 
             # Number of output and input files must match
@@ -448,7 +446,7 @@ def ribofrac(args, subset_size=1000):
                     )
                 )
                 rrna_reads_dict[inputs[0]] = subset_reads - non_rrna_count
-        if not file_present:
+        if not total_files_in_sample:
             print("%s wasn't processed by ribofrac because it's not present in %s/%s/cleaned" % (sample, S3_BUCKET, args.bioproject))
             continue
 
