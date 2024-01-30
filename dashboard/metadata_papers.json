@@ -143,6 +143,13 @@
       "PRJNA527877"
     ]
   },
+  "Rosario 2018": {
+    "link": "https://doi.org/10.1021/acs.est.7b04203",
+    "na_type": "DNA+RNA",
+    "projects": [
+      "PRJNA395239"
+    ]
+  },
   "Rothman 2021": {
     "link": "https://pubmed.ncbi.nlm.nih.gov/34550753/",
     "na_type": "RNA",

@@ -1863,6 +1863,37 @@
     "Staphylococcus pyogenes aureus",
     "strain MVF-7 [[Staphylococcus aureus subsp. anaerobius]]"
   ],
+  "1283": [
+    "Staphylococcus haemolyticus",
+    "ATCC 29970",
+    "CCM 2737",
+    "CCUG 7323",
+    "CIP 81.56",
+    "culture-collection:NRRL:B:14755",
+    "DSM 20263",
+    "JCM 2416",
+    "LMG 13349",
+    "LMG:13349",
+    "NCTC 11042",
+    "NRRL B-14755",
+    "Staphylococcus haemolyticus Schleifer and Kloos 1975"
+  ],
+  "1290": [
+    "Staphylococcus hominis",
+    "ATCC 27844",
+    "CCUG 35516",
+    "CIP 102258",
+    "CIP 81.57",
+    "culture-collection:NRRL:B:14737",
+    "DM 122",
+    "DSM 20328",
+    "JCM 2419",
+    "LMG 13348",
+    "LMG:13348",
+    "NCTC 11320",
+    "NRRL B-14737",
+    "Staphylococcus hominis Kloos and Schleifer 1975 emend. Kloos et al. 1998"
+  ],
   "1301": [
     "Streptococcus",
     "Streptococcus Rosenbach 1884"
@@ -2074,6 +2105,18 @@
     "\"Pediococcus homari\" Deibel and Niven 1960",
     "Pediococcus homari"
   ],
+  "1379": [
+    "Gemella haemolysans",
+    "ATCC 10379",
+    "CCUG 37985",
+    "CIP 101126",
+    "Gemella haemolysans (Thjotta and Boe 1938) Berger 1960",
+    "LMG 18984",
+    "LMG:18984",
+    "NCTC 12968",
+    "Neisseria haemolysans",
+    "\"Neisseria haemolysans\" Thjotta and Boe 1938"
+  ],
   "1386": [
     "Bacillus",
     "Bacillus Cohn 1872 (Approved lists 1980)",
@@ -2208,6 +2251,15 @@
     "JCM 1433",
     "NCIMB 10654",
     "strain StadtmanHF"
+  ],
+  "1513": [
+    "Clostridium tetani",
+    "ATCC 19406",
+    "\"Bacillus tetani\" Flugge 1886",
+    "Bacillus tetani",
+    "CCUG 4220",
+    "Clostridium tetani (Flugge 1886) Bergey et al. 1923",
+    "NCTC 279"
   ],
   "1583": [
     "Weissella confusa",
@@ -4566,6 +4618,27 @@
     "Staphylococcus cohnii Schleifer and Kloos 1975",
     "Staphylococcus sp. AL1"
   ],
+  "29430": [
+    "Acinetobacter haemolyticus",
+    "\"Achromobacter haemolyticus\" Stenzel and Mannheim 1963",
+    "Achromobacter haemolyticus",
+    "Acinetobacter genomosp. 4",
+    "Acinetobacter genomospecies 4",
+    "Acinetobacter haematolyticus",
+    "Acinetobacter haemolyticus (ex Stenzel and Mannheim 1963) Bouvet and Grimont 1986",
+    "ATCC 17906",
+    "CCUG 888",
+    "CIP 64.3",
+    "DSM 6962",
+    "LMG 996",
+    "LMG:996",
+    "MTCC 9819",
+    "NCCB 85026",
+    "NCTC 10305",
+    "NCTC10305",
+    "strain B40",
+    "strain Mannheim 2446/60"
+  ],
   "29465": [
     "Veillonella",
     "Veillonella Prevot 1933 (Approved Lists 1980) emend. Aujoulat et al. 2014",
@@ -5493,6 +5566,15 @@
     "Human Mmtv-Like (HML) retrovirus",
     "Human Mmtv-Like retrovirus"
   ],
+  "45972": [
+    "Staphylococcus pasteuri",
+    "ATCC 51129",
+    "CCUG 32420",
+    "CIP 103540",
+    "DSM 10656",
+    "Staphylococcus pasteuri Chesneau et al. 1993",
+    "strain BM9357"
+  ],
   "45989": [
     "Methanoculleus",
     "Methaniculleus",
@@ -6081,6 +6163,10 @@
   "72197": [
     "Human erythrovirus V9"
   ],
+  "72201": [
+    "Armadillidium vulgare iridescent virus",
+    "Invertebrate iridovirus 31"
+  ],
   "73422": [
     "Streptococcus phage TP-J34",
     "Streptococcus thermophilus bacteriophage TP-J34"
@@ -6195,6 +6281,13 @@
     "Coltivirus BANNA",
     "Coltivirus JKT-6969",
     "Coltivirus JKT-7043"
+  ],
+  "78331": [
+    "Mycobacterium canettii",
+    "Mycobacterium canetti",
+    "\"Mycobacterium canetti\" van Soolingen et al. 1997",
+    "Mycobacterium tuberculosis subsp. canetti",
+    "strain So93"
   ],
   "78543": [
     "Pseudomonas migulae",
@@ -6579,6 +6672,10 @@
     "H9N2 subtype",
     "H9N2"
   ],
+  "107324": [
+    "Tobacco vein clearing virus",
+    "Tobacco vein-clearing virus"
+  ],
   "108098": [
     "Human mastadenovirus B",
     "HAdV-B",
@@ -6627,6 +6724,9 @@
   "112229": [
     "Pepino mosaic virus",
     "PepMV"
+  ],
+  "113553": [
+    "Poinsettia mosaic virus"
   ],
   "114654": [
     "DG-75 Murine leukemia virus"
@@ -6899,6 +6999,18 @@
     "Rhinovirus B",
     "Human rhinovirus B"
   ],
+  "147802": [
+    "Lactobacillus iners",
+    "CCUG 28746",
+    "CIP 105923",
+    "DSM 13335",
+    "JCM 12513",
+    "Lactobacillus iners Falsen et al. 1999",
+    "Lactobacillus sp. 7_1_47FAA",
+    "Lactobacillus sp. EF (Enevold Falsen) group 47",
+    "LMG 18914",
+    "LMG:18914"
+  ],
   "149539": [
     "Salmonella enterica subsp. enterica serovar Enteritidis",
     "\"Bacillus enteritidis\" Gaertner 1888",
@@ -7039,6 +7151,15 @@
     "LMG:21516",
     "strain HKU1"
   ],
+  "170325": [
+    "Canid alphaherpesvirus 1",
+    "CaHV-1",
+    "Canid alphaherpesvirus type 1",
+    "Canid herpesvirus 1",
+    "Canine herpesvirus 1",
+    "canine herpesvirus CHV",
+    "Canine herpesvirus"
+  ],
   "171549": [
     "Bacteroidales",
     "Bacteroidales Krieg 2012 emend. Pikuta et al. 2017"
@@ -7086,6 +7207,11 @@
   "185638": [
     "Culex pipiens densovirus",
     "CpDNV"
+  ],
+  "185639": [
+    "Acheta domestica densovirus",
+    "Acheta domesticus densovirus",
+    "AdDNV"
   ],
   "185751": [
     "Pospiviroidae",
@@ -10109,6 +10235,9 @@
     "Bat mastadenovirus A",
     "Bat adenovirus A"
   ],
+  "1147042": [
+    "Staphylococcus phage StB12"
+  ],
   "1147094": [
     "Klebsiella phage vB_KleM_RaK2",
     "Enterobacteria phage vB_KleM-RaK2"
@@ -10149,6 +10278,9 @@
   "1168563": [
     "Stenotrophomonas phage Smp131",
     "Stenotrophomonas maltophilia phage Smp131"
+  ],
+  "1169032": [
+    "Wasabi mottle virus"
   ],
   "1170562": [
     "Calothrix sp. PCC 6303",
@@ -10318,6 +10450,15 @@
   "1228012": [
     "Spodoptera exigua iflavirus 2"
   ],
+  "1229784": [
+    "Propionibacterium phage P14",
+    "Propionibacterium acens phage P14.4",
+    "Propionibacterium phage P14.4"
+  ],
+  "1229793": [
+    "Propionibacterium phage ATCC29399B_T",
+    "Propionibacterium acnes phage ATCC29399B_T"
+  ],
   "1231709": [
     "MX polyomavirus"
   ],
@@ -10340,6 +10481,9 @@
   ],
   "1233383": [
     "Human cosavirus"
+  ],
+  "1235653": [
+    "Propionibacterium phage PHL111M01"
   ],
   "1236518": [
     "Prevotella scopos JCM 17725",
@@ -10854,6 +10998,9 @@
     "coliphage ECBP5",
     "Escherichia coli phage ECBP5"
   ],
+  "1498188": [
+    "Propionibacterium phage Pacnes 2012-15"
+  ],
   "1500386": [
     "Staphylococcus phage 6ec",
     "Staphylococcus epidermidis phage 6ec"
@@ -11232,6 +11379,10 @@
     "Achromobacter phage 22732H",
     "Achromobacter xylosoxidans phage phiAxp-1"
   ],
+  "1610872": [
+    "Staphylococcus phage IME-SA4",
+    "Staphylococcus Haemolyticus bacteriophage IME-SA4"
+  ],
   "1615674": [
     "Pseudomonas lactis",
     "DSM 29167",
@@ -11337,9 +11488,25 @@
   "1653394": [
     "Mammarenavirus"
   ],
+  "1654782": [
+    "Propionibacterium phage QueenBey",
+    "Propionibacterium acnes bacteriophage QueenBey"
+  ],
+  "1655017": [
+    "Propionibacterium phage Ouroboros",
+    "Propionibacterium acnes bacteriophage Ouroboros"
+  ],
   "1655019": [
     "Propionibacterium phage Procrass1",
     "Propionibacterium acnes bacteriophage Procrass1"
+  ],
+  "1655021": [
+    "Propionibacterium phage Solid",
+    "Propionibacterium acnes bacteriophage Solid"
+  ],
+  "1655022": [
+    "Propionibacterium phage Stormborn",
+    "Propionibacterium acnes bacteriophage Stormborn"
   ],
   "1655645": [
     "Parabacteroides phage YZ-2015b",
@@ -11506,6 +11673,9 @@
     "Rhodocyclaceae bacterium ICHIJ1",
     "Rhodocyclaceae bacterium SHINM1",
     "strain SHINM1"
+  ],
+  "1751095": [
+    "Flavobacterium sp. GENT5"
   ],
   "1755290": [
     "Indian encephalitis associated cyclovirus"
@@ -11741,6 +11911,9 @@
   "1855880": [
     "Polynucleobacter sp. MWH-Aus1W21"
   ],
+  "1855910": [
+    "Polynucleobacter sp. MWH-S4W17"
+  ],
   "1857843": [
     "Kayvirus"
   ],
@@ -11755,6 +11928,11 @@
   ],
   "1862825": [
     "Gemycircularvirus HV-GcV2"
+  ],
+  "1866885": [
+    "Mycolicibacterium",
+    "Mycobacterium fortuitum complex",
+    "Mycolicibacterium Gupta et al. 2018"
   ],
   "1867125": [
     "Cutavirus",
@@ -11976,6 +12154,9 @@
   "1922513": [
     "Beihai permutotetra-like virus 2"
   ],
+  "1923094": [
+    "Hubei picorna-like virus 15"
+  ],
   "1923144": [
     "Hubei picorna-like virus 61"
   ],
@@ -12075,6 +12256,9 @@
   ],
   "1941236": [
     "Gemykibivirus"
+  ],
+  "1958922": [
+    "Staphylococcus phage St 134"
   ],
   "1959761": [
     "Human associated circovirus 1",
@@ -12307,6 +12491,9 @@
   "1985415": [
     "Human associated gemyvongvirus 1"
   ],
+  "1985417": [
+    "Caribou associated gemykrogvirus 1"
+  ],
   "1985428": [
     "Sewage derived gemygorvirus 1"
   ],
@@ -12498,6 +12685,9 @@
   "2024264": [
     "Agrobacterium phage Atu_ph07"
   ],
+  "2024340": [
+    "Lactococcus phage 62606"
+  ],
   "2025358": [
     "unclassified Centapoxvirus"
   ],
@@ -12649,6 +12839,9 @@
   "2059856": [
     "Pseudomonas phage PMBT3"
   ],
+  "2060511": [
+    "Babaco mosaic virus"
+  ],
   "2065036": [
     "Torque teno mini virus 10"
   ],
@@ -12728,6 +12921,9 @@
   "2070188": [
     "Faecalibacterium phage FP_oengus"
   ],
+  "2074132": [
+    "Cherry virus Trakiya"
+  ],
   "2077134": [
     "Mycobacterium phage PP"
   ],
@@ -12760,6 +12956,12 @@
   ],
   "2108137": [
     "Enterobacter phage myPSH1140"
+  ],
+  "2108359": [
+    "Staphylococcus phage CSA13",
+    "Staphylococcus aureus bacteriophage CSA13",
+    "Staphylococcus aureus phage CSA13",
+    "Staphylococcus bacteriophage CSA13"
   ],
   "2109914": [
     "Ottowia oryzae",
@@ -13066,6 +13268,12 @@
   "2301731": [
     "Bacteroides phage crAss001"
   ],
+  "2305481": [
+    "Lactococcus phage vB_Llc_bIBB12"
+  ],
+  "2305489": [
+    "Lactococcus phage vB_Llc_bIBBp6/4"
+  ],
   "2306583": [
     "Halomonas sp. JS92-SW72"
   ],
@@ -13191,6 +13399,11 @@
   "2499620": [
     "Alphaarterivirus equid"
   ],
+  "2500149": [
+    "Salmonella phage TS13",
+    "Salmonella phage AP13",
+    "Salmonella phage H13"
+  ],
   "2500166": [
     "Klebsiella phage YX3973"
   ],
@@ -13267,6 +13480,19 @@
   "2557554": [
     "Serratia phage Parlo"
   ],
+  "2559073": [
+    "Cutibacterium modestum",
+    "Cutibacterium modestum Dekio et al. 2020",
+    "Cutibacterium modestum Dekio et al. 2020 emend. Dekio et al. 2021",
+    "Cutibacterium sp. M12",
+    "DSM 109769",
+    "JCM 33380",
+    "\"Propionibacterium humerusii\" Butler-Wu et al. 2011",
+    "Propionibacterium humerusii",
+    "Propionibacterium sp. oral taxon 193",
+    "strain M12",
+    "strain P08 [[Propionibacterium humerusii]]"
+  ],
   "2559587": [
     "Riboviria",
     "RNA viruses and viroids",
@@ -13301,6 +13527,9 @@
   ],
   "2560111": [
     "Ceetrepovirus"
+  ],
+  "2560132": [
+    "Fipvunavirus"
   ],
   "2560144": [
     "Gustavvirus"
@@ -13668,6 +13897,12 @@
   ],
   "2666132": [
     "Desulfovibrio sp. 86"
+  ],
+  "2675240": [
+    "Lactococcus phage CHPC1170"
+  ],
+  "2675263": [
+    "Lactococcus phage PC_B1"
   ],
   "2679905": [
     "Escherichia phage phiEco32",
@@ -14155,6 +14390,9 @@
   "2759692": [
     "Streptococcus sp. Marseille-Q3533"
   ],
+  "2759715": [
+    "Ralstonia phage Raharianne"
+  ],
   "2760308": [
     "Propioniciclava sp. MC1595",
     "Brevilactibacter sp. MC1595"
@@ -14605,6 +14843,10 @@
   "2876790": [
     "unclassified Adeno-associated dependoparvovirus A"
   ],
+  "2883944": [
+    "Burkholderia phage Bcep22",
+    "Burkholderia cepacia phage Bcep22"
+  ],
   "2884263": [
     "Aquihabitans sp. Kera 3"
   ],
@@ -14747,6 +14989,9 @@
     "Streptococcus phage DT1",
     "Streptococcus thermophilus bacteriophage DT1"
   ],
+  "2933872": [
+    "Bacillus sp. JY-23"
+  ],
   "2942966": [
     "Suoliviridae"
   ],
@@ -14828,6 +15073,9 @@
   ],
   "2948680": [
     "Diorhovirus"
+  ],
+  "2948776": [
+    "Kablunavirus"
   ],
   "2948787": [
     "Kolpuevirus"
@@ -14966,6 +15214,9 @@
   ],
   "2986420": [
     "uncultured phage cr19_1"
+  ],
+  "2986828": [
+    "Flavobacterium sp. N2013"
   ],
   "2991867": [
     "Ralstonia phage RsoM1USA",
