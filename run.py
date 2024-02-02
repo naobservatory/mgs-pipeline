@@ -1031,6 +1031,60 @@ def humanviruses(args):
                 ]
             )
 
+def generate_hb_taxids():
+    if not os.path.exists("hb-taxids.txt"):
+        subprocess.check_call(
+            [os.path.join(THISDIR, "generate_hb_taxids.py")])
+             
+
+def hbreads(args):
+    generate_hb_taxids()    
+    
+    available_inputs = get_files(args, "processed")
+    available_cleaned_inputs = get_files(args, "cleaned")
+    existing_outputs = get_files(args, "hbreads")
+
+    for sample in get_samples(args):
+        for input_fname in available_inputs:
+            if not input_fname.startswith(sample):
+                continue
+
+            input_short = input_fname.replace(".kraken2.tsv.gz", "")
+
+            output_fname = input_short + ".hbreads.json.gz"
+            if output_fname in existing_outputs:
+                continue
+
+            input_cleaned_fname = input_short + ".gz"
+            if (".truncated" in input_short and
+                ".collapsed" not in input_short and
+                ".singleton" not in input_short):
+                cleaned_inputs = [
+                    input_cleaned_fname.replace(".truncated.",
+                                                ".pair1.truncated."),
+                    input_cleaned_fname.replace(".truncated.",
+                                                ".pair2.truncated."),
+                ]
+            else:
+                cleaned_inputs = [input_cleaned_fname]
+
+            s3_cleaned_inputs = []
+            for fname in cleaned_inputs:
+                print(fname)
+                assert fname in available_cleaned_inputs
+                s3_cleaned_inputs.append(
+                    "%s/%s/cleaned/%s" % (S3_BUCKET, args.bioproject, fname))
+            
+            with tempdir("hbreads", input_fname) as workdir:
+                subprocess.check_call([
+                    os.path.join(THISDIR, "determine_hbreads.sh"),
+                    "%s/%s/processed/%s" % (
+                        S3_BUCKET, args.bioproject, input_fname),
+                    THISDIR,
+                    "%s/%s/hbreads/%s" % (
+                        S3_BUCKET, args.bioproject, output_fname),
+                    *s3_cleaned_inputs
+                ])
 
 def allmatches(args):
     human_viruses = {}
@@ -1199,6 +1253,12 @@ def alignments(args):
         # tiny files are empty; ignore them
         min_size=100,
     )
+    available_hb_inputs = get_files(
+        args,
+        "hbreads",
+        # tiny files are empty; ignore them
+        min_size=100,
+    )
 
     existing_outputs = get_files(args, "alignments", min_date="2023-11-28")
 
@@ -1206,6 +1266,11 @@ def alignments(args):
         os.path.join(THISDIR, "bowtie", "genomeid-to-taxid.json")
     ) as inf:
         genomeid_to_taxid = json.load(inf)
+
+    with open(
+        os.path.join(THISDIR, "bowtie", "genomeid-to-taxid-bacterial.json")
+    ) as inf:
+        genomeid_to_taxid_bacterial = json.load(inf)
 
     for sample in get_samples(args):
         for db in ["human", "hv"]:
@@ -1258,66 +1323,119 @@ def alignments(args):
                             *full_inputs,
                         ]
                     )
+                summarize_and_upload_alignments(
+                    tmp_outputs, combined_output_compressed, args.bioproject,
+                    genomeid_to_taxid, db)
 
-                with gzip.open(combined_output_compressed, "wt") as outf:
-                    for tmp_output in tmp_outputs:
-                        with open(tmp_output) as inf:
-                            for line in inf:
-                                if line.startswith("@"):
-                                    continue
-                                bits = line.rstrip("\n").split("\t")
+        for db in ["bacterial"]:
+            combined_output_compressed = "%s.%s.alignments.tsv.gz" % (
+                sample,
+                db,
+            )
+            if combined_output_compressed in existing_outputs:
+                continue
 
-                                query_name = bits[0]
-                                genomeid = bits[2]
-                                ref_start = bits[3]
-                                # The start position is 1-indexed, but we use
-                                # 0-indexing.
-                                ref_start = int(ref_start) - 1
-                                cigarstring = bits[5]
-                                query_len = len(bits[9])
+            with tempdir("%s alignments" % db, sample) as workdir:
+                tmp_outputs = []
+                for available_hb_input in available_hb_inputs:
+                    if not available_hb_input.startswith(sample):
+                        continue
 
-                                as_val = None
-                                for token in bits[11:]:
-                                    if token.startswith("AS:i:"):
-                                        as_val = token.replace("AS:i:", "")
-                                assert as_val
-                                as_val = int(as_val)
+                    subprocess.check_call([
+                        "aws", "s3", "cp", os.path.join(
+                            "%s/%s/hbreads/%s" % (
+                                S3_BUCKET, bioproject, available_hb_input),
+                            available_hb_input)])
 
-                                if db == "human":
-                                    taxid = 9606
-                                    genome_name = genomeid
-                                else:
-                                    taxid, genome_name = genomeid_to_taxid[
-                                        genomeid
-                                    ]
-                                outf.write(
-                                    "%s\t%s\t%s\t%s\t%s\t%s\t%s\n"
-                                    % (
-                                        query_name,
-                                        genomeid,
-                                        taxid,
-                                        cigarstring,
-                                        ref_start,
-                                        as_val,
-                                        query_len,
-                                    )
-                                )
+                    pair1 = available_hb_input + "pair1"
+                    pair2 = available_hb_input + "pair2"
+                    combined = available_hb_input + "combined"
+                    with open(pair1, "w") as out_pair1, \
+                         open(pair2, "w") as out_pair2, \
+                         open(combined, "w") as out_combined, \
+                         open(available_hb_input) as inf:
+                        for title, record in json.load(inf).items():
+                            if len(record) == 3:
+                                combined.write("@%s\n%s\n+\n%s\n" % (
+                                    title, *record[2]))
+                            elif len(record) == 4:
+                                pair1.write("@%s\n%s\n+\n%s\n" % (
+                                    title, *record[2]))
+                                pair2.write("@%s\n%s\n+\n%s\n" % (
+                                    title, *record[3]))
+                            else:
+                                raise Exception(
+                                    "Currupt hbreads file: %r, %r" % (
+                                        available_hb_input,
+                                        title))
+                    tmp_outputs.extend([
+                        pair1, pair2, combined])
+                    
+                summarize_and_upload_alignments(
+                    tmp_outputs,
+                    combined_output_compressed,
+                    args.bioproject,
+                    genomeid_to_taxid_bacterial, db)
 
-                subprocess.check_call(
-                    [
-                        "aws",
-                        "s3",
-                        "cp",
-                        combined_output_compressed,
-                        "%s/%s/alignments/%s"
-                        % (
-                            S3_BUCKET,
-                            args.bioproject,
-                            combined_output_compressed,
-                        ),
-                    ]
-                )
+def summarize_and_upload_alignments(
+        tmp_outputs, combined_output_compressed, bioproject,
+        genomeid_to_taxid, db):
+    with gzip.open(combined_output_compressed, "wt") as outf:
+        for tmp_output in tmp_outputs:
+            with open(tmp_output) as inf:
+                for line in inf:
+                    if line.startswith("@"):
+                        continue
+                    bits = line.rstrip("\n").split("\t")
 
+                    query_name = bits[0]
+                    genomeid = bits[2]
+                    ref_start = bits[3]
+                    # The start position is 1-indexed, but we use
+                    # 0-indexing.
+                    ref_start = int(ref_start) - 1
+                    cigarstring = bits[5]
+                    query_len = len(bits[9])
+                    
+                    as_val = None
+                    for token in bits[11:]:
+                        if token.startswith("AS:i:"):
+                            as_val = token.replace("AS:i:", "")
+                    assert as_val
+                    as_val = int(as_val)
+
+                    if db == "human":
+                        taxid = 9606
+                        genome_name = genomeid
+                    else:
+                        taxid, genome_name = genomeid_to_taxid[
+                            genomeid
+                        ]
+                        outf.write(
+                            "%s\t%s\t%s\t%s\t%s\t%s\t%s\n"
+                            % (
+                                query_name,
+                                genomeid,
+                                taxid,
+                                cigarstring,
+                                ref_start,
+                                as_val,
+                                query_len,
+                            )
+                        )
+
+    subprocess.check_call(
+        [
+            "aws",
+            "s3",
+            "cp",
+            combined_output_compressed,
+            "%s/%s/alignments/%s"
+            % (S3_BUCKET, bioproject, combined_output_compressed),
+        ]
+    )
+    
+                
 def phred_to_q(phred_score):
     return ord(phred_score) - ord("!")
 
@@ -1356,6 +1474,7 @@ def print_status(args):
         "hvreads",
         "samplereads",
         "readlengths",
+        "hbreads",
         "alignments",
     ]
     short_stages = [
@@ -1370,6 +1489,7 @@ def print_status(args):
         "hvr",
         "sr",
         "rl",
+        "hb"
         "al",
     ]
 
@@ -1460,6 +1580,7 @@ for stage_name, stage_fn in [
     ("hvreads", hvreads),
     ("samplereads", samplereads),
     ("readlengths", readlengths),
+    ("hbreads", hbreads),
     ("alignments", alignments),
 ]:
     STAGES_ORDERED.append(stage_name)
