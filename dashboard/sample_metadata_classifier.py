@@ -320,5 +320,16 @@ def interpret(project, papers, bits):
             date="2015-06",
             sample_type=sample_type,
             na_type=na_type)
+    elif project in papers["Leung 2021"]["projects"]:
+        sample, country, continent, location, fine_location, sampling_device, date = bits
+        return sample, dict(
+            country=country,
+            continent=continent,
+            location=location,
+            fine_location=fine_location,
+            sampling_device=sampling_device,
+            date=date,
+            na_type="DNA")
+
     else:
         raise Exception("Metadata format for %s unknown" % project)
