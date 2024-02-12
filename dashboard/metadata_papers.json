@@ -88,6 +88,13 @@
     ],
     "subset": "Illumina sequencing only; excluding Oxford nanopore samples"
   },
+  "Leung 2021": {
+    "link": "https://microbiomejournal.biomedcentral.com/articles/10.1186/s40168-021-01044-7",
+    "na_type": "DNA",
+    "projects": [
+      "PRJNA561080"
+    ]
+  },
   "Maritz 2019": {
     "link": "https://www.nature.com/articles/s41396-019-0467-z",
     "na_type": "DNA",
