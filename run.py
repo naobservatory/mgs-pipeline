@@ -48,6 +48,12 @@ def check_output_shell(cmd):
 def work_fname(*fnames):
     return os.path.join(THISDIR, WORK_ROOT, *fnames)
 
+def get_sample_priority(sample):
+    m = re.findall(r"L00\d$", sample)
+    if not m:
+        return "A"
+    m, = m
+    return m
 
 def get_samples(args):
     if args.sample:
@@ -56,8 +62,14 @@ def get_samples(args):
     with open(
         work_fname("bioprojects", args.bioproject, "metadata", "metadata.tsv")
     ) as inf:
-        return [line.strip().split("\t")[0] for line in inf]
+        samples = [line.strip().split("\t")[0] for line in inf]
 
+    decorated_samples = [
+        (get_sample_priority(sample), sample)
+        for sample in samples]
+    decorated_samples.sort()
+
+    return [sample for _, sample in decorated_samples]
 
 @contextlib.contextmanager
 def tempdir(stage, msg):

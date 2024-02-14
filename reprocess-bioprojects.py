@@ -24,6 +24,7 @@
 #        --log-prefix rl -- --stages readlengths
 
 import os
+import re
 import sys
 import datetime
 import argparse
@@ -61,6 +62,12 @@ def run_job(job):
         if result.returncode != 0:
             outf.write("ERROR: %s\n" % (result.returncode))
 
+def get_sample_priority(sample):
+    m = re.findall(r"L00\d$", sample)
+    if not m:
+        return "A"
+    m, = m
+    return m
 
 def parallelize(config, bioprojects, run_args):
     job_queue = []
@@ -76,12 +83,17 @@ def parallelize(config, bioprojects, run_args):
             raise Exception("Unknown bioproject %r" % bioproject)
 
         if config.sample_level:
+            prioritized_samples = []
             with open(os.path.join(root_dir, "bioprojects", bioproject,
                                    "metadata", "metadata.tsv")) as inf:
                 for line in inf:
                     sample = line.strip().split()[0]
-                    job_queue.append(prepare_job(
-                        bioproject, config.log_prefix, sample, args))
+                    prioritized_samples.append(
+                        (get_sample_priority(sample), sample))
+            prioritized_samples.sort()
+            for priority, sample in prioritized_samples:
+                job_queue.append(prepare_job(
+                    bioproject, config.log_prefix, sample, args))
         else:
             job_queue.append(prepare_job(
                 bioproject, config.log_prefix, None, args))
