@@ -132,12 +132,16 @@ def start():
         "--sample-level",
         action="store_true",
         help="Parallelize at the sample level instead of the bioproject level")
+
     config = parser.parse_args(our_args)
 
     if config.bioprojects:
         bioprojects = config.bioprojects.split(",")
     else:
         bioprojects = regular_bioprojects + restricted_bioprojects
+
+    if "--memory-mapping" in run_args:
+        subprocess.check_call(["./prepare-shm-kraken.sh"])
 
     parallelize(config, bioprojects, run_args)
 

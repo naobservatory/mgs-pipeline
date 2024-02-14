@@ -706,14 +706,24 @@ def interpret(args):
 
                 kraken_cmd = [
                     "/home/ec2-user/kraken2-install/kraken2",
-                    "--db",
-                    "/home/ec2-user/kraken-db/",
                     "--use-names",
-                    "--threads",
-                    "8",
                     "--output",
                     output,
                 ]
+                if args.memory_mapping:
+                    db = "/dev/shm/kraken-db/"
+                    kraken_cmd.append("--memory-mapping")
+                    threads = "4"
+                else:
+                    db = "/home/ec2-user/kraken-db/"
+                    threads = "8"
+
+                assert os.path.exists(db)
+                kraken_cmd.append("--db")
+                kraken_cmd.append(db)
+                kraken_cmd.append("--threads")
+                kraken_cmd.append(threads)
+
                 if len(inputs) > 1:
                     kraken_cmd.append("--paired")
                 kraken_cmd.extend(inputs)
@@ -1519,6 +1529,15 @@ def start():
         "--skip-stages",
         default="",
         help="Comma-separated list of stages not to run.",
+    )
+
+    parser.add_argument(
+        "--memory-mapping",
+        action="store_true",
+        help="""
+        Avoids loading database into RAM.  Currently only supported for
+        Kraken2 ('interpret').
+        """
     )
 
     args = parser.parse_args()
