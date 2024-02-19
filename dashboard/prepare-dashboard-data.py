@@ -5,7 +5,9 @@ import sys
 import glob
 import gzip
 import json
+import math
 import importlib
+import numpy as np
 from collections import Counter
 from collections import defaultdict
 
@@ -52,7 +54,9 @@ for taxid in all_human_viruses:
         root_human_viruses.add(taxid)
 
 # project -> sample -> n_reads
-project_sample_reads = defaultdict(dict)
+project_sample_reads = defaultdict(Counter)
+div_samples = defaultdict(set) # sample -> div_samples
+div_sample_reads = {} # div_sample -> n_reads
 for metadata_fname in glob.glob(
     "%s/bioprojects/*/metadata/metadata.tsv" % ROOT_DIR
 ):
@@ -63,11 +67,14 @@ for metadata_fname in glob.glob(
         continue
     with open(metadata_fname) as inf:
         for line in inf:
-            sample = line.strip().split("\t")[0]
+            div_sample = line.strip().split("\t")[0]
+            sample = sample_metadata_classifier.recombine(div_sample, project)
+            div_samples[sample].add(div_sample)
+
             reads_fname = "%s/bioprojects/%s/metadata/%s.n_reads" % (
                 ROOT_DIR,
                 project,
-                sample,
+                div_sample,
             )
             if not os.path.exists(reads_fname):
                 continue
@@ -75,11 +82,10 @@ for metadata_fname in glob.glob(
                 reads_str = readsf.read().strip()
                 if not reads_str:
                     continue
-                try:
-                    project_sample_reads[project][sample] = int(reads_str)
-                except Exception:
-                    print(reads_fname)
-                    raise
+                n_reads = int(reads_str)
+
+                project_sample_reads[project][sample] += n_reads
+                div_sample_reads[div_sample] = n_reads
 
 projects = list(sorted(project_sample_reads))
 
@@ -92,20 +98,21 @@ with open(os.path.join(DASHBOARD_DIR, "excluded-read-ids.txt")) as inf:
 observed_taxids = set()
 for project in projects:
     for sample in project_sample_reads[project]:
-        fname = "allmatches/%s.allmatches.tsv" % sample
-        if not os.path.exists(fname):
-            continue
+        for div_sample in div_samples[sample]:
+            fname = "allmatches/%s.allmatches.tsv" % div_sample
+            if not os.path.exists(fname):
+                continue
 
-        with open(fname) as inf:
-            for line in inf:
-                line = line.strip()
-                if not line:
-                    continue
+            with open(fname) as inf:
+                for line in inf:
+                    line = line.strip()
+                    if not line:
+                        continue
 
-                _, _, name_and_taxid, _, kraken_info = line.split("\t")
-                taxid = int(name_and_taxid.split()[-1].replace(")", ""))
-                if taxid in all_human_viruses:
-                    observed_taxids.add(taxid)
+                    _, _, name_and_taxid, _, kraken_info = line.split("\t")
+                    taxid = int(name_and_taxid.split()[-1].replace(")", ""))
+                    if taxid in all_human_viruses:
+                        observed_taxids.add(taxid)
 
 # taxid -> node
 human_virus_nodes = {}
@@ -183,12 +190,13 @@ def rc(s):
 DUP_LEN = 25
 
 
-def count_dups(hvr_fname):
-    if os.path.exists(hvr_fname):
-        with open(hvr_fname) as inf:
-            hvr = json.load(inf)
-    else:
-        hvr = {}
+def count_dups(hvr_fnames):
+    hvr = {}
+    for hvr_fname in hvr_fnames:
+        if os.path.exists(hvr_fname):
+            with open(hvr_fname) as inf:
+                for read_id, read_info in json.load(inf).items():
+                    hvr[read_id] = read_info
 
     by_start_end = defaultdict(list)  # start, end -> read id
     for read_id, read_info in sorted(hvr.items()):
@@ -239,43 +247,47 @@ def count_dups(hvr_fname):
 project_sample_virus_counts = Counter()
 for project in projects:
     for sample in project_sample_reads[project]:
-        fname = "allmatches/%s.allmatches.tsv" % sample
-        if not os.path.exists(fname):
-            continue
-        hvr_fname = "hvreads/%s.hvreads.json" % sample
-        kraken_info_counts = count_dups(hvr_fname)
+        kraken_info_counts = count_dups(
+            ["hvreads/%s.hvreads.json" % div_sample
+             for div_sample in div_samples[sample]])
 
-        bioprojects[project].add(sample)
-        with open(fname) as inf:
-            for line in inf:
-                line = line.strip()
-                if not line:
-                    continue
+        for div_sample in div_samples[sample]:
+            fname = "allmatches/%s.allmatches.tsv" % div_sample
+            if not os.path.exists(fname):
+                continue
 
-                _, read_id, name_and_taxid, _, kraken_info = line.split("\t")
-                taxid = int(name_and_taxid.split()[-1].replace(")", ""))
+            bioprojects[project].add(sample)
+            with open(fname) as inf:
+                for line in inf:
+                    line = line.strip()
+                    if not line:
+                        continue
 
-                if not kraken_info_counts[kraken_info]:
-                    continue
-                kraken_info_counts[kraken_info] -= 1
+                    _, read_id, name_and_taxid, _, kraken_info = line.split("\t")
+                    taxid = int(name_and_taxid.split()[-1].replace(")", ""))
 
-                if read_id in exclusions:
-                    print("Excluding %s" % line)
-                    continue
+                    if not kraken_info_counts[kraken_info]:
+                        continue
+                    kraken_info_counts[kraken_info] -= 1
 
-                project_sample_virus_counts[project, sample, taxid] += 1
+                    if read_id in exclusions:
+                        print("Excluding %s" % line)
+                        continue
+
+                    project_sample_virus_counts[project, sample, taxid] += 1
 
 # comparison taxid -> sample -> clade count
 comparison_sample_counts = defaultdict(Counter)
 for project in projects:
     for sample in project_sample_reads[project]:
-        fname = "top_species_counts/%s.json" % sample
-        if not os.path.exists(fname):
-            continue
-        with open(fname) as inf:
-            comparisons = json.load(inf)
-            for taxid, count in comparisons.items():
-                comparison_sample_counts[int(taxid)][sample] = count
+        for div_sample in div_samples[sample]:
+            fname = "top_species_counts/%s.json" % div_sample
+            if not os.path.exists(fname):
+                continue
+            with open(fname) as inf:
+                comparisons = json.load(inf)
+                for taxid, count in comparisons.items():
+                    comparison_sample_counts[int(taxid)][sample] += count
 
 BACTERIA = 2
 VIRUS = 10239
@@ -323,25 +335,38 @@ for project in projects:
             line = line[:-1]  # drop trailing newline
 
             (
-                sample,
+                div_sample,
                 sample_metadata_dict,
             ) = sample_metadata_classifier.interpret(
                 project, papers, line.split("\t")
             )
-            sample_metadata[sample] = sample_metadata_dict
+            sample = sample_metadata_classifier.recombine(div_sample, project)
+            if sample not in sample_metadata:
+                sample_metadata[sample] = sample_metadata_dict
+            else:
+                assert sample_metadata_dict == sample_metadata[sample]
+
 
     for sample in project_sample_reads[project]:
         sample_metadata[sample]["reads"] = project_sample_reads[project][
             sample
         ]
+        ribofracs = []
+        weights = []
+        for div_sample in div_samples[sample]:
+            rf_fname = "ribofrac/%s.ribofrac.txt" % div_sample
+            try:
+                with open(rf_fname, "r") as file:
+                    ribofrac = file.readline()
+            except FileNotFoundError:
+                continue
+            ribofracs.append(float(ribofrac))
+            weights.append(div_sample_reads[div_sample])
 
-        rf_fname = "ribofrac/%s.ribofrac.txt" % sample
-        try:
-            with open(rf_fname, "r") as file:
-                ribofrac = file.readline()
-            sample_metadata[sample]["ribofrac"] = ribofrac
-        except FileNotFoundError:
-            pass
+        if sum(weights):
+            ribofrac = np.average(ribofracs, weights=weights)
+            if not math.isnan(ribofrac):
+                sample_metadata[sample]["ribofrac"] = ribofrac
 
 for taxid in observed_taxids:
     for project in projects:

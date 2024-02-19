@@ -1,3 +1,5 @@
+import re
+
 def interpret(project, papers, bits):
     if project in papers["Rothman 2021"]["projects"]:
         sample, date, wtp, is_enriched = bits
@@ -333,3 +335,9 @@ def interpret(project, papers, bits):
 
     else:
         raise Exception("Metadata format for %s unknown" % project)
+
+def recombine(sample, project):
+    m = re.match(".*_div\d\d\d\d", sample)
+    if m:
+        sample = re.sub("(.*)(_div\d\d\d\d)", r"\1", sample)
+    return sample
