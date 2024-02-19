@@ -1278,6 +1278,7 @@ def alignments(args):
                     subprocess.check_call(
                         [
                             os.path.join(THISDIR, "compute-alignments.sh"),
+                            "mmap" if args.memory_mapping else "disk",
                             db,
                             tmp_output,
                             *full_inputs,
@@ -1536,7 +1537,7 @@ def start():
         action="store_true",
         help="""
         Avoids loading database into RAM.  Currently only supported for
-        Kraken2 ('interpret').
+        Kraken2 ('interpret') and bowtie2 ('alignments').
         """
     )
 

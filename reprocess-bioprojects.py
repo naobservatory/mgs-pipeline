@@ -142,6 +142,7 @@ def start():
 
     if "--memory-mapping" in run_args:
         subprocess.check_call(["./prepare-shm-kraken.sh"])
+        subprocess.check_call(["./prepare-shm-bowtie.sh"])
 
     parallelize(config, bioprojects, run_args)
 
