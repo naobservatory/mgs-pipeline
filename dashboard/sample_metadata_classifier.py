@@ -332,7 +332,18 @@ def interpret(project, papers, bits):
             sampling_device=sampling_device,
             date=date,
             na_type="DNA")
-
+    elif project in papers["Tierney 2023"]["projects"]:
+        sample, library_name = bits
+        potential_date = re.findall("-(2\d)(\d\d)(\d\d)[-_]", library_name)
+        date = "2021"
+        if potential_date:
+            (yy, mm, dd), = potential_date
+            date = "20%s-%s-%s" % (yy, mm, dd)
+        return sample, dict(
+            country="United States",
+            city="Miami",
+            state="Florida",
+            date=date)
     else:
         raise Exception("Metadata format for %s unknown" % project)
 

@@ -172,6 +172,12 @@
     ],
     "subset": "short read"
   },
+  "Tierney 2023": {
+    "link": "https://www.medrxiv.org/content/10.1101/2023.05.31.23290781v1.full",
+    "projects": [
+      "PRJNA946141"
+    ]
+  },
   "Tisza 2023": {
     "link": "https://www.nature.com/articles/s41467-023-42064-1",
     "na_type": "DNA+RNA",
