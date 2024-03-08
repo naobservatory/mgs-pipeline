@@ -325,6 +325,23 @@ virus_sample_counts = defaultdict(Counter)
 # sample -> {metadata}
 sample_metadata = defaultdict(dict)
 
+def summarize_readlength_category(rl_category):
+    weighted_sum = 0
+    weighted_total = 0
+    nc = 0
+    for value, count in rl_category.items():
+        if value == "NC":
+            nc = count
+        else:
+            weighted_sum += int(value)
+            weighted_total += count
+    return [nc,
+            -1 if not weighted_total else weighted_sum / weighted_total]
+
+def summarize_readlengths(rl):
+    return {category: summarize_readlength_category(rl[category])
+            for category in rl}
+
 for project in projects:
     with open(
         "%s/bioprojects/%s/metadata/metadata.tsv" % (ROOT_DIR, project)
@@ -351,6 +368,16 @@ for project in projects:
         sample_metadata[sample]["reads"] = project_sample_reads[project][
             sample
         ]
+        for div_sample in div_samples[sample]:
+            rl_fname = "readlengths/%s.rl.json.gz" % div_sample
+            try:
+                with gzip.open(rl_fname, "rt") as inf:
+                    rl = json.load(inf)
+            except FileNotFoundError:
+                continue
+
+            sample_metadata[sample]["readlengths"] = summarize_readlengths(rl)
+
         ribofracs = []
         weights = []
         for div_sample in div_samples[sample]:
@@ -367,6 +394,8 @@ for project in projects:
             ribofrac = np.average(ribofracs, weights=weights)
             if not math.isnan(ribofrac):
                 sample_metadata[sample]["ribofrac"] = ribofrac
+
+
 
 for taxid in observed_taxids:
     for project in projects:
