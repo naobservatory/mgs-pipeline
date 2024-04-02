@@ -14,4 +14,10 @@ if [ -e $n_reads ]; then
 fi
 
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
-aws s3 cp "$raw" - | gunzip | $SCRIPT_DIR/collect-n-reads-single.py > "$n_reads"
+N_READS=$(aws s3 cp "$raw" - | gunzip | $SCRIPT_DIR/collect-n-reads-single.py)
+if [ -z "${N_READS}" ]; then
+   echo "Failed to count n_reads for $raw in $bioproject"
+   exit 1
+fi
+
+echo "$N_READS" > "$n_reads"
