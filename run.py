@@ -1225,7 +1225,7 @@ def alignments(args):
         min_size=100,
     )
 
-    existing_outputs = get_files(args, "alignments", min_date="2023-11-28")
+    existing_outputs = get_files(args, "alignments", min_date="2023-11-28", min_size=100)
 
     with open(
         os.path.join(THISDIR, "bowtie", "genomeid-to-taxid.json")
