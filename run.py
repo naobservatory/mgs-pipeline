@@ -1217,15 +1217,15 @@ def hvreads(args):
             )
 
 
-def alignments(args):
+def alignments2(args):
     available_inputs = get_files(
         args,
-        "cleaned",
+        "hvreads",
         # tiny files are empty; ignore them
         min_size=100,
     )
 
-    existing_outputs = get_files(args, "alignments", min_date="2023-11-28", min_size=100)
+    existing_outputs = get_files(args, "alignments2", min_size=100)
 
     with open(
         os.path.join(THISDIR, "bowtie", "genomeid-to-taxid.json")
@@ -1234,56 +1234,105 @@ def alignments(args):
 
     for sample in get_samples(args):
         for db in ["human", "hv"]:
-            combined_output_compressed = "%s.%s.alignments.tsv.gz" % (
+            combined_output_compressed = "%s.%s.alignments2.tsv.gz" % (
                 sample,
                 db,
             )
             if combined_output_compressed in existing_outputs:
                 continue
 
-            with tempdir("%s alignments" % db, sample) as workdir:
+            with tempdir("%s alignments2" % db, sample) as workdir:
                 tmp_outputs = []
                 for potential_input in available_inputs:
                     if not potential_input.startswith(sample):
                         continue
-                    if ".settings" in potential_input:
-                        continue
-                    if "discarded" in potential_input:
-                        continue
 
                     tmp_output = potential_input.replace(
-                        ".gz", ".alignments.tsv"
+                        ".hvreads.json", ".alignments2.tsv"
                     )
-                    inputs = [potential_input]
-                    if ".pair1." in tmp_output:
-                        tmp_output = tmp_output.replace(".pair1.", ".")
-                        inputs.append(
-                            potential_input.replace(".pair1.", ".pair2.")
-                        )
-                    elif ".pair2" in tmp_output:
-                        # We handle pair1 and pair2 together.
-                        continue
 
-                    tmp_outputs.append(tmp_output)
-
-                    # TODO(jefftk): do we have a problem when read1 or read2 is
-                    # too short?  I remember Bowtie choking on these before.
-
-                    full_inputs = [
-                        "%s/%s/cleaned/%s"
-                        % (S3_BUCKET, args.bioproject, input_fname)
-                        for input_fname in inputs
-                    ]
+                    any_paired = False
+                    any_collapsed = False
 
                     subprocess.check_call(
                         [
-                            os.path.join(THISDIR, "compute-alignments.sh"),
-                            "mmap" if args.memory_mapping else "disk",
-                            db,
-                            tmp_output,
-                            *full_inputs,
+                            "aws",
+                            "s3",
+                            "cp",
+                            "%s/%s/hvreads/%s"
+                            % (S3_BUCKET, args.bioproject, potential_input),
+                            potential_input,
                         ]
                     )
+
+                    with open(potential_input) as inf, \
+                         open("pair1.fastq", "w") as outf1, \
+                         open("pair2.fastq", "w") as outf2, \
+                         open("collapsed.fastq", "w") as outfC:
+
+                        for title, record in json.load(inf).items():
+                            taxid, kraken_info, *reads = record
+                            if len(reads) == 1:
+                                (s, q), = reads
+                                outfC.write("@%s\n%s\n+\n%s\n" % (title, s, q))
+                                any_collapsed = True
+                            elif len(reads) == 2:
+                                (s1, q1), (s2, q2) = reads
+                                outf1.write("@%s/1\n%s\n+\n%s\n" % (
+                                    title, s1, q1))
+                                outf2.write("@%s/2\n%s\n+\n%s\n" % (
+                                    title, s2, q2))
+                                any_paired = True
+                            else:
+                                print(title)
+                                import pprint
+                                pprint(record)
+                                raise Exception("invalid number of reads")
+
+                    if not any_paired and not any_collapsed:
+                        continue
+
+                    cmd = [
+                        "/home/ec2-user/bowtie2-2.5.2-linux-x86_64/bowtie2"
+                    ]
+                    if args.memory_mapping:
+                        db_dir="/dev/shm/bowtie-db"
+                        cmd.extend(["--threads", "4", "--mm"])
+                    else:
+                        db_dir="/home/ec2-user/mgs-pipeline/bowtie"
+                        cmd.extend(["--threads", "8"])
+
+                    cmd.extend(["--no-unal",
+                                "--no-sq",
+                                "-S", tmp_output])
+
+                    if db == "human":
+                        # When identifying human reads use default tuning
+                        # settings.
+                        cmd.extend(
+                            ["-x", "%s/chm13.draft_v1.0_plusY" % db_dir])
+                    else:
+                        # Custom-built HV DB
+                        cmd.extend(
+                            ["-x", "%s/human-viruses" % db_dir])
+                        # When identifying HV reads use looser settings and
+                        # filter more later.
+                        cmd.extend(
+                            ["--local", "--very-sensitive-local",
+                             "--score-min", "G,1,0",
+                             "--mp", "4,1"])
+
+                    if any_paired:
+                        cmd.extend([
+                            "-1", "pair1.fastq",
+                            "-2", "pair2.fastq",
+                        ])
+                    if any_collapsed:
+                        cmd.extend(["-U", "collapsed.fastq"])
+
+                    subprocess.check_call(cmd)
+
+                    tmp_outputs.append(tmp_output)
 
                 with gzip.open(combined_output_compressed, "wt") as outf:
                     for tmp_output in tmp_outputs:
@@ -1335,7 +1384,7 @@ def alignments(args):
                         "s3",
                         "cp",
                         combined_output_compressed,
-                        "%s/%s/alignments/%s"
+                        "%s/%s/alignments2/%s"
                         % (
                             S3_BUCKET,
                             args.bioproject,
@@ -1382,7 +1431,7 @@ def print_status(args):
         "hvreads",
         "samplereads",
         "readlengths",
-        "alignments",
+        "alignments2",
     ]
     short_stages = [
         "raw",
@@ -1486,7 +1535,7 @@ for stage_name, stage_fn in [
     ("hvreads", hvreads),
     ("samplereads", samplereads),
     ("readlengths", readlengths),
-    ("alignments", alignments),
+    ("alignments2", alignments2),
 ]:
     STAGES_ORDERED.append(stage_name)
     STAGE_FNS[stage_name] = stage_fn
@@ -1537,7 +1586,7 @@ def start():
         action="store_true",
         help="""
         Avoids loading database into RAM.  Currently only supported for
-        Kraken2 ('interpret') and bowtie2 ('alignments').
+        Kraken2 ('interpret') and bowtie2 ('alignments2').
         """
     )
 
