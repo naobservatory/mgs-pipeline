@@ -14,6 +14,15 @@ else
     exit 1
 fi
 
+METADATA_ONLY=false
+if [ $# -gt 0 ]; then
+    if [[ "$1" = "--metadata-only" ]]; then
+        METADATA_ONLY=true
+    else
+        echo "Argument $1 not understood"
+    fi
+fi
+
 $MGS_PIPELINE_DIR/collect-n-reads.sh
 
 cd $ROOT_DIR/dashboard
@@ -28,6 +37,31 @@ mkdir -p readlengths/
 if [ ! -e names.dmp ] ; then
     wget https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/taxdump_archive/taxdmp_2022-12-01.zip
     unzip taxdmp_2022-12-01.zip
+fi
+
+for study in $(aws s3 ls $S3_DIR | awk '{print $NF}'); do
+    for rl in $(aws s3 ls $S3_DIR${study}readlengths/ | \
+                    awk '{print $NF}'); do
+        if [ ! -s readlengths/$rl ]; then
+            echo $S3_DIR${study}readlengths/$rl
+        fi
+    done
+done | xargs -I {} -P 32 aws s3 cp {} readlengths/
+
+for study in $(aws s3 ls $S3_DIR | awk '{print $NF}'); do
+    for rf in $(aws s3 ls $S3_DIR${study}ribofrac/ | \
+   	    awk '{print $NF}'); do
+    	if [ ! -s ribofrac/$rf ]; then
+	    echo $S3_DIR${study}ribofrac/$rf
+	fi
+     done
+done | xargs -I {} -P 32 aws s3 cp {} ribofrac/
+
+$MGS_PIPELINE_DIR/dashboard/prepare-dashboard-metadata.py $ROOT_DIR $MGS_PIPELINE_DIR
+
+if $METADATA_ONLY; then
+    echo "Metadata complete; exiting early as requested."
+    exit 0
 fi
 
 cd $ROOT_DIR
@@ -53,15 +87,6 @@ for study in $(aws s3 ls $S3_DIR | awk '{print $NF}'); do
 done | xargs -I {} -P 32 aws s3 cp {} hvreads/
 
 for study in $(aws s3 ls $S3_DIR | awk '{print $NF}'); do
-    for rf in $(aws s3 ls $S3_DIR${study}ribofrac/ | \
-   	    awk '{print $NF}'); do
-    	if [ ! -s ribofrac/$rf ]; then
-	    echo $S3_DIR${study}ribofrac/$rf
-	fi
-     done
-done | xargs -I {} -P 32 aws s3 cp {} ribofrac/
-
-for study in $(aws s3 ls $S3_DIR | awk '{print $NF}'); do
     for al in $(aws s3 ls $S3_DIR${study}alignments/ | \
                     awk '{print $NF}'); do
         if [ ! -s alignments/$al ]; then
@@ -69,15 +94,6 @@ for study in $(aws s3 ls $S3_DIR | awk '{print $NF}'); do
         fi
     done
 done | xargs -I {} -P 32 aws s3 cp {} alignments/
-
-for study in $(aws s3 ls $S3_DIR | awk '{print $NF}'); do
-    for rl in $(aws s3 ls $S3_DIR${study}readlengths/ | \
-                    awk '{print $NF}'); do
-        if [ ! -s readlengths/$rl ]; then
-            echo $S3_DIR${study}readlengths/$rl
-        fi
-    done
-done | xargs -I {} -P 32 aws s3 cp {} readlengths/
 
 $MGS_PIPELINE_DIR/dashboard/prepare-dashboard-data.py $ROOT_DIR $MGS_PIPELINE_DIR
 

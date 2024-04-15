@@ -164,6 +164,16 @@ for project in projects:
 for bioproject in bioprojects:
     bioprojects[bioproject] = list(sorted(bioprojects[bioproject]))
 
+def round_floats_recursively(val, precision=4):   
+    if type(val) == type(0.0):
+        return round(val, precision)
+    if type(val) in [type({}), type(defaultdict())]:
+        return {k: round_floats_recursively(v) for k, v in val.items()}
+    if type(val) in [type([]), type(())]:
+        return [round_floats_recursively(v) for v in val]
+    
+    return val
+
 for name, val in [
     ("metadata_samples", sample_metadata),
     ("metadata_bioprojects", bioprojects),
@@ -171,7 +181,7 @@ for name, val in [
 ]:
     with open(DASHBOARD_DIR + name + ".json", "w") as outf:
         json.dump(
-            val,
+            round_floats_recursively(val),
             outf,
             sort_keys=True,
             indent=2,
