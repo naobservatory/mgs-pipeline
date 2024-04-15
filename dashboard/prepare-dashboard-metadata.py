@@ -89,22 +89,40 @@ for paper_name in papers:
 # sample -> {metadata}
 sample_metadata = defaultdict(dict)
 
-def summarize_readlength_category(rl_category):
+def summarize_readlength_category(rls_category):
     weighted_sum = 0
     weighted_total = 0
     nc = 0
-    for value, count in rl_category.items():
-        if value == "NC":
-            nc = count
-        else:
-            weighted_sum += int(value)
-            weighted_total += count
-    return [nc,
-            -1 if not weighted_total else weighted_sum / weighted_total]
+    for rl_category in rls_category:
+        for value, count in rl_category.items():
+            if value == "NC":
+                nc += count
+            else:
+                weighted_sum += int(value) * count
+                weighted_total += count
 
-def summarize_readlengths(rl):
-    return {category: summarize_readlength_category(rl[category])
-            for category in rl}
+    if not weighted_total:
+        return -1, -1
+
+    if weighted_sum / weighted_total < 5:
+        import pprint
+        pprint.pprint(rls_category)
+        print(weighted_sum)
+        print(weighted_total)
+        exit(1)
+    
+    return [nc / (weighted_total + nc),
+            weighted_sum / weighted_total]
+
+def summarize_readlengths(rls):
+    all_categories = set()
+    for rl in rls:
+        for category in rl:
+            all_categories.add(category)
+    
+    return {category: summarize_readlength_category([
+        rl[category] for rl in rls])
+            for category in all_categories}
 
 for project in projects:
     with open(
@@ -132,15 +150,16 @@ for project in projects:
         sample_metadata[sample]["reads"] = project_sample_reads[project][
             sample
         ]
+        rls = []
         for div_sample in div_samples[sample]:
             rl_fname = "readlengths/%s.rl.json.gz" % div_sample
             try:
                 with gzip.open(rl_fname, "rt") as inf:
-                    rl = json.load(inf)
+                    rls.append(json.load(inf))
             except FileNotFoundError:
                 continue
 
-            sample_metadata[sample]["readlengths"] = summarize_readlengths(rl)
+            sample_metadata[sample]["readlengths"] = summarize_readlengths(rls)
 
         ribofracs = []
         weights = []
@@ -164,14 +183,14 @@ for project in projects:
 for bioproject in bioprojects:
     bioprojects[bioproject] = list(sorted(bioprojects[bioproject]))
 
-def round_floats_recursively(val, precision=4):   
+def round_floats_recursively(val, precision=4):
     if type(val) == type(0.0):
         return round(val, precision)
     if type(val) in [type({}), type(defaultdict())]:
         return {k: round_floats_recursively(v) for k, v in val.items()}
     if type(val) in [type([]), type(())]:
         return [round_floats_recursively(v) for v in val]
-    
+
     return val
 
 for name, val in [

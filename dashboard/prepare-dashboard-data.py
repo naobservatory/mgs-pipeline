@@ -29,6 +29,10 @@ ROOT_DIR, MGS_PIPELINE_DIR = sys.argv[1:]
 DASHBOARD_DIR = ROOT_DIR + "/dashboard/"
 
 sys.path.insert(0, DASHBOARD_DIR)
+import sample_metadata_classifier
+
+# bioproject -> [samples]
+bioprojects = defaultdict(set)
 
 all_human_viruses = set()  # {taxid}
 with open("%s/human-viruses.tsv" % MGS_PIPELINE_DIR) as inf:
@@ -67,6 +71,7 @@ for metadata_fname in glob.glob(
         for line in inf:
             div_sample = line.strip().split("\t")[0]
             sample = sample_metadata_classifier.recombine(div_sample, project)
+            bioprojects[project].add(sample)
             div_samples[sample].add(div_sample)
             project_samples[project].add(sample)
 
@@ -203,7 +208,6 @@ for project in projects:
             if not os.path.exists(fname):
                 continue
 
-            bioprojects[project].add(sample)
             with open(fname) as inf:
                 for line in inf:
                     line = line.strip()
