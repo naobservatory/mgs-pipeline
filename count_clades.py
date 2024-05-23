@@ -22,11 +22,16 @@ direct_hits = Counter()  # taxid -> direct hits
 clade_assignments = Counter()  # taxid -> clade assignments
 clade_hits = Counter()  # taxid -> clade hits
 
-for line in sys.stdin:
+for lineno, line in enumerate(sys.stdin):
     line = line.strip()
     if not line:
         continue
-    _, _, name_and_taxid, _, encoded_hits = line.split("\t")
+
+    try:
+        _, _, name_and_taxid, _, encoded_hits = line.split("\t")
+    except ValueError:
+        raise Exception("Bad line #%d: %r" % (
+            lineno, line))
 
     (taxid,) = re.findall("^.*[(]taxid ([0-9]+)[)]$", name_and_taxid)
     taxid = int(taxid)
