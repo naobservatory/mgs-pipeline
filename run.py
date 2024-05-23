@@ -30,6 +30,11 @@ COLOR_GREEN = "\x1b[0;32m"
 COLOR_CYAN = "\x1b[0;36m"
 COLOR_END = "\x1b[0m"
 
+# Intended for https://github.com/naobservatory/mgs-pipeline/issues/65
+# migration.  Not fully implemented yet -- need to update files other than
+# run.py.
+ENABLE_REFERENCE_DATE=False
+REFERENCE_DATE="2024-06"
 
 def check_call_shell(cmd):
     # Unlike subprocess.check_call, if any member of the pipeline fails then
@@ -190,24 +195,8 @@ def adapter_removal(args, dirname, trim_quality, collapse):
             in1 = "in1.fastq.gz"
             in2 = "in2.fastq.gz"
 
-            subprocess.check_call(
-                [
-                    "aws",
-                    "s3",
-                    "cp",
-                    "%s/%s/raw/%s" % (S3_BUCKET, args.bioproject, raw1),
-                    in1,
-                ]
-            )
-            subprocess.check_call(
-                [
-                    "aws",
-                    "s3",
-                    "cp",
-                    "%s/%s/raw/%s" % (S3_BUCKET, args.bioproject, raw2),
-                    in2,
-                ]
-            )
+            s3_copy_down(args, "raw", raw1, local_fname=in1)
+            s3_copy_down(args, "raw", raw2, local_fname=in2)
 
             adapter1_fname = os.path.join(adapter_dir, "%s.fwd" % sample)
             adapter2_fname = os.path.join(adapter_dir, "%s.rev" % sample)
@@ -249,16 +238,7 @@ def adapter_removal(args, dirname, trim_quality, collapse):
             subprocess.check_call(cmd)
 
             for output in glob.glob("%s.*" % sample):
-                subprocess.check_call(
-                    [
-                        "aws",
-                        "s3",
-                        "cp",
-                        output,
-                        "%s/%s/%s/" % (S3_BUCKET, args.bioproject, dirname),
-                    ]
-                )
-
+                s3_copy_up(args, output, dirname)
 
 def clean(args):
     adapter_removal(args, "cleaned", trim_quality=True, collapse=True)
@@ -267,15 +247,48 @@ def clean(args):
 def rmadapter(args):
     adapter_removal(args, "noadapters", trim_quality=False, collapse=False)
 
+def full_s3_dirname(dirname):
+    if not ENABLE_REFERENCE_DATE:
+        return dirname
+
+    if dirname in ["raw", "cleaned", "ribofrac"]:
+        return dirname
+    return "%s-%s" % (dirname, REFERENCE_DATE)
+
+def s3_dir(args, dirname):
+    return "%s/%s/%s/" % (S3_BUCKET, args.bioproject, full_s3_dirname(dirname))
+
+def s3_file(args, dirname, fname):
+    return "%s%s" % (s3_dir(args, dirname), fname)
+
+def s3_copy_down(args, dirname, remote_fname, local_fname=None):
+    if not local_fname:
+        local_fname = remote_fname
+    subprocess.check_call([
+        "aws",
+        "s3",
+        "cp",
+        s3_file(args, dirname, remote_fname),
+        local_fname,
+    ])
+
+def s3_copy_up(args, local_fname, dirname, remote_fname=None):
+    if not remote_fname:
+        remote_fname = local_fname
+
+    subprocess.check_call([
+        "aws",
+        "s3",
+        "cp",
+        local_fname,
+        s3_file(args, dirname, remote_fname),
+    ])
+
 
 def get_files(args, dirname, min_size=1, min_date=""):
-    return set(
-        ls_s3_dir(
-            "%s/%s/%s/" % (S3_BUCKET, args.bioproject, dirname),
-            min_size=min_size,
-            min_date=min_date,
-        )
-    )
+    return set(ls_s3_dir(s3_dir(args, dirname),
+                         min_size=min_size,
+                         min_date=min_date))
 
 
 def ribofrac(args, subset_size=1000):
@@ -380,16 +393,7 @@ def ribofrac(args, subset_size=1000):
 
             with tempdir("ribofrac", sample + " inputs") as workdir:
                 for input_fname in inputs:
-                    subprocess.check_call(
-                        [
-                            "aws",
-                            "s3",
-                            "cp",
-                            "%s/%s/cleaned/%s"
-                            % (S3_BUCKET, args.bioproject, input_fname),
-                            input_fname,
-                        ]
-                    )
+                    s3_copy_down(args, "cleaned", input_fname)
 
                     # Check file integrity
                     file_valid = file_integrity_check(input_fname)
@@ -461,7 +465,7 @@ def ribofrac(args, subset_size=1000):
                 )
                 rrna_reads_dict[inputs[0]] = subset_reads - non_rrna_count
         if not total_files_in_sample:
-            print("%s wasn't processed by ribofrac because it's not present in %s/%s/cleaned" % (sample, S3_BUCKET, args.bioproject))
+            print("%s wasn't processed by ribofrac because it's not present in cleaned" % sample)
             continue
 
 
@@ -490,16 +494,7 @@ def ribofrac(args, subset_size=1000):
             with open(ribofrac_file, "w") as txt_file:
                 txt_file.write(str(fraction_rrna))
 
-            subprocess.check_call(
-                [
-                    "aws",
-                    "s3",
-                    "cp",
-                    ribofrac_file,
-                    "%s/%s/ribofrac/" % (S3_BUCKET, args.bioproject),
-                ]
-            )
-
+            s3_copy_up(args, ribofrac_file, "ribofrac")
 
 def interpret(args):
     available_inputs = get_files(
@@ -534,16 +529,7 @@ def interpret(args):
 
             with tempdir("interpret", ", ".join(inputs)) as workdir:
                 for input_fname in inputs:
-                    subprocess.check_call(
-                        [
-                            "aws",
-                            "s3",
-                            "cp",
-                            "%s/%s/cleaned/%s"
-                            % (S3_BUCKET, args.bioproject, input_fname),
-                            input_fname,
-                        ]
-                    )
+                    s3_copy_down(args, "cleaned", input_fname)
 
                 kraken_cmd = [
                     "/home/ec2-user/kraken2-install/kraken2",
@@ -571,16 +557,7 @@ def interpret(args):
 
                 subprocess.check_call(kraken_cmd)
                 subprocess.check_call(["gzip", output])
-                subprocess.check_call(
-                    [
-                        "aws",
-                        "s3",
-                        "cp",
-                        compressed_output,
-                        "%s/%s/processed/" % (S3_BUCKET, args.bioproject),
-                    ]
-                )
-
+                s3_copy_up(args, compressed_output, "processed")
 
 def cladecounts(args):
     available_inputs = get_files(args, "processed")
@@ -666,7 +643,7 @@ def samplereads(args):
                     "aws",
                     "s3",
                     "cp",
-                    "%s/%s/processed/%s" % (S3_BUCKET, args.bioproject, fname),
+                    s3_file(args, "processed", fname),
                     "-",
                 ],
                 stdout=subprocess.PIPE,
@@ -719,16 +696,7 @@ def samplereads(args):
                             "%s\t%s\n" % (category[0], selected_read_id)
                         )
 
-            subprocess.check_call(
-                [
-                    "aws",
-                    "s3",
-                    "cp",
-                    output,
-                    "%s/%s/samplereads/" % (S3_BUCKET, args.bioproject),
-                ]
-            )
-
+            s3_copy_up(args, output, "samplereads")
 
 def readlengths(args):
     available_samplereads_inputs = get_files(args, "samplereads")
@@ -753,7 +721,7 @@ def readlengths(args):
                 "aws",
                 "s3",
                 "cp",
-                "%s/%s/samplereads/%s" % (S3_BUCKET, args.bioproject, fname),
+                s3_file(args, "samplereads", fname),
                 "-",
             ],
             stdout=subprocess.PIPE,
@@ -790,7 +758,7 @@ def readlengths(args):
                     "aws",
                     "s3",
                     "cp",
-                    "%s/%s/cleaned/%s" % (S3_BUCKET, args.bioproject, fname),
+                    s3_file(args, "cleaned", fname),
                     "-",
                 ],
                 stdout=subprocess.PIPE,
@@ -823,15 +791,7 @@ def readlengths(args):
             with gzip.open(output, "wt") as outf:
                 json.dump(lengths, outf)
 
-            subprocess.check_call(
-                [
-                    "aws",
-                    "s3",
-                    "cp",
-                    output,
-                    "%s/%s/readlengths/" % (S3_BUCKET, args.bioproject),
-                ]
-            )
+            s3_copy_up(args, output, "readlengths")
 
 
 def humanviruses(args):
@@ -861,16 +821,7 @@ def humanviruses(args):
 
         for input_fname in inputs:
             with tempdir("humanviruses", sample) as workdir:
-                subprocess.check_call(
-                    [
-                        "aws",
-                        "s3",
-                        "cp",
-                        "%s/%s/processed/%s"
-                        % (S3_BUCKET, args.bioproject, input_fname),
-                        input_fname,
-                    ]
-                )
+                s3_copy_down(args, "processed", input_fname)
 
                 with gzip.open(input_fname, "rt") as inf:
                     for line in inf:
@@ -886,17 +837,7 @@ def humanviruses(args):
                         "%s\t%s\t%s\n" % (taxid, count, human_viruses[taxid])
                     )
 
-            subprocess.check_call(
-                [
-                    "aws",
-                    "s3",
-                    "cp",
-                    output,
-                    "%s/%s/humanviruses/%s"
-                    % (S3_BUCKET, args.bioproject, output),
-                ]
-            )
-
+            s3_copy_up(args, output, "humanviruses")
 
 def allmatches(args):
     human_viruses = {}
@@ -924,16 +865,7 @@ def allmatches(args):
         with tempdir("allmatches", sample) as workdir:
             kept = []
             for input_fname in inputs:
-                subprocess.check_call(
-                    [
-                        "aws",
-                        "s3",
-                        "cp",
-                        "%s/%s/processed/%s"
-                        % (S3_BUCKET, args.bioproject, input_fname),
-                        input_fname,
-                    ]
-                )
+                s3_copy_down(args, "processed", input_fname)
 
                 with gzip.open(input_fname, "rt") as inf:
                     for line in inf:
@@ -959,17 +891,7 @@ def allmatches(args):
                 for line in kept:
                     outf.write(line)
 
-            subprocess.check_call(
-                [
-                    "aws",
-                    "s3",
-                    "cp",
-                    output,
-                    "%s/%s/allmatches/%s"
-                    % (S3_BUCKET, args.bioproject, output),
-                ]
-            )
-
+            s3_copy_up(args, output, "allmatches")
 
 def hvreads(args):
     available_inputs = get_files(args, "allmatches")
@@ -998,13 +920,13 @@ def hvreads(args):
 
         all_matches = [
             x.strip().split("\t")
+
             for x in subprocess.check_output(
                 [
                     "aws",
                     "s3",
                     "cp",
-                    "%s/%s/allmatches/%s"
-                    % (S3_BUCKET, args.bioproject, input_fname),
+                    s3_file(args, "allmatches", input_fname),
                     "-",
                 ]
             )
@@ -1027,17 +949,7 @@ def hvreads(args):
                 continue
 
             with tempdir("hvreads", cleaned_input) as workdir:
-                subprocess.check_call(
-                    [
-                        "aws",
-                        "s3",
-                        "cp",
-                        "%s/%s/cleaned/%s"
-                        % (S3_BUCKET, args.bioproject, cleaned_input),
-                        cleaned_input,
-                    ]
-                )
-
+                s3_copy_down(args, "cleaned", cleaned_input)
                 with gzip.open(cleaned_input, "rt") as inf:
                     for title, sequence, quality in FastqGeneralIterator(inf):
                         seq_id = title.split()[0]
@@ -1047,16 +959,7 @@ def hvreads(args):
         with tempdir("hvreads", output) as workdir:
             with open(output, "w") as outf:
                 json.dump(seqs, outf, sort_keys=True)
-            subprocess.check_call(
-                [
-                    "aws",
-                    "s3",
-                    "cp",
-                    output,
-                    "%s/%s/hvreads/%s" % (S3_BUCKET, args.bioproject, output),
-                ]
-            )
-
+            s3_copy_up(args, output, "hvreads")
 
 def alignments2(args):
     available_inputs = get_files(
@@ -1095,16 +998,7 @@ def alignments2(args):
                     any_paired = False
                     any_collapsed = False
 
-                    subprocess.check_call(
-                        [
-                            "aws",
-                            "s3",
-                            "cp",
-                            "%s/%s/hvreads/%s"
-                            % (S3_BUCKET, args.bioproject, potential_input),
-                            potential_input,
-                        ]
-                    )
+                    s3_copy_down(args, "hvreads", potential_input)
 
                     with open(potential_input) as inf, \
                          open("pair1.fastq", "w") as outf1, \
@@ -1219,20 +1113,7 @@ def alignments2(args):
                                     )
                                 )
 
-                subprocess.check_call(
-                    [
-                        "aws",
-                        "s3",
-                        "cp",
-                        combined_output_compressed,
-                        "%s/%s/alignments2/%s"
-                        % (
-                            S3_BUCKET,
-                            args.bioproject,
-                            combined_output_compressed,
-                        ),
-                    ]
-                )
+                s3_copy_up(args, combined_output_compressed, "alignments2")
 
 def phred_to_q(phred_score):
     return ord(phred_score) - ord("!")
@@ -1343,7 +1224,8 @@ def print_status(args):
                 print("\t", end="", flush=True)
 
                 seen = set()
-                for fname in ls_s3_dir("%s/%s/" % (s3_bioproject_dir, stage)):
+                for fname in ls_s3_dir("%s/%s/" % (
+                        s3_bioproject_dir, full_s3_dirname(stage))):
                     for sample in samples:
                         if fname.startswith(sample):
                             seen.add(sample)
