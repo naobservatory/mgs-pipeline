@@ -142,8 +142,12 @@ for project in projects:
             sample = sample_metadata_classifier.recombine(div_sample, project)
             if sample not in sample_metadata:
                 sample_metadata[sample] = sample_metadata_dict
-            else:
-                assert sample_metadata_dict == sample_metadata[sample]
+            elif sample_metadata_dict != sample_metadata[sample]:
+                print(sample, div_sample)
+                import pprint
+                pprint.pprint(sample_metadata_dict)
+                pprint.pprint(sample_metadata[sample])
+                assert False
 
 
     for sample in project_sample_reads[project]:
