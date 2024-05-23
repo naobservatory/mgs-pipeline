@@ -107,6 +107,8 @@ def ls_s3_dir(s3_dir, min_size=0, min_date=""):
     for line in cmd_out.split(b"\n"):
         if not line.strip():
             continue
+        if line.endswith(b"0 "):
+            continue
         try:
             date, time, size, fname = line.split()
         except ValueError:
