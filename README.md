@@ -502,3 +502,9 @@ Normally the flow is:
    `min_date='2023-09-18'`.
 
 4. Follow the instructions above to rerun across all bioprojects.
+
+### Updating the Taxnonomy and Kraken DB
+
+We've never done this yet, but the planned process is in
+https://github.com/naobservatory/mgs-pipeline/issues/65.  Once we do it I'll
+document it here.
