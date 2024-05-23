@@ -31,16 +31,14 @@ COLOR_CYAN = "\x1b[0;36m"
 COLOR_END = "\x1b[0m"
 
 # Intended for https://github.com/naobservatory/mgs-pipeline/issues/65
-# migration.  Not fully implemented yet -- need to update files other than
-# run.py.
-ENABLE_REFERENCE_DATE=False
-REFERENCE_DATE="2024-06"
+# migration.
+with open(os.path.join(THISDIR, "reference-suffix.txt")) as inf:
+    REFERENCE_SUFFIX = inf.read().strip()
 
 def check_call_shell(cmd):
     # Unlike subprocess.check_call, if any member of the pipeline fails then
     # this fails too.
     subprocess.check_call(["bash", "-c", "set -o  pipefail; %s" % cmd])
-
 
 def check_output_shell(cmd):
     # Unlike subprocess.check_output, if any member of the pipeline fails then
@@ -248,12 +246,9 @@ def rmadapter(args):
     adapter_removal(args, "noadapters", trim_quality=False, collapse=False)
 
 def full_s3_dirname(dirname):
-    if not ENABLE_REFERENCE_DATE:
-        return dirname
-
     if dirname in ["raw", "cleaned", "ribofrac"]:
         return dirname
-    return "%s-%s" % (dirname, REFERENCE_DATE)
+    return "%s%s" % (dirname, REFERENCE_SUFFIX)
 
 def s3_dir(args, dirname):
     return "%s/%s/%s/" % (S3_BUCKET, args.bioproject, full_s3_dirname(dirname))
@@ -574,7 +569,11 @@ def cladecounts(args):
             continue
 
         subprocess.check_call(
-            ["./count_clades.sh", S3_BUCKET, args.bioproject, sample]
+            ["./count_clades.sh",
+             S3_BUCKET,
+             args.bioproject,
+             sample,
+             REFERENCE_SUFFIX]
         )
 
 

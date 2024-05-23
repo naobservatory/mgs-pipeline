@@ -25,6 +25,8 @@ fi
 
 $MGS_PIPELINE_DIR/collect-n-reads.sh
 
+REFSUFFIX=$(cat $MGS_PIPELINE_DIR/reference-suffix.txt)
+
 cd $ROOT_DIR/dashboard
 mkdir -p allmatches/
 mkdir -p hvreads/
@@ -40,19 +42,19 @@ if [ ! -e names.dmp ] ; then
 fi
 
 for study in $(aws s3 ls $S3_DIR | awk '{print $NF}'); do
-    for rl in $(aws s3 ls $S3_DIR${study}readlengths/ | \
+    for rl in $(aws s3 ls $S3_DIR${study}readlengths$REFSUFFIX/ | \
                     awk '{print $NF}'); do
         if [ ! -s readlengths/$rl ]; then
-            echo $S3_DIR${study}readlengths/$rl
+            echo $S3_DIR${study}readlengths$REFSUFFIX/$rl
         fi
     done
 done | xargs -I {} -P 32 aws s3 cp {} readlengths/
 
 for study in $(aws s3 ls $S3_DIR | awk '{print $NF}'); do
-    for rf in $(aws s3 ls $S3_DIR${study}ribofrac/ | \
+    for rf in $(aws s3 ls $S3_DIR${study}ribofrac$REFSUFFIX/ | \
    	    awk '{print $NF}'); do
     	if [ ! -s ribofrac/$rf ]; then
-	    echo $S3_DIR${study}ribofrac/$rf
+	    echo $S3_DIR${study}ribofrac$REFSUFFIX/$rf
 	fi
      done
 done | xargs -I {} -P 32 aws s3 cp {} ribofrac/
@@ -69,31 +71,22 @@ $MGS_PIPELINE_DIR/dashboard/determine_comparison_species.sh
 
 cd $ROOT_DIR/dashboard
 for study in $(aws s3 ls $S3_DIR | awk '{print $NF}'); do
-    for am in $(aws s3 ls $S3_DIR${study}allmatches/ | \
+    for am in $(aws s3 ls $S3_DIR${study}allmatches$REFSUFFIX/ | \
                     awk '{print $NF}'); do
         if [ ! -s allmatches/$am ]; then
-            echo $S3_DIR${study}allmatches/$am
+            echo $S3_DIR${study}allmatches$REFSUFFIX/$am
         fi
     done
 done | xargs -I {} -P 32 aws s3 cp {} allmatches/
 
 for study in $(aws s3 ls $S3_DIR | awk '{print $NF}'); do
-    for hvr in $(aws s3 ls $S3_DIR${study}hvreads/ | \
+    for hvr in $(aws s3 ls $S3_DIR${study}hvreads$REFSUFFIX/ | \
                     awk '{print $NF}'); do
         if [ ! -s hvreads/$hvr ]; then
-            echo $S3_DIR${study}hvreads/$hvr
+            echo $S3_DIR${study}hvreads$REFSUFFIX/$hvr
         fi
     done
 done | xargs -I {} -P 32 aws s3 cp {} hvreads/
-
-for study in $(aws s3 ls $S3_DIR | awk '{print $NF}'); do
-    for al in $(aws s3 ls $S3_DIR${study}alignments/ | \
-                    awk '{print $NF}'); do
-        if [ ! -s alignments/$al ]; then
-            echo $S3_DIR${study}alignments/$al
-        fi
-    done
-done | xargs -I {} -P 32 aws s3 cp {} alignments/
 
 $MGS_PIPELINE_DIR/dashboard/prepare-dashboard-data.py $ROOT_DIR $MGS_PIPELINE_DIR
 
