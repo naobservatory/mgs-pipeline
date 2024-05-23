@@ -30,10 +30,7 @@ REFSUFFIX=$(cat $MGS_PIPELINE_DIR/reference-suffix.txt)
 cd $ROOT_DIR/dashboard
 mkdir -p allmatches/
 mkdir -p hvreads/
-mkdir -p hvrfull/
 mkdir -p ribofrac/
-mkdir -p riboreads/
-mkdir -p alignments/
 mkdir -p readlengths/
 
 if [ ! -e names.dmp ] ; then
