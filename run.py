@@ -501,167 +501,6 @@ def ribofrac(args, subset_size=1000):
             )
 
 
-def riboreads(args):
-    """Save title of reads identified as rRNA by RiboDetector to AWS"""
-
-    available_inputs = get_files(
-        args,
-        "cleaned",
-        # tiny files are empty; ignore them
-        min_size=100,
-    )
-    existing_outputs = get_files(args, "riboreads", min_date="2023-10-10")
-
-    for sample in get_samples(args):
-        # Check for name of output file
-        sample_output_file = sample + ".riboreads.txt"
-        if sample_output_file in existing_outputs:
-            continue
-
-        sample_reads = []
-        sample_nonrrna_reads = []
-        sample_rrna_reads = []
-        for potential_input in available_inputs:
-            if not potential_input.startswith(sample):
-                continue
-            if ".settings" in potential_input:
-                continue
-            if "discarded" in potential_input:
-                continue
-
-            # Number of output and input files must match
-            tmp_fq_output = potential_input.replace(".gz", ".nonrrna.fq")
-            tmp_fq_outputs = [tmp_fq_output]
-            inputs = [potential_input]
-
-            if ".pair1." in potential_input:
-                tmp_fq_outputs.append(
-                    tmp_fq_output.replace(".pair1.", ".pair2.")
-                )
-                inputs.append(potential_input.replace(".pair1.", ".pair2."))
-            elif ".pair2." in potential_input:
-                # Ribodetector handles pair1 and pair2 together.
-                continue
-
-            with tempdir("riboreads", sample + " inputs") as workdir:
-                for input_fname in inputs:
-                    subprocess.check_call(
-                        [
-                            "aws",
-                            "s3",
-                            "cp",
-                            "%s/%s/cleaned/%s"
-                            % (S3_BUCKET, args.bioproject, input_fname),
-                            input_fname,
-                        ]
-                    )
-
-                    # Ribodetector gets angry if the .fq extension isn't in the filename
-                    os.rename(
-                        input_fname, input_fname.replace(".gz", ".fq.gz")
-                    )
-
-                # Add .fq extensions to input files
-                inputs = [i.replace(".gz", ".fq.gz") for i in inputs]
-
-                # Compute average read lengths. For paired-end reads, average length is
-                # computed only from pair1 reads.
-                print("Calculating average read length...")
-
-                def calculate_average_read_length(file_path):
-                    total_len = 0
-                    total_reads = 0
-                    with gzip.open(file_path, "rt") as inf:
-                        for title, sequence, quality in FastqGeneralIterator(
-                            inf
-                        ):
-                            total_len += len(sequence)
-                            total_reads += 1
-                    return round(total_len / total_reads)
-
-                avg_length = calculate_average_read_length(inputs[0])
-                print("Done. Average read length is ", avg_length)
-
-                ribodetector_cmd = [
-                    "ribodetector_cpu",
-                    "--ensure",
-                    "rrna",
-                    "--threads",
-                    "28",
-                    "--chunk_size",
-                    "512",
-                ]
-                ribodetector_cmd.extend(["--len", str(avg_length)])
-
-                ribodetector_cmd.append("--input")
-                ribodetector_cmd.extend(inputs)
-
-                # RiboDetector outputs fastq files containing non-rRNA sequences
-                # https://github.com/hzi-bifo/RiboDetector
-                ribodetector_cmd.append("--output")
-                ribodetector_cmd.extend(tmp_fq_outputs)
-
-                subprocess.check_call(ribodetector_cmd)
-
-                def parse_reads(file_path):
-                    total_reads = 0
-                    seq_titles = []
-
-                    # Check if the file is gzipped
-                    _, file_extension = os.path.splitext(file_path)
-
-                    if file_extension == ".gz":
-                        open_func = gzip.open
-                        mode = "rt"
-                    else:
-                        open_func = open
-                        mode = "r"
-
-                    with open_func(file_path, mode) as inf:
-                        for title, sequence, quality in FastqGeneralIterator(
-                            inf
-                        ):
-                            seq_titles.append(title)
-                    return seq_titles
-
-                # Collect and count all input reads. Paired-end reads are counted once.
-                reads = parse_reads(inputs[0])
-                sample_reads.extend(reads)
-
-                # Collect and count non-rRNA reads. Paired-end reads are counted once.
-                non_rrna_reads = parse_reads(tmp_fq_outputs[0])
-                sample_nonrrna_reads.extend(non_rrna_reads)
-
-        # Collect rRNA reads
-        sample_rrna_reads = list(set(sample_reads) - set(sample_nonrrna_reads))
-
-        print(
-            f"Number of rRNA reads in {sample} = {len(sample_rrna_reads)}/{len(sample_reads)} "
-            f"({round(len(sample_rrna_reads)/len(sample_reads)*100)}%)"
-        )
-
-        # Save titles of rRNA reads
-        # For paired-end reads, only the title of the first reads is saved
-        with tempdir("riboreads", sample + "_output") as workdir:
-            riboreads_file = os.path.join(workdir, f"{sample}.riboreads.txt")
-            gzipped_file_path = riboreads_file + ".gz"
-
-            # Write and gzip the text file
-            with gzip.open(gzipped_file_path, "wb") as gzipped_file:
-                for title in sample_rrna_reads:
-                    gzipped_file.write(title + "\n")
-
-            subprocess.check_call(
-                [
-                    "aws",
-                    "s3",
-                    "cp",
-                    gzipped_file_path,
-                    "%s/%s/riboreads/" % (S3_BUCKET, args.bioproject),
-                ]
-            )
-
-
 def interpret(args):
     available_inputs = get_files(
         args,
@@ -1425,7 +1264,6 @@ def print_status(args):
         "raw",
         "cleaned",
         "ribofrac",
-        "riboreads",
         "processed",
         "cladecounts",
         "humanviruses",
@@ -1439,7 +1277,6 @@ def print_status(args):
         "raw",
         "clean",
         "rf",
-        "rr",
         "kraken",
         "cc",
         "hv",
@@ -1528,7 +1365,6 @@ STAGES_ORDERED = []
 STAGE_FNS = {}
 for stage_name, stage_fn in [
     ("clean", clean),
-    ("riboreads", riboreads),
     ("ribofrac", ribofrac),
     ("interpret", interpret),
     ("cladecounts", cladecounts),
