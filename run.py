@@ -162,6 +162,14 @@ def get_adapters(in1, in2, adapter1_fname, adapter2_fname):
         with open(fname, "w") as outf:
             outf.write(adapter)
 
+def is_nanopore(args):
+    return os.path.exists(work_fname(
+        "bioprojects", args.bioproject, "metadata", "is_nanopore.txt"))
+
+def clean_dirname(args):
+    if is_nanopore(args):
+        return "raw"
+    return "cleaned"
 
 def adapter_removal(args, dirname, trim_quality, collapse):
     adapter_dir = work_fname("bioprojects", args.bioproject, "adapters")
@@ -239,8 +247,10 @@ def adapter_removal(args, dirname, trim_quality, collapse):
                 s3_copy_up(args, output, dirname)
 
 def clean(args):
-    adapter_removal(args, "cleaned", trim_quality=True, collapse=True)
+    if is_nanopore(args):
+        return
 
+    adapter_removal(args, "cleaned", trim_quality=True, collapse=True)
 
 def rmadapter(args):
     adapter_removal(args, "noadapters", trim_quality=False, collapse=False)
@@ -258,7 +268,7 @@ def s3_file(args, dirname, fname):
 
 def s3_copy_down(args, dirname, remote_fname, local_fname=None):
     if not local_fname:
-        local_fname = remote_fname
+        local_fname = os.path.basename(remote_fname)
     subprocess.check_call([
         "aws",
         "s3",
@@ -269,7 +279,7 @@ def s3_copy_down(args, dirname, remote_fname, local_fname=None):
 
 def s3_copy_up(args, local_fname, dirname, remote_fname=None):
     if not remote_fname:
-        remote_fname = local_fname
+        remote_fname = os.path.basename(local_fname)
 
     subprocess.check_call([
         "aws",
@@ -286,12 +296,13 @@ def get_files(args, dirname, min_size=1, min_date=""):
                          min_date=min_date))
 
 
+
 def ribofrac(args, subset_size=1000):
     """Fast algorithm to compute fraction of reads identified as rRNA by RiboDetector"""
 
     available_inputs = get_files(
         args,
-        "cleaned",
+        clean_dirname(args),
         # tiny files are empty; ignore them
         min_size=100,
     )
@@ -388,7 +399,7 @@ def ribofrac(args, subset_size=1000):
 
             with tempdir("ribofrac", sample + " inputs") as workdir:
                 for input_fname in inputs:
-                    s3_copy_down(args, "cleaned", input_fname)
+                    s3_copy_down(args, clean_dirname(args), input_fname)
 
                     # Check file integrity
                     file_valid = file_integrity_check(input_fname)
@@ -494,7 +505,7 @@ def ribofrac(args, subset_size=1000):
 def interpret(args):
     available_inputs = get_files(
         args,
-        "cleaned",
+        clean_dirname(args),
         # tiny files are empty; ignore them
         min_size=100,
     )
@@ -524,7 +535,7 @@ def interpret(args):
 
             with tempdir("interpret", ", ".join(inputs)) as workdir:
                 for input_fname in inputs:
-                    s3_copy_down(args, "cleaned", input_fname)
+                    s3_copy_down(args, clean_dirname(args), input_fname)
 
                 kraken_cmd = [
                     "/home/ec2-user/kraken2-install/kraken2",
@@ -699,7 +710,7 @@ def samplereads(args):
 
 def readlengths(args):
     available_samplereads_inputs = get_files(args, "samplereads")
-    available_cleaned_inputs = get_files(args, "cleaned")
+    available_cleaned_inputs = get_files(args, clean_dirname(args))
     existing_outputs = get_files(args, "readlengths", min_date="2023-11-04")
 
     for sample in get_samples(args):
@@ -743,7 +754,7 @@ def readlengths(args):
             lengths[category] = {"NC": 0}
 
         for fname in inputs:
-            if ".collapsed." not in fname:
+            if ".collapsed." not in fname and not is_nanopore(args):
                 # We can only get fragment lengths from cases where we could
                 # collapse.  Fragments longer than fwd + rev - minoverlap could be
                 # any length for all we know.
@@ -757,7 +768,7 @@ def readlengths(args):
                     "aws",
                     "s3",
                     "cp",
-                    s3_file(args, "cleaned", fname),
+                    s3_file(args, clean_dirname(args), fname),
                     "-",
                 ],
                 stdout=subprocess.PIPE,
@@ -896,7 +907,7 @@ def hvreads(args):
     available_inputs = get_files(args, "allmatches")
     available_cleaned_inputs = get_files(
         args,
-        "cleaned",
+        clean_dirname(args),
         # tiny files are empty; ignore them
         min_size=100,
     )
@@ -948,7 +959,7 @@ def hvreads(args):
                 continue
 
             with tempdir("hvreads", cleaned_input) as workdir:
-                s3_copy_down(args, "cleaned", cleaned_input)
+                s3_copy_down(args, clean_dirname(args), cleaned_input)
                 with gzip.open(cleaned_input, "rt") as inf:
                     for title, sequence, quality in FastqGeneralIterator(inf):
                         seq_id = title.split()[0]
@@ -1221,6 +1232,10 @@ def print_status(args):
             prev = None
             for stage in stages:
                 print("\t", end="", flush=True)
+
+                if stage == "clean" and is_nanopore(args):
+                    print("n/a", end="", flush=True)
+                    continue
 
                 seen = set()
                 for fname in ls_s3_dir("%s/%s/" % (
