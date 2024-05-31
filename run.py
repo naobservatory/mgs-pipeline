@@ -997,9 +997,11 @@ def alignments2(args):
 
             with tempdir("%s alignments2" % db, sample) as workdir:
                 tmp_outputs = []
+                any_output = False
                 for potential_input in available_inputs:
                     if not potential_input.startswith(sample):
                         continue
+                    any_output = True
 
                     tmp_output = potential_input.replace(
                         ".hvreads.json", ".alignments2.tsv"
@@ -1079,6 +1081,9 @@ def alignments2(args):
 
                     tmp_outputs.append(tmp_output)
 
+                if not any_output:
+                    continue
+                    
                 with gzip.open(combined_output_compressed, "wt") as outf:
                     for tmp_output in tmp_outputs:
                         with open(tmp_output) as inf:
