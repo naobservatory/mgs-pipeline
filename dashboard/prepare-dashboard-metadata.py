@@ -59,15 +59,18 @@ projects = list(sorted(project_sample_reads))
 
 papers = {}
 for project in projects:
-    with open(
-        "%s/bioprojects/%s/metadata/name.txt" % (ROOT_DIR, project)
-    ) as inf:
-        paper_name = inf.read().strip()
-        if paper_name not in papers:
-            papers[paper_name] = {}
-        if "projects" not in papers[paper_name]:
-            papers[paper_name]["projects"] = []
-        papers[paper_name]["projects"].append(project)
+    name_fname = "%s/bioprojects/%s/metadata/name.txt" % (ROOT_DIR, project)
+    if os.path.exists(name_fname):
+        with open(name_fname) as inf:
+            paper_name = inf.read().strip()
+    else:
+        paper_name = project
+
+    if paper_name not in papers:
+        papers[paper_name] = {}
+    if "projects" not in papers[paper_name]:
+        papers[paper_name]["projects"] = []
+    papers[paper_name]["projects"].append(project)
 
 for paper_name in papers:
     paper_dir = os.path.join(ROOT_DIR, "papers", paper_name.replace(" ", ""))
@@ -75,6 +78,8 @@ for paper_name in papers:
     if os.path.exists(link_fname):
         with open(link_fname) as inf:
             papers[paper_name]["link"] = inf.read().strip()
+    else:
+        papers[paper_name]["link"] = "personal communication"
 
     na_fname = os.path.join(paper_dir, "na_type.txt")
     if os.path.exists(na_fname):
@@ -110,7 +115,7 @@ def summarize_readlength_category(rls_category):
         print(weighted_sum)
         print(weighted_total)
         exit(1)
-    
+
     return [nc / (weighted_total + nc),
             weighted_sum / weighted_total]
 
@@ -119,7 +124,7 @@ def summarize_readlengths(rls):
     for rl in rls:
         for category in rl:
             all_categories.add(category)
-    
+
     return {category: summarize_readlength_category([
         rl[category] for rl in rls])
             for category in all_categories}
