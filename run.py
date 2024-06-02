@@ -163,12 +163,19 @@ def get_adapters(in1, in2, adapter1_fname, adapter2_fname):
             outf.write(adapter)
 
 def is_nanopore(args):
-    return os.path.exists(work_fname(
-        "bioprojects", args.bioproject, "metadata", "is_nanopore.txt"))
+    return args.bioproject.startswith("NAO-ONT-")
 
-def clean_dirname(args):
+def rm_human(args):
+    return "-Zephyr" in args.bioproject
+
+def no_adapters_dirname(args):
     if is_nanopore(args):
         return "raw"
+    return "cleaned"
+
+def final_fastq_dirname(args):
+    if rm_human(args):
+        return "nonhuman"
     return "cleaned"
 
 def adapter_removal(args, dirname, trim_quality, collapse):
@@ -252,11 +259,8 @@ def clean(args):
 
     adapter_removal(args, "cleaned", trim_quality=True, collapse=True)
 
-def rmadapter(args):
-    adapter_removal(args, "noadapters", trim_quality=False, collapse=False)
-
 def full_s3_dirname(dirname):
-    if dirname in ["raw", "cleaned", "ribofrac"]:
+    if dirname in ["raw", "cleaned", "ribofrac", "nonhuman"]:
         return dirname
     return "%s%s" % (dirname, REFERENCE_SUFFIX)
 
@@ -302,7 +306,7 @@ def ribofrac(args, subset_size=1000):
 
     available_inputs = get_files(
         args,
-        clean_dirname(args),
+        no_adapters_dirname(args),
         # tiny files are empty; ignore them
         min_size=100,
     )
@@ -399,7 +403,7 @@ def ribofrac(args, subset_size=1000):
 
             with tempdir("ribofrac", sample + " inputs") as workdir:
                 for input_fname in inputs:
-                    s3_copy_down(args, clean_dirname(args), input_fname)
+                    s3_copy_down(args, no_adapters_dirname(args), input_fname)
 
                     # Check file integrity
                     file_valid = file_integrity_check(input_fname)
@@ -505,7 +509,7 @@ def ribofrac(args, subset_size=1000):
 def interpret(args):
     available_inputs = get_files(
         args,
-        clean_dirname(args),
+        final_fastq_dirname(args),
         # tiny files are empty; ignore them
         min_size=100,
     )
@@ -535,7 +539,7 @@ def interpret(args):
 
             with tempdir("interpret", ", ".join(inputs)) as workdir:
                 for input_fname in inputs:
-                    s3_copy_down(args, clean_dirname(args), input_fname)
+                    s3_copy_down(args, final_fastq_dirname(args), input_fname)
 
                 kraken_cmd = [
                     "/home/ec2-user/kraken2-install/kraken2",
@@ -543,13 +547,10 @@ def interpret(args):
                     "--output",
                     output,
                 ]
-                if args.memory_mapping:
-                    db = "/dev/shm/kraken-db/"
-                    kraken_cmd.append("--memory-mapping")
-                    threads = "4"
-                else:
-                    db = "/home/ec2-user/kraken-db/"
-                    threads = "8"
+
+                db = "/dev/shm/kraken-db/"
+                kraken_cmd.append("--memory-mapping")
+                threads = "4"
 
                 assert os.path.exists(db)
                 kraken_cmd.append("--db")
@@ -710,7 +711,7 @@ def samplereads(args):
 
 def readlengths(args):
     available_samplereads_inputs = get_files(args, "samplereads")
-    available_cleaned_inputs = get_files(args, clean_dirname(args))
+    available_cleaned_inputs = get_files(args, final_fastq_dirname(args))
     existing_outputs = get_files(args, "readlengths", min_date="2023-11-04")
 
     for sample in get_samples(args):
@@ -768,7 +769,7 @@ def readlengths(args):
                     "aws",
                     "s3",
                     "cp",
-                    s3_file(args, clean_dirname(args), fname),
+                    s3_file(args, final_fastq_dirname(args), fname),
                     "-",
                 ],
                 stdout=subprocess.PIPE,
@@ -907,7 +908,7 @@ def hvreads(args):
     available_inputs = get_files(args, "allmatches")
     available_cleaned_inputs = get_files(
         args,
-        clean_dirname(args),
+        final_fastq_dirname(args),
         # tiny files are empty; ignore them
         min_size=100,
     )
@@ -959,7 +960,7 @@ def hvreads(args):
                 continue
 
             with tempdir("hvreads", cleaned_input) as workdir:
-                s3_copy_down(args, clean_dirname(args), cleaned_input)
+                s3_copy_down(args, final_fastq_dirname(args), cleaned_input)
                 with gzip.open(cleaned_input, "rt") as inf:
                     for title, sequence, quality in FastqGeneralIterator(inf):
                         seq_id = title.split()[0]
@@ -970,6 +971,43 @@ def hvreads(args):
             with open(output, "w") as outf:
                 json.dump(seqs, outf, sort_keys=True)
             s3_copy_up(args, output, "hvreads")
+
+DB_DIR="/dev/shm/bowtie-db"
+def nonhuman(args):
+    if not rm_human(args):
+        return
+
+    available_inputs = get_files(
+        args,
+        no_adapters_dirname(args),
+        # tiny files are empty; ignore them
+        min_size=100,
+    )
+
+    existing_outputs = get_files(args, "nonhuman", min_size=100)
+
+    for sample in get_samples(args):
+        output= "%s.nonhuman.fastq.gz" % sample
+        if output in existing_outputs:
+            continue
+
+        with tempdir("nonhuman", sample) as workdir:
+            for potential_input in available_inputs:
+                if not potential_input.startswith(sample):
+                    continue
+                s3_copy_down(args, no_adapters_dirname(args), potential_input)
+
+                subprocess.check_call([
+                    "/home/ec2-user/bowtie2-2.5.2-linux-x86_64/bowtie2",
+                    # When identifying human reads use default tuning settings.
+                    "-x", "%s/chm13.draft_v1.0_plusY" % DB_DIR,
+                    "--threads", "4", "--mm",
+                    "-U", potential_input,
+                    "--un-gz", output,
+                    "-S", "/dev/null",
+                ])
+
+                s3_copy_up(args, output, "nonhuman")
 
 def alignments2(args):
     available_inputs = get_files(
@@ -987,148 +1025,129 @@ def alignments2(args):
         genomeid_to_taxid = json.load(inf)
 
     for sample in get_samples(args):
-        for db in ["human", "hv"]:
-            combined_output_compressed = "%s.%s.alignments2.tsv.gz" % (
-                sample,
-                db,
-            )
-            if combined_output_compressed in existing_outputs:
+        combined_output_compressed = "%s.hv.alignments2.tsv.gz" % sample
+        if combined_output_compressed in existing_outputs:
+            continue
+
+        with tempdir("alignments2", sample) as workdir:
+            tmp_outputs = []
+            any_output = False
+            for potential_input in available_inputs:
+                if not potential_input.startswith(sample):
+                    continue
+                any_output = True
+
+                tmp_output = potential_input.replace(
+                    ".hvreads.json", ".alignments2.tsv"
+                )
+
+                any_paired = False
+                any_collapsed = False
+
+                s3_copy_down(args, "hvreads", potential_input)
+
+                with open(potential_input) as inf, \
+                     open("pair1.fastq", "w") as outf1, \
+                     open("pair2.fastq", "w") as outf2, \
+                     open("collapsed.fastq", "w") as outfC:
+
+                    for title, record in json.load(inf).items():
+                        taxid, kraken_info, *reads = record
+                        if len(reads) == 1:
+                            (s, q), = reads
+                            outfC.write("@%s\n%s\n+\n%s\n" % (title, s, q))
+                            any_collapsed = True
+                        elif len(reads) == 2:
+                            (s1, q1), (s2, q2) = reads
+                            outf1.write("@%s/1\n%s\n+\n%s\n" % (
+                                title, s1, q1))
+                            outf2.write("@%s/2\n%s\n+\n%s\n" % (
+                                title, s2, q2))
+                            any_paired = True
+                        else:
+                            print(title)
+                            import pprint
+                            pprint(record)
+                            raise Exception("invalid number of reads")
+
+                if not any_paired and not any_collapsed:
+                    continue
+
+                cmd = [
+                    "/home/ec2-user/bowtie2-2.5.2-linux-x86_64/bowtie2"
+                ]
+                cmd.extend(["--threads", "4", "--mm"])
+
+                cmd.extend(["--no-unal",
+                            "--no-sq",
+                            "-S", tmp_output])
+
+                # Custom-built HV DB
+                cmd.extend(
+                    ["-x", "%s/human-viruses" % DB_DIR])
+                # When identifying HV reads use looser settings and
+                # filter more later.
+                cmd.extend(
+                    ["--local", "--very-sensitive-local",
+                     "--score-min", "G,1,0",
+                     "--mp", "4,1"])
+
+                if any_paired:
+                    cmd.extend([
+                        "-1", "pair1.fastq",
+                        "-2", "pair2.fastq",
+                    ])
+                if any_collapsed:
+                    cmd.extend(["-U", "collapsed.fastq"])
+
+                subprocess.check_call(cmd)
+
+                tmp_outputs.append(tmp_output)
+
+            if not any_output:
                 continue
 
-            with tempdir("%s alignments2" % db, sample) as workdir:
-                tmp_outputs = []
-                any_output = False
-                for potential_input in available_inputs:
-                    if not potential_input.startswith(sample):
-                        continue
-                    any_output = True
+            with gzip.open(combined_output_compressed, "wt") as outf:
+                for tmp_output in tmp_outputs:
+                    with open(tmp_output) as inf:
+                        for line in inf:
+                            if line.startswith("@"):
+                                continue
+                            bits = line.rstrip("\n").split("\t")
 
-                    tmp_output = potential_input.replace(
-                        ".hvreads.json", ".alignments2.tsv"
-                    )
+                            query_name = bits[0]
+                            genomeid = bits[2]
+                            ref_start = bits[3]
+                            # The start position is 1-indexed, but we use
+                            # 0-indexing.
+                            ref_start = int(ref_start) - 1
+                            cigarstring = bits[5]
+                            query_len = len(bits[9])
 
-                    any_paired = False
-                    any_collapsed = False
+                            as_val = None
+                            for token in bits[11:]:
+                                if token.startswith("AS:i:"):
+                                    as_val = token.replace("AS:i:", "")
+                            assert as_val
+                            as_val = int(as_val)
 
-                    s3_copy_down(args, "hvreads", potential_input)
-
-                    with open(potential_input) as inf, \
-                         open("pair1.fastq", "w") as outf1, \
-                         open("pair2.fastq", "w") as outf2, \
-                         open("collapsed.fastq", "w") as outfC:
-
-                        for title, record in json.load(inf).items():
-                            taxid, kraken_info, *reads = record
-                            if len(reads) == 1:
-                                (s, q), = reads
-                                outfC.write("@%s\n%s\n+\n%s\n" % (title, s, q))
-                                any_collapsed = True
-                            elif len(reads) == 2:
-                                (s1, q1), (s2, q2) = reads
-                                outf1.write("@%s/1\n%s\n+\n%s\n" % (
-                                    title, s1, q1))
-                                outf2.write("@%s/2\n%s\n+\n%s\n" % (
-                                    title, s2, q2))
-                                any_paired = True
-                            else:
-                                print(title)
-                                import pprint
-                                pprint(record)
-                                raise Exception("invalid number of reads")
-
-                    if not any_paired and not any_collapsed:
-                        continue
-
-                    cmd = [
-                        "/home/ec2-user/bowtie2-2.5.2-linux-x86_64/bowtie2"
-                    ]
-                    if args.memory_mapping:
-                        db_dir="/dev/shm/bowtie-db"
-                        cmd.extend(["--threads", "4", "--mm"])
-                    else:
-                        db_dir="/home/ec2-user/mgs-pipeline/bowtie"
-                        cmd.extend(["--threads", "8"])
-
-                    cmd.extend(["--no-unal",
-                                "--no-sq",
-                                "-S", tmp_output])
-
-                    if db == "human":
-                        # When identifying human reads use default tuning
-                        # settings.
-                        cmd.extend(
-                            ["-x", "%s/chm13.draft_v1.0_plusY" % db_dir])
-                    else:
-                        # Custom-built HV DB
-                        cmd.extend(
-                            ["-x", "%s/human-viruses" % db_dir])
-                        # When identifying HV reads use looser settings and
-                        # filter more later.
-                        cmd.extend(
-                            ["--local", "--very-sensitive-local",
-                             "--score-min", "G,1,0",
-                             "--mp", "4,1"])
-
-                    if any_paired:
-                        cmd.extend([
-                            "-1", "pair1.fastq",
-                            "-2", "pair2.fastq",
-                        ])
-                    if any_collapsed:
-                        cmd.extend(["-U", "collapsed.fastq"])
-
-                    subprocess.check_call(cmd)
-
-                    tmp_outputs.append(tmp_output)
-
-                if not any_output:
-                    continue
-                    
-                with gzip.open(combined_output_compressed, "wt") as outf:
-                    for tmp_output in tmp_outputs:
-                        with open(tmp_output) as inf:
-                            for line in inf:
-                                if line.startswith("@"):
-                                    continue
-                                bits = line.rstrip("\n").split("\t")
-
-                                query_name = bits[0]
-                                genomeid = bits[2]
-                                ref_start = bits[3]
-                                # The start position is 1-indexed, but we use
-                                # 0-indexing.
-                                ref_start = int(ref_start) - 1
-                                cigarstring = bits[5]
-                                query_len = len(bits[9])
-
-                                as_val = None
-                                for token in bits[11:]:
-                                    if token.startswith("AS:i:"):
-                                        as_val = token.replace("AS:i:", "")
-                                assert as_val
-                                as_val = int(as_val)
-
-                                if db == "human":
-                                    taxid = 9606
-                                    genome_name = genomeid
-                                else:
-                                    taxid, genome_name = genomeid_to_taxid[
-                                        genomeid
-                                    ]
-                                outf.write(
-                                    "%s\t%s\t%s\t%s\t%s\t%s\t%s\n"
-                                    % (
-                                        query_name,
-                                        genomeid,
-                                        taxid,
-                                        cigarstring,
-                                        ref_start,
-                                        as_val,
-                                        query_len,
-                                    )
+                            taxid, genome_name = genomeid_to_taxid[
+                                genomeid
+                            ]
+                            outf.write(
+                                "%s\t%s\t%s\t%s\t%s\t%s\t%s\n"
+                                % (
+                                    query_name,
+                                    genomeid,
+                                    taxid,
+                                    cigarstring,
+                                    ref_start,
+                                    as_val,
+                                    query_len,
                                 )
+                            )
 
-                s3_copy_up(args, combined_output_compressed, "alignments2")
+        s3_copy_up(args, combined_output_compressed, "alignments2")
 
 def phred_to_q(phred_score):
     return ord(phred_score) - ord("!")
@@ -1159,6 +1178,7 @@ def print_status(args):
     stages = [
         "raw",
         "cleaned",
+        "nonhuman"
         "ribofrac",
         "processed",
         "cladecounts",
@@ -1172,6 +1192,7 @@ def print_status(args):
     short_stages = [
         "raw",
         "clean",
+        "nh",
         "rf",
         "kraken",
         "cc",
@@ -1267,6 +1288,7 @@ STAGE_FNS = {}
 for stage_name, stage_fn in [
     ("clean", clean),
     ("ribofrac", ribofrac),
+    ("nonhuman", nonhuman),
     ("interpret", interpret),
     ("cladecounts", cladecounts),
     ("humanviruses", humanviruses),
@@ -1318,15 +1340,6 @@ def start():
         "--skip-stages",
         default="",
         help="Comma-separated list of stages not to run.",
-    )
-
-    parser.add_argument(
-        "--memory-mapping",
-        action="store_true",
-        help="""
-        Avoids loading database into RAM.  Currently only supported for
-        Kraken2 ('interpret') and bowtie2 ('alignments2').
-        """
     )
 
     args = parser.parse_args()
