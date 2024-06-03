@@ -22,6 +22,9 @@ bioprojects = defaultdict(set)
 
 # project -> sample -> n_reads
 project_sample_reads = defaultdict(Counter)
+# project -> sample -> n_nonhuman_reads
+project_sample_nonhuman_reads = defaultdict(Counter)
+
 div_samples = defaultdict(set) # sample -> div_samples
 div_sample_reads = {} # div_sample -> n_reads
 for metadata_fname in glob.glob(
@@ -39,21 +42,26 @@ for metadata_fname in glob.glob(
             div_samples[sample].add(div_sample)
             bioprojects[project].add(sample)
 
-            reads_fname = "%s/bioprojects/%s/metadata/%s.n_reads" % (
-                ROOT_DIR,
-                project,
-                div_sample,
-            )
-            if not os.path.exists(reads_fname):
-                continue
-            with open(reads_fname) as readsf:
-                reads_str = readsf.read().strip()
-                if not reads_str:
+            for reads_fname, reads_dict, use_for_div_sample in [
+                    ("%s/bioprojects/%s/metadata/%s.n_reads" % (
+                        ROOT_DIR, project, div_sample),
+                     project_sample_reads,
+                     True),
+                    ("%s/bioprojects/%s/metadata/%s.nonhuman.n_reads" % (
+                        ROOT_DIR, project, div_sample),
+                     project_sample_nonhuman_reads,
+                     False)]:
+                if not os.path.exists(reads_fname):
                     continue
-                n_reads = int(reads_str)
+                with open(reads_fname) as readsf:
+                    reads_str = readsf.read().strip()
+                    if not reads_str:
+                        continue
+                    n_reads = int(reads_str)
 
-                project_sample_reads[project][sample] += n_reads
-                div_sample_reads[div_sample] = n_reads
+                    reads_dict[project][sample] += n_reads
+                    if use_for_div_sample:
+                        div_sample_reads[div_sample] = n_reads
 
 projects = list(sorted(project_sample_reads))
 
@@ -159,6 +167,9 @@ for project in projects:
         sample_metadata[sample]["reads"] = project_sample_reads[project][
             sample
         ]
+        if project_sample_nonhuman_reads[project][sample]:
+            sample_metadata[sample]["nonhuman_reads"] = \
+                project_sample_nonhuman_reads[project][sample]
         rls = []
         for div_sample in div_samples[sample]:
             rl_fname = "readlengths/%s.rl.json.gz" % div_sample
