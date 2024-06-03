@@ -987,7 +987,7 @@ def nonhuman(args):
     existing_outputs = get_files(args, "nonhuman", min_size=100)
 
     for sample in get_samples(args):
-        output= "%s.nonhuman.fastq.gz" % sample
+        output= "%s.fastq.gz" % sample
         if output in existing_outputs:
             continue
 
@@ -997,17 +997,18 @@ def nonhuman(args):
                     continue
                 s3_copy_down(args, no_adapters_dirname(args), potential_input)
 
+                local_output="nonhuman.fastq.gz"
                 subprocess.check_call([
                     "/home/ec2-user/bowtie2-2.5.2-linux-x86_64/bowtie2",
                     # When identifying human reads use default tuning settings.
                     "-x", "%s/chm13.draft_v1.0_plusY" % DB_DIR,
                     "--threads", "4", "--mm",
                     "-U", potential_input,
-                    "--un-gz", output,
+                    "--un-gz", local_output,
                     "-S", "/dev/null",
                 ])
 
-                s3_copy_up(args, output, "nonhuman")
+                s3_copy_up(args, local_output, "nonhuman", remote_fname=output)
 
 def alignments2(args):
     available_inputs = get_files(
