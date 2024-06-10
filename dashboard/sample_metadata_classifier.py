@@ -334,7 +334,7 @@ def interpret(project, papers, bits):
             na_type="DNA")
     elif project in papers["Tierney 2023"]["projects"]:
         sample, library_name = bits
-        potential_date = re.findall("-(2\d)(\d\d)(\d\d)[-_]", library_name)
+        potential_date = re.findall(r"-(2\d)(\d\d)(\d\d)[-_]", library_name)
         date = "2021"
         if potential_date:
             (yy, mm, dd), = potential_date
@@ -348,7 +348,7 @@ def interpret(project, papers, bits):
         raise Exception("Metadata format for %s unknown" % project)
 
 def recombine(sample, project):
-    m = re.match(".*_div\d\d\d\d", sample)
+    m = re.match(r".*_div\d\d\d\d", sample)
     if m:
-        sample = re.sub("(.*)(_div\d\d\d\d)", r"\1", sample)
+        sample = re.sub(r"(.*)(_div\d\d\d\d)", r"\1", sample)
     return sample
