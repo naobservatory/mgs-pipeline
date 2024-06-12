@@ -11,10 +11,10 @@ reference="$4"
 
 echo "Counting by clade for $bioproject $sample"
 for kraken_file in $(
-   aws s3 ls "$s3_bucket/$bioproject/processed$reference/$sample" |
+   aws s3 ls "$s3_bucket/$bioproject/processed-$reference/$sample" |
    awk '{print $NF}' | grep -v discarded); do
-    aws s3 cp "$s3_bucket/$bioproject/processed$reference/$kraken_file" - \
+    aws s3 cp "$s3_bucket/$bioproject/processed-$reference/$kraken_file" - \
         | gunzip
 done | ./count_clades.py | \
     gzip | \
-    aws s3 cp - "$s3_bucket/$bioproject/cladecounts$reference/$sample.tsv.gz"
+    aws s3 cp - "$s3_bucket/$bioproject/cladecounts-$reference/$sample.tsv.gz"

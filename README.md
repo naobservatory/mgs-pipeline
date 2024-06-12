@@ -84,6 +84,9 @@ Output and intermediate steps for each bioproject are in S3, under
 `s3://nao-mgs/[bioprojectid]` (or `s3://nao-restricted/...` for private data).
 Available files, and their formats:
 
+(Note that directories downstream from kraken have a -YYYY-MM suffix,
+representing the version of the kraken DB they were generated with.)
+
 * `raw/`: Input, as downloaded from SRA
    * ex: `SRR14530724_1.fastq.gz` and `SRR14530724_2.fastq.gz`
    * Gzipped FastQ format
@@ -264,13 +267,7 @@ writes to a different one.
 
 ### Species Classification
 
-Kraken to assign taxonomic identifiers to reads.  We may want to integrate
-Bracken to estimate per-species relative abundance.  We also may need to build
-our own database or extend an existing one to ensure we have the level of
-coverage we need for human viruses.
-
-When we do want to build our own database kraken2-build has good [documentation
-here](https://github.com/DerrickWood/kraken2/blob/master/docs/MANUAL.markdown#custom-databases).
+Kraken to assign taxonomic identifiers to reads.
 
 ## Dependencies
 
@@ -298,16 +295,17 @@ sudo make install
 
 ```
 
-The adapter removal step downloads the fastq files one sample at a time from S3 to the local machine.
-The step also generates local output files there before copying them to S3.
-On Linux these files are stored in `/tmp`.
-If you don’t have enough space available in `/tmp`, AdapterRemoval will crash.
-To check the available space in `/tmp` run `df -H`.
-You should have at least 2x the size of your largest pair of fastq files.
+The adapter removal step downloads the fastq files one sample at a time from S3
+to the local machine.  The step also generates local output files there before
+copying them to S3.  On Linux these files are stored in `/tmp`.  If you don’t
+have enough space available in `/tmp`, AdapterRemoval will crash.  To check the
+available space in `/tmp` run `df -H`.  You should have at least 2x the size of
+your largest pair of fastq files, multiplied by the maximum number of files you
+will need to process simultaneously.
 
-To resize `/tmp`, edit `/etc/fstab`.
-If there is an entry for `/tmp`, add the option `size=64G` (or whatever size you need) to the 4th column.
-If not, add this line to the end of the file (tab-separated):
+To resize `/tmp`, edit `/etc/fstab`. If there is an entry for `/tmp`, add the
+option `size=64G` (or whatever size you need) to the 4th column.  If not, add
+this line to the end of the file (tab-separated):
 
 ```
 tmpfs  /tmp  tmpfs  size=64G  0  0
@@ -325,8 +323,11 @@ See [documentation](https://github.com/hzi-bifo/RiboDetector). To install:
 ```
 pip install ribodetector
 ```
-As of 2023/09/26, there is a [bug](https://github.com/microsoft/onnxruntime/issues/17631) in the latest version of one of the dependencies of RiboDetector,
-which causes the program to crash. To avoid this, install an earlier version of the dependency:
+
+As of 2023-08-26, there is a
+[bug](https://github.com/microsoft/onnxruntime/issues/17631) in the latest
+version of one of the dependencies of RiboDetector, which causes the program to
+crash. To avoid this, install an earlier version of the dependency:
 
 ```
 pip install onnxruntime==1.15.1
@@ -344,21 +345,21 @@ cd kraken2/
 
 #### Set up Kraken database
 
-For now I'm using the Standard pre-built database (see [documentation](https://github.com/DerrickWood/kraken2/blob/master/docs/MANUAL.markdown#kraken-2-databases)), with a 16GB cap.  Longer term what
-we want depends on how much memory we're ok using; full Standard doesn't quite
-fit on a machine with 64GB of RAM.
+We're using the Standard pre-built database (see
+[documentation](https://github.com/DerrickWood/kraken2/blob/master/docs/MANUAL.markdown#kraken-2-databases)).
+The prepare-shm-kraken.sh script automatically downloads and sets it up, but
+first you need to configure RAM.  Edit `/etc/fstab` and add:
 
 ```
-mkdir ~/kraken-db
-cd ~/kraken-db
-# avoids needing 2x the storage
-aws s3 cp s3://genome-idx/kraken/k2_standard_16gb_20221209.tar.gz - | tar -xvz
+none     /dev/shm      tmpfs  defaults,size=85G      0 0
 ```
 
-Don't update the version of Kraken's DB without talking to everyone: we would
-need to reprocess all older data to handle taxonomy changes and to keep
-everything consistent.  Also keep this in sync with the version of the taxonomy
-in prepare-dashboard-data.sh.
+The 85G comes from starting with the 78GB listed for the Standard kraken DB at
+https://benlangmead.github.io/aws-indexes/k2 and then adding 6.5GB for the
+custom human virus and human bowtie DBs.
+
+See "Updating the Taxnonomy and Kraken DB" below if it's out of date and you'd like
+it not to be.
 
 ### BowTie2
 
@@ -406,24 +407,30 @@ terminal.
 
 ## Operations
 
-We normally run this pipeline on EC2 instances, generally c6a.8xlarge ones.
+We normally run this pipeline on c6a.16xlarge EC2 instances.  We need 128GB+ of
+memory; the binding constraint is that the Standard Kraken DB is 78GB.
 
 ### Rerunning for all Bioprojects
 
-The pipeline runs serially within each bioproject. It would be possible to
-extend it to be much more parallel, but we haven't felt the need yet.
-
-When we parallize it we usually do it over bioprojects, by running
-./reprocess-bioprojects.py and specifying a maximum number of parallel jobs.
-For example:
+While ./run.py runs serially for a single bioproject, we can run in parallel at
+the sample level with ./reprocess-bioprojects.py. You specify a maximum number
+of parallel jobs.  For example:
 
 ```
-mgs-pipeline $ ./reprocess-bioprojects.py 12 prefix --run-arguments-here
+mgs-pipeline $ ./reprocess-bioprojects.py \
+    --max-jobs 12 \
+    --log-prefix prefix \
+    --sample-level \
+    --shuffle
+    -- \
+    --run-arguments-here \
 ```
 
 This will run the pipeline once for each bioproject, including restricted
 bioprojects if available in ../mgs-restricted.  If the stages you're running
-require a lot of memory or disk, use a number lower than 12, potentially 1.
+require a lot of disk, use a number lower than 12, potentially 1: the script
+doesn't know how "heavy" a job is, and will run out of disk space if you tell
+it to do do too much in parallel.
 
 Job output is under log/ in files named by the date and the prefix you supply.
 So if I ran the above on 2023-01-01 I'd expect to see files like:
@@ -438,17 +445,6 @@ log/2023-01-01.prefix.PRJNA966185
 
 If the job fails, the last line in the log file will start with "ERROR:" and
 then have the exit code.
-
-Usually it's fine to run one process per bioproject, but sometimes it can be
-faster to run one process per sample.  In that case, give
-`./reprocess-bioprojects.py` a `--sample-level` argument.
-
-TODO(jefftk): if we stick with this pipeline system long term then I think we
-want it to have a structure where there's one quick stage that determines what
-work needs doing and how heavy each task is, and then another that actually
-parallelizes it.  Right now the human running the pipline has to know too much
-about what this specific invocation is going to do if they want ideal
-performance.
 
 ### Screen Oversight
 
@@ -481,8 +477,8 @@ mgs-pipeline $ pipeline-operation/print-running-jobs.sh
  --bioproject PRJEB49260 --stages hvreads
 ```
 
-This prints, for every currently executing instance of the pipeline, what
-arguments it was started with.
+For every currently executing instance of ./run.py this prints the arguments it
+was started with.
 
 ### Regenerating Data
 
@@ -505,6 +501,38 @@ Normally the flow is:
 
 ### Updating the Taxnonomy and Kraken DB
 
-We've never done this yet, but the planned process is in
-https://github.com/naobservatory/mgs-pipeline/issues/65.  Once we do it I'll
-document it here.
+Before starting, check in with all other users of the pipeline, and ensure no
+one wants you to hold off.  Also check how recent the databases are on
+https://benlangmead.github.io/aws-indexes/k2.  If they're not recent, it may be
+worth waiting for the next update.
+
+Once you've decided to go ahead:
+
+1. Move human-viruses-raw.tsv, human-viruses.tsv, plus, within dashboard,
+   *.dmp, top_species_counts, and top_species_scratch into a scratch
+   location. Delete hvreads, readlengths, ribofrac, cladecounts and
+   allmatches.
+
+2. Update download-taxonomy.sh to pull the latest taxonomy.  Run the script.
+
+3. Run download-human-viruses.sh
+
+4. Put the year and month in reference-suffix.txt
+
+5. Reprocess the bioprojects we need to have up to date.  The command will look
+   something like:
+
+```
+./reprocess-bioprojects.py \
+   --log-prefix kraken-update \
+   --max-jobs 8 \
+   --shuffle \
+   --sample-level \
+   --bioprojects PROJECT_1,PROJECT1_,...PROJECT_N \
+   --
+```
+
+6. Manually compare the output to the previous generation.
+
+7. Consider whether we need to keep the previous generation data (or previous
+   previous etc) around.

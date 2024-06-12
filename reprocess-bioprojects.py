@@ -26,6 +26,7 @@
 import os
 import re
 import sys
+import random
 import datetime
 import argparse
 import subprocess
@@ -98,6 +99,9 @@ def parallelize(config, bioprojects, run_args):
             job_queue.append(prepare_job(
                 bioproject, config.log_prefix, None, args))
 
+    if config.shuffle:
+        random.shuffle(job_queue)
+            
     with ThreadPoolExecutor(max_workers=config.max_jobs) as executor:
         for job in job_queue:
             executor.submit(run_job, job)
@@ -132,6 +136,12 @@ def start():
         "--sample-level",
         action="store_true",
         help="Parallelize at the sample level instead of the bioproject level")
+
+    parser.add_argument(
+        "--shuffle",
+        action="store_true",
+        help="Run jobs in random order. Allows greater parallelism if "
+        "inputs vary dramatically in size")
 
     config = parser.parse_args(our_args)
 

@@ -32,7 +32,6 @@
 10314	Human herpesvirus 2 strain G
 10315	Human herpesvirus 2 strain HG52
 10316	Human herpesvirus 2 strain SA8
-10317	Cercopithecine alphaherpesvirus 2
 10325	Macacine alphaherpesvirus 1
 10335	Human alphaherpesvirus 3
 10338	Human herpesvirus 3 strain Dumas
@@ -45,7 +44,7 @@
 10369	Human herpesvirus 6 (strain GS)
 10370	Human herpesvirus 6 (strain Uganda-1102)
 10372	Human betaherpesvirus 7
-10376	Human gammaherpesvirus 4
+10376	human gammaherpesvirus 4
 10377	Human herpesvirus 4 strain B95-8
 10378	Human herpesvirus 4 strain RAJI
 10407	Hepatitis B virus
@@ -121,6 +120,7 @@
 10799	H-1 parvovirus
 10804	adeno-associated virus 2
 10805	Adeno-associated virus 2H
+10886	Mammalian orthoreovirus 3 Dearing
 10893	Broadhaven virus
 10913	Porcine rotavirus
 10915	Porcine rotavirus serotype 5/strain OSU
@@ -184,11 +184,11 @@
 11044	Rubella virus vaccine strain RA27/3
 11045	Rubella virus strain Therien
 11047	Equine arteritis virus
-11053	dengue virus type I
+11053	dengue virus type 1
 11057	Dengue virus 1 Thailand/AHF 82-80/1980
 11058	Dengue virus 1 Jamaica/CV1636/1977
 11059	Dengue virus 1 Nauru/West Pac/1974
-11060	Dengue virus type 2
+11060	dengue virus type 2
 11062	Dengue virus 2 Malaysia M2
 11063	Dengue virus 2 Malaysia M3
 11064	Dengue virus 2 Jamaica/1409/1983
@@ -196,19 +196,16 @@
 11066	Dengue virus 2 Puerto Rico/PR159-S1/1969
 11067	Dengue virus 2 Tonga/EKB194/1974
 11068	Dengue virus 2 Thailand/PUO-218/1980
-11069	Dengue virus type 3
-11070	Dengue virus type 4
+11069	dengue virus type 3
+11070	dengue virus type 4
 11072	Japanese encephalitis virus
 11073	Japanese encephalitis virus strain SA-14
 11074	Japanese encephalitis virus strain SA(V)
 11075	Japanese encephalitis virus strain JAOARS982
 11076	Japanese encephalitis virus strain Nakayama
-11077	Kunjin virus
-11078	Kunjin virus (STRAIN MRM61C)
 11079	Murray Valley encephalitis virus
-11080	Saint Louis encephalitis virus
+11080	St. Louis encephalitis virus
 11081	St. Louis encephalitis virus (strain MS1-7)
-11082	West Nile virus
 11083	Powassan virus
 11084	Tick-borne encephalitis virus
 11085	Langat virus
@@ -219,7 +216,6 @@
 11090	Yellow fever virus 17D
 11092	Kumlinge virus
 11094	Negishi virus
-11103	Hepacivirus C
 11104	Hepatitis C virus (isolate 1)
 11105	Hepatitis C virus (isolate BK)
 11106	Hepatitis C virus (isolate EC10)
@@ -271,7 +267,7 @@
 11237	Measles virus strain IP-3-CA
 11238	Measles virus strain HU2
 11239	Measles virus strain Yamagata-1
-11250	Human orthopneumovirus
+11250	human respiratory syncytial virus
 11251	Human respiratory syncytial virus (subgroup B / strain 18537)
 11252	Human respiratory syncytial virus (strain RSB642)
 11253	Human respiratory syncytial virus (strain RSB1734)
@@ -283,7 +279,6 @@
 11259	Human respiratory syncytial virus A2
 11260	Human respiratory syncytial virus A strain Long
 11261	Human respiratory syncytial virus strain RSS-2
-11269	Marburg marburgvirus
 11272	Chandipura virus
 11273	Chandipura virus I653514
 11277	Vesicular stomatitis Indiana virus
@@ -317,15 +312,12 @@
 11606	Puumala virus - Sotkamo
 11607	Sapporo rat virus
 11610	Seoul virus SR11
-11620	Lassa mammarenavirus
 11621	Lassa virus GA391
 11622	Lassa virus Josiah
-11623	Lymphocytic choriomeningitis mammarenavirus
 11624	Lymphocytic choriomeningitis virus (strain Armstrong)
 11625	Lymphocytic choriomeningitis virus (strain Pasteur)
 11626	Lymphocytic choriomeningitis virus (strain Traub)
 11627	Lymphocytic choriomeningitis virus (strain WE)
-11628	Machupo mammarenavirus
 11641	Human foamy virus
 11644	Simian foamy virus (TYPE 3 / STRAIN LK3)
 11676	Human immunodeficiency virus 1
@@ -381,7 +373,7 @@
 11984	Southampton virus
 12060	Echovirus E9
 12062	Echovirus E6
-12063	Human parechovirus 1
+12063	parechovirus A1
 12067	Coxsackievirus A9
 12068	Human coxsackievirus A9 (strain Griggs)
 12069	Coxsackievirus A21
@@ -564,7 +556,6 @@
 35295	Echovirus E4
 35300	Human astrovirus 4
 35304	Bunyamwera virus
-35310	Bwamba orthobunyavirus
 35333	Bovine rotavirus A
 35336	Rotavirus G4
 35337	Canine rotavirus
@@ -621,6 +612,7 @@
 37137	Simian rotavirus A/SA11-both
 37141	Small round structured virus
 37296	Human gammaherpesvirus 8
+37323	Orthoreovirus S1
 37324	Rotavirus B37
 37754	Human papillomavirus unidentified type (ICPX1)
 37755	Human papillomavirus unidentified type (RTRX1)
@@ -636,6 +628,8 @@
 37957	human papillomavirus 36
 37958	Human papillomavirus 37
 37959	Human papillomavirus 38
+38170	Avian orthoreovirus
+38171	Avian reovirus strain S1133
 38416	Simian adenovirus 19
 38767	Lyssavirus duvenhage
 38804	Yaba monkey tumor virus
@@ -718,8 +712,8 @@
 44269	Seoulvirus R22
 44419	Sindbis-like virus
 44572	Porcine rotavirus CN86
+44755	New York virus
 45101	Echovirus E25
-45219	Guanarito mammarenavirus
 45240	human papillomavirus 68
 45408	Bovine rotavirus 993/83
 45410	Hepatitis B virus adw4/Brazil/isolate w4b
@@ -754,7 +748,6 @@
 46941	Human adenovirus 46
 46942	Human adenovirus 47
 46943	Human adenovirus 38
-47300	Turkish sheep encephalitis virus
 47501	Echovirus E13
 47502	Echovirus E14
 47503	Echovirus E15
@@ -800,8 +793,8 @@
 57202	Human rotavirus (strain HOU8697)
 57278	Human herpesvirus 7 strain JI
 57279	Human herpesvirus 7 strain MUK
-57482	European bat 1 lyssavirus
-57483	European bat 2 lyssavirus
+57482	European bat lyssavirus 1
+57483	European bat lyssavirus 2
 57579	Adeno-associated virus - 4
 57726	Rotavirus CC86
 58535	Deer tick virus
@@ -811,9 +804,9 @@
 59563	Ilheus virus
 60877	Tonate virus
 60878	Bijou Bridge virus
+61431	Avian reovirus strain 1733
 61673	Porcine endogenous retrovirus
 61856	Human rotavirus ID45/2
-63330	Hendra henipavirus
 63421	Swine hepatitis E virus
 63746	Hepatitis C virus (isolate H77)
 64285	Rio Bravo virus
@@ -881,6 +874,7 @@
 76590	Swine rotavirus strain S8
 76591	Human rotavirus strain L5
 76592	Human rotavirus strain RJ25
+77153	Muscovy duck reovirus
 79064	Human rotavirus strain S12/85
 79065	Human rotavirus strain NnB1
 79692	Human respiratory syncytial virus B1
@@ -902,6 +896,7 @@
 84272	Sindbis-like virus YN87448
 85755	Human adenovirus 7a
 86107	Coxsackievirus A6
+86782	Amur virus
 88059	Human adenovirus 19a
 88060	Human adenovirus 19p
 90011	Enterovirus Stuttgart 97
@@ -950,6 +945,9 @@
 104346	Human calicivirus strain BAV/2.1/98/DEU
 104347	Human calicivirus strain HSS/2/98/DEU
 104348	Human calicivirus strain BRA/2.1/98/DEU
+104577	Amur virus AMR/4234
+104578	Amur virus AMR/4309
+104579	Amur virus AMR/4313
 104624	Human rotavirus RCU-25
 104625	Human rotavirus RCU-37
 104626	Human rotavirus RCU-55
@@ -983,6 +981,8 @@
 114654	DG-75 Murine leukemia virus
 114769	Cynomolgus Epstein-Barr Virus Si-IIA
 114770	Cynomolgus Epstein-Barr Virus A4
+118025	ARV-176
+118026	ARV-138
 118044	Untyped enterovirus CT87-7122
 118045	Untyped enterovirus CT87-7123
 118046	Untyped enterovirus OK85-6388
@@ -993,7 +993,6 @@
 120087	A-2 plaque virus
 120381	human papillomavirus 87
 120686	human papillomavirus 71
-121791	Nipah henipavirus
 121794	Human rotavirus B strain CAL-1
 122389	Human calicivirus SRSV-Gst/98/CH
 122390	Human calicivirus SRSV-Ba/98/CH
@@ -1069,6 +1068,8 @@
 138950	Enterovirus C
 138951	Enterovirus D
 139395	Human rotavirus KGJ2000
+139873	Avian orthoreovirus strain 601G
+139874	Avian orthoreovirus strain 916
 140024	Hepatitis G virus isolate PEI
 141265	Human rotavirus SC185
 141270	Bovine Rotavirus Strain Hg18
@@ -1084,7 +1085,7 @@
 147676	rhinovirus A45
 147677	rhinovirus B52
 147678	Rhinovirus B69
-147679	Rhinovirus B48
+147679	rhinovirus B48
 147680	rhinovirus B37
 147681	rhinovirus B6
 147683	rhinovirus B42
@@ -1177,7 +1178,6 @@
 153244	Human calicivirus NLV/Berlin 211-2/1999/DE
 153245	Human calicivirus NLV/Schwerin 218/1999/DE
 153246	Human calicivirus NLV/Magdeburg 225/1999/DE
-153301	Baboon cytomegalovirus OCOM4-37
 154120	Crimean-Congo hemorrhagic fever virus strain BA88166
 154633	Human herpesvirus 3 VZV-32
 155429	Enterovirus TF/SIN/000704
@@ -1194,7 +1194,7 @@
 160797	Elephantpox virus
 161239	Human rotavirus HMG035
 161240	Rotavirus A isolates
-162145	Human metapneumovirus
+162145	human metapneumovirus
 162161	Hantaan virus 84FLi
 164246	Seoul virus Hb8610
 164247	Hantaan virus E142
@@ -1245,6 +1245,10 @@
 170527	Measles virus genotype D6
 170528	Measles virus genotype D8
 170529	Measles virus genotype D7
+170954	Amur virus Solovey/AP61/1999
+170955	Amur virus Solovey/AP63/1999
+170956	Amur virus Primorye/H1/2000
+170957	Amur virus Primorye/H2/2000
 171264	Measles virus genotype D3
 171370	human papillomavirus 86
 171615	Bovine rotavirus B-11
@@ -1280,6 +1284,9 @@
 172028	Simian picornavirus 7
 172038	Simian agent 5
 172148	Alkhumra hemorrhagic fever virus
+172275	Hantavirus Amur/1166
+172276	Hantavirus Amur/1169
+172277	Hantavirus Amur/680
 172314	Ljungan virus
 172315	Ljungan virus 87-012
 172316	Ljungan virus 174F
@@ -1311,11 +1318,45 @@
 173934	Human calicivirus NLV/Berlin/495/00/DE
 175567	Simian adenovirus 25
 175568	Simian adenovirus 24
-175569	Simian adenovirus E22
+175569	simian adenovirus 22
 176283	Echovirus 5 (strain Noyce)
 176284	Echovirus 30 (strain Bastianni)
 176933	Human calicivirus HU/NLV/Borna 185/00/DE
 177069	Human calicivirus NLV/C59/99
+177311	Avian reovirus GEI11 97M
+177312	Avian reovirus GEL02 96U
+177313	Avian reovirus GEL04 97T
+177314	Avian reovirus GEL07 97M
+177315	Avian reovirus GEL08 97M
+177316	Avian reovirus GEL14 98T
+177317	Avian reovirus GEL15 00M
+177318	Avian reovirus NLA07 96M
+177319	Avian reovirus NLA08 96M
+177320	Avian reovirus NLA10 96M
+177321	Avian reovirus NLA16 96U
+177322	Avian reovirus NLA17 96U
+177323	Avian reovirus NLA18 97M
+177324	Avian reovirus NLI01 80M
+177325	Avian reovirus NLI19 97M
+177326	Avian reovirus NLI20 98M
+177329	Avian reovirus NLA09 96M
+177330	Avian reovirus NLA11 96M
+177331	Avian reovirus NLA14a96T
+177332	Avian reovirus NLA14b96T
+177333	Avian reovirus NLI03 93T
+177334	Avian reovirus NLI21 98H
+177343	Avian reovirus GEI09 97M
+177344	Avian reovirus GEI10 97M
+177345	Avian reovirus GEL01 96T
+177346	Avian reovirus GEL03 97T
+177347	Avian reovirus GEL05 97M
+177348	Avian reovirus GEL06 97M
+177349	Avian reovirus GEL12 98M
+177350	Avian reovirus GEL13a98M
+177351	Avian reovirus GEL13b98M
+177352	Avian reovirus NLA13 96T
+177353	Avian reovirus NLI02 98M
+177354	Avian reovirus NLI12 96M
 177895	71D1252 virus
 177898	78V3531 virus
 177899	Me Tri virus
@@ -1400,7 +1441,6 @@
 186540	Sudan ebolavirus
 186541	Tai Forest ebolavirus
 186636	Norwalk-like virus Sw/NLV/VA34/1998/NL
-186677	Hepevirus
 186843	Human calicivirus NLV/DIJON171/96
 186878	Human calicivirus NLV/Steinbach/EG/2001/CA
 187385	Human calicivirus NLV/Szeged-Algyo/HUNo1/1998/HUN
@@ -1477,7 +1517,7 @@
 194656	Norwalk-like virus Hu/NLV/GII/564/US
 194958	Porcine endogenous retrovirus A
 194959	Porcine endogenous retrovirus B
-194965	Aichivirus B
+194965	Kobuvirus bejaponia
 195055	Human parechovirus 3
 195475	Bovine rotavirus G1
 195476	Bovine rotavirus G6
@@ -1509,7 +1549,8 @@
 196220	Human calicivirus NLV/Sagunt/222/2001/Sp
 196222	Human calicivirus NLV/Valencia/426/2002/Sp
 196223	Human calicivirus NLV/Benetusser/453/2002/Sp
-198503	Simian adenovirus 21
+198038	Goose reovirus
+198503	simian adenovirus 21
 198799	Hantaan virus KHB/HFRS/Pat#A3
 198800	Hantaan virus KHB/HFRS/Pat#A2
 198801	Hantaan virus KHB/HFRS/Pat#A12
@@ -1522,8 +1563,8 @@
 200686	Rotavirus GB 5679
 201444	Aracatuba virus
 202250	human papillomavirus 89
-202812	Adeno-associated virus - 7
-202813	Adeno-associated virus - 8
+202812	adeno-associated virus 7
+202813	adeno-associated virus 8
 204269	Great Island virus
 204519	Avian rotavirus RK3
 204932	Caprine rotavirus A
@@ -1702,7 +1743,7 @@
 235413	SARS coronavirus Sin2677
 235414	SARS coronavirus Sin2500
 235455	Adeno-associated virus 9
-235456	Adeno-associated virus 10
+235456	adeno-associated virus 10
 235457	Adeno-associated virus 11
 235458	Adeno-associated virus 12
 235544	Norovirus genogroup 1 isolates
@@ -1772,6 +1813,13 @@
 253433	SARS coronavirus PUMC01
 253434	SARS coronavirus PUMC02
 253435	SARS coronavirus PUMC03
+253446	Avian orthoreovirus strain 1017-1
+253447	Avian orthoreovirus strain 2408
+253448	Avian orthoreovirus strain 601SI
+253449	Avian orthoreovirus strain 919
+253450	Avian orthoreovirus strain OS161
+253451	Avian orthoreovirus strain R2/TW
+253452	Avian orthoreovirus strain T6
 253457	Human calicivirus NV/CCS114/1996/VE
 253634	SARS coronavirus HB
 255194	SARS coronavirus SoD
@@ -2128,6 +2176,7 @@
 286072	Porcine endogenous retrovirus C/A
 286296	Norwalk virus NV/hokkaido/C-39/04/JP
 286297	Norwalk virus NV/hokkaido/C-40/04/JP
+286541	Soochong virus-1
 286545	Norovirus NLV/IF1998/2003/Iraq
 286546	Norovirus NLV/IF2036/2003/Iraq
 287733	Norovirus Hu/NLV/E3/1997/Crete
@@ -2253,7 +2302,7 @@
 291171	Human norovirus Hu/NV/I/Hualien/CYC/2003/TW
 291175	Sapovirus Hu/Dresden/pJG-Sap01/DE
 291199	Norovirus Hu/SI001386/Slovenia
-291484	Hepeviridae
+291484	Hepatitis E virus
 291613	SARS coronavirus GD322
 291966	Norovirus Hu/G2/Fin-Upinniemi/1998/Finland
 292226	Avian rotavirus AvRV-1
@@ -2334,6 +2383,7 @@
 299333	Norovirus Hu/NLV/VannesL169/2000/France
 299335	SARS coronavirus B039
 299386	Equine arteritis virus Bucyrus
+299807	Avian orthoreovirus strain 918
 300726	Norovirus Chanthaburi-75/Thailand
 300727	Norovirus NongKhai-22/Thailand
 300728	Norovirus NongKhai-51/Thailand
@@ -2615,7 +2665,6 @@
 306586	Enterovirus A89
 306587	Enterovirus A91
 306588	Enterovirus A76
-307044	West Nile virus strain 385-99
 307197	Norovirus Hu/C14/2002/AU
 308418	Rotavirus A human/R239/G10P3
 308425	Human rotavirus R291 G8
@@ -2674,6 +2723,10 @@
 320718	Norovirus Hu/G2/Fin-Savi/1999/Finland
 321147	SARS coronavirus BJ162
 321149	SARS coronavirus BJ202
+321454	Avian reovirus 99G
+321455	Avian reovirus ARV17
+321456	Duck reovirus strain DRV044
+321457	Duck reovirus strain DRF
 321934	Human adenovirus 50 prototype strain Wan
 322681	Human adenovirus RKI-2797/04
 323225	Norovirus Hu/NLV/II/Hualien/DY/2003/TW
@@ -2791,7 +2844,7 @@
 330537	Norovirus Hu/GII/486/2004/HK
 330538	Norovirus Hu/GII/131/2004/HK
 330539	Norovirus Suminoe oyster/Beibu Gulf/2004/China
-332179	Human adenovirus 52
+332179	human adenovirus 52
 332193	Vaccinia Virus Acambis 3000 MVA
 332476	Enterovirus sp. GW0-3
 332477	Enterovirus sp. GW0-9
@@ -2865,8 +2918,8 @@
 333751	Human papillomavirus type 2
 333752	human papillomavirus 27
 333753	human papillomavirus 57
-333759	Human papillomavirus type 10
-333760	Human papillomavirus type 16
+333759	human papillomavirus 10
+333760	Human papillomavirus 16
 333761	human papillomavirus 18
 333762	Human papillomavirus type 26
 333763	Human papillomavirus type 32
@@ -2881,7 +2934,6 @@
 334203	Mupapillomavirus 1
 334210	human papillomavirus 62
 334514	Human papillomavirus type 38b
-334584	Sapovirus Ehime1107/2002/JP
 334591	Porcine rotavirus A strain 134/04-15
 334779	Norovirus Bo/Aulendorf22/2003/DE
 334780	Norovirus Bo/Aulendorf20/2003/DE
@@ -3075,6 +3127,7 @@
 342939	Human calicivirus NV/GII/Stockholm/0736/2003/SE
 343462	Human adenovirus 11p
 343463	Human adenovirus 11a
+343870	Catacamas virus
 343995	Norovirus Hu/Showa/1/05/JP
 343996	Norovirus Hu/Tamagawa/1/05/JP
 343997	Norovirus Hu/Tamagawa/2/05/JP
@@ -3488,7 +3541,7 @@
 372651	Norovirus Hu/GII/ICB1443/1996/Brazil
 372688	Norovirus Hu/GII/ICB1430/1996/Brazil
 372784	unclassified Enterovirus B
-372785	unclassified Human enterovirus C
+372785	unclassified enterovirus C
 373193	Xenotropic MuLV-related virus VP62
 374467	Seoul virus B-1
 374507	Human rotavirus G9 isolate F45
@@ -3887,7 +3940,9 @@
 404328	Norovirus Hu/GII-4/10831/2005/Bra
 404329	Norovirus Hu/GII-4/10942/2005/Bra
 405747	Norovirus Hu/GII-4/Osaka/1998/JPN
-406269	West Nile virus strain PTRoxo
+406769	Human T-cell leukemia virus 3 (strain Pyl43)
+407101	Muscovy duck reovirus 89330
+407102	Muscovy duck reovirus S14
 407134	Yellow fever virus strain Ghana/Asibi/1927
 407135	Yellow fever virus strain French neurotropic vaccine
 407136	Yellow fever virus isolate Ivory Coast/1999
@@ -4608,7 +4663,6 @@
 442851	Simian enterovirus SV4
 442852	Simian enterovirus SA4
 442853	Simian enterovirus SV28
-442855	Simian enterovirus 19
 443239	Human coronavirus HKU1 (isolate N1)
 443240	Human coronavirus HKU1 (isolate N2)
 443241	Human coronavirus HKU1 (isolate N5)
@@ -5467,7 +5521,6 @@
 469193	Norovirus Hu/T2b/JPN
 469194	Norovirus Hu/T3/JPN
 469195	Norovirus Hu/T4/JPN
-469474	West Nile virus crow/New York/3356/2000
 469476	Human immunodeficiency virus type 1 02CD.KTB050
 469959	Enterovirus A92
 470422	Human hepatitis A virus Hu/Germany/GBM/1976
@@ -5882,6 +5935,7 @@
 482626	Norovirus Hu/GGII-4/Alzira/1695/06/Sp
 482627	Norovirus Hu/GGII-4/Benidorm/1707/06/Sp
 482820	Lake Victoria marburgvirus - Ozolin
+483046	Dandenong virus
 483220	Measles virus MVs/Amsterdam.NLD/31.07
 483221	Measles virus MVi/Amsterdam.NLD/33.07/1
 483222	Measles virus MVi/Amsterdam.NLD/33.07/2
@@ -6091,7 +6145,6 @@
 499190	Norovirus Hu/GII.b/8503/2007/IRL
 499191	Norovirus GII.1
 499193	Norovirus GII.6
-499556	Chapare mammarenavirus
 499854	New Mapoon virus
 500025	Human enterovirus 71 H0/6438/418/2006
 500026	Human enterovirus 71 EP/2063/2001
@@ -6125,6 +6178,32 @@
 500054	Human enterovirus 71 H0/6290/135/2006
 500055	Human enterovirus 71 H0/6344/348/2006
 500056	Human enterovirus 71 H0/6364/255/2006
+500064	Avian orthoreovirus chicken/AR/SEP-802/05
+500065	Avian orthoreovirus chicken/AR/SEP-804/05
+500066	Avian orthoreovirus chicken/AR/SEP-840/05
+500067	Avian orthoreovirus chicken/AR/SEP-841/05
+500068	Avian orthoreovirus chicken/AR/SEP-842/05
+500069	Avian orthoreovirus chicken/AR/SEP-843/05
+500070	Avian orthoreovirus chicken/AR/SEP-853/06
+500071	Avian orthoreovirus chicken/AR/SEP-854/06
+500072	Avian orthoreovirus chicken/CA/SEP-917/06
+500073	Avian orthoreovirus chicken/GA/SEP-790/05
+500074	Avian orthoreovirus chicken/GA/SEP-849/06
+500075	Avian orthoreovirus chicken/GA/SEP-851/06
+500076	Avian orthoreovirus chicken/GA/SEP-855/06
+500077	Avian orthoreovirus chicken/MO/SEP-798/05
+500078	Avian orthoreovirus chicken/MO/SEP-801/05
+500079	Avian orthoreovirus chicken/NC/SEP-836/05
+500080	Avian orthoreovirus chicken/NC/SEP-837/05
+500081	Avian orthoreovirus chicken/NC/SEP-838/05
+500082	Avian orthoreovirus turkey/MO/SEP-816/05
+500083	Avian orthoreovirus turkey/MO/SEP-819/05
+500084	Avian orthoreovirus turkey/MO/SEP-827/05
+500085	Avian orthoreovirus turkey/MO/SEP-828/05
+500086	Avian orthoreovirus turkey/NC/SEP-832/05
+500087	Avian orthoreovirus turkey/NC/SEP-833/05
+500088	Avian orthoreovirus turkey/NC/Sep-835/05
+500089	Avian orthoreovirus turkey/WI/SEP-847/05
 500113	Avian rotavirus A isolates
 500114	Avian rotavirus chicken/AR/SEP-803/05
 500115	Avian rotavirus chicken/AR/SEP-804/05
@@ -6802,7 +6881,6 @@
 515413	Hepatitis E virus human/3f/Fr-27/France/2006
 516532	Norovirus Hu/Akita-City/2/2008/JP
 516714	Buffalo rotavirus BR118
-516993	Avian hepatitis E virus chicken/United States/Meng
 517024	Norovirus Han River/GI/Dukpoong/Aug01/2005/KOR
 517025	Norovirus Han River/GI/Dukpoong/Feb01/2006/KOR
 517026	Norovirus Han River/GI/Dukpoong/Feb02/2006/KOR
@@ -7773,6 +7851,7 @@
 564284	HIV-1 M:CRF02_04SN.MS842
 564285	HIV-1 M:CRF02_04SN.MS869
 564334	HIV-1 M:B_04SN.MS019
+564798	Avian orthoreovirus turkey/NC/SEP-R44/03
 564799	Norovirus Hu/GII.4a/Sofia367/2007/BGR
 565302	Human adenovirus B1
 565303	Human adenovirus B2
@@ -7829,7 +7908,7 @@
 565368	Norovirus GII.5
 565537	human papillomavirus 108
 565567	Norovirus env/GGI.2/958/2007/ITA
-565995	Bundibugyo ebolavirus
+565995	Bundibugyo virus
 566029	Human rotavirus P6
 566261	Norovirus Hu/GII-2/teacher 1/OB4/2007/UK
 566263	Norovirus Hu/GII-3/customer 1/OB1/2007/UK
@@ -8399,42 +8478,42 @@
 580580	HIV-1 M:B_04NOVAX41
 582384	Enterovirus B98
 585060	Simian adenovirus 26
-585061	Simian adenovirus 27
-585062	Simian adenovirus 28
-585063	Simian adenovirus 29
+585061	simian adenovirus 27
+585062	simian adenovirus 28
+585063	simian adenovirus 29
 585064	Simian adenovirus 30
 585065	Simian adenovirus 31
-585066	Simian adenovirus 32
-585067	Simian adenovirus 33
+585066	simian adenovirus 32
+585067	simian adenovirus 33
 585068	Simian adenovirus 34
-585069	Simian adenovirus 35
+585069	simian adenovirus 35
 585070	Simian adenovirus 36
 585071	Simian adenovirus 37
 585072	Simian adenovirus 38
 585073	Simian adenovirus 39
 585074	Simian adenovirus 40
-585075	Simian adenovirus 41
+585075	simian adenovirus 41
 585076	Simian adenovirus 42
 585077	Simian adenovirus 43
 585078	Simian adenovirus 44
 585079	Simian adenovirus 45
-585080	Simian adenovirus 46
-585081	Simian adenovirus 47
+585080	simian adenovirus 46
+585081	simian adenovirus 47
 585082	Simian adenovirus 25.2
-585083	Simian adenovirus 27.1
-585084	Simian adenovirus 27.2
-585085	Simian adenovirus 28.1
-585086	Simian adenovirus 28.2
+585083	simian adenovirus 27.1
+585084	simian adenovirus 27.2
+585085	simian adenovirus 28.1
+585086	simian adenovirus 28.2
 585087	Simian adenovirus 31.1
 585088	Simian adenovirus 31.2
-585089	Simian adenovirus 35.1
-585090	Simian adenovirus 35.2
+585089	simian adenovirus 35.1
+585090	simian adenovirus 35.2
 585091	Simian adenovirus 37.1
 585092	Simian adenovirus 37.2
 585093	Simian adenovirus 40.1
 585094	Simian adenovirus 40.2
-585095	Simian adenovirus 41.1
-585096	Simian adenovirus 41.2
+585095	simian adenovirus 41.1
+585096	simian adenovirus 41.2
 585097	Simian adenovirus 42.1
 585098	Simian adenovirus 42.2
 585099	Simian adenovirus 42.3
@@ -8520,7 +8599,6 @@
 585807	Norovirus GII/Hu/IN/2007/GII.P4_GII.4_DenHaag2006b/Pune-PC56
 585808	Norovirus Hu/Pune/PC57/2007/India
 585809	Norovirus Hu/Pune/PC58/2007/India
-586419	Human cosavirus A
 586420	Human cosavirus B
 586426	Human cosavirus A*-0002
 586427	Human cosavirus A*-0008
@@ -8550,10 +8628,6 @@
 586451	Human cosavirus A*-6178
 586452	Human cosavirus A*-6187
 586453	Human cosavirus A*-6341
-586454	Human cosavirus A1
-586455	Human cosavirus A2
-586456	Human cosavirus A3
-586457	Human cosavirus A4
 586458	Human cosavirus A4-NS
 586462	Human cosavirus D*-0960
 586463	Human cosavirus D*-0961
@@ -8676,7 +8750,6 @@
 588533	Norovirus Hu/GII/GZ-1/2008/CHN
 588534	Norovirus Hu/GII/GZ-2/2008/CHN
 588535	Norovirus Hu/GII/GZ-3/2008/CHN
-589919	Human cosavirus E1
 590402	Norovirus Hu/GII/BC728/07-2007/CAN
 592333	Human cosavirus A*-5046
 592334	Human cosavirus A*-5048
@@ -8706,10 +8779,6 @@
 598656	Norovirus oyster/GI.1/1B/Stromstad/Sweden
 598657	Norovirus oyster/GI.1/2/Stromstad/Sweden
 598658	Norovirus oyster/GII.3/4/Stromstad/Sweden
-598672	West Nile virus strain PT6.16
-598673	West Nile virus strain PT5.2
-598674	West Nile virus strain PT6.5
-598675	West Nile virus strain PT6.39
 602074	Human parechovirus 8
 608618	Norovirus Kandy/101/2005/LKA
 608619	Norovirus Kandy/108/2005/LKA
@@ -9086,6 +9155,7 @@
 638288	Rotavirus A Hu/Ha100/2008/Cuba/G9P[8]
 638299	Rotavirus A strain 116E/AG
 638313	Human bocavirus 3
+638799	Duck reovirus strain HC/China
 638925	Norovirus Hu/GII.4/cruiseship/2007/ZAF
 640134	Norovirus Hu/Tokyo/7882/2007/JPN
 640135	Norovirus Hu/Tokyo/7860/2007/JPN
@@ -9262,7 +9332,6 @@
 648237	Human parvovirus B19 strain HV
 648238	Human parvovirus B19 isolate AU
 648242	Adeno-associated virus 2 Srivastava/1982
-649188	Lujo mammarenavirus
 649604	Banna virus strain JKT-6423
 649733	Norovirus Bo/DijonA173/2006/FR
 649734	Norovirus Bo/DijonA247/2007/FR
@@ -9281,7 +9350,6 @@
 649906	Norovirus Hu/GII/NSC253/PA/1993/BRA
 649907	Norovirus Hu/GII/NSC281/PA/1993/BRA
 650120	Rotavirus A Hu/Vietnam/2008/G3P[8]
-650129	Encephalomyocarditis virus strain Rueckert
 650130	Human rhinovirus 89 ATCC VR-1199
 650132	Aichi virus A846/88
 650993	Norovirus Hu/GII.4/Chungnam(1-32)/2008/Kor
@@ -10010,6 +10078,7 @@
 679444	Norovirus Hu/GI.3/JKPG_882/SWE/2007
 679445	Norovirus Hu/GI.3/JKPG_883/SWE/2007
 679655	Measles virus MVi/Okinawa.JPN/37.09[D8]
+679727	Duck reovirus NP03/CHN/2009
 680268	Norovirus groundwater/GI/HE-a-1/2007/KOR
 680269	Norovirus groundwater/GI/HE-b-1/2007/KOR
 680270	Norovirus groundwater/GI/HE-c-1/2007/KOR
@@ -10471,7 +10540,7 @@
 687873	Norovirus cattle/BV416/2008/BEL
 688436	Quaranjavirus quaranfilense
 688455	Salivirus NG-F1
-688699	Sandfly fever Turkey virus
+688699	sandfly fever Turkey virus
 689403	Human bocavirus 1
 689698	Hepatitis E virus Hu/03858/HKG/2009
 689699	Hepatitis E virus Hu/07598/HKG/2006
@@ -11010,6 +11079,7 @@
 703080	Norovirus Hu/GII.4/Novosibirsk/s416/2005/Ru
 703081	Norovirus Hu/GII.4/Novosibirsk/s625/2005/Ru
 703084	Norovirus Hu/GII.3/Nsk-s891/2006/RUS
+703175	Avian orthoreovirus turkey/CA/SEP-N605/08
 703633	Norovirus Hu/GII/IDH340/2008/IND
 703634	Norovirus Hu/GII/IDH422/2008/IND
 703635	Norovirus Hu/GII/IDH443/2008/IND
@@ -11912,7 +11982,7 @@
 722424	SARS coronavirus Rs_672/2006
 722763	Norovirus Hu/GII.4/New Orleans1805/2009/USA
 727977	Bat adenovirus TJM
-735496	Human papillomavirus type 114
+735496	human papillomavirus 114
 740941	Norovirus pig/GII/sw59/2009/CHN
 740942	Norovirus GII.19
 740943	Norovirus pig/GII.19/sw42/2009/CHN
@@ -12434,6 +12504,7 @@
 798604	Measles virus Mvs/Fukuoka.JPN/24.10/25[A]
 804298	JC polyomavirus type 2
 804310	JC polyomavirus type 3
+804315	JC polyomavirus type 4
 804442	JC polyomavirus type 6
 814922	Human adenovirus 14p1
 858367	Astrovirus MLB1 HK05
@@ -12854,7 +12925,6 @@
 876853	HIV-1 M:CRF06 1
 876854	HIV-1 M:CRF06 2
 879095	Hepatitis E virus rat/R68/DEU/2009
-879096	Hepatitis E virus rat/R63/DEU/2009
 879097	Hepatitis E virus type rat
 879186	Human adenovirus 57
 879549	Rotavirus A horse/CM3/IRL/2008/G3A
@@ -13109,7 +13179,7 @@
 909045	HIV-1 M:URF(G/CRF02/G/CRF02)_08TG.C7044
 909328	Human papillomavirus 149
 909329	Human papillomavirus 130
-909330	Human papillomavirus type 131
+909330	human papillomavirus 131
 909331	Human papillomavirus 132
 909332	Human papillomavirus 133
 909333	Human papillomavirus 134
@@ -13438,14 +13508,15 @@
 915380	Norovirus groundwater/GI/Jecheon-KU01-39/2008/KOR
 915381	Norovirus groundwater/GI/Muju-KW01-19/2008/KOR
 915382	Norovirus groundwater/GI/Yeongcheon-BU01-20/2008/KOR
-915425	Human papillomavirus type 101
+915425	human papillomavirus 101
 915426	Human papillomavirus 109
-915427	Human papillomavirus type 112
+915427	human papillomavirus 112
 915428	Human papillomavirus 116
 915429	Human papillomavirus 121
 925745	Norovirus Hu/GII.4/Beecroft/NSW305P/2009/AUS
 925746	Norovirus Hu/GII.4/Teralba/NSW881Z/2009/AUS
 925747	Norovirus Hu/GII.4/Turramurra/NSW892U/2009/AUS
+926004	Duck reovirus GZ/CHN/2007
 926043	Norovirus Hu/GII.4/Guangdong/372/2009/CHN
 926044	Norovirus Hu/GII.4/Guangdong/385/2009/CHN
 926045	Norovirus Hu/GII.4/Guangdong/389/2009/CHN
@@ -13505,8 +13576,8 @@
 930980	Norovirus oyster/THOYS019/THA/2005
 930981	Norovirus oyster/THOYS079/THA/2005
 931082	Measles virus MVs/Naharlagun.IND/33.10
-931209	Human papillomavirus type 128
-931210	Human papillomavirus type 129
+931209	human papillomavirus 128
+931210	human papillomavirus 129
 931249	Rotavirus A bat/4852/Kenya/2007
 931526	HIV-1 M:B_BM2010-1
 931527	HIV-1 M:B_BM2010-2
@@ -14039,7 +14110,7 @@
 1001057	Human parechovirus strain T83-2051
 1001058	Human parechovirus strain T82-659
 1001059	Human parechovirus 14
-1001061	Ljunganvirus 1
+1001061	parechovirus B1
 1001625	Norovirus Hu/GI/IDH1751/2009/IND
 1003835	Severe fever with thrombocytopenia syndrome virus
 1004012	Norovirus Hu/GII.4/Taipei-02A-5/09/TW
@@ -14247,8 +14318,6 @@
 1009451	Norovirus Hu/GII/Irbid/JORD342/2007/Jordan
 1009452	Norovirus Hu/GII/Irbid/JORD354/2007/Jordan
 1009453	Norovirus Hu/GI/Irbid/JORD232/2007/Jordan
-1009842	unclassified Hepeviridae
-1016879	Cutthroat trout virus
 1027469	Chandipura virus IB An 9978
 1027470	Chandipura virus Dak AR D 111125
 1028321	Murine norovirus GV/NIH-2409/2005/USA
@@ -14736,14 +14805,14 @@
 1069703	Norovirus Hu/GII-4/NTD89/2007/VNM
 1070408	Human papillomavirus 135
 1070409	Human papillomavirus 136
-1070410	Human papillomavirus type 137
+1070410	human papillomavirus 137
 1070411	Human papillomavirus 138
 1070412	Human papillomavirus 139
 1070413	Human papillomavirus 140
 1070414	Human papillomavirus 141
 1070415	Human papillomavirus 142
 1070416	Human papillomavirus 143
-1070417	Human papillomavirus type 144
+1070417	Human papillomavirus 144
 1070418	Human papillomavirus 145
 1070419	Human papillomavirus 146
 1070420	human papillomavirus 147
@@ -15312,6 +15381,7 @@
 1098907	Norovirus Hu/GII.6/9701/Osaka/JPN/2010
 1098908	Norovirus Hu/GII.7/9756/Nishimura/JPN/2010
 1098909	Norovirus Hu/GII.7/9765/Nishimura/JPN/2010
+1100878	Hokkaido virus
 1101371	Human adenovirus 67
 1101379	Norovirus Hu/GII.4/NV2860/VLC/ESP/2010
 1101380	Norovirus Hu/GII.4/NV2861/VLC/ESP/2010
@@ -16526,6 +16596,7 @@
 1170621	Norovirus Hu/GII/RJ5335/2002
 1170622	Norovirus Hu/GII/RJ83/1996
 1170623	Norovirus Hu/GII/RJ986/1997
+1171667	Duck reovirus
 1173217	Norovirus Hu/GI.6/Kingston/ACT160D/2010/AU
 1173523	Hepacivirus AK-2012
 1175308	Norovirus Hu/GI/10360/2010/VNM
@@ -16664,30 +16735,11 @@
 1179678	Rotavirus A IAL28xUK reassortant (UKg9IAL28)
 1179680	Rotavirus A WaxUK reassortant (UKg4Wa)
 1179682	Rotavirus A UK WT BR-3
-1181272	Human cosavirus A10
-1181273	Human cosavirus A11
-1181274	Human cosavirus A12
-1181275	Human cosavirus A13
-1181276	Human cosavirus A14
-1181277	Human cosavirus A15
-1181278	Human cosavirus A16
-1181279	Human cosavirus A17
-1181280	Human cosavirus A18
-1181281	Human cosavirus A19
-1181282	Human cosavirus A20
-1181283	Human cosavirus A5
-1181284	Human cosavirus A6
-1181285	Human cosavirus A7
-1181286	Human cosavirus A8
-1181287	Human cosavirus A9
 1181288	cosavirus D2
 1181289	cosavirus D3
 1181290	cosavirus D4
 1181291	cosavirus D5
-1181707	Human cosavirus A21
-1181708	Human cosavirus A22
 1181709	Human cosavirus A23
-1181710	Human cosavirus A24
 1181711	Human cosavirus A* isolates
 1182142	Norovirus Hu/GII.4/1997/USA
 1182143	Norovirus Hu/GII.4/Farmington Hills/2004/USA
@@ -17892,8 +17944,6 @@
 1212480	Norovirus Hu/GII/PA/QUI-65F3/BR/01-2010
 1212481	Norovirus Hu/GII/PA/QUI-71F5/BR/02-2010
 1212482	Norovirus Hu/GII/PA/QUI-78F1/BR/01-2009
-1213422	Ferret hepatitis E virus
-1213620	Bhanja virus
 1214023	Norovirus bovine Bo/Nov-1/USA/2010
 1214024	Norovirus bovine Bo/Nov-10/USA/2010
 1214025	Norovirus bovine Bo/Nov-12/USA/2010
@@ -17936,7 +17986,6 @@
 1214062	Norovirus bovine Bo/Nov-9/USA/2010
 1214955	Gyrovirus 4
 1215684	Norovirus Hu/GI.4/GuizhouCDC189/2010/CHN
-1216472	Bat hepevirus
 1216927	Sudan ebolavirus - Nakisamata
 1216928	Heartland virus
 1217117	Norovirus Hu/GI/RJ19164/BRA/2008
@@ -18106,6 +18155,7 @@
 1226505	Norovirus groundwater/G2.17/KW195-02/KOR/2008
 1226506	Norovirus groundwater/G2.4/KW005-01/KOR/2010
 1226507	Norovirus groundwater/G2.4/KW151-01/KOR/2008
+1227559	Goose orthoreovirus
 1227786	Norovirus swine/WGP182/USA/2009
 1227787	Norovirus swine/WGP379/USA/2009
 1227788	Norovirus swine/WGP395/USA/2009
@@ -18114,7 +18164,6 @@
 1227791	Norovirus swine/WGP68/USA/2009
 1227792	Norovirus swine/WGP87/USA/2009
 1227807	Norovirus Hu/GI.9/R5/2010/Nigeria
-1229326	Hepelivirus
 1231305	Norovirus Hu/GII/Shenzhen/JB030930009/2009/CHN
 1231306	Norovirus porcine/GII/SI2-1/Taiwan/2008
 1231307	Norovirus porcine/GII/SI2-17/Taiwan/2008
@@ -19061,7 +19110,7 @@
 1248347	Norovirus Hu/GII.4/352/Nizhny Novgorod/RUS/2012
 1248348	Norovirus Hu/GII.6/13041/Nizhny Novgorod/RUS/2004
 1248349	Norovirus Hu/GII.7/13957/Nizhny Novgorod/RUS/2006
-1248396	Human papillomavirus type 156
+1248396	Human papillomavirus 156
 1248470	Norovirus Hu/GII/EU44M2/MAR/2009
 1248471	Norovirus Hu/GII/EU51M1/MAR/2009
 1248472	Norovirus Hu/GII/EU66M2/MAR/2009
@@ -19952,7 +20001,7 @@
 1296571	HIV-1 M:D_NA127
 1297549	Human papillomavirus type 78
 1298362	Human betacoronavirus 2c England-Qatar/2012
-1298384	Baboon adenovirus 2
+1298384	baboon adenovirus 2
 1298385	Baboon adenovirus 3
 1298945	Norovirus Hu/GII.4/Taichung/12-BA-1/2012/TW
 1299830	Norovirus Hu/GI.1/223/2010/BFA
@@ -20176,7 +20225,7 @@
 1313161	Norovirus Hu/GII.13/10N4489/2010/NP
 1313162	Norovirus Hu/GII.13/10N4555/2010/NP
 1313163	Norovirus Hu/GII.13/10N4598/2010/NP
-1313215	Aichi virus 1
+1313215	aichivirus A1
 1313414	Norovirus Hu/GII.16/09N3546/2009/NP
 1315259	human papillomavirus 166
 1315262	human papillomavirus 163
@@ -20892,7 +20941,6 @@
 1326737	HIV-1 M:CRF13_N_ARN_pl_N2_2
 1326738	HIV-1 M:CRF13_N_ARN_pl_N7
 1327767	Rotavirus A N1509/India/2006
-1328106	Fox hepatitis E virus
 1330491	Cosavirus A
 1330524	Salivirus A
 1330996	Salivirus CH
@@ -21984,7 +22032,6 @@
 1401214	Norovirus Bo/DuzceN2/2010/TUR
 1401215	Norovirus Bo/SivasN6/2011/TUR
 1401315	Bat Hepatitis B virus
-1401445	Avian paramyxovirus goose/Shimane/67/2000
 1402995	Norovirus HU/NAV-003/2011/GH
 1402996	Norovirus HU/NAV-013/2011/GH
 1402997	Norovirus HU/NAV-017/2011/GH
@@ -22356,6 +22403,9 @@
 1428459	Mumps virus genotype J
 1428460	Mumps virus genotype K
 1428461	Mumps virus genotype K/M
+1428581	Upolu virus
+1429232	Escherichia phage P13771
+1429233	Escherichia phage P14437
 1431340	SARS bat coronavirus
 1431812	Norovirus water/GI.1/KE/Kibera301/2012
 1431813	Norovirus water/GI.1/KE/Kibera304/2012
@@ -23471,8 +23521,7 @@
 1509400	Simian adenovirus ch1
 1511733	Measles virus genotype D11
 1511785	pasivirus A2
-1511807	Rosavirus A2
-1511871	Primate bocaparvovirus 1
+1511807	rosavirus A2
 1511879	Gorilla bocavirus
 1511882	Human bocavirus 2c PK
 1511883	Human bocavirus 4 NI
@@ -23839,7 +23888,6 @@
 1529932	Norovirus GII/Hu/TW/2012/GII.Pe_GII.4_Sydney2012/Taipei/109
 1530249	unclassified Enterovirus A
 1530250	Enterovirus A119
-1530451	Fesavirus 2
 1531489	Rubella virus genotype 1B
 1531490	Rubella virus genotype 1C
 1532695	Norovirus GI.10
@@ -23878,6 +23926,7 @@
 1532846	Measles virus genotype D2
 1532847	Measles virus genotype G2
 1532848	Measles virus genotype H2
+1532849	Duck reovirus SD-12
 1532858	Norovirus HU/GII/13178556/AUS/2013
 1534467	Bainyik virus
 1534468	Torres virus
@@ -24217,6 +24266,7 @@
 1554483	Cosavirus A isolate Human/Pakistan/0553/-
 1554500	Hervey virus
 1559362	Quaranfil virus isolate Tick/Afghanistan/EGT377/1968
+1560340	Tusavirus 1
 1560517	Norovirus GII/Hu/JP/2007/GII.4/y06-V82-2
 1560518	Norovirus GII/Hu/JP/2007/GII.4/y06-V110-5
 1560519	Norovirus GII/Hu/JP/2008/GII.4/y07-V179-1
@@ -24483,6 +24533,7 @@
 1577715	Norovirus GVI.1/Ca/JPN/2012/M49-1
 1577717	HIV-1 M:CRF02_AG_4921HALD
 1578041	Mumps virus genotype I
+1578833	Adler virus
 1579660	Norovirus Hu/HuzhouNS13034/2013/CHN
 1579661	Norovirus Hu/HuzhouNS13045/2013/CHN
 1579662	Norovirus Hu/HuzhouNS13102/2013/CHN
@@ -24658,6 +24709,7 @@
 1612205	Norovirus Hu/G1/Hannover08163/2013/DE
 1615611	Respiratory syncytial virus type B
 1615758	Tofla virus
+1615774	HBV genotype B1
 1617938	Norovirus Hu/INC313846-D00/2012/CR
 1618317	Norovirus Hu/GII.6/1416Y001/CHN/2014
 1618318	Norovirus Hu/GII.P6_GII.6/1401Y107/CHN/2014
@@ -24720,8 +24772,6 @@
 1636504	Norovirus Hu/GII.17/41621/Guangzhou/2014/CHN
 1637514	Norovirus GII/RdRp-290/HN/CHN/2015
 1637515	Norovirus GII/RdRp-JV12/HN/CHN/2015
-1638959	Hepevirus Mystacina/New Zealand/2013/3
-1638960	Hepevirus Mystacina/New Zealand/2013
 1639691	Norovirus Hu/GII/BJQ1043/2012
 1639692	Norovirus Hu/GII/BJQ1099/2012
 1639693	Norovirus Hu/GII/BJQ1129/2012
@@ -25139,6 +25189,7 @@
 1648831	Norovirus Hu/GII.4/Miyagi/P12-19/Mar2010/JPN
 1648832	Norovirus Hu/GII.4/Miyagi/P12-20/Mar2010/JPN
 1648833	Norovirus Hu/GII.4/Miyagi/P12-21/Mar2010/JPN
+1649829	Cocle virus
 1650736	Human papillomavirus 204
 1651169	Vaccinia virus WAU86/88-1
 1658673	Norovirus Hu/GII.17/Gaithersburg/2014/US
@@ -25193,7 +25244,6 @@
 1667587	Papio ursinus cytomegalovirus
 1671798	Human papillomavirus type 54
 1673681	Gemycircularvirus C1c
-1674928	Hepevirus fur seal/AAUST73/BR/2012
 1675558	Norovirus GII/Hu/SI/2014/GII.4_Sydney2012/Ljubljana1006
 1675559	Norovirus GII/Hu/SI/2014/GII.4_Sydney2012/Ljubljana108
 1675560	Norovirus GII/Hu/SI/2014/GII.4_Sydney2012/Ljubljana1087
@@ -25234,13 +25284,7 @@
 1675595	Norovirus GII/Hu/SI/2014/GII.7/Ljubljana162
 1675596	Norovirus GII/Hu/SI/2014/GII.2/Ljubljana2132
 1675597	Norovirus GII/Hu/SI/2014/GII.3/Ljubljana677
-1678141	Orthohepevirus
-1678142	Piscihepevirus
 1678143	Paslahepevirus balayani
-1678144	Avihepevirus magniiecur
-1678145	Rocahepevirus ratti
-1678146	Chirohepevirus eptesici
-1678147	Piscihepevirus heenan
 1678225	Catu virus
 1678234	Guama virus
 1682340	Human papillomavirus 201
@@ -25980,6 +26024,7 @@
 1755416	Norovirus Hu/GII.7/NZ14361/2014/NZ
 1755417	Norovirus Hu/GII.7/NZ14804/2014/NZ
 1756286	Salivirus A SZ1
+1758150	Gokushovirus WZ-2015a
 1760871	Norovirus Hu/GII.17/CUHK-NS-405/HKG/2014
 1760872	Norovirus Hu/GII.17/CUHK-NS-469/HKG/2014
 1760873	Norovirus Hu/GII.17/CUHK-NS-472/HKG/2014
@@ -26339,7 +26384,6 @@
 1809695	Norovirus Hu/GI/JP/2016/GI.2/HS3
 1812175	Rubella virus genotype 1A
 1812176	Rubella virus genotype 1I
-1812178	Bovine calicivirus strain Jena
 1815542	Norovirus Hu/GII.2/OsakaJA1/2010/JP
 1815543	Norovirus Hu/GII.4/OsakaJA2/2010/JP
 1815544	Norovirus Hu/GII.3/OsakaJA3/2011/JP
@@ -26411,6 +26455,7 @@
 1820158	Human feces smacovirus 2
 1820159	Human feces smacovirus 3
 1820160	Human feces pecovirus
+1820326	Avian paramyxovirus 13 goose/Kazakhstan/5751/2013
 1821752	Encephalomyocarditis virus 83GR
 1834896	Norovirus Hu/GII.2/Akita8_2012_JP
 1834897	Norovirus Hu/GII.2/Miyagi1_2012_JP
@@ -26761,6 +26806,7 @@
 1849796	Norovirus Hu/GI.6/CJ02/2015/CHN
 1849797	Norovirus Hu/GI.6/CJ05/2015/CHN
 1849798	Norovirus Hu/GII.3/CJ08/2015/CHN
+1850255	Human CSF-associated densovirus
 1851069	Norovirus Hu/GII.4/Tokyo-TCN/2010/JP
 1851087	Kabuto mountain virus
 1851130	Human papillomavirus 187
@@ -27501,11 +27547,11 @@
 1961576	Norovirus 16-C-2/2016/GII.Pe/GII.4 Sydney_2012
 1961577	Norovirus 16-J-1/2016/GII.Pe/GII.4 Sydney_2012
 1962300	Simian mastadenovirus C
-1962726	unclassified Orthohepevirus
 1963789	Norovirus GII.3/2014/S140108/JPN
 1963790	Norovirus GII.3/2014/S141210/JPN
 1963791	Norovirus GII.3/2014/S150204/JPN
 1963792	Norovirus GII.3/2014/S150304/JPN
+1965018	Human PoSCV5-like circular virus
 1965344	LI polyomavirus
 1967313	Norovirus Hu/GI.4/KJP-137C-Venda-2015
 1967314	Norovirus Hu/GI.4/KJP-139C-Venda-2014
@@ -27526,7 +27572,6 @@
 1967329	Norovirus Hu/GII.Pe/KJP-33P-Venda-2014
 1967330	Norovirus Hu/GII.Pe/KJP-45P-Venda-2014
 1967331	Norovirus Hu/GII.Pe/KJP-70P-Venda-2014
-1968826	West Nile virus strain NY-99
 1971450	Norovirus GII/Hu/HK/2016/GII.P16_GII.2/CUHK-NS-1082
 1972279	Hepatitis C virus genotype 8
 1972280	Hepatitis C virus subtype 8a
@@ -27548,15 +27593,6 @@
 1977310	Rotavirus A Hu/Ash-B1017/2015/G9
 1977311	Rotavirus A Hu/Ash-B2051/2015/G9
 1979542	Norovirus Hu/GII/JP/2017/GII.P17_GII.17/Tokyo330021
-1980459	Bayou orthohantavirus
-1980467	Dobrava-Belgrade orthohantavirus
-1980471	Hantaan orthohantavirus
-1980486	Puumala orthohantavirus
-1980490	Seoul orthohantavirus
-1980491	Sin Nombre orthohantavirus
-1980494	Tula orthohantavirus
-1980519	Crimean-Congo hemorrhagic fever orthonairovirus
-1980521	Dugbe orthonairovirus
 1981960	Norovirus Hu/IDN/ITD2-2/2015/GII.2
 1981961	Norovirus Hu/IDN/ITD2-12/2015/GII.2
 1981962	Norovirus Hu/IDN/ITD2-24/2015/GII.2
@@ -27570,14 +27606,18 @@
 1981971	Norovirus Hu/IDN/ITD26-24/2016/GII.2
 1981972	Norovirus Hu/IDN/ITD26-25/2016/GII.2
 1981973	Norovirus Hu/IDN/ITD27-11/2015/GII.2
+1983771	Gemycircularvirus sp.
 1985415	Human associated gemyvongvirus 1
+1986030	Human gokushovirus
+1986031	Human gut gokushovirus
+1986032	Human gut microviridae SH-CHD12
+1986033	Human gut microviridae SH-CHD8
 1987017	Tibrovirus congo
 1987020	Ekpoma virus 1
 1987021	Ekpoma virus 2
 2003650	Cosavirus D
 2003651	Cosavirus E
 2003652	Cosavirus F
-2008762	Hepacivirus B
 2015015	Norovirus Hu/GII.P16-GII.2/330022/Tokyo/2016/JPN
 2015016	Norovirus Hu/GII.P16-GII.2/330023/Tokyo/2016/JPN
 2015017	Norovirus Hu/GII.P16-GII.2/330024/Tokyo/2016/JPN
@@ -27619,10 +27659,6 @@
 2021648	Norovirus Hu/GII/JP/2017/GII.17/FE149
 2021649	Norovirus Hu/GII/JP/2017/GII.17/FE150
 2021738	Hudisavirus sp.
-2021911	Barns Ness breadcrumb sponge hepe-like virus 1
-2021912	Barns Ness breadcrumb sponge hepe-like virus 2
-2021913	Barns Ness breadcrumb sponge hepe-like virus 3
-2021914	Barns Ness breadcrumb sponge hepe-like virus 4
 2025360	NY_014 poxvirus
 2025833	Norovirus GII.P15/GII.15
 2025835	Norovirus GII.P12
@@ -27679,13 +27715,15 @@
 2045080	rhinovirus C45
 2049440	Norovirus Hu/GII/JP/2017/GII.P16-GII.4/AichiF25
 2049444	Gammapapillomavirus sp.
+2050976	Ambidensovirus sp.
 2051936	Rotavirus A Equine-like G3P[8]
-2054592	Calomys tener Hepatitis E virus
-2054593	Necromys lasiurus Hepatitis E virus
-2055261	Hepevirus sp.
+2053026	Yichang virus
+2055263	Anelloviridae sp.
+2057931	Torque teno mini virus SHA
 2065036	Torque teno mini virus 10
 2065037	Torque teno mini virus 11
 2065038	Torque teno mini virus 12
+2065044	Torque teno midi virus 3
 2065045	Torque teno midi virus 4
 2065046	Torque teno midi virus 5
 2065047	Torque teno midi virus 6
@@ -27714,28 +27752,18 @@
 2083199	Mosso das Pedras virus
 2093789	Human papillomavirus type 203
 2094116	rhinovirus C56
-2116394	Guangdong fish caecilians hepevirus
-2116395	Nanhai ghost shark hepevirus
-2116396	Dongbei arctic lamprey hepevirus
-2116397	Wenling fish hepevirus
-2116398	Wenling moray eel hepevirus
-2116399	Wenling samurai squirrelfish hepevirus
-2116400	Wenling thamnaconus striatus hepevirus
-2116484	Wenling thamnaconus septentrionalis hepevirus
-2126132	Rodent hepevirus
 2152662	Coxsackievirus A16 (strain CVA16-GZ)
-2152923	Sogatella furcifera hepe-like virus
 2169701	Onyong-nyong virus
+2169863	Papiine betaherpesvirus 3
 2169934	Human associated huchismacovirus 1
 2169935	Human associated huchismacovirus 2
 2169936	Human associated huchismacovirus 3
-2169991	Argentinian mammarenavirus
+2169991	Mammarenavirus juninense
 2170194	Central cimpanzee simian foamy virus
 2170195	Eastern chimpanzee simian foamy virus
 2170197	Guenon simian foamy virus
 2170198	Japanese macaque simian foamy virus
 2170203	Western chimpanzee simian foamy virus
-2171386	Murine feces-associated hepe-like virus
 2182746	Norovirus Hu/GII.P17/P0327-Gaborone-2014
 2182747	Norovirus Hu/GII.P2/P0165-Gaborone-2014
 2182748	Norovirus Hu/GII.P4/L0024-MAUN-2013
@@ -27769,9 +27797,10 @@
 2182776	Norovirus Hu/GII.Pg/P0273-Gaborone-2014
 2182777	Norovirus Hu/GII.Pg/P0426-Gaborone-2014
 2182778	Norovirus Hu/GII.Pg/P0434-Gaborone-2015
-2185281	Rana hepevirus
 2200757	Didelphis aurita hepatitis A virus
-2200830	Akhmeta virus
+2200830	Orthopoxvirus akhmetapox
+2202559	Microvirus sp.
+2202644	Microviridae sp.
 2203773	Norovirus Hu/GII.17/WH2017-151/CHN/2017
 2203774	Norovirus Hu/GII.17/WH2017-152/CHN/2017
 2203775	Norovirus Hu/GII.17/WH2017-153/CHN/2017
@@ -27781,27 +27810,36 @@
 2203779	Norovirus Hu/GII.17/WH2017-162/CHN/2017
 2203780	Norovirus Hu/GII.17/WH2017-170/CHN/2017
 2203781	Norovirus Hu/GII.17/WH2017-36/CHN/2017
-2219036	Paguma larvata torque teno virus
+2219987	Norovirus GII/Hu/JP/2016/GII.P16-GII.2/Toyama16520
+2219988	Norovirus GII/Hu/JP/2016/GII.P16-GII.2/Toyama16560
+2219989	Norovirus GII/Hu/JP/2016/GII.P16-GII.2/Toyama16596
+2219990	Norovirus GII/Hu/JP/2016/GII.P16-GII.2/Fukui22817
+2219991	Norovirus GII/Hu/JP/2017/GII.P16-GII.2/Fukui22827
 2233536	Pigeon torque teno virus
+2304647	Beiji nairovirus
 2316109	Zika virus ZIKV/Human/Cambodia/FSS13025/2010
 2340905	Recombinant Hepacivirus C SA13_JF372-X_CIQV
 2340906	Recombinant Hepacivirus C SA13_JF470-510cc
 2340907	Recombinant Hepacivirus C SA13fl
-2421439	West Nile virus 1
-2421440	West Nile virus 2
 2487686	JC polyomavirus type 7
 2487724	Enterovirus A121
 2487725	Enterovirus B107
 2491016	Hepatitis C virus subtype 6r
 2495433	Alston virus
+2496633	Human associated porprismacovirus 3
+2507125	CrAssphage ZA
+2530494	Human associated porprismacovirus
 2555550	rhinovirus C55
 2555554	Japanese encephalitis virus strain M28
-2560313	Avian metaavulavirus 2
-2560317	Avian metaavulavirus 7
-2560318	Avian metaavulavirus 8
+2560313	avian paramyxovirus 2
+2560317	avian paramyxovirus 7
+2560318	avian paramyxovirus 8
+2560321	avian paramyxovirus 13
 2560525	Human orthorubulavirus 2
 2560602	Mumps orthorubulavirus
 2571082	Human lung-associated vientovirus FB
+2576740	Duck reovirus SY
+2576944	Dar es Salaam virus TZ-189
 2577082	Human adenovirus B11/35
 2577083	Human adenovirus B14/55
 2577084	Human adenovirus B16
@@ -27844,6 +27882,7 @@
 2594528	Norovirus GIX
 2596879	Crowned shrew hepatitis B virus
 2596880	Musk shrew hepatitis B virus
+2609058	Baakal virus
 2650411	Enterovirus C104
 2654514	Human respiratory syncytial virus MaxA
 2654515	Human respiratory syncytial virus MaxB
@@ -27856,16 +27895,13 @@
 2691025	Hepatitis delta virus FH27
 2691036	Enterovirus C113
 2697049	Severe acute respiratory syndrome coronavirus 2
-2708636	Crustacea hepe-like virus 1
 2709072	Bat coronavirus RaTG13
 2711167	Norovirus Hu/China/GII.17[P17]/SCD1042/2018
 2713662	Ngewotan negevirus
-2715178	Hepeviridae sp.
 2718606	HBV genotype C1
 2718607	HBV genotype B2
 2718608	HBV genotype B4
 2723667	Human poliovirus 2 nOPV2-CD
-2739892	Forsythia suspensa hepe-like virus
 2749421	Enterovirus C105
 2749452	TT virus cya/2019
 2749453	TT virus cyb/2019
@@ -27881,6 +27917,25 @@
 2757770	cosavirus A2
 2757771	cosavirus A3
 2757772	cosavirus A4
+2757773	cosavirus A5
+2757774	cosavirus A6
+2757775	cosavirus A7
+2757776	cosavirus A8
+2757777	cosavirus A9
+2757778	cosavirus A10
+2757779	cosavirus A11
+2757780	cosavirus A12
+2757781	cosavirus A13
+2757782	cosavirus A14
+2757783	cosavirus A15
+2757784	cosavirus A16
+2757785	cosavirus A17
+2757786	cosavirus A18
+2757787	cosavirus A19
+2757788	cosavirus A20
+2757789	cosavirus A21
+2757790	cosavirus A22
+2757792	cosavirus A24
 2758098	bat adenovirus 3
 2759769	camel hepatitis E virus genotype 7a
 2759770	camel hepatitis E virus genotype 8a
@@ -27908,6 +27963,7 @@
 2777137	rhinovirus B101
 2777138	rhinovirus B102
 2777139	rhinovirus B103
+2777141	rhinovirus A102
 2777143	rhinovirus A105
 2777144	rhinovirus A106
 2777145	rhinovirus A107
@@ -27915,45 +27971,15 @@
 2777147	rhinovirus A1B
 2779846	Sapporo-HK299 virus
 2779847	cardiovirus D1
-2781949	Hepatitis E virus rat08/HUN/2018
-2788298	unclassified Hepevirus
-2796359	Galago hepevirus
-2796360	Spalax hepevirus
-2797850	La Herreria hepevirus
-2803187	French Guiana hepevirus
-2803564	Swiper virus
+2795181	Songling virus
 2805939	Circular ssDNA virus sp.
 2815257	HIV-1 recombinant
 2815258	HIV-1 recombinants
-2824484	Sichuan sediment hepe-like virus 1
-2824485	Sichuan sediment hepe-like virus 2
-2824486	Sichuan sediment hepe-like virus 3
-2824487	Xinjiang sediment hepe-like virus 1
-2824488	Xinjiang sediment hepe-like virus 2
-2824489	Sichuan hepe-like virus 4
-2824490	Sichuan orthohepevirus
-2824491	Beijing sediment hepe-like virus 1
-2824492	Beijing sediment hepe-like virus 2
-2824493	Beijing sediment hepe-like virus 3
-2824494	Xinjiang hepe-like virus 3
-2824495	Hubei sediment hepe-like virus 4
-2824496	Hubei sediment hepe-like virus 5
-2824497	Hubei sediment hepe-like virus 6
-2824498	Heilongjiang sediment hepe-like virus 1
-2824499	Heilongjiang sediment hepe-like virus 2
-2824500	Heilongjiang sediment hepe-like virus 3
-2824618	Zhejiang orthohepevirus
-2824619	Heilongjiang orthohepevirus
-2829095	Raccoon dog stool-associated hepe-like virus
-2830712	Eastern mosquitofish hepevirus
-2830713	Murray-Darling carp hepevirus
+2825847	Yezo virus
 2831042	Human cosavirus D MCH-73/VEN
 2831043	Human cosavirus D MCH-82/VEN
 2831044	Human cosavirus D MCH-149/VEN
 2831045	Human cosavirus D MCH-18/VEN
-2832082	Longquan Rhinolophus sinicus orthohepevirus 1
-2832083	Wenzhou Pipistrellus abramus orthohepevirus 1
-2832084	Wenzhou Rattus norvegicus orthohepevirus 1
 2847087	GB virus-B
 2847137	hepatitis B virus genotype D
 2847138	hepatitis B virus genotype E
@@ -27964,54 +27990,139 @@
 2847143	hepatitis B virus genotype J
 2847144	hepatitis C virus genotype 1a
 2847145	hepatitis C virus genotype 1b
+2847173	hepatitis D virus 1
+2847174	hepatitis D virus 2
+2847176	hepatitis D virus 4
+2847280	salivirus A1
+2847281	salivirus A2
+2847810	Jena virus
+2848037	Pongola virus
 2848127	swine hepatitis E virus genotype 3a
+2848128	swine hepatitis E virus genotype 4a
+2848334	Viseu virus
 2849477	equine foamy virus Equus caballus
-2859904	Rhinella marina hepe-like virus
+2849712	cosavirus E1
+2849733	Ehime virus
+2849769	simian foamy virus Pan troglodytes schweinfurthii
+2854795	recombinant Enterovirus A71
 2865370	Rotavirus A WMW
 2865371	Rotavirus A TRUYO
+2870393	enterovirus A122
 2870394	enterovirus A123
 2870395	enterovirus A124
 2878086	rhinovirus C58
 2884179	enterovirus A125
 2898086	JC polyomavirus type 7A
 2901879	Severe acute respiratory syndrome coronavirus
-2902944	signal crayfish associated hepe-like virus 1
-2903082	Herring hepe-like virus
-2905611	Hangzhou hepevirus 1
-2905619	Sanya hepevirus 1
-2905673	Parainfluenza virus 5
+2905673	parainfluenza virus 5
 2905917	Pichinde virus
-2907957	Sabia virus
-2907992	Avian hepatitis E virus
+2913478	Mundri virus
 2919880	aichivirus B3
-2936955	Avian associated hepe-like virus 1
-2936956	Avian associated hepe-like virus 2
-2936957	Avian associated hepe-like virus 3
-2936958	Avian associated hepe-like virus 4
-2936959	Avian associated hepe-like virus 5
-2936960	Avian associated hepe-like virus 6
-2941072	Flumine hepe-like virus 1
-2941073	Flumine hepe-like virus 2
-2941074	Flumine hepe-like virus 3
-2941075	Flumine hepe-like virus 4
-2941076	Flumine hepe-like virus 5
-2941077	Flumine hepe-like virus 6
-2941078	Flumine hepe-like virus 7
-2941079	Flumine hepe-like virus 8
-2941080	Flumine hepe-like virus 9
-2946060	Freshwater macrophyte associated hepe-like virus 1
-2946639	Orthohepevirinae
-2946641	Parahepevirinae
-2946812	Avihepevirus
-2948661	Chirohepevirus
-2948857	Paslahepevirus
-2948883	Rocahepevirus
-2951464	Sichuan tick hepe-like virus
-2962602	Scallop hepe-like virus
-2969588	Newt hepevirus
-2969591	Red-eared slider hepevirus
-2970572	Tuatara cloaca-associated hepevirus-1
 2974723	Pangolin respiratory syncytial virus B
 2974724	Pangolin parainfluenza 3 virus
 2978453	Norovirus GVIII
-2994337	Human hepatitis E virus genotype 3
+3003970	Fish-associated hepatitis B virus
+3019659	Rubella virus genotype 1D
+3019660	Rubella virus genotype 1F
+3020262	Rotavirus A type 1
+3020263	Rotavirus A type 2
+3020264	Rotavirus A type 3
+3024541	Measles virus genotype H1b
+3025490	Human adenovirus 105
+3025491	Human adenovirus 106
+3033760	Human adenovirus 89
+3035463	Norovirus GII.P6/GII.6
+3035906	Human adenovirus D109
+3035907	Human adenovirus D110
+3037664	Human metapneumovirus A
+3037665	Human metapneumovirus B
+3051246	Human adenovirus 2C
+3051247	Human adenovirus 53D
+3052040	Bocaparvovirus primate1
+3052223	Henipavirus hendraense
+3052225	Henipavirus nipahense
+3052230	Hepacivirus hominis
+3052236	Hepacivirus platyrrhini
+3052302	Mammarenavirus chapareense
+3052303	Mammarenavirus choriomeningitidis
+3052307	Mammarenavirus guanaritoense
+3052310	Mammarenavirus lassaense
+3052314	Mammarenavirus lujoense
+3052317	Mammarenavirus machupoense
+3052384	Orthobunyavirus bwambaense
+3052470	Orthohantavirus bayoui
+3052480	Orthohantavirus hantanense
+3052493	Orthohantavirus puumalaense
+3052498	Orthohantavirus seoulense
+3052499	Orthohantavirus sinnombreense
+3052503	Orthohantavirus tulaense
+3052505	Orthomarburgvirus marburgense
+3052514	Orthonairovirus dugbeense
+3052518	Orthonairovirus haemorrhagiae
+3052714	Protoparvovirus primate1
+3061086	human adenovirus 85
+3061636	Human adenovirus 112
+3070749	human hepatitis E virus genotype 1a
+3071142	Inovirus D_HF1_11
+3071143	Inovirus D_HF2_144
+3071144	Inovirus D_HF2_82
+3071145	Inovirus D_HF32_91
+3071146	Inovirus D_HF33_10
+3071147	Inovirus D_HF34_8
+3071148	Inovirus D_HF35_23
+3071149	Inovirus D_HF38_14
+3071150	Inovirus D_HF3_10
+3071151	Inovirus D_HF3_12
+3071152	Inovirus D_HF3_19
+3071153	Inovirus D_HF3_8
+3071154	Inovirus D_HF4_79
+3071155	Inovirus D_HF4_80
+3071156	Inovirus D_HF5_49
+3071157	Inovirus D_HF5_61
+3071158	Inovirus D_HF5_75
+3071159	Inovirus D_HF6_34
+3071160	Inovirus D_HF7_9
+3071161	Microvirus D_HF2_219
+3071162	Microvirus D_HF2_273
+3071163	Microvirus D_HF32_302
+3071164	Microvirus D_HF33_14
+3071165	Microvirus D_HF34_23
+3071166	Microvirus D_HF36_426
+3071167	Microvirus D_HF36_482
+3071168	Microvirus D_HF38_28
+3071169	Microvirus D_HF38_35
+3071170	Microvirus D_HF3_26
+3071171	Microvirus D_HF4_111
+3071172	Microvirus D_HF4_124
+3071173	Microvirus D_HF4_144
+3071174	Microvirus D_HF4_149
+3071175	Microvirus D_HF4_150
+3071176	Microvirus D_HF4_162
+3071177	Microvirus D_HF4_274
+3071178	Microvirus D_HF4_298
+3071179	Microvirus D_HF4_320
+3071180	Microvirus D_HF4_329
+3071181	Microvirus D_HF4_340
+3071182	Microvirus D_HF4_371
+3071183	Microvirus D_HF5_107
+3071184	Microvirus D_HF5_131
+3071185	Microvirus D_HF5_137
+3071186	Microvirus D_HF5_96
+3071187	Microvirus D_HF6_100
+3071188	Microvirus D_HF6_206
+3071189	Microvirus D_HF7_11
+3071194	Caudovirus D_HF2_7
+3071195	Caudovirus D_HF4_2
+3071197	Caudovirus D_HF5_3
+3075195	Simian adenovirus GZ3-12
+3087233	Zika virus MR766
+3088344	Human adenovirus C108
+3092168	SARS-CoV-2 pseudovirus
+3115367	rhinovirus B107
+3115558	unclassified Cosavirus A
+3117542	unclassified Rhinovirus C
+3117543	rhinovirus C59
+3118735	aichivirus B2
+3122028	Human mastadenovirus B114
+3132708	simian adenovirus 28 (gorilla)
+3132709	simian adenovirus 35 (bonobo)

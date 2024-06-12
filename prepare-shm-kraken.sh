@@ -9,5 +9,5 @@ if [ -d /dev/shm/kraken-db/ ]; then
 fi
 
 mkdir /dev/shm/kraken-db/
-aws s3 cp s3://nao-mgs/db/kraken-strandard-16.tar.gz - | \
+aws s3 cp s3://genome-idx/kraken/k2_standard_20240605.tar.gz - | \
     tar -xzv -C /dev/shm/kraken-db

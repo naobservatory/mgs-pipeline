@@ -262,7 +262,7 @@ def clean(args):
 def full_s3_dirname(dirname):
     if dirname in ["raw", "cleaned", "ribofrac", "nonhuman"]:
         return dirname
-    return "%s%s" % (dirname, REFERENCE_SUFFIX)
+    return "%s-%s" % (dirname, REFERENCE_SUFFIX)
 
 def s3_dir(args, dirname):
     return "%s/%s/%s/" % (S3_BUCKET, args.bioproject, full_s3_dirname(dirname))
@@ -1000,12 +1000,30 @@ def nonhuman(args):
                 local_output="nonhuman.fastq.gz"
                 subprocess.check_call([
                     "/home/ec2-user/bowtie2-2.5.2-linux-x86_64/bowtie2",
-                    # When identifying human reads use default tuning settings.
                     "-x", "%s/chm13.draft_v1.0_plusY" % DB_DIR,
                     "--threads", "4", "--mm",
                     "-U", potential_input,
                     "--un-gz", local_output,
                     "-S", "/dev/null",
+
+                    # Tweak the settings because we're running Nanopore
+                    
+                    # allow more mismatches
+                    "--score-min", "L,0,-0.6",
+
+                    # shorter seed length
+                    "-L", "15"
+
+                    # more frequent reseeding
+                    "-i", "S,1,0.5",
+
+                    # allow one mismatch in the seed alignment
+                    "-N", "1",
+
+                    # less stringent gap penalties
+                    "--rdg", "5,3",  # read gap and open
+                    "--rfg", "5,3",  # reference gap and open
+                    
                 ])
 
                 s3_copy_up(args, local_output, "nonhuman", remote_fname=output)
@@ -1148,7 +1166,7 @@ def alignments2(args):
                                 )
                             )
 
-        s3_copy_up(args, combined_output_compressed, "alignments2")
+            s3_copy_up(args, combined_output_compressed, "alignments2")
 
 def phred_to_q(phred_score):
     return ord(phred_score) - ord("!")
@@ -1210,8 +1228,12 @@ def print_status(args):
         metadata_dir = work_fname("bioprojects", bioproject, "metadata")
         if not os.path.exists(metadata_dir):
             continue
-        with open(os.path.join(metadata_dir, "name.txt")) as inf:
-            name = inf.read().strip()
+        name = bioproject
+        try:
+            with open(os.path.join(metadata_dir, "name.txt")) as inf:
+                name = inf.read().strip()
+        except FileNotFoundError:
+            pass
         papers_to_projects[name].append(bioproject)
 
     name_width = 21
@@ -1364,7 +1386,7 @@ def start():
 
     if not os.path.isdir(work_fname("bioprojects", args.bioproject)):
         raise Exception(
-            "Bioproject %s not found in %s/bioprojects"
+            "Bioproject %s not found in %sbioprojects"
             % (args.bioproject, WORK_ROOT)
         )
 
