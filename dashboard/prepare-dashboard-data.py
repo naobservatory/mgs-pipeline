@@ -51,6 +51,10 @@ with open("%s/nodes.dmp" % DASHBOARD_DIR) as inf:
         parent_taxid = int(parent_taxid)
         parents[child_taxid] = parent_taxid
 
+for taxid in all_human_viruses:
+    if taxid not in parents:
+        print("Missing %s" % taxid)
+        
 root_human_viruses = set()
 for taxid in all_human_viruses:
     if parents[taxid] not in all_human_viruses:
@@ -247,11 +251,16 @@ comparison_taxid_classifications = {
     VIRUS: [],
 }
 for taxid in sorted(comparison_sample_counts):
+    seen_taxids = []
     p = taxid
     while p not in [1, 0]:
+        seen_taxids.append(p)
         if p in comparison_taxid_classifications:
             comparison_taxid_classifications[p].append(taxid)
             break
+        if p not in parents:
+            raise Exception("Missing Parent: %s" %
+                            ",".join(str(x) for x in seen_taxids))
         p = parents[p]
 
 # taxid -> [name]

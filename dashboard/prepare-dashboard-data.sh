@@ -39,22 +39,14 @@ if [ ! -e names.dmp ] ; then
 fi
 
 for study in $(aws s3 ls $S3_DIR | awk '{print $NF}'); do
-    for rl in $(aws s3 ls $S3_DIR${study}readlengths$REFSUFFIX/ | \
-                    awk '{print $NF}'); do
-        if [ ! -s readlengths/$rl ]; then
-            echo $S3_DIR${study}readlengths$REFSUFFIX/$rl
-        fi
-    done
-done | xargs -I {} -P 32 aws s3 cp {} readlengths/
+    aws s3 sync --profile parallel \
+        $S3_DIR${study}readlengths-$REFSUFFIX/ readlengths/
+done
 
 for study in $(aws s3 ls $S3_DIR | awk '{print $NF}'); do
-    for rf in $(aws s3 ls $S3_DIR${study}ribofrac$REFSUFFIX/ | \
-   	    awk '{print $NF}'); do
-    	if [ ! -s ribofrac/$rf ]; then
-	    echo $S3_DIR${study}ribofrac$REFSUFFIX/$rf
-	fi
-     done
-done | xargs -I {} -P 32 aws s3 cp {} ribofrac/
+    aws s3 sync --profile parallel \
+        $S3_DIR${study}ribofrac-$REFSUFFIX/ ribofrac/
+done
 
 $MGS_PIPELINE_DIR/dashboard/prepare-dashboard-metadata.py $ROOT_DIR $MGS_PIPELINE_DIR
 
@@ -64,28 +56,21 @@ if $METADATA_ONLY; then
 fi
 
 cd $ROOT_DIR
-$MGS_PIPELINE_DIR/dashboard/determine_comparison_species.sh
+$MGS_PIPELINE_DIR/dashboard/determine_comparison_species.sh $REFSUFFIX
 
 cd $ROOT_DIR/dashboard
 for study in $(aws s3 ls $S3_DIR | awk '{print $NF}'); do
-    for am in $(aws s3 ls $S3_DIR${study}allmatches$REFSUFFIX/ | \
-                    awk '{print $NF}'); do
-        if [ ! -s allmatches/$am ]; then
-            echo $S3_DIR${study}allmatches$REFSUFFIX/$am
-        fi
-    done
-done | xargs -I {} -P 32 aws s3 cp {} allmatches/
+    aws s3 sync --profile parallel \
+        $S3_DIR${study}allmatches-$REFSUFFIX/ allmatches/
+done
 
 for study in $(aws s3 ls $S3_DIR | awk '{print $NF}'); do
-    for hvr in $(aws s3 ls $S3_DIR${study}hvreads$REFSUFFIX/ | \
-                    awk '{print $NF}'); do
-        if [ ! -s hvreads/$hvr ]; then
-            echo $S3_DIR${study}hvreads$REFSUFFIX/$hvr
-        fi
-    done
-done | xargs -I {} -P 32 aws s3 cp {} hvreads/
+    aws s3 sync --profile parallel \
+        $S3_DIR${study}hvreads-$REFSUFFIX/ hvreads/
+done
 
-$MGS_PIPELINE_DIR/dashboard/prepare-dashboard-data.py $ROOT_DIR $MGS_PIPELINE_DIR
+$MGS_PIPELINE_DIR/dashboard/prepare-dashboard-data.py \
+    $ROOT_DIR $MGS_PIPELINE_DIR
 
 echo
 echo "Now check in your changes and send for review."

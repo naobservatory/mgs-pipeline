@@ -2,6 +2,8 @@
 
 set -e  # exit on error
 
+REFSUFFIX="$1"
+
 ROOT_DIR="$PWD"
 if [ "$(basename $PWD)" == "mgs-pipeline" ]; then
     S3_DIR="s3://nao-mgs/"
@@ -20,7 +22,7 @@ cd dashboard
 
 mkdir -p top_species_scratch/
 for bioproject in $(ls ../bioprojects/); do
-    CLADECOUNTS_DIR="$S3_DIR$bioproject/cladecounts"
+    CLADECOUNTS_DIR="$S3_DIR$bioproject/cladecounts-$REFSUFFIX"
     for cladecounts in $(aws s3 ls "$CLADECOUNTS_DIR/" | awk '{print $NF}'); do
         if [ ! -s top_species_scratch/${cladecounts/.gz} ]; then
             echo "$CLADECOUNTS_DIR/$cladecounts"
@@ -38,7 +40,7 @@ $DASHBOARD_CODE_DIR/determine_key_clades.py > key_clade_taxids.txt
                                                                   
 mkdir -p top_species_counts/
 for bioproject in $(ls ../bioprojects/); do
-    CLADECOUNTS_DIR="$S3_DIR$bioproject/cladecounts"
+    CLADECOUNTS_DIR="$S3_DIR$bioproject/cladecounts-$REFSUFFIX"
     for cladecounts in $(aws s3 ls "$CLADECOUNTS_DIR/" | awk '{print $NF}'); do
         if [ ! -s top_species_counts/${cladecounts/.tsv.gz/.json} ]; then
             echo "$CLADECOUNTS_DIR/$cladecounts"
