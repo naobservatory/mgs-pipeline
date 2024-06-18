@@ -1197,7 +1197,7 @@ def print_status(args):
     stages = [
         "raw",
         "cleaned",
-        "nonhuman"
+        "nonhuman",
         "ribofrac",
         "processed",
         "cladecounts",
