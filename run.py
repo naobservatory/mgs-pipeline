@@ -964,6 +964,8 @@ def hvreads(args):
                 with gzip.open(cleaned_input, "rt") as inf:
                     for title, sequence, quality in FastqGeneralIterator(inf):
                         seq_id = title.split()[0]
+                        if seq_id.endswith("/1") or seq_id.endswith("/2"):
+                            seq_id = seq_id[:-2]
                         if seq_id in seqs:
                             seqs[seq_id].append([sequence, quality])
 
@@ -1086,7 +1088,7 @@ def alignments2(args):
                         else:
                             print(title)
                             import pprint
-                            pprint(record)
+                            pprint.pprint(record)
                             raise Exception("invalid number of reads")
 
                 if not any_paired and not any_collapsed:
