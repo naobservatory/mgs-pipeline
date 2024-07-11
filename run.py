@@ -6,6 +6,7 @@ import warnings
 import glob
 import gzip
 import json
+import math
 import time
 import atexit
 import argparse
@@ -904,6 +905,50 @@ def allmatches(args):
 
             s3_copy_up(args, output, "allmatches")
 
+def valreads(args):
+    # The subset of hvreads where that pass an alignment threshold.
+    available_hvreads_inputs = get_files(args, "hvreads")
+    available_alignments2_inputs = get_files(args, "alignments2")
+    existing_outputs = get_files(args, "valreads")
+
+    for sample in get_samples(args):
+        output = "%s.valreads.json" % sample
+        if output in existing_outputs:
+            continue
+
+        input_hvreads_fname = "%s.hvreads.json" % sample
+        input_alignments2_fname = "%s.hv.alignments2.tsv.gz" % sample
+
+        if input_hvreads_fname not in available_hvreads_inputs:
+            continue
+        if input_alignments2_fname not in available_alignments2_inputs:
+            continue
+
+        with tempdir("valreads", sample) as workdir:
+            s3_copy_down(args, "hvreads", input_hvreads_fname)
+            s3_copy_down(args, "alignments2", input_alignments2_fname)
+
+            accepted_read_ids = set()
+            with gzip.open(input_alignments2_fname, "rt") as inf:
+                for line in inf:
+                    (query_name, genomeid, taxid, cigarstring, ref_start,
+                     as_val, query_len) = line.rstrip("\n").split("\t")
+
+                    length_adjusted_score = int(as_val) / math.log(int(query_len))
+                    if length_adjusted_score > 20:
+                        accepted_read_ids.add(query_name)
+
+            valreads_out = {}
+            with open(input_hvreads_fname) as inf:
+               for read_id, record in json.load(inf).items():
+                   if read_id in accepted_read_ids:
+                       valreads_out[read_id] = record
+
+            with open(output, "w") as outf:
+                json.dump(valreads_out, outf)
+
+            s3_copy_up(args, output, "valreads")
+
 def hvreads(args):
     available_inputs = get_files(args, "allmatches")
     available_cleaned_inputs = get_files(
@@ -1009,7 +1054,7 @@ def nonhuman(args):
                     "-S", "/dev/null",
 
                     # Tweak the settings because we're running Nanopore
-                    
+
                     # allow more mismatches
                     "--score-min", "L,0,-0.6",
 
@@ -1025,7 +1070,7 @@ def nonhuman(args):
                     # less stringent gap penalties
                     "--rdg", "5,3",  # read gap and open
                     "--rfg", "5,3",  # reference gap and open
-                    
+
                 ])
 
                 s3_copy_up(args, local_output, "nonhuman", remote_fname=output)
@@ -1209,6 +1254,7 @@ def print_status(args):
         "samplereads",
         "readlengths",
         "alignments2",
+        "valreads",
     ]
     short_stages = [
         "raw",
@@ -1223,6 +1269,7 @@ def print_status(args):
         "sr",
         "rl",
         "al",
+        "vr",
     ]
 
     papers_to_projects = defaultdict(list)  # paper -> [project]
@@ -1322,6 +1369,7 @@ for stage_name, stage_fn in [
     ("samplereads", samplereads),
     ("readlengths", readlengths),
     ("alignments2", alignments2),
+    ("valreads", valreads),
 ]:
     STAGES_ORDERED.append(stage_name)
     STAGE_FNS[stage_name] = stage_fn
