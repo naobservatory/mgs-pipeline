@@ -949,6 +949,49 @@ def valreads(args):
 
             s3_copy_up(args, output, "valreads")
 
+def tmpvalreads(args):
+    available_hvreads_inputs = get_files(args, "hvreads")
+    available_alignments2_inputs = get_files(args, "alignments2")
+    existing_outputs = get_files(args, "tmpvalreads")
+
+    for sample in get_samples(args):
+        output = "%s.tmpvalreads.json" % sample
+        if output in existing_outputs:
+            continue
+
+        input_hvreads_fname = "%s.hvreads.json" % sample
+        input_alignments2_fname = "%s.hv.alignments2.tsv.gz" % sample
+
+        if input_hvreads_fname not in available_hvreads_inputs:
+            continue
+        if input_alignments2_fname not in available_alignments2_inputs:
+            continue
+
+        with tempdir("tmpvalreads", sample) as workdir:
+            s3_copy_down(args, "hvreads", input_hvreads_fname)
+            s3_copy_down(args, "alignments2", input_alignments2_fname)
+
+            read_scores = defaultdict(float)
+            with gzip.open(input_alignments2_fname, "rt") as inf:
+                for line in inf:
+                    (query_name, genomeid, taxid, cigarstring, ref_start,
+                     as_val, query_len) = line.rstrip("\n").split("\t")
+
+                    length_adjusted_score = int(as_val) / math.log(int(query_len))
+                    read_scores[query_name] = max(
+                        read_scores[query_name], length_adjusted_score)
+
+            tmpvalreads_out = {}
+            with open(input_hvreads_fname) as inf:
+               for read_id, record in json.load(inf).items():
+                   record.insert(0, read_scores[read_id])
+                   tmpvalreads_out[read_id] = record
+
+            with open(output, "w") as outf:
+                json.dump(tmpvalreads_out, outf)
+
+            s3_copy_up(args, output, "tmpvalreads")
+
 def hvreads(args):
     available_inputs = get_files(args, "allmatches")
     available_cleaned_inputs = get_files(
@@ -1255,6 +1298,7 @@ def print_status(args):
         "readlengths",
         "alignments2",
         "valreads",
+        "tmpvalreads",
     ]
     short_stages = [
         "raw",
@@ -1270,6 +1314,7 @@ def print_status(args):
         "rl",
         "al",
         "vr",
+        "tvr",
     ]
 
     papers_to_projects = defaultdict(list)  # paper -> [project]
@@ -1370,6 +1415,7 @@ for stage_name, stage_fn in [
     ("readlengths", readlengths),
     ("alignments2", alignments2),
     ("valreads", valreads),
+    ("tmpvalreads", tmpvalreads),
 ]:
     STAGES_ORDERED.append(stage_name)
     STAGE_FNS[stage_name] = stage_fn
