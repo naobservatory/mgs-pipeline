@@ -177,7 +177,8 @@ def no_adapters_dirname(args):
 def final_fastq_dirname(args):
     if rm_human(args):
         return "nonhuman"
-    return "cleaned"
+    else:
+        return no_adapters_dirname(args)
 
 def adapter_removal(args, dirname, trim_quality, collapse):
     adapter_dir = work_fname("bioprojects", args.bioproject, "adapters")
