@@ -1103,7 +1103,7 @@ def nonhuman(args):
                     "--score-min", "L,0,-0.6",
 
                     # shorter seed length
-                    "-L", "15"
+                    "-L", "15",
 
                     # more frequent reseeding
                     "-i", "S,1,0.5",
