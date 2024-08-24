@@ -1,5 +1,7 @@
 import re
 
+skip_projects = ["PRJEB30546", "PRJNA691135"]
+
 def interpret(project, papers, bits):
     if project in papers["Rothman 2021"]["projects"]:
         sample, date, wtp, is_enriched = bits

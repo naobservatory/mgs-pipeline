@@ -31,7 +31,7 @@ for metadata_fname in glob.glob(
     "%s/bioprojects/*/metadata/metadata.tsv" % ROOT_DIR
 ):
     project = metadata_fname.split("/")[-3]
-    if project in ["PRJEB30546", "PRJNA691135"]:
+    if project in sample_metadata_classifier.skip_projects:
         # didn't finish importing this one, and the dashboard chokes on papers
         # where we don't understand the metadata.
         continue
