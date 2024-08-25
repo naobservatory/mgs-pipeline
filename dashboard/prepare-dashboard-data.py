@@ -145,6 +145,7 @@ def rc(s):
 
 
 DUP_LEN = 25
+DUP_OFFSET = 1
 
 def count_dups(hvr_fnames):
     hvr = {}
@@ -173,14 +174,14 @@ def count_dups(hvr_fnames):
                 raise
             if len(read) < DUP_LEN:
                 continue
-            start = read[DUP_LEN:]
-            end = read[:-DUP_LEN]
+            start = read[DUP_OFFSET : DUP_OFFSET + DUP_LEN]
+            end = read[-(DUP_LEN + DUP_OFFSET):-DUP_OFFSET]
         else:
             (fwd, fwd_quality), (rev, rev_quality) = reads
             if len(fwd) < DUP_LEN or len(rev) < DUP_LEN:
                 continue
-            start = fwd[DUP_LEN:]
-            end = rev[DUP_LEN:]
+            start = fwd[DUP_OFFSET : DUP_LEN + DUP_OFFSET]
+            end = rev[DUP_OFFSET : DUP_LEN + DUP_OFFSET]
 
         start_rc = rc(start)
         if start_rc < start:
