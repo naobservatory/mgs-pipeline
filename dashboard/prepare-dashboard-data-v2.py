@@ -54,7 +54,7 @@ with open("%s/nodes.dmp" % DASHBOARD_DIR) as inf:
 for taxid in all_human_viruses:
     if taxid not in parents:
         print("Missing %s" % taxid)
-        
+
 root_human_viruses = set()
 for taxid in all_human_viruses:
     if parents[taxid] not in all_human_viruses:
@@ -137,7 +137,7 @@ for project in projects:
     fname = "hv_hits_putative_collapsed/%s.tsv.gz" % project
     if not os.path.exists(fname):
         continue
-            
+
     with gzip.open(fname, "rt") as inf:
         col = None
         for line in inf:
@@ -212,6 +212,9 @@ for name, val in [
     ("human_virus_tree", human_virus_tree),
     ("comparison_taxid_classifications", comparison_taxid_classifications),
 ]:
+    if not val:
+        continue
+
     with open(DASHBOARD_DIR + name + "_v2.json", "w") as outf:
         json.dump(
             val,
@@ -237,5 +240,9 @@ for bioproject in bioprojects:
             }
             if counts:
                 bioproject_sample_counts[taxid] = counts
+
+        if not bioproject_sample_counts:
+            continue
+
         with open(DASHBOARD_DIR + name + "_v2.json", "w") as outf:
             json.dump(bioproject_sample_counts, outf, sort_keys=True, indent=2)
