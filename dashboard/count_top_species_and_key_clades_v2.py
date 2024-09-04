@@ -2,6 +2,7 @@
 
 import sys
 import json
+from collections import defaultdict, Counter
 
 taxids = set()
 with open("key_clade_taxids.txt") as inf:
@@ -17,7 +18,7 @@ with open("comparison_taxids_v2.txt") as inf:
             taxids.add(int(line))
 
 # sample -> taxid -> count
-comparisons = {}
+comparisons = defaultdict(Counter)
 col = None
 for line in sys.stdin:
     row = line.rstrip("\n").split("\t")
@@ -30,9 +31,6 @@ for line in sys.stdin:
     clade_assignments = int(row[col.index("n_reads_clade")])
 
     if taxid in taxids:
-        if sample not in comparisons:
-            comparisons[sample] = {}
-        
-        comparisons[sample][taxid] = clade_assignments
+        comparisons[sample][taxid] += clade_assignments
 
 print(json.dumps(comparisons))
