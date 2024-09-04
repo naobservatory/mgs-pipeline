@@ -200,6 +200,9 @@ function setup() {
   taxonomic_names[0] = ["Unassigned"];
 
   for (const paper in metadata_papers) {
+    if (!metadata_papers[paper]["mgs-workflow-output"]) {
+      continue;
+    }
     paper_names.push(paper);
   }
   paper_names.sort();
@@ -1489,7 +1492,10 @@ function update_hash() {
 }
 
 function fetchJSON(fname_base) {
-  return fetch(fname_base + "_v2.json").then(response => {
+  if (!fname_base.startsWith("metadata_")) {
+    fname_base = fname_base + "_v2";
+  }
+  return fetch(fname_base + ".json").then(response => {
     if (!response.ok) {
       throw new Error("Fetch failed: " + response.status);
     }
