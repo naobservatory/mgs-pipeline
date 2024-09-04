@@ -82,22 +82,15 @@ for project in projects:
 
 for paper_name in papers:
     paper_dir = os.path.join(ROOT_DIR, "papers", paper_name.replace(" ", ""))
-    link_fname = os.path.join(paper_dir, "link.txt")
-    if os.path.exists(link_fname):
-        with open(link_fname) as inf:
-            papers[paper_name]["link"] = inf.read().strip()
-    else:
-        papers[paper_name]["link"] = "personal communication"
-
-    na_fname = os.path.join(paper_dir, "na_type.txt")
-    if os.path.exists(na_fname):
-        with open(na_fname) as inf:
-            papers[paper_name]["na_type"] = inf.read().strip()
-
-    subset_fname = os.path.join(paper_dir, "subset.txt")
-    if os.path.exists(subset_fname):
-        with open(subset_fname) as inf:
-            papers[paper_name]["subset"] = inf.read().strip()
+    for metadata_type in ["link",
+                          "na_type",
+                          "subset"]:
+        fname = os.path.join(paper_dir, "%s.txt" % metadata_type)
+        if os.path.exists(fname):
+            with open(fname) as inf:
+                papers[paper_name][metadata_type] = inf.read().strip()
+        elif metadata_type == "link":
+            papers[paper_name]["link"] = "personal communication"
 
 # sample -> {metadata}
 sample_metadata = defaultdict(dict)
