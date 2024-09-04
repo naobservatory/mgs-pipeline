@@ -84,7 +84,8 @@ for paper_name in papers:
     paper_dir = os.path.join(ROOT_DIR, "papers", paper_name.replace(" ", ""))
     for metadata_type in ["link",
                           "na_type",
-                          "subset"]:
+                          "subset",
+                          "mgs-workflow-output"]:
         fname = os.path.join(paper_dir, "%s.txt" % metadata_type)
         if os.path.exists(fname):
             with open(fname) as inf:
