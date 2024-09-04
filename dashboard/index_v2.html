@@ -121,7 +121,8 @@ Limit Samples:
 
 
 <p>
-Rows are clades, columns are samples, cells are relative abundances and counts.
+Rows are clades, columns are samples, cells are relative abundances and
+counts. 
 <p>
 
 
@@ -884,6 +885,10 @@ function redisplay() {
   const column_samples = [];
   // And how many reads is it, so we can compute relative abundances?
   const column_totals = [];
+  // We only compute comparisons on a subset, so there we have a smaller
+  // denominator for the relative abundance.
+  const column_comparison_totals = [];
+
 
   const tr_header = e("tr");
   tr_header.classList.add("header");
@@ -995,10 +1000,15 @@ function redisplay() {
         }
       } else if (property == "reads") {
         let total_reads = 0;
+        let total_comparison_reads = 0;
         for (const sample of samples) {
           total_reads += metadata_samples[sample].reads;
+          total_comparison_reads +=
+            (comparison_sample_counts["0"][sample] || 0) +
+            (comparison_sample_counts["1"][sample] || 0);
         }
         column_totals.push(total_reads);
+        column_comparison_totals.push(total_comparison_reads);
         tr.appendChild(e("td", human_readable(total_reads) + " " + plural));
       } else if (property == "ribofrac") {
         let total_samples = 0;
@@ -1256,7 +1266,8 @@ function redisplay() {
     if (taxid == VIRUS) { // viruses, root of tree
       add_divider("Human infecting viruses.  Counts on higher clades only " +
                   "include reads assigned to human-infecting viruses.  Format " +
-                  "is 'relative_abundance (read count)'.");
+                  "is 'relative_abundance (read count)' and is relative to " +
+                  "all reads in the sample.");
     }
 
     if (taxid != 1) {
@@ -1331,7 +1342,8 @@ function redisplay() {
 
       for (let i = 0; i < column_samples.length; i++) {
         const samples = column_samples[i];
-        const total_reads = column_totals[i];
+        const total_reads = column_comparison_totals[i];
+        
         matches = 0;
         for (sample of samples) {
           const n = comparison_sample_counts?.[taxid]?.[sample];
@@ -1348,7 +1360,8 @@ function redisplay() {
         add_divider(
           "Comparison clades.  Counts are of reads assigned anywhere in the "
             + "clade, and not just to human-infecting viruses.  Format "
-            + "is 'relative_abundance (read count)'.");
+            + "is 'relative_abundance (read count)' and is relative only "
+            + "to the non-rRNA reads in the sample.");
       }
       added_divider = true;
       tbl.appendChild(tr);
