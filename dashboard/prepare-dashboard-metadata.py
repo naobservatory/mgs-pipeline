@@ -102,41 +102,6 @@ for paper_name in papers:
 # sample -> {metadata}
 sample_metadata = defaultdict(dict)
 
-def summarize_readlength_category(rls_category):
-    weighted_sum = 0
-    weighted_total = 0
-    nc = 0
-    for rl_category in rls_category:
-        for value, count in rl_category.items():
-            if value == "NC":
-                nc += count
-            else:
-                weighted_sum += int(value) * count
-                weighted_total += count
-
-    if not weighted_total:
-        return -1, -1
-
-    if weighted_sum / weighted_total < 5:
-        import pprint
-        pprint.pprint(rls_category)
-        print(weighted_sum)
-        print(weighted_total)
-        exit(1)
-
-    return [nc / (weighted_total + nc),
-            weighted_sum / weighted_total]
-
-def summarize_readlengths(rls):
-    all_categories = set()
-    for rl in rls:
-        for category in rl:
-            all_categories.add(category)
-
-    return {category: summarize_readlength_category([
-        rl[category] for rl in rls])
-            for category in all_categories}
-
 for project in projects:
     with open(
         "%s/bioprojects/%s/metadata/metadata.tsv" % (ROOT_DIR, project)
@@ -170,48 +135,10 @@ for project in projects:
         if project_sample_nonhuman_reads[project][sample]:
             sample_metadata[sample]["nonhuman_reads"] = \
                 project_sample_nonhuman_reads[project][sample]
-        rls = []
-        for div_sample in div_samples[sample]:
-            rl_fname = "readlengths/%s.rl.json.gz" % div_sample
-            try:
-                with gzip.open(rl_fname, "rt") as inf:
-                    rls.append(json.load(inf))
-            except FileNotFoundError:
-                continue
-
-            sample_metadata[sample]["readlengths"] = summarize_readlengths(rls)
-
-        ribofracs = []
-        weights = []
-        for div_sample in div_samples[sample]:
-            rf_fname = "ribofrac/%s.ribofrac.txt" % div_sample
-            try:
-                with open(rf_fname, "r") as file:
-                    ribofrac = file.readline()
-            except FileNotFoundError:
-                continue
-            ribofracs.append(float(ribofrac))
-            weights.append(div_sample_reads[div_sample])
-
-        if sum(weights):
-            ribofrac = np.average(ribofracs, weights=weights)
-            if not math.isnan(ribofrac):
-                sample_metadata[sample]["ribofrac"] = ribofrac
-
 
 # make it json-serializable
 for bioproject in bioprojects:
     bioprojects[bioproject] = list(sorted(bioprojects[bioproject]))
-
-def round_floats_recursively(val, precision=4):
-    if type(val) == type(0.0):
-        return round(val, precision)
-    if type(val) in [type({}), type(defaultdict())]:
-        return {k: round_floats_recursively(v) for k, v in val.items()}
-    if type(val) in [type([]), type(())]:
-        return [round_floats_recursively(v) for v in val]
-
-    return val
 
 for name, val in [
     ("metadata_samples", sample_metadata),
@@ -220,7 +147,7 @@ for name, val in [
 ]:
     with open(DASHBOARD_DIR + name + ".json", "w") as outf:
         json.dump(
-            round_floats_recursively(val),
+            val,
             outf,
             sort_keys=True,
             indent=2,
