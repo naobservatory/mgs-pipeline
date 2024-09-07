@@ -80,55 +80,68 @@ for project in projects:
         papers[paper_name]["projects"] = []
     papers[paper_name]["projects"].append(project)
 
-for paper_name in papers:
-    paper_dir = os.path.join(ROOT_DIR, "papers", paper_name.replace(" ", ""))
-    for metadata_type in ["link",
-                          "na_type",
-                          "subset",
-                          "mgs-workflow-output"]:
-        fname = os.path.join(paper_dir, "%s.txt" % metadata_type)
-        if os.path.exists(fname):
-            with open(fname) as inf:
-                papers[paper_name][metadata_type] = inf.read().strip()
-        elif metadata_type == "link":
-            papers[paper_name]["link"] = "personal communication"
-
 # sample -> {metadata}
 sample_metadata = defaultdict(dict)
 
-for project in projects:
-    with open(
-        "%s/bioprojects/%s/metadata/metadata.tsv" % (ROOT_DIR, project)
-    ) as inf:
-        for line in inf:
-            if not line.strip():
-                continue
-            line = line[:-1]  # drop trailing newline
+papers_dir = os.path.join(ROOT_DIR, "papers")
+sys.path.insert(0, papers_dir)
+for paper_name in papers:
+    paper_metadata_name = "%s--metadata" % paper_name
+    paper_metadata_fname = paper_metadata_name + ".py"
 
-            (
-                div_sample,
-                sample_metadata_dict,
-            ) = sample_metadata_classifier.interpret(
-                project, papers, line.split("\t")
-            )
-            sample = sample_metadata_classifier.recombine(div_sample, project)
-            if sample not in sample_metadata:
-                sample_metadata[sample] = sample_metadata_dict
-            elif sample_metadata_dict != sample_metadata[sample]:
-                print(sample, div_sample)
-                import pprint
-                pprint.pprint(sample_metadata_dict)
-                pprint.pprint(sample_metadata[sample])
-                assert False
+    if os.path.exists(os.path.join(papers_dir, paper_metadata_fname)):
+        paper_metadata_module = importlib.import_module(
+            paper_metadata_name)
+        papers[paper_name].update(paper_metadata_module.paper_metadata())
+    else:
+        paper_metadata_module = None
+        paper_dir = os.path.join(papers_dir, paper_name.replace(" ", ""))
+        for metadata_type in ["link",
+                              "na_type",
+                              "subset",
+                              "mgs-workflow-output"]:
+            fname = os.path.join(paper_dir, "%s.txt" % metadata_type)
+            if os.path.exists(fname):
+                with open(fname) as inf:
+                    papers[paper_name][metadata_type] = inf.read().strip()
 
+    if "link" not in papers[paper_name]:
+        papers[paper_name]["link"] = "personal communication"
 
-    for sample in project_sample_reads[project]:
-        sample_metadata[sample]["reads"] = project_sample_reads[project][
-            sample
-        ]
-        if project_sample_nonhuman_reads[project][sample]:
-            sample_metadata[sample]["nonhuman_reads"] = \
-                project_sample_nonhuman_reads[project][sample]
+    for project in papers[paper_name]["projects"]:
+        with open(
+                "%s/bioprojects/%s/metadata/metadata.tsv" % (ROOT_DIR, project)
+        ) as inf:
+            for line in inf:
+                if not line.strip():
+                    continue
+                bits = line.rstrip("\n").split("\t")
+
+                if paper_metadata_module:
+                    div_sample, sample_metadata_dict = \
+                        paper_metadata_module.sample_metadata(bits)
+                else:
+                    div_sample, sample_metadata_dict = \
+                        sample_metadata_classifier.interpret(
+                            project, papers, bits)
+
+                sample = sample_metadata_classifier.recombine(div_sample, project)
+
+                if sample not in sample_metadata:
+                    sample_metadata[sample] = sample_metadata_dict
+                elif sample_metadata_dict != sample_metadata[sample]:
+                    print(sample, div_sample)
+                    import pprint
+                    pprint.pprint(sample_metadata_dict)
+                    pprint.pprint(sample_metadata[sample])
+                    assert False
+
+        for sample in project_sample_reads[project]:
+            sample_metadata[sample]["reads"] = \
+                project_sample_reads[project][sample]
+            if project_sample_nonhuman_reads[project][sample]:
+                sample_metadata[sample]["nonhuman_reads"] = \
+                    project_sample_nonhuman_reads[project][sample]
 
 # make it json-serializable
 for bioproject in bioprojects:
