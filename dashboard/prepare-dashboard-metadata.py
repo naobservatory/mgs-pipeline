@@ -86,7 +86,7 @@ sample_metadata = defaultdict(dict)
 papers_dir = os.path.join(ROOT_DIR, "papers")
 sys.path.insert(0, papers_dir)
 for paper_name in papers:
-    paper_metadata_name = "%s--metadata" % paper_name
+    paper_metadata_name = "%s--metadata" % paper_name.replace(" ", "")
     paper_metadata_fname = paper_metadata_name + ".py"
 
     if os.path.exists(os.path.join(papers_dir, paper_metadata_fname)):
