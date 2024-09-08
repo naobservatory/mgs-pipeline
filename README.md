@@ -243,8 +243,8 @@ representing the version of the kraken DB they were generated with.)
    a. Put the paper link in `papers/AuthorYear/link.txt`
    b. Put "RNA" or "DNA" in `papers/AuthorYear/na_type.txt`
 5. `./run.py --bioproject=[accession]`
-6. Collect full metadata, update metadata.tsv, and modify
-   `dashboard/sample_metadata_classifier.py` to handle it.
+6. Collect full metadata, update metadata.tsv, and create an
+   `papers/AuthorYear--metadata.py` to handle it.
 7. If you leave out any samples, perhaps because they represent something we're
    not interested in, document which samples are included in
    `papers/AuthorYear/subset.txt`.
