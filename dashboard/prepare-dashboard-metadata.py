@@ -159,3 +159,19 @@ for name, val in [
             sort_keys=True,
             indent=2,
         )
+
+for bioproject, bioproject_samples in bioprojects.items():
+    with open(DASHBOARD_DIR + "%s.metadata.tsv" % bioproject, "w") as outf:
+
+        keys = set()
+        for sample in bioproject_samples:
+            keys.update(sample_metadata[sample])
+
+        header = ["sample", *sorted(keys)]
+        outf.write("\t".join(header) + "\n")
+
+        for sample in sorted(bioproject_samples):
+            outf.write("%s\t%s\n" % (
+                sample, "\t".join(
+                    str(sample_metadata[sample].get(key, ""))
+                    for key in header[1:])))
