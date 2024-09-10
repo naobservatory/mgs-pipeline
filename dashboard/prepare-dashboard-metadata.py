@@ -160,18 +160,27 @@ for name, val in [
             indent=2,
         )
 
-for bioproject, bioproject_samples in bioprojects.items():
-    with open(DASHBOARD_DIR + "%s.metadata.tsv" % bioproject, "w") as outf:
+SKIP_PAPER_KEYS = set(("projects", "summary", "link", "mgs-workflow-output"))
+for paper in papers:
+    for bioproject in papers[paper]["projects"]:
+        bioproject_samples = bioprojects[bioproject]
+        with open(DASHBOARD_DIR + "%s.metadata.tsv" % bioproject, "w") as outf:
 
-        keys = set()
-        for sample in bioproject_samples:
-            keys.update(sample_metadata[sample])
+            keys = set()
+            keys.update([key for key in papers[paper]
+                         if key not in SKIP_PAPER_KEYS])
+            for sample in bioproject_samples:
+                keys.update(sample_metadata[sample])
 
-        header = ["sample", *sorted(keys)]
-        outf.write("\t".join(header) + "\n")
+            header = ["sample", *sorted(keys)]
+            outf.write("\t".join(header) + "\n")
 
-        for sample in sorted(bioproject_samples):
-            outf.write("%s\t%s\n" % (
-                sample, "\t".join(
-                    str(sample_metadata[sample].get(key, ""))
-                    for key in header[1:])))
+            for sample in sorted(bioproject_samples):
+                outf.write("%s\t%s\n" % (
+                    sample, "\t".join(
+                        # pull the key from the sample-level metadata if we
+                        # have it, otherwise fall back to paper-level.  And use
+                        # an empty string if it's unset.
+                        str(sample_metadata[sample].get(
+                            key, papers[paper].get(key, "")))
+                        for key in header[1:])))
