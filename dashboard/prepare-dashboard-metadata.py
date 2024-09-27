@@ -121,6 +121,12 @@ for paper_name in papers:
                     div_sample, sample_metadata_dict = \
                         paper_metadata_module.sample_metadata(bits)
                 else:
+                    if not getattr(sample_metadata_classifier, "interpret"):
+                        raise Exception(
+                            "sample_metadata_classifier.interpret() not "
+                            "found. Did you forget to create %s?" %
+                            paper_metadata_fname)
+                            
                     div_sample, sample_metadata_dict = \
                         sample_metadata_classifier.interpret(
                             project, papers, bits)
