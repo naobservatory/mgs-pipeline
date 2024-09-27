@@ -2,6 +2,9 @@
 
 set -e  # exit on error
 
+echo "Deprecated.  Not running."
+exit 1
+
 ROOT_DIR="$PWD"
 if [ "$(basename $PWD)" == "mgs-pipeline" ]; then
     S3_DIR="s3://nao-mgs/"
