@@ -1163,6 +1163,13 @@ def alignments2(args):
 
                     for title, record in json.load(inf).items():
                         taxid, kraken_info, *reads = record
+
+                        reads = [
+                            (s, q)
+                            for (s, q) in reads
+                            if len(s) >= 20
+                        ]
+
                         if len(reads) == 1:
                             (s, q), = reads
                             outfC.write("@%s\n%s\n+\n%s\n" % (title, s, q))
@@ -1175,10 +1182,9 @@ def alignments2(args):
                                 title, s2, q2))
                             any_paired = True
                         else:
-                            print(title)
-                            import pprint
-                            pprint.pprint(record)
-                            raise Exception("invalid number of reads")
+                            # Both reads were too short after trimming to be
+                            # used.
+                            continue
 
                 if not any_paired and not any_collapsed:
                     continue
