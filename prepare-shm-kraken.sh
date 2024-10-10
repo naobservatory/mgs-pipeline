@@ -18,6 +18,6 @@ if [[ $MEMORY_SIZE -lt 128000000 ]]; then
 fi
 
 mkdir /dev/shm/kraken-db/
-curl -sS \
-    https://genome-idx.s3.amazonaws.com/kraken/k2_standard_20240605.tar.gz | \
+aws s3 --no-sign-request \
+    cp s3://genome-idx/kraken/k2_standard_20240605.tar.gz - | \
     tar -xzvv -C /dev/shm/kraken-db
