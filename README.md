@@ -11,7 +11,7 @@ including cleaning, species assignment, and counting human-infecting viruses.
 
 ## Status
 
-As of 2023-04-12, handles the data from nine papers.  Currently only handles
+As of 2023-04-12, handles the data from nine deliveries.  Currently only handles
 short-read paired-end data.
 
 ## Working with the output
@@ -20,13 +20,13 @@ short-read paired-end data.
 
 The metadata is in `dashboard/metadata_*.json`:
 
-* [`metadata_papers.json`](https://github.com/naobservatory/mgs-pipeline/blob/main/dashboard/metadata_papers.json):
-  The papers that this data was collected from.  Includes the nucleic acid type
+* [`metadata_deliveries.json`](https://github.com/naobservatory/mgs-pipeline/blob/main/dashboard/metadata_deliveries.json):
+  The deliveries that this data was collected from.  Includes the nucleic acid type
   (though this should move to being a sample-level attribute), a link to the
-  paper, and a list of the paper's bioprojects.
+  delivery, and a list of the delivery's bioprojects.
 
 * [`metadata_bioprojects.json`](https://github.com/naobservatory/mgs-pipeline/blob/main/dashboard/metadata_bioprojects.json):
-  The bioprojects, with which samples they contain.  Some papers have multiple
+  The bioprojects, with which samples they contain.  Some deliveries have multiple
   bioprojects, though in the cases I've looked at this doesn't seem to
   represent anything?
 
@@ -227,37 +227,7 @@ representing the version of the kraken DB they were generated with.)
 
 ## Adding new data
 
-1. Find the bioproject's accession, so we can load the data.  For example
-   https://pubmed.ncbi.nlm.nih.gov/34550753/ is `PRJNA729801`.  Right now we
-   can only handle short-read paired-end data.
-2. Run `./import-accession.sh [accession]`.  Continue in parallel; this doesn't
-   have to finish before you get to step #5, it just needs a small head start.
-   * If some files hit errors it's fine to re-run; it skips any files that are
-     already complete.
-3. Navigate to `bioprojects/[accession]/metadata` and:
-   b. Create `bioprojects/[accession]/metadata/name.txt` with the short name of
-      the associated paper.  For example, `Rothman 2021`.
-
-4. Make a directory `papers/AuthorYear/` (matching `name.txt` but without the
-   space) and:
-   a. Put the paper link in `papers/AuthorYear/link.txt`
-   b. Put "RNA" or "DNA" in `papers/AuthorYear/na_type.txt`
-5. `./run.py --bioproject=[accession]`
-6. Collect full metadata, update metadata.tsv, and create an
-   `papers/AuthorYear--metadata.py` to handle it.
-7. If you leave out any samples, perhaps because they represent something we're
-   not interested in, document which samples are included in
-   `papers/AuthorYear/subset.txt`.
-8. Run `dashboard/prepare_dashboard_data.sh`.
-
-When collecting metadata, put it in this repo under
-`bioprojects/[accession]/metadata/`.  Include both the metadata files and the
-scripts that prepare it.
-
-Each bioproject has a `bioprojects/[accession]/metadata/metadata.tsv` where the
-first column is the sample ID and the remaining columns are
-bioproject-specific.  The interpretation of those columns goes in
-`dashboard/prepare-dashboard-data.py`.
+We are no longer importing new public data.
 
 ## Design
 

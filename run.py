@@ -1324,7 +1324,7 @@ def print_status(args):
         "tvr",
     ]
 
-    papers_to_projects = defaultdict(list)  # paper -> [project]
+    deliveries_to_projects = defaultdict(list)  # delivery -> [project]
     for bioproject in bioprojects:
         metadata_dir = work_fname("bioprojects", bioproject, "metadata")
         if not os.path.exists(metadata_dir):
@@ -1335,13 +1335,13 @@ def print_status(args):
                 name = inf.read().strip()
         except FileNotFoundError:
             pass
-        papers_to_projects[name].append(bioproject)
+        deliveries_to_projects[name].append(bioproject)
 
     name_width = 21
     print(" " * name_width, end="\t")
     print(*short_stages, sep="\t")
-    for paper, bioprojects in sorted(papers_to_projects.items()):
-        print(paper)
+    for delivery, bioprojects in sorted(deliveries_to_projects.items()):
+        print(delivery)
 
         for bioproject in bioprojects:
             if bioproject in running_processes:
