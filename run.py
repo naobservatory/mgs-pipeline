@@ -1130,7 +1130,7 @@ def alignments2(args):
     existing_outputs = get_files(args, "alignments2", min_size=100)
 
     with open(
-        os.path.join(THISDIR, "bowtie", "genomeid-to-taxid.json")
+        "/dev/shm/bowtie-db/v1-pipeline-bowtie-genomeid-to-taxid.json"
     ) as inf:
         genomeid_to_taxid = json.load(inf)
 
