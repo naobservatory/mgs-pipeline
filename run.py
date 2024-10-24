@@ -64,7 +64,7 @@ def get_samples(args):
         return [args.sample]
 
     with open(
-        work_fname("bioprojects", args.bioproject, "metadata", "metadata.tsv")
+        work_fname("deliveries", args.delivery, "metadata", "metadata.tsv")
     ) as inf:
         samples = [line.strip().split("\t")[0] for line in inf]
 
@@ -164,10 +164,10 @@ def get_adapters(in1, in2, adapter1_fname, adapter2_fname):
             outf.write(adapter)
 
 def is_nanopore(args):
-    return args.bioproject.startswith("NAO-ONT-")
+    return args.delivery.startswith("NAO-ONT-")
 
 def rm_human(args):
-    return "-Zephyr" in args.bioproject
+    return "-Zephyr" in args.delivery
 
 def no_adapters_dirname(args):
     if is_nanopore(args):
@@ -181,7 +181,7 @@ def final_fastq_dirname(args):
         return no_adapters_dirname(args)
 
 def adapter_removal(args, dirname, trim_quality, collapse):
-    adapter_dir = work_fname("bioprojects", args.bioproject, "adapters")
+    adapter_dir = work_fname("deliveries", args.delivery, "adapters")
     try:
         os.mkdir(adapter_dir)
     except FileExistsError:
@@ -267,7 +267,7 @@ def full_s3_dirname(dirname):
     return "%s-%s" % (dirname, REFERENCE_SUFFIX)
 
 def s3_dir(args, dirname):
-    return "%s/%s/%s/" % (S3_BUCKET, args.bioproject, full_s3_dirname(dirname))
+    return "%s/%s/%s/" % (S3_BUCKET, args.delivery, full_s3_dirname(dirname))
 
 def s3_file(args, dirname, fname):
     return "%s%s" % (s3_dir(args, dirname), fname)
@@ -585,7 +585,7 @@ def cladecounts(args):
         subprocess.check_call(
             ["./count_clades.sh",
              S3_BUCKET,
-             args.bioproject,
+             args.delivery,
              sample,
              REFERENCE_SUFFIX]
         )
@@ -1281,12 +1281,12 @@ def average_quality(phred_counts):
 
 
 def print_status(args):
-    if args.bioproject:
-        bioprojects = [args.bioproject]
+    if args.delivery:
+        deliveries = [args.delivery]
     else:
-        bioprojects = [
-            os.path.basename(x)
-            for x in glob.glob(work_fname("bioprojects", "*"))
+        deliveries = [
+            os.path.basename(os.path.dirname(x))
+            for x in glob.glob(work_fname("deliveries", "*/"))
         ]
 
     running_processes = subprocess.check_output(["ps", "aux"]).decode("utf-8")
@@ -1324,41 +1324,28 @@ def print_status(args):
         "tvr",
     ]
 
-    deliveries_to_projects = defaultdict(list)  # delivery -> [project]
-    for bioproject in bioprojects:
-        metadata_dir = work_fname("bioprojects", bioproject, "metadata")
-        if not os.path.exists(metadata_dir):
-            continue
-        name = bioproject
-        try:
-            with open(os.path.join(metadata_dir, "name.txt")) as inf:
-                name = inf.read().strip()
-        except FileNotFoundError:
-            pass
-        deliveries_to_projects[name].append(bioproject)
-
     name_width = 21
     print(" " * name_width, end="\t")
     print(*short_stages, sep="\t")
-    for delivery, bioprojects in sorted(deliveries_to_projects.items()):
+    for delivery in sorted(deliveries):
         print(delivery)
 
-        for bioproject in bioprojects:
-            if bioproject in running_processes:
+        if True:
+            if delivery in running_processes:
                 color = COLOR_CYAN
             else:
                 color = ""
 
             print(
                 color
-                + ("  " + bioproject).ljust(name_width)
+                + ("  " + delivery).ljust(name_width)
                 + (COLOR_END if color else ""),
                 end="",
                 flush=True,
             )
 
             fully_processed_fname = work_fname(
-                "bioprojects", bioproject, "fully_processed"
+                "deliveries", delivery, "fully_processed"
             )
             fully_processed = os.path.exists(fully_processed_fname)
             if fully_processed:
@@ -1371,8 +1358,8 @@ def print_status(args):
                 print(COLOR_END)
                 continue
 
-            s3_bioproject_dir = "%s/%s" % (S3_BUCKET, bioproject)
-            metadata_dir = work_fname("bioprojects", bioproject, "metadata")
+            s3_delivery_dir = "%s/%s" % (S3_BUCKET, delivery)
+            metadata_dir = work_fname("deliveries", delivery, "metadata")
 
             stage_counters = defaultdict(Counter)  # sample -> stage -> count
 
@@ -1389,7 +1376,7 @@ def print_status(args):
 
                 seen = set()
                 for fname in ls_s3_dir("%s/%s/" % (
-                        s3_bioproject_dir, full_s3_dirname(stage))):
+                        s3_delivery_dir, full_s3_dirname(stage))):
                     for sample in samples:
                         if fname.startswith(sample):
                             seen.add(sample)
@@ -1440,7 +1427,7 @@ def start():
     )
 
     parser.add_argument(
-        "--bioproject", help="The ID of the bioproject to process"
+        "--delivery", help="The ID of the delivery to process"
     )
     parser.add_argument(
         "--sample",
@@ -1452,7 +1439,7 @@ def start():
     parser.add_argument(
         "--status",
         action="store_true",
-        help="Instead of running anything, just print the status of bioprojects",
+        help="Instead of running anything, just print the status of deliveries",
     )
 
     parser.add_argument(
@@ -1479,7 +1466,7 @@ def start():
         S3_BUCKET = "s3://nao-mgs"
         WORK_ROOT = "./"
 
-    if not args.status and not args.bioproject:
+    if not args.status and not args.delivery:
         parser.print_help()
         exit(1)
 
@@ -1487,10 +1474,10 @@ def start():
         print_status(args)
         return
 
-    if not os.path.isdir(work_fname("bioprojects", args.bioproject)):
+    if not os.path.isdir(work_fname("deliveries", args.delivery)):
         raise Exception(
-            "Bioproject %s not found in %sbioprojects"
-            % (args.bioproject, WORK_ROOT)
+            "Delivery %s not found in %sdeliveries"
+            % (args.delivery, WORK_ROOT)
         )
 
     selected_stages = args.stages.split(",")

@@ -1,0 +1,21 @@
+Treatment plant	Location	Sample type	Sample name	Sample date	Sample volume/weight	Volume used for DNA extraction	Replicates	Sequence libraries
+Henriksdal	Stockholm	Incoming water	Inlet-HA	2012-09-25	~ 6.5 L	200 mL	2	4
+Henriksdal	Stockholm	Incoming water	Inlet-S	2012-09-25	~ 6.5 L	200 mL	2	4
+Henriksdal	Stockholm	Primary sludge	Primary	2012-09-25	~ 5 g	0.4 mL	4	4
+Henriksdal	Stockholm	Surplus sludge	Surplus	2012-09-25	~ 5 g	0.4 mL	4	4
+Henriksdal	Stockholm	Digested sludge	Digested	2012-09-25	~ 5 g	0.4 mL	4	4
+Henriksdal	Stockholm	Treated water	Treated	2012-09-25	~ 6.5 L	3000 mL	2	2
+Henriksdal	Stockholm	Sand filtered water	Sand-filtered	2012-09-25	~ 6.5 L	3000 mL	2	2
+Käppala	Stockholm	Incoming water	Inlet	2012-09-26	~ 6.5 L	200 mL	2	4
+Käppala	Stockholm	Primary sludge	Primary	2012-09-26	~ 5 g	0.4 mL	4	4
+Käppala	Stockholm	Surplus sludge	Surplus	2012-09-26	~ 5 g	0.4 mL	4	4
+Käppala	Stockholm	Digested sludge	Digested	2012-09-26	~ 5 g	0.4 mL	4	4
+Käppala	Stockholm	Dewatered sludge	Kemikond	2012-09-26	~ 5 g	0.4 mL	4	4
+Käppala	Stockholm	Treated water	Treated	2012-09-26	~ 6.5 L	3000 mL	2	2
+Käppala	Stockholm	Sand filtered water	Sand-filtered	2012-09-26	~ 6.5 L	3000 mL	2	2
+Kungsängsverket	Uppsala	Incoming water	Inlet-AD	2012-09-26	~ 6.5 L	200 mL	2	4
+Kungsängsverket	Uppsala	Incoming water	Inlet-C	2012-09-26	~ 6.5 L	200 mL	2	4
+Kungsängsverket	Uppsala	Primary/Surplus sludge	Primary/Surplus	2012-09-26	~ 5 g	0.4 mL	4	4
+Kungsängsverket	Uppsala	Surplus sludge	Surplus	2012-09-26	~ 5 g	0.4 mL	4	4
+Kungsängsverket	Uppsala	Digested sludge	Digested	2012-09-26	~ 5 g	0.4 mL	4	4
+Kungsängsverket	Uppsala	Treated water	Treated	2012-09-26	~ 6.5 L	3000 mL	2	2

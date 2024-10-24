@@ -1,0 +1,1 @@
+curl -sS 'https://www.ebi.ac.uk/ena/portal/api/filereport?accession=PRJNA924011&result=read_run&fields=instrument_model,fastq_ftp,sample_alias,first_created&format=tsv&download=true&limit=0'  > raw_metadata.tsv
