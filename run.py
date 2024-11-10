@@ -78,7 +78,8 @@ def get_samples(args):
 @contextlib.contextmanager
 def tempdir(stage, msg):
     olddir = os.getcwd()
-    with tempfile.TemporaryDirectory() as workdir:
+    with tempfile.TemporaryDirectory(
+            dir=os.path.expanduser("~/tmp/")) as workdir:
         os.chdir(workdir)
         try:
             print("%s: handling %s in %s" % (stage, msg, workdir))
