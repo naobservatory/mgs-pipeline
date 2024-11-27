@@ -68,6 +68,11 @@ def get_samples(args):
     ) as inf:
         samples = [line.strip().split("\t")[0] for line in inf]
 
+    for sample in samples:
+        if "." in sample:
+            raise Exception("Bad sample for %s: %s" % (
+                args.delivery, sample))
+
     decorated_samples = [
         (get_sample_priority(sample), sample)
         for sample in samples]
