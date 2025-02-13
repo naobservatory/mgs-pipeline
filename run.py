@@ -134,21 +134,35 @@ def ls_s3_dir(s3_dir, min_size=0, min_date=""):
         yield fname.decode("utf-8")
 
 
-def get_adapters(in1, in2, adapter1_fname, adapter2_fname):
-    output = subprocess.check_output(
-        [
-            "AdapterRemoval",
-            "--file1",
-            in1,
-            "--file2",
-            in2,
-            "--identify-adapters",
-            "--qualitymax",
-            "45",  # Aviti goes up to N
-            "--threads",
-            "4",
-        ]
-    )
+def get_adapters(ins, adapter1_fname, adapter2_fname):
+    cmd = [
+        "AdapterRemoval",
+    ]
+    if len(ins) == 2:
+        cmd.extend(
+            ["--file1",
+             ins[0],
+             "--file2",
+             ins[1],
+             ])
+    elif len(ins) == 1:
+        cmd.extend(
+            ["--interleaved-input",
+             "--file1",
+             ins[0]])
+    else:
+        assert False
+
+    cmd.extend([
+        "--identify-adapters",
+        "--qualitymax",
+        "45",  # Aviti goes up to N
+        "--threads",
+        "4",
+    ])
+
+
+    output = subprocess.check_output(cmd)
     output = output.decode("utf-8")
 
     for line in output.split("\n"):
@@ -164,7 +178,7 @@ def get_adapters(in1, in2, adapter1_fname, adapter2_fname):
         if not all(x in "ACTGN" for x in adapter) or len(adapter) < 20:
             print(output)
             raise Exception(
-                "Invalid adapter %r for %r and %r" % (adapter, in1, in2)
+                "Invalid adapter %r for %r" % (adapter, ins)
             )
         with open(fname, "w") as outf:
             outf.write(adapter)
@@ -199,8 +213,15 @@ def adapter_removal(args, dirname, trim_quality, collapse):
     for sample in get_samples(args):
         raw1 = "%s_1.fastq.gz" % sample
         raw2 = "%s_2.fastq.gz" % sample
+        rawI = "%s.fastq.gz" % sample
 
-        if raw1 not in available_inputs or raw2 not in available_inputs:
+        ins_raw = []
+        if rawI in available_inputs:
+            ins_raw.append(rawI)
+        elif raw1 in available_inputs and raw2 in available_inputs:
+            ins_raw.append(raw1)
+            ins_raw.append(raw2)
+        else:
             print("Skipping %s" % sample)
             continue
 
@@ -213,11 +234,15 @@ def adapter_removal(args, dirname, trim_quality, collapse):
             continue
 
         with tempdir("adapter_removal", sample) as workdir:
-            in1 = "in1.fastq.gz"
-            in2 = "in2.fastq.gz"
+            if len(ins_raw) == 2:
+                ins = ["in1.fastq.gz",
+                       "in2.fastq.gz"]
+            elif len(ins_raw) == 1:
+                ins = ["in.fastq.gz"]
 
-            s3_copy_down(args, "raw", raw1, local_fname=in1)
-            s3_copy_down(args, "raw", raw2, local_fname=in2)
+            for remote_fname, local_fname in zip(
+                    ins_raw, ins):
+                s3_copy_down(args, "raw", remote_fname, local_fname=local_fname)
 
             adapter1_fname = os.path.join(adapter_dir, "%s.fwd" % sample)
             adapter2_fname = os.path.join(adapter_dir, "%s.rev" % sample)
@@ -225,7 +250,7 @@ def adapter_removal(args, dirname, trim_quality, collapse):
             if not os.path.exists(adapter1_fname) or not os.path.exists(
                 adapter2_fname
             ):
-                get_adapters(in1, in2, adapter1_fname, adapter2_fname)
+                get_adapters(ins, adapter1_fname, adapter2_fname)
 
             with open(adapter1_fname) as inf:
                 adapter1 = inf.read().strip()
@@ -234,10 +259,25 @@ def adapter_removal(args, dirname, trim_quality, collapse):
 
             cmd = [
                 "AdapterRemoval",
-                "--file1",
-                in1,
-                "--file2",
-                in2,
+            ]
+
+            if len(ins) == 2:
+                cmd.extend([
+                    "--file1",
+                    ins[0],
+                    "--file2",
+                    ins[1],
+                ])
+            elif len(ins) == 1:
+                cmd.extend([
+                    "--interleaved-input",
+                    "--file1",
+                    ins[0]
+                ])
+            else:
+                assert False
+
+            cmd.extend([
                 "--basename",
                 sample,
                 "--threads",
@@ -249,7 +289,7 @@ def adapter_removal(args, dirname, trim_quality, collapse):
                 "--adapter2",
                 adapter2,
                 "--gzip",
-            ]
+            ])
 
             if trim_quality:
                 cmd.extend(["--trimns", "--trimqualities"])
