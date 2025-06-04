@@ -1,4 +1,9 @@
-# Metagenomic Sequencing Pipeline
+# [Obsolete] Metagenomic Sequencing Pipeline
+
+Visit https://github.com/naobservatory/mgs-workflow for the NAO's current
+MGS pipeline.
+
+-----------------------------------------------------------------------------
 
 Runs all incoming metagenomic sequencing data through a consistent process,
 including cleaning, species assignment, and counting human-infecting viruses.
